@@ -1,0 +1,77 @@
+name: BigBeautyNews Daily
+
+on:
+  schedule:
+    # UTC 0:00 = 北京时间 8:00
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+    # 手动触发
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: bigbeautynews-daily
+  cancel-in-progress: false
+
+jobs:
+  daily-digest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run BigBeautyNews
+        env:
+          SERVERCHAN_SENDKEY: ${{ secrets.SERVERCHAN_SENDKEY }}
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_API_BASE: ${{ secrets.LLM_API_BASE }}
+          LLM_MODEL: ${{ secrets.LLM_MODEL }}
+        run: python src/main.py
+
+      - name: Commit & Push data
+        if: success()
+        run: |
+          git config user.name "BigBeautyNews Bot"
+          git config user.email "bot@bigbeautynews.local"
+          git add data/ web/data.json
+          git diff --staged --quiet || git commit -m "📰 $(date +%Y-%m-%d) 每日AI 5件事"
+          git push
+
+      - name: Prepare Pages artifact
+        if: success()
+        run: |
+          mkdir -p _site/web _site/data
+          cp web/index.html web/style.css web/app.js web/data.json _site/web/
+          cp -r data/archive _site/data/
+          touch _site/.nojekyll
+
+      - name: Configure Pages
+        if: success()
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        if: success()
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+      - name: Deploy Pages
+        if: success()
+        uses: actions/deploy-pages@v4
+        id: deployment

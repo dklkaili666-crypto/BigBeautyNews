@@ -1,0 +1,69 @@
+import json
+from types import SimpleNamespace
+
+from pipeline import ranker, translator
+
+
+class FakeCompletions:
+    def __init__(self, contents):
+        self.contents = iter(contents)
+        self.calls = 0
+
+    def create(self, **kwargs):
+        self.calls += 1
+        return SimpleNamespace(
+            choices=[SimpleNamespace(message=SimpleNamespace(content=next(self.contents)))]
+        )
+
+
+def fake_client(contents):
+    completions = FakeCompletions(contents)
+    client = SimpleNamespace(chat=SimpleNamespace(completions=completions))
+    return client, completions
+
+
+def test_ranking_retries_invalid_json_and_selects_unique_articles(monkeypatch):
+    payload = {
+        "top5": [
+            {"rank": i + 1, "source_article_index": i, "reason": f"reason {i}", "tags": ["AI"]}
+            for i in range(5)
+        ],
+        "daily_theme": "模型竞争",
+    }
+    client, completions = fake_client(["not-json", json.dumps(payload)])
+    monkeypatch.setattr(ranker, "OpenAI", lambda **kwargs: client)
+    articles = [{"title": f"Article {i}", "url": f"https://{i}", "source": "X"} for i in range(6)]
+
+    ranking = ranker.call_llm_ranking(articles, "key", "https://api", "model")
+    selected = ranker.select_top5(articles, ranking)
+
+    assert completions.calls == 2
+    assert [item["rank"] for item in selected] == [1, 2, 3, 4, 5]
+    assert selected[0]["tags"] == ["AI"]
+
+
+def test_translation_preserves_source_metadata_from_selected_articles(monkeypatch):
+    translated = {
+        "items": [
+            {"rank": i + 1, "title_cn": f"标题{i}", "summary_cn": "摘要" * 50}
+            for i in range(5)
+        ]
+    }
+    client, _ = fake_client([json.dumps(translated, ensure_ascii=False)])
+    monkeypatch.setattr(translator, "OpenAI", lambda **kwargs: client)
+    top5 = [
+        {
+            "rank": i + 1,
+            "title": f"English {i}",
+            "url": f"https://trusted/{i}",
+            "source": "Trusted",
+            "tags": ["AI"],
+        }
+        for i in range(5)
+    ]
+
+    result = translator.translate_top5(top5, "key", "https://api", "model")
+
+    assert result[0]["url"] == "https://trusted/0"
+    assert result[0]["source"] == "Trusted"
+    assert result[0]["originalTitle"] == "English 0"

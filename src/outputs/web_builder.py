@@ -1,7 +1,7 @@
 """
 静态网页构建器。
-更新 web/ 目录下的 JSON 数据文件（供 index.html 加载），
-也负责更新 history.json 供网页按日期浏览。
+更新 web/ 目录下的当日 JSON 数据文件（供 index.html 加载）。
+历史索引由 outputs.json_writer.update_history_index 维护。
 （注：web/ 的 HTML/CSS/JS 是手写的静态文件，不需要动态生成）
 """
 from __future__ import annotations
@@ -20,10 +20,8 @@ def write_web_data(
     """
     将当日简报数据写入 web/ 目录，供网页 JS 加载。
 
-    写出两个文件：
+    写出一个文件：
     - web/data.json: 当天数据（网页默认加载）
-    同时更新（如有）：
-    - web/history.json: 全量历史索引
 
     Args:
         digest: build_daily_digest 的返回值

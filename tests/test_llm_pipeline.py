@@ -42,10 +42,10 @@ def test_ranking_retries_invalid_json_and_selects_unique_articles(monkeypatch):
     assert selected[0]["tags"] == ["AI"]
 
 
-def test_translation_preserves_source_metadata_from_selected_articles(monkeypatch):
+def test_translation_accepts_near_target_summary_and_preserves_metadata(monkeypatch, caplog):
     translated = {
         "items": [
-            {"rank": i + 1, "title_cn": f"标题{i}", "summary_cn": "摘要" * 50}
+            {"rank": i + 1, "title_cn": f"标题{i}", "summary_cn": "摘要" * 40}
             for i in range(5)
         ]
     }
@@ -67,3 +67,4 @@ def test_translation_preserves_source_metadata_from_selected_articles(monkeypatc
     assert result[0]["url"] == "https://trusted/0"
     assert result[0]["source"] == "Trusted"
     assert result[0]["originalTitle"] == "English 0"
+    assert "建议范围" in caplog.text

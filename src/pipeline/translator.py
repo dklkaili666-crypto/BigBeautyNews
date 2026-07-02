@@ -16,6 +16,10 @@ from openai import OpenAI
 
 logger = logging.getLogger(__name__)
 MAX_ATTEMPTS = 2
+SUMMARY_TARGET_MIN = 100
+SUMMARY_TARGET_MAX = 200
+SUMMARY_ACCEPTABLE_MIN = 50
+SUMMARY_ACCEPTABLE_MAX = 500
 
 TRANSLATION_PROMPT = """你是一位专业 AI 科技翻译。请将以下 5 条新闻翻译为简体中文。
 
@@ -135,8 +139,20 @@ def translate_top5(
                     raise ValueError(f"翻译结果缺少 rank={original.get('rank')}")
                 title = str(translated.get("title_cn", "")).strip()
                 summary = str(translated.get("summary_cn", "")).strip()
-                if not title or len(title) > 50 or not 100 <= len(summary) <= 200:
+                if (
+                    not title
+                    or len(title) > 50
+                    or not SUMMARY_ACCEPTABLE_MIN <= len(summary) <= SUMMARY_ACCEPTABLE_MAX
+                ):
                     raise ValueError("翻译结果不满足标题或摘要长度要求")
+                if not SUMMARY_TARGET_MIN <= len(summary) <= SUMMARY_TARGET_MAX:
+                    logger.warning(
+                        "rank=%s 的摘要长度为 %s，偏离建议范围 %s–%s 字，但仍在可接受范围内",
+                        original.get("rank"),
+                        len(summary),
+                        SUMMARY_TARGET_MIN,
+                        SUMMARY_TARGET_MAX,
+                    )
                 merged = dict(original)
                 merged.update({
                     "title_cn": title,

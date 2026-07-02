@@ -1,39 +1,39 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-07-02T02:10:42Z",
+  "exportedAt": "2026-07-02T02:32:29Z",
   "items": [
     {
       "date": "2026-07-02",
-      "title": "特朗普解除Anthropic最强模型出口限制，AI竞争格局生变",
-      "summary": "特朗普政府解除对Anthropic旗下Mythos和Fable模型的出口限制，此举直接改变了大模型竞争格局和地缘政治风险定价。然而，其反复无常的AI政策制定方式使整个行业对未来模型发布监管缺乏清晰预期。投资者需关注出口管制放松对Anthropic市场扩张的推动作用，以及政策不确定性带来的长期风险。",
-      "url": "https://techcrunch.com/2026/06/30/trump-drops-restrictions-on-anthropics-mythos-and-fable-models/",
-      "source": "TechCrunch"
+      "title": "特朗普政府批准Anthropic向美国特定机构发布旗舰模型Mythos",
+      "summary": "经过数周谈判，白宫允许Anthropic将其最先进的AI模型Mythos授予部分美国企业和政府机构使用。此举标志着AI出口管制政策的重大转向，直接影响头部AI公司估值与竞争格局。投资者需关注政策松绑对Anthropic商业化进程及行业竞争态势的催化作用。",
+      "url": "https://www.wired.com/story/anthropic-restores-access-to-mythos/",
+      "source": "Wired"
     },
     {
       "date": "2026-07-02",
-      "title": "英伟达竞争对手Etched估值达50亿美元，AI芯片订单超10亿",
-      "summary": "英伟达AI芯片竞争对手Etched宣布其推理芯片系统已获得10亿美元合同订单，公司估值随之飙升至50亿美元。这一里程碑证明专用AI推理芯片的商业可行性，对$NVDA 英伟达构成实质性竞争威胁。投资者应评估Etched等专用芯片厂商对GPU市场格局的潜在冲击。",
-      "url": "https://techcrunch.com/2026/06/30/nvidia-competitor-etched-hits-5b-valuation-1b-in-sales-for-ai-chip/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-07-02",
-      "title": "Meta效仿SpaceX，计划出售AI算力变现",
-      "summary": "Meta正计划建立云基础设施业务，向外部出售AI算力和模型访问权限。此举将使其直接与AWS、Google Cloud和Microsoft Azure等大型云服务商竞争，重塑云计算市场格局。投资者需关注Meta ($META) 从广告主导向云服务商转型的战略意义及其对云巨头盈利能力的潜在影响。",
+      "title": "Meta效仿SpaceX，计划将过剩AI算力变现",
+      "summary": "Meta正规划建设云基础设施业务，出售AI算力及模型访问权限，此举将直接挑战亚马逊AWS、谷歌云和微软Azure等大型云服务商。投资者需评估Meta资本开支回报预期及云计算竞争格局重塑对$META估值的潜在影响。",
       "url": "https://techcrunch.com/2026/07/01/meta-like-spacex-looks-to-turn-excess-ai-compute-into-cash/",
       "source": "TechCrunch"
     },
     {
       "date": "2026-07-02",
-      "title": "Anthropic推出Claude Sonnet 5，降低AI Agent部署成本",
-      "summary": "Anthropic发布Claude Sonnet 5，以更低价格提供更强的Agent能力和改进的安全性，定位为Opus、GPT-5.5和Gemini Pro的廉价替代方案。此举将加速企业级AI Agent应用落地，降低部署门槛。投资者应关注Anthropic定价策略对AI应用市场渗透率的推动作用。",
+      "title": "英伟达竞争对手Etched估值达50亿美元，AI芯片销售额超10亿",
+      "summary": "英伟达AI芯片竞争对手Etched宣布，其芯片驱动的推理系统已签订10亿美元合同。以10亿美元在手订单支撑50亿估值，表明AI推理芯片市场出现强力挑战者，可能威胁$NVDA的垄断地位。投资者需关注推理芯片赛道竞争加剧对英伟达市场份额的侵蚀。",
+      "url": "https://techcrunch.com/2026/06/30/nvidia-competitor-etched-hits-5b-valuation-1b-in-sales-for-ai-chip/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-07-02",
+      "title": "Anthropic发布Claude Sonnet 5，以更低价格推动AI智能体应用",
+      "summary": "Anthropic的Claude Sonnet 5提供更强的AI智能体能力、更低定价及改进的安全性，定位为Opus、GPT-5.5和Gemini Pro的廉价替代品。此举直接冲击OpenAI和Google的定价策略，加速AI智能体商业化进程。投资者需关注定价战对AI模型市场格局的深远影响。",
       "url": "https://techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents/",
       "source": "TechCrunch"
     },
     {
       "date": "2026-07-02",
-      "title": "隐私优先AI平台Venice AI获6500万美元A轮融资，跻身独角兽",
-      "summary": "隐私优先的AI平台Venice AI完成6500万美元A轮融资，估值突破10亿美元成为独角兽。CEO Erik Voorhees透露公司已实现盈利，年化经常性收入超7000万美元。这一案例验证了差异化定位（隐私优先）在AI市场中的商业价值，为投资者提供了AI赛道细分机会的参考。",
+      "title": "Venice AI以6500万美元A轮融资跻身独角兽，隐私优先平台起飞",
+      "summary": "Venice AI CEO Erik Voorhees表示，公司已实现盈利，年化收入超7000万美元。以6500万美元A轮融资跻身独角兽，验证了隐私优先AI商业模式的可行性。投资者需关注隐私计算赛道在AI领域的商业化潜力及Venice AI的可持续增长路径。",
       "url": "https://techcrunch.com/2026/07/01/venice-ai-becomes-a-unicorn-with-65m-series-a-as-its-privacy-first-ai-platform-takes-off/",
       "source": "TechCrunch"
     }

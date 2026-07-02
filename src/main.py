@@ -48,6 +48,7 @@ from config import (
     LLM_MODEL,
     DAILY_JSON_PATH,
     HISTORY_JSON_PATH,
+    PUSH_HISTORY_PATH,
     ARCHIVE_DIR,
     WEB_DIR,
 )
@@ -67,6 +68,7 @@ from outputs.json_writer import (
     update_history_index,
 )
 from outputs.web_builder import write_web_data
+from outputs.push_state import mark_pushed, was_pushed
 
 logging.basicConfig(
     level=logging.INFO,
@@ -76,12 +78,13 @@ logging.basicConfig(
 logger = logging.getLogger("main")
 
 
-def run_pipeline(dry_run: bool = False) -> dict:
+def run_pipeline(dry_run: bool = False, force_push: bool = False) -> dict:
     """
     执行完整的数据处理流水线。
 
     Args:
         dry_run: True 时不推送微信、不写文件
+        force_push: True 时忽略当天已推送记录，强制再次发送
 
     Returns:
         处理结果摘要字典
@@ -203,10 +206,15 @@ def run_pipeline(dry_run: bool = False) -> dict:
 
     # 6d. Server酱推送是非阻断输出，放在持久化之后避免写盘失败时误推送
     if not dry_run:
-        push_ok = push_to_wechat(
-            SERVERCHAN_SENDKEY, translated, today, daily_theme
-        )
-        logger.info(f"  微信推送: {'成功' if push_ok else '失败/跳过'}")
+        if was_pushed(PUSH_HISTORY_PATH, today) and not force_push:
+            logger.info("  微信推送: 今日已成功发送，跳过重复推送")
+        else:
+            push_ok = push_to_wechat(
+                SERVERCHAN_SENDKEY, translated, today, daily_theme
+            )
+            if push_ok:
+                mark_pushed(PUSH_HISTORY_PATH, today)
+            logger.info(f"  微信推送: {'成功' if push_ok else '失败/跳过'}")
 
     logger.info("=== BigBeautyNews 运行完成，耗时 %.2fs ===", perf_counter() - started_at)
     return {
@@ -227,9 +235,14 @@ def main():
         action="store_true",
         help="干跑模式：抓取+排序+翻译，但不推送/写文件",
     )
+    parser.add_argument(
+        "--force-push",
+        action="store_true",
+        help="忽略当天成功记录，强制再次推送微信",
+    )
     args = parser.parse_args()
 
-    result = run_pipeline(dry_run=args.dry_run)
+    result = run_pipeline(dry_run=args.dry_run, force_push=args.force_push)
     if result["status"] == "error":
         logger.error(f"流水线失败: {result.get('reason')}")
         sys.exit(1)

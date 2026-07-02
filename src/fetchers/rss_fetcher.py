@@ -15,6 +15,7 @@ from __future__ import annotations
 from typing import Any
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
+from html import unescape
 import feedparser
 import logging
 import requests
@@ -69,7 +70,7 @@ def _fetch_one_source(source: dict) -> list[dict[str, Any]]:
         raw_summary = str(entry.get("summary", "")).strip()
         summary = BeautifulSoup(raw_summary, "lxml").get_text(" ", strip=True) if raw_summary else None
         articles.append({
-            "title": str(entry.get("title", "")).strip(),
+            "title": unescape(str(entry.get("title", "")).strip()),
             "url": str(entry.get("link", "")).strip(),
             "source": source["name"],
             "published": published,

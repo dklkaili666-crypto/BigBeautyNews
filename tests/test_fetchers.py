@@ -18,7 +18,7 @@ class FakeResponse:
 
 def test_rss_fetcher_normalizes_feed_entries(monkeypatch):
     feed = b"""<rss version="2.0"><channel><item>
-      <title>New AI model</title><link>https://example.com/a</link>
+      <title>Anthropic&amp;#8217;s new AI model</title><link>https://example.com/a</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
       <description>Summary</description>
     </item></channel></rss>"""
@@ -34,7 +34,7 @@ def test_rss_fetcher_normalizes_feed_entries(monkeypatch):
 
     assert errors == []
     assert articles == [{
-        "title": "New AI model",
+        "title": "Anthropic’s new AI model",
         "url": "https://example.com/a",
         "source": "Example",
         "published": "2026-07-01T00:00:00Z",

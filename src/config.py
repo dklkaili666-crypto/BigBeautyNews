@@ -63,5 +63,6 @@ TOP_K = 5                         # 最终选出 5 条
 DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")
 DAILY_JSON_PATH = os.path.join(DATA_DIR, "daily-5-things.json")
 HISTORY_JSON_PATH = os.path.join(DATA_DIR, "history.json")
+PUSH_HISTORY_PATH = os.path.join(DATA_DIR, "push-history.json")
 ARCHIVE_DIR = os.path.join(DATA_DIR, "archive")
 WEB_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "web")

@@ -113,6 +113,7 @@
 **排序原则：**
 - 同一条新闻的多家媒体报道合并为一条
 - 优先"对 AI 投资决策有实质影响"的事件，而不是"有趣但无关"
+- 候选池有至少 3 个来源时，Top 5 目标覆盖至少 3 个来源、单一来源通常不超过 2 条；首次结果过度集中时自动要求 LLM 重排一次，重试后仍集中则保留重要性排序并记录 warning
 - LLM 用结构化 JSON 输出，便于后续自动化处理
 
 ### 2.4 翻译要求
@@ -134,6 +135,7 @@
 - **格式**：Markdown，`title` 为日期标题，`desp` 为 5 条消息的 Markdown 正文
 - **免费额度**：每天 5 条（每次推送算 1 条，刚好够）
 - **注意**：Server酱 Turbo 和 Server酱³ 是不同的产品，SendKey 不通用
+- **幂等保护**：成功推送日期写入 `data/push-history.json`；同一天重跑默认只刷新数据、不重复推送。人工确需重发时使用 `--force-push`
 
 #### B. 投研日历 JSON 输出
 
@@ -311,12 +313,14 @@ BigBeautyNews/
 │   ├── outputs/                 # 输出模块
 │   │   ├── __init__.py
 │   │   ├── serverchan.py        # Server酱推送
+│   │   ├── push_state.py        # 推送成功状态与幂等保护
 │   │   ├── json_writer.py       # 写出投研日历 JSON
 │   │   └── web_builder.py       # 更新静态网页
 │   └── config.py                # 配置（RSS 源列表、Key 等）
 ├── data/                        # 产出数据（Git 追踪）
 │   ├── daily-5-things.json      # 今日 5 件事（投研日历导入格式，5 字段）
 │   ├── history.json             # 历史索引
+│   ├── push-history.json        # 已成功推送日期（防重复推送）
 │   └── archive/                 # 历史归档（完整字段）
 │       └── 2026-07-01.json
 ├── web/                         # 静态网页（从项目根目录起 HTTP 服务）
@@ -343,7 +347,7 @@ GitHub Actions 触发（每天 UTC 00:00 = 北京 08:00）
 │     └─ HN API (可选)               │
 │                                    │
 │  2. 候选池清洗                     │
-│     ├─ 去重（标题相似度 > 0.8）     │
+│     ├─ 去重（跨源阈值 ≥ 0.65）      │
 │     ├─ 合并同事件多源报道           │
 │     └─ AI 关键词预过滤             │
 │                                    │
@@ -372,7 +376,7 @@ GitHub Actions 触发（每天 UTC 00:00 = 北京 08:00）
 | **v0.2** | 投研日历 JSON 输出 + 历史归档 + GitHub Actions 定时 | 投研日历可导入 L2 数据 |
 | **v0.3** | 本地网页（按日期浏览历史 5 则消息） | 浏览器打开即可查看 |
 | **v0.4** | GitHub Trending + HN 数据源接入 | 数据源完整覆盖 |
-| **v0.5** | 优化：LLM 排序 prompt 迭代 + 翻译质量打磨 + 网页美化 | 稳定运行版本 |
+| **v0.5** | 优化：推送幂等、来源多样性、真实样本去重调优、翻译质量与网页美化 | 稳定运行版本 |
 
 ---
 
@@ -483,7 +487,7 @@ GitHub Actions 触发（每天 UTC 00:00 = 北京 08:00）
 
 | # | 检查项 | 对应用户需求 | 结果 |
 |---|---|---|---|
-| E1 | 标题相似度去重（阈值 0.8），同事件多源报道合并 | PRD §2.2 | |
+| E1 | 标题相似度去重：跨来源阈值 0.65、同来源阈值 0.95；同事件多源报道合并，避免同源相似但不同事件误合并 | PRD §2.2 | |
 | E2 | 合并时保留 `merged_sources` 字段，供 LLM 排序时权重上调 | PRD §2.3 | |
 | E3 | AI 关键词预过滤器正确实现，关键词列表覆盖大模型/芯片/投资等核心词 | PRD §2.2 | |
 | E4 | GitHub Trending 数据源的数据跳过关键词过滤器（已在抓取时筛选） | PRD §2.2 | |
@@ -500,6 +504,7 @@ GitHub Actions 触发（每天 UTC 00:00 = 北京 08:00）
 | F5 | 正确将候选文章格式化为 Prompt 中的编号列表 | `ranker.py` | |
 | F6 | `select_top5()` 正确根据 LLM 输出的 `source_article_index` 从候选池取出对应文章 | `ranker.py` | |
 | F7 | LLM 调用异常有明确的错误处理和日志 | PRD §6 | |
+| F8 | 候选池来源充足时检查 Top 5 来源多样性；过度集中自动重排一次，重试后仍集中只 warning、不阻断产出 | PRD §2.3 | |
 
 ### G. LLM 翻译模块
 
@@ -521,6 +526,7 @@ GitHub Actions 触发（每天 UTC 00:00 = 北京 08:00）
 | H4 | `sendkey` 未配置时跳过推送（warning 日志）而非报错崩溃 | PRD §2.5-A | |
 | H5 | API 返回 `code=0` 时确认为成功，非 0 时记录错误日志 | `serverchan.py` | |
 | H6 | 推送失败不影响流水线其他步骤（非阻断错误） | `main.py` | |
+| H7 | 推送成功后写入 `data/push-history.json`；同日重跑不重复推送，`--force-push` 可显式重发 | `main.py` | |
 
 ### I. JSON 输出
 
@@ -542,6 +548,7 @@ GitHub Actions 触发（每天 UTC 00:00 = 北京 08:00）
 | J4 | 候选池不足 5 篇时明确报错退出（exit code 1） | `main.py` | |
 | J5 | LLM API Key 未配置时明确报错退出（exit code 1），而非静默跳过 | `main.py` | |
 | J6 | 整体超时控制合理（GitHub Actions timeout-minutes: 15） | PRD §2.6 | |
+| J7 | `--force-push` 只绕过推送幂等保护，不影响其他流水线步骤 | `main.py` | |
 
 ### K. GitHub Actions 定时工作流
 

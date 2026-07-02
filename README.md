@@ -66,6 +66,9 @@ python src/main.py --dry-run
 
 # 正式运行
 python src/main.py
+
+# 当天已经推送过但确实需要人工重发
+python src/main.py --force-push
 ```
 
 ### 4. GitHub Actions 部署

@@ -3,7 +3,7 @@ import json
 import main
 
 
-def test_pipeline_writes_external_and_internal_outputs_and_ignores_push_failure(
+def test_pipeline_retries_failed_push_then_skips_duplicate_success(
     monkeypatch, tmp_path
 ):
     articles = [
@@ -39,18 +39,33 @@ def test_pipeline_writes_external_and_internal_outputs_and_ignores_push_failure(
             for i, item in enumerate(values)
         ],
     )
-    monkeypatch.setattr(main, "push_to_wechat", lambda *args: False)
+    push_calls = []
+    push_results = iter([False, True, True])
+
+    def push_with_results(*args):
+        push_calls.append(args)
+        return next(push_results)
+
+    monkeypatch.setattr(main, "push_to_wechat", push_with_results)
     monkeypatch.setattr(main, "LLM_API_KEY", "test-key")
     monkeypatch.setattr(main, "DAILY_JSON_PATH", str(tmp_path / "data" / "daily-5-things.json"))
     monkeypatch.setattr(main, "HISTORY_JSON_PATH", str(tmp_path / "data" / "history.json"))
     monkeypatch.setattr(main, "ARCHIVE_DIR", str(tmp_path / "data" / "archive"))
     monkeypatch.setattr(main, "WEB_DIR", str(tmp_path / "web"))
+    monkeypatch.setattr(main, "PUSH_HISTORY_PATH", str(tmp_path / "data" / "push-history.json"))
 
     result = main.run_pipeline()
+    second_result = main.run_pipeline()
+    third_result = main.run_pipeline()
+    forced_result = main.run_pipeline(force_push=True)
 
     external = json.loads((tmp_path / "data" / "daily-5-things.json").read_text("utf-8"))
     internal = json.loads((tmp_path / "web" / "data.json").read_text("utf-8"))
     assert result["status"] == "ok"
+    assert second_result["status"] == "ok"
+    assert third_result["status"] == "ok"
+    assert forced_result["status"] == "ok"
+    assert len(push_calls) == 3
     assert set(external["items"][0]) == {"date", "title", "summary", "url", "source"}
     assert internal["dailyTheme"] == "模型竞争"
     assert internal["items"][0]["tags"] == ["AI"]

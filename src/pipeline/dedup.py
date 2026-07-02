@@ -1,6 +1,6 @@
 """
 候选文章去重与合并。
-1. 标题相似度 > 0.8 的文章视为同一事件，合并
+1. 标题相似度 >= 0.65 的文章视为同一事件，合并
 2. 合并时保留最早来源的信息、汇总所有来源名称
 """
 from __future__ import annotations
@@ -15,7 +15,7 @@ def _normalized_title(title: str) -> str:
 
 def dedup_candidates(
     articles: list[dict[str, Any]],
-    threshold: float = 0.8,
+    threshold: float = 0.65,
 ) -> list[dict[str, Any]]:
     """
     对候选文章列表去重。
@@ -28,7 +28,7 @@ def dedup_candidates(
 
     Args:
         articles: 原始文章列表
-        threshold: 相似度阈值，0.8 表示标题 80% 相似的视为同一事件
+        threshold: 相似度阈值，默认 0.65（由真实跨源同事件标题样本校准）
 
     Returns:
         去重后的文章列表，每篇可能多出 merged_sources 字段
@@ -52,7 +52,9 @@ def dedup_candidates(
                 normalized,
                 _normalized_title(str(existing.get("title", ""))),
             ).ratio()
-            if similarity >= threshold:
+            same_source = candidate.get("source") == existing.get("source")
+            effective_threshold = max(threshold, 0.95) if same_source else threshold
+            if similarity >= effective_threshold:
                 match = existing
                 break
 

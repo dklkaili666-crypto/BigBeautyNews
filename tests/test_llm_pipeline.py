@@ -42,6 +42,39 @@ def test_ranking_retries_invalid_json_and_selects_unique_articles(monkeypatch):
     assert selected[0]["tags"] == ["AI"]
 
 
+def test_ranking_retries_when_top_five_are_dominated_by_one_source(monkeypatch):
+    concentrated = {
+        "top5": [
+            {"rank": i + 1, "source_article_index": i, "reason": "重要", "tags": ["AI"]}
+            for i in range(5)
+        ],
+        "daily_theme": "模型竞争",
+    }
+    diversified_indices = [0, 1, 5, 6, 8]
+    diversified = {
+        "top5": [
+            {"rank": i + 1, "source_article_index": index, "reason": "重要", "tags": ["AI"]}
+            for i, index in enumerate(diversified_indices)
+        ],
+        "daily_theme": "模型竞争",
+    }
+    client, completions = fake_client([
+        json.dumps(concentrated),
+        json.dumps(diversified),
+    ])
+    monkeypatch.setattr(ranker, "OpenAI", lambda **kwargs: client)
+    articles = [
+        *[{"title": f"TC {i}", "url": f"https://tc/{i}", "source": "TechCrunch"} for i in range(5)],
+        *[{"title": f"Wired {i}", "url": f"https://wired/{i}", "source": "Wired"} for i in range(3)],
+        *[{"title": f"Verge {i}", "url": f"https://verge/{i}", "source": "The Verge"} for i in range(2)],
+    ]
+
+    result = ranker.call_llm_ranking(articles, "key", "https://api", "model")
+
+    assert completions.calls == 2
+    assert [item["source_article_index"] for item in result["top5"]] == diversified_indices
+
+
 def test_translation_accepts_near_target_summary_and_preserves_metadata(monkeypatch, caplog):
     translated = {
         "items": [

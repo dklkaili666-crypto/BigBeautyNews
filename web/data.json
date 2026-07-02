@@ -1,0 +1,87 @@
+{
+  "project": "daily-ai-5",
+  "exportedAt": "2026-07-02T02:07:37Z",
+  "dailyTheme": "大厂加速AI商业化落地，芯片与模型竞争白热化，差异化定位和Agent能力成为投资焦点。",
+  "items": [
+    {
+      "id": "daa6c8a9-f370-596e-b357-07df0dfdf3ca",
+      "date": "2026-07-02",
+      "title": "Anthropic发布Claude Sonnet 5：更便宜的AI智能体运行方案",
+      "summary": "Anthropic推出Claude Sonnet 5，具备更强的AI智能体能力、更低定价和更优安全性，定位为Opus、GPT-5.5和Gemini Pro的廉价替代品。此举直接冲击OpenAI和Google的定价策略，可能重塑大语言模型竞争格局。投资者需关注其对闭源模型市场定价压力的影响。",
+      "url": "https://techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents/",
+      "source": "TechCrunch",
+      "tags": [
+        "大模型",
+        "Anthropic",
+        "Agent"
+      ],
+      "rank": 1,
+      "originalTitle": "Anthropic launches Claude Sonnet 5 as a cheaper way to run agents",
+      "createdAt": "2026-07-02T02:07:37Z"
+    },
+    {
+      "id": "2a2a7da5-3297-5170-ac57-a59350b91d36",
+      "date": "2026-07-02",
+      "title": "英伟达竞争对手Etched估值达50亿美元，AI芯片订单突破10亿",
+      "summary": "AI芯片新贵Etched宣布其推理系统已获得10亿美元合同订单，公司估值飙升至50亿美元。Etched直接挑战$NVDA 英伟达在AI芯片领域的垄断地位，表明芯片供应链格局正发生变化。投资者应评估其对GPU市场长期份额的潜在威胁。",
+      "url": "https://techcrunch.com/2026/06/30/nvidia-competitor-etched-hits-5b-valuation-1b-in-sales-for-ai-chip/",
+      "source": "TechCrunch",
+      "tags": [
+        "芯片",
+        "英伟达",
+        "融资"
+      ],
+      "rank": 2,
+      "originalTitle": "Nvidia competitor Etched hits $5B valuation, $1B in sales for AI chip",
+      "createdAt": "2026-07-02T02:07:37Z"
+    },
+    {
+      "id": "910e3237-616a-55c1-9361-2950b2114f09",
+      "date": "2026-07-02",
+      "title": "Meta效仿SpaceX，计划将过剩AI算力变现",
+      "summary": "Meta正开发云基础设施业务，计划出售AI算力和模型访问权限，此举将直接与Amazon Web Services、Google Cloud和Microsoft Azure等大型云服务商竞争。若成功，云市场格局可能重塑。投资者需关注Meta此举对云计算行业竞争态势及自身盈利结构的影响。",
+      "url": "https://techcrunch.com/2026/07/01/meta-like-spacex-looks-to-turn-excess-ai-compute-into-cash/",
+      "source": "TechCrunch",
+      "tags": [
+        "大厂战略",
+        "Meta",
+        "云计算"
+      ],
+      "rank": 3,
+      "originalTitle": "Meta, like SpaceX, looks to turn excess AI compute into cash",
+      "createdAt": "2026-07-02T02:07:37Z"
+    },
+    {
+      "id": "efe24df6-9f86-5cf4-97dc-64222d0558d2",
+      "date": "2026-07-02",
+      "title": "亚马逊斥资10亿美元组建AI部署团队，跟进OpenAI和Anthropic",
+      "summary": "亚马逊成立新的10亿美元前沿部署工程（FDE）组织，工程师将嵌入企业客户内部，部署专用AI智能体，聚焦快速部署和客户自给自足。此举跟随OpenAI和Anthropic布局企业级Agent服务，显示大型科技公司对AI落地的战略重视。投资者应关注其对AI服务市场格局的催化作用。",
+      "url": "https://techcrunch.com/2026/06/30/amazon-launches-new-1-billion-fde-org-following-openai-and-anthropic/",
+      "source": "TechCrunch",
+      "tags": [
+        "大厂战略",
+        "亚马逊",
+        "Agent"
+      ],
+      "rank": 4,
+      "originalTitle": "Amazon launches new $1 billion FDE org, following OpenAI and Anthropic",
+      "createdAt": "2026-07-02T02:07:37Z"
+    },
+    {
+      "id": "fb2373e1-d915-594b-971c-04c71ee9857a",
+      "date": "2026-07-02",
+      "title": "隐私优先AI平台Venice AI获6500万美元A轮融资，晋升独角兽",
+      "summary": "Venice AI以6500万美元A轮融资成为独角兽，CEO Erik Voorhees透露公司已实现盈利，年化经常性收入超7000万美元。这表明差异化定位（隐私优先）在AI市场中可行。投资者需关注其商业模式对AI初创公司估值逻辑的启示。",
+      "url": "https://techcrunch.com/2026/07/01/venice-ai-becomes-a-unicorn-with-65m-series-a-as-its-privacy-first-ai-platform-takes-off/",
+      "source": "TechCrunch",
+      "tags": [
+        "融资",
+        "隐私",
+        "独角兽"
+      ],
+      "rank": 5,
+      "originalTitle": "Venice AI becomes a unicorn with $65M Series A as its privacy-first AI platform takes off",
+      "createdAt": "2026-07-02T02:07:37Z"
+    }
+  ]
+}

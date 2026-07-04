@@ -1,40 +1,40 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-07-03T00:27:55Z",
+  "exportedAt": "2026-07-04T01:44:17Z",
   "items": [
     {
-      "date": "2026-07-03",
-      "title": "特朗普解除对Anthropic旗舰模型限制，AI竞争格局生变",
-      "summary": "特朗普政府解除对Anthropic旗下Mythos和Fable模型的限制，此举直接改变AI竞争格局，利好Anthropic商业化进程，并加剧其与OpenAI的竞争。投资者需关注政策不确定性对模型发布节奏的影响，以及Anthropic市场份额的潜在提升。",
-      "url": "https://techcrunch.com/2026/06/30/trump-drops-restrictions-on-anthropics-mythos-and-fable-models/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-07-03",
-      "title": "微软斥资25亿美元成立AI部署公司，云服务竞争白热化",
-      "summary": "微软效仿亚马逊、OpenAI和Anthropic，以25亿美元承诺成立AI部署集团，标志着大厂在AI基础设施和落地服务上的战略加码。此举将影响云服务竞争格局，投资者应关注微软在AI企业服务领域的差异化优势及对$MSFT营收的潜在拉动。",
+      "date": "2026-07-04",
+      "title": "微软斥资25亿美元成立AI部署公司，云巨头军备竞赛升级",
+      "summary": "微软宣布以25亿美元成立AI部署公司，直接对标亚马逊、OpenAI和Anthropic。此举标志着云巨头在AI基础设施和落地服务上的竞争进一步白热化，投资者需关注微软在AI商业化落地中的执行力及其对云计算市场份额的潜在影响。",
       "url": "https://techcrunch.com/2026/07/02/microsoft-launches-its-own-ai-deployment-company-with-2-5-billion-commitment/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-07-03",
-      "title": "Meta计划将过剩AI算力变现，挑战AWS、谷歌云和Azure",
-      "summary": "Meta正计划推出云基础设施业务，出售AI算力和模型访问权限，直接与亚马逊AWS、谷歌云和微软Azure竞争。此举可能重塑云计算市场格局，投资者需评估Meta的算力成本优势及对$META盈利能力的长期影响。",
-      "url": "https://techcrunch.com/2026/07/01/meta-like-spacex-looks-to-turn-excess-ai-compute-into-cash/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-07-03",
-      "title": "Anthropic与三星讨论定制芯片，AI供应链垂直整合加速",
-      "summary": "Anthropic正与三星商讨定制AI芯片，紧随OpenAI与博通合作自研芯片的步伐。这一趋势加剧了AI供应链的垂直整合，投资者应关注芯片投资逻辑的变化，以及三星在AI半导体领域的潜在崛起对$NVDA等现有玩家的影响。",
+      "date": "2026-07-04",
+      "title": "Anthropic与三星洽谈定制AI芯片，加速摆脱对英伟达依赖",
+      "summary": "继OpenAI与博通合作开发定制AI芯片后，Anthropic正与三星讨论自研芯片方案。头部AI实验室纷纷自研芯片，可能重塑半导体供应链格局，降低对英伟达GPU的依赖，投资者应留意芯片设计及代工环节的潜在受益者。",
       "url": "https://techcrunch.com/2026/07/02/anthropic-is-discussing-a-new-custom-chip-with-samsung/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-07-03",
-      "title": "隐私优先AI平台Venice AI以6500万美元A轮融资成为独角兽",
-      "summary": "Venice AI完成6500万美元A轮融资，估值达独角兽级别，且已实现盈利，年化经常性收入超7000万美元。其隐私优先的差异化定位在AI市场中证明了巨大价值，投资者应关注数据隐私法规趋严下此类平台的增长潜力。",
+      "date": "2026-07-04",
+      "title": "Meta拟出售过剩AI算力，进军云市场挑战AWS、谷歌云和Azure",
+      "summary": "Meta计划将过剩AI算力及模型通过云基础设施业务变现，直接与亚马逊AWS、谷歌云和微软Azure竞争。此举可能改变云计算定价体系，并加剧AI算力市场的供给压力，投资者需评估对云巨头利润率及Meta新收入来源的影响。",
+      "url": "https://techcrunch.com/2026/07/01/meta-like-spacex-looks-to-turn-excess-ai-compute-into-cash/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-07-04",
+      "title": "隐私优先AI平台Venice AI获6500万美元A轮融资，已盈利且年化收入超7000万美元",
+      "summary": "Venice AI以6500万美元A轮融资跻身独角兽，CEO Erik Voorhees透露公司已实现盈利，年化收入超7000万美元。该案例验证了隐私优先AI平台的商业可行性，为同类创业公司提供估值锚点，投资者可关注数据隐私合规赛道的增长潜力。",
       "url": "https://techcrunch.com/2026/07/01/venice-ai-becomes-a-unicorn-with-65m-series-a-as-its-privacy-first-ai-platform-takes-off/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-07-04",
+      "title": "OpenAI提议将5%股权捐赠美国主权财富基金，或开创AI公司与政府利益绑定先例",
+      "summary": "OpenAI CEO Sam Altman提议将公司5%股权捐赠给美国主权财富基金，旨在缓和与特朗普政府的紧张关系并应对公众对AI收益分配的不满。此举可能开创AI公司与政府利益绑定的先例，投资者需关注其对OpenAI治理结构及行业监管风向的影响。",
+      "url": "https://techcrunch.com/2026/07/02/openai-proposed-donating-5-of-its-equity-to-a-us-sovereign-wealth-fund/",
       "source": "TechCrunch"
     }
   ]

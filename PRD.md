@@ -19,7 +19,7 @@
 
 | 场景 | 描述 |
 |---|---|
-| **晨间阅读** | 每天早上 8:00，微信收到 5 条 AI 大事件推送 |
+| **晨间阅读** | 每天早上 7:45，微信收到 5 条 AI 大事件推送 |
 | **本地浏览** | 打开本地网页，按日期浏览历史所有日期的 5 件事 |
 | **日历联动** | 投研日历自动导入今日 5 件事，在日历上以 L2 蓝色事件条展示 |
 | **深度阅读** | 点击任意消息跳转原文 |
@@ -131,7 +131,7 @@
 - **方式**：Server酱 Turbo API，HTTP POST
 - **API**：`https://sctapi.ftqq.com/<SENDKEY>.send`
 - **注册**：[sct.ftqq.com](https://sct.ftqq.com) 微信扫码登录 → 获取 SendKey
-- **时间**：每天早上 8:00（北京时间）
+- **时间**：每天早上 7:45（北京时间）
 - **格式**：Markdown，`title` 为日期标题，`desp` 为 5 条消息的 Markdown 正文
 - **免费额度**：每天 5 条（每次推送算 1 条，刚好够）
 - **注意**：Server酱 Turbo 和 Server酱³ 是不同的产品，SendKey 不通用
@@ -177,7 +177,7 @@
 ### 2.6 定时执行
 
 - **引擎**：GitHub Actions `schedule` cron
-- **时间**：`cron: '0 0 * * *'`（UTC），即北京时间早上 8:00
+- **时间**：`cron: '45 23 * * *'`（UTC），即北京时间次日早上 7:45；避开 GitHub Actions 每小时开头的调度高峰
 - **无需本地电脑开机**：所有抓取、处理、推送均在 GitHub 云服务器上完成
 - **手动触发**：支持 `workflow_dispatch`，手动运行一次
 - **注意事项**：
@@ -335,7 +335,7 @@ BigBeautyNews/
 ### 4.4 架构图（运行流程）
 
 ```
-GitHub Actions 触发（每天 UTC 00:00 = 北京 08:00）
+GitHub Actions 触发（每天 UTC 23:45 = 北京次日 07:45）
         │
         ▼
 ┌───────────────────────────────────┐
@@ -413,7 +413,7 @@ GitHub Actions 触发（每天 UTC 00:00 = 北京 08:00）
 | 2 | 数据源：GitHub Trending（AI 投研相关）+ Hacker News（可选） | ✓ |
 | 3 | 筛选策略：LLM 混合排序，投研视角权重（大厂>竞品>产品>融资>学术>社区） | ✓ |
 | 4 | 翻译为简体中文，不发送英文原文，末尾附原文链接 | ✓ |
-| 5 | 推送：Server酱 Turbo → 微信，每天早上 8:00 | ✓ |
+| 5 | 推送：Server酱 Turbo → 微信，每天早上 7:45 | ✓ |
 | 6 | 推送：对外 JSON（5 字段）输出给投研日历；内部 JSON（完整字段）供网页 | ✓ |
 | 7 | 展示：本地网页，按日期浏览历史 | ✓ |
 | 8 | 项目名：BigBeautyNews | ✓ |
@@ -555,7 +555,7 @@ GitHub Actions 触发（每天 UTC 00:00 = 北京 08:00）
 | # | 检查项 | 对应用户需求 | 结果 |
 |---|---|---|---|
 | K1 | Workflow 文件位于 `.github/workflows/daily.yml`，`permissions: contents: write` | PRD §4.3 | |
-| K2 | cron 表达式 `0 0 * * *` (UTC) = 北京时间 8:00 | PRD §2.6 | |
+| K2 | cron 表达式 `45 23 * * *` (UTC) = 北京时间次日 7:45，并避开整点调度高峰 | PRD §2.6 | |
 | K3 | 支持 `workflow_dispatch` 手动触发 | PRD §2.6 | |
 | K4 | 通过 GitHub Secrets 注入 `SERVERCHAN_SENDKEY`、`LLM_API_KEY`、`LLM_API_BASE`、`LLM_MODEL` | PRD §4.1 | |
 | K5 | 运行成功后自动 `git commit` + `git push` 数据文件（只 add 实际存在的文件） | PRD §2.2 | |

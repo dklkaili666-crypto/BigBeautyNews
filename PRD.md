@@ -1,6 +1,6 @@
 # BigBeautyNews PRD
 
-> 版本：v1.4 | 日期：2026-07-05 | 状态：投研增强版 | 变更：吸收外部 PRD Review 建议，增加一手源优先级、事件级去重、投研评分字段、运行状态监控和北京时间业务日期规则
+> 版本：v1.5 | 日期：2026-07-05 | 状态：v0.6 开发就绪 | 变更：明确 v0.6 实施边界、验收口径、事件 ID 规则、评分规则、运行状态语义和非目标范围
 
 ---
 
@@ -8,7 +8,7 @@
 
 ### 1.1 核心定位
 
-**BigBeautyNews** — 面向 AI 投资者的每日 5 件事简报系统。每天自动从官方一手源、专业行业源、北美主流科技媒体、GitHub Trending / Hacker News 等来源抓取 AI 领域最重要的 5 条事件，翻译为简体中文，推送到微信和本地网页，同时以标准化 JSON 接口输出给 AI 投研日历项目。
+**BigBeautyNews** — 面向 AI 投资者的每日 5 件事简报系统。目标形态是每天自动从官方一手源、专业行业源、北美主流科技媒体、GitHub Trending / Hacker News 等来源抓取 AI 领域最重要的 5 条事件，翻译为简体中文，推送到微信和本地网页，同时以标准化 JSON 接口输出给 AI 投研日历项目。
 
 产品定位不是“AI 新闻翻译器”，而是“AI 投研信息雷达”：优先捕捉对公司、产业链、Capex、芯片、云服务、模型竞争和监管环境有影响的事件，并保留足够的内部字段，方便后续复盘、检索和投研日历联动。
 
@@ -31,6 +31,18 @@
 - 英文名：**BigBeautyNews**
 - 中文描述：每日 AI 五件事
 
+### 1.5 当前基线与本轮实施范围
+
+为避免把长期愿景和本轮开发混在一起，PRD 将能力分为三层：
+
+| 层级 | 范围 | 状态 |
+|---|---|---|
+| 已实现基线 | Tier 2 媒体 RSS、GitHub Trending、Hacker News、跨日 URL / 近似标题去重、48/72 小时时效窗口、微信推送、对外 5 字段 JSON、网页归档、7:45 + 8:15 调度兜底 | 已具备，后续改动不得破坏 |
+| v0.6 本轮实施 | 来源分层字段、AI 投研实体词典、确定性规则预评分、最小可用 `eventId`、GitHub repo 冷却、运行状态文件、失败日志、PRD / Checklist 对齐 | 下一步开发目标 |
+| 后续增强 | 大规模 Tier 0 / Tier 1 一手源覆盖、SEC / 财报 transcript 深度解析、embedding 聚类、RAG 历史问答、自动股票代码映射、邮件 / Telegram / 企业微信多通道告警 | 暂不作为 v0.6 验收条件 |
+
+v0.6 的原则：优先把“数据质量、防重复、可观测性、验收口径”打牢；不为了追求完整投研平台而一次性重构全系统。
+
 ---
 
 ## 2. 功能需求
@@ -39,7 +51,7 @@
 
 #### 信息源优先级
 
-系统按来源质量分层处理信息。当前 MVP 已接入 Tier 2 / Tier 3，v1.4 起将 Tier 0 / Tier 1 作为后续增强重点。
+系统按来源质量分层处理信息。当前已接入 Tier 2 / Tier 3；v0.6 必须在数据模型中支持所有层级，并至少为后续接入 Tier 0 / Tier 1 留出配置入口。完整覆盖 Tier 0 / Tier 1 属于后续增强，不作为 v0.6 阻塞项。
 
 | 层级 | 来源类型 | 示例 | 用途 |
 |---|---|---|
@@ -107,12 +119,12 @@
 └──────────────────────────────────────────────────────────────────────┘
 ```
 
-### 2.3 LLM 排序策略（核心）
+### 2.3 排序策略（核心）
 
 每天候选池约 50–80 篇文章。系统不应完全依赖 LLM 主观排序，而应采用“规则预评分 + LLM 复核排序”：
 
 1. 抓取层为每条候选内容补充来源层级、发布时间、原始来源、实体词等结构化字段；
-2. 规则层计算投研价值分数，形成可解释的初始排序；
+2. 规则层用确定性逻辑计算投研价值分数，形成可解释的初始排序；
 3. LLM 基于候选内容和结构化分数做最终 Top 5 选择、解释和微调；
 4. 最终入选原因、分数和 warning 写入内部归档，方便复盘。
 
@@ -138,7 +150,7 @@
 | `noveltyScore` | 是否是新增信息，而不是重复报道 |
 | `timelinessScore` | 信息新鲜度 |
 | `entityImportanceScore` | 涉及公司、人物、模型、产业链节点的重要性 |
-| `confidenceScore` | 信息是否可交叉验证 |
+| `confidenceScore` | 信息是否可交叉验证；不进入默认总分，但用于风险提示和人工复盘 |
 
 默认总分：
 
@@ -153,6 +165,8 @@ totalScore =
 
 LLM 可以基于上下文微调顺序，但必须在 `selectionReason` 中解释为什么高分候选被放弃或低分候选被选入。
 
+v0.6 不允许为预评分额外增加 LLM 调用；预评分必须可本地复现。LLM 调用仍保持“排序 1 次 + 必要时重排 1 次 + 翻译 1 次”的成本边界。
+
 **排序原则：**
 - 同一事件的多家媒体报道合并为一条，保留 `relatedUrls` / `mergedSources` / `primarySource`
 - 最近 7 天已经推送过的 URL 不得再次进入候选池；近似相同标题按同事件排除
@@ -161,7 +175,7 @@ LLM 可以基于上下文微调顺序，但必须在 `selectionReason` 中解释
 - 默认只使用最近 48 小时的文章；不足 5 条时扩大到 72 小时，再不足时可放宽时效，但不得放宽跨日去重
 - 优先"对 AI 投资决策有实质影响"的事件，而不是"有趣但无关"
 - 来源多样性是强偏好，不是绝对失败条件：候选池质量充足时 Top 5 尽量覆盖至少 3 个来源、单一来源尽量不超过 2 条；首次结果过度集中时自动要求 LLM 重排；重试后仍集中则继续产出，但写入 warning
-- 例外：`marketImpactScore >= 4.5` 且 `sourceTier = Tier 0` 的官方重大事件，不因来源多样性被剔除
+- 例外：`marketImpactScore >= 4.5` 且 `sourceTier = "tier0"` 的官方重大事件，不因来源多样性被剔除
 - LLM 用结构化 JSON 输出，便于后续自动化处理
 
 ### 2.4 事件级去重
@@ -190,6 +204,15 @@ interface NewsEvent {
 | 实体抽取 | 识别 OpenAI、NVIDIA、Microsoft、Llama、CUDA、CoWoS 等关键实体 |
 | 时间窗口 | 48/72 小时内高度相关事件合并 |
 | 事件类型 | 产品发布、模型发布、财报、融资、监管、并购、开源、论文、供应链 |
+
+v0.6 的最小实现规则：
+
+1. `canonicalUrl`：移除 fragment、常见 tracking 参数（如 `utm_*`、`fbclid`、`gclid`），标准化 host 大小写和尾部 `/`。
+2. `entities`：先用 AI 投研实体词典做规则抽取；未识别到实体时允许为空数组。
+3. `eventType`：先用关键词规则分类；无法识别时使用 `unknown`。
+4. `eventId`：优先使用 `eventType + sorted(top entities) + normalized title fingerprint` 生成 SHA-1；若实体为空，则退化为 `canonicalUrl` 的 SHA-1。
+5. 跨日去重优先级：`canonicalUrl` 精确匹配 > `eventId` 匹配 > 标题相似度阈值匹配。
+6. 同一事件再次入选时，必须在 `selectionReason` 或 `warnings` 中标注“后续进展”，否则按重复内容排除。
 
 ### 2.5 AI 投研实体词典
 
@@ -230,7 +253,7 @@ interface NewsEvent {
 #### B. 投研日历 JSON 输出
 
 - **输出路径**：`data/daily-5-things.json`
-- **Schema** 严格按照投研日历 PRD §2.6 的要求：
+- **Schema** 严格按照外部投研日历项目 PRD §2.6 的要求：
 
 ```json
 {
@@ -282,7 +305,7 @@ interface NewsEvent {
 
 ### 3.1 对外 Schema（投研日历 L2 导入格式）
 
-> 遵循投研日历 PRD §2.6 的约定。**这是写给投研日历的接口契约，只包含投研日历需要的 5 个字段。**
+> 遵循外部投研日历项目 PRD §2.6 的约定。**这是写给投研日历的接口契约，只包含投研日历需要的 5 个字段。**
 
 ```json
 {
@@ -381,6 +404,20 @@ interface RunStatus {
 }
 ```
 
+运行状态语义：
+
+| 字段 | 含义 |
+|---|---|
+| `generated` | 已完成 Top 5 生成、翻译、Schema 校验和本地 JSON 写出 |
+| `pushed` | Server酱返回成功，且已写入 `push-history.json` |
+| `committed` | 数据文件、状态文件、归档文件已提交到 Git 仓库 |
+| `schemaValid` | 对外 JSON 与内部归档 JSON 均通过本地 schema 校验 |
+| `status=success` | `generated=true`、`pushed=true`、`committed=true`、`schemaValid=true` |
+| `status=partial` | 数据已生成但推送或提交失败；工作流仍应最终返回失败，方便 8:15 兜底重试 |
+| `status=failed` | 未能生成可用 Top 5，或 schema 校验失败 |
+
+推送失败时，不得写入 `push-history.json`；8:15 兜底只以 `push-history.json` 判断是否需要重试，不以 `run-status.json` 的 `generated` 判断。
+
 ### 3.3 数据产出总结
 
 | 产出文件 | Schema | 用途 |
@@ -401,7 +438,7 @@ interface RunStatus {
 | `summary` | `summary` | 中文摘要 |
 | `url` | `url` | 原文 HTTP(S) 链接 |
 | `source` | `source` | 来源名称 |
-| `id/eventId/tags/rank/originalTitle/published/sourceTier/scores/entities/tickers/mergedSources/relatedUrls/selectionReason/warnings/createdAt` | — | 仅内部、网页与归档使用，不写入对外 JSON |
+| `id/eventId/tags/rank/originalTitle/published/sourceTier/*Score/entities/tickers/mergedSources/relatedUrls/selectionReason/warnings/createdAt` | — | 仅内部、网页与归档使用，不写入对外 JSON |
 | `dailyTheme` | — | 日报级内部字段，不写入对外 JSON |
 
 ---
@@ -414,7 +451,7 @@ interface RunStatus {
 |---|---|---|
 | **语言** | Python 3.12+ | RSS 解析、HTTP 请求生态成熟（`feedparser`/`requests`/`beautifulsoup4`） |
 | **调度** | GitHub Actions | 免费、无需服务器、与 GitHub 生态深度整合 |
-| **LLM** | Claude API / OpenAI API / 免费 LLM API | 排序 1 次 + 翻译 1 次 = 每天 2 次调用，成本极低 |
+| **LLM** | Claude API / OpenAI API / 免费 LLM API | 排序 1 次 + 必要时重排 1 次 + 翻译 1 次；规则预评分不额外调用 LLM |
 | **微信推送** | Server酱 Turbo API | 免费、一条 HTTP 请求、无需部署 |
 | **网页** | 纯静态 HTML + JSON，从项目根目录起 HTTP 服务 | 本地 `python -m http.server 8080` 打开；或 GitHub Pages 发布 `web/` 目录 |
 | **数据持久化** | Git 仓库内 JSON 文件 + GitHub Pages artifact | 历史可用 Git 追溯，网页发布物不混入数据分支 |
@@ -445,7 +482,7 @@ BigBeautyNews/
 │   ├── pipeline/                # 处理流水线
 │   │   ├── __init__.py
 │   │   ├── dedup.py             # 去重 + 合并同事件
-│   │   ├── filter.py            # 预过滤（AI 关键词）
+│   │   ├── filter.py            # 预过滤（AI 投研实体词典）
 │   │   ├── ranker.py            # LLM 排序（Top 5）
 │   │   └── translator.py        # LLM 翻译
 │   ├── outputs/                 # 输出模块
@@ -519,7 +556,19 @@ GitHub Actions 触发（每天 UTC 23:45 = 北京次日 07:45）
 | **v0.3** | 本地网页（按日期浏览历史 5 则消息） | 浏览器打开即可查看 |
 | **v0.4** | GitHub Trending + HN 数据源接入 | 数据源完整覆盖 |
 | **v0.5** | 优化：推送幂等、来源多样性、真实样本去重调优、翻译质量与网页美化 | 稳定运行版本 |
-| **v0.6** | 投研增强：一手源、事件级去重、规则预评分、运行状态监控 | 更接近投研信息雷达 |
+| **v0.6** | 投研增强：来源分层、事件级去重、规则预评分、运行状态监控 | 更接近投研信息雷达 |
+
+### 5.1 v0.6 明确非目标
+
+以下内容允许在设计上预留字段或接口，但不得作为 v0.6 的阻塞验收项：
+
+- 不做完整 SEC / 10-K / 10-Q / 8-K 解析系统；
+- 不做财报电话会 transcript 自动摘要；
+- 不引入 embedding 向量库或 RAG 历史问答；
+- 不强制自动识别所有股票代码，`tickers` 可先为空数组或规则命中；
+- 不做多用户权限、后台管理、订阅管理；
+- 不新增邮件 / Telegram / 企业微信等第二推送通道；
+- 不改变投研日历对外 5 字段 JSON 契约。
 
 ---
 
@@ -529,7 +578,7 @@ GitHub Actions 触发（每天 UTC 23:45 = 北京次日 07:45）
 |---|---|
 | **Server酱免费额度 5 条/天** | 每天只推 1 条消息（内含 5 则，用 Markdown 排版），刚好在免费额度内 |
 | **GitHub Actions 延迟或漏调度** | 7:45 主触发 + 8:15 幂等兜底；当天已成功时不重复生成或推送 |
-| **LLM API 成本** | 正常每天调用 2 次（排序 + 翻译），排序不合规时最多重试 1 次；使用 cost-optimized 模型 |
+| **LLM API 成本** | 正常每天调用 2 次（排序 + 翻译），格式错误或来源集中时最多额外重试 / 重排 1 次；规则预评分不调用 LLM |
 | **RSS 源不可用** | 多源冗余（5 个媒体源），一个挂了不影响整体；后续可加 web scraping 备用方案 |
 | **新闻重复或过旧** | 读取最近 7 天归档做跨日去重；默认 48 小时时效窗口，候选不足时逐级放宽 |
 | **翻译质量不稳定** | Prompt 中锁定翻译风格 + 术语表，减少 LLM 随意发挥 |
@@ -545,7 +594,7 @@ GitHub Actions 触发（每天 UTC 23:45 = 北京次日 07:45）
 
 | 约定项 | 约定 |
 |---|---|
-| **数据格式** | 严格遵循投研日历 PRD §2.6 的 JSON Schema |
+| **数据格式** | 严格遵循外部投研日历项目 PRD §2.6 的 JSON Schema |
 | **文件路径** | `data/daily-5-things.json`（固定路径） |
 | **推送方式（阶段一）** | 投研日历手动导入 JSON 文件 |
 | **推送方式（阶段二）** | 投研日历 GitHub Actions 直接 `curl` 拉取 BigBeautyNews 仓库的 raw JSON URL |
@@ -554,24 +603,26 @@ GitHub Actions 触发（每天 UTC 23:45 = 北京次日 07:45）
 
 ---
 
-## 8. 需求确认 Checklist
+## 8. v0.6 验收 Checklist
 
-| # | 需求点 | 确认 |
+| # | 验收项 | 通过标准 |
 |---|---|---|
-| 1 | 数据源分层：Tier 0 一手源、Tier 1 专业源、Tier 2 媒体、Tier 3 社区趋势 | ✓ |
-| 2 | 当前接入：北美 5 大媒体 + GitHub Trending（AI 投研相关）+ Hacker News（可选） | ✓ |
-| 3 | 筛选策略：规则预评分 + LLM 复核排序，投研视角权重（大厂>竞品>产品>融资>学术>社区） | ✓ |
-| 4 | 翻译为简体中文，不发送英文原文，末尾附原文链接 | ✓ |
-| 5 | 推送：Server酱 Turbo → 微信，每天早上 7:45 | ✓ |
-| 6 | 推送：对外 JSON（5 字段）输出给投研日历；内部 JSON（完整字段）供网页 | ✓ |
-| 7 | 展示：本地网页，按日期浏览历史 | ✓ |
-| 8 | 项目名：BigBeautyNews | ✓ |
-| 9 | 运行方式：GitHub Actions，无需本地电脑开机 | ✓ |
-| 10 | 实现策略：基于现有开源项目改造 | ✓ |
-| 11 | 内容新鲜度：7 天内 URL / eventId 不重复，默认使用 48 小时内文章 | ✓ |
-| 12 | 来源多样性：候选充足时强偏好多来源，重排后仍集中则记录 warning 但不中断 | ✓ |
-| 13 | 运行状态：区分 generated / pushed / committed / schemaValid，并写入状态文件 | ✓ |
-| 14 | 业务日期：用户可见日期、归档文件、推送幂等均使用北京时间日期 | ✓ |
+| 1 | 不破坏已实现基线 | 现有每日推送、对外 JSON、网页归档、7:45 / 8:15 调度兜底、推送幂等测试继续通过 |
+| 2 | 来源分层 | 每条候选和归档新闻都有 `sourceTier`，取值统一为 `tier0` / `tier1` / `tier2` / `tier3` |
+| 3 | AI 投研实体词典 | 关键词覆盖大模型、云厂商、芯片、数据中心、光通信、模型平台、产业事件；重要 AI Capex / 芯片 / 数据中心新闻不因标题没有 “AI” 被误杀 |
+| 4 | URL 标准化 | `canonicalUrl` 移除常见 tracking 参数；同一 URL 的不同 UTM 版本不会重复入选 |
+| 5 | 最小可用 `eventId` | 能基于 `eventType + entities + title fingerprint` 生成稳定事件 ID；实体为空时退化为 canonical URL hash |
+| 6 | 跨日去重 | 最近 7 天内相同 `canonicalUrl` / `eventId` / 近似标题不得重复入选；GitHub repo URL 默认 14 天冷却 |
+| 7 | 后续进展例外 | 同一事件再次入选时，必须在 `selectionReason` 或 `warnings` 标注“后续进展”及新信息点 |
+| 8 | 规则预评分 | 每条内部候选和入选项都有 0–5 的 `sourceCredibilityScore` / `marketImpactScore` / `noveltyScore` / `timelinessScore` / `entityImportanceScore` / `confidenceScore` / `totalScore` |
+| 9 | LLM 成本边界 | 规则预评分不额外调用 LLM；正常运行仍为排序 1 次 + 翻译 1 次，只有来源集中或格式错误时允许重试 / 重排 |
+| 10 | 来源多样性 | 候选充足时先要求 LLM 重排；重排后仍集中则成功产出并记录 warning，不直接中断 |
+| 11 | 状态文件 | 每次运行写入 `data/run-status.json`；追加或更新 `data/run-history.json`；失败时写入 `data/error-log/YYYY-MM-DD.json` |
+| 12 | 状态语义 | `generated` / `pushed` / `committed` / `schemaValid` 各自独立；推送失败不得写入 `push-history.json` |
+| 13 | Schema 校验 | 对外 5 字段 JSON 和内部归档 JSON 均有本地校验；schema 失败时不得推送 |
+| 14 | 北京时间业务日期 | 用户可见日期、归档文件名、`push-history.json` 日期均使用 Asia/Shanghai；`exportedAt` 使用 UTC ISO |
+| 15 | GitHub Trending fallback | 网页爬取失败时 fallback 到 GitHub Search API；fallback 结果必须标注来源和 warning |
+| 16 | 文档同步 | README / CHANGELOG / Code Review Checklist 与 PRD v1.5 的验收口径一致 |
 
 ---
 
@@ -584,6 +635,7 @@ GitHub Actions 触发（每天 UTC 23:45 = 北京次日 07:45）
 | v1.2 | 2026-07-01 | 骨架校对修正：Server酱改为 Turbo、Schema 分层（对外 5 字段 vs 内部完整）、LLM 调用次数修正为 2 次、网页方案明确（项目根起 HTTP 服务）、Ars Technica RSS URL 修正、目录结构注释更新、Checklist 细化和迭代 |
 | v1.3 | 2026-07-05 | 内容质量修正：最近 7 天跨日去重、48/72 小时时效窗口、来源多样性硬约束、归档溯源字段；同步记录 7:45 主触发与 8:15 兜底调度 |
 | v1.4 | 2026-07-05 | 投研增强版：增加一手源优先级、规则预评分、事件级去重、AI 投研实体词典、运行状态监控、北京时间业务日期规则；来源多样性从硬失败改为强偏好 + warning |
+| v1.5 | 2026-07-05 | PRD 加固：拆分已实现基线 / v0.6 本轮实施 / 后续增强，明确非目标、最小 eventId 规则、运行状态语义、LLM 成本边界和 v0.6 验收清单 |
 
 ---
 
@@ -692,8 +744,8 @@ GitHub Actions 触发（每天 UTC 23:45 = 北京次日 07:45）
 
 | # | 检查项 | 对应用户需求 | 结果 |
 |---|---|---|---|
-| I1 | **对外 JSON**（`data/daily-5-things.json`）：Schema 严格遵循投研日历 PRD §2.6：`project`/`exportedAt`/`items[]`，每条仅含 5 字段（`date`/`title`/`summary`/`url`/`source`） | PRD §2.7-B, §3.1 | |
-| I2 | **归档 JSON**（`data/archive/YYYY-MM-DD.json`）：保留完整内部字段（含 `eventId`/`sourceTier`/`scores`/`entities`/`rank`/`tags`/`published`/`mergedSources`/`selectionReason`/`dailyTheme`） | PRD §3.2 | |
+| I1 | **对外 JSON**（`data/daily-5-things.json`）：Schema 严格遵循外部投研日历项目 PRD §2.6：`project`/`exportedAt`/`items[]`，每条仅含 5 字段（`date`/`title`/`summary`/`url`/`source`） | PRD §2.7-B, §3.1 | |
+| I2 | **归档 JSON**（`data/archive/YYYY-MM-DD.json`）：保留完整内部字段（含 `eventId`/`sourceTier`/`*Score`/`entities`/`rank`/`tags`/`published`/`mergedSources`/`selectionReason`/`dailyTheme`） | PRD §3.2 | |
 | I3 | **网页 JSON**（`web/data.json`）：保留完整内部字段，供 `app.js` 渲染 | PRD §3.2, §3.3 | |
 | I4 | 归档文件按日期命名，不覆盖历史 | PRD §7 | |
 | I5 | 维护 `data/history.json` 索引（dates 数组去重） | PRD §7 | |
@@ -721,7 +773,7 @@ GitHub Actions 触发（每天 UTC 23:45 = 北京次日 07:45）
 | K2 | 主 cron `45 23 * * *` = 北京时间 7:45；兜底 cron `15 0 * * *` = 8:15，且当天成功后跳过兜底 | PRD §2.8 | |
 | K3 | 支持 `workflow_dispatch` 手动触发 | PRD §2.8 | |
 | K4 | 通过 GitHub Secrets 注入 `SERVERCHAN_SENDKEY`、`LLM_API_KEY`、`LLM_API_BASE`、`LLM_MODEL` | PRD §4.1 | |
-| K5 | 运行成功后自动 `git commit` + `git push` 数据文件（只 add 实际存在的文件） | PRD §2.2 | |
+| K5 | 生成可用数据后自动 `git commit` + `git push` 数据文件和状态文件；若推送失败，状态仍需记录并让工作流最终失败 | PRD §3.2 | |
 | K6 | Python 版本指定为 3.12 | PRD §4.1 | |
 | K7 | `timeout-minutes` 设为 15 | `.github/workflows/daily.yml` | |
 

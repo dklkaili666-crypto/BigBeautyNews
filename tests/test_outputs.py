@@ -4,6 +4,7 @@ from outputs.json_writer import (
     build_internal_digest,
     build_external_digest,
     archive_daily_json,
+    load_recent_archive_items,
     update_history_index,
 )
 from outputs.serverchan import build_markdown_message
@@ -39,6 +40,9 @@ def test_output_schemas_keep_internal_fields_out_of_external_contract(tmp_path):
     assert set(external["items"][0]) == {"date", "title", "summary", "url", "source"}
     assert internal["dailyTheme"] == "模型竞争"
     assert internal["items"][0]["rank"] == 1
+    assert internal["items"][0]["published"] == ""
+    assert internal["items"][0]["mergedSources"] == []
+    assert internal["items"][0]["selectionReason"] == ""
     assert json.loads((tmp_path / "web" / "data.json").read_text("utf-8")) == internal
 
 
@@ -49,6 +53,27 @@ def test_history_index_deduplicates_and_sorts_dates(tmp_path):
     result = update_history_index(str(path), "2026-07-01")
 
     assert result["dates"] == ["2026-07-01", "2026-06-30"]
+
+
+def test_recent_archive_loader_excludes_today_and_old_entries(tmp_path):
+    archive_dir = tmp_path / "archive"
+    archive_dir.mkdir()
+    for date in ("2026-06-27", "2026-07-03", "2026-07-04", "2026-07-05"):
+        (archive_dir / f"{date}.json").write_text(
+            json.dumps({"items": [{"url": f"https://example.com/{date}"}]}),
+            encoding="utf-8",
+        )
+
+    result = load_recent_archive_items(
+        str(archive_dir),
+        before_date="2026-07-05",
+        days=7,
+    )
+
+    assert [item["url"] for item in result] == [
+        "https://example.com/2026-07-03",
+        "https://example.com/2026-07-04",
+    ]
 
 
 def test_serverchan_message_contains_five_markdown_links():

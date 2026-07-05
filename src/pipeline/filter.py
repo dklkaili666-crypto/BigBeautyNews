@@ -3,6 +3,8 @@
 在 LLM 排序之前执行，减少 LLM 调用的 token 开销。
 """
 from __future__ import annotations
+from datetime import datetime, timezone
+from difflib import SequenceMatcher
 from typing import Any
 import re
 
@@ -28,6 +30,75 @@ AI_KEYWORDS: list[str] = [
 
 # 必须包含的关键词（至少命中一个才算 AI 相关）
 MIN_AI_KEYWORD_MATCHES = 1
+
+
+def _normalized_title(title: str) -> str:
+    return " ".join(re.findall(r"\w+", title.casefold()))
+
+
+def exclude_historical_duplicates(
+    articles: list[dict[str, Any]],
+    historical_items: list[dict[str, Any]],
+    title_threshold: float = 0.85,
+) -> list[dict[str, Any]]:
+    """排除近期已推送的 URL 和近似相同事件。"""
+    historical_urls = {
+        str(item.get("url", "")).strip()
+        for item in historical_items
+        if item.get("url")
+    }
+    historical_titles = [
+        _normalized_title(
+            str(item.get("originalTitle") or item.get("title") or "")
+        )
+        for item in historical_items
+    ]
+    historical_titles = [title for title in historical_titles if title]
+
+    result: list[dict[str, Any]] = []
+    for article in articles:
+        if str(article.get("url", "")).strip() in historical_urls:
+            continue
+        title = _normalized_title(str(article.get("title", "")))
+        if title and any(
+            SequenceMatcher(None, title, historical_title).ratio() >= title_threshold
+            for historical_title in historical_titles
+        ):
+            continue
+        result.append(article)
+    return result
+
+
+def filter_recent_articles(
+    articles: list[dict[str, Any]],
+    *,
+    now: datetime,
+    max_age_hours: int,
+) -> list[dict[str, Any]]:
+    """保留时效窗口内文章；无发布时间的实时来源不在此处淘汰。"""
+    if now.tzinfo is None:
+        raise ValueError("now 必须包含时区")
+    result: list[dict[str, Any]] = []
+    for article in articles:
+        published_text = str(article.get("published") or "").strip()
+        if not published_text:
+            result.append(article)
+            continue
+        try:
+            published = datetime.fromisoformat(
+                published_text.replace("Z", "+00:00")
+            )
+        except ValueError:
+            result.append(article)
+            continue
+        if published.tzinfo is None:
+            published = published.replace(tzinfo=timezone.utc)
+        age_hours = (
+            now.astimezone(timezone.utc) - published.astimezone(timezone.utc)
+        ).total_seconds() / 3600
+        if age_hours <= max_age_hours:
+            result.append(article)
+    return result
 
 
 def filter_ai_related(

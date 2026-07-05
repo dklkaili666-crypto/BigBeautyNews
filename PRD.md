@@ -1,6 +1,6 @@
 # BigBeautyNews PRD
 
-> 版本：v1.2 | 日期：2026-07-01 | 状态：已定稿 | 变更：修正 Server酱版本、Schema 分层、LLM 调用次数、网页方案、RSS 源 URL、Actions 权限等骨架校对问题
+> 版本：v1.3 | 日期：2026-07-05 | 状态：已定稿 | 变更：增加跨日去重、新闻时效窗口、来源多样性硬约束和定时任务兜底
 
 ---
 
@@ -70,8 +70,9 @@
 │                            ▼                                          │
 │              ┌─────────────────────────┐                             │
 │              │  候选池（原始数据集合）      │                             │
-│              │  去重 + 合并同事件报道      │                             │
-│              │  预过滤：标题/内容含 AI     │                             │
+│              │  当日去重 + 合并同事件报道    │                             │
+│              │  跨日去重 + 48/72 小时时效   │                             │
+│              │  预过滤：标题/内容含 AI      │                             │
 │              └────────────┬────────────┘                             │
 │                           ▼                                           │
 │              ┌─────────────────────────┐                             │
@@ -112,8 +113,10 @@
 
 **排序原则：**
 - 同一条新闻的多家媒体报道合并为一条
+- 最近 7 天已经推送过的 URL 不得再次进入候选池；近似相同标题按同事件排除
+- 默认只使用最近 48 小时的文章；不足 5 条时扩大到 72 小时，再不足时可放宽时效，但不得放宽跨日去重
 - 优先"对 AI 投资决策有实质影响"的事件，而不是"有趣但无关"
-- 候选池有至少 3 个来源时，Top 5 目标覆盖至少 3 个来源、单一来源通常不超过 2 条；首次结果过度集中时自动要求 LLM 重排一次，重试后仍集中则保留重要性排序并记录 warning
+- 候选池有至少 3 个来源时，Top 5 必须覆盖至少 3 个来源、单一来源最多 2 条；首次结果过度集中时自动要求 LLM 重排，重试后仍不合规则本次运行失败
 - LLM 用结构化 JSON 输出，便于后续自动化处理
 
 ### 2.4 翻译要求
@@ -177,7 +180,8 @@
 ### 2.6 定时执行
 
 - **引擎**：GitHub Actions `schedule` cron
-- **时间**：`cron: '45 23 * * *'`（UTC），即北京时间次日早上 7:45；避开 GitHub Actions 每小时开头的调度高峰
+- **时间**：主触发 `cron: '45 23 * * *'`（UTC），即北京时间次日早上 7:45；兜底触发 `cron: '15 0 * * *'`，即北京时间 8:15
+- **兜底幂等**：8:15 运行前检查当天推送状态，已成功则跳过，未成功则重试完整流水线
 - **无需本地电脑开机**：所有抓取、处理、推送均在 GitHub 云服务器上完成
 - **手动触发**：支持 `workflow_dispatch`，手动运行一次
 - **注意事项**：
@@ -224,6 +228,9 @@ interface NewsItem {
   tags: string[];                // 标签（如 ["大模型", "OpenAI", "融资"]）
   rank: number;                  // 当日排序 1–5
   originalTitle?: string;        // 原文标题（保留，用于溯源）
+  published?: string;            // 原文发布时间 ISO 8601
+  mergedSources: string[];       // 同事件合并的媒体来源
+  selectionReason: string;       // LLM 给出的入选原因
   createdAt: string;             // 生成时间 ISO 8601
 }
 
@@ -263,7 +270,7 @@ interface HistoryIndex {
 | `summary` | `summary` | 中文摘要 |
 | `url` | `url` | 原文 HTTP(S) 链接 |
 | `source` | `source` | 来源名称 |
-| `id/tags/rank/originalTitle/createdAt` | — | 仅内部、网页与归档使用，不写入对外 JSON |
+| `id/tags/rank/originalTitle/published/mergedSources/selectionReason/createdAt` | — | 仅内部、网页与归档使用，不写入对外 JSON |
 | `dailyTheme` | — | 日报级内部字段，不写入对外 JSON |
 
 ---
@@ -385,9 +392,10 @@ GitHub Actions 触发（每天 UTC 23:45 = 北京次日 07:45）
 | 风险 | 对策 |
 |---|---|
 | **Server酱免费额度 5 条/天** | 每天只推 1 条消息（内含 5 则，用 Markdown 排版），刚好在免费额度内 |
-| **GitHub Actions 延迟** | 接受 0–40 分钟延迟，不是强实时需求 |
-| **LLM API 成本** | 每天调用约 2 次（排序 + 翻译），用 cost-optimized 模型（如 deepseek-chat 或 GPT-4o-mini），成本 < ¥0.1/天 |
+| **GitHub Actions 延迟或漏调度** | 7:45 主触发 + 8:15 幂等兜底；当天已成功时不重复生成或推送 |
+| **LLM API 成本** | 正常每天调用 2 次（排序 + 翻译），排序不合规时最多重试 1 次；使用 cost-optimized 模型 |
 | **RSS 源不可用** | 多源冗余（5 个媒体源），一个挂了不影响整体；后续可加 web scraping 备用方案 |
+| **新闻重复或过旧** | 读取最近 7 天归档做跨日去重；默认 48 小时时效窗口，候选不足时逐级放宽 |
 | **翻译质量不稳定** | Prompt 中锁定翻译风格 + 术语表，减少 LLM 随意发挥 |
 
 ---
@@ -419,6 +427,8 @@ GitHub Actions 触发（每天 UTC 23:45 = 北京次日 07:45）
 | 8 | 项目名：BigBeautyNews | ✓ |
 | 9 | 运行方式：GitHub Actions，无需本地电脑开机 | ✓ |
 | 10 | 实现策略：基于现有开源项目改造 | ✓ |
+| 11 | 内容新鲜度：7 天内 URL 不重复，默认使用 48 小时内文章 | ✓ |
+| 12 | 来源多样性：候选充足时至少 3 个来源，单一来源最多 2 条 | ✓ |
 
 ---
 
@@ -429,6 +439,7 @@ GitHub Actions 触发（每天 UTC 23:45 = 北京次日 07:45）
 | v1.0 | 2026-07-01 | 初稿，基于与用户的完整需求讨论 |
 | v1.1 | 2026-07-01 | 新增 Code Review Checklist（附录） |
 | v1.2 | 2026-07-01 | 骨架校对修正：Server酱改为 Turbo、Schema 分层（对外 5 字段 vs 内部完整）、LLM 调用次数修正为 2 次、网页方案明确（项目根起 HTTP 服务）、Ars Technica RSS URL 修正、目录结构注释更新、Checklist 细化和迭代 |
+| v1.3 | 2026-07-05 | 内容质量修正：最近 7 天跨日去重、48/72 小时时效窗口、来源多样性硬约束、归档溯源字段；同步记录 7:45 主触发与 8:15 兜底调度 |
 
 ---
 
@@ -487,11 +498,13 @@ GitHub Actions 触发（每天 UTC 23:45 = 北京次日 07:45）
 
 | # | 检查项 | 对应用户需求 | 结果 |
 |---|---|---|---|
-| E1 | 标题相似度去重：跨来源阈值 0.65、同来源阈值 0.95；同事件多源报道合并，避免同源相似但不同事件误合并 | PRD §2.2 | |
+| E1 | 当日标题相似度去重：跨来源阈值 0.65、同来源阈值 0.95；同事件多源报道合并 | PRD §2.2 | |
 | E2 | 合并时保留 `merged_sources` 字段，供 LLM 排序时权重上调 | PRD §2.3 | |
 | E3 | AI 关键词预过滤器正确实现，关键词列表覆盖大模型/芯片/投资等核心词 | PRD §2.2 | |
 | E4 | GitHub Trending 数据源的数据跳过关键词过滤器（已在抓取时筛选） | PRD §2.2 | |
-| E5 | 过滤后候选不足 5 篇时，回退到去重后全量 | `main.py` | |
+| E5 | 最近 7 天已推送 URL 硬排除，近似相同标题按 0.85 阈值排除 | PRD §2.3 | |
+| E6 | 默认使用 48 小时内文章；不足 5 条扩大到 72 小时，再不足才放宽时效 | PRD §2.3 | |
+| E7 | 时效回退不得重新引入最近 7 天已推送内容 | PRD §2.3 | |
 
 ### F. LLM 排序模块（核心）
 
@@ -504,7 +517,7 @@ GitHub Actions 触发（每天 UTC 23:45 = 北京次日 07:45）
 | F5 | 正确将候选文章格式化为 Prompt 中的编号列表 | `ranker.py` | |
 | F6 | `select_top5()` 正确根据 LLM 输出的 `source_article_index` 从候选池取出对应文章 | `ranker.py` | |
 | F7 | LLM 调用异常有明确的错误处理和日志 | PRD §6 | |
-| F8 | 候选池来源充足时检查 Top 5 来源多样性；过度集中自动重排一次，重试后仍集中只 warning、不阻断产出 | PRD §2.3 | |
+| F8 | 候选池来源充足时，Top 5 必须覆盖至少 3 个来源且单一来源最多 2 条；重排后仍不合规则运行失败 | PRD §2.3 | |
 
 ### G. LLM 翻译模块
 
@@ -523,9 +536,9 @@ GitHub Actions 触发（每天 UTC 23:45 = 北京次日 07:45）
 | H1 | API 调用格式正确：`POST https://sctapi.ftqq.com/{sendkey}.send` | PRD §2.5-A | |
 | H2 | `title` 包含日期标识（如 "🤖 AI 每日 5 件事 | 2026-07-01"） | PRD §2.5-A | |
 | H3 | `desp` 为 Markdown 格式，5 条消息排版清晰可读 | PRD §2.5-A | |
-| H4 | `sendkey` 未配置时跳过推送（warning 日志）而非报错崩溃 | PRD §2.5-A | |
+| H4 | `sendkey` 未配置时记录明确错误并使流水线失败 | PRD §2.5-A | |
 | H5 | API 返回 `code=0` 时确认为成功，非 0 时记录错误日志 | `serverchan.py` | |
-| H6 | 推送失败不影响流水线其他步骤（非阻断错误） | `main.py` | |
+| H6 | 推送失败时流水线返回失败，不写入成功推送状态，允许兜底任务重试 | `main.py` | |
 | H7 | 推送成功后写入 `data/push-history.json`；同日重跑不重复推送，`--force-push` 可显式重发 | `main.py` | |
 
 ### I. JSON 输出
@@ -533,7 +546,7 @@ GitHub Actions 触发（每天 UTC 23:45 = 北京次日 07:45）
 | # | 检查项 | 对应用户需求 | 结果 |
 |---|---|---|---|
 | I1 | **对外 JSON**（`data/daily-5-things.json`）：Schema 严格遵循投研日历 PRD §2.6：`project`/`exportedAt`/`items[]`，每条仅含 5 字段（`date`/`title`/`summary`/`url`/`source`） | PRD §2.5-B, §3.1 | |
-| I2 | **归档 JSON**（`data/archive/YYYY-MM-DD.json`）：保留完整内部字段（含 `rank`/`tags`/`dailyTheme`） | PRD §3.2 | |
+| I2 | **归档 JSON**（`data/archive/YYYY-MM-DD.json`）：保留完整内部字段（含 `rank`/`tags`/`published`/`mergedSources`/`selectionReason`/`dailyTheme`） | PRD §3.2 | |
 | I3 | **网页 JSON**（`web/data.json`）：保留完整内部字段，供 `app.js` 渲染 | PRD §3.2, §3.3 | |
 | I4 | 归档文件按日期命名，不覆盖历史 | PRD §7 | |
 | I5 | 维护 `data/history.json` 索引（dates 数组去重） | PRD §7 | |
@@ -542,7 +555,7 @@ GitHub Actions 触发（每天 UTC 23:45 = 北京次日 07:45）
 
 | # | 检查项 | 对应用户需求 | 结果 |
 |---|---|---|---|
-| J1 | `main.py` 按正确顺序编排流水线：并行抓取所有源（RSS + GitHub Trending + HN）→ 去重 → 过滤 → 排序 → 翻译 → 输出 | PRD §2.2 | |
+| J1 | `main.py` 按正确顺序编排流水线：并行抓取 → 当日去重 → 跨日去重 → AI 过滤 → 时效过滤 → 排序 → 翻译 → 输出 | PRD §2.2 | |
 | J2 | `--dry-run` 模式下不推送微信、不写文件，但仍执行抓取+排序+翻译 | `main.py` | |
 | J3 | 每步有清晰的日志输出和耗时信息 | 工程规范 | |
 | J4 | 候选池不足 5 篇时明确报错退出（exit code 1） | `main.py` | |
@@ -555,7 +568,7 @@ GitHub Actions 触发（每天 UTC 23:45 = 北京次日 07:45）
 | # | 检查项 | 对应用户需求 | 结果 |
 |---|---|---|---|
 | K1 | Workflow 文件位于 `.github/workflows/daily.yml`，`permissions: contents: write` | PRD §4.3 | |
-| K2 | cron 表达式 `45 23 * * *` (UTC) = 北京时间次日 7:45，并避开整点调度高峰 | PRD §2.6 | |
+| K2 | 主 cron `45 23 * * *` = 北京时间 7:45；兜底 cron `15 0 * * *` = 8:15，且当天成功后跳过兜底 | PRD §2.6 | |
 | K3 | 支持 `workflow_dispatch` 手动触发 | PRD §2.6 | |
 | K4 | 通过 GitHub Secrets 注入 `SERVERCHAN_SENDKEY`、`LLM_API_KEY`、`LLM_API_BASE`、`LLM_MODEL` | PRD §4.1 | |
 | K5 | 运行成功后自动 `git commit` + `git push` 数据文件（只 add 实际存在的文件） | PRD §2.2 | |

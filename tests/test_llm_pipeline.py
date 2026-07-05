@@ -1,6 +1,8 @@
 import json
 from types import SimpleNamespace
 
+import pytest
+
 from pipeline import ranker, translator
 
 
@@ -73,6 +75,31 @@ def test_ranking_retries_when_top_five_are_dominated_by_one_source(monkeypatch):
 
     assert completions.calls == 2
     assert [item["source_article_index"] for item in result["top5"]] == diversified_indices
+
+
+def test_ranking_fails_when_retry_still_violates_source_diversity(monkeypatch):
+    concentrated = {
+        "top5": [
+            {"rank": i + 1, "source_article_index": i, "reason": "重要", "tags": ["AI"]}
+            for i in range(5)
+        ],
+        "daily_theme": "模型竞争",
+    }
+    client, completions = fake_client([
+        json.dumps(concentrated),
+        json.dumps(concentrated),
+    ])
+    monkeypatch.setattr(ranker, "OpenAI", lambda **kwargs: client)
+    articles = [
+        *[{"title": f"TC {i}", "url": f"https://tc/{i}", "source": "TechCrunch"} for i in range(5)],
+        *[{"title": f"Wired {i}", "url": f"https://wired/{i}", "source": "Wired"} for i in range(3)],
+        *[{"title": f"Verge {i}", "url": f"https://verge/{i}", "source": "The Verge"} for i in range(2)],
+    ]
+
+    with pytest.raises(RuntimeError, match="LLM 排序调用失败"):
+        ranker.call_llm_ranking(articles, "key", "https://api", "model")
+
+    assert completions.calls == 2
 
 
 def test_translation_accepts_near_target_summary_and_preserves_metadata(monkeypatch, caplog):

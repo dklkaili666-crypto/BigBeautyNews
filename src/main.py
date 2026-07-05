@@ -29,7 +29,7 @@ import argparse
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import logging
 import sys
-from datetime import datetime
+from datetime import datetime, timezone
 from time import perf_counter
 from zoneinfo import ZoneInfo
 from collections.abc import Callable
@@ -56,7 +56,11 @@ from fetchers.rss_fetcher import fetch_all_sources
 from fetchers.github_trending import fetch_trending
 from fetchers.hacker_news import fetch_hn_top_ai
 from pipeline.dedup import dedup_candidates
-from pipeline.filter import filter_ai_related
+from pipeline.filter import (
+    exclude_historical_duplicates,
+    filter_ai_related,
+    filter_recent_articles,
+)
 from pipeline.ranker import select_top5, call_llm_ranking
 from pipeline.translator import translate_top5
 from outputs.serverchan import push_to_wechat
@@ -65,6 +69,7 @@ from outputs.json_writer import (
     build_external_digest,
     write_daily_json,
     archive_daily_json,
+    load_recent_archive_items,
     update_history_index,
 )
 from outputs.web_builder import write_web_data
@@ -143,12 +148,50 @@ def run_pipeline(dry_run: bool = False, force_push: bool = False) -> dict:
     # 第 3 步：AI 关键词预过滤
     # ============================================================
     logger.info("[3/6] AI 关键词预过滤...")
-    filtered = filter_ai_related(deduped)
-    logger.info(f"  过滤后: {len(filtered)} 篇 (减少 {len(deduped) - len(filtered)})")
+    historical_items = load_recent_archive_items(
+        ARCHIVE_DIR,
+        before_date=today,
+        days=7,
+    )
+    unseen = exclude_historical_duplicates(deduped, historical_items)
+    logger.info(
+        "  跨日去重后: %s 篇 (排除 %s 篇)",
+        len(unseen),
+        len(deduped) - len(unseen),
+    )
+    filtered = filter_ai_related(unseen)
+    logger.info(f"  AI 过滤后: {len(filtered)} 篇 (减少 {len(unseen) - len(filtered)})")
 
     if len(filtered) < TOP_K:
-        logger.warning(f"过滤后不足 {TOP_K} 篇，使用去重后全量")
-        filtered = deduped
+        logger.warning(f"AI 过滤后不足 {TOP_K} 篇，使用跨日去重后全量")
+        filtered = unseen
+
+    now_utc = datetime.now(timezone.utc)
+    recent_48h = filter_recent_articles(
+        filtered,
+        now=now_utc,
+        max_age_hours=48,
+    )
+    if len(recent_48h) >= TOP_K:
+        filtered = recent_48h
+        logger.info("  使用 48 小时时效窗口: %s 篇", len(filtered))
+    else:
+        recent_72h = filter_recent_articles(
+            filtered,
+            now=now_utc,
+            max_age_hours=72,
+        )
+        if len(recent_72h) >= TOP_K:
+            filtered = recent_72h
+            logger.warning("  48 小时候选不足，扩大到 72 小时: %s 篇", len(filtered))
+        else:
+            logger.warning("  72 小时候选仍不足，保留全部未推送候选")
+
+    if len(filtered) < TOP_K:
+        return {
+            "status": "error",
+            "reason": f"跨日去重后候选文章仅 {len(filtered)} 篇",
+        }
 
     # ============================================================
     # 第 4 步：LLM 排序 → Top 5

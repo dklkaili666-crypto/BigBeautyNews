@@ -24,7 +24,7 @@ import json
 import os
 import uuid
 from urllib.parse import urlparse
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 import logging
 
 logger = logging.getLogger(__name__)
@@ -72,6 +72,9 @@ def build_internal_digest(
                 "tags": list(item.get("tags") or []),
                 "rank": int(item.get("rank", index)),
                 "originalTitle": item.get("originalTitle", item.get("title", "")),
+                "published": item.get("published", ""),
+                "mergedSources": list(item.get("merged_sources") or []),
+                "selectionReason": item.get("reason", ""),
                 "createdAt": exported_at,
             }
             for index, item in enumerate(items, start=1)
@@ -140,6 +143,41 @@ def archive_daily_json(
         json.dump(digest, f, ensure_ascii=False, indent=2)
     logger.info(f"归档 JSON 已写出: {archive_path}")
     return archive_path
+
+
+def load_recent_archive_items(
+    archive_dir: str,
+    *,
+    before_date: str,
+    days: int,
+) -> list[dict[str, Any]]:
+    """读取指定日期之前若干天的归档条目。"""
+    before = datetime.strptime(before_date, "%Y-%m-%d").date()
+    earliest = before - timedelta(days=days)
+    items: list[dict[str, Any]] = []
+    if not os.path.isdir(archive_dir):
+        return items
+    for filename in sorted(os.listdir(archive_dir)):
+        if not filename.endswith(".json"):
+            continue
+        try:
+            archive_date = datetime.strptime(filename[:-5], "%Y-%m-%d").date()
+        except ValueError:
+            continue
+        if not earliest <= archive_date < before:
+            continue
+        path = os.path.join(archive_dir, filename)
+        try:
+            with open(path, encoding="utf-8") as file:
+                digest = json.load(file)
+            archived_items = digest.get("items", [])
+            if isinstance(archived_items, list):
+                items.extend(
+                    item for item in archived_items if isinstance(item, dict)
+                )
+        except (OSError, json.JSONDecodeError) as exc:
+            logger.warning("历史归档读取失败，跳过 %s: %s", path, exc)
+    return items
 
 
 def update_history_index(

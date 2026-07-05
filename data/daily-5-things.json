@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-07-05T01:20:10Z",
+  "exportedAt": "2026-07-05T06:38:10Z",
   "items": [
     {
       "date": "2026-07-05",
-      "title": "微软斥资25亿美元成立AI部署公司，对标亚马逊与OpenAI",
-      "summary": "微软宣布以25亿美元成立AI部署公司，直接对标亚马逊、OpenAI和Anthropic，标志着科技巨头在AI基础设施和应用落地上的战略加码。此举将加速企业级AI部署，对行业竞争格局和资本流向产生重大影响，投资者需关注微软在AI服务化领域的布局及其对云服务市场的潜在重塑。",
-      "url": "https://techcrunch.com/2026/07/02/microsoft-launches-its-own-ai-deployment-company-with-2-5-billion-commitment/",
+      "title": "Anthropic发布Claude Science进军药物研发，AI大模型向垂直科学领域扩张",
+      "summary": "Anthropic在“AI for Science”活动中推出Claude Science，这是一个面向科学家的AI工作台，整合碎片化工具与数据集，并支持图表生成。此举标志着Anthropic从代码工具向垂直科学领域的战略扩张，直接挑战现有AI+生物医药格局。投资者需关注其能否在药物研发领域复制代码工具的成功，以及该领域商业化潜力。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/961311/anthropic-claude-science-ai-drug-development",
+      "source": "The Verge"
+    },
+    {
+      "date": "2026-07-05",
+      "title": "GPT-5.5 Codex推理token聚类或致性能下降，影响OpenAI技术领先性",
+      "summary": "Hacker News社区发现，GPT-5.5 Codex的推理token聚类可能导致性能退化。这一发现可能影响OpenAI下一代模型的发布节奏，并引发投资者对其技术领先性的重新评估。若问题持续，可能削弱OpenAI在AI竞赛中的优势地位。",
+      "url": "https://github.com/openai/codex/issues/30364",
+      "source": "Hacker News"
+    },
+    {
+      "date": "2026-07-05",
+      "title": "阿里巴巴内部禁用Claude Code，中美AI工具竞争加剧",
+      "summary": "阿里巴巴将Anthropic的Claude Code列为高风险软件并禁止员工使用，反映中美AI工具竞争升级及企业数据安全担忧。此举可能限制Anthropic在中国市场的拓展，同时凸显中国科技巨头对海外AI工具的审慎态度。投资者需关注地缘政治对AI工具跨境部署的影响。",
+      "url": "https://techcrunch.com/2026/07/04/alibaba-reportedly-bans-employees-from-using-claude-code/",
       "source": "TechCrunch"
     },
     {
       "date": "2026-07-05",
-      "title": "Anthropic与三星洽谈定制AI芯片，加速摆脱对英伟达依赖",
-      "summary": "Anthropic正与三星讨论开发定制AI芯片，紧随OpenAI与博通的合作，显示头部AI公司正加速自研芯片以降低对英伟达GPU的依赖。此举可能重塑芯片供应链格局，投资者需关注定制芯片对AI推理成本和性能的影响，以及三星在AI半导体领域的战略突破。",
-      "url": "https://techcrunch.com/2026/07/02/anthropic-is-discussing-a-new-custom-chip-with-samsung/",
+      "title": "Midjourney要求好莱坞披露AI使用细节，或推动行业透明度标准",
+      "summary": "在与三家好莱坞工作室的诉讼中，Midjourney要求对方披露自身AI使用细节。此举可能推动影视行业AI使用透明度标准的建立，影响AI内容生成的法律与商业边界。投资者需关注此案对AI在创意产业应用的监管先例意义。",
+      "url": "https://techcrunch.com/2026/07/04/midjourney-wants-hollywood-studios-to-reveal-the-details-of-their-ai-usage/",
       "source": "TechCrunch"
     },
     {
       "date": "2026-07-05",
-      "title": "OpenAI提议捐赠5%股权给美国主权财富基金，缓解监管压力",
-      "summary": "OpenAI CEO Sam Altman提议将公司5%股权捐赠给美国主权财富基金，旨在缓解监管压力并争取公众支持。这一资本结构创新可能成为AI公司治理的新范式，影响估值和投资逻辑。投资者需评估此举对OpenAI未来融资、IPO路径及行业监管环境的潜在影响。",
-      "url": "https://techcrunch.com/2026/07/02/openai-proposed-donating-5-of-its-equity-to-a-us-sovereign-wealth-fund/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-07-05",
-      "title": "Venice AI以6500万美元A轮融资跻身独角兽，隐私优先模式盈利强劲",
-      "summary": "Venice AI完成6500万美元A轮融资，估值达独角兽级别，且已实现盈利，年化收入超7000万美元。其隐私优先的AI平台证明了差异化策略的商业可行性，在AI投资中开辟了值得关注的细分赛道。投资者应关注隐私合规需求增长对AI平台商业模式的长期驱动。",
-      "url": "https://techcrunch.com/2026/07/01/venice-ai-becomes-a-unicorn-with-65m-series-a-as-its-privacy-first-ai-platform-takes-off/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-07-05",
-      "title": "Anthropic发布旗舰产品Claude Science，AI赋能科学研究新纪元",
-      "summary": "Anthropic推出Claude Science，瞄准科学研究领域，类似于Claude Code对软件工程的颠覆。该产品能根据简洁指令自主执行科研任务，将AI应用从编程扩展到科研，开辟新的企业级市场。投资者需关注AI在生命科学、药物研发等垂直领域的商业化潜力及对传统科研流程的变革。",
-      "url": "https://www.technologyreview.com/2026/06/30/1139987/claude-science-is-anthropics-newest-flagship-product/",
-      "source": "MIT Technology Review"
+      "title": "开源AI渗透测试工具Strix获近2000星，AI安全需求爆发",
+      "summary": "开源AI渗透测试工具Strix（usestrix/strix）在GitHub Trending上获得近2000星，旨在帮助开发者发现和修复应用漏洞。这反映AI安全工具需求爆发，可能催生新的AI安全创业与投资机会。投资者应关注AI安全赛道的增长潜力及商业化路径。",
+      "url": "https://github.com/usestrix/strix",
+      "source": "GitHub Trending"
     }
   ]
 }

@@ -1,0 +1,16 @@
+{
+  "date": "2026-07-05",
+  "status": "success",
+  "startedAt": "2026-07-05T06:37:55Z",
+  "finishedAt": "2026-07-05T06:38:11Z",
+  "candidateCount": 81,
+  "selectedCount": 5,
+  "sourcesAvailable": 7,
+  "llmModel": "deepseek-chat",
+  "generated": true,
+  "pushed": true,
+  "committed": true,
+  "schemaValid": true,
+  "warnings": [],
+  "errors": []
+}

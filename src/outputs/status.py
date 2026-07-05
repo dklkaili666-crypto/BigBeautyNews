@@ -74,3 +74,28 @@ def write_run_status(status: dict[str, Any], data_dir: str) -> None:
         error_path = os.path.join(error_dir, f"{status.get('date')}.json")
         with open(error_path, "w", encoding="utf-8") as file:
             json.dump(status, file, ensure_ascii=False, indent=2)
+
+
+def mark_latest_run_committed(data_dir: str) -> None:
+    """Mark the latest status as committed immediately before the workflow commits data."""
+    status_path = os.path.join(data_dir, "run-status.json")
+    history_path = os.path.join(data_dir, "run-history.json")
+
+    with open(status_path, encoding="utf-8") as file:
+        status = json.load(file)
+    if isinstance(status, dict):
+        status["committed"] = True
+    with open(status_path, "w", encoding="utf-8") as file:
+        json.dump(status, file, ensure_ascii=False, indent=2)
+
+    if not os.path.exists(history_path):
+        return
+    with open(history_path, encoding="utf-8") as file:
+        history = json.load(file)
+    runs = history.get("runs") if isinstance(history, dict) else None
+    if not isinstance(runs, list) or not runs:
+        return
+    if isinstance(runs[-1], dict):
+        runs[-1]["committed"] = True
+    with open(history_path, "w", encoding="utf-8") as file:
+        json.dump(history, file, ensure_ascii=False, indent=2)

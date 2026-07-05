@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+### v0.6.2 P2 质量修复
+- 扩展高频 AI 实体词典，覆盖 Midjourney、Strix、Mistral AI、xAI、CoreWeave、阿里/百度/腾讯/华为等实体
+- 修正 `committed` 状态语义：主流程默认写入 `false`，GitHub Actions 在提交数据前标记为 `true` 并随数据一起提交
+
 ### v0.6.1 P1 质量修复
 - 收紧泛政策/监管/禁令关键词：仅有 `policy`、`ban`、`regulation` 或正文中顺带出现一次泛化 `AI` 时，不再进入 AI 候选池
 - Top 5 排序新增社区源上限：`GitHub Trending` / `Hacker News` 默认最多 1 条，超限会触发一次重排；重排后仍超限则记录 warning

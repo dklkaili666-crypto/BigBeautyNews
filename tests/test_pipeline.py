@@ -171,6 +171,19 @@ def test_enrichment_does_not_boost_generic_regulation_without_ai_context():
     assert result[0]["marketImpactScore"] < 4
 
 
+def test_enrichment_extracts_high_frequency_ai_entities():
+    result = enrich_articles([
+        {
+            "title": "Midjourney asks studios to disclose AI usage",
+            "url": "https://example.com/midjourney",
+            "source": "TechCrunch",
+            "summary": "usestrix/strix trends on GitHub as AI security tooling grows.",
+        }
+    ])
+
+    assert result[0]["entities"] == ["Midjourney", "Strix"]
+
+
 def test_canonical_url_normalizes_tracking_parameters():
     assert (
         canonicalize_url("HTTPS://Example.com/a/?utm_campaign=x&fbclid=y&keep=1#x")

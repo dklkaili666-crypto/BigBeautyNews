@@ -12,3 +12,4 @@ def test_daily_workflow_has_fallback_schedule_and_skips_duplicate_pushes():
     assert "steps.push-check.outputs.should_run == 'true'" in workflow
     assert "force_push" in workflow
     assert "python src/main.py --force-push" in workflow
+    assert "mark_latest_run_committed" in workflow

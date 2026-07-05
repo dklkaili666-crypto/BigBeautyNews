@@ -77,3 +77,4 @@ def test_pipeline_retries_failed_push_then_skips_duplicate_success(
     assert first_status["generated"] is True
     assert first_status["pushed"] is False
     assert latest_status["status"] == "success"
+    assert latest_status["committed"] is False

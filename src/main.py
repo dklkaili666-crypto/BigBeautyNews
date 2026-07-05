@@ -130,7 +130,7 @@ def run_pipeline(dry_run: bool = False, force_push: bool = False) -> dict:
                 llm_model=LLM_MODEL,
                 generated=generated,
                 pushed=pushed,
-                committed=status == "success",
+                committed=False,
                 schema_valid=schema_valid,
                 warnings=warnings,
                 errors=errors_for_status or [],

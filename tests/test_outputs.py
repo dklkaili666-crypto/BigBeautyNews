@@ -9,7 +9,7 @@ from outputs.json_writer import (
     validate_external_digest,
     validate_internal_digest,
 )
-from outputs.status import build_run_status, write_run_status
+from outputs.status import build_run_status, mark_latest_run_committed, write_run_status
 from outputs.serverchan import build_markdown_message
 from outputs.web_builder import write_web_data
 
@@ -140,6 +140,48 @@ def test_run_status_files_capture_independent_state_flags(tmp_path):
     assert current["pushed"] is False
     assert history["runs"][0]["status"] == "partial"
     assert error_log["errors"] == ["push failed"]
+
+
+def test_mark_latest_run_committed_updates_current_and_history(tmp_path):
+    data_dir = tmp_path / "data"
+    first_status = build_run_status(
+        date_str="2026-07-04",
+        status="success",
+        started_at="2026-07-03T23:45:00Z",
+        finished_at="2026-07-03T23:46:00Z",
+        candidate_count=10,
+        selected_count=5,
+        sources_available=3,
+        llm_model="model",
+        generated=True,
+        pushed=True,
+        committed=True,
+        schema_valid=True,
+    )
+    latest_status = build_run_status(
+        date_str="2026-07-05",
+        status="success",
+        started_at="2026-07-04T23:45:00Z",
+        finished_at="2026-07-04T23:46:00Z",
+        candidate_count=10,
+        selected_count=5,
+        sources_available=3,
+        llm_model="model",
+        generated=True,
+        pushed=True,
+        committed=False,
+        schema_valid=True,
+    )
+    write_run_status(first_status, str(data_dir))
+    write_run_status(latest_status, str(data_dir))
+
+    mark_latest_run_committed(str(data_dir))
+
+    current = json.loads((data_dir / "run-status.json").read_text("utf-8"))
+    history = json.loads((data_dir / "run-history.json").read_text("utf-8"))
+    assert current["committed"] is True
+    assert history["runs"][-1]["committed"] is True
+    assert history["runs"][0]["date"] == "2026-07-04"
 
 
 def test_serverchan_message_contains_five_markdown_links():

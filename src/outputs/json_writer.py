@@ -68,13 +68,36 @@ def build_internal_digest(
                 "title": item.get("title_cn", item.get("title", "")),
                 "summary": item.get("summary_cn", item.get("summary", "")),
                 "url": item.get("url", ""),
+                "canonicalUrl": item.get("canonicalUrl", item.get("url", "")),
                 "source": item.get("source", ""),
+                "sourceTier": item.get("sourceTier", ""),
+                "isPrimarySource": bool(item.get("isPrimarySource", False)),
                 "tags": list(item.get("tags") or []),
                 "rank": int(item.get("rank", index)),
+                "eventId": item.get("eventId", ""),
+                "eventType": item.get("eventType", "unknown"),
+                "entities": list(item.get("entities") or []),
+                "tickers": list(item.get("tickers") or []),
+                "sourceCredibilityScore": float(item.get("sourceCredibilityScore", 0)),
+                "marketImpactScore": float(item.get("marketImpactScore", 0)),
+                "noveltyScore": float(item.get("noveltyScore", 0)),
+                "timelinessScore": float(item.get("timelinessScore", 0)),
+                "entityImportanceScore": float(item.get("entityImportanceScore", 0)),
+                "confidenceScore": float(item.get("confidenceScore", 0)),
+                "totalScore": float(item.get("totalScore", 0)),
+                "whyItMatters": item.get("whyItMatters", ""),
+                "investmentImplication": item.get("investmentImplication", ""),
+                "riskNote": item.get("riskNote", ""),
                 "originalTitle": item.get("originalTitle", item.get("title", "")),
                 "published": item.get("published", ""),
                 "mergedSources": list(item.get("merged_sources") or []),
+                "relatedUrls": list(item.get("relatedUrls") or []),
+                "primarySource": item.get("primarySource", item.get("source", "")),
                 "selectionReason": item.get("reason", ""),
+                "promptVersion": item.get("promptVersion", ""),
+                "modelUsed": item.get("modelUsed", ""),
+                "rawPayloadHash": item.get("rawPayloadHash", ""),
+                "warnings": list(item.get("warnings") or []),
                 "createdAt": exported_at,
             }
             for index, item in enumerate(items, start=1)
@@ -93,6 +116,43 @@ def build_external_digest(internal_digest: dict[str, Any]) -> dict[str, Any]:
             for item in internal_digest.get("items", [])
         ],
     }
+
+
+def validate_external_digest(digest: dict[str, Any]) -> None:
+    """校验投研日历对外 5 字段契约。"""
+    if digest.get("project") != "daily-ai-5":
+        raise ValueError("project 必须是 daily-ai-5")
+    if not isinstance(digest.get("exportedAt"), str) or not digest["exportedAt"]:
+        raise ValueError("exportedAt 必须是非空字符串")
+    items = digest.get("items")
+    if not isinstance(items, list) or len(items) != 5:
+        raise ValueError("items 必须包含恰好 5 条")
+    fields = {"date", "title", "summary", "url", "source"}
+    for index, item in enumerate(items, start=1):
+        if set(item) != fields:
+            missing = fields - set(item)
+            raise ValueError(f"第 {index} 条缺少字段: {', '.join(sorted(missing))}")
+        parsed_url = urlparse(str(item.get("url", "")))
+        if parsed_url.scheme not in {"http", "https"} or not parsed_url.netloc:
+            raise ValueError(f"第 {index} 条 url 非法")
+
+
+def validate_internal_digest(digest: dict[str, Any]) -> None:
+    """校验内部归档字段，防止后续投研字段缺失。"""
+    items = digest.get("items")
+    if not isinstance(items, list) or len(items) != 5:
+        raise ValueError("内部 items 必须包含恰好 5 条")
+    required = {
+        "date", "title", "summary", "url", "source", "rank",
+        "eventId", "canonicalUrl", "sourceTier", "eventType", "entities",
+        "sourceCredibilityScore", "marketImpactScore", "noveltyScore",
+        "timelinessScore", "entityImportanceScore", "confidenceScore",
+        "totalScore", "warnings",
+    }
+    for index, item in enumerate(items, start=1):
+        missing = required - set(item)
+        if missing:
+            raise ValueError(f"内部第 {index} 条缺少字段: {', '.join(sorted(missing))}")
 
 
 def build_daily_digest(items: list[dict[str, Any]]) -> dict[str, Any]:

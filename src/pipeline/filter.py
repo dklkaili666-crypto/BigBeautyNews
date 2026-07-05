@@ -7,6 +7,7 @@ from datetime import datetime, timezone
 from difflib import SequenceMatcher
 from typing import Any
 import re
+from pipeline.enrichment import INVESTMENT_TERMS, canonicalize_url
 
 # AI 相关关键词（英文，不区分大小写）
 AI_KEYWORDS: list[str] = [
@@ -26,6 +27,7 @@ AI_KEYWORDS: list[str] = [
     "regulation", "policy", "ban", "executive order",
     "safety", "security", "jailbreak", "red team",
     "ai", "ml", "nlp", "cv",
+    *INVESTMENT_TERMS,
 ]
 
 # 必须包含的关键词（至少命中一个才算 AI 相关）
@@ -47,6 +49,16 @@ def exclude_historical_duplicates(
         for item in historical_items
         if item.get("url")
     }
+    historical_canonical_urls = {
+        str(item.get("canonicalUrl") or canonicalize_url(str(item.get("url", "")))).strip()
+        for item in historical_items
+        if item.get("canonicalUrl") or item.get("url")
+    }
+    historical_event_ids = {
+        str(item.get("eventId", "")).strip()
+        for item in historical_items
+        if item.get("eventId")
+    }
     historical_titles = [
         _normalized_title(
             str(item.get("originalTitle") or item.get("title") or "")
@@ -58,6 +70,12 @@ def exclude_historical_duplicates(
     result: list[dict[str, Any]] = []
     for article in articles:
         if str(article.get("url", "")).strip() in historical_urls:
+            continue
+        canonical_url = str(article.get("canonicalUrl") or canonicalize_url(str(article.get("url", "")))).strip()
+        if canonical_url and canonical_url in historical_canonical_urls:
+            continue
+        event_id = str(article.get("eventId", "")).strip()
+        if event_id and event_id in historical_event_ids and not article.get("isFollowUp"):
             continue
         title = _normalized_title(str(article.get("title", "")))
         if title and any(

@@ -6,6 +6,7 @@ from pipeline.filter import (
     filter_ai_related,
     filter_recent_articles,
 )
+from pipeline.enrichment import enrich_articles, canonicalize_url
 
 
 def test_dedup_merges_similar_reports_and_tracks_sources():
@@ -70,6 +71,56 @@ def test_filter_matches_ai_terms_without_treating_raise_as_ai():
     assert [item["source"] for item in result] == ["TechCrunch", "GitHub Trending"]
 
 
+def test_filter_keeps_investment_entity_news_without_literal_ai():
+    articles = [
+        {
+            "title": "Microsoft raises capex forecast again",
+            "summary": "Data center power and cloud infrastructure spending will rise.",
+            "source": "TechCrunch",
+        },
+        {
+            "title": "Airline raises ticket prices",
+            "summary": "Travel demand remains strong.",
+            "source": "TechCrunch",
+        },
+    ]
+
+    result = filter_ai_related(articles)
+
+    assert [item["title"] for item in result] == [
+        "Microsoft raises capex forecast again"
+    ]
+
+
+def test_enrichment_adds_source_tier_event_id_scores_and_canonical_url():
+    articles = [
+        {
+            "title": "Microsoft raises capex forecast again",
+            "url": "https://Example.com/path/?utm_source=x&gclid=y#section",
+            "source": "TechCrunch",
+            "summary": "Azure data center spending rises for AI infrastructure.",
+            "published": "2026-07-05T00:00:00Z",
+        }
+    ]
+
+    result = enrich_articles(articles)
+
+    assert result[0]["sourceTier"] == "tier2"
+    assert result[0]["canonicalUrl"] == "https://example.com/path"
+    assert result[0]["eventId"]
+    assert "Microsoft" in result[0]["entities"]
+    assert result[0]["eventType"] == "capex"
+    assert 0 <= result[0]["marketImpactScore"] <= 5
+    assert result[0]["totalScore"] > 0
+
+
+def test_canonical_url_normalizes_tracking_parameters():
+    assert (
+        canonicalize_url("HTTPS://Example.com/a/?utm_campaign=x&fbclid=y&keep=1#x")
+        == "https://example.com/a?keep=1"
+    )
+
+
 def test_historical_filter_excludes_recent_urls_and_near_identical_events():
     articles = [
         {
@@ -99,6 +150,48 @@ def test_historical_filter_excludes_recent_urls_and_near_identical_events():
     result = exclude_historical_duplicates(articles, historical)
 
     assert [item["url"] for item in result] == ["https://example.com/new-event"]
+
+
+def test_historical_filter_excludes_event_ids_and_github_repo_cooldown():
+    articles = [
+        {
+            "title": "Follow old event",
+            "url": "https://example.com/new-url",
+            "canonicalUrl": "https://example.com/new-url",
+            "eventId": "event-1",
+            "source": "TechCrunch",
+        },
+        {
+            "title": "Trending repo again",
+            "url": "https://github.com/org/repo?utm_source=x",
+            "canonicalUrl": "https://github.com/org/repo",
+            "eventId": "event-2",
+            "source": "GitHub Trending",
+        },
+        {
+            "title": "New event",
+            "url": "https://example.com/new",
+            "canonicalUrl": "https://example.com/new",
+            "eventId": "event-3",
+            "source": "TechCrunch",
+        },
+    ]
+    historical = [
+        {
+            "url": "https://example.com/old-url",
+            "canonicalUrl": "https://example.com/old-url",
+            "eventId": "event-1",
+        },
+        {
+            "url": "https://github.com/org/repo",
+            "canonicalUrl": "https://github.com/org/repo",
+            "source": "GitHub Trending",
+        },
+    ]
+
+    result = exclude_historical_duplicates(articles, historical)
+
+    assert [item["title"] for item in result] == ["New event"]
 
 
 def test_freshness_filter_keeps_recent_and_undated_realtime_sources():

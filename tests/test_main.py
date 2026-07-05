@@ -53,6 +53,7 @@ def test_pipeline_retries_failed_push_then_skips_duplicate_success(
     monkeypatch.setattr(main, "ARCHIVE_DIR", str(tmp_path / "data" / "archive"))
     monkeypatch.setattr(main, "WEB_DIR", str(tmp_path / "web"))
     monkeypatch.setattr(main, "PUSH_HISTORY_PATH", str(tmp_path / "data" / "push-history.json"))
+    monkeypatch.setattr(main, "DATA_DIR", str(tmp_path / "data"))
 
     result = main.run_pipeline()
     second_result = main.run_pipeline()
@@ -70,3 +71,9 @@ def test_pipeline_retries_failed_push_then_skips_duplicate_success(
     assert set(external["items"][0]) == {"date", "title", "summary", "url", "source"}
     assert internal["dailyTheme"] == "模型竞争"
     assert internal["items"][0]["tags"] == ["AI"]
+    first_status = json.loads((tmp_path / "data" / "run-history.json").read_text("utf-8"))["runs"][0]
+    latest_status = json.loads((tmp_path / "data" / "run-status.json").read_text("utf-8"))
+    assert first_status["status"] == "partial"
+    assert first_status["generated"] is True
+    assert first_status["pushed"] is False
+    assert latest_status["status"] == "success"

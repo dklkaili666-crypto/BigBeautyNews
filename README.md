@@ -2,16 +2,18 @@
 
 > 每日 AI 五件事 · 投研视角
 
-每天自动从北美主流科技媒体和 GitHub Trending 抓取 AI 领域最重要的 5 条新闻，翻译为简体中文，推送到微信，同时输出 JSON 数据给 [投研日历](https://github.com/) 项目。
+每天自动从北美主流科技媒体、GitHub Trending 和 Hacker News 抓取 AI 领域最重要的 5 条新闻，按投研视角做去重、评分、筛选和翻译，推送到微信，同时输出 JSON 数据给 [投研日历](https://github.com/) 项目。
 
 ## 功能
 
 - 🌐 **多源抓取**：The Verge / TechCrunch / Ars Technica / MIT Tech Review / Wired + GitHub Trending + Hacker News
-- 🧠 **AI 排序**：LLM 按投研视角权重选出 Top 5（大厂动态 > 竞品格局 > 产品发布 > 融资 > 学术）
+- 🧭 **投研增强**：来源分层、AI 投研实体词典、URL 标准化、最小可用 eventId、GitHub repo 冷却
+- 🧠 **AI 排序**：规则预评分 + LLM 复核选出 Top 5（大厂动态 > 竞品格局 > 产品发布 > 融资 > 学术）
 - 🌏 **中文翻译**：全部翻译为简体中文，标题 + 摘要 + 原文链接
 - 📱 **微信推送**：每天早上 7:45 通过 Server酱推送到微信
 - 📅 **投研日历集成**：输出标准化 JSON 供投研日历 L2 导入
 - 📖 **本地网页**：按日期浏览历史所有 5 件事
+- 🔎 **可观测性**：输出 `run-status.json` / `run-history.json` / `error-log/YYYY-MM-DD.json`
 
 ## 项目结构
 
@@ -27,12 +29,14 @@ BigBeautyNews/
 │   │   └── hacker_news.py       # Hacker News
 │   ├── pipeline/                # 处理流水线
 │   │   ├── dedup.py             # 去重 + 合并
-│   │   ├── filter.py            # AI 关键词过滤
+│   │   ├── enrichment.py        # 来源分层、eventId、规则评分
+│   │   ├── filter.py            # AI 投研实体词典过滤
 │   │   ├── ranker.py            # LLM 排序 Top 5
 │   │   └── translator.py        # LLM 翻译中文
 │   └── outputs/                 # 输出模块
 │       ├── serverchan.py        # Server酱微信推送
 │       ├── json_writer.py       # 投研日历 JSON
+│       ├── status.py            # 运行状态与错误日志
 │       └── web_builder.py       # 网页数据
 ├── data/                        # 产出数据（Git 追踪）
 ├── web/                         # 静态网页

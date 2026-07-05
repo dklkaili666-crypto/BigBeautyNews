@@ -67,6 +67,36 @@ def test_github_trending_only_returns_ai_repositories(monkeypatch):
     assert result[0]["title"].startswith("org/agent-kit:")
 
 
+def test_github_trending_falls_back_to_search_api(monkeypatch):
+    calls = []
+
+    def fake_get(url, **kwargs):
+        calls.append(url)
+        if "trending" in url:
+            raise RuntimeError("page changed")
+        return FakeResponse(json_data={
+            "items": [
+                {
+                    "full_name": "org/llm-kit",
+                    "html_url": "https://github.com/org/llm-kit",
+                    "description": "LLM inference toolkit",
+                    "language": "Python",
+                    "stargazers_count": 1000,
+                }
+            ]
+        })
+
+    monkeypatch.setattr(github_trending.requests, "get", fake_get)
+
+    result = github_trending.fetch_trending()
+
+    assert len(result) == 1
+    assert result[0]["source"] == "GitHub Trending"
+    assert result[0]["sourceTier"] == "tier3"
+    assert result[0]["warnings"] == ["GitHub Trending page failed; used GitHub Search API fallback"]
+    assert any("search/repositories" in call for call in calls)
+
+
 def test_hacker_news_filters_by_score_and_ai_title(monkeypatch):
     stories = {
         "top": [1, 2],

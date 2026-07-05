@@ -46,6 +46,7 @@ from config import (
     LLM_API_KEY,
     LLM_API_BASE,
     LLM_MODEL,
+    DATA_DIR,
     DAILY_JSON_PATH,
     HISTORY_JSON_PATH,
     PUSH_HISTORY_PATH,
@@ -56,6 +57,7 @@ from fetchers.rss_fetcher import fetch_all_sources
 from fetchers.github_trending import fetch_trending
 from fetchers.hacker_news import fetch_hn_top_ai
 from pipeline.dedup import dedup_candidates
+from pipeline.enrichment import enrich_articles
 from pipeline.filter import (
     exclude_historical_duplicates,
     filter_ai_related,
@@ -67,6 +69,8 @@ from outputs.serverchan import push_to_wechat
 from outputs.json_writer import (
     build_internal_digest,
     build_external_digest,
+    validate_external_digest,
+    validate_internal_digest,
     write_daily_json,
     archive_daily_json,
     load_recent_archive_items,
@@ -74,6 +78,7 @@ from outputs.json_writer import (
 )
 from outputs.web_builder import write_web_data
 from outputs.push_state import mark_pushed, was_pushed
+from outputs.status import build_run_status, write_run_status
 
 logging.basicConfig(
     level=logging.INFO,
@@ -95,8 +100,43 @@ def run_pipeline(dry_run: bool = False, force_push: bool = False) -> dict:
         处理结果摘要字典
     """
     started_at = perf_counter()
+    started_at_iso = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     today = datetime.now(ZoneInfo("Asia/Shanghai")).strftime("%Y-%m-%d")
     logger.info(f"=== BigBeautyNews 开始运行 === 日期: {today}")
+    candidate_count = 0
+    selected_count = 0
+    source_count = 0
+    warnings: list[str] = []
+
+    def finish_status(
+        *,
+        status: str,
+        generated: bool,
+        pushed: bool,
+        schema_valid: bool,
+        errors_for_status: list[str] | None = None,
+    ) -> None:
+        if dry_run:
+            return
+        write_run_status(
+            build_run_status(
+                date_str=today,
+                status=status,
+                started_at=started_at_iso,
+                finished_at=datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+                candidate_count=candidate_count,
+                selected_count=selected_count,
+                sources_available=source_count,
+                llm_model=LLM_MODEL,
+                generated=generated,
+                pushed=pushed,
+                committed=status == "success",
+                schema_valid=schema_valid,
+                warnings=warnings,
+                errors=errors_for_status or [],
+            ),
+            DATA_DIR,
+        )
 
     # ============================================================
     # 第 1 步：并行抓取所有数据源
@@ -132,9 +172,24 @@ def run_pipeline(dry_run: bool = False, force_push: bool = False) -> dict:
                     errors.append(name)
 
     logger.info(f"  候选池总计: {len(all_articles)} 篇")
+    warnings.extend(f"数据源错误: {error}" for error in errors)
+    all_articles = enrich_articles(all_articles)
+    candidate_count = len(all_articles)
+    source_count = len({
+        str(article.get("source", ""))
+        for article in all_articles
+        if article.get("source")
+    })
 
     if len(all_articles) < TOP_K:
         logger.error(f"候选文章不足 {TOP_K} 篇，无法生成简报")
+        finish_status(
+            status="failed",
+            generated=False,
+            pushed=False,
+            schema_valid=False,
+            errors_for_status=[f"候选文章仅 {len(all_articles)} 篇"],
+        )
         return {"status": "error", "reason": f"候选文章仅 {len(all_articles)} 篇"}
 
     # ============================================================
@@ -188,9 +243,17 @@ def run_pipeline(dry_run: bool = False, force_push: bool = False) -> dict:
             logger.warning("  72 小时候选仍不足，保留全部未推送候选")
 
     if len(filtered) < TOP_K:
+        reason = f"跨日去重后候选文章仅 {len(filtered)} 篇"
+        finish_status(
+            status="failed",
+            generated=False,
+            pushed=False,
+            schema_valid=False,
+            errors_for_status=[reason],
+        )
         return {
             "status": "error",
-            "reason": f"跨日去重后候选文章仅 {len(filtered)} 篇",
+            "reason": reason,
         }
 
     # ============================================================
@@ -199,23 +262,52 @@ def run_pipeline(dry_run: bool = False, force_push: bool = False) -> dict:
     logger.info("[4/6] LLM 排序 → 选出 Top 5...")
     if not LLM_API_KEY:
         logger.error("LLM_API_KEY 未配置，无法进行 LLM 排序")
+        finish_status(
+            status="failed",
+            generated=False,
+            pushed=False,
+            schema_valid=False,
+            errors_for_status=["LLM_API_KEY 未配置"],
+        )
         return {"status": "error", "reason": "LLM_API_KEY 未配置"}
 
-    ranking_result = call_llm_ranking(
-        filtered,
-        api_key=LLM_API_KEY,
-        api_base=LLM_API_BASE,
-        model=LLM_MODEL,
-    )
-    top5 = select_top5(filtered, ranking_result)
+    try:
+        ranking_result = call_llm_ranking(
+            filtered,
+            api_key=LLM_API_KEY,
+            api_base=LLM_API_BASE,
+            model=LLM_MODEL,
+        )
+        top5 = select_top5(filtered, ranking_result)
+    except Exception as exc:
+        finish_status(
+            status="failed",
+            generated=False,
+            pushed=False,
+            schema_valid=False,
+            errors_for_status=[f"LLM 排序失败: {exc}"],
+        )
+        return {"status": "error", "reason": f"LLM 排序失败: {exc}"}
+    warnings.extend(str(value) for value in ranking_result.get("warnings", []))
     daily_theme = ranking_result.get("daily_theme", "")
+    selected_count = len(top5)
     logger.info(f"  Top 5 已选出, 主题: {daily_theme}")
 
     # ============================================================
     # 第 5 步：LLM 翻译为简体中文
     # ============================================================
     logger.info("[5/6] LLM 翻译为简体中文...")
-    translated = translate_top5(top5, LLM_API_KEY, LLM_API_BASE, LLM_MODEL)
+    try:
+        translated = translate_top5(top5, LLM_API_KEY, LLM_API_BASE, LLM_MODEL)
+    except Exception as exc:
+        finish_status(
+            status="failed",
+            generated=False,
+            pushed=False,
+            schema_valid=False,
+            errors_for_status=[f"LLM 翻译失败: {exc}"],
+        )
+        return {"status": "error", "reason": f"LLM 翻译失败: {exc}"}
     logger.info(f"  翻译完成: {len(translated)} 条")
 
     # ============================================================
@@ -234,6 +326,18 @@ def run_pipeline(dry_run: bool = False, force_push: bool = False) -> dict:
         date_str=today,
     )
     external_digest = build_external_digest(internal_digest)
+    try:
+        validate_internal_digest(internal_digest)
+        validate_external_digest(external_digest)
+    except ValueError as exc:
+        finish_status(
+            status="failed",
+            generated=False,
+            pushed=False,
+            schema_valid=False,
+            errors_for_status=[str(exc)],
+        )
+        return {"status": "error", "reason": str(exc)}
     if dry_run:
         logger.info("  [DRY-RUN] 跳过 JSON 写出")
     else:
@@ -249,8 +353,10 @@ def run_pipeline(dry_run: bool = False, force_push: bool = False) -> dict:
 
     # 6d. Server酱推送是非阻断输出，放在持久化之后避免写盘失败时误推送
     if not dry_run:
+        push_ok = False
         if was_pushed(PUSH_HISTORY_PATH, today) and not force_push:
             logger.info("  微信推送: 今日已成功发送，跳过重复推送")
+            push_ok = True
         else:
             push_ok = push_to_wechat(
                 SERVERCHAN_SENDKEY, translated, today, daily_theme
@@ -258,8 +364,22 @@ def run_pipeline(dry_run: bool = False, force_push: bool = False) -> dict:
             if push_ok:
                 mark_pushed(PUSH_HISTORY_PATH, today)
             else:
+                warnings.append("Server酱推送失败")
+                finish_status(
+                    status="partial",
+                    generated=True,
+                    pushed=False,
+                    schema_valid=True,
+                    errors_for_status=["Server酱推送失败"],
+                )
                 return {"status": "error", "reason": "Server酱推送失败"}
             logger.info(f"  微信推送: {'成功' if push_ok else '失败/跳过'}")
+        finish_status(
+            status="success",
+            generated=True,
+            pushed=push_ok,
+            schema_valid=True,
+        )
 
     logger.info("=== BigBeautyNews 运行完成，耗时 %.2fs ===", perf_counter() - started_at)
     return {

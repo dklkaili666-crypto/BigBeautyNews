@@ -30,6 +30,17 @@ AI_KEYWORDS: list[str] = [
     *INVESTMENT_TERMS,
 ]
 
+CONTEXT_ONLY_KEYWORDS: set[str] = {
+    "regulation",
+    "policy",
+    "ban",
+    "executive order",
+    "order",
+    "safety",
+    "security",
+}
+WEAK_SHORT_CONTEXT_KEYWORDS: set[str] = {"ai", "ml", "nlp", "cv"}
+
 # 必须包含的关键词（至少命中一个才算 AI 相关）
 MIN_AI_KEYWORD_MATCHES = 1
 
@@ -141,10 +152,14 @@ def filter_ai_related(
         过滤后的文章列表
     """
     selected_keywords = keywords or AI_KEYWORDS
-    patterns = [
-        re.compile(rf"(?<!\w){re.escape(keyword.casefold())}(?!\w)")
+    keyword_patterns = [
+        (
+            keyword.casefold(),
+            re.compile(rf"(?<!\w){re.escape(keyword.casefold())}(?!\w)"),
+        )
         for keyword in selected_keywords
     ]
+    enforce_context = keywords is None
     result: list[dict[str, Any]] = []
     for article in articles:
         if article.get("source") == "GitHub Trending":
@@ -154,7 +169,38 @@ def filter_ai_related(
             str(article.get(field) or "")
             for field in ("title", "summary", "description")
         ).casefold()
-        matches = sum(bool(pattern.search(text)) for pattern in patterns)
+        title_text = str(article.get("title") or "").casefold()
+        matched_keywords = [
+            keyword
+            for keyword, pattern in keyword_patterns
+            if pattern.search(text)
+        ]
+        matched_title_keywords = [
+            keyword
+            for keyword, pattern in keyword_patterns
+            if pattern.search(title_text)
+        ]
+        matches = len(matched_keywords)
+        if (
+            enforce_context
+            and matched_keywords
+            and all(keyword in CONTEXT_ONLY_KEYWORDS for keyword in matched_keywords)
+        ):
+            continue
+        if enforce_context and any(
+            keyword in CONTEXT_ONLY_KEYWORDS for keyword in matched_keywords
+        ):
+            has_title_ai_context = any(
+                keyword not in CONTEXT_ONLY_KEYWORDS
+                for keyword in matched_title_keywords
+            )
+            has_strong_ai_context = any(
+                keyword not in CONTEXT_ONLY_KEYWORDS
+                and keyword not in WEAK_SHORT_CONTEXT_KEYWORDS
+                for keyword in matched_keywords
+            )
+            if not has_title_ai_context and not has_strong_ai_context:
+                continue
         if matches >= min_matches:
             result.append(article)
     return result

@@ -64,6 +64,19 @@ EVENT_TYPE_TERMS = {
     "supply_chain": ("hbm", "cowos", "tsmc", "supplier", "accelerator"),
 }
 
+AI_CONTEXT_TERMS = (
+    "artificial intelligence", "generative ai", "machine learning", "deep learning",
+    "large language model", "llm", "gpt", "claude", "gemini", "llama",
+    "openai", "anthropic", "deepmind", "meta ai", "microsoft ai", "nvidia",
+    "gpu", "tpu", "foundation model", "reasoning model", "agent", "inference",
+    "semiconductor", "data center", "datacenter", "cloud ai", "copilot",
+    "chatbot", "midjourney", "dall-e", "stable diffusion", "robot",
+    "autonomous", "self-driving",
+    *(term for term in INVESTMENT_TERMS if term not in {"order", "power", "capacity", "partnership"}),
+)
+
+REGULATION_CONTEXT_TERMS = ("regulation", "policy", "ban", "executive order", "sec")
+
 
 def canonicalize_url(url: str) -> str:
     """标准化 URL，去掉 fragment 和常见 tracking 参数。"""
@@ -91,6 +104,15 @@ def _fingerprint(text: str) -> str:
     return " ".join(re.findall(r"\w+", text.casefold()))[:120]
 
 
+def _contains_term(text_cf: str, term: str) -> bool:
+    return bool(re.search(rf"(?<!\w){re.escape(term.casefold())}(?!\w)", text_cf))
+
+
+def has_ai_context(text: str) -> bool:
+    text_cf = text.casefold()
+    return any(_contains_term(text_cf, term) for term in AI_CONTEXT_TERMS)
+
+
 def extract_entities(text: str) -> list[str]:
     text_cf = text.casefold()
     return [
@@ -103,7 +125,20 @@ def extract_entities(text: str) -> list[str]:
 def classify_event_type(text: str) -> str:
     text_cf = text.casefold()
     for event_type, patterns in EVENT_TYPE_TERMS.items():
-        if any(pattern in text_cf for pattern in patterns):
+        if not any(_contains_term(text_cf, pattern) for pattern in patterns):
+            continue
+        if (
+            event_type == "regulation"
+            and not has_ai_context(text)
+            and not any(_contains_term(text_cf, term) for term in ("export control",))
+        ):
+            continue
+        if event_type == "regulation" and not any(
+            _contains_term(text_cf, term)
+            for term in REGULATION_CONTEXT_TERMS + ("export control",)
+        ):
+            continue
+        if event_type:
             return event_type
     return "unknown"
 
@@ -115,7 +150,9 @@ def _score_article(article: dict[str, Any]) -> dict[str, float]:
     entities = article.get("entities") or []
     event_type = article.get("eventType")
     market = 2.0
-    if event_type in {"capex", "supply_chain", "regulation"}:
+    if event_type in {"capex", "supply_chain"}:
+        market = 4.0
+    if event_type == "regulation" and has_ai_context(text):
         market = 4.0
     if any(term in text for term in ("nvidia", "microsoft", "openai", "anthropic", "gpu", "capex")):
         market = min(5.0, market + 1.0)

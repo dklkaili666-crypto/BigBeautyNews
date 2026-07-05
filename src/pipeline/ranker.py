@@ -16,6 +16,8 @@ from openai import OpenAI
 
 logger = logging.getLogger(__name__)
 MAX_ATTEMPTS = 2
+COMMUNITY_SOURCES = {"GitHub Trending", "Hacker News"}
+MAX_TIER3_IN_TOP5 = 1
 
 RANKING_PROMPT = """你是一位 AI 投资分析师。以下是从多家北美科技媒体和 GitHub Trending 收集的今天 AI 领域相关文章。
 
@@ -54,6 +56,12 @@ RANKING_PROMPT = """你是一位 AI 投资分析师。以下是从多家北美�
 
 请输出 JSON（不要加代码块标记）："""
 
+COMMUNITY_SOURCE_RULE = """
+
+补充质量约束：
+- Tier3/社区源（GitHub Trending、Hacker News）只能作为弱信号。Top 5 默认最多 1 条 tier3/社区源；除非明显是重大事件，且 reason 说明为什么值得占位。
+"""
+
 
 def build_candidate_text(articles: list[dict[str, Any]]) -> str:
     """
@@ -70,8 +78,47 @@ def build_candidate_text(articles: list[dict[str, Any]]) -> str:
             "merged_sources": article.get("merged_sources", []),
             "score": article.get("score"),
             "stars_today": article.get("stars_today"),
+            "sourceTier": article.get("sourceTier"),
+            "confidenceScore": article.get("confidenceScore"),
+            "totalScore": article.get("totalScore"),
         })
     return json.dumps(compact, ensure_ascii=False, separators=(",", ":"))
+
+
+def _is_tier3_article(article: dict[str, Any]) -> bool:
+    return (
+        article.get("sourceTier") == "tier3"
+        or str(article.get("source", "")) in COMMUNITY_SOURCES
+    )
+
+
+def _ranking_quality_warnings(
+    articles: list[dict[str, Any]],
+    indices: list[int],
+) -> list[str]:
+    available_sources = {
+        str(article.get("source", ""))
+        for article in articles
+        if article.get("source")
+    }
+    selected_sources = Counter(
+        str(articles[index].get("source", ""))
+        for index in indices
+    )
+    warnings: list[str] = []
+    if (
+        len(available_sources) >= 3
+        and (
+            len(selected_sources) < 3
+            or max(selected_sources.values(), default=0) > 2
+        )
+    ):
+        warnings.append(f"Top 5 来源过度集中: {dict(selected_sources)}")
+
+    tier3_count = sum(_is_tier3_article(articles[index]) for index in indices)
+    if tier3_count > MAX_TIER3_IN_TOP5:
+        warnings.append(f"Top 5 社区源过多: {tier3_count}")
+    return warnings
 
 
 def call_llm_ranking(
@@ -100,7 +147,7 @@ def call_llm_ranking(
         RuntimeError: LLM 调用失败
     """
     client = OpenAI(api_key=api_key, base_url=api_base)
-    prompt = RANKING_PROMPT.replace("{candidates_json}", build_candidate_text(articles))
+    prompt = RANKING_PROMPT.replace("{candidates_json}", build_candidate_text(articles)) + COMMUNITY_SOURCE_RULE
     last_error: Exception | None = None
     retry_instruction = ""
     for attempt in range(1, MAX_ATTEMPTS + 1):
@@ -129,34 +176,19 @@ def call_llm_ranking(
                 or len(set(indices)) != 5
             ):
                 raise ValueError("LLM 排序结果包含无效或重复的文章索引")
-            available_sources = {
-                str(article.get("source", ""))
-                for article in articles
-                if article.get("source")
-            }
-            selected_sources = Counter(
-                str(articles[index].get("source", ""))
-                for index in indices
-            )
-            lacks_diversity = (
-                len(available_sources) >= 3
-                and (
-                    len(selected_sources) < 3
-                    or max(selected_sources.values(), default=0) > 2
-                )
-            )
-            if lacks_diversity and attempt < MAX_ATTEMPTS:
-                message = f"Top 5 来源过度集中: {dict(selected_sources)}"
+            quality_warnings = _ranking_quality_warnings(articles, indices)
+            if quality_warnings and attempt < MAX_ATTEMPTS:
+                message = "；".join(quality_warnings)
                 retry_instruction = (
-                    "\n\n上一次结果因来源过度集中被拒绝。"
-                    "本次请优先覆盖至少 3 个来源，且任一来源尽量最多 2 条。"
+                    "\n\n上一次结果因质量门槛未通过被拒绝："
+                    f"{message}。本次请优先覆盖至少 3 个来源，任一来源尽量最多 2 条，"
+                    "且 tier3/社区源最多 1 条。"
                 )
                 raise ValueError(message)
-            if lacks_diversity:
-                message = f"Top 5 来源过度集中: {dict(selected_sources)}"
-                logger.warning("%s；重排后仍集中，继续产出并记录 warning", message)
+            if quality_warnings:
+                logger.warning("重排后仍违反质量门槛，继续产出并记录 warning: %s", quality_warnings)
                 warnings = list(result.get("warnings") or [])
-                warnings.append(message)
+                warnings.extend(quality_warnings)
                 result["warnings"] = warnings
             return result
         except Exception as exc:

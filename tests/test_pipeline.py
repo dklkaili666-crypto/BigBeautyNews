@@ -92,6 +92,48 @@ def test_filter_keeps_investment_entity_news_without_literal_ai():
     ]
 
 
+def test_filter_rejects_generic_policy_news_without_ai_context():
+    articles = [
+        {
+            "title": "The UK tobacco ban might not work",
+            "summary": "A new policy could change smoking rules for young people.",
+            "source": "MIT Technology Review",
+        },
+        {
+            "title": "White House AI export control policy targets advanced GPUs",
+            "summary": "New regulation affects Nvidia accelerators and AI data centers.",
+            "source": "The Verge",
+        },
+    ]
+
+    result = filter_ai_related(articles)
+
+    assert [item["title"] for item in result] == [
+        "White House AI export control policy targets advanced GPUs"
+    ]
+
+
+def test_filter_rejects_generic_policy_news_with_only_incidental_ai_mention():
+    articles = [
+        {
+            "title": "The UK tobacco ban might not work",
+            "summary": "The article briefly says children are learning about AI at school.",
+            "source": "MIT Technology Review",
+        },
+        {
+            "title": "AI safety policy targets frontier model labs",
+            "summary": "The rule affects OpenAI and Anthropic deployment practices.",
+            "source": "The Verge",
+        },
+    ]
+
+    result = filter_ai_related(articles)
+
+    assert [item["title"] for item in result] == [
+        "AI safety policy targets frontier model labs"
+    ]
+
+
 def test_enrichment_adds_source_tier_event_id_scores_and_canonical_url():
     articles = [
         {
@@ -112,6 +154,21 @@ def test_enrichment_adds_source_tier_event_id_scores_and_canonical_url():
     assert result[0]["eventType"] == "capex"
     assert 0 <= result[0]["marketImpactScore"] <= 5
     assert result[0]["totalScore"] > 0
+
+
+def test_enrichment_does_not_boost_generic_regulation_without_ai_context():
+    result = enrich_articles([
+        {
+            "title": "The UK tobacco ban might not work",
+            "url": "https://example.com/tobacco",
+            "source": "MIT Technology Review",
+            "summary": "A new policy could change smoking rules for young people.",
+            "published": "2026-07-05T00:00:00Z",
+        }
+    ])
+
+    assert result[0]["eventType"] == "unknown"
+    assert result[0]["marketImpactScore"] < 4
 
 
 def test_canonical_url_normalizes_tracking_parameters():

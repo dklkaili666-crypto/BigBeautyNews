@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+### v0.6.1 P1 质量修复
+- 收紧泛政策/监管/禁令关键词：仅有 `policy`、`ban`、`regulation` 或正文中顺带出现一次泛化 `AI` 时，不再进入 AI 候选池
+- Top 5 排序新增社区源上限：`GitHub Trending` / `Hacker News` 默认最多 1 条，超限会触发一次重排；重排后仍超限则记录 warning
+
 ### v0.6 投研增强
 - 增加来源分层、URL 标准化、最小可用 `eventId` 和 GitHub repo 冷却
 - 增加 AI 投研实体词典，覆盖 Capex、芯片、数据中心、光通信等非字面 AI 新闻

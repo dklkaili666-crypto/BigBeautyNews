@@ -100,6 +100,77 @@ def test_ranking_warns_when_retry_still_violates_source_diversity(monkeypatch):
     assert result["warnings"] == ["Top 5 来源过度集中: {'TechCrunch': 5}"]
 
 
+def test_ranking_retries_when_top_five_have_too_many_community_sources(monkeypatch):
+    too_many_community = {
+        "top5": [
+            {"rank": 1, "source_article_index": 0, "reason": "重要", "tags": ["AI"]},
+            {"rank": 2, "source_article_index": 1, "reason": "重要", "tags": ["AI"]},
+            {"rank": 3, "source_article_index": 2, "reason": "重要", "tags": ["AI"]},
+            {"rank": 4, "source_article_index": 3, "reason": "重要", "tags": ["AI"]},
+            {"rank": 5, "source_article_index": 4, "reason": "重要", "tags": ["AI"]},
+        ],
+        "daily_theme": "模型竞争",
+    }
+    one_community = {
+        "top5": [
+            {"rank": 1, "source_article_index": 0, "reason": "重要", "tags": ["AI"]},
+            {"rank": 2, "source_article_index": 2, "reason": "重要", "tags": ["AI"]},
+            {"rank": 3, "source_article_index": 3, "reason": "重要", "tags": ["AI"]},
+            {"rank": 4, "source_article_index": 4, "reason": "重要", "tags": ["AI"]},
+            {"rank": 5, "source_article_index": 5, "reason": "重要", "tags": ["AI"]},
+        ],
+        "daily_theme": "模型竞争",
+    }
+    client, completions = fake_client([
+        json.dumps(too_many_community),
+        json.dumps(one_community),
+    ])
+    monkeypatch.setattr(ranker, "OpenAI", lambda **kwargs: client)
+    articles = [
+        {"title": "HN", "url": "https://hn/1", "source": "Hacker News", "sourceTier": "tier3"},
+        {"title": "GH", "url": "https://gh/1", "source": "GitHub Trending", "sourceTier": "tier3"},
+        {"title": "TC", "url": "https://tc/1", "source": "TechCrunch", "sourceTier": "tier2"},
+        {"title": "Verge", "url": "https://verge/1", "source": "The Verge", "sourceTier": "tier2"},
+        {"title": "Wired", "url": "https://wired/1", "source": "Wired", "sourceTier": "tier2"},
+        {"title": "MIT", "url": "https://mit/1", "source": "MIT Technology Review", "sourceTier": "tier2"},
+    ]
+
+    result = ranker.call_llm_ranking(articles, "key", "https://api", "model")
+
+    assert completions.calls == 2
+    assert [item["source_article_index"] for item in result["top5"]] == [0, 2, 3, 4, 5]
+
+
+def test_ranking_warns_when_retry_still_has_too_many_community_sources(monkeypatch):
+    too_many_community = {
+        "top5": [
+            {"rank": 1, "source_article_index": 0, "reason": "重要", "tags": ["AI"]},
+            {"rank": 2, "source_article_index": 1, "reason": "重要", "tags": ["AI"]},
+            {"rank": 3, "source_article_index": 2, "reason": "重要", "tags": ["AI"]},
+            {"rank": 4, "source_article_index": 3, "reason": "重要", "tags": ["AI"]},
+            {"rank": 5, "source_article_index": 4, "reason": "重要", "tags": ["AI"]},
+        ],
+        "daily_theme": "模型竞争",
+    }
+    client, completions = fake_client([
+        json.dumps(too_many_community),
+        json.dumps(too_many_community),
+    ])
+    monkeypatch.setattr(ranker, "OpenAI", lambda **kwargs: client)
+    articles = [
+        {"title": "HN", "url": "https://hn/1", "source": "Hacker News", "sourceTier": "tier3"},
+        {"title": "GH", "url": "https://gh/1", "source": "GitHub Trending", "sourceTier": "tier3"},
+        {"title": "TC", "url": "https://tc/1", "source": "TechCrunch", "sourceTier": "tier2"},
+        {"title": "Verge", "url": "https://verge/1", "source": "The Verge", "sourceTier": "tier2"},
+        {"title": "Wired", "url": "https://wired/1", "source": "Wired", "sourceTier": "tier2"},
+    ]
+
+    result = ranker.call_llm_ranking(articles, "key", "https://api", "model")
+
+    assert completions.calls == 2
+    assert result["warnings"] == ["Top 5 社区源过多: 2"]
+
+
 def test_translation_accepts_near_target_summary_and_preserves_metadata(monkeypatch, caplog):
     translated = {
         "items": [

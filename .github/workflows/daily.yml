@@ -2,8 +2,10 @@ name: BigBeautyNews Daily
 
 on:
   schedule:
-    # UTC 23:45 = 北京时间次日 7:45（避开整点高峰）
+    # 主触发：UTC 23:45 = 北京时间次日 7:45
     - cron: '45 23 * * *'
+    # 兜底触发：UTC 00:15 = 北京时间 8:15
+    - cron: '15 0 * * *'
   workflow_dispatch:
     # 手动触发
 
@@ -28,15 +30,31 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Check whether today's digest was already pushed
+        id: push-check
+        shell: bash
+        run: |
+          today=$(TZ=Asia/Shanghai date +%F)
+          if [[ "${{ github.event_name }}" == "schedule" ]] \
+            && jq -e --arg today "$today" '.dates | index($today) != null' data/push-history.json > /dev/null; then
+            echo "should_run=false" >> "$GITHUB_OUTPUT"
+            echo "$today has already been pushed; skipping the fallback run."
+          else
+            echo "should_run=true" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Setup Python
+        if: steps.push-check.outputs.should_run == 'true'
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
 
       - name: Install dependencies
+        if: steps.push-check.outputs.should_run == 'true'
         run: pip install -r requirements.txt
 
       - name: Run BigBeautyNews
+        if: steps.push-check.outputs.should_run == 'true'
         env:
           SERVERCHAN_SENDKEY: ${{ secrets.SERVERCHAN_SENDKEY }}
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
@@ -45,7 +63,7 @@ jobs:
         run: python src/main.py
 
       - name: Commit & Push data
-        if: success()
+        if: success() && steps.push-check.outputs.should_run == 'true'
         run: |
           git config user.name "BigBeautyNews Bot"
           git config user.email "bot@bigbeautynews.local"
@@ -54,7 +72,7 @@ jobs:
           git push
 
       - name: Prepare Pages artifact
-        if: success()
+        if: success() && steps.push-check.outputs.should_run == 'true'
         run: |
           mkdir -p _site/web _site/data
           cp web/index.html web/style.css web/app.js web/data.json _site/web/
@@ -62,16 +80,16 @@ jobs:
           touch _site/.nojekyll
 
       - name: Configure Pages
-        if: success()
+        if: success() && steps.push-check.outputs.should_run == 'true'
         uses: actions/configure-pages@v5
 
       - name: Upload Pages artifact
-        if: success()
+        if: success() && steps.push-check.outputs.should_run == 'true'
         uses: actions/upload-pages-artifact@v4
         with:
           path: _site
 
       - name: Deploy Pages
-        if: success()
+        if: success() && steps.push-check.outputs.should_run == 'true'
         uses: actions/deploy-pages@v4
         id: deployment

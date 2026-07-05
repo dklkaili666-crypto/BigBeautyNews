@@ -214,6 +214,8 @@ def run_pipeline(dry_run: bool = False, force_push: bool = False) -> dict:
             )
             if push_ok:
                 mark_pushed(PUSH_HISTORY_PATH, today)
+            else:
+                return {"status": "error", "reason": "Server酱推送失败"}
             logger.info(f"  微信推送: {'成功' if push_ok else '失败/跳过'}")
 
     logger.info("=== BigBeautyNews 运行完成，耗时 %.2fs ===", perf_counter() - started_at)

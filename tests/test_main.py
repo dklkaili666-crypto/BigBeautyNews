@@ -61,7 +61,8 @@ def test_pipeline_retries_failed_push_then_skips_duplicate_success(
 
     external = json.loads((tmp_path / "data" / "daily-5-things.json").read_text("utf-8"))
     internal = json.loads((tmp_path / "web" / "data.json").read_text("utf-8"))
-    assert result["status"] == "ok"
+    assert result["status"] == "error"
+    assert result["reason"] == "Server酱推送失败"
     assert second_result["status"] == "ok"
     assert third_result["status"] == "ok"
     assert forced_result["status"] == "ok"

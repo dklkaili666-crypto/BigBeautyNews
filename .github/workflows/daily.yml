@@ -7,7 +7,11 @@ on:
     # 兜底触发：UTC 00:15 = 北京时间 8:15
     - cron: '15 0 * * *'
   workflow_dispatch:
-    # 手动触发
+    inputs:
+      force_push:
+        description: 'Force WeChat push even if today was already pushed'
+        required: false
+        default: 'false'
 
 permissions:
   contents: write
@@ -60,7 +64,12 @@ jobs:
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
           LLM_API_BASE: ${{ secrets.LLM_API_BASE }}
           LLM_MODEL: ${{ secrets.LLM_MODEL }}
-        run: python src/main.py
+        run: |
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" && "${{ inputs.force_push }}" == "true" ]]; then
+            python src/main.py --force-push
+          else
+            python src/main.py
+          fi
 
       - name: Commit & Push data
         if: success() && steps.push-check.outputs.should_run == 'true'

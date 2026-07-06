@@ -83,7 +83,20 @@ python src/main.py --force-push
    - `LLM_API_KEY`
    - `LLM_API_BASE`
    - `LLM_MODEL`
-3. 启用 Actions，每天早上 7:45（北京时间）自动运行
+3. 启用 Actions，每天早上 7:45（北京时间）自动运行；8:15、8:35、8:55、9:20 会做幂等兜底重试
+
+### 手机手动推送
+
+如果当天自动推送没有触发，可以在手机上操作：
+
+1. 打开 GitHub 仓库的 Issues
+2. 新建 issue，选择“手机手动推送”模板
+3. 直接提交 issue
+
+模板里默认包含 `/push-force`，会强制触发一次当天微信推送。也可以在任意 issue 下评论：
+
+- `/push`：今天还没成功推送时推送一次
+- `/push-force`：即使今天已有成功记录，也强制再推送一次
 
 ### 5. 打开本地网页
 
@@ -96,7 +109,7 @@ python -m http.server 8080
 ## 技术栈
 
 - **语言**：Python 3.12+
-- **调度**：GitHub Actions (cron: `45 23 * * *` UTC，即北京时间次日 7:45)
+- **调度**：GitHub Actions（北京时间 7:45 主触发，8:15/8:35/8:55/9:20 幂等兜底；支持手机 issue 手动触发）
 - **LLM**：OpenAI 兼容 API (gpt-4o-mini / deepseek-chat 等)
 - **推送**：Server酱 Turbo API
 - **网页**：纯静态 HTML + CSS + Vanilla JS

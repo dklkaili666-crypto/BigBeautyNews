@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+### v0.6.3 推送触发可靠性修复
+- 增加 8:35、8:55、9:20 北京时间冗余触发点，降低 GitHub Actions schedule 漏触发导致整天不推送的概率
+- 增加手机端手动触发方式：新建 `manual-push` issue 或评论 `/push` / `/push-force`
+- 更新 PRD，明确自动推送不依赖本地电脑开机；GitHub 云端漏调度时使用多时点冗余和手机手动兜底
+
 ### v0.6.2 P2 质量修复
 - 扩展高频 AI 实体词典，覆盖 Midjourney、Strix、Mistral AI、xAI、CoreWeave、阿里/百度/腾讯/华为等实体
 - 修正 `committed` 状态语义：主流程默认写入 `false`，GitHub Actions 在提交数据前标记为 `true` 并随数据一起提交

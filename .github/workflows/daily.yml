@@ -6,12 +6,20 @@ on:
     - cron: '45 23 * * *'
     # 兜底触发：UTC 00:15 = 北京时间 8:15
     - cron: '15 0 * * *'
+    # 云端调度冗余：降低 GitHub schedule 漏触发导致整天不推送的概率
+    - cron: '35 0 * * *'
+    - cron: '55 0 * * *'
+    - cron: '20 1 * * *'
   workflow_dispatch:
     inputs:
       force_push:
         description: 'Force WeChat push even if today was already pushed'
         required: false
         default: 'false'
+  issues:
+    types: [opened]
+  issue_comment:
+    types: [created]
 
 permissions:
   contents: write
@@ -25,6 +33,24 @@ concurrency:
 jobs:
   daily-digest:
     runs-on: ubuntu-latest
+    if: >-
+      ${{
+        github.event_name == 'schedule' ||
+        github.event_name == 'workflow_dispatch' ||
+        (
+          github.actor == github.repository_owner &&
+          github.event_name == 'issues' &&
+          (
+            contains(github.event.issue.title, 'manual-push') ||
+            contains(github.event.issue.body, '/push')
+          )
+        ) ||
+        (
+          github.actor == github.repository_owner &&
+          github.event_name == 'issue_comment' &&
+          contains(github.event.comment.body, '/push')
+        )
+      }}
     timeout-minutes: 15
     environment:
       name: github-pages
@@ -64,8 +90,14 @@ jobs:
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
           LLM_API_BASE: ${{ secrets.LLM_API_BASE }}
           LLM_MODEL: ${{ secrets.LLM_MODEL }}
+          FORCE_PUSH: >-
+            ${{
+              (github.event_name == 'workflow_dispatch' && inputs.force_push == 'true') ||
+              (github.event_name == 'issues' && contains(github.event.issue.body, '/push-force')) ||
+              (github.event_name == 'issue_comment' && contains(github.event.comment.body, '/push-force'))
+            }}
         run: |
-          if [[ "${{ github.event_name }}" == "workflow_dispatch" && "${{ inputs.force_push }}" == "true" ]]; then
+          if [[ "$FORCE_PUSH" == "true" ]]; then
             python src/main.py --force-push
           else
             python src/main.py

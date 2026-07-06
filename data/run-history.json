@@ -33,6 +33,38 @@
         "Top 5 社区源过多: 2"
       ],
       "errors": []
+    },
+    {
+      "date": "2026-07-06",
+      "status": "success",
+      "startedAt": "2026-07-06T01:10:31Z",
+      "finishedAt": "2026-07-06T01:10:52Z",
+      "candidateCount": 86,
+      "selectedCount": 5,
+      "sourcesAvailable": 7,
+      "llmModel": "deepseek-chat",
+      "generated": true,
+      "pushed": true,
+      "committed": true,
+      "schemaValid": true,
+      "warnings": [
+        "Top 5 社区源过多: 2"
+      ],
+      "errors": [],
+      "trigger": "workflow_dispatch",
+      "workflowRunId": "28761528826",
+      "isDryRun": false,
+      "sendkeyPresent": true,
+      "pushAttempted": true,
+      "pushAttemptedAt": "2026-07-06T01:10:50Z",
+      "pushSkippedReason": "",
+      "pushHttpStatus": 200,
+      "pushResponseCode": 0,
+      "pushResponseMessage": "",
+      "pushResponseBodyPreview": "{\"code\":0,\"message\":\"\",\"data\":{\"pushid\":\"44323688\",\"readkey\":\"SCTpGlq3ItlaC9l\",\"error\":\"SUCCESS\",\"errno\":0}}",
+      "serverchanEndpointType": "sct",
+      "pushId": "44323688",
+      "digestHash": "e07805f2e83ad0871e5ca04c21f531b43472b6d0"
     }
   ]
 }

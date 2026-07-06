@@ -83,7 +83,7 @@ python src/main.py --force-push
    - `LLM_API_KEY`
    - `LLM_API_BASE`
    - `LLM_MODEL`
-3. 启用 Actions，每天早上 7:45（北京时间）自动运行；8:15、8:35、8:55、9:20 会做幂等兜底重试
+3. 启用 Actions，每天早上 7:45（北京时间）自动运行；8:15 会做幂等兜底重试
 
 ### 手机手动推送
 
@@ -114,7 +114,7 @@ python -m http.server 8080
 ## 技术栈
 
 - **语言**：Python 3.12+
-- **调度**：GitHub Actions（北京时间 7:45 主触发，8:15/8:35/8:55/9:20 幂等兜底；支持手机 issue 手动触发）
+- **调度**：GitHub Actions（北京时间 7:45 主触发，8:15 幂等兜底；支持手机 issue 手动触发）
 - **LLM**：OpenAI 兼容 API (gpt-4o-mini / deepseek-chat 等)
 - **推送**：Server酱 Turbo API
 - **网页**：纯静态 HTML + CSS + Vanilla JS

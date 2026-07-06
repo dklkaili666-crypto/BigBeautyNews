@@ -8,9 +8,9 @@ def test_daily_workflow_has_fallback_schedule_and_skips_duplicate_pushes():
 
     assert "cron: '45 23 * * *'" in workflow
     assert "cron: '15 0 * * *'" in workflow
-    assert "cron: '35 0 * * *'" in workflow
-    assert "cron: '55 0 * * *'" in workflow
-    assert "cron: '20 1 * * *'" in workflow
+    assert "cron: '35 0 * * *'" not in workflow
+    assert "cron: '55 0 * * *'" not in workflow
+    assert "cron: '20 1 * * *'" not in workflow
     assert "id: push-check" in workflow
     assert "steps.push-check.outputs.should_run == 'true'" in workflow
     assert "force_push" in workflow

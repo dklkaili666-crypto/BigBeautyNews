@@ -6,10 +6,6 @@ on:
     - cron: '45 23 * * *'
     # 兜底触发：UTC 00:15 = 北京时间 8:15
     - cron: '15 0 * * *'
-    # 云端调度冗余：降低 GitHub schedule 漏触发导致整天不推送的概率
-    - cron: '35 0 * * *'
-    - cron: '55 0 * * *'
-    - cron: '20 1 * * *'
   workflow_dispatch:
     inputs:
       force_push:

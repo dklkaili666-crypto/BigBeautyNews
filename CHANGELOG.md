@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+### v0.6.5 调度收敛
+- 按运行策略收敛自动调度：只保留北京时间 7:45 主触发和 8:15 兜底触发
+- 9:10 临时验证不写入长期 cron，改用一次性强制触发，避免后续每天重复推送
+
 ### v0.6.4 推送链路可观测性修复
 - 增加 `workflow_dispatch push_test=true` 的 Server酱独立冒烟测试模式
 - `run-status.json` 记录 trigger、workflowRunId、digestHash、sendkeyPresent、pushAttempted、Server酱 HTTP/code/message/响应摘要等诊断字段

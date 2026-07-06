@@ -15,6 +15,24 @@
       "schemaValid": true,
       "warnings": [],
       "errors": []
+    },
+    {
+      "date": "2026-07-06",
+      "status": "success",
+      "startedAt": "2026-07-06T00:25:59Z",
+      "finishedAt": "2026-07-06T00:26:21Z",
+      "candidateCount": 85,
+      "selectedCount": 5,
+      "sourcesAvailable": 7,
+      "llmModel": "deepseek-chat",
+      "generated": true,
+      "pushed": true,
+      "committed": true,
+      "schemaValid": true,
+      "warnings": [
+        "Top 5 社区源过多: 2"
+      ],
+      "errors": []
     }
   ]
 }

@@ -1,9 +1,9 @@
 {
-  "date": "2026-07-05",
+  "date": "2026-07-06",
   "status": "success",
-  "startedAt": "2026-07-05T06:37:55Z",
-  "finishedAt": "2026-07-05T06:38:11Z",
-  "candidateCount": 81,
+  "startedAt": "2026-07-06T00:25:59Z",
+  "finishedAt": "2026-07-06T00:26:21Z",
+  "candidateCount": 85,
   "selectedCount": 5,
   "sourcesAvailable": 7,
   "llmModel": "deepseek-chat",
@@ -11,6 +11,8 @@
   "pushed": true,
   "committed": true,
   "schemaValid": true,
-  "warnings": [],
+  "warnings": [
+    "Top 5 社区源过多: 2"
+  ],
   "errors": []
 }

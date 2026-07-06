@@ -1,40 +1,40 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-07-05T06:38:10Z",
+  "exportedAt": "2026-07-06T00:26:19Z",
   "items": [
     {
-      "date": "2026-07-05",
-      "title": "Anthropic发布Claude Science进军药物研发，AI大模型向垂直科学领域扩张",
-      "summary": "Anthropic在“AI for Science”活动中推出Claude Science，这是一个面向科学家的AI工作台，整合碎片化工具与数据集，并支持图表生成。此举标志着Anthropic从代码工具向垂直科学领域的战略扩张，直接挑战现有AI+生物医药格局。投资者需关注其能否在药物研发领域复制代码工具的成功，以及该领域商业化潜力。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/961311/anthropic-claude-science-ai-drug-development",
-      "source": "The Verge"
+      "date": "2026-07-06",
+      "title": "Mistral AI：OpenAI竞争对手的融资与开源策略如何重塑大模型格局",
+      "summary": "Mistral AI自2023年成立以来，凭借部分开源AI模型获得巨额融资，旨在“将前沿AI交到每个人手中”。作为OpenAI的主要竞争对手，其开源与闭源并行的策略直接改变了大语言模型市场的竞争格局。投资者需关注其融资进展、模型性能及对闭源巨头（如OpenAI、Google）市场份额的潜在冲击，这将是AI投资的关键风向标。",
+      "url": "https://techcrunch.com/2026/07/04/what-is-mistral-ai-everything-to-know-about-the-openai-competitor/",
+      "source": "TechCrunch"
     },
     {
-      "date": "2026-07-05",
-      "title": "GPT-5.5 Codex推理token聚类或致性能下降，影响OpenAI技术领先性",
-      "summary": "Hacker News社区发现，GPT-5.5 Codex的推理token聚类可能导致性能退化。这一发现可能影响OpenAI下一代模型的发布节奏，并引发投资者对其技术领先性的重新评估。若问题持续，可能削弱OpenAI在AI竞赛中的优势地位。",
-      "url": "https://github.com/openai/codex/issues/30364",
+      "date": "2026-07-06",
+      "title": "AI导师在达特茅斯课程中实现0.71-1.30 SD效应量，教育商业化信号明确",
+      "summary": "一款新型AI导师在达特茅斯学院课程中取得0.71至1.30标准差的学习效果提升，验证了AI在教育领域的显著商业化潜力。这一技术突破表明，AI个性化辅导有望大幅提升学习效率，吸引教育科技投资。投资者应关注此类产品在K-12和高等教育中的规模化应用前景，以及其对传统教育模式的颠覆性影响。",
+      "url": "https://intextbooks.science.uu.nl/workshop2026/files/itb26_s1s2.pdf",
       "source": "Hacker News"
     },
     {
-      "date": "2026-07-05",
-      "title": "阿里巴巴内部禁用Claude Code，中美AI工具竞争加剧",
-      "summary": "阿里巴巴将Anthropic的Claude Code列为高风险软件并禁止员工使用，反映中美AI工具竞争升级及企业数据安全担忧。此举可能限制Anthropic在中国市场的拓展，同时凸显中国科技巨头对海外AI工具的审慎态度。投资者需关注地缘政治对AI工具跨境部署的影响。",
-      "url": "https://techcrunch.com/2026/07/04/alibaba-reportedly-bans-employees-from-using-claude-code/",
-      "source": "TechCrunch"
+      "date": "2026-07-06",
+      "title": "美国富裕家庭转向AI教育替代传统学校，付费意愿驱动市场增长",
+      "summary": "尽管多数美国人不信任AI，但部分高净值家庭已开始使用AI教育孩子，替代传统学校。Forge Prep和Alpha等公司提供相关服务，表明AI在教育市场的实际需求和付费意愿正在形成。投资者需评估这一细分市场的增长潜力，以及AI教育产品在高端用户中的接受度，这为教育科技投资提供了新的参考维度。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/961505/wealthy-ai-schools-alpha-forge-prep",
+      "source": "The Verge"
     },
     {
-      "date": "2026-07-05",
-      "title": "Midjourney要求好莱坞披露AI使用细节，或推动行业透明度标准",
-      "summary": "在与三家好莱坞工作室的诉讼中，Midjourney要求对方披露自身AI使用细节。此举可能推动影视行业AI使用透明度标准的建立，影响AI内容生成的法律与商业边界。投资者需关注此案对AI在创意产业应用的监管先例意义。",
-      "url": "https://techcrunch.com/2026/07/04/midjourney-wants-hollywood-studios-to-reveal-the-details-of-their-ai-usage/",
-      "source": "TechCrunch"
+      "date": "2026-07-06",
+      "title": "同人小说社区与AI的冲突：版权伦理风险或影响AI内容生成市场",
+      "summary": "同人小说社区近期发起运动，旨在根除使用生成式AI的作者，但检测方法存在争议，可能误伤普通创作者。对Claude、ChatGPT等AI工具的广泛反感，反映了创意内容领域的版权和伦理风险。投资者需警惕此类冲突对AI内容生成产品市场接受度的负面影响，以及可能引发的监管收紧，这将是AI应用投资的重要风险因素。",
+      "url": "https://www.theverge.com/tech/960854/ai-fanfiction-ao3-claude-detector",
+      "source": "The Verge"
     },
     {
-      "date": "2026-07-05",
-      "title": "开源AI渗透测试工具Strix获近2000星，AI安全需求爆发",
-      "summary": "开源AI渗透测试工具Strix（usestrix/strix）在GitHub Trending上获得近2000星，旨在帮助开发者发现和修复应用漏洞。这反映AI安全工具需求爆发，可能催生新的AI安全创业与投资机会。投资者应关注AI安全赛道的增长潜力及商业化路径。",
-      "url": "https://github.com/usestrix/strix",
+      "date": "2026-07-06",
+      "title": "Meta开源Agent-ready设计系统Astryx，加速AI Agent基础设施布局",
+      "summary": "Meta开源了名为Astryx的设计系统，该系统完全可定制且为AI智能体（Agent）就绪。此举表明大型科技公司在AI Agent基础设施上的布局加速，旨在抢占开发者生态和工具链高地。投资者应关注此类开源项目对AI Agent开发效率的提升，以及Meta等巨头在Agent领域的战略投入，这将对相关投资方向产生指导意义。",
+      "url": "https://github.com/facebook/astryx",
       "source": "GitHub Trending"
     }
   ]

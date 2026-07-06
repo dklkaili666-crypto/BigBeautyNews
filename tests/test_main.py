@@ -44,9 +44,20 @@ def test_pipeline_retries_failed_push_then_skips_duplicate_success(
 
     def push_with_results(*args):
         push_calls.append(args)
-        return next(push_results)
+        ok = next(push_results)
+        return {
+            "ok": ok,
+            "pushAttempted": True,
+            "pushHttpStatus": 200,
+            "pushResponseCode": 0 if ok else 1,
+            "pushResponseMessage": "" if ok else "failed",
+            "pushResponseBodyPreview": "{}",
+            "sendkeyPresent": True,
+            "serverchanEndpointType": "sct",
+            "pushId": "push-1" if ok else "",
+        }
 
-    monkeypatch.setattr(main, "push_to_wechat", push_with_results)
+    monkeypatch.setattr(main, "push_to_wechat_with_result", push_with_results)
     monkeypatch.setattr(main, "LLM_API_KEY", "test-key")
     monkeypatch.setattr(main, "DAILY_JSON_PATH", str(tmp_path / "data" / "daily-5-things.json"))
     monkeypatch.setattr(main, "HISTORY_JSON_PATH", str(tmp_path / "data" / "history.json"))
@@ -78,3 +89,8 @@ def test_pipeline_retries_failed_push_then_skips_duplicate_success(
     assert first_status["pushed"] is False
     assert latest_status["status"] == "success"
     assert latest_status["committed"] is False
+    assert latest_status["pushAttempted"] is True
+    assert latest_status["pushHttpStatus"] == 200
+    assert latest_status["pushResponseCode"] == 0
+    assert latest_status["trigger"] == "local"
+    assert latest_status["digestHash"]

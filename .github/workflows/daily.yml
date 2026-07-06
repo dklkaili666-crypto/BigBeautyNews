@@ -16,6 +16,10 @@ on:
         description: 'Force WeChat push even if today was already pushed'
         required: false
         default: 'false'
+      push_test:
+        description: 'Only send a ServerChan smoke test message'
+        required: false
+        default: 'false'
   issues:
     types: [opened]
   issue_comment:
@@ -60,6 +64,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Refresh repository state
+        run: git pull --ff-only origin master
+
       - name: Check whether today's digest was already pushed
         id: push-check
         shell: bash
@@ -84,7 +91,11 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run BigBeautyNews
-        if: steps.push-check.outputs.should_run == 'true'
+        if: >-
+          ${{
+            steps.push-check.outputs.should_run == 'true' &&
+            !(github.event_name == 'workflow_dispatch' && inputs.push_test == 'true')
+          }}
         env:
           SERVERCHAN_SENDKEY: ${{ secrets.SERVERCHAN_SENDKEY }}
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
@@ -103,8 +114,24 @@ jobs:
             python src/main.py
           fi
 
+      - name: Run ServerChan smoke test
+        if: >-
+          ${{
+            steps.push-check.outputs.should_run == 'true' &&
+            github.event_name == 'workflow_dispatch' &&
+            inputs.push_test == 'true'
+          }}
+        env:
+          SERVERCHAN_SENDKEY: ${{ secrets.SERVERCHAN_SENDKEY }}
+        run: PYTHONPATH=src python -m outputs.serverchan --test
+
       - name: Commit & Push data
-        if: success() && steps.push-check.outputs.should_run == 'true'
+        if: >-
+          ${{
+            success() &&
+            steps.push-check.outputs.should_run == 'true' &&
+            !(github.event_name == 'workflow_dispatch' && inputs.push_test == 'true')
+          }}
         run: |
           git config user.name "BigBeautyNews Bot"
           git config user.email "bot@bigbeautynews.local"
@@ -114,7 +141,12 @@ jobs:
           git push
 
       - name: Prepare Pages artifact
-        if: success() && steps.push-check.outputs.should_run == 'true'
+        if: >-
+          ${{
+            success() &&
+            steps.push-check.outputs.should_run == 'true' &&
+            !(github.event_name == 'workflow_dispatch' && inputs.push_test == 'true')
+          }}
         run: |
           mkdir -p _site/web _site/data
           cp web/index.html web/style.css web/app.js web/data.json _site/web/
@@ -122,16 +154,31 @@ jobs:
           touch _site/.nojekyll
 
       - name: Configure Pages
-        if: success() && steps.push-check.outputs.should_run == 'true'
+        if: >-
+          ${{
+            success() &&
+            steps.push-check.outputs.should_run == 'true' &&
+            !(github.event_name == 'workflow_dispatch' && inputs.push_test == 'true')
+          }}
         uses: actions/configure-pages@v5
 
       - name: Upload Pages artifact
-        if: success() && steps.push-check.outputs.should_run == 'true'
+        if: >-
+          ${{
+            success() &&
+            steps.push-check.outputs.should_run == 'true' &&
+            !(github.event_name == 'workflow_dispatch' && inputs.push_test == 'true')
+          }}
         uses: actions/upload-pages-artifact@v4
         with:
           path: _site
 
       - name: Deploy Pages
-        if: success() && steps.push-check.outputs.should_run == 'true'
+        if: >-
+          ${{
+            success() &&
+            steps.push-check.outputs.should_run == 'true' &&
+            !(github.event_name == 'workflow_dispatch' && inputs.push_test == 'true')
+          }}
         uses: actions/deploy-pages@v4
         id: deployment

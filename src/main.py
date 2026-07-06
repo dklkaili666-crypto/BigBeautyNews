@@ -27,6 +27,8 @@ from __future__ import annotations
 
 import argparse
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from hashlib import sha1
+import json
 import logging
 import sys
 from datetime import datetime, timezone
@@ -65,7 +67,7 @@ from pipeline.filter import (
 )
 from pipeline.ranker import select_top5, call_llm_ranking
 from pipeline.translator import translate_top5
-from outputs.serverchan import push_to_wechat
+from outputs.serverchan import push_to_wechat_with_result
 from outputs.json_writer import (
     build_internal_digest,
     build_external_digest,
@@ -107,6 +109,22 @@ def run_pipeline(dry_run: bool = False, force_push: bool = False) -> dict:
     selected_count = 0
     source_count = 0
     warnings: list[str] = []
+    status_extra: dict[str, Any] = {
+        "trigger": os.getenv("GITHUB_EVENT_NAME", "local"),
+        "workflowRunId": os.getenv("GITHUB_RUN_ID", ""),
+        "isDryRun": dry_run,
+        "sendkeyPresent": bool(SERVERCHAN_SENDKEY),
+        "pushAttempted": False,
+        "pushAttemptedAt": "",
+        "pushSkippedReason": "",
+        "pushHttpStatus": None,
+        "pushResponseCode": None,
+        "pushResponseMessage": "",
+        "pushResponseBodyPreview": "",
+        "serverchanEndpointType": "unknown",
+        "pushId": "",
+        "digestHash": "",
+    }
 
     def finish_status(
         *,
@@ -134,6 +152,7 @@ def run_pipeline(dry_run: bool = False, force_push: bool = False) -> dict:
                 schema_valid=schema_valid,
                 warnings=warnings,
                 errors=errors_for_status or [],
+                extra=status_extra,
             ),
             DATA_DIR,
         )
@@ -326,6 +345,9 @@ def run_pipeline(dry_run: bool = False, force_push: bool = False) -> dict:
         date_str=today,
     )
     external_digest = build_external_digest(internal_digest)
+    status_extra["digestHash"] = sha1(
+        json.dumps(external_digest, ensure_ascii=False, sort_keys=True).encode("utf-8")
+    ).hexdigest()
     try:
         validate_internal_digest(internal_digest)
         validate_external_digest(external_digest)
@@ -356,11 +378,18 @@ def run_pipeline(dry_run: bool = False, force_push: bool = False) -> dict:
         push_ok = False
         if was_pushed(PUSH_HISTORY_PATH, today) and not force_push:
             logger.info("  微信推送: 今日已成功发送，跳过重复推送")
+            status_extra["pushSkippedReason"] = "already_pushed"
             push_ok = True
         else:
-            push_ok = push_to_wechat(
+            push_result = push_to_wechat_with_result(
                 SERVERCHAN_SENDKEY, translated, today, daily_theme
             )
+            status_extra.update({
+                key: value
+                for key, value in push_result.items()
+                if key != "ok"
+            })
+            push_ok = bool(push_result.get("ok"))
             if push_ok:
                 mark_pushed(PUSH_HISTORY_PATH, today)
             else:

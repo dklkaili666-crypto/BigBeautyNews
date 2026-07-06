@@ -5,8 +5,12 @@ Server酱 Turbo 推送模块。
 API: https://sctapi.ftqq.com/{sendkey}.send
 """
 from __future__ import annotations
+from datetime import datetime, timezone
 from typing import Any
+import argparse
+import json
 import logging
+import os
 import requests
 
 logger = logging.getLogger(__name__)
@@ -18,6 +22,24 @@ SERVERCHAN_URL = "https://sctapi.ftqq.com/{sendkey}.send"
 # 内容最大 64KB，支持 Markdown
 MAX_TITLE_LENGTH = 256
 MAX_DESP_LENGTH = 64 * 1024
+BODY_PREVIEW_LENGTH = 500
+
+
+def _utc_now() -> str:
+    return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
+def _key_type(sendkey: str) -> str:
+    key = str(sendkey or "").strip().casefold()
+    if key.startswith("sct"):
+        return "sct"
+    if key.startswith("sc"):
+        return "sc3"
+    return "unknown"
+
+
+def _preview(value: Any) -> str:
+    return str(value)[:BODY_PREVIEW_LENGTH]
 
 
 def build_markdown_message(
@@ -87,26 +109,95 @@ def push_to_wechat(
     Returns:
         True 推送成功，False 推送失败
     """
-    title, desp, _ = build_markdown_message(items, date_str, daily_theme)
+    return bool(push_to_wechat_with_result(sendkey, items, date_str, daily_theme).get("ok"))
 
+
+def push_to_wechat_with_result(
+    sendkey: str,
+    items: list[dict[str, Any]],
+    date_str: str,
+    daily_theme: str = "",
+) -> dict[str, Any]:
+    result: dict[str, Any] = {
+        "ok": False,
+        "pushAttempted": False,
+        "pushAttemptedAt": "",
+        "sendkeyPresent": bool(sendkey),
+        "serverchanEndpointType": _key_type(sendkey),
+        "pushHttpStatus": None,
+        "pushResponseCode": None,
+        "pushResponseMessage": "",
+        "pushResponseBodyPreview": "",
+        "pushId": "",
+    }
     if not sendkey:
         logger.warning("SERVERCHAN_SENDKEY 未配置，跳过微信推送")
-        return False
-
+        result["pushSkippedReason"] = "missing_sendkey"
+        return result
     try:
+        title, desp, _ = build_markdown_message(items, date_str, daily_theme)
         url = SERVERCHAN_URL.format(sendkey=sendkey)
+        result["pushAttempted"] = True
+        result["pushAttemptedAt"] = _utc_now()
         resp = requests.post(
             url,
             data={"title": title[:MAX_TITLE_LENGTH], "desp": desp},
             timeout=10,
         )
-        result = resp.json()
-        if result.get("code") == 0:
-            logger.info(f"Server酱推送成功: pushid={result.get('data', {}).get('pushid')}")
-            return True
+        result["pushHttpStatus"] = resp.status_code
+        result["pushResponseBodyPreview"] = _preview(resp.text)
+        try:
+            response_json = resp.json()
+        except ValueError:
+            result["pushResponseMessage"] = "invalid_json_response"
+            logger.error("Server酱推送失败: invalid JSON: %s", result["pushResponseBodyPreview"])
+            return result
+        result["pushResponseCode"] = response_json.get("code")
+        result["pushResponseMessage"] = str(
+            response_json.get("message") or response_json.get("msg") or ""
+        )
+        response_data = response_json.get("data")
+        if isinstance(response_data, dict):
+            result["pushId"] = str(response_data.get("pushid") or "")
+        result["ok"] = resp.status_code == 200 and response_json.get("code") == 0
+        if result["ok"]:
+            logger.info(f"Server酱推送成功: pushid={result.get('pushId')}")
         else:
-            logger.error(f"Server酱推送失败: {result}")
-            return False
+            logger.error(f"Server酱推送失败: {response_json}")
+        return result
     except Exception as e:
         logger.error(f"Server酱推送异常: {e}")
-        return False
+        result["pushResponseMessage"] = _preview(e)
+        return result
+
+
+def _test_items() -> list[dict[str, Any]]:
+    return [
+        {
+            "rank": 1,
+            "title_cn": "Server酱通道测试",
+            "summary_cn": "这是一条 BigBeautyNews 推送通道冒烟测试消息。",
+            "source": "BigBeautyNews",
+            "url": "https://github.com/dklkaili666-crypto/BigBeautyNews",
+        }
+    ]
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description="Server酱推送通道工具")
+    parser.add_argument("--test", action="store_true", help="发送一条 Server酱测试消息")
+    args = parser.parse_args()
+    if not args.test:
+        parser.error("only --test is supported")
+    push_result = push_to_wechat_with_result(
+        os.getenv("SERVERCHAN_SENDKEY", ""),
+        _test_items(),
+        datetime.now().strftime("%Y-%m-%d"),
+        "BigBeautyNews 推送通道测试",
+    )
+    print(json.dumps(push_result, ensure_ascii=False, indent=2))
+    raise SystemExit(0 if push_result.get("ok") else 1)
+
+
+if __name__ == "__main__":
+    main()

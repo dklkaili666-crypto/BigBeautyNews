@@ -27,8 +27,9 @@ def build_run_status(
     schema_valid: bool,
     warnings: list[str] | None = None,
     errors: list[str] | None = None,
+    extra: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
-    return {
+    status_doc = {
         "date": date_str,
         "status": status,
         "startedAt": started_at,
@@ -44,6 +45,8 @@ def build_run_status(
         "warnings": list(warnings or []),
         "errors": list(errors or []),
     }
+    status_doc.update(extra or {})
+    return status_doc
 
 
 def write_run_status(status: dict[str, Any], data_dir: str) -> None:

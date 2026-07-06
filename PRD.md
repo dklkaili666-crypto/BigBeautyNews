@@ -295,6 +295,8 @@ v0.6 的最小实现规则：
 - **业务日期**：所有面向用户和归档的 `date` 均使用北京时间业务日期，即 `datetime.now(ZoneInfo("Asia/Shanghai")).date()`；`exportedAt` 可继续使用 UTC ISO 时间
 - **无需本地电脑开机**：所有抓取、处理、推送均在 GitHub 云服务器上完成
 - **手动触发**：支持 `workflow_dispatch`，手动运行一次；同时支持手机端新建 `manual-push` issue 或评论 `/push` / `/push-force` 触发推送
+- **推送冒烟测试**：`workflow_dispatch push_test=true` 只发送 Server酱测试消息，不执行抓取、LLM 排序、归档和网页发布
+- **排队任务状态刷新**：workflow checkout 后必须先 `git pull --ff-only origin master`，再读取 `push-history.json`，避免排队任务基于旧提交误判当天未推送
 - **注意事项**：
   - GitHub Actions 延迟：免费用户排队约 0–40 分钟
   - 仓库 60 天无提交会自动停用 schedule，需定期 commit 保持活跃
@@ -417,6 +419,24 @@ interface RunStatus {
 | `status=failed` | 未能生成可用 Top 5，或 schema 校验失败 |
 
 推送失败时，不得写入 `push-history.json`；8:15 兜底只以 `push-history.json` 判断是否需要重试，不以 `run-status.json` 的 `generated` 判断。
+
+推送诊断字段：
+
+| 字段 | 含义 |
+|---|---|
+| `workflowRunId` | GitHub Actions run id，用于直接定位云端日志 |
+| `trigger` | `schedule` / `workflow_dispatch` / `issues` / `issue_comment` / `local` |
+| `isDryRun` | 是否为本地 dry-run；dry-run 不得调用 Server酱 |
+| `sendkeyPresent` | 是否检测到 SendKey，只记录布尔值，不泄露密钥 |
+| `pushAttempted` | 是否实际调用过 Server酱 API |
+| `pushSkippedReason` | 推送未执行原因，例如 `already_pushed` / `missing_sendkey` |
+| `pushHttpStatus` | Server酱 HTTP 状态码 |
+| `pushResponseCode` | Server酱业务响应码 |
+| `pushResponseMessage` | Server酱响应消息或异常摘要 |
+| `pushResponseBodyPreview` | 响应体短摘要，用于排障，不记录密钥 |
+| `serverchanEndpointType` | SendKey 类型推断：`sct` / `sc3` / `unknown` |
+| `pushId` | Server酱成功返回的 push id |
+| `digestHash` | 当日对外 JSON 摘要 hash，用于判断同一日报是否重复推送 |
 
 ### 3.3 数据产出总结
 
@@ -776,6 +796,9 @@ GitHub Actions 触发（每天 UTC 23:45 = 北京次日 07:45）
 | K5 | 生成可用数据后自动 `git commit` + `git push` 数据文件和状态文件；若推送失败，状态仍需记录并让工作流最终失败 | PRD §3.2 | |
 | K6 | Python 版本指定为 3.12 | PRD §4.1 | |
 | K7 | `timeout-minutes` 设为 15 | `.github/workflows/daily.yml` | |
+| K8 | checkout 后先 `git pull --ff-only origin master`，再检查 `push-history.json`，避免排队任务读取旧状态 | PRD §2.8 | |
+| K9 | `workflow_dispatch push_test=true` 只发送 Server酱测试消息，不运行完整日报流水线 | PRD §2.8 | |
+| K10 | `run-status.json` 记录 Server酱 HTTP 状态、业务 code、响应摘要、trigger、workflowRunId 和 digestHash | PRD §3.2 | |
 
 ### L. 网页浏览
 

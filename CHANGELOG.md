@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+### v0.6.4 推送链路可观测性修复
+- 增加 `workflow_dispatch push_test=true` 的 Server酱独立冒烟测试模式
+- `run-status.json` 记录 trigger、workflowRunId、digestHash、sendkeyPresent、pushAttempted、Server酱 HTTP/code/message/响应摘要等诊断字段
+- GitHub Actions checkout 后先拉取最新 `master`，避免排队任务基于旧 `push-history.json` 重复推送
+
 ### v0.6.3 推送触发可靠性修复
 - 增加 8:35、8:55、9:20 北京时间冗余触发点，降低 GitHub Actions schedule 漏触发导致整天不推送的概率
 - 增加手机端手动触发方式：新建 `manual-push` issue 或评论 `/push` / `/push-force`

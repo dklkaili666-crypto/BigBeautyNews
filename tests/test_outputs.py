@@ -10,7 +10,7 @@ from outputs.json_writer import (
     validate_internal_digest,
 )
 from outputs.status import build_run_status, mark_latest_run_committed, write_run_status
-from outputs.serverchan import build_markdown_message
+from outputs.serverchan import build_markdown_message, push_to_wechat_with_result
 from outputs.web_builder import write_web_data
 
 
@@ -190,3 +190,37 @@ def test_serverchan_message_contains_five_markdown_links():
     assert "2026-07-01" in title
     assert markdown.count("[阅读原文]") == 5
     assert "模型竞争" in plaintext
+
+
+def test_serverchan_push_result_captures_response_details(monkeypatch):
+    class FakeResponse:
+        status_code = 200
+        text = '{"code":0,"message":"ok","data":{"pushid":"123"}}'
+
+        def json(self):
+            return {"code": 0, "message": "ok", "data": {"pushid": "123"}}
+
+    calls = []
+
+    def fake_post(url, **kwargs):
+        calls.append((url, kwargs))
+        return FakeResponse()
+
+    monkeypatch.setattr("outputs.serverchan.requests.post", fake_post)
+
+    result = push_to_wechat_with_result(
+        "SCT_TEST",
+        sample_items(),
+        "2026-07-01",
+        "模型竞争",
+    )
+
+    assert result["ok"] is True
+    assert result["pushAttempted"] is True
+    assert result["sendkeyPresent"] is True
+    assert result["serverchanEndpointType"] == "sct"
+    assert result["pushHttpStatus"] == 200
+    assert result["pushResponseCode"] == 0
+    assert result["pushResponseMessage"] == "ok"
+    assert result["pushId"] == "123"
+    assert calls[0][1]["data"]["title"]

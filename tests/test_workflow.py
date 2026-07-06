@@ -14,8 +14,11 @@ def test_daily_workflow_has_fallback_schedule_and_skips_duplicate_pushes():
     assert "id: push-check" in workflow
     assert "steps.push-check.outputs.should_run == 'true'" in workflow
     assert "force_push" in workflow
+    assert "push_test" in workflow
+    assert "git pull --ff-only origin master" in workflow
     assert "python src/main.py --force-push" in workflow
     assert "mark_latest_run_committed" in workflow
+    assert "python -m outputs.serverchan --test" in workflow
 
 
 def test_daily_workflow_supports_phone_manual_push_trigger():

@@ -98,6 +98,11 @@ python src/main.py --force-push
 - `/push`：今天还没成功推送时推送一次
 - `/push-force`：即使今天已有成功记录，也强制再推送一次
 
+也可以在 Actions 页面手动运行 workflow，并设置：
+
+- `force_push=true`：强制重发今天日报
+- `push_test=true`：只发送一条 Server酱测试消息，不跑抓取/LLM/归档流水线
+
 ### 5. 打开本地网页
 
 ```bash

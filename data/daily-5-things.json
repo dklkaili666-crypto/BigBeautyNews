@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-07-06T01:10:50Z",
+  "exportedAt": "2026-07-07T00:29:07Z",
   "items": [
     {
-      "date": "2026-07-06",
-      "title": "Mistral AI：OpenAI主要竞争对手的融资与开源策略解析",
-      "summary": "Mistral AI自2023年成立以来，凭借部分开源AI模型获得大量融资，其目标是“将前沿AI交到每个人手中”。作为OpenAI的主要竞争对手，其开源策略正在重塑大语言模型竞争格局，投资者需关注其融资进展、模型性能及市场定位，这直接影响AI行业的开源与闭源路线之争。",
-      "url": "https://techcrunch.com/2026/07/04/what-is-mistral-ai-everything-to-know-about-the-openai-competitor/",
+      "date": "2026-07-07",
+      "title": "微软裁员近5000人，Xbox与商业销售部门受冲击最大",
+      "summary": "微软（$MSFT）周一裁减约4800个岗位，占全球员工总数的2.1%，这是最新一轮裁员，加剧了市场对AI替代就业的担忧。裁员主要影响Xbox和商业销售部门。投资者需关注：科技巨头为降本增效而加速AI部署，可能持续压缩人力成本，但短期裁员风险或影响公司声誉与员工士气，进而拖累股价表现。",
+      "url": "https://techcrunch.com/2026/07/06/microsoft-lays-off-nearly-5000-employees-across-xbox-commercial-sales/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-07-06",
-      "title": "AI教育突破：达特茅斯课程中AI导师实现0.71-1.30标准差学习效果提升",
-      "summary": "一项在达特茅斯大学课程中进行的实验显示，AI导师在学生学习效果上实现了0.71至1.30标准差的效果量，显著优于传统教学。这一验证了AI在教育科技中的商业化潜力，投资者应关注AI教育垂直应用领域的突破性进展，这可能催生新的高增长市场。",
-      "url": "https://intextbooks.science.uu.nl/workshop2026/files/itb26_s1s2.pdf",
+      "date": "2026-07-07",
+      "title": "SK海力士赴美IPO，AI内存芯片需求驱动数十亿美元上市",
+      "summary": "SK海力士（SK Hynix）作为AI热潮的关键受益者，将于周五在美进行数十亿美元的IPO，为美国投资者提供直接参与AI基础设施红利的机会。作为全球第二大内存芯片制造商，其HBM（高带宽内存）产品是AI训练运行的核心组件。投资者应评估其估值合理性及与三星、美光的竞争格局，以判断长期投资价值。",
+      "url": "https://techcrunch.com/2026/07/06/us-investors-will-soon-get-access-to-sk-hynix-another-memory-maker-riding-the-ai-boom/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-07-07",
+      "title": "OpenAI股权分配方案：美国家庭或获300美元收益",
+      "summary": "OpenAI CEO Sam Altman此前承诺让美国人分享AI创造的财富，据《金融时报》报道，Altman正推进一项股权分配计划，可能使每个美国家庭获得约300美元的收益。这一方案若落地，将重塑AI行业资本结构，影响投资者对未来回报的预期。投资者需关注OpenAI估值变化及股权结构对商业化进程的潜在影响。",
+      "url": "https://www.technologyreview.com/2026/07/06/1140176/your-familys-300-stake-in-openai/",
+      "source": "MIT Technology Review"
+    },
+    {
+      "date": "2026-07-07",
+      "title": "Station F加速器升级，助力欧洲AI初创企业崛起",
+      "summary": "由法国亿万富翁Xavier Niel创立的巴黎创业中心Station F，正筹备新一期F/ai加速器项目，旨在强化其作为欧洲AI初创企业跳板的定位。该加速器为初创公司提供资金、导师和资源，可能催生下一波AI投资标的。投资者应关注欧洲AI生态的成长性，尤其是法国在AI领域的政策支持和人才储备。",
+      "url": "https://techcrunch.com/2026/07/06/station-f-ramps-up-as-a-launchpad-for-europes-hottest-ai-startups/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-07-07",
+      "title": "AMD推出Ryzen AI Halo开发套件，定价4000美元挑战英伟达",
+      "summary": "AMD（$AMD）发布Ryzen AI Halo开发套件，定价4000美元，旨在为AI开发者提供高性能硬件平台，直接挑战英伟达（$NVDA）在AI硬件生态的主导地位。该套件集成了AMD的GPU和AI加速单元，支持本地推理和微调。投资者需关注AMD能否通过性价比优势抢占市场份额，以及英伟达的应对策略，这将影响AI芯片竞争格局。",
+      "url": "https://www.lttlabs.com/articles/2026/07/06/amd-ryzen-ai-halo",
       "source": "Hacker News"
-    },
-    {
-      "date": "2026-07-06",
-      "title": "美国富裕家庭转向AI教育：高端需求催生新商业模式",
-      "summary": "尽管大多数美国人不信任AI，但部分富裕家庭正放弃传统学校，转而让AI教育孩子。Forge Prep和Alpha等公司已切入这一市场。这表明AI在教育领域的高端需求正在形成，可能催生定制化、高客单价的商业模式，投资者需关注这一细分市场的增长潜力。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/961505/wealthy-ai-schools-alpha-forge-prep",
-      "source": "The Verge"
-    },
-    {
-      "date": "2026-07-06",
-      "title": "阿里开源页面智能体Page-Agent：用自然语言控制网页界面",
-      "summary": "阿里巴巴开源了JavaScript页面内GUI智能体项目Page-Agent，支持通过自然语言控制网页界面。这一开源动作展示了大型科技公司在AI智能体领域的布局，对AI自动化工具链的发展具有重要影响，投资者应关注Agent技术的商业化落地进展。",
-      "url": "https://github.com/alibaba/page-agent",
-      "source": "GitHub Trending"
-    },
-    {
-      "date": "2026-07-06",
-      "title": "谷歌新广告设想AI辅助撰写《独立宣言》，加速Gemini商业化推广",
-      "summary": "在《独立宣言》签署250周年之际，谷歌发布新广告，设想开国元勋使用Google Workspace和AI辅助撰写文件。此举旨在大力推广Gemini和Workspace AI功能，反映谷歌AI商业化战略加速，对微软$MSFT、亚马逊$AMZN等企业级AI市场参与者构成竞争压力。",
-      "url": "https://techcrunch.com/2026/07/04/new-google-commercial-imagines-a-declaration-of-independence-written-with-help-from-ai/",
-      "source": "TechCrunch"
     }
   ]
 }

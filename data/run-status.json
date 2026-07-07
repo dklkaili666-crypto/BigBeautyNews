@@ -1,9 +1,9 @@
 {
-  "date": "2026-07-06",
+  "date": "2026-07-07",
   "status": "success",
-  "startedAt": "2026-07-06T01:10:31Z",
-  "finishedAt": "2026-07-06T01:10:52Z",
-  "candidateCount": 86,
+  "startedAt": "2026-07-07T00:28:45Z",
+  "finishedAt": "2026-07-07T00:29:09Z",
+  "candidateCount": 81,
   "selectedCount": 5,
   "sourcesAvailable": 7,
   "llmModel": "deepseek-chat",
@@ -12,21 +12,21 @@
   "committed": true,
   "schemaValid": true,
   "warnings": [
-    "Top 5 社区源过多: 2"
+    "Top 5 来源过度集中: {'TechCrunch': 3, 'MIT Technology Review': 1, 'Hacker News': 1}"
   ],
   "errors": [],
-  "trigger": "workflow_dispatch",
-  "workflowRunId": "28761528826",
+  "trigger": "issues",
+  "workflowRunId": "28832769411",
   "isDryRun": false,
   "sendkeyPresent": true,
   "pushAttempted": true,
-  "pushAttemptedAt": "2026-07-06T01:10:50Z",
+  "pushAttemptedAt": "2026-07-07T00:29:07Z",
   "pushSkippedReason": "",
   "pushHttpStatus": 200,
   "pushResponseCode": 0,
   "pushResponseMessage": "",
-  "pushResponseBodyPreview": "{\"code\":0,\"message\":\"\",\"data\":{\"pushid\":\"44323688\",\"readkey\":\"SCTpGlq3ItlaC9l\",\"error\":\"SUCCESS\",\"errno\":0}}",
+  "pushResponseBodyPreview": "{\"code\":0,\"message\":\"\",\"data\":{\"pushid\":\"44483700\",\"readkey\":\"SCTpPVHqADo7w9e\",\"error\":\"SUCCESS\",\"errno\":0}}",
   "serverchanEndpointType": "sct",
-  "pushId": "44323688",
-  "digestHash": "e07805f2e83ad0871e5ca04c21f531b43472b6d0"
+  "pushId": "44483700",
+  "digestHash": "ab5765fec6a279ffb41779bd6af8f6ce65cb20ab"
 }

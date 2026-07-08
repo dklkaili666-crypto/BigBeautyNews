@@ -1,40 +1,40 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-07-08T01:11:03Z",
+  "exportedAt": "2026-07-08T03:37:49Z",
   "items": [
     {
       "date": "2026-07-08",
-      "title": "微软转向自研模型削减AI开支，行业成本压力加剧",
-      "summary": "微软（$MSFT）成为最新一家通过依赖自研大语言模型来降低AI支出的硅谷巨头。此举直接反映了行业面临的成本压力与竞争格局变化，投资者需关注其对供应链（如GPU需求）和投资方向的影响。自研模型趋势可能削弱对外部API的依赖，改变AI服务定价模式。",
-      "url": "https://techcrunch.com/2026/07/07/microsoft-joins-ai-cost-cutting-trend-by-relying-more-on-its-own-models/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-07-08",
-      "title": "Meta发布Muse Image AI生成器，用户隐私争议再起",
-      "summary": "Meta（$META）推出全新图像生成模型Muse Image，支持广告、装饰等应用场景。然而，用户对其使用个人照片训练模型表示强烈反对。该事件凸显大厂AI产品发布中的数据使用政策风险，可能影响AI图像生成市场增长及监管预期，投资者需警惕隐私合规成本。",
+      "title": "Meta发布Muse Image模型，用户照片默认训练引发数据合规争议",
+      "summary": "Meta推出全新AI图像生成模型Muse Image，具备广告、装饰及创作者场景等多种应用。但该模型默认使用用户照片进行训练，已引发用户强烈反弹。此举凸显大厂在AI模型竞争中的数据合规风险，投资者需关注Meta在隐私监管与用户信任方面的潜在影响，以及该模型对广告业务效率的提升潜力。",
       "url": "https://techcrunch.com/2026/07/07/meta-rolls-out-muse-a-new-ai-image-generator/",
       "source": "TechCrunch"
     },
     {
       "date": "2026-07-08",
-      "title": "Anthropic将Claude Cowork扩展至移动端和网页，AI Agent全平台渗透加速",
-      "summary": "Anthropic宣布其AI智能体平台Claude Cowork首次登陆移动端和网页，此前仅限macOS和Windows桌面应用。该功能将先向Max订阅用户开放，其他用户将在数周内获得。此举标志着AI Agent产品向全平台渗透，提升竞争壁垒与用户粘性，投资者应关注Anthropic对OpenAI等竞争对手的差异化优势。",
+      "title": "微软转向自研模型削减AI开支，成本控制策略影响云计算定价",
+      "summary": "微软加入硅谷AI成本削减趋势，更多依赖自研模型以降低对外部大语言模型的依赖。此举反映大厂在AI基础设施投入上的战略调整，可能重塑云计算与AI服务的定价体系。投资者应关注微软自研模型对$MSFT利润率的影响，以及其与OpenAI合作关系的潜在变化。",
+      "url": "https://techcrunch.com/2026/07/07/microsoft-joins-ai-cost-cutting-trend-by-relying-more-on-its-own-models/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-07-08",
+      "title": "OpenAI首席未来学家离职，战略与文化变动引发投资者关注",
+      "summary": "在OpenAI任职近九年的首席未来学家Joshua Achiam宣布离职，他曾专注于AI安全研究，并在马斯克诉奥特曼案中出庭作证。此离职可能预示OpenAI内部战略或文化调整，对投资者信心构成潜在影响。需关注OpenAI后续高管变动及对齐研究方向的稳定性。",
+      "url": "https://www.wired.com/story/openai-chief-futurist-joshua-achiam-is-leaving-the-company/",
+      "source": "Wired"
+    },
+    {
+      "date": "2026-07-08",
+      "title": "Anthropic将Claude Cowork扩展至移动端和网页，强化AI代理竞争",
+      "summary": "Anthropic宣布其AI代理平台Claude Cowork首次登陆移动端和网页，此前仅限macOS和Windows桌面应用。该扩展首先面向Max订阅用户，其他计划用户将在数周内获得访问权限。此举扩大Anthropic产品覆盖面，直接与微软/OpenAI的AI代理服务竞争，投资者需关注其订阅增长与市场份额变化。",
       "url": "https://www.theverge.com/ai-artificial-intelligence/961978/anthropic-claude-cowork-mobile-web",
       "source": "The Verge"
     },
     {
       "date": "2026-07-08",
-      "title": "OpenAI讨论全民持股计划，财政部发出AI警告",
-      "summary": "OpenAI CEO Sam Altman提议让美国人分享AI创造的财富，相关讨论再度升温，据报道他正探讨向公众发放股权。与此同时，美国财政部发出AI风险警告。这一组合事件涉及AI财富分配与监管风险，对投资情绪和政策预期有重大影响，投资者需评估OpenAI估值及潜在监管变化。",
-      "url": "https://www.technologyreview.com/2026/07/07/1140197/the-download-your-openai-stake-treasury-ai-warning/",
-      "source": "MIT Technology Review"
-    },
-    {
-      "date": "2026-07-08",
-      "title": "开源AI崛起未伤及Anthropic等前沿实验室，市场分层显现",
-      "summary": "分析指出，开源大语言模型的成功并未以牺牲前沿实验室（如Anthropic）为代价，两者反而分别占据同一生命周期的不同阶段。开源模型满足低成本、可定制需求，而闭源模型专注高性能与安全性。这一市场分层为投资策略提供关键洞察：投资者应区分基础模型与开源生态的差异化价值。",
-      "url": "https://techcrunch.com/2026/07/07/why-the-rise-of-open-source-ai-isnt-hurting-anthropic-yet/",
+      "title": "首次AI驱动勒索软件攻击仍依赖人类，自主性局限凸显",
+      "summary": "据披露，首次由AI智能体执行的真实勒索软件攻击中，AI仅负责技术执行环节，人类仍负责选择目标、搭建基础设施并提供窃取的凭证。这意味着该攻击并非完全自主的网络犯罪，上周头条报道有所夸大。此事件对AI安全投资方向具有参考价值，表明当前AI自主性仍有限，人类监督与安全防护仍是关键。",
+      "url": "https://techcrunch.com/2026/07/06/the-first-ai-run-ransomware-attack-still-needed-a-human/",
       "source": "TechCrunch"
     }
   ]

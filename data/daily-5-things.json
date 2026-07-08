@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-07-07T00:29:07Z",
+  "exportedAt": "2026-07-08T01:11:03Z",
   "items": [
     {
-      "date": "2026-07-07",
-      "title": "微软裁员近5000人，Xbox与商业销售部门受冲击最大",
-      "summary": "微软（$MSFT）周一裁减约4800个岗位，占全球员工总数的2.1%，这是最新一轮裁员，加剧了市场对AI替代就业的担忧。裁员主要影响Xbox和商业销售部门。投资者需关注：科技巨头为降本增效而加速AI部署，可能持续压缩人力成本，但短期裁员风险或影响公司声誉与员工士气，进而拖累股价表现。",
-      "url": "https://techcrunch.com/2026/07/06/microsoft-lays-off-nearly-5000-employees-across-xbox-commercial-sales/",
+      "date": "2026-07-08",
+      "title": "微软转向自研模型削减AI开支，行业成本压力加剧",
+      "summary": "微软（$MSFT）成为最新一家通过依赖自研大语言模型来降低AI支出的硅谷巨头。此举直接反映了行业面临的成本压力与竞争格局变化，投资者需关注其对供应链（如GPU需求）和投资方向的影响。自研模型趋势可能削弱对外部API的依赖，改变AI服务定价模式。",
+      "url": "https://techcrunch.com/2026/07/07/microsoft-joins-ai-cost-cutting-trend-by-relying-more-on-its-own-models/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-07-07",
-      "title": "SK海力士赴美IPO，AI内存芯片需求驱动数十亿美元上市",
-      "summary": "SK海力士（SK Hynix）作为AI热潮的关键受益者，将于周五在美进行数十亿美元的IPO，为美国投资者提供直接参与AI基础设施红利的机会。作为全球第二大内存芯片制造商，其HBM（高带宽内存）产品是AI训练运行的核心组件。投资者应评估其估值合理性及与三星、美光的竞争格局，以判断长期投资价值。",
-      "url": "https://techcrunch.com/2026/07/06/us-investors-will-soon-get-access-to-sk-hynix-another-memory-maker-riding-the-ai-boom/",
+      "date": "2026-07-08",
+      "title": "Meta发布Muse Image AI生成器，用户隐私争议再起",
+      "summary": "Meta（$META）推出全新图像生成模型Muse Image，支持广告、装饰等应用场景。然而，用户对其使用个人照片训练模型表示强烈反对。该事件凸显大厂AI产品发布中的数据使用政策风险，可能影响AI图像生成市场增长及监管预期，投资者需警惕隐私合规成本。",
+      "url": "https://techcrunch.com/2026/07/07/meta-rolls-out-muse-a-new-ai-image-generator/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-07-07",
-      "title": "OpenAI股权分配方案：美国家庭或获300美元收益",
-      "summary": "OpenAI CEO Sam Altman此前承诺让美国人分享AI创造的财富，据《金融时报》报道，Altman正推进一项股权分配计划，可能使每个美国家庭获得约300美元的收益。这一方案若落地，将重塑AI行业资本结构，影响投资者对未来回报的预期。投资者需关注OpenAI估值变化及股权结构对商业化进程的潜在影响。",
-      "url": "https://www.technologyreview.com/2026/07/06/1140176/your-familys-300-stake-in-openai/",
+      "date": "2026-07-08",
+      "title": "Anthropic将Claude Cowork扩展至移动端和网页，AI Agent全平台渗透加速",
+      "summary": "Anthropic宣布其AI智能体平台Claude Cowork首次登陆移动端和网页，此前仅限macOS和Windows桌面应用。该功能将先向Max订阅用户开放，其他用户将在数周内获得。此举标志着AI Agent产品向全平台渗透，提升竞争壁垒与用户粘性，投资者应关注Anthropic对OpenAI等竞争对手的差异化优势。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/961978/anthropic-claude-cowork-mobile-web",
+      "source": "The Verge"
+    },
+    {
+      "date": "2026-07-08",
+      "title": "OpenAI讨论全民持股计划，财政部发出AI警告",
+      "summary": "OpenAI CEO Sam Altman提议让美国人分享AI创造的财富，相关讨论再度升温，据报道他正探讨向公众发放股权。与此同时，美国财政部发出AI风险警告。这一组合事件涉及AI财富分配与监管风险，对投资情绪和政策预期有重大影响，投资者需评估OpenAI估值及潜在监管变化。",
+      "url": "https://www.technologyreview.com/2026/07/07/1140197/the-download-your-openai-stake-treasury-ai-warning/",
       "source": "MIT Technology Review"
     },
     {
-      "date": "2026-07-07",
-      "title": "Station F加速器升级，助力欧洲AI初创企业崛起",
-      "summary": "由法国亿万富翁Xavier Niel创立的巴黎创业中心Station F，正筹备新一期F/ai加速器项目，旨在强化其作为欧洲AI初创企业跳板的定位。该加速器为初创公司提供资金、导师和资源，可能催生下一波AI投资标的。投资者应关注欧洲AI生态的成长性，尤其是法国在AI领域的政策支持和人才储备。",
-      "url": "https://techcrunch.com/2026/07/06/station-f-ramps-up-as-a-launchpad-for-europes-hottest-ai-startups/",
+      "date": "2026-07-08",
+      "title": "开源AI崛起未伤及Anthropic等前沿实验室，市场分层显现",
+      "summary": "分析指出，开源大语言模型的成功并未以牺牲前沿实验室（如Anthropic）为代价，两者反而分别占据同一生命周期的不同阶段。开源模型满足低成本、可定制需求，而闭源模型专注高性能与安全性。这一市场分层为投资策略提供关键洞察：投资者应区分基础模型与开源生态的差异化价值。",
+      "url": "https://techcrunch.com/2026/07/07/why-the-rise-of-open-source-ai-isnt-hurting-anthropic-yet/",
       "source": "TechCrunch"
-    },
-    {
-      "date": "2026-07-07",
-      "title": "AMD推出Ryzen AI Halo开发套件，定价4000美元挑战英伟达",
-      "summary": "AMD（$AMD）发布Ryzen AI Halo开发套件，定价4000美元，旨在为AI开发者提供高性能硬件平台，直接挑战英伟达（$NVDA）在AI硬件生态的主导地位。该套件集成了AMD的GPU和AI加速单元，支持本地推理和微调。投资者需关注AMD能否通过性价比优势抢占市场份额，以及英伟达的应对策略，这将影响AI芯片竞争格局。",
-      "url": "https://www.lttlabs.com/articles/2026/07/06/amd-ryzen-ai-halo",
-      "source": "Hacker News"
     }
   ]
 }

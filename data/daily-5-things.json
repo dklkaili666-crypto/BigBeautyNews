@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-07-08T03:37:49Z",
+  "exportedAt": "2026-07-09T01:15:49Z",
   "items": [
     {
-      "date": "2026-07-08",
-      "title": "Meta发布Muse Image模型，用户照片默认训练引发数据合规争议",
-      "summary": "Meta推出全新AI图像生成模型Muse Image，具备广告、装饰及创作者场景等多种应用。但该模型默认使用用户照片进行训练，已引发用户强烈反弹。此举凸显大厂在AI模型竞争中的数据合规风险，投资者需关注Meta在隐私监管与用户信任方面的潜在影响，以及该模型对广告业务效率的提升潜力。",
-      "url": "https://techcrunch.com/2026/07/07/meta-rolls-out-muse-a-new-ai-image-generator/",
+      "date": "2026-07-09",
+      "title": "AI芯片公司SambaNova融资10亿美元，估值达110亿美元",
+      "summary": "AI芯片初创公司SambaNova在上一轮巨额融资仅5个月后，再次以110亿美元估值完成10亿美元融资。此前有传闻称英特尔曾试图以约16亿美元收购该公司。此次融资表明AI基础设施层投资热度不减，SambaNova作为芯片供应链的重要参与者，其估值飙升可能重塑市场竞争格局，投资者需关注其对$NVDA等现有芯片巨头的影响。",
+      "url": "https://techcrunch.com/2026/07/08/sambanova-draws-1b-at-11b-valuation-in-series-f-first-close/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-07-08",
-      "title": "微软转向自研模型削减AI开支，成本控制策略影响云计算定价",
-      "summary": "微软加入硅谷AI成本削减趋势，更多依赖自研模型以降低对外部大语言模型的依赖。此举反映大厂在AI基础设施投入上的战略调整，可能重塑云计算与AI服务的定价体系。投资者应关注微软自研模型对$MSFT利润率的影响，以及其与OpenAI合作关系的潜在变化。",
-      "url": "https://techcrunch.com/2026/07/07/microsoft-joins-ai-cost-cutting-trend-by-relying-more-on-its-own-models/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-07-08",
-      "title": "OpenAI首席未来学家离职，战略与文化变动引发投资者关注",
-      "summary": "在OpenAI任职近九年的首席未来学家Joshua Achiam宣布离职，他曾专注于AI安全研究，并在马斯克诉奥特曼案中出庭作证。此离职可能预示OpenAI内部战略或文化调整，对投资者信心构成潜在影响。需关注OpenAI后续高管变动及对齐研究方向的稳定性。",
-      "url": "https://www.wired.com/story/openai-chief-futurist-joshua-achiam-is-leaving-the-company/",
-      "source": "Wired"
-    },
-    {
-      "date": "2026-07-08",
-      "title": "Anthropic将Claude Cowork扩展至移动端和网页，强化AI代理竞争",
-      "summary": "Anthropic宣布其AI代理平台Claude Cowork首次登陆移动端和网页，此前仅限macOS和Windows桌面应用。该扩展首先面向Max订阅用户，其他计划用户将在数周内获得访问权限。此举扩大Anthropic产品覆盖面，直接与微软/OpenAI的AI代理服务竞争，投资者需关注其订阅增长与市场份额变化。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/961978/anthropic-claude-cowork-mobile-web",
+      "date": "2026-07-09",
+      "title": "Meta发布Muse图像模型，可将其他Instagram用户融入AI生成照片",
+      "summary": "Meta旗下Superintelligence Labs部门推出首个AI图像生成模型Muse Image，现已集成至Meta AI、Instagram和WhatsApp的图像工具中，并将很快登陆Facebook和Messenger。该模型允许将其他用户照片融入AI生成内容，是社交+AI战略的重大推进。投资者需关注其可能重塑用户数据使用规则，并增强Meta在社交领域的竞争壁垒。",
+      "url": "https://www.theverge.com/tech/962485/meta-muse-image-ai-model-instagram",
       "source": "The Verge"
     },
     {
-      "date": "2026-07-08",
-      "title": "首次AI驱动勒索软件攻击仍依赖人类，自主性局限凸显",
-      "summary": "据披露，首次由AI智能体执行的真实勒索软件攻击中，AI仅负责技术执行环节，人类仍负责选择目标、搭建基础设施并提供窃取的凭证。这意味着该攻击并非完全自主的网络犯罪，上周头条报道有所夸大。此事件对AI安全投资方向具有参考价值，表明当前AI自主性仍有限，人类监督与安全防护仍是关键。",
-      "url": "https://techcrunch.com/2026/07/06/the-first-ai-run-ransomware-attack-still-needed-a-human/",
+      "date": "2026-07-09",
+      "title": "OpenAI发布新一代语音模型，支持同时听说实现更自然实时对话",
+      "summary": "OpenAI推出新语音模式，具备同时说话和聆听的能力，这是实时翻译的关键突破。该技术有望加速对话式AI在客服、翻译等场景的商业化落地。投资者应关注其对语音交互市场的催化作用，以及可能对$GOOGL等竞争对手语音产品构成的压力。",
+      "url": "https://techcrunch.com/2026/07/08/openai-releases-new-voice-models-for-more-natural-live-conversations/",
       "source": "TechCrunch"
+    },
+    {
+      "date": "2026-07-09",
+      "title": "Prime Intellect获1.3亿美元A轮融资，助企业自主构建AI代理",
+      "summary": "成立于2024年的Prime Intellect完成1.3亿美元A轮融资，旨在帮助企业无需依赖前沿AI实验室即可训练自有AI代理系统。这反映了企业级AI代理市场的爆发式增长，投资者需关注企业自主构建AI代理的趋势，以及其对$MSFT、$GOOGL等云AI服务商的潜在影响。",
+      "url": "https://techcrunch.com/2026/07/08/prime-intellect-raises-130m-series-a-to-help-enterprises-build-their-own-ai-agents/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-07-09",
+      "title": "微软发布AI代理可视化语言Flint，降低开发门槛",
+      "summary": "微软在Hacker News上开源了Flint，一种专为AI代理设计的可视化语言，旨在降低代理开发门槛。该工具可能推动AI代理生态的标准化，社区反响热烈。投资者需关注其对微软AI开发者生态的增强作用，以及可能加速企业级AI代理应用的普及。",
+      "url": "https://microsoft.github.io/flint-chart/#/",
+      "source": "Hacker News"
     }
   ]
 }

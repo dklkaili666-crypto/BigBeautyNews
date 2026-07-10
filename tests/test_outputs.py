@@ -9,7 +9,12 @@ from outputs.json_writer import (
     validate_external_digest,
     validate_internal_digest,
 )
-from outputs.status import build_run_status, mark_latest_run_committed, write_run_status
+from outputs.status import (
+    build_run_status,
+    mark_latest_run_committed,
+    record_skipped_external_run,
+    write_run_status,
+)
 from outputs.serverchan import build_markdown_message, push_to_wechat_with_result
 from outputs.web_builder import write_web_data
 
@@ -182,6 +187,20 @@ def test_mark_latest_run_committed_updates_current_and_history(tmp_path):
     assert current["committed"] is True
     assert history["runs"][-1]["committed"] is True
     assert history["runs"][0]["date"] == "2026-07-04"
+
+
+def test_skipped_external_fallback_is_recorded(monkeypatch, tmp_path):
+    monkeypatch.setenv("GITHUB_RUN_ID", "12345")
+
+    record_skipped_external_run(str(tmp_path / "data"), "fallback")
+
+    current = json.loads((tmp_path / "data" / "run-status.json").read_text("utf-8"))
+    assert current["status"] == "skipped"
+    assert current["trigger"] == "external_scheduler"
+    assert current["scheduleSlot"] == "fallback"
+    assert current["pushSkippedReason"] == "already_pushed"
+    assert current["pushed"] is True
+    assert current["workflowRunId"] == "12345"
 
 
 def test_serverchan_message_contains_five_markdown_links():

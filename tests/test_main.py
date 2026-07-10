@@ -65,6 +65,8 @@ def test_pipeline_retries_failed_push_then_skips_duplicate_success(
     monkeypatch.setattr(main, "WEB_DIR", str(tmp_path / "web"))
     monkeypatch.setattr(main, "PUSH_HISTORY_PATH", str(tmp_path / "data" / "push-history.json"))
     monkeypatch.setattr(main, "DATA_DIR", str(tmp_path / "data"))
+    monkeypatch.setenv("BIGBEAUTYNEWS_TRIGGER", "external_scheduler")
+    monkeypatch.setenv("BIGBEAUTYNEWS_SCHEDULE_SLOT", "primary")
 
     result = main.run_pipeline()
     second_result = main.run_pipeline()
@@ -92,5 +94,6 @@ def test_pipeline_retries_failed_push_then_skips_duplicate_success(
     assert latest_status["pushAttempted"] is True
     assert latest_status["pushHttpStatus"] == 200
     assert latest_status["pushResponseCode"] == 0
-    assert latest_status["trigger"] == "local"
+    assert latest_status["trigger"] == "external_scheduler"
+    assert latest_status["scheduleSlot"] == "primary"
     assert latest_status["digestHash"]

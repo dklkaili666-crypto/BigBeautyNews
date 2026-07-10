@@ -1,6 +1,6 @@
 # BigBeautyNews PRD
 
-> 版本：v1.5 | 日期：2026-07-05 | 状态：v0.6 开发就绪 | 变更：明确 v0.6 实施边界、验收口径、事件 ID 规则、评分规则、运行状态语义和非目标范围
+> 版本：v1.6 | 日期：2026-07-10 | 状态：OPS-01 代码完成、待外部配置与连续 3 天验收 | 变更：使用外部云定时器准时触发 7:45 主任务与 8:15 幂等兜底，GitHub Actions 仅作为执行器
 
 ---
 
@@ -37,8 +37,9 @@
 
 | 层级 | 范围 | 状态 |
 |---|---|---|
-| 已实现基线 | Tier 2 媒体 RSS、GitHub Trending、Hacker News、跨日 URL / 近似标题去重、48/72 小时时效窗口、微信推送、对外 5 字段 JSON、网页归档、7:45 + 8:15 调度兜底 | 已具备，后续改动不得破坏 |
+| 已实现基线 | Tier 2 媒体 RSS、GitHub Trending、Hacker News、跨日 URL / 近似标题去重、48/72 小时时效窗口、微信推送、对外 5 字段 JSON、网页归档、手机手动推送 | 已具备，后续改动不得破坏 |
 | v0.6 本轮实施 | 来源分层字段、AI 投研实体词典、确定性规则预评分、最小可用 `eventId`、GitHub repo 冷却、运行状态文件、失败日志、PRD / Checklist 对齐 | 下一步开发目标 |
+| OPS-01 本轮实施 | cron-job.org 外部准时调度、7:45 主触发、8:15 幂等兜底、最小权限和调度可观测性 | 已确认，按 §2.8 和验收项 17 实施 |
 | 后续增强 | 大规模 Tier 0 / Tier 1 一手源覆盖、SEC / 财报 transcript 深度解析、embedding 聚类、RAG 历史问答、自动股票代码映射、邮件 / Telegram / 企业微信多通道告警 | 暂不作为 v0.6 验收条件 |
 
 v0.6 的原则：优先把“数据质量、防重复、可观测性、验收口径”打牢；不为了追求完整投研平台而一次性重构全系统。
@@ -289,17 +290,19 @@ v0.6 的最小实现规则：
 
 ### 2.8 定时执行
 
-- **引擎**：GitHub Actions `schedule` cron
-- **时间**：主触发 `cron: '45 23 * * *'`（UTC），即北京时间次日早上 7:45；并在 8:15（北京时间）设置兜底触发
-- **兜底幂等**：每个冗余触发点运行前检查当天推送状态，已成功则跳过，未成功则重试完整流水线
+- **OPS-01-1 外部调度**：使用 cron-job.org 作为云定时器，时区固定为 `Asia/Shanghai`；每天 7:45 调用 GitHub `workflow_dispatch` 作为主触发，每天 8:15 再调用一次作为兜底触发
+- **OPS-01-2 执行边界**：GitHub Actions 只负责抓取、筛选、生成、推送和归档，不再使用 GitHub `schedule` 作为正式定时源，避免平台延迟导致晨间推送漂移
+- **OPS-01-3 兜底幂等**：外部调度请求必须携带 `trigger_source=external_scheduler` 和 `schedule_slot=primary|fallback`；工作流运行前检查当天推送状态，已成功则跳过，未成功才执行完整流水线
+- **OPS-01-4 权限最小化**：cron-job.org 仅保存一个限定到本仓库、仅有 GitHub Actions 写权限的细粒度令牌；令牌和 cron-job.org API Key 不得写入仓库、日志或数据文件
+- **OPS-01-5 可观测性**：运行状态必须记录 `trigger=external_scheduler` 和 `scheduleSlot`，能够区分主触发、兜底触发和人工触发；外部调度历史应保留计划时间、实际请求时间和 HTTP 结果
 - **业务日期**：所有面向用户和归档的 `date` 均使用北京时间业务日期，即 `datetime.now(ZoneInfo("Asia/Shanghai")).date()`；`exportedAt` 可继续使用 UTC ISO 时间
 - **无需本地电脑开机**：所有抓取、处理、推送均在 GitHub 云服务器上完成
 - **手动触发**：支持 `workflow_dispatch`，手动运行一次；同时支持手机端新建 `manual-push` issue 或评论 `/push` / `/push-force` 触发推送
 - **推送冒烟测试**：`workflow_dispatch push_test=true` 只发送 Server酱测试消息，不执行抓取、LLM 排序、归档和网页发布
 - **排队任务状态刷新**：workflow checkout 后必须先 `git pull --ff-only origin master`，再读取 `push-history.json`，避免排队任务基于旧提交误判当天未推送
 - **注意事项**：
-  - GitHub Actions 延迟：免费用户排队约 0–40 分钟
-  - 仓库 60 天无提交会自动停用 schedule，需定期 commit 保持活跃
+  - 外部调度只负责发起请求，GitHub runner 仍可能有短暂排队；验收以用户实际收到推送的时间为准
+  - 外部服务授权失效时，保留手机 issue / comment 手动推送作为人工恢复入口
 
 ---
 
@@ -417,6 +420,7 @@ interface RunStatus {
 | `status=success` | `generated=true`、`pushed=true`、`committed=true`、`schemaValid=true` |
 | `status=partial` | 数据已生成但推送或提交失败；工作流仍应最终返回失败，方便 8:15 兜底重试 |
 | `status=failed` | 未能生成可用 Top 5，或 schema 校验失败 |
+| `status=skipped` | 外部兜底确认当日已经成功推送；本次 `generated=false`、`pushAttempted=false`，`pushed=true` 表示业务日期已有成功推送记录 |
 
 推送失败时，不得写入 `push-history.json`；8:15 兜底只以 `push-history.json` 判断是否需要重试，不以 `run-status.json` 的 `generated` 判断。
 
@@ -425,7 +429,8 @@ interface RunStatus {
 | 字段 | 含义 |
 |---|---|
 | `workflowRunId` | GitHub Actions run id，用于直接定位云端日志 |
-| `trigger` | `schedule` / `workflow_dispatch` / `issues` / `issue_comment` / `local` |
+| `trigger` | `external_scheduler` / `workflow_dispatch` / `issues` / `issue_comment` / `local`；历史记录可保留 `schedule` |
+| `scheduleSlot` | 外部调度时为 `primary` / `fallback`；其他触发为空字符串 |
 | `isDryRun` | 是否为本地 dry-run；dry-run 不得调用 Server酱 |
 | `sendkeyPresent` | 是否检测到 SendKey，只记录布尔值，不泄露密钥 |
 | `pushAttempted` | 是否实际调用过 Server酱 API |
@@ -491,7 +496,9 @@ interface RunStatus {
 ```
 BigBeautyNews/
 ├── .github/workflows/
-│   └── daily.yml                # GitHub Actions 定时任务
+│   └── daily.yml                # GitHub Actions 云端执行器
+├── scripts/
+│   ├── configure_external_scheduler.py  # cron-job.org 幂等配置与验证
 ├── src/
 │   ├── main.py                  # 主入口（编排整个流水线）
 │   ├── fetchers/                # 数据抓取模块
@@ -534,7 +541,8 @@ BigBeautyNews/
 ### 4.4 架构图（运行流程）
 
 ```
-GitHub Actions 触发（每天 UTC 23:45 = 北京次日 07:45）
+cron-job.org 触发（Asia/Shanghai 07:45 主触发 / 08:15 兜底）
+        │ workflow_dispatch
         │
         ▼
 ┌───────────────────────────────────┐
@@ -597,7 +605,8 @@ GitHub Actions 触发（每天 UTC 23:45 = 北京次日 07:45）
 | 风险 | 对策 |
 |---|---|
 | **Server酱免费额度 5 条/天** | 每天只推 1 条消息（内含 5 则，用 Markdown 排版），刚好在免费额度内 |
-| **GitHub Actions 延迟或漏调度** | 7:45 主触发 + 8:15 兜底；当天已成功时不重复生成或推送；仍未触发时可用手机 issue 手动推送 |
+| **GitHub Actions `schedule` 延迟或漏调度** | 不再将其作为正式定时源；由 cron-job.org 在 7:45 / 8:15 调用 `workflow_dispatch`，当天已成功时跳过兜底 |
+| **外部调度凭证失效** | 使用单仓库、仅 Actions 写权限的细粒度令牌；保留 cron-job.org 失败记录和手机 issue 手动推送入口 |
 | **LLM API 成本** | 正常每天调用 2 次（排序 + 翻译），格式错误或来源集中时最多额外重试 / 重排 1 次；规则预评分不调用 LLM |
 | **RSS 源不可用** | 多源冗余（5 个媒体源），一个挂了不影响整体；后续可加 web scraping 备用方案 |
 | **新闻重复或过旧** | 读取最近 7 天归档做跨日去重；默认 48 小时时效窗口，候选不足时逐级放宽 |
@@ -627,7 +636,7 @@ GitHub Actions 触发（每天 UTC 23:45 = 北京次日 07:45）
 
 | # | 验收项 | 通过标准 |
 |---|---|---|
-| 1 | 不破坏已实现基线 | 现有每日推送、对外 JSON、网页归档、7:45 / 8:15 调度兜底、推送幂等测试继续通过 |
+| 1 | 不破坏已实现基线 | 现有每日推送、对外 JSON、网页归档、手机手动推送和推送幂等测试继续通过 |
 | 2 | 来源分层 | 每条候选和归档新闻都有 `sourceTier`，取值统一为 `tier0` / `tier1` / `tier2` / `tier3` |
 | 3 | AI 投研实体词典 | 关键词覆盖大模型、云厂商、芯片、数据中心、光通信、模型平台、产业事件；重要 AI Capex / 芯片 / 数据中心新闻不因标题没有 “AI” 被误杀 |
 | 4 | URL 标准化 | `canonicalUrl` 移除常见 tracking 参数；同一 URL 的不同 UTM 版本不会重复入选 |
@@ -642,7 +651,8 @@ GitHub Actions 触发（每天 UTC 23:45 = 北京次日 07:45）
 | 13 | Schema 校验 | 对外 5 字段 JSON 和内部归档 JSON 均有本地校验；schema 失败时不得推送 |
 | 14 | 北京时间业务日期 | 用户可见日期、归档文件名、`push-history.json` 日期均使用 Asia/Shanghai；`exportedAt` 使用 UTC ISO |
 | 15 | GitHub Trending fallback | 网页爬取失败时 fallback 到 GitHub Search API；fallback 结果必须标注来源和 warning |
-| 16 | 文档同步 | README / CHANGELOG / Code Review Checklist 与 PRD v1.5 的验收口径一致 |
+| 16 | 文档同步 | README / CHANGELOG / Code Review Checklist 与 PRD v1.6 的验收口径一致 |
+| 17 | OPS-01 外部准时调度 | 两条外部任务均使用 `Asia/Shanghai`，分别在 7:45、8:15 调用 GitHub；临时触发测试能够启动工作流；连续 3 个自然日于 7:45±5 分钟内收到推送，若主触发失败则最迟由 8:15 兜底成功；同一天最多推送一次 |
 
 ---
 
@@ -656,6 +666,7 @@ GitHub Actions 触发（每天 UTC 23:45 = 北京次日 07:45）
 | v1.3 | 2026-07-05 | 内容质量修正：最近 7 天跨日去重、48/72 小时时效窗口、来源多样性硬约束、归档溯源字段；同步记录 7:45 主触发与 8:15 兜底调度 |
 | v1.4 | 2026-07-05 | 投研增强版：增加一手源优先级、规则预评分、事件级去重、AI 投研实体词典、运行状态监控、北京时间业务日期规则；来源多样性从硬失败改为强偏好 + warning |
 | v1.5 | 2026-07-05 | PRD 加固：拆分已实现基线 / v0.6 本轮实施 / 后续增强，明确非目标、最小 eventId 规则、运行状态语义、LLM 成本边界和 v0.6 验收清单 |
+| v1.6 | 2026-07-10 | OPS-01 调度修正：cron-job.org 按 Asia/Shanghai 在 7:45 主触发、8:15 幂等兜底；GitHub Actions 改为执行器；增加最小权限、跳过状态可观测性、临时触发与连续 3 天验收标准 |
 
 ---
 
@@ -785,12 +796,12 @@ GitHub Actions 触发（每天 UTC 23:45 = 北京次日 07:45）
 | J8 | 用户可见日期、归档日期、推送幂等日期均使用 `Asia/Shanghai` 业务日期；`exportedAt` 使用 UTC ISO | PRD §2.8 | |
 | J9 | 运行状态区分 `generated` / `pushed` / `committed` / `schemaValid`，避免把数据生成成功误判为推送成功 | PRD §3.2 | |
 
-### K. GitHub Actions 定时工作流
+### K. 外部调度与 GitHub Actions 执行工作流
 
 | # | 检查项 | 对应用户需求 | 结果 |
 |---|---|---|---|
 | K1 | Workflow 文件位于 `.github/workflows/daily.yml`，`permissions: contents: write` | PRD §4.3 | |
-| K2 | 主 cron `45 23 * * *` = 北京时间 7:45；兜底 cron 覆盖 8:15，且当天成功后跳过兜底 | PRD §2.8 | |
+| K2 | 不使用 GitHub `schedule` 作为正式定时源；cron-job.org 以 `Asia/Shanghai` 在 7:45 / 8:15 调用 `workflow_dispatch`，且当天成功后跳过兜底 | PRD §2.8 OPS-01-1～3 | |
 | K3 | 支持 `workflow_dispatch` 手动触发，也支持手机端 issue / comment 触发 `/push` 或 `/push-force` | PRD §2.8 | |
 | K4 | 通过 GitHub Secrets 注入 `SERVERCHAN_SENDKEY`、`LLM_API_KEY`、`LLM_API_BASE`、`LLM_MODEL` | PRD §4.1 | |
 | K5 | 生成可用数据后自动 `git commit` + `git push` 数据文件和状态文件；若推送失败，状态仍需记录并让工作流最终失败 | PRD §3.2 | |
@@ -799,6 +810,8 @@ GitHub Actions 触发（每天 UTC 23:45 = 北京次日 07:45）
 | K8 | checkout 后先 `git pull --ff-only origin master`，再检查 `push-history.json`，避免排队任务读取旧状态 | PRD §2.8 | |
 | K9 | `workflow_dispatch push_test=true` 只发送 Server酱测试消息，不运行完整日报流水线 | PRD §2.8 | |
 | K10 | `run-status.json` 记录 Server酱 HTTP 状态、业务 code、响应摘要、trigger、workflowRunId 和 digestHash | PRD §3.2 | |
+| K11 | 外部触发记录 `trigger=external_scheduler` 和 `scheduleSlot=primary|fallback`，人工触发语义保持不变 | PRD §2.8 OPS-01-5 | |
+| K12 | 外部调度凭证不进入仓库；配置脚本只接受运行时输入，并回读 7:45 / 8:15 两条任务验证时区、时间和启用状态 | PRD §2.8 OPS-01-4 | |
 
 ### L. 网页浏览
 

@@ -1,13 +1,16 @@
 name: BigBeautyNews Daily
 
 on:
-  schedule:
-    # 主触发：UTC 23:45 = 北京时间次日 7:45
-    - cron: '45 23 * * *'
-    # 兜底触发：UTC 00:15 = 北京时间 8:15
-    - cron: '15 0 * * *'
   workflow_dispatch:
     inputs:
+      trigger_source:
+        description: 'Trigger source (manual or external_scheduler)'
+        required: false
+        default: 'manual'
+      schedule_slot:
+        description: 'External schedule slot (primary or fallback)'
+        required: false
+        default: ''
       force_push:
         description: 'Force WeChat push even if today was already pushed'
         required: false
@@ -35,7 +38,6 @@ jobs:
     runs-on: ubuntu-latest
     if: >-
       ${{
-        github.event_name == 'schedule' ||
         github.event_name == 'workflow_dispatch' ||
         (
           github.actor == github.repository_owner &&
@@ -63,24 +65,49 @@ jobs:
       - name: Refresh repository state
         run: git pull --ff-only origin master
 
+      - name: Validate workflow dispatch inputs
+        if: github.event_name == 'workflow_dispatch'
+        shell: bash
+        env:
+          TRIGGER_SOURCE: ${{ inputs.trigger_source }}
+          SCHEDULE_SLOT: ${{ inputs.schedule_slot }}
+          FORCE_PUSH_INPUT: ${{ inputs.force_push }}
+          PUSH_TEST_INPUT: ${{ inputs.push_test }}
+        run: |
+          if [[ "$TRIGGER_SOURCE" == "external_scheduler" ]]; then
+            [[ "$SCHEDULE_SLOT" =~ ^(primary|fallback)$ ]]
+            [[ "$FORCE_PUSH_INPUT" == "false" && "$PUSH_TEST_INPUT" == "false" ]]
+          else
+            [[ "$TRIGGER_SOURCE" == "manual" && -z "$SCHEDULE_SLOT" ]]
+          fi
+
       - name: Check whether today's digest was already pushed
         id: push-check
         shell: bash
         run: |
           today=$(TZ=Asia/Shanghai date +%F)
-          if [[ "${{ github.event_name }}" == "schedule" ]] \
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]] \
+            && [[ "${{ inputs.trigger_source }}" == "external_scheduler" ]] \
             && jq -e --arg today "$today" '.dates | index($today) != null' data/push-history.json > /dev/null; then
             echo "should_run=false" >> "$GITHUB_OUTPUT"
-            echo "$today has already been pushed; skipping the fallback run."
+            echo "$today has already been pushed; skipping external ${{ inputs.schedule_slot }} run."
           else
             echo "should_run=true" >> "$GITHUB_OUTPUT"
           fi
 
       - name: Setup Python
-        if: steps.push-check.outputs.should_run == 'true'
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+
+      - name: Record skipped external run
+        if: steps.push-check.outputs.should_run == 'false'
+        env:
+          SCHEDULE_SLOT: ${{ inputs.schedule_slot }}
+        run: >-
+          PYTHONPATH=src python -c
+          "import os; from outputs.status import record_skipped_external_run;
+          record_skipped_external_run('data', os.environ['SCHEDULE_SLOT'])"
 
       - name: Install dependencies
         if: steps.push-check.outputs.should_run == 'true'
@@ -97,6 +124,10 @@ jobs:
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
           LLM_API_BASE: ${{ secrets.LLM_API_BASE }}
           LLM_MODEL: ${{ secrets.LLM_MODEL }}
+          BIGBEAUTYNEWS_TRIGGER: >-
+            ${{ inputs.trigger_source == 'external_scheduler' && 'external_scheduler' || github.event_name }}
+          BIGBEAUTYNEWS_SCHEDULE_SLOT: >-
+            ${{ inputs.trigger_source == 'external_scheduler' && inputs.schedule_slot || '' }}
           FORCE_PUSH: >-
             ${{
               (github.event_name == 'workflow_dispatch' && inputs.force_push == 'true') ||
@@ -134,6 +165,16 @@ jobs:
           PYTHONPATH=src python -c "from outputs.status import mark_latest_run_committed; mark_latest_run_committed('data')"
           git add data/ web/data.json
           git diff --staged --quiet || git commit -m "📰 $(date +%Y-%m-%d) 每日AI 5件事"
+          git push
+
+      - name: Commit skipped external run
+        if: success() && steps.push-check.outputs.should_run == 'false'
+        run: |
+          git config user.name "BigBeautyNews Bot"
+          git config user.email "bot@bigbeautynews.local"
+          PYTHONPATH=src python -c "from outputs.status import mark_latest_run_committed; mark_latest_run_committed('data')"
+          git add data/run-status.json data/run-history.json
+          git diff --staged --quiet || git commit -m "⏭️ $(TZ=Asia/Shanghai date +%Y-%m-%d) 外部兜底已跳过"
           git push
 
       - name: Prepare Pages artifact

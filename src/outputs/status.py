@@ -5,6 +5,7 @@ from datetime import datetime, timezone
 from typing import Any
 import json
 import os
+from zoneinfo import ZoneInfo
 
 
 def utc_now() -> str:
@@ -77,6 +78,33 @@ def write_run_status(status: dict[str, Any], data_dir: str) -> None:
         error_path = os.path.join(error_dir, f"{status.get('date')}.json")
         with open(error_path, "w", encoding="utf-8") as file:
             json.dump(status, file, ensure_ascii=False, indent=2)
+
+
+def record_skipped_external_run(data_dir: str, schedule_slot: str) -> None:
+    """Record an external scheduler run skipped after an earlier successful push."""
+    timestamp = utc_now()
+    status = build_run_status(
+        date_str=datetime.now(ZoneInfo("Asia/Shanghai")).strftime("%Y-%m-%d"),
+        status="skipped",
+        started_at=timestamp,
+        finished_at=timestamp,
+        candidate_count=0,
+        selected_count=0,
+        sources_available=0,
+        llm_model="",
+        generated=False,
+        pushed=True,
+        committed=False,
+        schema_valid=True,
+        extra={
+            "trigger": "external_scheduler",
+            "scheduleSlot": schedule_slot,
+            "workflowRunId": os.getenv("GITHUB_RUN_ID", ""),
+            "pushAttempted": False,
+            "pushSkippedReason": "already_pushed",
+        },
+    )
+    write_run_status(status, data_dir)
 
 
 def mark_latest_run_committed(data_dir: str) -> None:

@@ -110,7 +110,9 @@ def run_pipeline(dry_run: bool = False, force_push: bool = False) -> dict:
     source_count = 0
     warnings: list[str] = []
     status_extra: dict[str, Any] = {
-        "trigger": os.getenv("GITHUB_EVENT_NAME", "local"),
+        "trigger": os.getenv("BIGBEAUTYNEWS_TRIGGER")
+        or os.getenv("GITHUB_EVENT_NAME", "local"),
+        "scheduleSlot": os.getenv("BIGBEAUTYNEWS_SCHEDULE_SLOT", ""),
         "workflowRunId": os.getenv("GITHUB_RUN_ID", ""),
         "isDryRun": dry_run,
         "sendkeyPresent": bool(SERVERCHAN_SENDKEY),

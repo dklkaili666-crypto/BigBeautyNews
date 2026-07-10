@@ -1,16 +1,19 @@
 from pathlib import Path
 
 
-def test_daily_workflow_has_fallback_schedule_and_skips_duplicate_pushes():
+def test_daily_workflow_uses_external_scheduler_and_skips_duplicate_pushes():
     workflow = (
         Path(__file__).parents[1] / ".github" / "workflows" / "daily.yml"
     ).read_text("utf-8")
 
-    assert "cron: '45 23 * * *'" in workflow
-    assert "cron: '15 0 * * *'" in workflow
-    assert "cron: '35 0 * * *'" not in workflow
-    assert "cron: '55 0 * * *'" not in workflow
-    assert "cron: '20 1 * * *'" not in workflow
+    assert "\n  schedule:\n" not in workflow
+    assert "trigger_source:" in workflow
+    assert "schedule_slot:" in workflow
+    assert "external_scheduler" in workflow
+    assert "inputs.trigger_source == 'external_scheduler'" in workflow
+    assert "Validate workflow dispatch inputs" in workflow
+    assert '[[ "$SCHEDULE_SLOT" =~ ^(primary|fallback)$ ]]' in workflow
+    assert 'os.environ[\'SCHEDULE_SLOT\']' in workflow
     assert "id: push-check" in workflow
     assert "steps.push-check.outputs.should_run == 'true'" in workflow
     assert "force_push" in workflow
@@ -18,6 +21,8 @@ def test_daily_workflow_has_fallback_schedule_and_skips_duplicate_pushes():
     assert "git pull --ff-only origin master" in workflow
     assert "python src/main.py --force-push" in workflow
     assert "mark_latest_run_committed" in workflow
+    assert "record_skipped_external_run" in workflow
+    assert "steps.push-check.outputs.should_run == 'false'" in workflow
     assert "python -m outputs.serverchan --test" in workflow
 
 

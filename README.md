@@ -19,7 +19,8 @@
 
 ```
 BigBeautyNews/
-├── .github/workflows/daily.yml  # GitHub Actions 定时任务
+├── .github/workflows/daily.yml  # GitHub Actions 云端执行器
+├── scripts/                     # 外部调度配置与验证
 ├── src/
 │   ├── main.py                  # 主入口（编排整个流水线）
 │   ├── config.py                # 配置
@@ -83,7 +84,15 @@ python src/main.py --force-push
    - `LLM_API_KEY`
    - `LLM_API_BASE`
    - `LLM_MODEL`
-3. 启用 Actions，每天早上 7:45（北京时间）自动运行；8:15 会做幂等兜底重试
+3. 启用 Actions
+4. 运行外部调度配置器：
+
+```bash
+python scripts/configure_external_scheduler.py
+python scripts/configure_external_scheduler.py --smoke
+```
+
+配置器会安全提示输入一个仅限本仓库、只有 Actions 写权限的 GitHub 细粒度令牌，以及一个 cron-job.org API Key。两项凭证仅在当前进程内使用，不写入仓库或 `.env`。第一条命令创建并回读两条 `Asia/Shanghai` 定时任务：7:45 主触发、8:15 幂等兜底；第二条命令通过一次自动删除的临时任务验证完整触发链路。
 
 ### 手机手动推送
 
@@ -114,7 +123,7 @@ python -m http.server 8080
 ## 技术栈
 
 - **语言**：Python 3.12+
-- **调度**：GitHub Actions（北京时间 7:45 主触发，8:15 幂等兜底；支持手机 issue 手动触发）
+- **调度**：cron-job.org（北京时间 7:45 主触发、8:15 幂等兜底）+ GitHub Actions 执行器；支持手机 issue 手动触发
 - **LLM**：OpenAI 兼容 API (gpt-4o-mini / deepseek-chat 等)
 - **推送**：Server酱 Turbo API
 - **网页**：纯静态 HTML + CSS + Vanilla JS

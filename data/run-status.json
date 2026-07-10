@@ -1,8 +1,8 @@
 {
   "date": "2026-07-10",
   "status": "skipped",
-  "startedAt": "2026-07-10T02:34:15Z",
-  "finishedAt": "2026-07-10T02:34:15Z",
+  "startedAt": "2026-07-10T09:52:21Z",
+  "finishedAt": "2026-07-10T09:52:21Z",
   "candidateCount": 0,
   "selectedCount": 0,
   "sourcesAvailable": 0,
@@ -15,7 +15,7 @@
   "errors": [],
   "trigger": "external_scheduler",
   "scheduleSlot": "fallback",
-  "workflowRunId": "29064934879",
+  "workflowRunId": "29084473671",
   "pushAttempted": false,
   "pushSkippedReason": "already_pushed"
 }

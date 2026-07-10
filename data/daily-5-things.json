@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-07-09T01:15:49Z",
+  "exportedAt": "2026-07-10T01:16:14Z",
   "items": [
     {
-      "date": "2026-07-09",
-      "title": "AI芯片公司SambaNova融资10亿美元，估值达110亿美元",
-      "summary": "AI芯片初创公司SambaNova在上一轮巨额融资仅5个月后，再次以110亿美元估值完成10亿美元融资。此前有传闻称英特尔曾试图以约16亿美元收购该公司。此次融资表明AI基础设施层投资热度不减，SambaNova作为芯片供应链的重要参与者，其估值飙升可能重塑市场竞争格局，投资者需关注其对$NVDA等现有芯片巨头的影响。",
-      "url": "https://techcrunch.com/2026/07/08/sambanova-draws-1b-at-11b-valuation-in-series-f-first-close/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-07-09",
-      "title": "Meta发布Muse图像模型，可将其他Instagram用户融入AI生成照片",
-      "summary": "Meta旗下Superintelligence Labs部门推出首个AI图像生成模型Muse Image，现已集成至Meta AI、Instagram和WhatsApp的图像工具中，并将很快登陆Facebook和Messenger。该模型允许将其他用户照片融入AI生成内容，是社交+AI战略的重大推进。投资者需关注其可能重塑用户数据使用规则，并增强Meta在社交领域的竞争壁垒。",
-      "url": "https://www.theverge.com/tech/962485/meta-muse-image-ai-model-instagram",
+      "date": "2026-07-10",
+      "title": "OpenAI获政府批准公开发布GPT-5.6，并推出ChatGPT Work",
+      "summary": "OpenAI在经历约两周的监管波折后，获得特朗普政府批准，公开发布GPT-5.6模型。CEO Sam Altman称其为“有史以来最好的模型”。同时推出的ChatGPT Work将直接强化微软Copilot生态，是本周最重大的大厂战略动态。投资者需关注该模型对微软$MSFT AI产品线的拉动效应，以及OpenAI商业化进程的加速。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/963464/openai-gpt-5-6-codex-chatgpt-work",
       "source": "The Verge"
     },
     {
-      "date": "2026-07-09",
-      "title": "OpenAI发布新一代语音模型，支持同时听说实现更自然实时对话",
-      "summary": "OpenAI推出新语音模式，具备同时说话和聆听的能力，这是实时翻译的关键突破。该技术有望加速对话式AI在客服、翻译等场景的商业化落地。投资者应关注其对语音交互市场的催化作用，以及可能对$GOOGL等竞争对手语音产品构成的压力。",
-      "url": "https://techcrunch.com/2026/07/08/openai-releases-new-voice-models-for-more-natural-live-conversations/",
+      "date": "2026-07-10",
+      "title": "Anthropic、OpenAI和SpaceX三大AI公司IPO预期价值超过去25年风投退出总和",
+      "summary": "据TechCrunch分析，Anthropic、OpenAI和SpaceX三大AI公司的IPO预期价值将超过2000年以来所有美国风投支持的退出总和。这标志着AI投资进入前所未有的变现周期，投资者需重新评估AI赛道头部公司的估值逻辑和退出窗口。",
+      "url": "https://techcrunch.com/2026/07/09/anthropic-openai-and-spacex-are-bigger-than-the-last-25-years-of-tech-exits/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-07-09",
-      "title": "Prime Intellect获1.3亿美元A轮融资，助企业自主构建AI代理",
-      "summary": "成立于2024年的Prime Intellect完成1.3亿美元A轮融资，旨在帮助企业无需依赖前沿AI实验室即可训练自有AI代理系统。这反映了企业级AI代理市场的爆发式增长，投资者需关注企业自主构建AI代理的趋势，以及其对$MSFT、$GOOGL等云AI服务商的潜在影响。",
-      "url": "https://techcrunch.com/2026/07/08/prime-intellect-raises-130m-series-a-to-help-enterprises-build-their-own-ai-agents/",
+      "date": "2026-07-10",
+      "title": "Meta自研AI芯片将于9月量产，降低对英伟达依赖",
+      "summary": "Meta采用模块化设计自研AI芯片，计划9月量产。此举将改变其算力供应链格局，降低对英伟达$NVDA的依赖，并影响芯片竞争格局。投资者需关注Meta$META的资本支出结构变化，以及英伟达在大型科技公司自研芯片趋势下的市场份额风险。",
+      "url": "https://techcrunch.com/2026/07/09/metas-new-ai-chips-will-begin-production-in-september/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-07-09",
-      "title": "微软发布AI代理可视化语言Flint，降低开发门槛",
-      "summary": "微软在Hacker News上开源了Flint，一种专为AI代理设计的可视化语言，旨在降低代理开发门槛。该工具可能推动AI代理生态的标准化，社区反响热烈。投资者需关注其对微软AI开发者生态的增强作用，以及可能加速企业级AI代理应用的普及。",
-      "url": "https://microsoft.github.io/flint-chart/#/",
-      "source": "Hacker News"
+      "date": "2026-07-10",
+      "title": "Anthropic发现LLM内部推理空间：雅可比透镜揭示模型思考机制",
+      "summary": "Anthropic开发出名为“雅可比透镜”的工具，首次清晰揭示了大语言模型在回答问题或执行任务时的内部推理机制。这一可解释性突破可能影响模型安全评估标准，投资者需关注其对AI监管政策和模型可靠性认证的潜在影响。",
+      "url": "https://www.technologyreview.com/2026/07/09/1140293/anthropic-found-a-hidden-space-where-claude-puzzles-over-concepts/",
+      "source": "MIT Technology Review"
+    },
+    {
+      "date": "2026-07-10",
+      "title": "开源AI开发者工具Ollama获6500万美元融资，用户近900万",
+      "summary": "由Benchmark领投的Ollama完成6500万美元融资，帮助开发者轻松在PC上运行AI模型。其在GitHub上已获17.6万星标和近1.7万分支。这反映开源AI基础设施赛道持续吸引资本，开发者工具生态价值凸显。投资者需关注该赛道对云AI服务商的潜在替代效应。",
+      "url": "https://techcrunch.com/2026/07/09/popular-open-source-ai-developer-tool-ollama-raises-65m-grows-to-nearly-9m-users/",
+      "source": "TechCrunch"
     }
   ]
 }

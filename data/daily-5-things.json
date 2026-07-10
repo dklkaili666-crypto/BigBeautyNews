@@ -1,40 +1,40 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-07-10T01:16:14Z",
+  "exportedAt": "2026-07-10T23:46:01Z",
   "items": [
     {
-      "date": "2026-07-10",
-      "title": "OpenAI获政府批准公开发布GPT-5.6，并推出ChatGPT Work",
-      "summary": "OpenAI在经历约两周的监管波折后，获得特朗普政府批准，公开发布GPT-5.6模型。CEO Sam Altman称其为“有史以来最好的模型”。同时推出的ChatGPT Work将直接强化微软Copilot生态，是本周最重大的大厂战略动态。投资者需关注该模型对微软$MSFT AI产品线的拉动效应，以及OpenAI商业化进程的加速。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/963464/openai-gpt-5-6-codex-chatgpt-work",
+      "date": "2026-07-11",
+      "title": "苹果起诉OpenAI窃取硬件机密，大厂战略冲突升级",
+      "summary": "苹果正式起诉OpenAI，指控其前苹果员工窃取硬件机密以推进AI初创公司的硬件计划。诉讼称发现了“OpenAI前苹果员工系统性窃取苹果商业机密的模式”。除OpenAI外，被告还包括Jony Ive的硬件初创公司IO Products。此案凸显科技巨头在AI硬件领域的激烈竞争，投资者需关注苹果与OpenAI的战略冲突对供应链和人才流动的潜在影响。",
+      "url": "https://www.theverge.com/tech/964350/apple-openai-lawsuit-trade-secrets",
       "source": "The Verge"
     },
     {
-      "date": "2026-07-10",
-      "title": "Anthropic、OpenAI和SpaceX三大AI公司IPO预期价值超过去25年风投退出总和",
-      "summary": "据TechCrunch分析，Anthropic、OpenAI和SpaceX三大AI公司的IPO预期价值将超过2000年以来所有美国风投支持的退出总和。这标志着AI投资进入前所未有的变现周期，投资者需重新评估AI赛道头部公司的估值逻辑和退出窗口。",
-      "url": "https://techcrunch.com/2026/07/09/anthropic-openai-and-spacex-are-bigger-than-the-last-25-years-of-tech-exits/",
+      "date": "2026-07-11",
+      "title": "SK海力士创纪录IPO融资265亿美元，被敦促在美建厂",
+      "summary": "SK海力士完成了美国史上最大的外国公司IPO，融资265亿美元，标志着AI芯片热潮在华尔街达到新高度。随后，该公司与三星被要求在美国建设新工厂。这一事件直接反映了AI芯片供应链的扩张趋势和地缘政治对半导体投资的推动。投资者应关注SK海力士（$000660.KS）和三星（$SSNLF）的产能布局对全球芯片供需格局的影响。",
+      "url": "https://techcrunch.com/2026/07/10/sk-hynix-raises-26-5b-in-the-biggest-foreign-ipo-in-us-history-is-urged-to-build-new-us-fabs/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-07-10",
-      "title": "Meta自研AI芯片将于9月量产，降低对英伟达依赖",
-      "summary": "Meta采用模块化设计自研AI芯片，计划9月量产。此举将改变其算力供应链格局，降低对英伟达$NVDA的依赖，并影响芯片竞争格局。投资者需关注Meta$META的资本支出结构变化，以及英伟达在大型科技公司自研芯片趋势下的市场份额风险。",
-      "url": "https://techcrunch.com/2026/07/09/metas-new-ai-chips-will-begin-production-in-september/",
+      "date": "2026-07-11",
+      "title": "OpenAI发布GPT-5.6系列模型，聚焦网络安全提升",
+      "summary": "OpenAI推出了其最新模型系列GPT-5.6，声称在包括网络安全在内的多个领域实现了改进。这是OpenAI核心产品的重大迭代，将直接影响其与微软（$MSFT）Copilot等生态系统的合作。投资者需评估GPT-5.6对AI应用性能的推动，以及其在竞争中对闭源模型市场份额的巩固作用。",
+      "url": "https://techcrunch.com/2026/07/09/openai-launches-its-new-family-of-models-with-gpt-5-6/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-07-10",
-      "title": "Anthropic发现LLM内部推理空间：雅可比透镜揭示模型思考机制",
-      "summary": "Anthropic开发出名为“雅可比透镜”的工具，首次清晰揭示了大语言模型在回答问题或执行任务时的内部推理机制。这一可解释性突破可能影响模型安全评估标准，投资者需关注其对AI监管政策和模型可靠性认证的潜在影响。",
-      "url": "https://www.technologyreview.com/2026/07/09/1140293/anthropic-found-a-hidden-space-where-claude-puzzles-over-concepts/",
-      "source": "MIT Technology Review"
+      "date": "2026-07-11",
+      "title": "Anthropic对Claude Fable 5转向按使用量收费，AI订阅模式生变",
+      "summary": "Anthropic宣布其顶级消费级AI模型Claude Fable 5将很快对订阅用户收取基于使用量的费用，这标志着AI订阅的“黄金时代”可能终结。此举对行业定价策略具有重大影响，投资者需关注其他AI公司（如OpenAI）是否跟进，以及按量计费模式对用户增长和收入稳定性的长期影响。",
+      "url": "https://www.wired.com/story/model-behavior-anthropic-will-charge-consumers-extra-to-use-claude-fable-5/",
+      "source": "Wired"
     },
     {
-      "date": "2026-07-10",
-      "title": "开源AI开发者工具Ollama获6500万美元融资，用户近900万",
-      "summary": "由Benchmark领投的Ollama完成6500万美元融资，帮助开发者轻松在PC上运行AI模型。其在GitHub上已获17.6万星标和近1.7万分支。这反映开源AI基础设施赛道持续吸引资本，开发者工具生态价值凸显。投资者需关注该赛道对云AI服务商的潜在替代效应。",
-      "url": "https://techcrunch.com/2026/07/09/popular-open-source-ai-developer-tool-ollama-raises-65m-grows-to-nearly-9m-users/",
+      "date": "2026-07-11",
+      "title": "英伟达领投巴黎AI语音初创Gradium 1亿美元种子轮",
+      "summary": "巴黎AI语音初创公司Gradium获得了1亿美元种子轮融资，由英伟达（$NVDA）领投。公司计划利用这笔资金在湾区设立办公室并争夺人才，以“巩固其在全球领先AI生态系统核心的地位”。这一投资显示英伟达对垂直AI赛道（如语音技术）的押注，投资者可关注AI语音应用在客服、虚拟助手等领域的商业化潜力。",
+      "url": "https://techcrunch.com/2026/07/09/paris-based-ai-voice-startup-gradium-raises-100m-seed-backed-by-nvidia/",
       "source": "TechCrunch"
     }
   ]

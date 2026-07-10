@@ -1,6 +1,6 @@
 # BigBeautyNews PRD
 
-> 版本：v1.6 | 日期：2026-07-10 | 状态：OPS-01 代码完成、待外部配置与连续 3 天验收 | 变更：使用外部云定时器准时触发 7:45 主任务与 8:15 幂等兜底，GitHub Actions 仅作为执行器
+> 版本：v1.6 | 日期：2026-07-10 | 状态：OPS-01 已部署、连续 3 天验收中 | 变更：使用外部云定时器准时触发 7:45 主任务与 8:15 幂等兜底，GitHub Actions 仅作为执行器
 
 ---
 
@@ -39,7 +39,7 @@
 |---|---|---|
 | 已实现基线 | Tier 2 媒体 RSS、GitHub Trending、Hacker News、跨日 URL / 近似标题去重、48/72 小时时效窗口、微信推送、对外 5 字段 JSON、网页归档、手机手动推送 | 已具备，后续改动不得破坏 |
 | v0.6 本轮实施 | 来源分层字段、AI 投研实体词典、确定性规则预评分、最小可用 `eventId`、GitHub repo 冷却、运行状态文件、失败日志、PRD / Checklist 对齐 | 下一步开发目标 |
-| OPS-01 本轮实施 | cron-job.org 外部准时调度、7:45 主触发、8:15 幂等兜底、最小权限和调度可观测性 | 已确认，按 §2.8 和验收项 17 实施 |
+| OPS-01 本轮实施 | cron-job.org 外部准时调度、7:45 主触发、8:15 幂等兜底、最小权限和调度可观测性 | 已部署，按验收项 17 连续观察 3 天 |
 | 后续增强 | 大规模 Tier 0 / Tier 1 一手源覆盖、SEC / 财报 transcript 深度解析、embedding 聚类、RAG 历史问答、自动股票代码映射、邮件 / Telegram / 企业微信多通道告警 | 暂不作为 v0.6 验收条件 |
 
 v0.6 的原则：优先把“数据质量、防重复、可观测性、验收口径”打牢；不为了追求完整投研平台而一次性重构全系统。
@@ -295,6 +295,7 @@ v0.6 的最小实现规则：
 - **OPS-01-3 兜底幂等**：外部调度请求必须携带 `trigger_source=external_scheduler` 和 `schedule_slot=primary|fallback`；工作流运行前检查当天推送状态，已成功则跳过，未成功才执行完整流水线
 - **OPS-01-4 权限最小化**：cron-job.org 仅保存一个限定到本仓库、仅有 GitHub Actions 写权限的细粒度令牌；令牌和 cron-job.org API Key 不得写入仓库、日志或数据文件
 - **OPS-01-5 可观测性**：运行状态必须记录 `trigger=external_scheduler` 和 `scheduleSlot`，能够区分主触发、兜底触发和人工触发；外部调度历史应保留计划时间、实际请求时间和 HTTP 结果
+- **部署证据（2026-07-10）**：7:45 主任务 `jobId=8059160`、8:15 兜底任务 `jobId=8059161` 均已启用且时区为 `Asia/Shanghai`；一次性外部测试计划于 17:52:00 发起、实际于 17:52:07 发起（jitter 7.409 秒），GitHub Workflow Run `29084473671` 成功完成并正确记录 `external_scheduler / fallback / skipped`，未重复调用 Server酱
 - **业务日期**：所有面向用户和归档的 `date` 均使用北京时间业务日期，即 `datetime.now(ZoneInfo("Asia/Shanghai")).date()`；`exportedAt` 可继续使用 UTC ISO 时间
 - **无需本地电脑开机**：所有抓取、处理、推送均在 GitHub 云服务器上完成
 - **手动触发**：支持 `workflow_dispatch`，手动运行一次；同时支持手机端新建 `manual-push` issue 或评论 `/push` / `/push-force` 触发推送

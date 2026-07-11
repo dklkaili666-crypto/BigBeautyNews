@@ -300,6 +300,27 @@
       "serverchanEndpointType": "sct",
       "pushId": "45137579",
       "digestHash": "f3db8e549abee13f47e584fa96cf782b22556a34"
+    },
+    {
+      "date": "2026-07-11",
+      "status": "skipped",
+      "startedAt": "2026-07-11T00:15:27Z",
+      "finishedAt": "2026-07-11T00:15:27Z",
+      "candidateCount": 0,
+      "selectedCount": 0,
+      "sourcesAvailable": 0,
+      "llmModel": "",
+      "generated": false,
+      "pushed": true,
+      "committed": true,
+      "schemaValid": true,
+      "warnings": [],
+      "errors": [],
+      "trigger": "external_scheduler",
+      "scheduleSlot": "fallback",
+      "workflowRunId": "29132217911",
+      "pushAttempted": false,
+      "pushSkippedReason": "already_pushed"
     }
   ]
 }

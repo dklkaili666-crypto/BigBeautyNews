@@ -1,40 +1,40 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-07-10T23:46:01Z",
+  "exportedAt": "2026-07-11T23:45:56Z",
   "items": [
     {
-      "date": "2026-07-11",
-      "title": "苹果起诉OpenAI窃取硬件机密，大厂战略冲突升级",
-      "summary": "苹果正式起诉OpenAI，指控其前苹果员工窃取硬件机密以推进AI初创公司的硬件计划。诉讼称发现了“OpenAI前苹果员工系统性窃取苹果商业机密的模式”。除OpenAI外，被告还包括Jony Ive的硬件初创公司IO Products。此案凸显科技巨头在AI硬件领域的激烈竞争，投资者需关注苹果与OpenAI的战略冲突对供应链和人才流动的潜在影响。",
-      "url": "https://www.theverge.com/tech/964350/apple-openai-lawsuit-trade-secrets",
+      "date": "2026-07-12",
+      "title": "OpenAI称GPT-5.6为Microsoft Copilot 365首选模型，联盟稳定性受关注",
+      "summary": "OpenAI新模型系列将继续为微软的工作与生产力应用套件提供支持。GPT-5.6成为Copilot首选模型，进一步巩固了两大AI巨头的深度绑定关系。投资者需关注这一战略联盟对市场格局的影响，以及OpenAI与微软合作关系的稳定性，这直接关系到双方在AI办公市场的竞争地位与收入增长前景。",
+      "url": "https://techcrunch.com/2026/07/09/openai-says-gpt-5-6-is-the-preferred-model-for-microsoft-copilot-amid-breakup-chatter/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-07-12",
+      "title": "英伟达、CoreWeave与Nebius：GPU热潮背后的循环融资模式揭秘",
+      "summary": "文章深入剖析了GPU算力产业链中英伟达、CoreWeave等关键玩家采用的循环融资模式。这种模式通过将GPU资产作为抵押品进行融资，再用于购买更多GPU，形成自我强化的资本循环。投资者需警惕其中蕴含的系统性风险，包括资产泡沫、过度杠杆化以及算力需求可持续性等关键问题，这些因素将直接影响AI基础设施投资的估值逻辑与回报预期。",
+      "url": "https://io-fund.com/ai-stocks/nvidia-coreweave-nebius-circular-financing-gpu-boom",
+      "source": "Hacker News"
+    },
+    {
+      "date": "2026-07-12",
+      "title": "Meta紧急关闭Instagram AI深度伪造功能，隐私合规风险凸显",
+      "summary": "在用户强烈反对后，Meta关闭了本周推出的Instagram功能，该功能允许用户通过标记公开账户生成基于其内容的AI图像。原设定意味着任何公开账户的内容均可未经许可用于AI创作。这一事件暴露了大型平台在AI内容生成与隐私合规之间的重大战略风险，投资者需评估Meta在AI产品创新与用户信任、监管合规之间的平衡能力，以及可能面临的诉讼与罚款风险。",
+      "url": "https://www.theverge.com/tech/964416/meta-instagram-ai-muse-image-deepfakes",
       "source": "The Verge"
     },
     {
-      "date": "2026-07-11",
-      "title": "SK海力士创纪录IPO融资265亿美元，被敦促在美建厂",
-      "summary": "SK海力士完成了美国史上最大的外国公司IPO，融资265亿美元，标志着AI芯片热潮在华尔街达到新高度。随后，该公司与三星被要求在美国建设新工厂。这一事件直接反映了AI芯片供应链的扩张趋势和地缘政治对半导体投资的推动。投资者应关注SK海力士（$000660.KS）和三星（$SSNLF）的产能布局对全球芯片供需格局的影响。",
-      "url": "https://techcrunch.com/2026/07/10/sk-hynix-raises-26-5b-in-the-biggest-foreign-ipo-in-us-history-is-urged-to-build-new-us-fabs/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-07-11",
-      "title": "OpenAI发布GPT-5.6系列模型，聚焦网络安全提升",
-      "summary": "OpenAI推出了其最新模型系列GPT-5.6，声称在包括网络安全在内的多个领域实现了改进。这是OpenAI核心产品的重大迭代，将直接影响其与微软（$MSFT）Copilot等生态系统的合作。投资者需评估GPT-5.6对AI应用性能的推动，以及其在竞争中对闭源模型市场份额的巩固作用。",
-      "url": "https://techcrunch.com/2026/07/09/openai-launches-its-new-family-of-models-with-gpt-5-6/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-07-11",
-      "title": "Anthropic对Claude Fable 5转向按使用量收费，AI订阅模式生变",
-      "summary": "Anthropic宣布其顶级消费级AI模型Claude Fable 5将很快对订阅用户收取基于使用量的费用，这标志着AI订阅的“黄金时代”可能终结。此举对行业定价策略具有重大影响，投资者需关注其他AI公司（如OpenAI）是否跟进，以及按量计费模式对用户增长和收入稳定性的长期影响。",
-      "url": "https://www.wired.com/story/model-behavior-anthropic-will-charge-consumers-extra-to-use-claude-fable-5/",
+      "date": "2026-07-12",
+      "title": "OpenAI安全负责人离职，内部治理与公众信任面临考验",
+      "summary": "Johannes Heidecke的离职正值OpenAI试图进一步整合其研究与安全团队之际。安全负责人的离开可能影响OpenAI内部安全治理体系的稳定性，并削弱公众对其AI产品安全性的信任。对投资者而言，这一人事变动是评估OpenAI长期风险管理能力、监管应对策略以及公司治理结构成熟度的重要信号，可能影响其估值与市场信心。",
+      "url": "https://www.wired.com/story/openai-head-of-safety-leaving/",
       "source": "Wired"
     },
     {
-      "date": "2026-07-11",
-      "title": "英伟达领投巴黎AI语音初创Gradium 1亿美元种子轮",
-      "summary": "巴黎AI语音初创公司Gradium获得了1亿美元种子轮融资，由英伟达（$NVDA）领投。公司计划利用这笔资金在湾区设立办公室并争夺人才，以“巩固其在全球领先AI生态系统核心的地位”。这一投资显示英伟达对垂直AI赛道（如语音技术）的押注，投资者可关注AI语音应用在客服、虚拟助手等领域的商业化潜力。",
-      "url": "https://techcrunch.com/2026/07/09/paris-based-ai-voice-startup-gradium-raises-100m-seed-backed-by-nvidia/",
+      "date": "2026-07-12",
+      "title": "Hugging Face CEO：开源AI比以往任何时候都更重要",
+      "summary": "Hugging Face CEO Clem Delangue表示，开源AI正在蓬勃发展。该公司已发展成为类似AI领域的GitHub，AI开发者可在此分享和下载开源模型与数据集，目前约有一半的财富500强企业使用其服务。Delangue观察到，企业正从租用闭源模型转向自建开源模型，这一趋势可能重塑AI服务市场的竞争格局。投资者需关注开源AI对闭源模型提供商（如OpenAI、Anthropic）的冲击，以及Hugging Face等平台在AI基础设施领域的价值增长潜力。",
+      "url": "https://techcrunch.com/podcast/open-source-ai-matters-more-than-ever-according-to-hugging-faces-clem-delangue/",
       "source": "TechCrunch"
     }
   ]

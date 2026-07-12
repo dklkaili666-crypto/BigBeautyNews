@@ -373,6 +373,37 @@
       "workflowRunId": "29173423940",
       "pushAttempted": false,
       "pushSkippedReason": "already_pushed"
+    },
+    {
+      "date": "2026-07-13",
+      "status": "success",
+      "startedAt": "2026-07-12T23:45:33Z",
+      "finishedAt": "2026-07-12T23:45:53Z",
+      "candidateCount": 77,
+      "selectedCount": 5,
+      "sourcesAvailable": 7,
+      "llmModel": "deepseek-chat",
+      "generated": true,
+      "pushed": true,
+      "committed": true,
+      "schemaValid": true,
+      "warnings": [],
+      "errors": [],
+      "trigger": "external_scheduler",
+      "scheduleSlot": "primary",
+      "workflowRunId": "29213965574",
+      "isDryRun": false,
+      "sendkeyPresent": true,
+      "pushAttempted": true,
+      "pushAttemptedAt": "2026-07-12T23:45:51Z",
+      "pushSkippedReason": "",
+      "pushHttpStatus": 200,
+      "pushResponseCode": 0,
+      "pushResponseMessage": "",
+      "pushResponseBodyPreview": "{\"code\":0,\"message\":\"\",\"data\":{\"pushid\":\"45391597\",\"readkey\":\"SCT9cfcFitkCGoY\",\"error\":\"SUCCESS\",\"errno\":0}}",
+      "serverchanEndpointType": "sct",
+      "pushId": "45391597",
+      "digestHash": "5e4a7aca698666d318489952932597ae7a549081"
     }
   ]
 }

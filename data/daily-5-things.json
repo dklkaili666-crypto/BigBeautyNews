@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-07-11T23:45:56Z",
+  "exportedAt": "2026-07-12T23:45:51Z",
   "items": [
     {
-      "date": "2026-07-12",
-      "title": "OpenAI称GPT-5.6为Microsoft Copilot 365首选模型，联盟稳定性受关注",
-      "summary": "OpenAI新模型系列将继续为微软的工作与生产力应用套件提供支持。GPT-5.6成为Copilot首选模型，进一步巩固了两大AI巨头的深度绑定关系。投资者需关注这一战略联盟对市场格局的影响，以及OpenAI与微软合作关系的稳定性，这直接关系到双方在AI办公市场的竞争地位与收入增长前景。",
-      "url": "https://techcrunch.com/2026/07/09/openai-says-gpt-5-6-is-the-preferred-model-for-microsoft-copilot-amid-breakup-chatter/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-07-12",
-      "title": "英伟达、CoreWeave与Nebius：GPU热潮背后的循环融资模式揭秘",
-      "summary": "文章深入剖析了GPU算力产业链中英伟达、CoreWeave等关键玩家采用的循环融资模式。这种模式通过将GPU资产作为抵押品进行融资，再用于购买更多GPU，形成自我强化的资本循环。投资者需警惕其中蕴含的系统性风险，包括资产泡沫、过度杠杆化以及算力需求可持续性等关键问题，这些因素将直接影响AI基础设施投资的估值逻辑与回报预期。",
-      "url": "https://io-fund.com/ai-stocks/nvidia-coreweave-nebius-circular-financing-gpu-boom",
-      "source": "Hacker News"
-    },
-    {
-      "date": "2026-07-12",
-      "title": "Meta紧急关闭Instagram AI深度伪造功能，隐私合规风险凸显",
-      "summary": "在用户强烈反对后，Meta关闭了本周推出的Instagram功能，该功能允许用户通过标记公开账户生成基于其内容的AI图像。原设定意味着任何公开账户的内容均可未经许可用于AI创作。这一事件暴露了大型平台在AI内容生成与隐私合规之间的重大战略风险，投资者需评估Meta在AI产品创新与用户信任、监管合规之间的平衡能力，以及可能面临的诉讼与罚款风险。",
-      "url": "https://www.theverge.com/tech/964416/meta-instagram-ai-muse-image-deepfakes",
+      "date": "2026-07-13",
+      "title": "苹果自研AI芯片能力源自其失败的自动驾驶汽车项目",
+      "summary": "苹果的自动驾驶汽车项目虽未成功，但其开发过程中对端侧AI处理能力的迫切需求，催生了公司强大的AI芯片技术。据Mark Gurman报道，尽管汽车处理器最终未完成，但这一项目为苹果在端侧AI推理领域构建了硬件护城河。对投资者而言，这揭示了苹果未来在AI战略中的核心优势，尤其是在设备端AI性能上的潜在竞争力。",
+      "url": "https://www.theverge.com/tech/964519/apple-silicon-self-driving-car-ai-m7-ultra",
       "source": "The Verge"
     },
     {
-      "date": "2026-07-12",
-      "title": "OpenAI安全负责人离职，内部治理与公众信任面临考验",
-      "summary": "Johannes Heidecke的离职正值OpenAI试图进一步整合其研究与安全团队之际。安全负责人的离开可能影响OpenAI内部安全治理体系的稳定性，并削弱公众对其AI产品安全性的信任。对投资者而言，这一人事变动是评估OpenAI长期风险管理能力、监管应对策略以及公司治理结构成熟度的重要信号，可能影响其估值与市场信心。",
-      "url": "https://www.wired.com/story/openai-head-of-safety-leaving/",
-      "source": "Wired"
+      "date": "2026-07-13",
+      "title": "OpenAI押注家庭场景，ChatGPT深入千家万户",
+      "summary": "OpenAI正通过招聘专门的产品经理，为家庭、照护者和老年人打造ChatGPT体验，标志着其从企业工具向消费级平台转型。这一战略将直接扩大用户基数和付费场景，影响OpenAI的估值逻辑。投资者需关注其家庭场景的变现能力及对AI消费市场的渗透潜力。",
+      "url": "https://techcrunch.com/2026/07/11/openai-bets-on-families-as-chatgpt-goes-deeper-into-households/",
+      "source": "TechCrunch"
     },
     {
-      "date": "2026-07-12",
-      "title": "Hugging Face CEO：开源AI比以往任何时候都更重要",
-      "summary": "Hugging Face CEO Clem Delangue表示，开源AI正在蓬勃发展。该公司已发展成为类似AI领域的GitHub，AI开发者可在此分享和下载开源模型与数据集，目前约有一半的财富500强企业使用其服务。Delangue观察到，企业正从租用闭源模型转向自建开源模型，这一趋势可能重塑AI服务市场的竞争格局。投资者需关注开源AI对闭源模型提供商（如OpenAI、Anthropic）的冲击，以及Hugging Face等平台在AI基础设施领域的价值增长潜力。",
-      "url": "https://techcrunch.com/podcast/open-source-ai-matters-more-than-ever-according-to-hugging-faces-clem-delangue/",
+      "date": "2026-07-13",
+      "title": "Meta因用户抵制撤回Instagram争议性AI功能",
+      "summary": "Meta在Instagram上推出的一项AI创意工具因用户强烈反对而被迫下架。公司承认该功能“未达预期”，并强调初衷是提供有用工具并赋予用户控制权。这一事件凸显了AI产品落地面临的监管与舆论风险，可能影响Meta广告和社交产品的AI化进程，投资者需警惕其AI战略的执行风险。",
+      "url": "https://techcrunch.com/2026/07/10/meta-removes-controversial-ai-feature-on-instagram-after-backlash/",
       "source": "TechCrunch"
+    },
+    {
+      "date": "2026-07-13",
+      "title": "AI数据中心遭遇社区抵制，建设成本与周期面临挑战",
+      "summary": "随着AI热潮推动数据中心大规模建设，社区抵制浪潮正在兴起，威胁到算力基础设施的扩张速度。这一趋势将推高建设成本和周期，直接影响英伟达（$NVDA）等硬件厂商的订单预期，并改变能源板块的投资逻辑。投资者需评估数据中心选址和审批风险对AI产业链的长期影响。",
+      "url": "https://www.theverge.com/column/963346/ai-data-centers-fight",
+      "source": "The Verge"
+    },
+    {
+      "date": "2026-07-13",
+      "title": "迁移生产级AI智能体至GPT-5.6：速度提升2.2倍，成本降低27%",
+      "summary": "最新数据显示，将生产级AI智能体迁移至GPT-5.6后，推理速度提升2.2倍，成本降低27%。这一显著优化将加速企业AI应用落地，并可能改变模型选型格局。对投资者而言，这是重要的竞争信号，表明大语言模型在效率和成本上的突破正推动行业进入新阶段。",
+      "url": "https://ploy.ai/blog/migrating-a-production-ai-agent-to-gpt-5-6",
+      "source": "Hacker News"
     }
   ]
 }

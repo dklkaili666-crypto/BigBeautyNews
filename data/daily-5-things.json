@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-07-13T03:10:22Z",
+  "exportedAt": "2026-07-13T23:46:18Z",
   "items": [
     {
-      "date": "2026-07-13",
-      "title": "苹果自动驾驶汽车项目虽败，却留下强大AI芯片遗产",
-      "summary": "苹果的自动驾驶汽车项目虽未成功，但其开发过程中对端侧AI处理能力的追求，催生了公司强大的AI芯片。据Mark Gurman报道，尽管车载处理器最终未完成，但这一探索为苹果在端侧AI领域积累了关键技术和竞争优势。投资者应关注：苹果自研AI芯片的起源故事揭示了其未来在端侧AI的潜在优势，可能对苹果AI战略和产品竞争力产生重大影响，尤其是在边缘计算和隐私保护方面。",
-      "url": "https://www.theverge.com/tech/964519/apple-silicon-self-driving-car-ai-m7-ultra",
+      "date": "2026-07-14",
+      "title": "苹果起诉OpenAI窃密：招聘面试竟索要竞品硬件样本",
+      "summary": "苹果公司对OpenAI提起重磅诉讼，指控其通过招聘面试窃取商业机密，包括要求苹果员工携带未发布的产品样本和正在开发的组件。案件还涉及OpenAI涉嫌窃取机密文件、监视硬件原型等行为。此案凸显大厂间AI人才争夺与知识产权冲突加剧，投资者需关注诉讼进展对OpenAI融资及行业竞争格局的潜在影响。",
+      "url": "https://www.theverge.com/tech/964843/apple-openai-lawsuit-wildest-claims",
       "source": "The Verge"
     },
     {
-      "date": "2026-07-13",
-      "title": "OpenAI押注家庭场景，ChatGPT深入千家万户",
-      "summary": "根据招聘信息，ChatGPT正在招聘一名专门的产品经理，负责为家庭、看护者和老年人打造体验。这表明OpenAI正从工具型产品向更广泛的消费级市场拓展，可能改变其用户增长和收入结构。投资者需关注：OpenAI向家庭场景的拓展，意味着其正在寻求新的增长点，可能通过订阅服务或家庭套餐模式提升用户粘性和ARPU值，但也面临家庭用户隐私和监管挑战。",
-      "url": "https://techcrunch.com/2026/07/11/openai-bets-on-families-as-chatgpt-goes-deeper-into-households/",
+      "date": "2026-07-14",
+      "title": "AI智能体创企Nous Research融资估值达15亿美元",
+      "summary": "Hermes智能体开发商Nous Research正进行新一轮融资，至少筹集7500万美元，由Robot领投，USV等知名机构参投，估值达15亿美元。该事件表明AI智能体赛道持续吸引资本关注，投资者应评估该领域商业化进展及竞争壁垒，作为布局AI应用层的重要参考。",
+      "url": "https://techcrunch.com/2026/07/13/hermes-agent-maker-nous-research-in-talks-for-new-funding-at-1-5b-valuation/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-07-13",
-      "title": "AI数据中心建设遭遇社区抵制，成本压力初现",
-      "summary": "AI数据中心建设引发的社区抵制正在加剧，可能推高算力成本，影响AI基础设施投资回报预期。随着AI热潮推动数据中心大规模扩张，当地社区对电力消耗、环境影响和土地使用的担忧日益增加。投资者应警惕：数据中心建设受阻可能导致算力供给紧张，推高GPU和电力成本，进而影响AI公司（如$NVDA 英伟达）和云服务商的盈利预期，需关注相关监管和社区关系风险。",
-      "url": "https://www.theverge.com/column/963346/ai-data-centers-fight",
-      "source": "The Verge"
+      "date": "2026-07-14",
+      "title": "Anthropic在印度推出卢比计价Claude订阅计划",
+      "summary": "Anthropic开始为印度用户提供以印度卢比计价的Claude订阅方案，印度是其美国以外最大市场。此举标志着Anthropic加速全球本地化扩张，通过定价策略降低新兴市场门槛。投资者需关注其市场份额增长及对竞争对手（如OpenAI、谷歌）的挤压效应。",
+      "url": "https://techcrunch.com/2026/07/13/anthropic-starts-localizing-claude-pricing-for-india-its-biggest-market-after-the-us/",
+      "source": "TechCrunch"
     },
     {
-      "date": "2026-07-13",
-      "title": "中国半导体科学家王丹浩在美去世前经历了什么？",
-      "summary": "中国半导体科学家王丹浩在美接受执法部门问询后自杀，其骨灰已运回中国。这一事件凸显了中美科技人才流动受阻的风险，可能加剧半导体和AI领域的供应链脱钩。投资者需关注：中美科技人才交流受阻可能影响半导体和AI领域的创新速度，尤其是对依赖海外人才的美国科技公司（如$AMD 超威半导体、$NVDA 英伟达）构成人才短缺风险，同时加速中国本土半导体和AI人才的培养和回流，改变全球科技竞争格局。",
-      "url": "https://www.scmp.com/news/china/science/article/3360236/what-happened-chinese-semiconductor-scientist-wang-danhao-took-his-life-us?utm_source=rss_feed",
-      "source": "SCMP China"
+      "date": "2026-07-14",
+      "title": "Anthropic最新AI研究：探索模型感知能力，但未证实突破",
+      "summary": "Anthropic发布一项关于AI模型是否可能感知疼痛的前沿研究，延续其探索AI意识与对齐问题的传统。尽管研究未给出明确结论，但体现了公司在基础模型安全与可解释性上的持续投入。投资者应将其视为长期技术路线信号，而非短期商业突破。",
+      "url": "https://www.technologyreview.com/2026/07/13/1140343/what-anthropics-latest-ai-discovery-does-and-doesnt-show/",
+      "source": "MIT Technology Review"
     },
     {
-      "date": "2026-07-13",
-      "title": "Claude Code vs OpenCode：编码工具效率对比引发社区热议",
-      "summary": "社区对AI编码工具效率的对比讨论显示，Claude Code在读取提示前发送33k tokens，而OpenCode仅发送7k tokens，反映出开发者对模型成本与性能的高度敏感。这一差异可能影响AI编程工具的市场竞争格局。投资者需关注：AI编码工具的效率差异直接影响开发者的采用意愿和企业的成本控制，可能推动市场向更高效、更低成本的解决方案倾斜，对$MSFT 微软（GitHub Copilot）、$AMZN 亚马逊（CodeWhisperer）等公司的AI编程业务构成竞争压力。",
-      "url": "https://systima.ai/blog/claude-code-vs-opencode-token-overhead",
-      "source": "Hacker News"
+      "date": "2026-07-14",
+      "title": "Siri AI升级为苹果生态核心：iOS 27公测版已可用",
+      "summary": "苹果对Siri进行重大改造，使其从语音助手升级为iPhone用户体验的支柱功能，现已通过iOS 27公测版开放试用。此举标志苹果AI战略从硬件转向软件生态整合，投资者需评估其对消费级AI应用市场格局的颠覆潜力，以及苹果服务收入增长的驱动效应。",
+      "url": "https://www.wired.com/story/siri-ai-is-now-apple-everything-tool/",
+      "source": "Wired"
     }
   ]
 }

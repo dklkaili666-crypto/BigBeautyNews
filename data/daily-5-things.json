@@ -1,40 +1,40 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-07-12T23:45:51Z",
+  "exportedAt": "2026-07-13T03:10:22Z",
   "items": [
     {
       "date": "2026-07-13",
-      "title": "苹果自研AI芯片能力源自其失败的自动驾驶汽车项目",
-      "summary": "苹果的自动驾驶汽车项目虽未成功，但其开发过程中对端侧AI处理能力的迫切需求，催生了公司强大的AI芯片技术。据Mark Gurman报道，尽管汽车处理器最终未完成，但这一项目为苹果在端侧AI推理领域构建了硬件护城河。对投资者而言，这揭示了苹果未来在AI战略中的核心优势，尤其是在设备端AI性能上的潜在竞争力。",
+      "title": "苹果自动驾驶汽车项目虽败，却留下强大AI芯片遗产",
+      "summary": "苹果的自动驾驶汽车项目虽未成功，但其开发过程中对端侧AI处理能力的追求，催生了公司强大的AI芯片。据Mark Gurman报道，尽管车载处理器最终未完成，但这一探索为苹果在端侧AI领域积累了关键技术和竞争优势。投资者应关注：苹果自研AI芯片的起源故事揭示了其未来在端侧AI的潜在优势，可能对苹果AI战略和产品竞争力产生重大影响，尤其是在边缘计算和隐私保护方面。",
       "url": "https://www.theverge.com/tech/964519/apple-silicon-self-driving-car-ai-m7-ultra",
       "source": "The Verge"
     },
     {
       "date": "2026-07-13",
       "title": "OpenAI押注家庭场景，ChatGPT深入千家万户",
-      "summary": "OpenAI正通过招聘专门的产品经理，为家庭、照护者和老年人打造ChatGPT体验，标志着其从企业工具向消费级平台转型。这一战略将直接扩大用户基数和付费场景，影响OpenAI的估值逻辑。投资者需关注其家庭场景的变现能力及对AI消费市场的渗透潜力。",
+      "summary": "根据招聘信息，ChatGPT正在招聘一名专门的产品经理，负责为家庭、看护者和老年人打造体验。这表明OpenAI正从工具型产品向更广泛的消费级市场拓展，可能改变其用户增长和收入结构。投资者需关注：OpenAI向家庭场景的拓展，意味着其正在寻求新的增长点，可能通过订阅服务或家庭套餐模式提升用户粘性和ARPU值，但也面临家庭用户隐私和监管挑战。",
       "url": "https://techcrunch.com/2026/07/11/openai-bets-on-families-as-chatgpt-goes-deeper-into-households/",
       "source": "TechCrunch"
     },
     {
       "date": "2026-07-13",
-      "title": "Meta因用户抵制撤回Instagram争议性AI功能",
-      "summary": "Meta在Instagram上推出的一项AI创意工具因用户强烈反对而被迫下架。公司承认该功能“未达预期”，并强调初衷是提供有用工具并赋予用户控制权。这一事件凸显了AI产品落地面临的监管与舆论风险，可能影响Meta广告和社交产品的AI化进程，投资者需警惕其AI战略的执行风险。",
-      "url": "https://techcrunch.com/2026/07/10/meta-removes-controversial-ai-feature-on-instagram-after-backlash/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-07-13",
-      "title": "AI数据中心遭遇社区抵制，建设成本与周期面临挑战",
-      "summary": "随着AI热潮推动数据中心大规模建设，社区抵制浪潮正在兴起，威胁到算力基础设施的扩张速度。这一趋势将推高建设成本和周期，直接影响英伟达（$NVDA）等硬件厂商的订单预期，并改变能源板块的投资逻辑。投资者需评估数据中心选址和审批风险对AI产业链的长期影响。",
+      "title": "AI数据中心建设遭遇社区抵制，成本压力初现",
+      "summary": "AI数据中心建设引发的社区抵制正在加剧，可能推高算力成本，影响AI基础设施投资回报预期。随着AI热潮推动数据中心大规模扩张，当地社区对电力消耗、环境影响和土地使用的担忧日益增加。投资者应警惕：数据中心建设受阻可能导致算力供给紧张，推高GPU和电力成本，进而影响AI公司（如$NVDA 英伟达）和云服务商的盈利预期，需关注相关监管和社区关系风险。",
       "url": "https://www.theverge.com/column/963346/ai-data-centers-fight",
       "source": "The Verge"
     },
     {
       "date": "2026-07-13",
-      "title": "迁移生产级AI智能体至GPT-5.6：速度提升2.2倍，成本降低27%",
-      "summary": "最新数据显示，将生产级AI智能体迁移至GPT-5.6后，推理速度提升2.2倍，成本降低27%。这一显著优化将加速企业AI应用落地，并可能改变模型选型格局。对投资者而言，这是重要的竞争信号，表明大语言模型在效率和成本上的突破正推动行业进入新阶段。",
-      "url": "https://ploy.ai/blog/migrating-a-production-ai-agent-to-gpt-5-6",
+      "title": "中国半导体科学家王丹浩在美去世前经历了什么？",
+      "summary": "中国半导体科学家王丹浩在美接受执法部门问询后自杀，其骨灰已运回中国。这一事件凸显了中美科技人才流动受阻的风险，可能加剧半导体和AI领域的供应链脱钩。投资者需关注：中美科技人才交流受阻可能影响半导体和AI领域的创新速度，尤其是对依赖海外人才的美国科技公司（如$AMD 超威半导体、$NVDA 英伟达）构成人才短缺风险，同时加速中国本土半导体和AI人才的培养和回流，改变全球科技竞争格局。",
+      "url": "https://www.scmp.com/news/china/science/article/3360236/what-happened-chinese-semiconductor-scientist-wang-danhao-took-his-life-us?utm_source=rss_feed",
+      "source": "SCMP China"
+    },
+    {
+      "date": "2026-07-13",
+      "title": "Claude Code vs OpenCode：编码工具效率对比引发社区热议",
+      "summary": "社区对AI编码工具效率的对比讨论显示，Claude Code在读取提示前发送33k tokens，而OpenCode仅发送7k tokens，反映出开发者对模型成本与性能的高度敏感。这一差异可能影响AI编程工具的市场竞争格局。投资者需关注：AI编码工具的效率差异直接影响开发者的采用意愿和企业的成本控制，可能推动市场向更高效、更低成本的解决方案倾斜，对$MSFT 微软（GitHub Copilot）、$AMZN 亚马逊（CodeWhisperer）等公司的AI编程业务构成竞争压力。",
+      "url": "https://systima.ai/blog/claude-code-vs-opencode-token-overhead",
       "source": "Hacker News"
     }
   ]

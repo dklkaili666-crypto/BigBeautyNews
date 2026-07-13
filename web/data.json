@@ -1,22 +1,23 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-07-12T23:45:51Z",
-  "dailyTheme": "AI投资关注点从模型能力转向落地阻力与硬件供应链：苹果芯片遗产、OpenAI家庭化、Meta功能撤回、数据中心抗议及GPT成本优化共同指向商业化与基础设施的博弈。",
+  "exportedAt": "2026-07-13T03:10:22Z",
+  "dailyTheme": "大厂AI战略深化与基础设施成本博弈，地缘政治风险扰动半导体人才链",
+  "geopoliticsTheme": "美伊军事冲突升级威胁霍尔木兹海峡通行，中美在南海与军事能力上持续博弈，全球能源与安全秩序面临双重挑战",
   "items": [
     {
       "id": "f33df4fd-a6b7-54ee-ac59-2ecb0ba2c31b",
       "date": "2026-07-13",
-      "title": "苹果自研AI芯片能力源自其失败的自动驾驶汽车项目",
-      "summary": "苹果的自动驾驶汽车项目虽未成功，但其开发过程中对端侧AI处理能力的迫切需求，催生了公司强大的AI芯片技术。据Mark Gurman报道，尽管汽车处理器最终未完成，但这一项目为苹果在端侧AI推理领域构建了硬件护城河。对投资者而言，这揭示了苹果未来在AI战略中的核心优势，尤其是在设备端AI性能上的潜在竞争力。",
+      "title": "苹果自动驾驶汽车项目虽败，却留下强大AI芯片遗产",
+      "summary": "苹果的自动驾驶汽车项目虽未成功，但其开发过程中对端侧AI处理能力的追求，催生了公司强大的AI芯片。据Mark Gurman报道，尽管车载处理器最终未完成，但这一探索为苹果在端侧AI领域积累了关键技术和竞争优势。投资者应关注：苹果自研AI芯片的起源故事揭示了其未来在端侧AI的潜在优势，可能对苹果AI战略和产品竞争力产生重大影响，尤其是在边缘计算和隐私保护方面。",
       "url": "https://www.theverge.com/tech/964519/apple-silicon-self-driving-car-ai-m7-ultra",
       "canonicalUrl": "https://www.theverge.com/tech/964519/apple-silicon-self-driving-car-ai-m7-ultra",
       "source": "The Verge",
       "sourceTier": "tier2",
       "isPrimarySource": false,
       "tags": [
+        "大厂战略",
         "苹果",
-        "AI芯片",
-        "端侧AI"
+        "AI芯片"
       ],
       "rank": 1,
       "eventId": "4cbf12384c3159c024e5c7aff1b30c1aa3cad18d",
@@ -42,27 +43,30 @@
       ],
       "relatedUrls": [],
       "primarySource": "The Verge",
-      "selectionReason": "苹果自研AI芯片能力源自其汽车项目，这揭示了其未来在端侧AI推理的硬件护城河，对投资者评估苹果AI战略至关重要。",
+      "selectionReason": "苹果自研AI芯片的起源故事揭示了其未来在端侧AI的潜在竞争优势，对苹果AI战略有重大影响。",
       "promptVersion": "",
       "modelUsed": "",
       "rawPayloadHash": "",
       "warnings": [],
-      "createdAt": "2026-07-12T23:45:51Z"
+      "regions": [],
+      "geopoliticsEventTypes": [],
+      "geopoliticsRuleScore": 0.0,
+      "createdAt": "2026-07-13T03:10:22Z"
     },
     {
       "id": "e2484bf4-7110-5009-bc2d-53642ff62c8f",
       "date": "2026-07-13",
       "title": "OpenAI押注家庭场景，ChatGPT深入千家万户",
-      "summary": "OpenAI正通过招聘专门的产品经理，为家庭、照护者和老年人打造ChatGPT体验，标志着其从企业工具向消费级平台转型。这一战略将直接扩大用户基数和付费场景，影响OpenAI的估值逻辑。投资者需关注其家庭场景的变现能力及对AI消费市场的渗透潜力。",
+      "summary": "根据招聘信息，ChatGPT正在招聘一名专门的产品经理，负责为家庭、看护者和老年人打造体验。这表明OpenAI正从工具型产品向更广泛的消费级市场拓展，可能改变其用户增长和收入结构。投资者需关注：OpenAI向家庭场景的拓展，意味着其正在寻求新的增长点，可能通过订阅服务或家庭套餐模式提升用户粘性和ARPU值，但也面临家庭用户隐私和监管挑战。",
       "url": "https://techcrunch.com/2026/07/11/openai-bets-on-families-as-chatgpt-goes-deeper-into-households/",
       "canonicalUrl": "https://techcrunch.com/2026/07/11/openai-bets-on-families-as-chatgpt-goes-deeper-into-households",
       "source": "TechCrunch",
       "sourceTier": "tier2",
       "isPrimarySource": false,
       "tags": [
+        "大模型",
         "OpenAI",
-        "消费级AI",
-        "家庭场景"
+        "消费市场"
       ],
       "rank": 2,
       "eventId": "60ee07cb01f686c1d6519c5228ec793ac442c7ce",
@@ -88,75 +92,32 @@
       ],
       "relatedUrls": [],
       "primarySource": "TechCrunch",
-      "selectionReason": "OpenAI向家庭场景拓展，意味着其从企业工具向消费级平台转型，将直接扩大用户基数和付费场景，影响估值逻辑。",
+      "selectionReason": "OpenAI向家庭场景拓展，表明其正从工具型产品转向更广泛的消费级市场，可能改变用户增长和收入结构。",
       "promptVersion": "",
       "modelUsed": "",
       "rawPayloadHash": "",
       "warnings": [],
-      "createdAt": "2026-07-12T23:45:51Z"
-    },
-    {
-      "id": "63900494-e4ee-5e28-9014-0871558d7942",
-      "date": "2026-07-13",
-      "title": "Meta因用户抵制撤回Instagram争议性AI功能",
-      "summary": "Meta在Instagram上推出的一项AI创意工具因用户强烈反对而被迫下架。公司承认该功能“未达预期”，并强调初衷是提供有用工具并赋予用户控制权。这一事件凸显了AI产品落地面临的监管与舆论风险，可能影响Meta广告和社交产品的AI化进程，投资者需警惕其AI战略的执行风险。",
-      "url": "https://techcrunch.com/2026/07/10/meta-removes-controversial-ai-feature-on-instagram-after-backlash/",
-      "canonicalUrl": "https://techcrunch.com/2026/07/10/meta-removes-controversial-ai-feature-on-instagram-after-backlash",
-      "source": "TechCrunch",
-      "sourceTier": "tier2",
-      "isPrimarySource": false,
-      "tags": [
-        "Meta",
-        "AI监管",
-        "社交产品"
-      ],
-      "rank": 3,
-      "eventId": "42252bcb415eb41cb18c5889077bb838f84118a7",
-      "eventType": "product_launch",
-      "entities": [
-        "Meta"
-      ],
-      "tickers": [],
-      "sourceCredibilityScore": 3.0,
-      "marketImpactScore": 2.0,
-      "noveltyScore": 4.0,
-      "timelinessScore": 5.0,
-      "entityImportanceScore": 3.0,
-      "confidenceScore": 3.0,
-      "totalScore": 3.05,
-      "whyItMatters": "",
-      "investmentImplication": "",
-      "riskNote": "",
-      "originalTitle": "Meta removes controversial AI feature on Instagram after backlash",
-      "published": "2026-07-10T23:55:07Z",
-      "mergedSources": [
-        "TechCrunch"
-      ],
-      "relatedUrls": [],
-      "primarySource": "TechCrunch",
-      "selectionReason": "Meta因用户抵制撤回AI功能，表明AI产品落地面临监管与舆论风险，可能影响其广告和社交产品的AI化节奏。",
-      "promptVersion": "",
-      "modelUsed": "",
-      "rawPayloadHash": "",
-      "warnings": [],
-      "createdAt": "2026-07-12T23:45:51Z"
+      "regions": [],
+      "geopoliticsEventTypes": [],
+      "geopoliticsRuleScore": 0.0,
+      "createdAt": "2026-07-13T03:10:22Z"
     },
     {
       "id": "78aa3eab-821b-55ba-874a-2374459fa3f6",
       "date": "2026-07-13",
-      "title": "AI数据中心遭遇社区抵制，建设成本与周期面临挑战",
-      "summary": "随着AI热潮推动数据中心大规模建设，社区抵制浪潮正在兴起，威胁到算力基础设施的扩张速度。这一趋势将推高建设成本和周期，直接影响英伟达（$NVDA）等硬件厂商的订单预期，并改变能源板块的投资逻辑。投资者需评估数据中心选址和审批风险对AI产业链的长期影响。",
+      "title": "AI数据中心建设遭遇社区抵制，成本压力初现",
+      "summary": "AI数据中心建设引发的社区抵制正在加剧，可能推高算力成本，影响AI基础设施投资回报预期。随着AI热潮推动数据中心大规模扩张，当地社区对电力消耗、环境影响和土地使用的担忧日益增加。投资者应警惕：数据中心建设受阻可能导致算力供给紧张，推高GPU和电力成本，进而影响AI公司（如$NVDA 英伟达）和云服务商的盈利预期，需关注相关监管和社区关系风险。",
       "url": "https://www.theverge.com/column/963346/ai-data-centers-fight",
       "canonicalUrl": "https://www.theverge.com/column/963346/ai-data-centers-fight",
       "source": "The Verge",
       "sourceTier": "tier2",
       "isPrimarySource": false,
       "tags": [
+        "基础设施",
         "数据中心",
-        "算力",
-        "能源"
+        "监管风险"
       ],
-      "rank": 4,
+      "rank": 3,
       "eventId": "36d5f814be20fea408257130a4be70c709f5c8d1",
       "eventType": "capex",
       "entities": [],
@@ -178,33 +139,87 @@
       ],
       "relatedUrls": [],
       "primarySource": "The Verge",
-      "selectionReason": "AI数据中心遭遇社区抵制，将推高算力建设成本和周期，直接影响英伟达等硬件厂商的订单预期和能源板块投资逻辑。",
+      "selectionReason": "AI数据中心建设引发的社区抵制可能推高算力成本，影响AI基础设施投资回报预期。",
       "promptVersion": "",
       "modelUsed": "",
       "rawPayloadHash": "",
       "warnings": [],
-      "createdAt": "2026-07-12T23:45:51Z"
+      "regions": [],
+      "geopoliticsEventTypes": [],
+      "geopoliticsRuleScore": 0.0,
+      "createdAt": "2026-07-13T03:10:22Z"
     },
     {
-      "id": "e9ff85f0-8b64-5cbb-8d6e-ce64803625cf",
+      "id": "9d9d88d5-3629-52e3-9387-dfadf3c3fc51",
       "date": "2026-07-13",
-      "title": "迁移生产级AI智能体至GPT-5.6：速度提升2.2倍，成本降低27%",
-      "summary": "最新数据显示，将生产级AI智能体迁移至GPT-5.6后，推理速度提升2.2倍，成本降低27%。这一显著优化将加速企业AI应用落地，并可能改变模型选型格局。对投资者而言，这是重要的竞争信号，表明大语言模型在效率和成本上的突破正推动行业进入新阶段。",
-      "url": "https://ploy.ai/blog/migrating-a-production-ai-agent-to-gpt-5-6",
-      "canonicalUrl": "https://ploy.ai/blog/migrating-a-production-ai-agent-to-gpt-5-6",
+      "title": "中国半导体科学家王丹浩在美去世前经历了什么？",
+      "summary": "中国半导体科学家王丹浩在美接受执法部门问询后自杀，其骨灰已运回中国。这一事件凸显了中美科技人才流动受阻的风险，可能加剧半导体和AI领域的供应链脱钩。投资者需关注：中美科技人才交流受阻可能影响半导体和AI领域的创新速度，尤其是对依赖海外人才的美国科技公司（如$AMD 超威半导体、$NVDA 英伟达）构成人才短缺风险，同时加速中国本土半导体和AI人才的培养和回流，改变全球科技竞争格局。",
+      "url": "https://www.scmp.com/news/china/science/article/3360236/what-happened-chinese-semiconductor-scientist-wang-danhao-took-his-life-us?utm_source=rss_feed",
+      "canonicalUrl": "https://www.scmp.com/news/china/science/article/3360236/what-happened-chinese-semiconductor-scientist-wang-danhao-took-his-life-us",
+      "source": "SCMP China",
+      "sourceTier": "tier2",
+      "isPrimarySource": false,
+      "tags": [
+        "地缘政治",
+        "半导体",
+        "人才"
+      ],
+      "rank": 4,
+      "eventId": "5bc92a7401aec5c88964d19e51ae8aba718b137f",
+      "eventType": "funding",
+      "entities": [],
+      "tickers": [],
+      "sourceCredibilityScore": 3.0,
+      "marketImpactScore": 2.0,
+      "noveltyScore": 4.0,
+      "timelinessScore": 5.0,
+      "entityImportanceScore": 2.0,
+      "confidenceScore": 3.0,
+      "totalScore": 2.9,
+      "whyItMatters": "",
+      "investmentImplication": "",
+      "riskNote": "",
+      "originalTitle": "What happened before Chinese semiconductor scientist Wang Danhao took his life in the US?",
+      "published": "2026-07-11T14:00:07Z",
+      "mergedSources": [
+        "SCMP China"
+      ],
+      "relatedUrls": [],
+      "primarySource": "SCMP China",
+      "selectionReason": "中美科技人才流动受阻事件可能加剧半导体和AI领域的供应链脱钩风险，影响相关投资布局。",
+      "promptVersion": "",
+      "modelUsed": "",
+      "rawPayloadHash": "",
+      "warnings": [],
+      "regions": [
+        "china"
+      ],
+      "geopoliticsEventTypes": [
+        "supply_chain"
+      ],
+      "geopoliticsRuleScore": 3.0,
+      "createdAt": "2026-07-13T03:10:22Z"
+    },
+    {
+      "id": "d1ddfa40-4fc4-56e3-a6ba-9b85bb128de8",
+      "date": "2026-07-13",
+      "title": "Claude Code vs OpenCode：编码工具效率对比引发社区热议",
+      "summary": "社区对AI编码工具效率的对比讨论显示，Claude Code在读取提示前发送33k tokens，而OpenCode仅发送7k tokens，反映出开发者对模型成本与性能的高度敏感。这一差异可能影响AI编程工具的市场竞争格局。投资者需关注：AI编码工具的效率差异直接影响开发者的采用意愿和企业的成本控制，可能推动市场向更高效、更低成本的解决方案倾斜，对$MSFT 微软（GitHub Copilot）、$AMZN 亚马逊（CodeWhisperer）等公司的AI编程业务构成竞争压力。",
+      "url": "https://systima.ai/blog/claude-code-vs-opencode-token-overhead",
+      "canonicalUrl": "https://systima.ai/blog/claude-code-vs-opencode-token-overhead",
       "source": "Hacker News",
       "sourceTier": "tier3",
       "isPrimarySource": false,
       "tags": [
-        "GPT-5.6",
-        "模型优化",
-        "成本"
+        "AI编程",
+        "社区趋势",
+        "成本效率"
       ],
       "rank": 5,
-      "eventId": "fe9c99b53287fedf494aa8e4b46052affc04be9e",
+      "eventId": "bdb49a3fe447a0184498d13a21fecd9bee20f8a2",
       "eventType": "model_release",
       "entities": [
-        "OpenAI"
+        "Anthropic"
       ],
       "tickers": [],
       "sourceCredibilityScore": 2.0,
@@ -217,19 +232,277 @@
       "whyItMatters": "",
       "investmentImplication": "",
       "riskNote": "",
-      "originalTitle": "Migrating a production AI agent to GPT-5.6: 2.2x faster, 27% cheaper",
-      "published": "2026-07-12T17:13:07Z",
+      "originalTitle": "Claude Code sends 33k tokens before reading the prompt; OpenCode sends 7k",
+      "published": "2026-07-12T18:25:51Z",
       "mergedSources": [
         "Hacker News"
       ],
       "relatedUrls": [],
       "primarySource": "Hacker News",
-      "selectionReason": "GPT-5.6在成本和速度上的显著优化，将加速企业AI应用落地，并可能改变模型选型格局，是重要的竞争信号。",
+      "selectionReason": "社区对AI编码工具效率的对比讨论反映了开发者对模型成本与性能的敏感度，可能影响AI编程工具的市场竞争格局。",
       "promptVersion": "",
       "modelUsed": "",
       "rawPayloadHash": "",
       "warnings": [],
-      "createdAt": "2026-07-12T23:45:51Z"
+      "regions": [],
+      "geopoliticsEventTypes": [],
+      "geopoliticsRuleScore": 0.0,
+      "createdAt": "2026-07-13T03:10:22Z"
+    }
+  ],
+  "geopoliticsItems": [
+    {
+      "id": "a9a8c8c9-90b8-560e-a33a-50ae8f3467ff",
+      "date": "2026-07-13",
+      "title": "美伊互袭升级，伊朗称关闭霍尔木兹海峡",
+      "summary": "美国与伊朗持续交火，美军称打击伊朗境内140个目标，伊朗则向约旦及其他海湾国家发射火力回应。伊朗宣称关闭霍尔木兹海峡，直接影响全球约20%石油运输通道，能源供应与航运安全面临严重威胁，油价与通胀预期可能急剧上升。",
+      "url": "https://www.npr.org/2026/07/11/g-s1-133212/us-iran-vessel-attack-strait-hormuz-gulf",
+      "canonicalUrl": "https://www.npr.org/2026/07/11/g-s1-133212/us-iran-vessel-attack-strait-hormuz-gulf",
+      "source": "NPR World",
+      "sourceTier": "tier2",
+      "isPrimarySource": false,
+      "tags": [
+        "战争",
+        "能源"
+      ],
+      "rank": 1,
+      "eventId": "d9c6d6534e60ec72a297537b85b692bd000a8319",
+      "eventType": "unknown",
+      "entities": [],
+      "tickers": [],
+      "sourceCredibilityScore": 3.0,
+      "marketImpactScore": 2.0,
+      "noveltyScore": 4.0,
+      "timelinessScore": 5.0,
+      "entityImportanceScore": 2.0,
+      "confidenceScore": 3.0,
+      "totalScore": 2.9,
+      "whyItMatters": "",
+      "investmentImplication": "",
+      "riskNote": "",
+      "originalTitle": "U.S. launches fresh strikes on Iran as Tehran says it has closed Strait of Hormuz",
+      "published": "2026-07-12T01:32:36Z",
+      "mergedSources": [
+        "NPR World"
+      ],
+      "relatedUrls": [],
+      "primarySource": "NPR World",
+      "selectionReason": "美伊直接军事冲突并威胁霍尔木兹海峡通行，直接影响全球能源供应与安全秩序",
+      "promptVersion": "",
+      "modelUsed": "",
+      "rawPayloadHash": "",
+      "warnings": [],
+      "regions": [
+        "us",
+        "global"
+      ],
+      "geopoliticsEventTypes": [
+        "geopolitics",
+        "supply_chain"
+      ],
+      "geopoliticsRuleScore": 5.0,
+      "createdAt": "2026-07-13T03:10:22Z"
+    },
+    {
+      "id": "a6366b14-60ba-519a-aaa9-48a6fcb6c9f9",
+      "date": "2026-07-13",
+      "title": "中方就南海仲裁案十周年抨击美盟军事部署",
+      "summary": "中国外交部在南海仲裁案裁决十周年之际发表声明，指责美国及其盟友的“军事化与胁迫行为”是南海当前面临的首要威胁，重申中国“历史性权利”。中美在南海的对峙态势进一步升级，可能影响区域贸易航线安全及军事平衡。",
+      "url": "https://www.scmp.com/news/china/diplomacy/article/3360275/beijing-renews-attacks-landmark-south-china-sea-tribunal-rulings-10th-anniversary?utm_source=rss_feed",
+      "canonicalUrl": "https://www.scmp.com/news/china/diplomacy/article/3360275/beijing-renews-attacks-landmark-south-china-sea-tribunal-rulings-10th-anniversary",
+      "source": "SCMP China",
+      "sourceTier": "tier2",
+      "isPrimarySource": false,
+      "tags": [
+        "中美关系",
+        "军事"
+      ],
+      "rank": 2,
+      "eventId": "28a54a79ef8e9d44e21933e0342ee5dce7ef55b3",
+      "eventType": "unknown",
+      "entities": [],
+      "tickers": [],
+      "sourceCredibilityScore": 3.0,
+      "marketImpactScore": 2.0,
+      "noveltyScore": 4.0,
+      "timelinessScore": 5.0,
+      "entityImportanceScore": 2.0,
+      "confidenceScore": 3.0,
+      "totalScore": 2.9,
+      "whyItMatters": "",
+      "investmentImplication": "",
+      "riskNote": "",
+      "originalTitle": "Beijing hits out as US-led coalition marks 10th anniversary of South China Sea ruling",
+      "published": "2026-07-12T08:50:41Z",
+      "mergedSources": [
+        "SCMP China"
+      ],
+      "relatedUrls": [],
+      "primarySource": "SCMP China",
+      "selectionReason": "中国就南海仲裁案十周年强烈回应美盟军事部署，中美南海对峙升级",
+      "promptVersion": "",
+      "modelUsed": "",
+      "rawPayloadHash": "",
+      "warnings": [],
+      "regions": [
+        "china"
+      ],
+      "geopoliticsEventTypes": [
+        "geopolitics"
+      ],
+      "geopoliticsRuleScore": 4.0,
+      "createdAt": "2026-07-13T03:10:22Z"
+    },
+    {
+      "id": "ceae0bd2-9f43-537e-85da-91cc86204b41",
+      "date": "2026-07-13",
+      "title": "歼-16“野兽模式”挂载显示解放军远程打击能力增强",
+      "summary": "据《兵器科技》分析，解放军歼-16多用途战机罕见展示重装挂载配置，携带10枚远程导弹，表明中国空军已发展出更强的远程进攻战术能力。此举可能改变区域空中力量对比，增加周边国家防务压力及军备竞赛风险。",
+      "url": "https://www.scmp.com/news/china/military/article/3360170/what-does-chinas-j-16-fighter-jet-beast-mode-mean-pla-air-force-patrols?utm_source=rss_feed",
+      "canonicalUrl": "https://www.scmp.com/news/china/military/article/3360170/what-does-chinas-j-16-fighter-jet-beast-mode-mean-pla-air-force-patrols",
+      "source": "SCMP China",
+      "sourceTier": "tier2",
+      "isPrimarySource": false,
+      "tags": [
+        "军事",
+        "中国"
+      ],
+      "rank": 3,
+      "eventId": "a3d6c949f8440ec4ad01c6f2a66e8fcb4088c41d",
+      "eventType": "unknown",
+      "entities": [],
+      "tickers": [],
+      "sourceCredibilityScore": 3.0,
+      "marketImpactScore": 2.0,
+      "noveltyScore": 4.0,
+      "timelinessScore": 5.0,
+      "entityImportanceScore": 2.0,
+      "confidenceScore": 3.0,
+      "totalScore": 2.9,
+      "whyItMatters": "",
+      "investmentImplication": "",
+      "riskNote": "",
+      "originalTitle": "What does China’s J-16 fighter jet in ‘beast mode’ mean for PLA Air Force patrols?",
+      "published": "2026-07-12T14:00:07Z",
+      "mergedSources": [
+        "SCMP China"
+      ],
+      "relatedUrls": [],
+      "primarySource": "SCMP China",
+      "selectionReason": "中国歼-16战机重装挂载显示解放军远程进攻能力增强，影响区域军力平衡",
+      "promptVersion": "",
+      "modelUsed": "",
+      "rawPayloadHash": "",
+      "warnings": [],
+      "regions": [
+        "china"
+      ],
+      "geopoliticsEventTypes": [
+        "geopolitics"
+      ],
+      "geopoliticsRuleScore": 4.0,
+      "createdAt": "2026-07-13T03:10:22Z"
+    },
+    {
+      "id": "72e5f581-2e1f-5a44-9b03-e47c81bc4c69",
+      "date": "2026-07-13",
+      "title": "特朗普拒签住房法案抗议投票限制，政治僵局凸显",
+      "summary": "美国总统特朗普拒绝签署一项住房法案，该法案因国会未通过新的投票限制而自动成为法律。此举反映美国内政策博弈加剧，两党在投票权与住房议题上的分歧可能影响后续财政立法效率及市场政策预期。",
+      "url": "https://www.npr.org/2026/07/11/nx-s1-5888579/week-in-politics-trumps-housing-bill-protest-fails-trump-and-nato-maines-democrats",
+      "canonicalUrl": "https://www.npr.org/2026/07/11/nx-s1-5888579/week-in-politics-trumps-housing-bill-protest-fails-trump-and-nato-maines-democrats",
+      "source": "NPR Politics",
+      "sourceTier": "tier2",
+      "isPrimarySource": false,
+      "tags": [
+        "美国政治",
+        "政策"
+      ],
+      "rank": 4,
+      "eventId": "2e1bfceca7e27c9ce9643852eec10f3e6136e521",
+      "eventType": "unknown",
+      "entities": [],
+      "tickers": [],
+      "sourceCredibilityScore": 3.0,
+      "marketImpactScore": 2.0,
+      "noveltyScore": 4.0,
+      "timelinessScore": 5.0,
+      "entityImportanceScore": 2.0,
+      "confidenceScore": 3.0,
+      "totalScore": 2.9,
+      "whyItMatters": "",
+      "investmentImplication": "",
+      "riskNote": "",
+      "originalTitle": "Week in Politics: Trump's housing bill protest fails; Trump and NATO; Maine's Democrats",
+      "published": "2026-07-11T11:43:45Z",
+      "mergedSources": [
+        "NPR Politics"
+      ],
+      "relatedUrls": [],
+      "primarySource": "NPR Politics",
+      "selectionReason": "特朗普否决住房法案抗议投票限制，凸显美国内政策博弈与政治僵局",
+      "promptVersion": "",
+      "modelUsed": "",
+      "rawPayloadHash": "",
+      "warnings": [],
+      "regions": [
+        "us",
+        "global"
+      ],
+      "geopoliticsEventTypes": [
+        "policy"
+      ],
+      "geopoliticsRuleScore": 3.5,
+      "createdAt": "2026-07-13T03:10:22Z"
+    },
+    {
+      "id": "56a9a512-683b-5140-b65a-0176b106023c",
+      "date": "2026-07-13",
+      "title": "美国坚持霍尔木兹海峡开放，但美伊互袭持续",
+      "summary": "尽管伊朗军方宣称关闭霍尔木兹海峡并对美国盟友及基地发动大规模攻击，美国仍坚持海峡保持开放。美伊军事冲突持续，供应链中断风险高企，全球航运保险成本与能源价格波动性可能进一步上升。",
+      "url": "https://www.bbc.co.uk/news/articles/cj9gkpp0dkeo?at_medium=RSS&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cj9gkpp0dkeo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "sourceTier": "tier2",
+      "isPrimarySource": false,
+      "tags": [
+        "供应链",
+        "能源"
+      ],
+      "rank": 5,
+      "eventId": "f1a444987dbd63a85283ff33d2c03639ba242b0b",
+      "eventType": "unknown",
+      "entities": [],
+      "tickers": [],
+      "sourceCredibilityScore": 3.0,
+      "marketImpactScore": 2.0,
+      "noveltyScore": 4.0,
+      "timelinessScore": 5.0,
+      "entityImportanceScore": 2.0,
+      "confidenceScore": 3.0,
+      "totalScore": 2.9,
+      "whyItMatters": "",
+      "investmentImplication": "",
+      "riskNote": "",
+      "originalTitle": "US insists Strait of Hormuz is open as it exchanges strikes with Iran",
+      "published": "2026-07-12T22:17:40Z",
+      "mergedSources": [
+        "BBC World"
+      ],
+      "relatedUrls": [],
+      "primarySource": "BBC World",
+      "selectionReason": "美国坚持霍尔木兹海峡开放但美伊互袭持续，供应链中断风险高企",
+      "promptVersion": "",
+      "modelUsed": "",
+      "rawPayloadHash": "",
+      "warnings": [],
+      "regions": [
+        "global"
+      ],
+      "geopoliticsEventTypes": [
+        "supply_chain"
+      ],
+      "geopoliticsRuleScore": 2.0,
+      "createdAt": "2026-07-13T03:10:22Z"
     }
   ]
 }

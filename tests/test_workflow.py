@@ -1,6 +1,9 @@
 from pathlib import Path
 
 
+WORKFLOWS_DIR = Path(__file__).parents[1] / ".github" / "workflows"
+
+
 def test_daily_workflow_uses_external_scheduler_and_skips_duplicate_pushes():
     workflow = (
         Path(__file__).parents[1] / ".github" / "workflows" / "daily.yml"
@@ -57,3 +60,54 @@ def test_daily_workflow_stops_pages_but_keeps_data_commit_and_raw_contract():
     assert "contents: write" in workflow
     assert "git add data/ web/data.json" in workflow
     assert "git push" in workflow
+
+
+def test_ci_is_side_effect_free_and_runs_all_checks():
+    workflow = (WORKFLOWS_DIR / "ci.yml").read_text("utf-8")
+
+    assert "push:" in workflow
+    assert "pull_request:" in workflow
+    assert "contents: read" in workflow
+    assert "python-version: '3.12'" in workflow
+    assert "pip install -r requirements-dev.txt -c constraints.txt" in workflow
+    assert "python -m compileall -q src tests" in workflow
+    assert "python -m pytest -q" in workflow
+    assert "python -m ruff check src tests" in workflow
+    assert "python -m mypy src --ignore-missing-imports" in workflow
+    assert "secrets." not in workflow
+    assert "SERVERCHAN_SENDKEY" not in workflow
+    assert "LLM_API_KEY" not in workflow
+    assert "python src/main.py" not in workflow
+    assert "git push" not in workflow
+
+
+def test_daily_preflight_precedes_production_and_uses_full_run_condition():
+    workflow = (WORKFLOWS_DIR / "daily.yml").read_text("utf-8")
+    preflight_start = workflow.index("- name: Run production preflight tests")
+    production_start = workflow.index("- name: Run BigBeautyNews")
+    preflight_block = workflow[preflight_start:production_start]
+    production_block = workflow[production_start:workflow.index("- name: Run ServerChan smoke test")]
+    full_run_condition = (
+        "steps.push-check.outputs.should_run == 'true' &&\n"
+        "            !(github.event_name == 'workflow_dispatch' && inputs.push_test == 'true')"
+    )
+
+    assert preflight_start < production_start
+    assert full_run_condition in preflight_block
+    assert full_run_condition in production_block
+    assert "python -m pytest -q" in preflight_block
+
+
+def test_workflows_use_approved_action_versions_without_pages_actions():
+    workflows = "\n".join(
+        path.read_text("utf-8")
+        for path in (WORKFLOWS_DIR / "ci.yml", WORKFLOWS_DIR / "daily.yml")
+    )
+
+    assert workflows.count("actions/checkout@v7") == 2
+    assert workflows.count("actions/setup-python@v6") == 2
+    assert "actions/checkout@v4" not in workflows
+    assert "actions/setup-python@v5" not in workflows
+    assert "actions/configure-pages" not in workflows
+    assert "actions/upload-pages-artifact" not in workflows
+    assert "actions/deploy-pages" not in workflows

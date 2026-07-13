@@ -3,6 +3,111 @@ import json
 import main
 
 
+def test_fetch_source_pools_keeps_boards_and_source_errors_separate(monkeypatch):
+    ai_rss = [{"title": "AI RSS"}]
+    geopolitics_rss = [{"title": "Policy RSS"}]
+
+    def fetch_sources(sources):
+        if sources and sources[0]["name"] == "SCMP China":
+            return geopolitics_rss, ["policy feed warning"]
+        return ai_rss, []
+
+    monkeypatch.setattr(main, "fetch_all_sources", fetch_sources)
+    monkeypatch.setattr(main, "fetch_trending", lambda: [{"title": "GitHub"}])
+    monkeypatch.setattr(main, "fetch_hn_top_ai", lambda: [{"title": "HN"}])
+
+    ai_articles, geopolitics_articles, errors = main.fetch_source_pools()
+
+    assert {item["title"] for item in ai_articles} == {"AI RSS", "GitHub", "HN"}
+    assert geopolitics_articles == geopolitics_rss
+    assert errors == ["geopolitics: policy feed warning"]
+
+
+def test_prepare_candidate_pools_returns_deduped_and_classified_boards(monkeypatch):
+    ai_articles = [{"title": "AI", "board": "ai"}]
+    geopolitics_articles = [{"title": "Policy", "board": "geopolitics"}]
+    monkeypatch.setattr(main, "load_recent_archive_items", lambda *args, **kwargs: [])
+    monkeypatch.setattr(main, "exclude_historical_duplicates", lambda values, _: values)
+    monkeypatch.setattr(main, "dedup_candidates", lambda values: values)
+    monkeypatch.setattr(
+        main,
+        "filter_ai_related",
+        lambda values: [item for item in values if item["board"] == "ai"],
+    )
+    monkeypatch.setattr(
+        main,
+        "filter_geopolitics_related",
+        lambda values: [item for item in values if item["board"] == "geopolitics"],
+    )
+    monkeypatch.setattr(main, "classify_primary_board", lambda item: item["board"])
+    monkeypatch.setattr(main, "_select_ai_freshness_window", lambda values, **kwargs: values)
+    monkeypatch.setattr(
+        main,
+        "select_fresh_geopolitics_window",
+        lambda values, **kwargs: (values, 48),
+    )
+
+    deduped, ai_candidates, geopolitics_candidates = main.prepare_candidate_pools(
+        ai_articles,
+        geopolitics_articles,
+        today="2026-07-13",
+        now=main.datetime.now(main.timezone.utc),
+    )
+
+    assert deduped == ai_articles
+    assert ai_candidates == ai_articles
+    assert geopolitics_candidates == geopolitics_articles
+
+
+def test_rank_and_translate_stages_keep_four_llm_calls(monkeypatch):
+    ai_candidates = [
+        {"title": f"AI {index}", "url": f"https://ai/{index}"}
+        for index in range(5)
+    ]
+    geopolitics_candidates = [
+        {"title": f"Policy {index}", "url": f"https://policy/{index}"}
+        for index in range(5)
+    ]
+    calls = []
+    monkeypatch.setattr(
+        main,
+        "call_llm_ranking",
+        lambda *args, **kwargs: calls.append("ai-rank")
+        or {"daily_theme": "AI", "warnings": []},
+    )
+    monkeypatch.setattr(
+        main,
+        "call_geopolitics_ranking",
+        lambda *args, **kwargs: calls.append("geopolitics-rank")
+        or {"geopolitics_theme": "Policy", "warnings": []},
+    )
+    monkeypatch.setattr(main, "select_top5", lambda values, _: values)
+    monkeypatch.setattr(main, "select_geopolitics_top5", lambda values, _: values)
+    monkeypatch.setattr(
+        main,
+        "translate_top5",
+        lambda values, *args: calls.append("ai-translate") or values,
+    )
+    monkeypatch.setattr(
+        main,
+        "translate_geopolitics_top5",
+        lambda values, *args: calls.append("geopolitics-translate") or values,
+    )
+
+    ai_items, geopolitics_items, *_ = main.rank_candidate_pools(
+        ai_candidates,
+        geopolitics_candidates,
+    )
+    main.translate_selected_items(ai_items, geopolitics_items)
+
+    assert calls == [
+        "ai-rank",
+        "geopolitics-rank",
+        "ai-translate",
+        "geopolitics-translate",
+    ]
+
+
 def test_pipeline_retries_failed_push_then_skips_duplicate_success(
     monkeypatch, tmp_path
 ):

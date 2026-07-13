@@ -44,9 +44,10 @@ BigBeautyNews/
 │       └── web_builder.py       # 网页数据
 ├── data/                        # 产出数据（Git 追踪）
 ├── web/                         # 静态网页
-├── PRD.md                       # 产品需求文档
-├── IMPLEMENTATION_PLAN.md       # 实施计划
-└── TRACEABILITY.md              # 需求追踪与验收
+├── docs/archive/                # 历史 PRD、实施计划与验收记录
+├── PRD.md                       # 当前 v1.8 产品需求文档
+├── IMPLEMENTATION_PLAN-v1.8.md  # 当前实施计划
+└── TRACEABILITY-v1.8.md         # 当前需求追踪与验收
 ```
 
 ## 快速开始
@@ -54,7 +55,10 @@ BigBeautyNews/
 ### 1. 安装依赖
 
 ```bash
-pip install -r requirements.txt
+pip install -r requirements.txt -c constraints.txt
+
+# 开发与验证
+pip install -r requirements-dev.txt -c constraints.txt
 ```
 
 ### 2. 配置密钥
@@ -99,13 +103,13 @@ python scripts/configure_external_scheduler.py --smoke
 
 配置器会安全提示输入一个仅限本仓库、只有 Actions 写权限的 GitHub 细粒度令牌，以及一个 cron-job.org API Key。两项凭证仅在当前进程内使用，不写入仓库或 `.env`。第一条命令创建并回读两条 `Asia/Shanghai` 定时任务：7:45 主触发、8:15 幂等兜底；第二条命令通过一次自动删除的临时任务验证完整触发链路。
 
-BigBeautyNews 不再部署 GitHub Pages。仓库必须保持 Public，因为投研日历页面会匿名读取：
+日报 workflow 不包含 GitHub Pages 部署步骤，但仓库的 Pages 设置当前仍为公开 built 状态；这是项目所有者在 v1.8 明确接受且暂不处理的例外。仓库必须保持 Public，因为投研日历页面会匿名读取：
 
 ```text
 https://raw.githubusercontent.com/dklkaili666-crypto/BigBeautyNews/master/data/daily-5-things.json
 ```
 
-停止 Pages 只减少公开网页入口；仓库和 raw JSON 仍然公开。网页功能保留为本地使用。
+仓库、raw JSON 与现有 Pages 入口均可能公开访问。本地网页功能和仓库内历史数据继续保留；v1.8 不修改 Pages 设置。
 
 ### 手机手动推送
 

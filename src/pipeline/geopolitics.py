@@ -20,7 +20,7 @@ REGION_TERMS = {
         "federal reserve", "the fed", "fed", "congress", "senate", "trump",
     ),
     "global": (
-        "european union", "eu", "russia", "russian", "ukraine", "israel",
+        "europe", "european", "european union", "eu", "russia", "russian", "ukraine", "israel",
         "iran", "middle east", "nato", "japan", "india", "south korea",
         "united kingdom", "britain", "france", "germany", "imf",
         "world bank", "opec", "united nations", "european central bank",
@@ -30,13 +30,13 @@ REGION_TERMS = {
 
 EVENT_TERMS = {
     "geopolitics": (
-        "sanction", "tariff", "export control", "export controls", "trade war", "diplomacy",
+        "sanction", "sanctions", "tariff", "tariffs", "export control", "export controls", "trade war", "diplomacy",
         "diplomatic", "summit", "treaty", "ceasefire", "war", "military",
-        "missile", "invasion", "conflict", "security alliance",
+        "missile", "missiles", "invasion", "conflict", "security alliance",
     ),
     "policy": (
         "central bank", "interest rate", "rate cut", "rate hike", "monetary policy",
-        "fiscal policy", "budget", "tax", "regulation", "regulator", "legislation",
+        "fiscal policy", "budget", "tax", "regulation", "regulations", "regulator", "legislation",
         "bill", "executive order", "industrial policy", "stimulus",
     ),
     "macro": (
@@ -50,7 +50,7 @@ EVENT_TERMS = {
         "food security", "grain",
     ),
     "election": (
-        "election", "vote", "ballot", "presidential race", "prime minister",
+        "election", "elections", "vote", "ballot", "presidential race", "prime minister",
         "coalition government",
     ),
 }
@@ -60,8 +60,8 @@ OPINION_MARKERS = (
 )
 
 STRONG_GEOPOLITICS_TERMS = (
-    "sanction", "tariff", "export control", "export controls", "trade war", "war", "military",
-    "ceasefire", "central bank", "interest rate", "election", "executive order",
+    "sanction", "sanctions", "tariff", "tariffs", "export control", "export controls", "trade war", "war", "military",
+    "ceasefire", "central bank", "interest rate", "election", "elections", "executive order",
 )
 
 
@@ -79,11 +79,18 @@ def _contains(text: str, term: str) -> bool:
 def classify_regions(article: dict[str, Any]) -> list[str]:
     """按事件主体标注中国、美国和其他全球地区。"""
     text = _text(article)
-    return [
+    regions = [
         region
         for region, terms in REGION_TERMS.items()
         if any(_contains(text, term) for term in terms)
     ]
+    raw_text = " ".join(
+        str(article.get(field) or "")
+        for field in ("title", "summary", "description")
+    )
+    if "us" not in regions and re.search(r"(?<!\w)US(?!\w)", raw_text):
+        regions.append("us")
+    return regions
 
 
 def matched_event_types(article: dict[str, Any]) -> list[str]:

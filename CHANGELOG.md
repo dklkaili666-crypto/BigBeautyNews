@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+### v1.8 可靠性与可维护性
+- 补齐常见政经复数词形及区分大小写的 `US` 识别，避免把英文代词 `us` 当作美国
+- 新增无生产副作用的 push/PR CI，并在正式日报前运行快速测试门槛
+- 两个 workflow 统一升级到 `actions/checkout@v7`、`actions/setup-python@v6`
+- 新增生产/开发统一的精确依赖约束和显式开发工具依赖
+- 按抓取、候选准备、排序、翻译、持久化、推送小步拆分主流程，行为与调用次数不变
+- 根 PRD 改为当前态文档，完整历史移入 `docs/archive/`
+- 明确现有 GitHub Pages 仍为公开 built 状态，按用户决定暂不修改
+
 ### v0.7 AI + 全球地缘政经双榜单
 - 保留 AI Top 5，新增中国和美国优先的全球地缘政经 Top 5；两个榜单独立抓取、过滤、排序和翻译
 - 新增 8 个免费公开 RSS：SCMP China / Global Economy、NPR Politics / Business / World、BBC World / Business、The Guardian World
@@ -9,7 +18,7 @@
 - Server酱保持每日一次 HTTP POST，正文按 AI 在上、政经在下展示共 10 条
 - 内部归档和本地网页新增 `geopoliticsItems` / `geopoliticsTheme`，旧归档继续显示 AI 数据
 - 投研日历 `data/daily-5-things.json` 继续只输出 AI 5 条五字段，固定 raw URL 不变
-- 停止 BigBeautyNews GitHub Pages 部署，保留 Public 仓库、数据提交和本地网页
+- 从日报 workflow 移除 Pages 部署步骤；Pages 仓库设置仍为公开 built 状态，作为已接受例外保留
 - 运行状态新增 AI/政经各自候选与入选数量，失败信息标注对应板块
 
 ### v0.6.6 外部准时调度

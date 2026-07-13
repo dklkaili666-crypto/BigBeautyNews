@@ -34,6 +34,40 @@ def test_filter_keeps_china_us_and_global_policy_events():
     assert all(item["geopoliticsRuleScore"] > 1 for item in result)
 
 
+def test_filter_keeps_plural_event_terms_and_us_abbreviations():
+    articles = [
+        {"title": "U.S. imposes new sanctions on China", "summary": ""},
+        {"title": "US raises tariffs on Chinese imports", "summary": ""},
+        {
+            "title": "European elections reshape economic policy",
+            "summary": "New regulations feature in the campaign.",
+        },
+        {"title": "Iran tests missiles", "summary": "Regional security tensions rise."},
+    ]
+
+    result = filter_geopolitics_related(articles)
+
+    assert [item["title"] for item in result] == [
+        "U.S. imposes new sanctions on China",
+        "US raises tariffs on Chinese imports",
+        "European elections reshape economic policy",
+        "Iran tests missiles",
+    ]
+    assert result[0]["regions"] == ["china", "us"]
+    assert result[1]["regions"] == ["china", "us"]
+    assert result[2]["regions"] == ["global"]
+
+
+def test_lowercase_us_pronoun_is_not_classified_as_united_states():
+    article = {
+        "title": "The policy tells us how families save",
+        "summary": "A household budget guide.",
+    }
+
+    assert classify_regions(article) == []
+    assert filter_geopolitics_related([article]) == []
+
+
 def test_filter_rejects_noise_and_incidental_policy_words():
     articles = [
         {"title": "Hollywood awards draw record audience", "summary": "Entertainment news."},

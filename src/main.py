@@ -212,6 +212,307 @@ def resolve_cross_board_duplicates(
     return ai_result, geopolitics_result
 
 
+def fetch_source_pools() -> tuple[
+    list[dict[str, Any]],
+    list[dict[str, Any]],
+    list[str],
+]:
+    """并行抓取 AI 与政经来源，返回两个原始候选池和来源错误。"""
+    ai_articles: list[dict[str, Any]] = []
+    geopolitics_articles: list[dict[str, Any]] = []
+    errors: list[str] = []
+    rss_sources = [source for source in RSS_SOURCES if source.get("type") == "rss"]
+    geopolitics_rss_sources = [
+        source for source in GEOPOLITICS_RSS_SOURCES
+        if source.get("type") == "rss"
+    ]
+
+    def fetch_community(
+        fetcher: Callable[[], list[dict[str, Any]]],
+    ) -> tuple[list[dict[str, Any]], list[str]]:
+        return fetcher(), []
+
+    fetch_jobs: dict[
+        str,
+        tuple[str, Callable[[], tuple[list[dict[str, Any]], list[str]]]],
+    ] = {
+        "AI RSS": ("ai", lambda: fetch_all_sources(rss_sources)),
+        "政经 RSS": (
+            "geopolitics",
+            lambda: fetch_all_sources(geopolitics_rss_sources),
+        ),
+        "GitHub Trending": ("ai", lambda: fetch_community(fetch_trending)),
+        "Hacker News": ("ai", lambda: fetch_community(fetch_hn_top_ai)),
+    }
+    with ThreadPoolExecutor(max_workers=len(fetch_jobs)) as executor:
+        futures = {
+            executor.submit(job): (name, board)
+            for name, (board, job) in fetch_jobs.items()
+        }
+        for future in as_completed(futures):
+            name, board = futures[future]
+            try:
+                articles, source_errors = future.result()
+                errors.extend(f"{board}: {error}" for error in source_errors)
+                if board == "geopolitics":
+                    geopolitics_articles.extend(articles)
+                else:
+                    ai_articles.extend(articles)
+                logger.info("  %s: %s 篇", name, len(articles))
+            except Exception as exc:
+                suffix = "（非致命）" if name == "Hacker News" else ""
+                logger.warning("  %s 抓取失败%s: %s", name, suffix, exc)
+                if name != "Hacker News":
+                    errors.append(f"{board}: {name}")
+    return ai_articles, geopolitics_articles, errors
+
+
+def prepare_candidate_pools(
+    ai_articles: list[dict[str, Any]],
+    geopolitics_articles: list[dict[str, Any]],
+    *,
+    today: str,
+    now: datetime,
+) -> tuple[
+    list[dict[str, Any]],
+    list[dict[str, Any]],
+    list[dict[str, Any]],
+]:
+    """完成去重、历史排除、过滤、时效窗口和主板块归类。"""
+    logger.info("[2/6] 去重 & 合并同事件...")
+    deduped = dedup_candidates(ai_articles)
+    geopolitics_deduped = dedup_candidates(geopolitics_articles)
+    logger.info(
+        "  去重后: %s 篇 (减少 %s)",
+        len(deduped),
+        len(ai_articles) - len(deduped),
+    )
+    logger.info(
+        "  政经去重后: %s 篇 (减少 %s)",
+        len(geopolitics_deduped),
+        len(geopolitics_articles) - len(geopolitics_deduped),
+    )
+
+    logger.info("[3/6] AI 关键词预过滤...")
+    historical_items = load_recent_archive_items(
+        ARCHIVE_DIR,
+        before_date=today,
+        days=7,
+    )
+    historical_geopolitics_items = load_recent_archive_items(
+        ARCHIVE_DIR,
+        before_date=today,
+        days=7,
+        item_field="geopoliticsItems",
+    )
+    unseen = exclude_historical_duplicates(deduped, historical_items)
+    geopolitics_unseen = exclude_historical_duplicates(
+        geopolitics_deduped,
+        historical_geopolitics_items,
+    )
+    logger.info(
+        "  跨日去重后: %s 篇 (排除 %s 篇)",
+        len(unseen),
+        len(deduped) - len(unseen),
+    )
+    filtered = filter_ai_related(unseen)
+    geopolitics_filtered = filter_geopolitics_related(geopolitics_unseen)
+    logger.info("  AI 过滤后: %s 篇 (减少 %s)", len(filtered), len(unseen) - len(filtered))
+    if len(filtered) < TOP_K:
+        logger.warning("AI 过滤后不足 %s 篇，使用跨日去重后全量", TOP_K)
+        filtered = unseen
+
+    filtered = _select_ai_freshness_window(filtered, now=now)
+    geopolitics_filtered, geopolitics_window = select_fresh_geopolitics_window(
+        geopolitics_filtered,
+        now=now,
+        top_k=TOP_K,
+    )
+    if geopolitics_window:
+        logger.info(
+            "  政经使用 %s 小时时效窗口: %s 篇",
+            geopolitics_window,
+            len(geopolitics_filtered),
+        )
+    else:
+        logger.warning("  政经 72 小时候选不足，保留全部未推送候选")
+
+    ai_primary = [
+        article for article in filtered
+        if classify_primary_board(article) == "ai"
+    ]
+    geopolitics_from_ai = filter_geopolitics_related([
+        article for article in filtered
+        if classify_primary_board(article) == "geopolitics"
+    ])
+    ai_from_geopolitics = filter_ai_related([
+        article for article in geopolitics_filtered
+        if classify_primary_board(article) == "ai"
+    ])
+    geopolitics_primary = [
+        article for article in geopolitics_filtered
+        if classify_primary_board(article) == "geopolitics"
+    ]
+    filtered = dedup_candidates([*ai_primary, *ai_from_geopolitics])
+    geopolitics_filtered = dedup_candidates([
+        *geopolitics_primary,
+        *geopolitics_from_ai,
+    ])
+    filtered = exclude_historical_duplicates(filtered, historical_items)
+    geopolitics_filtered = exclude_historical_duplicates(
+        geopolitics_filtered,
+        historical_geopolitics_items,
+    )
+    logger.info(
+        "  主板块分类后: AI %s 篇，政经 %s 篇",
+        len(filtered),
+        len(geopolitics_filtered),
+    )
+    return deduped, filtered, geopolitics_filtered
+
+
+def rank_candidate_pools(
+    ai_candidates: list[dict[str, Any]],
+    geopolitics_candidates: list[dict[str, Any]],
+) -> tuple[
+    list[dict[str, Any]],
+    list[dict[str, Any]],
+    str,
+    str,
+    list[str],
+]:
+    """分别排序两个候选池并完成跨榜单补位。"""
+    ranking_stage = "AI"
+    try:
+        ranking_result = call_llm_ranking(
+            ai_candidates,
+            api_key=LLM_API_KEY,
+            api_base=LLM_API_BASE,
+            model=LLM_MODEL,
+        )
+        top5 = select_top5(ai_candidates, ranking_result)
+        ranking_stage = "政经"
+        geopolitics_ranking_result = call_geopolitics_ranking(
+            geopolitics_candidates,
+            api_key=LLM_API_KEY,
+            api_base=LLM_API_BASE,
+            model=LLM_MODEL,
+        )
+        geopolitics_top5 = select_geopolitics_top5(
+            geopolitics_candidates,
+            geopolitics_ranking_result,
+        )
+        ranking_stage = "跨榜单去重补位"
+        top5, geopolitics_top5 = resolve_cross_board_duplicates(
+            top5,
+            geopolitics_top5,
+            ai_candidates,
+            geopolitics_candidates,
+        )
+    except Exception as exc:
+        raise RuntimeError(f"{ranking_stage}排序失败: {exc}") from exc
+
+    stage_warnings = [
+        str(value) for value in ranking_result.get("warnings", [])
+    ]
+    stage_warnings.extend(
+        f"政经: {value}"
+        for value in geopolitics_ranking_result.get("warnings", [])
+    )
+    return (
+        top5,
+        geopolitics_top5,
+        str(ranking_result.get("daily_theme", "")),
+        str(geopolitics_ranking_result.get("geopolitics_theme", "")),
+        stage_warnings,
+    )
+
+
+def translate_selected_items(
+    ai_items: list[dict[str, Any]],
+    geopolitics_items: list[dict[str, Any]],
+) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    """分别翻译两个榜单，保持每个榜单一次 LLM 调用。"""
+    translation_stage = "AI"
+    try:
+        translated = translate_top5(
+            ai_items,
+            LLM_API_KEY,
+            LLM_API_BASE,
+            LLM_MODEL,
+        )
+        translation_stage = "政经"
+        geopolitics_translated = translate_geopolitics_top5(
+            geopolitics_items,
+            LLM_API_KEY,
+            LLM_API_BASE,
+            LLM_MODEL,
+        )
+    except Exception as exc:
+        raise RuntimeError(f"{translation_stage}翻译失败: {exc}") from exc
+    return translated, geopolitics_translated
+
+
+def persist_digest_outputs(
+    ai_items: list[dict[str, Any]],
+    geopolitics_items: list[dict[str, Any]],
+    *,
+    daily_theme: str,
+    geopolitics_theme: str,
+    today: str,
+    dry_run: bool,
+) -> str:
+    """校验并写出投研日历 JSON、归档和本地网页数据。"""
+    internal_digest = build_internal_digest(
+        ai_items,
+        daily_theme,
+        geopolitics_items=geopolitics_items,
+        geopolitics_theme=geopolitics_theme,
+        date_str=today,
+    )
+    external_digest = build_external_digest(internal_digest)
+    digest_hash = sha1(
+        json.dumps(external_digest, ensure_ascii=False, sort_keys=True).encode("utf-8")
+    ).hexdigest()
+    validate_internal_digest(internal_digest)
+    validate_external_digest(external_digest)
+    if dry_run:
+        logger.info("  [DRY-RUN] 跳过 JSON 写出")
+        logger.info("  [DRY-RUN] 跳过网页数据更新")
+    else:
+        write_daily_json(external_digest, DAILY_JSON_PATH)
+        archive_daily_json(internal_digest, ARCHIVE_DIR)
+        update_history_index(HISTORY_JSON_PATH, today)
+        write_web_data(internal_digest, WEB_DIR)
+    return digest_hash
+
+
+def deliver_wechat_push(
+    ai_items: list[dict[str, Any]],
+    geopolitics_items: list[dict[str, Any]],
+    *,
+    daily_theme: str,
+    geopolitics_theme: str,
+    today: str,
+    force_push: bool,
+) -> dict[str, Any]:
+    """执行幂等的单次双榜单 Server酱推送。"""
+    if was_pushed(PUSH_HISTORY_PATH, today) and not force_push:
+        logger.info("  微信推送: 今日已成功发送，跳过重复推送")
+        return {"ok": True, "pushSkippedReason": "already_pushed"}
+    result = push_to_wechat_with_result(
+        SERVERCHAN_SENDKEY,
+        ai_items,
+        today,
+        daily_theme,
+        geopolitics_items=geopolitics_items,
+        geopolitics_theme=geopolitics_theme,
+    )
+    if result.get("ok"):
+        mark_pushed(PUSH_HISTORY_PATH, today)
+    return result
+
+
 def run_pipeline(dry_run: bool = False, force_push: bool = False) -> dict:
     """
     执行完整的数据处理流水线。
@@ -295,49 +596,7 @@ def run_pipeline(dry_run: bool = False, force_push: bool = False) -> dict:
     # 第 1 步：并行抓取所有数据源
     # ============================================================
     logger.info("[1/6] 并行抓取数据源...")
-    all_articles: list[dict] = []
-    geopolitics_articles: list[dict] = []
-    errors: list[str] = []
-
-    rss_sources = [s for s in RSS_SOURCES if s.get("type") == "rss"]
-    geopolitics_rss_sources = [
-        source for source in GEOPOLITICS_RSS_SOURCES
-        if source.get("type") == "rss"
-    ]
-    def fetch_community(fetcher: Callable[[], list[dict[str, Any]]]) -> tuple[list[dict[str, Any]], list[str]]:
-        return fetcher(), []
-
-    fetch_jobs: dict[
-        str,
-        tuple[str, Callable[[], tuple[list[dict[str, Any]], list[str]]]],
-    ] = {
-        "AI RSS": ("ai", lambda: fetch_all_sources(rss_sources)),
-        "政经 RSS": (
-            "geopolitics",
-            lambda: fetch_all_sources(geopolitics_rss_sources),
-        ),
-        "GitHub Trending": ("ai", lambda: fetch_community(fetch_trending)),
-        "Hacker News": ("ai", lambda: fetch_community(fetch_hn_top_ai)),
-    }
-    with ThreadPoolExecutor(max_workers=len(fetch_jobs)) as executor:
-        futures = {
-            executor.submit(job): (name, board)
-            for name, (board, job) in fetch_jobs.items()
-        }
-        for future in as_completed(futures):
-            name, board = futures[future]
-            try:
-                articles, source_errors = future.result()
-                errors.extend(f"{board}: {error}" for error in source_errors)
-                if board == "geopolitics":
-                    geopolitics_articles.extend(articles)
-                else:
-                    all_articles.extend(articles)
-                logger.info("  %s: %s 篇", name, len(articles))
-            except Exception as exc:
-                logger.warning("  %s 抓取失败%s: %s", name, "（非致命）" if name == "Hacker News" else "", exc)
-                if name != "Hacker News":
-                    errors.append(f"{board}: {name}")
+    all_articles, geopolitics_articles, errors = fetch_source_pools()
 
     logger.info(
         "  候选池总计: AI %s 篇，政经 %s 篇",
@@ -370,89 +629,11 @@ def run_pipeline(dry_run: bool = False, force_push: bool = False) -> dict:
         )
         return {"status": "error", "reason": reason}
 
-    # ============================================================
-    # 第 2 步：去重 + 合并同事件
-    # ============================================================
-    logger.info("[2/6] 去重 & 合并同事件...")
-    deduped = dedup_candidates(all_articles)
-    geopolitics_deduped = dedup_candidates(geopolitics_articles)
-    logger.info(f"  去重后: {len(deduped)} 篇 (减少 {len(all_articles) - len(deduped)})")
-    logger.info(
-        "  政经去重后: %s 篇 (减少 %s)",
-        len(geopolitics_deduped),
-        len(geopolitics_articles) - len(geopolitics_deduped),
-    )
-
-    # ============================================================
-    # 第 3 步：AI 关键词预过滤
-    # ============================================================
-    logger.info("[3/6] AI 关键词预过滤...")
-    historical_items = load_recent_archive_items(
-        ARCHIVE_DIR,
-        before_date=today,
-        days=7,
-    )
-    unseen = exclude_historical_duplicates(deduped, historical_items)
-    historical_geopolitics_items = load_recent_archive_items(
-        ARCHIVE_DIR,
-        before_date=today,
-        days=7,
-        item_field="geopoliticsItems",
-    )
-    geopolitics_unseen = exclude_historical_duplicates(
-        geopolitics_deduped,
-        historical_geopolitics_items,
-    )
-    logger.info(
-        "  跨日去重后: %s 篇 (排除 %s 篇)",
-        len(unseen),
-        len(deduped) - len(unseen),
-    )
-    filtered = filter_ai_related(unseen)
-    geopolitics_filtered = filter_geopolitics_related(geopolitics_unseen)
-    logger.info(f"  AI 过滤后: {len(filtered)} 篇 (减少 {len(unseen) - len(filtered)})")
-
-    if len(filtered) < TOP_K:
-        logger.warning(f"AI 过滤后不足 {TOP_K} 篇，使用跨日去重后全量")
-        filtered = unseen
-
-    now_utc = datetime.now(timezone.utc)
-    filtered = _select_ai_freshness_window(filtered, now=now_utc)
-    geopolitics_filtered, geopolitics_window = select_fresh_geopolitics_window(
-        geopolitics_filtered,
-        now=now_utc,
-        top_k=TOP_K,
-    )
-    if geopolitics_window:
-        logger.info("  政经使用 %s 小时时效窗口: %s 篇", geopolitics_window, len(geopolitics_filtered))
-    else:
-        logger.warning("  政经 72 小时候选不足，保留全部未推送候选")
-
-    ai_primary = [
-        article for article in filtered
-        if classify_primary_board(article) == "ai"
-    ]
-    geopolitics_from_ai = filter_geopolitics_related([
-        article for article in filtered
-        if classify_primary_board(article) == "geopolitics"
-    ])
-    ai_from_geopolitics = filter_ai_related([
-        article for article in geopolitics_filtered
-        if classify_primary_board(article) == "ai"
-    ])
-    geopolitics_primary = [
-        article for article in geopolitics_filtered
-        if classify_primary_board(article) == "geopolitics"
-    ]
-    filtered = dedup_candidates([*ai_primary, *ai_from_geopolitics])
-    geopolitics_filtered = dedup_candidates([
-        *geopolitics_primary,
-        *geopolitics_from_ai,
-    ])
-    filtered = exclude_historical_duplicates(filtered, historical_items)
-    geopolitics_filtered = exclude_historical_duplicates(
-        geopolitics_filtered,
-        historical_geopolitics_items,
+    deduped, filtered, geopolitics_filtered = prepare_candidate_pools(
+        all_articles,
+        geopolitics_articles,
+        today=today,
+        now=datetime.now(timezone.utc),
     )
     candidate_count = len(filtered)
     geopolitics_candidate_count = len(geopolitics_filtered)
@@ -494,49 +675,27 @@ def run_pipeline(dry_run: bool = False, force_push: bool = False) -> dict:
         )
         return {"status": "error", "reason": "LLM_API_KEY 未配置"}
 
-    ranking_stage = "AI"
     try:
-        ranking_result = call_llm_ranking(
-            filtered,
-            api_key=LLM_API_KEY,
-            api_base=LLM_API_BASE,
-            model=LLM_MODEL,
-        )
-        top5 = select_top5(filtered, ranking_result)
-        ranking_stage = "政经"
-        geopolitics_ranking_result = call_geopolitics_ranking(
-            geopolitics_filtered,
-            api_key=LLM_API_KEY,
-            api_base=LLM_API_BASE,
-            model=LLM_MODEL,
-        )
-        geopolitics_top5 = select_geopolitics_top5(
-            geopolitics_filtered,
-            geopolitics_ranking_result,
-        )
-        ranking_stage = "跨榜单去重补位"
-        top5, geopolitics_top5 = resolve_cross_board_duplicates(
+        (
             top5,
             geopolitics_top5,
+            daily_theme,
+            geopolitics_theme,
+            ranking_warnings,
+        ) = rank_candidate_pools(
             filtered,
             geopolitics_filtered,
         )
-    except Exception as exc:
+    except RuntimeError as exc:
         finish_status(
             status="failed",
             generated=False,
             pushed=False,
             schema_valid=False,
-            errors_for_status=[f"{ranking_stage}排序失败: {exc}"],
+            errors_for_status=[str(exc)],
         )
-        return {"status": "error", "reason": f"{ranking_stage}排序失败: {exc}"}
-    warnings.extend(str(value) for value in ranking_result.get("warnings", []))
-    warnings.extend(
-        f"政经: {value}"
-        for value in geopolitics_ranking_result.get("warnings", [])
-    )
-    daily_theme = ranking_result.get("daily_theme", "")
-    geopolitics_theme = geopolitics_ranking_result.get("geopolitics_theme", "")
+        return {"status": "error", "reason": str(exc)}
+    warnings.extend(ranking_warnings)
     selected_count = len(top5)
     geopolitics_selected_count = len(geopolitics_top5)
     logger.info("  AI Top 5 已选出, 主题: %s", daily_theme)
@@ -546,25 +705,20 @@ def run_pipeline(dry_run: bool = False, force_push: bool = False) -> dict:
     # 第 5 步：LLM 翻译为简体中文
     # ============================================================
     logger.info("[5/6] LLM 翻译为简体中文...")
-    translation_stage = "AI"
     try:
-        translated = translate_top5(top5, LLM_API_KEY, LLM_API_BASE, LLM_MODEL)
-        translation_stage = "政经"
-        geopolitics_translated = translate_geopolitics_top5(
+        translated, geopolitics_translated = translate_selected_items(
+            top5,
             geopolitics_top5,
-            LLM_API_KEY,
-            LLM_API_BASE,
-            LLM_MODEL,
         )
-    except Exception as exc:
+    except RuntimeError as exc:
         finish_status(
             status="failed",
             generated=False,
             pushed=False,
             schema_valid=False,
-            errors_for_status=[f"{translation_stage}翻译失败: {exc}"],
+            errors_for_status=[str(exc)],
         )
-        return {"status": "error", "reason": f"{translation_stage}翻译失败: {exc}"}
+        return {"status": "error", "reason": str(exc)}
     logger.info(
         "  翻译完成: AI %s 条，政经 %s 条",
         len(translated),
@@ -580,21 +734,15 @@ def run_pipeline(dry_run: bool = False, force_push: bool = False) -> dict:
     if dry_run:
         logger.info("  [DRY-RUN] 跳过微信推送")
 
-    # 6b. JSON → 投研日历
-    internal_digest = build_internal_digest(
-        translated,
-        daily_theme,
-        geopolitics_items=geopolitics_translated,
-        geopolitics_theme=geopolitics_theme,
-        date_str=today,
-    )
-    external_digest = build_external_digest(internal_digest)
-    status_extra["digestHash"] = sha1(
-        json.dumps(external_digest, ensure_ascii=False, sort_keys=True).encode("utf-8")
-    ).hexdigest()
     try:
-        validate_internal_digest(internal_digest)
-        validate_external_digest(external_digest)
+        status_extra["digestHash"] = persist_digest_outputs(
+            translated,
+            geopolitics_translated,
+            daily_theme=daily_theme,
+            geopolitics_theme=geopolitics_theme,
+            today=today,
+            dry_run=dry_run,
+        )
     except ValueError as exc:
         finish_status(
             status="failed",
@@ -604,54 +752,34 @@ def run_pipeline(dry_run: bool = False, force_push: bool = False) -> dict:
             errors_for_status=[str(exc)],
         )
         return {"status": "error", "reason": str(exc)}
-    if dry_run:
-        logger.info("  [DRY-RUN] 跳过 JSON 写出")
-    else:
-        write_daily_json(external_digest, DAILY_JSON_PATH)
-        archive_daily_json(internal_digest, ARCHIVE_DIR)
-        update_history_index(HISTORY_JSON_PATH, today)
-
-    # 6c. 网页数据
-    if dry_run:
-        logger.info("  [DRY-RUN] 跳过网页数据更新")
-    else:
-        write_web_data(internal_digest, WEB_DIR)
-
-    # 6d. Server酱推送是非阻断输出，放在持久化之后避免写盘失败时误推送
+    # 6b. Server酱推送是非阻断输出，放在持久化之后避免写盘失败时误推送
     if not dry_run:
-        push_ok = False
-        if was_pushed(PUSH_HISTORY_PATH, today) and not force_push:
-            logger.info("  微信推送: 今日已成功发送，跳过重复推送")
-            status_extra["pushSkippedReason"] = "already_pushed"
-            push_ok = True
-        else:
-            push_result = push_to_wechat_with_result(
-                SERVERCHAN_SENDKEY,
+        push_result = deliver_wechat_push(
                 translated,
-                today,
-                daily_theme,
-                geopolitics_items=geopolitics_translated,
+                geopolitics_translated,
+                daily_theme=daily_theme,
                 geopolitics_theme=geopolitics_theme,
+                today=today,
+                force_push=force_push,
+        )
+        status_extra.update({
+            key: value
+            for key, value in push_result.items()
+            if key != "ok"
+        })
+        push_ok = bool(push_result.get("ok"))
+        if not push_ok:
+            warnings.append("Server酱推送失败")
+            finish_status(
+                status="partial",
+                generated=True,
+                pushed=False,
+                schema_valid=True,
+                errors_for_status=["Server酱推送失败"],
             )
-            status_extra.update({
-                key: value
-                for key, value in push_result.items()
-                if key != "ok"
-            })
-            push_ok = bool(push_result.get("ok"))
-            if push_ok:
-                mark_pushed(PUSH_HISTORY_PATH, today)
-            else:
-                warnings.append("Server酱推送失败")
-                finish_status(
-                    status="partial",
-                    generated=True,
-                    pushed=False,
-                    schema_valid=True,
-                    errors_for_status=["Server酱推送失败"],
-                )
-                return {"status": "error", "reason": "Server酱推送失败"}
-            logger.info(f"  微信推送: {'成功' if push_ok else '失败/跳过'}")
+            return {"status": "error", "reason": "Server酱推送失败"}
+        if not push_result.get("pushSkippedReason"):
+            logger.info("  微信推送: 成功")
         finish_status(
             status="success",
             generated=True,

@@ -6,6 +6,7 @@ __pycache__/
 .mypy_cache/
 .pytest_cache/
 .ruff_cache/
+.venv-v1.8/
 *.pyc
 *.pyo
 *.egg-info/

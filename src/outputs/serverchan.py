@@ -1,6 +1,6 @@
 """
 Server酱 Turbo 推送模块。
-通过 HTTP POST 将每日 5 件事推送到微信。
+通过一次 HTTP POST 将 AI 与全球政经两个 Top 5 推送到微信。
 
 API: https://sctapi.ftqq.com/{sendkey}.send
 """
@@ -46,9 +46,12 @@ def build_markdown_message(
     items: list[dict[str, Any]],
     date_str: str,
     daily_theme: str = "",
+    *,
+    geopolitics_items: list[dict[str, Any]] | None = None,
+    geopolitics_theme: str = "",
 ) -> tuple[str, str, str]:
     """
-    将 5 条消息构建为 Server酱 Markdown 格式。
+    将 AI Top 5 和可选的政经 Top 5 构建为 Server酱 Markdown。
 
     Args:
         items: 翻译后的 5 条消息（含 title_cn/summary_cn/url/source/rank）
@@ -61,12 +64,39 @@ def build_markdown_message(
         - desp_markdown: Markdown 正文（Server酱支持）
         - desp_plaintext: 纯文本正文（降级方案）
     """
-    title = f"🤖 AI 每日 5 件事 | {date_str}"
+    dual_board = geopolitics_items is not None
+    title = (
+        f"🌏 AI 与全球政经每日 10 件事 | {date_str}"
+        if dual_board
+        else f"🤖 AI 每日 5 件事 | {date_str}"
+    )
     markdown_lines = []
     plain_lines = []
+    if dual_board:
+        markdown_lines.extend(["# 一、AI 重要消息", ""])
+        plain_lines.append("一、AI 重要消息")
     if daily_theme:
-        markdown_lines.extend([f"> **今日主题：** {daily_theme}", ""])
-        plain_lines.append(f"今日主题：{daily_theme}")
+        markdown_lines.extend([f"> **AI 主题：** {daily_theme}", ""])
+        plain_lines.append(f"AI 主题：{daily_theme}")
+    _append_items(markdown_lines, plain_lines, items)
+    if dual_board:
+        markdown_lines.extend(["# 二、全球地缘与政经", ""])
+        plain_lines.append("二、全球地缘与政经")
+        if geopolitics_theme:
+            markdown_lines.extend([f"> **政经主题：** {geopolitics_theme}", ""])
+            plain_lines.append(f"政经主题：{geopolitics_theme}")
+        _append_items(markdown_lines, plain_lines, geopolitics_items or [])
+    markdown = "\n".join(markdown_lines)
+    if len(markdown.encode("utf-8")) > MAX_DESP_LENGTH:
+        raise ValueError("推送内容超过 Server酱 Turbo 64KB 限制")
+    return title, markdown, "\n\n".join(plain_lines)
+
+
+def _append_items(
+    markdown_lines: list[str],
+    plain_lines: list[str],
+    items: list[dict[str, Any]],
+) -> None:
     for index, item in enumerate(items, start=1):
         rank = item.get("rank", index)
         item_title = str(item.get("title_cn") or item.get("title") or "")
@@ -85,10 +115,6 @@ def build_markdown_message(
             "",
         ])
         plain_lines.append(f"{rank}. {item_title}\n来源：{source}\n{summary}\n{url}")
-    markdown = "\n".join(markdown_lines)
-    if len(markdown.encode("utf-8")) > MAX_DESP_LENGTH:
-        raise ValueError("推送内容超过 Server酱 Turbo 64KB 限制")
-    return title, markdown, "\n\n".join(plain_lines)
 
 
 def push_to_wechat(
@@ -96,6 +122,9 @@ def push_to_wechat(
     items: list[dict[str, Any]],
     date_str: str,
     daily_theme: str = "",
+    *,
+    geopolitics_items: list[dict[str, Any]] | None = None,
+    geopolitics_theme: str = "",
 ) -> bool:
     """
     通过 Server酱 Turbo API 推送消息到微信。
@@ -109,7 +138,14 @@ def push_to_wechat(
     Returns:
         True 推送成功，False 推送失败
     """
-    return bool(push_to_wechat_with_result(sendkey, items, date_str, daily_theme).get("ok"))
+    return bool(push_to_wechat_with_result(
+        sendkey,
+        items,
+        date_str,
+        daily_theme,
+        geopolitics_items=geopolitics_items,
+        geopolitics_theme=geopolitics_theme,
+    ).get("ok"))
 
 
 def push_to_wechat_with_result(
@@ -117,6 +153,9 @@ def push_to_wechat_with_result(
     items: list[dict[str, Any]],
     date_str: str,
     daily_theme: str = "",
+    *,
+    geopolitics_items: list[dict[str, Any]] | None = None,
+    geopolitics_theme: str = "",
 ) -> dict[str, Any]:
     result: dict[str, Any] = {
         "ok": False,
@@ -135,7 +174,13 @@ def push_to_wechat_with_result(
         result["pushSkippedReason"] = "missing_sendkey"
         return result
     try:
-        title, desp, _ = build_markdown_message(items, date_str, daily_theme)
+        title, desp, _ = build_markdown_message(
+            items,
+            date_str,
+            daily_theme,
+            geopolitics_items=geopolitics_items,
+            geopolitics_theme=geopolitics_theme,
+        )
         url = SERVERCHAN_URL.format(sendkey=sendkey)
         result["pushAttempted"] = True
         result["pushAttemptedAt"] = _utc_now()

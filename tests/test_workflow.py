@@ -40,3 +40,20 @@ def test_daily_workflow_supports_phone_manual_push_trigger():
     assert "FORCE_PUSH" in workflow
     assert template_path.exists()
     assert "/push-force" in template_path.read_text("utf-8")
+
+
+def test_daily_workflow_stops_pages_but_keeps_data_commit_and_raw_contract():
+    workflow = (
+        Path(__file__).parents[1] / ".github" / "workflows" / "daily.yml"
+    ).read_text("utf-8")
+
+    assert "pages: write" not in workflow
+    assert "id-token: write" not in workflow
+    assert "github-pages" not in workflow
+    assert "actions/configure-pages" not in workflow
+    assert "actions/upload-pages-artifact" not in workflow
+    assert "actions/deploy-pages" not in workflow
+    assert "_site" not in workflow
+    assert "contents: write" in workflow
+    assert "git add data/ web/data.json" in workflow
+    assert "git push" in workflow

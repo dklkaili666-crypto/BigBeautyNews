@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+### v0.7 AI + 全球地缘政经双榜单
+- 保留 AI Top 5，新增中国和美国优先的全球地缘政经 Top 5；两个榜单独立抓取、过滤、排序和翻译
+- 新增 8 个免费公开 RSS：SCMP China / Global Economy、NPR Politics / Business / World、BBC World / Business、The Guardian World
+- 同一事件不在两个榜单重复；按主要影响归属并从对应候选池补位，任一榜单不足 5 条时不发送残缺日报
+- Server酱保持每日一次 HTTP POST，正文按 AI 在上、政经在下展示共 10 条
+- 内部归档和本地网页新增 `geopoliticsItems` / `geopoliticsTheme`，旧归档继续显示 AI 数据
+- 投研日历 `data/daily-5-things.json` 继续只输出 AI 5 条五字段，固定 raw URL 不变
+- 停止 BigBeautyNews GitHub Pages 部署，保留 Public 仓库、数据提交和本地网页
+- 运行状态新增 AI/政经各自候选与入选数量，失败信息标注对应板块
+
 ### v0.6.6 外部准时调度
 - 按 PRD OPS-01 将正式定时源从 GitHub `schedule` 改为 cron-job.org，固定 `Asia/Shanghai` 7:45 主触发和 8:15 幂等兜底
 - 外部触发通过 `workflow_dispatch` 携带 `trigger_source` / `schedule_slot`，运行状态可区分主触发、兜底和人工触发

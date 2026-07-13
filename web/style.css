@@ -90,6 +90,16 @@ header h1 {
   color: #1e40af;
 }
 
+.news-section + .news-section {
+  margin-top: 36px;
+}
+
+.section-title {
+  margin: 0 0 14px;
+  font-size: 22px;
+  color: var(--text);
+}
+
 /* 文章卡片 */
 .article-card {
   background: var(--card-bg);

@@ -8,6 +8,8 @@ from typing import Any
 from difflib import SequenceMatcher
 import re
 
+from pipeline.enrichment import canonicalize_url
+
 
 def _normalized_title(title: str) -> str:
     return " ".join(re.findall(r"\w+", title.casefold()))
@@ -69,3 +71,38 @@ def dedup_candidates(
             match["summary"] = candidate.get("summary")
 
     return deduped
+
+
+def is_same_event(
+    first: dict[str, Any],
+    second: dict[str, Any],
+    title_threshold: float = 0.85,
+) -> bool:
+    """判断两个榜单条目是否是同一事件。"""
+    first_url = str(first.get("canonicalUrl") or canonicalize_url(str(first.get("url") or "")))
+    second_url = str(second.get("canonicalUrl") or canonicalize_url(str(second.get("url") or "")))
+    if first_url and first_url == second_url:
+        return True
+    first_event = str(first.get("eventId") or "")
+    second_event = str(second.get("eventId") or "")
+    if first_event and first_event == second_event:
+        return True
+    first_title = _normalized_title(str(first.get("originalTitle") or first.get("title") or ""))
+    second_title = _normalized_title(str(second.get("originalTitle") or second.get("title") or ""))
+    return bool(
+        first_title
+        and second_title
+        and SequenceMatcher(None, first_title, second_title).ratio() >= title_threshold
+    )
+
+
+def exclude_cross_board_duplicates(
+    candidates: list[dict[str, Any]],
+    selected_other_board: list[dict[str, Any]],
+) -> list[dict[str, Any]]:
+    """从候选中排除已进入另一个榜单的同一事件。"""
+    return [
+        candidate
+        for candidate in candidates
+        if not any(is_same_event(candidate, selected) for selected in selected_other_board)
+    ]

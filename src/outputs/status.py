@@ -26,6 +26,8 @@ def build_run_status(
     pushed: bool,
     committed: bool,
     schema_valid: bool,
+    geopolitics_candidate_count: int = 0,
+    geopolitics_selected_count: int = 0,
     warnings: list[str] | None = None,
     errors: list[str] | None = None,
     extra: dict[str, Any] | None = None,
@@ -37,6 +39,10 @@ def build_run_status(
         "finishedAt": finished_at,
         "candidateCount": candidate_count,
         "selectedCount": selected_count,
+        "aiCandidateCount": candidate_count,
+        "aiSelectedCount": selected_count,
+        "geopoliticsCandidateCount": geopolitics_candidate_count,
+        "geopoliticsSelectedCount": geopolitics_selected_count,
         "sourcesAvailable": sources_available,
         "llmModel": llm_model,
         "generated": generated,
@@ -66,7 +72,12 @@ def write_run_status(status: dict[str, Any], data_dir: str) -> None:
                 history = loaded
         except (OSError, json.JSONDecodeError):
             history = {"runs": []}
-    runs = history.get("runs") if isinstance(history.get("runs"), list) else []
+    loaded_runs = history.get("runs")
+    runs: list[dict[str, Any]] = (
+        [run for run in loaded_runs if isinstance(run, dict)]
+        if isinstance(loaded_runs, list)
+        else []
+    )
     runs.append(status)
     history = {"runs": runs[-30:]}
     with open(history_path, "w", encoding="utf-8") as file:

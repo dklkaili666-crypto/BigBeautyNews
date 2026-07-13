@@ -34,6 +34,8 @@ def build_internal_digest(
     items: list[dict[str, Any]],
     daily_theme: str = "",
     *,
+    geopolitics_items: list[dict[str, Any]],
+    geopolitics_theme: str = "",
     date_str: str | None = None,
     exported_at: str | None = None,
 ) -> dict[str, Any]:
@@ -46,9 +48,9 @@ def build_internal_digest(
     Returns:
         符合投研日历 Schema 的字典
     """
-    if len(items) != 5:
-        raise ValueError("内部日报必须包含恰好 5 条新闻")
-    for item in items:
+    if len(items) != 5 or len(geopolitics_items) != 5:
+        raise ValueError("内部日报必须包含恰好 5 条 AI 新闻和 5 条政经新闻")
+    for item in [*items, *geopolitics_items]:
         parsed_url = urlparse(str(item.get("url", "")))
         if parsed_url.scheme not in {"http", "https"} or not parsed_url.netloc:
             raise ValueError(f"新闻链接必须是有效的 HTTP(S) URL: {item.get('url', '')}")
@@ -61,8 +63,21 @@ def build_internal_digest(
         "project": "daily-ai-5",
         "exportedAt": exported_at,
         "dailyTheme": daily_theme,
-        "items": [
-            {
+        "geopoliticsTheme": geopolitics_theme,
+        "items": _build_internal_items(items, today, exported_at),
+        "geopoliticsItems": _build_internal_items(
+            geopolitics_items, today, exported_at
+        ),
+    }
+
+
+def _build_internal_items(
+    items: list[dict[str, Any]],
+    today: str,
+    exported_at: str,
+) -> list[dict[str, Any]]:
+    return [
+        {
                 "id": str(uuid.uuid5(uuid.NAMESPACE_URL, f"{today}:{item.get('url', '')}")),
                 "date": today,
                 "title": item.get("title_cn", item.get("title", "")),
@@ -98,11 +113,13 @@ def build_internal_digest(
                 "modelUsed": item.get("modelUsed", ""),
                 "rawPayloadHash": item.get("rawPayloadHash", ""),
                 "warnings": list(item.get("warnings") or []),
+                "regions": list(item.get("regions") or []),
+                "geopoliticsEventTypes": list(item.get("geopoliticsEventTypes") or []),
+                "geopoliticsRuleScore": float(item.get("geopoliticsRuleScore", 0)),
                 "createdAt": exported_at,
-            }
-            for index, item in enumerate(items, start=1)
-        ],
-    }
+        }
+        for index, item in enumerate(items, start=1)
+    ]
 
 
 def build_external_digest(internal_digest: dict[str, Any]) -> dict[str, Any]:
@@ -139,9 +156,6 @@ def validate_external_digest(digest: dict[str, Any]) -> None:
 
 def validate_internal_digest(digest: dict[str, Any]) -> None:
     """校验内部归档字段，防止后续投研字段缺失。"""
-    items = digest.get("items")
-    if not isinstance(items, list) or len(items) != 5:
-        raise ValueError("内部 items 必须包含恰好 5 条")
     required = {
         "date", "title", "summary", "url", "source", "rank",
         "eventId", "canonicalUrl", "sourceTier", "eventType", "entities",
@@ -149,15 +163,35 @@ def validate_internal_digest(digest: dict[str, Any]) -> None:
         "timelinessScore", "entityImportanceScore", "confidenceScore",
         "totalScore", "warnings",
     }
-    for index, item in enumerate(items, start=1):
-        missing = required - set(item)
-        if missing:
-            raise ValueError(f"内部第 {index} 条缺少字段: {', '.join(sorted(missing))}")
+    for field in ("items", "geopoliticsItems"):
+        items = digest.get(field)
+        if not isinstance(items, list) or len(items) != 5:
+            raise ValueError(f"内部 {field} 必须包含恰好 5 条")
+        for index, item in enumerate(items, start=1):
+            missing = required - set(item)
+            if missing:
+                raise ValueError(
+                    f"内部 {field} 第 {index} 条缺少字段: {', '.join(sorted(missing))}"
+                )
+    if not isinstance(digest.get("dailyTheme"), str):
+        raise ValueError("dailyTheme 必须是字符串")
+    if not isinstance(digest.get("geopoliticsTheme"), str):
+        raise ValueError("geopoliticsTheme 必须是字符串")
 
 
 def build_daily_digest(items: list[dict[str, Any]]) -> dict[str, Any]:
     """兼容旧调用：构建投研日历对外日报。"""
-    return build_external_digest(build_internal_digest(items))
+    now = datetime.now(timezone.utc)
+    legacy_internal = {
+        "project": "daily-ai-5",
+        "exportedAt": now.strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "items": _build_internal_items(
+            items,
+            now.strftime("%Y-%m-%d"),
+            now.strftime("%Y-%m-%dT%H:%M:%SZ"),
+        ),
+    }
+    return build_external_digest(legacy_internal)
 
 
 def write_daily_json(
@@ -210,8 +244,11 @@ def load_recent_archive_items(
     *,
     before_date: str,
     days: int,
+    item_field: str = "items",
 ) -> list[dict[str, Any]]:
     """读取指定日期之前若干天的归档条目。"""
+    if item_field not in {"items", "geopoliticsItems"}:
+        raise ValueError("item_field 必须是 items 或 geopoliticsItems")
     before = datetime.strptime(before_date, "%Y-%m-%d").date()
     earliest = before - timedelta(days=days)
     items: list[dict[str, Any]] = []
@@ -230,7 +267,7 @@ def load_recent_archive_items(
         try:
             with open(path, encoding="utf-8") as file:
                 digest = json.load(file)
-            archived_items = digest.get("items", [])
+            archived_items = digest.get(item_field, [])
             if isinstance(archived_items, list):
                 items.extend(
                     item for item in archived_items if isinstance(item, dict)

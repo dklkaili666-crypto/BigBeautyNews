@@ -53,10 +53,29 @@ def sample_items():
     ]
 
 
+def sample_geopolitics_items():
+    return [
+        {
+            **item,
+            "title": f"Geopolitics {index}",
+            "title_cn": f"政经标题{index}",
+            "url": f"https://example.com/geopolitics/{index}",
+            "canonicalUrl": f"https://example.com/geopolitics/{index}",
+            "eventId": f"geopolitics-event-{index}",
+            "regions": ["china" if index < 2 else "us"],
+            "geopoliticsEventTypes": ["policy"],
+            "geopoliticsRuleScore": 4.0,
+        }
+        for index, item in enumerate(sample_items())
+    ]
+
+
 def test_output_schemas_keep_internal_fields_out_of_external_contract(tmp_path):
     internal = build_internal_digest(
         sample_items(),
         "模型竞争",
+        geopolitics_items=sample_geopolitics_items(),
+        geopolitics_theme="全球政策变化",
         date_str="2026-07-01",
         exported_at="2026-07-01T00:00:00Z",
     )
@@ -66,6 +85,8 @@ def test_output_schemas_keep_internal_fields_out_of_external_contract(tmp_path):
 
     assert set(external["items"][0]) == {"date", "title", "summary", "url", "source"}
     assert internal["dailyTheme"] == "模型竞争"
+    assert internal["geopoliticsTheme"] == "全球政策变化"
+    assert len(internal["geopoliticsItems"]) == 5
     assert internal["items"][0]["rank"] == 1
     assert internal["items"][0]["published"] == ""
     assert internal["items"][0]["mergedSources"] == []
@@ -116,6 +137,31 @@ def test_recent_archive_loader_excludes_today_and_old_entries(tmp_path):
         "https://example.com/2026-07-03",
         "https://example.com/2026-07-04",
     ]
+
+
+def test_archive_loader_reads_geopolitics_and_tolerates_legacy_files(tmp_path):
+    archive_dir = tmp_path / "archive"
+    archive_dir.mkdir()
+    (archive_dir / "2026-07-03.json").write_text(
+        json.dumps({"items": [{"url": "https://example.com/ai"}]}),
+        encoding="utf-8",
+    )
+    (archive_dir / "2026-07-04.json").write_text(
+        json.dumps({
+            "items": [{"url": "https://example.com/ai-new"}],
+            "geopoliticsItems": [{"url": "https://example.com/policy"}],
+        }),
+        encoding="utf-8",
+    )
+
+    result = load_recent_archive_items(
+        str(archive_dir),
+        before_date="2026-07-05",
+        days=7,
+        item_field="geopoliticsItems",
+    )
+
+    assert result == [{"url": "https://example.com/policy"}]
 
 
 def test_run_status_files_capture_independent_state_flags(tmp_path):
@@ -203,12 +249,23 @@ def test_skipped_external_fallback_is_recorded(monkeypatch, tmp_path):
     assert current["workflowRunId"] == "12345"
 
 
-def test_serverchan_message_contains_five_markdown_links():
-    title, markdown, plaintext = build_markdown_message(sample_items(), "2026-07-01", "模型竞争")
+def test_serverchan_message_contains_two_top_five_sections():
+    title, markdown, plaintext = build_markdown_message(
+        sample_items(),
+        "2026-07-01",
+        "模型竞争",
+        geopolitics_items=sample_geopolitics_items(),
+        geopolitics_theme="全球政策变化",
+    )
 
     assert "2026-07-01" in title
-    assert markdown.count("[阅读原文]") == 5
+    assert "每日 10 件事" in title
+    assert markdown.count("[阅读原文]") == 10
+    assert "一、AI 重要消息" in markdown
+    assert "二、全球地缘与政经" in markdown
     assert "模型竞争" in plaintext
+    assert "全球政策变化" in plaintext
+    assert markdown.count("## 1.") == 2
 
 
 def test_serverchan_push_result_captures_response_details(monkeypatch):
@@ -232,6 +289,8 @@ def test_serverchan_push_result_captures_response_details(monkeypatch):
         sample_items(),
         "2026-07-01",
         "模型竞争",
+        geopolitics_items=sample_geopolitics_items(),
+        geopolitics_theme="全球政策变化",
     )
 
     assert result["ok"] is True
@@ -243,3 +302,4 @@ def test_serverchan_push_result_captures_response_details(monkeypatch):
     assert result["pushResponseMessage"] == "ok"
     assert result["pushId"] == "123"
     assert calls[0][1]["data"]["title"]
+    assert calls[0][1]["data"]["desp"].count("[阅读原文]") == 10

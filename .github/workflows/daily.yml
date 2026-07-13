@@ -26,8 +26,6 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 concurrency:
   group: bigbeautynews-daily
@@ -54,10 +52,6 @@ jobs:
         )
       }}
     timeout-minutes: 15
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -164,7 +158,7 @@ jobs:
           git config user.email "bot@bigbeautynews.local"
           PYTHONPATH=src python -c "from outputs.status import mark_latest_run_committed; mark_latest_run_committed('data')"
           git add data/ web/data.json
-          git diff --staged --quiet || git commit -m "📰 $(date +%Y-%m-%d) 每日AI 5件事"
+          git diff --staged --quiet || git commit -m "📰 $(date +%Y-%m-%d) 每日投研双榜单"
           git push
 
       - name: Commit skipped external run
@@ -176,46 +170,3 @@ jobs:
           git add data/run-status.json data/run-history.json
           git diff --staged --quiet || git commit -m "⏭️ $(TZ=Asia/Shanghai date +%Y-%m-%d) 外部兜底已跳过"
           git push
-
-      - name: Prepare Pages artifact
-        if: >-
-          ${{
-            success() &&
-            steps.push-check.outputs.should_run == 'true' &&
-            !(github.event_name == 'workflow_dispatch' && inputs.push_test == 'true')
-          }}
-        run: |
-          mkdir -p _site/web _site/data
-          cp web/index.html web/style.css web/app.js web/data.json _site/web/
-          cp -r data/archive _site/data/
-          touch _site/.nojekyll
-
-      - name: Configure Pages
-        if: >-
-          ${{
-            success() &&
-            steps.push-check.outputs.should_run == 'true' &&
-            !(github.event_name == 'workflow_dispatch' && inputs.push_test == 'true')
-          }}
-        uses: actions/configure-pages@v5
-
-      - name: Upload Pages artifact
-        if: >-
-          ${{
-            success() &&
-            steps.push-check.outputs.should_run == 'true' &&
-            !(github.event_name == 'workflow_dispatch' && inputs.push_test == 'true')
-          }}
-        uses: actions/upload-pages-artifact@v4
-        with:
-          path: _site
-
-      - name: Deploy Pages
-        if: >-
-          ${{
-            success() &&
-            steps.push-check.outputs.should_run == 'true' &&
-            !(github.event_name == 'workflow_dispatch' && inputs.push_test == 'true')
-          }}
-        uses: actions/deploy-pages@v4
-        id: deployment

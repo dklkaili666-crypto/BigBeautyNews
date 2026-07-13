@@ -53,16 +53,36 @@
   function render(dateStr, data) {
     const items = data.items || [];
     const theme = data.dailyTheme || '';
+    const geopoliticsItems = data.geopoliticsItems || [];
+    const geopoliticsTheme = data.geopoliticsTheme || '';
 
     let html = '';
-    if (items.length === 0) {
+    if (items.length === 0 && geopoliticsItems.length === 0) {
       content.innerHTML = '<div class="empty"><div class="icon">📭</div><p>暂无数据</p></div>';
       return;
+    }
+    if (geopoliticsItems.length > 0) {
+      html += renderSection('一、AI 重要消息', theme, items, 'ai');
+      html += renderSection(
+        '二、全球地缘与政经',
+        geopoliticsTheme,
+        geopoliticsItems,
+        'geopolitics'
+      );
+    } else {
+      html += renderSection('', theme, items, 'ai');
+    }
+    content.innerHTML = html;
+  }
+
+  function renderSection(title, theme, items, sectionClass) {
+    let html = `<section class="news-section ${sectionClass}">`;
+    if (title) {
+      html += `<h2 class="section-title">${escapeHtml(title)}</h2>`;
     }
     if (theme) {
       html += `<div class="daily-theme">📊 ${escapeHtml(theme)}</div>`;
     }
-
     items.forEach((item, i) => {
       const rank = item.rank || (i + 1);
       const tags = (item.tags || []).map(t => `<span class="tag">${escapeHtml(t)}</span>`).join('');
@@ -83,8 +103,7 @@
         </div>
       `;
     });
-
-    content.innerHTML = html;
+    return `${html}</section>`;
   }
 
   function escapeHtml(str) {

@@ -55,6 +55,49 @@ RSS_SOURCES: list[dict] = [
     },
 ]
 
+GEOPOLITICS_RSS_SOURCES: list[dict] = [
+    {
+        "name": "SCMP China",
+        "url": "https://www.scmp.com/rss/4/feed",
+        "type": "rss",
+    },
+    {
+        "name": "SCMP Global Economy",
+        "url": "https://www.scmp.com/rss/12/feed",
+        "type": "rss",
+    },
+    {
+        "name": "NPR Politics",
+        "url": "https://feeds.npr.org/1014/rss.xml",
+        "type": "rss",
+    },
+    {
+        "name": "NPR Business",
+        "url": "https://feeds.npr.org/1006/rss.xml",
+        "type": "rss",
+    },
+    {
+        "name": "NPR World",
+        "url": "https://feeds.npr.org/1004/rss.xml",
+        "type": "rss",
+    },
+    {
+        "name": "BBC World",
+        "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+        "type": "rss",
+    },
+    {
+        "name": "BBC Business",
+        "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
+        "type": "rss",
+    },
+    {
+        "name": "The Guardian World",
+        "url": "https://www.theguardian.com/world/rss",
+        "type": "rss",
+    },
+]
+
 # --- 候选池设置 ---
 MAX_CANDIDATES_PER_SOURCE = 20   # 每个源最多取多少篇进候选池
 TOP_K = 5                         # 最终选出 5 条

@@ -23,6 +23,14 @@ SOURCE_TIERS = {
     "Ars Technica": "tier2",
     "MIT Technology Review": "tier2",
     "Wired": "tier2",
+    "SCMP China": "tier2",
+    "SCMP Global Economy": "tier2",
+    "NPR Politics": "tier2",
+    "NPR Business": "tier2",
+    "NPR World": "tier2",
+    "BBC World": "tier2",
+    "BBC Business": "tier2",
+    "The Guardian World": "tier2",
     "GitHub Trending": "tier3",
     "Hacker News": "tier3",
 }
@@ -83,7 +91,7 @@ EVENT_TYPE_TERMS = {
 }
 
 AI_CONTEXT_TERMS = (
-    "artificial intelligence", "generative ai", "machine learning", "deep learning",
+    "ai", "artificial intelligence", "generative ai", "machine learning", "deep learning",
     "large language model", "llm", "gpt", "claude", "gemini", "llama",
     "openai", "anthropic", "deepmind", "meta ai", "microsoft ai", "nvidia",
     "gpu", "tpu", "foundation model", "reasoning model", "agent", "inference",

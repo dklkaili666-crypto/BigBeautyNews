@@ -1,18 +1,19 @@
 # 🤖 BigBeautyNews
 
-> 每日 AI 五件事 · 投研视角
+> 每日 AI Top 5 + 全球地缘政经 Top 5 · 投研视角
 
-每天自动从北美主流科技媒体、GitHub Trending 和 Hacker News 抓取 AI 领域最重要的 5 条新闻，按投研视角做去重、评分、筛选和翻译，推送到微信，同时输出 JSON 数据给 [投研日历](https://github.com/) 项目。
+每天分别选出 AI 领域最重要的 5 条新闻和全球地缘政经最重要的 5 条新闻（中国、美国优先），在一条 Server酱消息中分板块推送。投研日历继续通过固定 raw URL 自动拉取原 AI Top 5 五字段 JSON。
 
 ## 功能
 
 - 🌐 **多源抓取**：The Verge / TechCrunch / Ars Technica / MIT Tech Review / Wired + GitHub Trending + Hacker News
+- 🌍 **免费政经来源**：SCMP China / SCMP Global Economy / NPR Politics / NPR Business / NPR World / BBC World / BBC Business / The Guardian World
 - 🧭 **投研增强**：来源分层、AI 投研实体词典、URL 标准化、最小可用 eventId、GitHub repo 冷却
-- 🧠 **AI 排序**：规则预评分 + LLM 复核选出 Top 5（大厂动态 > 竞品格局 > 产品发布 > 融资 > 学术）
+- 🧠 **双榜单排序**：AI 与政经候选池分别规则预过滤、LLM 复核和翻译；正常每天共 4 次 LLM 调用
 - 🌏 **中文翻译**：全部翻译为简体中文，标题 + 摘要 + 原文链接
-- 📱 **微信推送**：每天早上 7:45 通过 Server酱推送到微信
-- 📅 **投研日历集成**：输出标准化 JSON 供投研日历 L2 导入
-- 📖 **本地网页**：按日期浏览历史所有 5 件事
+- 📱 **微信推送**：每天早上 7:45 通过一条 Server酱消息推送两个 Top 5
+- 📅 **投研日历集成**：`data/daily-5-things.json` 仍只输出 AI 5 条，保持既有 L2 自动拉取契约
+- 📖 **本地网页**：按日期分板块浏览 AI 与政经历史；旧归档保持兼容
 - 🔎 **可观测性**：输出 `run-status.json` / `run-history.json` / `error-log/YYYY-MM-DD.json`
 
 ## 项目结构
@@ -33,6 +34,8 @@ BigBeautyNews/
 │   │   ├── enrichment.py        # 来源分层、eventId、规则评分
 │   │   ├── filter.py            # AI 投研实体词典过滤
 │   │   ├── ranker.py            # LLM 排序 Top 5
+│   │   ├── geopolitics.py       # 政经过滤、地域与主板块分类
+│   │   ├── geopolitics_ranker.py # 政经 LLM 排序 Top 5
 │   │   └── translator.py        # LLM 翻译中文
 │   └── outputs/                 # 输出模块
 │       ├── serverchan.py        # Server酱微信推送
@@ -41,7 +44,9 @@ BigBeautyNews/
 │       └── web_builder.py       # 网页数据
 ├── data/                        # 产出数据（Git 追踪）
 ├── web/                         # 静态网页
-└── PRD.md                       # 产品需求文档
+├── PRD.md                       # 产品需求文档
+├── IMPLEMENTATION_PLAN.md       # 实施计划
+└── TRACEABILITY.md              # 需求追踪与验收
 ```
 
 ## 快速开始
@@ -94,6 +99,14 @@ python scripts/configure_external_scheduler.py --smoke
 
 配置器会安全提示输入一个仅限本仓库、只有 Actions 写权限的 GitHub 细粒度令牌，以及一个 cron-job.org API Key。两项凭证仅在当前进程内使用，不写入仓库或 `.env`。第一条命令创建并回读两条 `Asia/Shanghai` 定时任务：7:45 主触发、8:15 幂等兜底；第二条命令通过一次自动删除的临时任务验证完整触发链路。
 
+BigBeautyNews 不再部署 GitHub Pages。仓库必须保持 Public，因为投研日历页面会匿名读取：
+
+```text
+https://raw.githubusercontent.com/dklkaili666-crypto/BigBeautyNews/master/data/daily-5-things.json
+```
+
+停止 Pages 只减少公开网页入口；仓库和 raw JSON 仍然公开。网页功能保留为本地使用。
+
 ### 手机手动推送
 
 如果当天自动推送没有触发，可以在手机上操作：
@@ -127,3 +140,4 @@ python -m http.server 8080
 - **LLM**：OpenAI 兼容 API (gpt-4o-mini / deepseek-chat 等)
 - **推送**：Server酱 Turbo API
 - **网页**：纯静态 HTML + CSS + Vanilla JS
+- **新闻数据费用**：新增政经来源均为公开免费 RSS，无新闻 API Key 或付费新闻 API

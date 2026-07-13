@@ -1,0 +1,18 @@
+{
+  "dailyTheme": "AI 模型竞争",
+  "geopoliticsTheme": "中美政策与全球利率",
+  "items": [
+    {"rank": 1, "title": "AI 事件 1", "summary": "摘要", "source": "AI Source", "url": "https://example.com/ai/1"},
+    {"rank": 2, "title": "AI 事件 2", "summary": "摘要", "source": "AI Source", "url": "https://example.com/ai/2"},
+    {"rank": 3, "title": "AI 事件 3", "summary": "摘要", "source": "AI Source", "url": "https://example.com/ai/3"},
+    {"rank": 4, "title": "AI 事件 4", "summary": "摘要", "source": "AI Source", "url": "https://example.com/ai/4"},
+    {"rank": 5, "title": "AI 事件 5", "summary": "摘要", "source": "AI Source", "url": "https://example.com/ai/5"}
+  ],
+  "geopoliticsItems": [
+    {"rank": 1, "title": "政经事件 1", "summary": "摘要", "source": "Policy Source", "url": "https://example.com/policy/1"},
+    {"rank": 2, "title": "政经事件 2", "summary": "摘要", "source": "Policy Source", "url": "https://example.com/policy/2"},
+    {"rank": 3, "title": "政经事件 3", "summary": "摘要", "source": "Policy Source", "url": "https://example.com/policy/3"},
+    {"rank": 4, "title": "政经事件 4", "summary": "摘要", "source": "Policy Source", "url": "https://example.com/policy/4"},
+    {"rank": 5, "title": "政经事件 5", "summary": "摘要", "source": "Policy Source", "url": "https://example.com/policy/5"}
+  ]
+}

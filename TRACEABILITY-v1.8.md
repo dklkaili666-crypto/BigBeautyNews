@@ -3,7 +3,7 @@
 - PRD version: v1.8
 - Implementation plan: Approved on 2026-07-13
 - Verification date: 2026-07-13
-- Delivery status: Implemented and verified; awaiting final user acceptance
+- Delivery status: Accepted by the user on 2026-07-13
 
 | Requirement | Planned tasks | Implementation evidence | Verification evidence | Result | Notes |
 |---|---|---|---|---|---|
@@ -35,3 +35,8 @@ Allowed final results: `通过`, `部分通过`, `未通过`, `阻塞`.
 - CI: https://github.com/dklkaili666-crypto/BigBeautyNews/actions/runs/29222735480 — success, Python 3.12, all six steps passed.
 - BigBeautyNews Daily workflow: not triggered by this delivery.
 - ServerChan: no test or production message sent by this delivery.
+
+## Final user acceptance
+
+- The project owner explicitly accepted the complete v1.8 delivery on 2026-07-13.
+- All v1.8 requirements are closed; no pending change request or blocker remains.

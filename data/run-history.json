@@ -497,6 +497,31 @@
       "serverchanEndpointType": "sct",
       "pushId": "45564574",
       "digestHash": "c57453cb2c4fc9b9c70ff7ea26e07d416290cd26"
+    },
+    {
+      "date": "2026-07-14",
+      "status": "skipped",
+      "startedAt": "2026-07-14T00:15:29Z",
+      "finishedAt": "2026-07-14T00:15:29Z",
+      "candidateCount": 0,
+      "selectedCount": 0,
+      "aiCandidateCount": 0,
+      "aiSelectedCount": 0,
+      "geopoliticsCandidateCount": 0,
+      "geopoliticsSelectedCount": 0,
+      "sourcesAvailable": 0,
+      "llmModel": "",
+      "generated": false,
+      "pushed": true,
+      "committed": true,
+      "schemaValid": true,
+      "warnings": [],
+      "errors": [],
+      "trigger": "external_scheduler",
+      "scheduleSlot": "fallback",
+      "workflowRunId": "29295419471",
+      "pushAttempted": false,
+      "pushSkippedReason": "already_pushed"
     }
   ]
 }

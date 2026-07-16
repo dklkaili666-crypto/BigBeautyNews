@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-07-16T00:16:15Z",
+  "exportedAt": "2026-07-16T23:46:07Z",
   "items": [
     {
-      "date": "2026-07-16",
-      "title": "苹果AI获准在华落地，联手阿里Qwen大模型",
-      "summary": "苹果与阿里巴巴达成合作，其AI功能Apple Intelligence获准在中国市场推出，采用阿里Qwen大模型。此举标志着苹果在关键市场AI战略的重要突破，对投资者而言，意味着苹果将借助本地合作伙伴规避监管壁垒，加速AI功能落地，同时阿里有望通过合作提升其大语言模型的商业价值。这一合作可能重塑全球AI竞争格局，值得关注其对苹果供应链及AI生态的长期影响。",
-      "url": "https://techcrunch.com/2026/07/15/apple-intelligence-approved-for-launch-in-china-with-alibabas-qwen-ai/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-07-16",
-      "title": "微软培训销售人员贬低OpenAI与Anthropic，内部AI竞争白热化",
-      "summary": "据报道，微软正培训销售人员向客户推销其自研AI模型，强调比OpenAI和Anthropic的模型更高效、更具成本效益。这一策略转向显示大厂间AI竞争加剧，微软从合作伙伴转为直接竞争者。投资者需警惕此举可能侵蚀OpenAI和Anthropic的市场份额，同时关注微软自研模型能否在性能与成本上形成差异化优势，进而影响AI云服务定价格局。",
-      "url": "https://techcrunch.com/2026/07/15/microsoft-is-reportedly-training-salespeople-to-talk-down-openai-and-anthropic/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-07-16",
-      "title": "Anthropic与黑石押注AI实施服务，万亿级新赛道浮现",
-      "summary": "Anthropic与黑石集团联合推出AI实施公司Ode，核心策略是将前向部署工程师嵌入企业，加速AI应用落地。这标志着顶级风投和AI实验室的投资重心从模型层转向应用实施层，开辟了新的估值赛道。对投资者而言，AI实施服务可能成为下一个万亿级市场，企业级AI部署的效率和规模将决定谁能占据这一高增长领域的主导地位。",
-      "url": "https://techcrunch.com/2026/07/15/anthropic-blackstone-bet-the-next-trillion-dollar-ai-business-is-implementation-not-models/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-07-16",
-      "title": "Thinking Machines Lab发布首款9750亿参数开源多模态模型",
-      "summary": "Thinking Machines Lab推出开源模型Inkling，拥有9750亿参数，支持视频和音频理解。该模型直接挑战Anthropic和OpenAI的闭源模型，标志着开源大语言模型在多模态能力上的重大突破。投资者需关注开源生态对闭源商业模型的冲击，以及Thinking Machines Lab能否凭借此模型在竞争激烈的AI市场中建立差异化优势，影响未来模型定价和市场份额分配。",
-      "url": "https://www.wired.com/story/thinking-machines-lab-releases-its-first-model-inkling/",
+      "date": "2026-07-17",
+      "title": "苹果起诉OpenAI：硬件贸易机密纠纷或重塑AI合作格局",
+      "summary": "苹果对OpenAI提起的诉讼涉及硬件贸易机密，可能影响两大巨头在AI硬件领域的合作与竞争。这一法律纠纷叠加OpenAI与Anthropic的竞争，可能进一步削弱OpenAI的市场地位。投资者需关注诉讼进展对苹果AI硬件战略及OpenAI商业模式的潜在冲击。",
+      "url": "https://www.wired.com/story/uncanny-valley-podcase-apple-sued-openai-new-york-data-center-moratorium-cyclosporiasis-outbreak/",
       "source": "Wired"
     },
     {
-      "date": "2026-07-16",
-      "title": "DOGE用AI制定住房政策，政府透明度争议升温",
-      "summary": "美国住房和城市发展部（HUD）被曝使用AI制定住房政策，但拒绝公开相关文件，甚至引用不存在的法律特权。这一事件引发对政府AI应用透明度的广泛质疑，可能推动监管收紧。对投资者而言，公共领域AI应用的合规风险上升，未来政策不确定性可能影响AI在政府项目中的部署速度，以及相关AI服务商的合同前景。",
-      "url": "https://www.wired.com/story/doge-deployed-ai-housing-policy/",
-      "source": "Wired"
+      "date": "2026-07-17",
+      "title": "月之暗面Kimi 3模型参数达2-3万亿，逼近Anthropic旗舰",
+      "summary": "据英国《金融时报》报道，月之暗面即将推出的Kimi K3模型参数规模在2万亿至3万亿之间，将成为中国最大的开源AI模型，性能有望接近Anthropic的Opus 4.8。这一进展可能重塑全球开源模型竞争格局，对闭源模型厂商形成压力，投资者应关注中国AI模型的追赶速度及开源生态的演变。",
+      "url": "https://techcrunch.com/2026/07/16/moonshots-upcoming-kimi-3-is-expected-to-close-the-gap-with-anthropics-opus-4-8/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-07-17",
+      "title": "欧盟强制谷歌开放Android和搜索，AI助手市场准入迎变局",
+      "summary": "欧盟依据数字反垄断法规，要求谷歌向竞争对手开放Android和Google Search的关键部分。这一决定可能削弱谷歌对两大核心平台的控制，为AI助手和搜索引擎创造更公平的竞争环境。投资者需评估此举对谷歌广告收入、AI生态护城河以及欧洲市场格局的长期影响。",
+      "url": "https://www.theverge.com/policy/966438/eu-google-android-ai-interoperability-search-data-dma",
+      "source": "The Verge"
+    },
+    {
+      "date": "2026-07-17",
+      "title": "能源IPO激增：投资者押注AI算力需求驱动的基建热潮",
+      "summary": "随着AI算力需求爆发，能源公司IPO融资速度创本世纪新高。投资者正通过能源股间接参与AI基础设施投资，数据中心电力需求成为关键驱动力。这一趋势表明，AI投资正从芯片、模型向能源等上游环节扩散，投资者应关注能源板块的估值逻辑及供需平衡风险。",
+      "url": "https://arstechnica.com/information-technology/2026/07/energy-ipos-surge-as-investors-hunt-for-ways-to-play-ai-boom/",
+      "source": "Ars Technica"
+    },
+    {
+      "date": "2026-07-17",
+      "title": "OpenAI推出Codex专用键盘硬件，硬件战略迈出第一步",
+      "summary": "OpenAI发布Codex Micro，一款专为编程平台Codex设计的方形按键键盘。尽管并非与Jony Ive合作的AI设备，但此举标志着OpenAI硬件战略的落地。在苹果诉讼背景下，该产品可能成为OpenAI探索硬件生态的试水之作，投资者需关注其市场反响及对OpenAI商业模式的影响。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/965901/openai-hardware-codex-micro-launch",
+      "source": "The Verge"
     }
   ]
 }

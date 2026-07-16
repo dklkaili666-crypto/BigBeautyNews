@@ -557,6 +557,43 @@
       "serverchanEndpointType": "sct",
       "pushId": "45738953",
       "digestHash": "7a0ed08ce66516aba33ae4429918cc3f14d066d0"
+    },
+    {
+      "date": "2026-07-16",
+      "status": "success",
+      "startedAt": "2026-07-16T00:15:36Z",
+      "finishedAt": "2026-07-16T00:16:17Z",
+      "candidateCount": 48,
+      "selectedCount": 5,
+      "aiCandidateCount": 48,
+      "aiSelectedCount": 5,
+      "geopoliticsCandidateCount": 23,
+      "geopoliticsSelectedCount": 5,
+      "sourcesAvailable": 15,
+      "llmModel": "deepseek-chat",
+      "generated": true,
+      "pushed": true,
+      "committed": true,
+      "schemaValid": true,
+      "warnings": [
+        "Top 5 来源过度集中: {'TechCrunch': 3, 'Wired': 2}"
+      ],
+      "errors": [],
+      "trigger": "external_scheduler",
+      "scheduleSlot": "fallback",
+      "workflowRunId": "29460927518",
+      "isDryRun": false,
+      "sendkeyPresent": true,
+      "pushAttempted": true,
+      "pushAttemptedAt": "2026-07-16T00:16:15Z",
+      "pushSkippedReason": "",
+      "pushHttpStatus": 200,
+      "pushResponseCode": 0,
+      "pushResponseMessage": "",
+      "pushResponseBodyPreview": "{\"code\":0,\"message\":\"\",\"data\":{\"pushid\":\"45909049\",\"readkey\":\"SCTqWVPuWB0ArvF\",\"error\":\"SUCCESS\",\"errno\":0}}",
+      "serverchanEndpointType": "sct",
+      "pushId": "45909049",
+      "digestHash": "60ecbb8169d2d0632313c9e3fdef63c51f76ebd2"
     }
   ]
 }

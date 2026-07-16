@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-07-15T00:16:04Z",
+  "exportedAt": "2026-07-16T00:16:15Z",
   "items": [
     {
-      "date": "2026-07-15",
-      "title": "纽约州全美首个暂停新建数据中心，AI算力扩张面临政策瓶颈",
-      "summary": "纽约州长签署全美首个州级数据中心暂停令，未来一年内禁止新建超大规模数据中心，同时州议会通过的另一项更严格法案尚待签署。此举将直接制约AI算力供给，推高训练成本，影响所有大厂和初创公司的扩张计划。投资者需关注其他州是否跟进，以及数据中心运营商如$EQIX、$DLR的应对策略。",
-      "url": "https://www.theverge.com/policy/965110/new-york-ai-data-center-moratorium",
-      "source": "The Verge"
-    },
-    {
-      "date": "2026-07-15",
-      "title": "OpenAI首款硬件曝光：无屏可移动音箱，拟成ChatGPT实体化身",
-      "summary": "据彭博报道，OpenAI首款硬件设备是一款无屏幕、可自主移动的音箱，内置机械元件，旨在成为ChatGPT的物理化身和陪伴型设备。这是OpenAI从软件向硬件的重大战略扩张，若成功将开辟新收入来源并强化生态壁垒，但面临苹果等公司的诉讼风险。投资者需评估其对$AAPL、$AMZN等语音助手市场的冲击。",
-      "url": "https://techcrunch.com/2026/07/14/openais-first-hardware-device-is-reportedly-a-screenless-speaker-that-can-move/",
+      "date": "2026-07-16",
+      "title": "苹果AI获准在华落地，联手阿里Qwen大模型",
+      "summary": "苹果与阿里巴巴达成合作，其AI功能Apple Intelligence获准在中国市场推出，采用阿里Qwen大模型。此举标志着苹果在关键市场AI战略的重要突破，对投资者而言，意味着苹果将借助本地合作伙伴规避监管壁垒，加速AI功能落地，同时阿里有望通过合作提升其大语言模型的商业价值。这一合作可能重塑全球AI竞争格局，值得关注其对苹果供应链及AI生态的长期影响。",
+      "url": "https://techcrunch.com/2026/07/15/apple-intelligence-approved-for-launch-in-china-with-alibabas-qwen-ai/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-07-15",
-      "title": "DeepMind CEO呼吁美国主导建立全球AI监管机构，或重塑行业规则",
-      "summary": "Google DeepMind CEO Demis Hassabis提议建立全球AI监管机构，赋予其暂停危险前沿模型发布的权力，并主张由美国主导制定全球标准。此举可能重塑全球AI治理框架，影响未来模型发布节奏和合规成本。投资者需关注监管动态对$GOOGL、$MSFT、$META等大模型开发商的潜在影响。",
-      "url": "https://www.theverge.com/tech/965270/google-deepmind-demis-hassabis-global-ai-watchdog",
-      "source": "The Verge"
-    },
-    {
-      "date": "2026-07-15",
-      "title": "苹果Siri AI全面开放公测，iOS 27公测版正式发布",
-      "summary": "苹果发布iOS 27公测版，向所有用户开放AI增强版Siri，无需开发者账号即可体验。这标志着苹果正式加入AI助手大战，其AI功能将在今年秋季正式上线。此举将直接冲击$CHATGPT（OpenAI）和$AMZN Alexa的市场份额，投资者需关注苹果AI生态对硬件销量的拉动效应。",
-      "url": "https://techcrunch.com/2026/07/14/apple-opens-its-new-siri-ai-to-everyone-with-the-ios-27-public-beta/",
+      "date": "2026-07-16",
+      "title": "微软培训销售人员贬低OpenAI与Anthropic，内部AI竞争白热化",
+      "summary": "据报道，微软正培训销售人员向客户推销其自研AI模型，强调比OpenAI和Anthropic的模型更高效、更具成本效益。这一策略转向显示大厂间AI竞争加剧，微软从合作伙伴转为直接竞争者。投资者需警惕此举可能侵蚀OpenAI和Anthropic的市场份额，同时关注微软自研模型能否在性能与成本上形成差异化优势，进而影响AI云服务定价格局。",
+      "url": "https://techcrunch.com/2026/07/15/microsoft-is-reportedly-training-salespeople-to-talk-down-openai-and-anthropic/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-07-15",
-      "title": "全球AI热潮推动中国芯片出口上半年近乎翻倍，供应链格局生变",
-      "summary": "中国海关数据显示，2026年上半年芯片出口额达1772.8亿美元，同比增长超96%，集成电路出口量达1794.4亿个。全球AI硬件需求强劲是主要驱动力，但可能加剧中美科技脱钩风险，影响全球芯片供应链格局。投资者需关注$NVDA、$AMD、$INTC等芯片巨头的供应链调整及地缘政治风险。",
-      "url": "https://www.scmp.com/tech/article/3360503/global-ai-boom-sees-chinas-chip-exports-nearly-double-first-half-year?utm_source=rss_feed",
-      "source": "SCMP Global Economy"
+      "date": "2026-07-16",
+      "title": "Anthropic与黑石押注AI实施服务，万亿级新赛道浮现",
+      "summary": "Anthropic与黑石集团联合推出AI实施公司Ode，核心策略是将前向部署工程师嵌入企业，加速AI应用落地。这标志着顶级风投和AI实验室的投资重心从模型层转向应用实施层，开辟了新的估值赛道。对投资者而言，AI实施服务可能成为下一个万亿级市场，企业级AI部署的效率和规模将决定谁能占据这一高增长领域的主导地位。",
+      "url": "https://techcrunch.com/2026/07/15/anthropic-blackstone-bet-the-next-trillion-dollar-ai-business-is-implementation-not-models/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-07-16",
+      "title": "Thinking Machines Lab发布首款9750亿参数开源多模态模型",
+      "summary": "Thinking Machines Lab推出开源模型Inkling，拥有9750亿参数，支持视频和音频理解。该模型直接挑战Anthropic和OpenAI的闭源模型，标志着开源大语言模型在多模态能力上的重大突破。投资者需关注开源生态对闭源商业模型的冲击，以及Thinking Machines Lab能否凭借此模型在竞争激烈的AI市场中建立差异化优势，影响未来模型定价和市场份额分配。",
+      "url": "https://www.wired.com/story/thinking-machines-lab-releases-its-first-model-inkling/",
+      "source": "Wired"
+    },
+    {
+      "date": "2026-07-16",
+      "title": "DOGE用AI制定住房政策，政府透明度争议升温",
+      "summary": "美国住房和城市发展部（HUD）被曝使用AI制定住房政策，但拒绝公开相关文件，甚至引用不存在的法律特权。这一事件引发对政府AI应用透明度的广泛质疑，可能推动监管收紧。对投资者而言，公共领域AI应用的合规风险上升，未来政策不确定性可能影响AI在政府项目中的部署速度，以及相关AI服务商的合同前景。",
+      "url": "https://www.wired.com/story/doge-deployed-ai-housing-policy/",
+      "source": "Wired"
     }
   ]
 }

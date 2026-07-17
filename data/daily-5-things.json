@@ -1,40 +1,40 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-07-16T23:46:07Z",
+  "exportedAt": "2026-07-17T23:46:06Z",
   "items": [
     {
-      "date": "2026-07-17",
-      "title": "苹果起诉OpenAI：硬件贸易机密纠纷或重塑AI合作格局",
-      "summary": "苹果对OpenAI提起的诉讼涉及硬件贸易机密，可能影响两大巨头在AI硬件领域的合作与竞争。这一法律纠纷叠加OpenAI与Anthropic的竞争，可能进一步削弱OpenAI的市场地位。投资者需关注诉讼进展对苹果AI硬件战略及OpenAI商业模式的潜在冲击。",
-      "url": "https://www.wired.com/story/uncanny-valley-podcase-apple-sued-openai-new-york-data-center-moratorium-cyclosporiasis-outbreak/",
-      "source": "Wired"
-    },
-    {
-      "date": "2026-07-17",
-      "title": "月之暗面Kimi 3模型参数达2-3万亿，逼近Anthropic旗舰",
-      "summary": "据英国《金融时报》报道，月之暗面即将推出的Kimi K3模型参数规模在2万亿至3万亿之间，将成为中国最大的开源AI模型，性能有望接近Anthropic的Opus 4.8。这一进展可能重塑全球开源模型竞争格局，对闭源模型厂商形成压力，投资者应关注中国AI模型的追赶速度及开源生态的演变。",
-      "url": "https://techcrunch.com/2026/07/16/moonshots-upcoming-kimi-3-is-expected-to-close-the-gap-with-anthropics-opus-4-8/",
+      "date": "2026-07-18",
+      "title": "苹果起诉OpenAI窃密，IPO关键期遭重击",
+      "summary": "苹果于上周五对OpenAI提起商业秘密诉讼，指控其存在不当行为，涉及首席硬件官及400多名前苹果员工。OpenAI回应谨慎，但正值其传闻中的IPO关键期，诉讼可能严重阻碍融资进程，直接影响大模型竞争格局。投资者需关注此案对OpenAI估值及行业人才流动的潜在冲击。",
+      "url": "https://techcrunch.com/podcast/apples-lawsuit-couldnt-come-at-a-worse-time-for-openai/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-07-17",
-      "title": "欧盟强制谷歌开放Android和搜索，AI助手市场准入迎变局",
-      "summary": "欧盟依据数字反垄断法规，要求谷歌向竞争对手开放Android和Google Search的关键部分。这一决定可能削弱谷歌对两大核心平台的控制，为AI助手和搜索引擎创造更公平的竞争环境。投资者需评估此举对谷歌广告收入、AI生态护城河以及欧洲市场格局的长期影响。",
-      "url": "https://www.theverge.com/policy/966438/eu-google-android-ai-interoperability-search-data-dma",
-      "source": "The Verge"
+      "date": "2026-07-18",
+      "title": "Databricks估值达1880亿美元，AI数据平台成资本宠儿",
+      "summary": "Databricks成功转型为AI公司，估值飙升至1880亿美元，并发布研究显示开源权重AI模型在编码领域可大幅降低成本。这标志着AI基础设施和数据平台仍是资本追捧的核心赛道，投资者应关注其与云巨头及开源生态的竞争动态。",
+      "url": "https://techcrunch.com/2026/07/17/databricks-hits-188b-valuation-extending-its-run-as-ais-favorite-second-act/",
+      "source": "TechCrunch"
     },
     {
-      "date": "2026-07-17",
-      "title": "能源IPO激增：投资者押注AI算力需求驱动的基建热潮",
-      "summary": "随着AI算力需求爆发，能源公司IPO融资速度创本世纪新高。投资者正通过能源股间接参与AI基础设施投资，数据中心电力需求成为关键驱动力。这一趋势表明，AI投资正从芯片、模型向能源等上游环节扩散，投资者应关注能源板块的估值逻辑及供需平衡风险。",
-      "url": "https://arstechnica.com/information-technology/2026/07/energy-ipos-surge-as-investors-hunt-for-ways-to-play-ai-boom/",
-      "source": "Ars Technica"
+      "date": "2026-07-18",
+      "title": "Anthropic推动州级AI监管加速，头部公司主动塑造政策环境",
+      "summary": "Anthropic去年支持加州和纽约的AI透明度法案，但其州政策负责人认为现有法规可能已过时。此举反映头部AI公司正主动参与政策制定以塑造竞争环境，投资者需警惕监管变化对模型部署和商业模式的潜在影响。",
+      "url": "https://www.wired.com/story/why-anthropic-is-pushing-states-to-regulate-ai-faster/",
+      "source": "Wired"
     },
     {
-      "date": "2026-07-17",
-      "title": "OpenAI推出Codex专用键盘硬件，硬件战略迈出第一步",
-      "summary": "OpenAI发布Codex Micro，一款专为编程平台Codex设计的方形按键键盘。尽管并非与Jony Ive合作的AI设备，但此举标志着OpenAI硬件战略的落地。在苹果诉讼背景下，该产品可能成为OpenAI探索硬件生态的试水之作，投资者需关注其市场反响及对OpenAI商业模式的影响。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/965901/openai-hardware-codex-micro-launch",
+      "date": "2026-07-18",
+      "title": "4亿美元芯片融资转向推理芯片，AI投资重心从训练迁移",
+      "summary": "一笔4亿美元的芯片支持贷款指向推理芯片领域，标志着AI基础设施投资从训练向推理侧迁移的关键信号。首批GPU融资方转向推理芯片，预示AI部署成本结构将发生变化，投资者应关注推理芯片厂商及数据中心运营商的增长机会。",
+      "url": "https://techcrunch.com/2026/07/17/why-the-first-gpu-financiers-are-turning-to-inference-chips-in-a-400-million-deal/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-07-18",
+      "title": "纽约州长用AI分析全州法规，政务AI市场加速落地",
+      "summary": "纽约州长Kathy Hochul虽签署暂停新建AI数据中心的禁令，但正利用AI分析全州所有规则、法规和政策以淘汰过时内容。此举显示政府AI应用加速落地，可能催生新的政务AI市场，投资者需关注AI在公共部门效率提升中的商业化潜力。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/966647/new-york-governor-kathy-hochul-ai-policies",
       "source": "The Verge"
     }
   ]

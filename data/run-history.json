@@ -716,6 +716,43 @@
       "workflowRunId": "29622679294",
       "pushAttempted": false,
       "pushSkippedReason": "already_pushed"
+    },
+    {
+      "date": "2026-07-19",
+      "status": "success",
+      "startedAt": "2026-07-18T23:45:41Z",
+      "finishedAt": "2026-07-18T23:46:12Z",
+      "candidateCount": 28,
+      "selectedCount": 5,
+      "aiCandidateCount": 28,
+      "aiSelectedCount": 5,
+      "geopoliticsCandidateCount": 30,
+      "geopoliticsSelectedCount": 5,
+      "sourcesAvailable": 15,
+      "llmModel": "deepseek-chat",
+      "generated": true,
+      "pushed": true,
+      "committed": true,
+      "schemaValid": true,
+      "warnings": [
+        "政经: Top 5 来源过度集中: {'NPR World': 1, 'SCMP China': 3, 'SCMP Global Economy': 1}"
+      ],
+      "errors": [],
+      "trigger": "external_scheduler",
+      "scheduleSlot": "primary",
+      "workflowRunId": "29665775041",
+      "isDryRun": false,
+      "sendkeyPresent": true,
+      "pushAttempted": true,
+      "pushAttemptedAt": "2026-07-18T23:46:10Z",
+      "pushSkippedReason": "",
+      "pushHttpStatus": 200,
+      "pushResponseCode": 0,
+      "pushResponseMessage": "",
+      "pushResponseBodyPreview": "{\"code\":0,\"message\":\"\",\"data\":{\"pushid\":\"46357867\",\"readkey\":\"SCT6PuKuILH2QdW\",\"error\":\"SUCCESS\",\"errno\":0}}",
+      "serverchanEndpointType": "sct",
+      "pushId": "46357867",
+      "digestHash": "56caff6c7035302d99a7d917ed8e8575be99a83e"
     }
   ]
 }

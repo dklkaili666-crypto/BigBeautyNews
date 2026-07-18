@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-07-17T23:46:06Z",
+  "exportedAt": "2026-07-18T23:46:10Z",
   "items": [
     {
-      "date": "2026-07-18",
-      "title": "苹果起诉OpenAI窃密，IPO关键期遭重击",
-      "summary": "苹果于上周五对OpenAI提起商业秘密诉讼，指控其存在不当行为，涉及首席硬件官及400多名前苹果员工。OpenAI回应谨慎，但正值其传闻中的IPO关键期，诉讼可能严重阻碍融资进程，直接影响大模型竞争格局。投资者需关注此案对OpenAI估值及行业人才流动的潜在冲击。",
-      "url": "https://techcrunch.com/podcast/apples-lawsuit-couldnt-come-at-a-worse-time-for-openai/",
+      "date": "2026-07-19",
+      "title": "苹果起诉OpenAI窃密，或冲击其IPO计划",
+      "summary": "苹果上周五对OpenAI提起商业秘密诉讼，指控其存在不当行为，涉及超过400名前苹果员工跳槽至OpenAI，甚至牵涉其首席硬件官。OpenAI回应谨慎，但时机极为不利——该公司正筹备IPO。此案若持续发酵，可能影响OpenAI估值与上市进程，投资者需关注法律风险对AI行业竞争格局的潜在冲击。",
+      "url": "https://techcrunch.com/video/how-apples-big-lawsuit-could-disrupt-openais-ipo-plans/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-07-18",
-      "title": "Databricks估值达1880亿美元，AI数据平台成资本宠儿",
-      "summary": "Databricks成功转型为AI公司，估值飙升至1880亿美元，并发布研究显示开源权重AI模型在编码领域可大幅降低成本。这标志着AI基础设施和数据平台仍是资本追捧的核心赛道，投资者应关注其与云巨头及开源生态的竞争动态。",
-      "url": "https://techcrunch.com/2026/07/17/databricks-hits-188b-valuation-extending-its-run-as-ais-favorite-second-act/",
+      "date": "2026-07-19",
+      "title": "苹果公开对抗OpenAI，人才与知识产权争夺升级",
+      "summary": "苹果起诉OpenAI的诉状措辞激烈，但专家认为部分指控属行业惯例。苹果此举意在施压OpenAI，而非单纯法律维权。这场公开对抗凸显科技巨头在AI人才与知识产权上的激烈竞争，可能重塑行业合作与竞争边界。投资者应警惕头部企业间摩擦对AI生态的长期影响。",
+      "url": "https://www.theverge.com/podcast/967244/apple-openai-lawsuit-vergecast",
+      "source": "The Verge"
+    },
+    {
+      "date": "2026-07-19",
+      "title": "月之暗面发布新版Kimi模型，引发“AI共产主义”担忧",
+      "summary": "中国AI公司月之暗面（Moonshot AI）本周发布新版Kimi模型，引发业界对“全面AI共产主义”的讨论。该模型性能提升显示中国AI企业持续追赶全球前沿，可能改变中美AI竞争态势。投资者需关注中国AI公司的技术突破及其对全球市场格局的潜在影响。",
+      "url": "https://techcrunch.com/2026/07/18/kimi-threat-or-menace/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-07-18",
-      "title": "Anthropic推动州级AI监管加速，头部公司主动塑造政策环境",
-      "summary": "Anthropic去年支持加州和纽约的AI透明度法案，但其州政策负责人认为现有法规可能已过时。此举反映头部AI公司正主动参与政策制定以塑造竞争环境，投资者需警惕监管变化对模型部署和商业模式的潜在影响。",
-      "url": "https://www.wired.com/story/why-anthropic-is-pushing-states-to-regulate-ai-faster/",
+      "date": "2026-07-19",
+      "title": "谷歌调整Gemini配额机制，开发者成本或上升",
+      "summary": "谷歌更改Gemini使用配额计算方式，用户可能获得更少AI响应次数。此举直接影响开发者与企业客户的使用成本，是谷歌AI产品商业化策略的重要信号。投资者应评估配额调整对Gemini用户留存及营收的潜在影响，以及竞争对手可能借此抢占市场份额。",
+      "url": "https://www.wired.com/story/how-googles-new-gemini-rates-work-and-how-to-track-your-usage/",
       "source": "Wired"
     },
     {
-      "date": "2026-07-18",
-      "title": "4亿美元芯片融资转向推理芯片，AI投资重心从训练迁移",
-      "summary": "一笔4亿美元的芯片支持贷款指向推理芯片领域，标志着AI基础设施投资从训练向推理侧迁移的关键信号。首批GPU融资方转向推理芯片，预示AI部署成本结构将发生变化，投资者应关注推理芯片厂商及数据中心运营商的增长机会。",
-      "url": "https://techcrunch.com/2026/07/17/why-the-first-gpu-financiers-are-turning-to-inference-chips-in-a-400-million-deal/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-07-18",
-      "title": "纽约州长用AI分析全州法规，政务AI市场加速落地",
-      "summary": "纽约州长Kathy Hochul虽签署暂停新建AI数据中心的禁令，但正利用AI分析全州所有规则、法规和政策以淘汰过时内容。此举显示政府AI应用加速落地，可能催生新的政务AI市场，投资者需关注AI在公共部门效率提升中的商业化潜力。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/966647/new-york-governor-kathy-hochul-ai-policies",
-      "source": "The Verge"
+      "date": "2026-07-19",
+      "title": "GPT-5.6用提示词攻克凸优化30年难题",
+      "summary": "GPT-5.6在数学优化领域取得突破性进展，通过提示词成功解决凸优化领域一个存在30年的难题。这展示了大语言模型在学术研究中的潜力，是技术突破的弱信号。投资者需关注此类进展对AI在科研、工程等垂直领域应用价值的提升，以及可能引发的算力需求增长。",
+      "url": "https://old.reddit.com/r/math/comments/1uxj3cy/after_openais_cdc_proof_announcement_gpt56_used_a/",
+      "source": "Hacker News"
     }
   ]
 }

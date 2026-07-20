@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-07-20T02:20:54Z",
+  "exportedAt": "2026-07-20T23:46:12Z",
   "items": [
     {
-      "date": "2026-07-20",
-      "title": "苹果诉讼或阻碍OpenAI硬件与IPO计划",
-      "summary": "在最新一期《Equity》节目中，分析师讨论了苹果（Apple）对OpenAI提起的诉讼是否会影响其备受关注的硬件布局和IPO计划。该诉讼可能对OpenAI的估值和战略方向产生重大影响，投资者需关注大厂竞争格局的变化。",
-      "url": "https://techcrunch.com/2026/07/19/can-an-apple-lawsuit-derail-openais-hardware-plans/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-07-20",
-      "title": "OpenAI将Codex模型上下文窗口从372k缩减至272k",
-      "summary": "OpenAI主动缩减Codex模型的上下文窗口，从372k降至272k，暗示其可能在进行成本优化或架构调整。这一变化将直接影响开发者生态和API定价策略，投资者需评估其对OpenAI服务竞争力和利润率的影响。",
-      "url": "https://github.com/openai/codex/pull/33972/files",
-      "source": "Hacker News"
-    },
-    {
-      "date": "2026-07-20",
-      "title": "非营利组织Current AI加速构建开放AI基础设施",
-      "summary": "非营利组织Current AI致力于打造包容多元文化的开放AI平台，已在设备端和AI聊天等领域取得显著进展。其免费开放模式可能重塑AI服务定价和竞争格局，投资者应关注其对闭源大语言模型商业模式的潜在冲击。",
-      "url": "https://techcrunch.com/2026/07/19/nonprofit-current-ai-is-racing-to-build-the-world-wide-web-of-ai-free-for-all/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-07-20",
-      "title": "Moonshot AI因Kimi K3需求激增暂停新订阅",
-      "summary": "Moonshot AI因Kimi K3模型需求爆发而暂停新用户订阅，反映出国产大语言模型市场的强劲增长。这一动态可能加剧中国AI领域的竞争，投资者需关注其对国内AI公司估值和市场份额的影响。",
-      "url": "https://twitter.com/kimi_moonshot/status/2078855608565207130",
-      "source": "Hacker News"
-    },
-    {
-      "date": "2026-07-20",
-      "title": "作家Dave Eggers警告OpenAI：ChatGPT正在‘沉默一代人’",
-      "summary": "知名作家Dave Eggers在OpenAI内部演讲中批评ChatGPT可能压制新一代的创造力，引发对AI内容生成伦理的广泛讨论。这一事件可能影响监管政策和公众对AI的认知，投资者需评估其对OpenAI品牌和长期发展的潜在风险。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/967630/dave-eggers-openai-chatgpt-silencing-an-entire-generation",
+      "date": "2026-07-21",
+      "title": "中国AI公司连出重拳，挑战美国AI主导地位",
+      "summary": "中国领先AI公司Moonshot和阿里巴巴发布新模型，声称性能可与OpenAI和Anthropic的最佳模型媲美，但成本仅为其一小部分。这波密集发布表明，美国在AI前沿领域的领先优势正日益缩小。投资者需关注：中国低成本高性能模型的崛起可能重塑全球AI竞争格局，影响相关投资方向，尤其是对依赖高成本闭源模型的商业模式构成潜在威胁。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/967781/chinese-ai-models-open-source-moonshot-kimi-k3-alibaba-qwen",
       "source": "The Verge"
+    },
+    {
+      "date": "2026-07-21",
+      "title": "谷歌研发新AI芯片，旨在提升Gemini模型效率",
+      "summary": "据报道，谷歌母公司Alphabet正在研发一款新芯片，旨在使其Gemini模型运行效率大幅提升。此举将强化谷歌在AI领域的战略护城河，通过自研芯片降低推理成本、提升性能。投资者应关注：自研芯片趋势可能重塑AI芯片供应链格局，对现有GPU供应商（如$NVDA 英伟达）构成竞争，同时降低模型部署成本，加速AI应用落地。",
+      "url": "https://techcrunch.com/2026/07/20/google-is-working-on-a-new-ai-chip-designed-to-make-gemini-more-efficient/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-07-21",
+      "title": "OpenAI担忧开源模型威胁，美国应如何应对？",
+      "summary": "关于禁止中国制造的开源大语言模型的讨论，揭示了将AI转化为商业所面临的挑战。开源模型对OpenAI等闭源公司的商业模式构成直接威胁，加剧了AI行业闭源与开源的竞争。投资者需评估：开源生态的快速发展可能侵蚀闭源模型的定价权和市场份额，影响AI公司的长期盈利能力和投资逻辑。",
+      "url": "https://techcrunch.com/2026/07/20/openai-is-scared-of-open-weight-models-should-the-us-be/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-07-21",
+      "title": "索尼起诉AI音乐生成器Udio，指控侵权3万首歌曲",
+      "summary": "索尼音乐娱乐对AI音乐生成器Udio提起新诉讼，指控其侵犯了包括猫王《Hound Dog》、碧昂丝《Say My Name》和哈里·斯泰尔斯《As It Was》在内的3万多首歌曲的版权。该诉讼凸显了AI内容生成领域的重大版权风险。投资者需警惕：此类大规模诉讼可能为AI内容生成商业模式带来法律不确定性，影响相关公司的估值和投资信心。",
+      "url": "https://www.theverge.com/tech/968375/sony-udio-lawsuit-songs-ai-copyright",
+      "source": "The Verge"
+    },
+    {
+      "date": "2026-07-21",
+      "title": "Kimi K3、Qwen 3.8发布，Anthropic潜在危机引发关注",
+      "summary": "Kimi K3和Qwen 3.8等新模型的发布，叠加Anthropic潜在的内部危机，反映出AI模型层竞争已进入白热化阶段。社区对此高度关注。投资者应关注：模型性能快速迭代和竞争加剧可能导致行业洗牌，头部公司（如Anthropic）的稳定性成为关键变量，同时新模型的涌现为下游应用提供了更多选择，可能加速AI生态发展。",
+      "url": "https://www.emergingtrajectories.com/lh/frontier-lab-economics/",
+      "source": "Hacker News"
     }
   ]
 }

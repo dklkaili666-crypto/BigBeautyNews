@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-07-18T23:46:10Z",
+  "exportedAt": "2026-07-20T02:20:54Z",
   "items": [
     {
-      "date": "2026-07-19",
-      "title": "苹果起诉OpenAI窃密，或冲击其IPO计划",
-      "summary": "苹果上周五对OpenAI提起商业秘密诉讼，指控其存在不当行为，涉及超过400名前苹果员工跳槽至OpenAI，甚至牵涉其首席硬件官。OpenAI回应谨慎，但时机极为不利——该公司正筹备IPO。此案若持续发酵，可能影响OpenAI估值与上市进程，投资者需关注法律风险对AI行业竞争格局的潜在冲击。",
-      "url": "https://techcrunch.com/video/how-apples-big-lawsuit-could-disrupt-openais-ipo-plans/",
+      "date": "2026-07-20",
+      "title": "苹果诉讼或阻碍OpenAI硬件与IPO计划",
+      "summary": "在最新一期《Equity》节目中，分析师讨论了苹果（Apple）对OpenAI提起的诉讼是否会影响其备受关注的硬件布局和IPO计划。该诉讼可能对OpenAI的估值和战略方向产生重大影响，投资者需关注大厂竞争格局的变化。",
+      "url": "https://techcrunch.com/2026/07/19/can-an-apple-lawsuit-derail-openais-hardware-plans/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-07-19",
-      "title": "苹果公开对抗OpenAI，人才与知识产权争夺升级",
-      "summary": "苹果起诉OpenAI的诉状措辞激烈，但专家认为部分指控属行业惯例。苹果此举意在施压OpenAI，而非单纯法律维权。这场公开对抗凸显科技巨头在AI人才与知识产权上的激烈竞争，可能重塑行业合作与竞争边界。投资者应警惕头部企业间摩擦对AI生态的长期影响。",
-      "url": "https://www.theverge.com/podcast/967244/apple-openai-lawsuit-vergecast",
-      "source": "The Verge"
-    },
-    {
-      "date": "2026-07-19",
-      "title": "月之暗面发布新版Kimi模型，引发“AI共产主义”担忧",
-      "summary": "中国AI公司月之暗面（Moonshot AI）本周发布新版Kimi模型，引发业界对“全面AI共产主义”的讨论。该模型性能提升显示中国AI企业持续追赶全球前沿，可能改变中美AI竞争态势。投资者需关注中国AI公司的技术突破及其对全球市场格局的潜在影响。",
-      "url": "https://techcrunch.com/2026/07/18/kimi-threat-or-menace/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-07-19",
-      "title": "谷歌调整Gemini配额机制，开发者成本或上升",
-      "summary": "谷歌更改Gemini使用配额计算方式，用户可能获得更少AI响应次数。此举直接影响开发者与企业客户的使用成本，是谷歌AI产品商业化策略的重要信号。投资者应评估配额调整对Gemini用户留存及营收的潜在影响，以及竞争对手可能借此抢占市场份额。",
-      "url": "https://www.wired.com/story/how-googles-new-gemini-rates-work-and-how-to-track-your-usage/",
-      "source": "Wired"
-    },
-    {
-      "date": "2026-07-19",
-      "title": "GPT-5.6用提示词攻克凸优化30年难题",
-      "summary": "GPT-5.6在数学优化领域取得突破性进展，通过提示词成功解决凸优化领域一个存在30年的难题。这展示了大语言模型在学术研究中的潜力，是技术突破的弱信号。投资者需关注此类进展对AI在科研、工程等垂直领域应用价值的提升，以及可能引发的算力需求增长。",
-      "url": "https://old.reddit.com/r/math/comments/1uxj3cy/after_openais_cdc_proof_announcement_gpt56_used_a/",
+      "date": "2026-07-20",
+      "title": "OpenAI将Codex模型上下文窗口从372k缩减至272k",
+      "summary": "OpenAI主动缩减Codex模型的上下文窗口，从372k降至272k，暗示其可能在进行成本优化或架构调整。这一变化将直接影响开发者生态和API定价策略，投资者需评估其对OpenAI服务竞争力和利润率的影响。",
+      "url": "https://github.com/openai/codex/pull/33972/files",
       "source": "Hacker News"
+    },
+    {
+      "date": "2026-07-20",
+      "title": "非营利组织Current AI加速构建开放AI基础设施",
+      "summary": "非营利组织Current AI致力于打造包容多元文化的开放AI平台，已在设备端和AI聊天等领域取得显著进展。其免费开放模式可能重塑AI服务定价和竞争格局，投资者应关注其对闭源大语言模型商业模式的潜在冲击。",
+      "url": "https://techcrunch.com/2026/07/19/nonprofit-current-ai-is-racing-to-build-the-world-wide-web-of-ai-free-for-all/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-07-20",
+      "title": "Moonshot AI因Kimi K3需求激增暂停新订阅",
+      "summary": "Moonshot AI因Kimi K3模型需求爆发而暂停新用户订阅，反映出国产大语言模型市场的强劲增长。这一动态可能加剧中国AI领域的竞争，投资者需关注其对国内AI公司估值和市场份额的影响。",
+      "url": "https://twitter.com/kimi_moonshot/status/2078855608565207130",
+      "source": "Hacker News"
+    },
+    {
+      "date": "2026-07-20",
+      "title": "作家Dave Eggers警告OpenAI：ChatGPT正在‘沉默一代人’",
+      "summary": "知名作家Dave Eggers在OpenAI内部演讲中批评ChatGPT可能压制新一代的创造力，引发对AI内容生成伦理的广泛讨论。这一事件可能影响监管政策和公众对AI的认知，投资者需评估其对OpenAI品牌和长期发展的潜在风险。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/967630/dave-eggers-openai-chatgpt-silencing-an-entire-generation",
+      "source": "The Verge"
     }
   ]
 }

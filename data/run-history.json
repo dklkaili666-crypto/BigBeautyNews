@@ -778,6 +778,43 @@
       "workflowRunId": "29666647794",
       "pushAttempted": false,
       "pushSkippedReason": "already_pushed"
+    },
+    {
+      "date": "2026-07-20",
+      "status": "success",
+      "startedAt": "2026-07-20T02:20:18Z",
+      "finishedAt": "2026-07-20T02:20:56Z",
+      "candidateCount": 23,
+      "selectedCount": 5,
+      "aiCandidateCount": 23,
+      "aiSelectedCount": 5,
+      "geopoliticsCandidateCount": 18,
+      "geopoliticsSelectedCount": 5,
+      "sourcesAvailable": 15,
+      "llmModel": "deepseek-chat",
+      "generated": true,
+      "pushed": true,
+      "committed": true,
+      "schemaValid": true,
+      "warnings": [
+        "Top 5 社区源过多: 2"
+      ],
+      "errors": [],
+      "trigger": "external_scheduler",
+      "scheduleSlot": "primary",
+      "workflowRunId": "29708426129",
+      "isDryRun": false,
+      "sendkeyPresent": true,
+      "pushAttempted": true,
+      "pushAttemptedAt": "2026-07-20T02:20:54Z",
+      "pushSkippedReason": "",
+      "pushHttpStatus": 200,
+      "pushResponseCode": 0,
+      "pushResponseMessage": "",
+      "pushResponseBodyPreview": "{\"code\":0,\"message\":\"\",\"data\":{\"pushid\":\"46511338\",\"readkey\":\"SCTRWtFJb2LNa72\",\"error\":\"SUCCESS\",\"errno\":0}}",
+      "serverchanEndpointType": "sct",
+      "pushId": "46511338",
+      "digestHash": "c4e934911513689dc56b2674bc4b6dc44aff037a"
     }
   ]
 }

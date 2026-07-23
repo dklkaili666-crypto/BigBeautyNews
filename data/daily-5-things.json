@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-07-22T23:46:06Z",
+  "exportedAt": "2026-07-23T23:46:05Z",
   "items": [
     {
-      "date": "2026-07-23",
-      "title": "AMD承诺向Anthropic投资高达50亿美元，绑定AI GPU采购",
-      "summary": "AMD宣布将向AI公司Anthropic投资高达50亿美元，并帮助扩展其算力。作为新合作的一部分，Anthropic将部署高达2吉瓦的AMD Instinct MI450 AI GPU，采用AMD新推出的Helios机架级系统。这笔巨额投资直接改变了AI芯片竞争格局，利好AMD生态，投资者需关注AMD在AI芯片市场对$NVDA英伟达的追赶态势。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/969285/amd-anthropic-ai-infrastructure-deal",
+      "date": "2026-07-24",
+      "title": "AI芯片初创公司Etched获顶级资本青睐，估值飙至103亿美元",
+      "summary": "由三名哈佛辍学生创立的Etched开发出新型芯片和内存组件，声称无需GPU即可加速任意AI模型的推理。103亿美元估值表明，AI推理专用芯片赛道正获得顶级资本认可，可能重塑当前由GPU主导的算力格局，投资者需关注其对$NVDA等传统芯片厂商的潜在冲击。",
+      "url": "https://techcrunch.com/2026/07/23/ai-chip-startup-etched-defies-skeptics-hits-10-3b-valuation-from-big-name-investors/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-07-24",
+      "title": "AMD推出Helios AI机架级系统，正面挑战英伟达",
+      "summary": "AMD发布全新机架级AI系统Helios，计划今年晚些时候开始向客户发货。此举直接挑战芯片竞争对手英伟达，大厂竞争加剧将影响AI算力成本和供应链格局。投资者应评估AMD在AI基础设施领域的市场份额增长潜力及其对$AMD股价的驱动作用。",
+      "url": "https://techcrunch.com/2026/07/23/amd-takes-on-nvidia-with-its-helios-ai-rack-scale-system/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-07-24",
+      "title": "美国两党议员拟推AI“紧急关闭”法案，赋予政府直接干预权",
+      "summary": "据Politico报道，美国众议员Ted Lieu和Nathaniel Moran预计将于周四提出“AI紧急关闭法案”，要求AI公司根据国土安全部命令关闭或限制其系统。若通过，该法案将赋予政府直接干预AI系统运行的权力，对行业合规成本与风险产生深远影响，投资者需关注政策风险对AI公司估值的压制。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/969939/lawmakers-ai-kill-switch-proposal",
       "source": "The Verge"
     },
     {
-      "date": "2026-07-23",
-      "title": "谷歌云业务强劲增长，验证AI巨额投资回报逻辑",
-      "summary": "谷歌云业务因企业采用其AI和AI基础设施服务而蓬勃发展，帮助这家科技巨头报告创纪录的利润。这验证了AI投资回报逻辑，对云厂商估值有支撑。投资者应关注$GOOGL谷歌云业务的持续增长及其对整体盈利的贡献，以及AI基础设施需求对云服务商的长期利好。",
-      "url": "https://techcrunch.com/2026/07/22/google-justifies-its-massive-ai-spending-with-a-booming-cloud-business/",
+      "date": "2026-07-24",
+      "title": "OpenAI向全美用户开放ChatGPT Health，接入Apple Health等数据源",
+      "summary": "ChatGPT Health现已面向所有美国用户开放，并支持整合Apple Health、Function和MyFitnessPal等个人健康数据。此举标志着AI在医疗健康领域进入大规模商业化阶段，投资者应关注OpenAI在医疗AI市场的先发优势及其对$MSFT等合作伙伴的生态协同效应。",
+      "url": "https://techcrunch.com/2026/07/23/openai-makes-chatgpt-health-available-to-all-u-s-users/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-07-23",
-      "title": "中国开源AI模型挑战硅谷闭源模式，威胁定价权",
-      "summary": "随着Anthropic和OpenAI的前沿模型访问受限，中国实验室正推广其开源替代方案，称其稳定、易用且能力日益增强。中国开源AI模型能力提升且在美国政策限制下仍被采用，威胁硅谷闭源模型的定价权。投资者需评估开源模型对$MSFT微软、$GOOGL谷歌等闭源AI提供商的竞争压力。",
-      "url": "https://www.wired.com/story/chinas-open-ai-models-are-challenging-silicon-valleys-playbook/",
+      "date": "2026-07-24",
+      "title": "白宫内部辩论如何应对中国AI崛起，政策走向牵动全球生态",
+      "summary": "特朗普政府内部正就如何应对日益强大的中国AI模型展开辩论。政策走向将直接影响全球AI开源生态和跨境技术合作，投资者需警惕美国对华AI技术限制可能带来的供应链扰动，以及中国AI企业（如百度、阿里巴巴）在自主创新中的投资机会。",
+      "url": "https://www.wired.com/story/the-white-house-is-trying-to-figure-out-what-to-do-about-chinese-ai/",
       "source": "Wired"
-    },
-    {
-      "date": "2026-07-23",
-      "title": "OpenAI基础设施支出飙升至7500亿美元，资本壁垒极高",
-      "summary": "OpenAI到2030年将在基础设施上支出相当于瑞典GDP的金额，达到7500亿美元。这反映了头部玩家资本壁垒极高，行业集中度将加剧。投资者应关注AI领域的高资本支出对$MSFT微软等主要投资者的财务影响，以及小型AI公司面临的生存压力。",
-      "url": "https://techcrunch.com/2026/07/22/openais-ai-spending-spree-has-ballooned-to-750b/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-07-23",
-      "title": "美国与盟友寻求稀土和AI技术脱钩中国，供应链风险上升",
-      "summary": "美国与中国的AI领导权竞争是当今时代的核心竞争之一。美国副国务卿Jacob Helberg讨论美国如何团结盟友，通过确保替代稀土和关键矿产供应链来减少对中国的依赖。这增加了AI硬件成本与地缘投资策略的不确定性，投资者需关注稀土供应链变化对$NVDA英伟达等芯片制造商的影响。",
-      "url": "https://www.scmp.com/news/china/diplomacy/article/3361372/can-us-and-its-allies-break-chinas-grip-rare-earths-and-ai-technology?utm_source=rss_feed",
-      "source": "SCMP China"
     }
   ]
 }

@@ -1,38 +1,6 @@
 {
   "runs": [
     {
-      "date": "2026-07-08",
-      "status": "success",
-      "startedAt": "2026-07-08T03:37:29Z",
-      "finishedAt": "2026-07-08T03:37:51Z",
-      "candidateCount": 78,
-      "selectedCount": 5,
-      "sourcesAvailable": 7,
-      "llmModel": "deepseek-chat",
-      "generated": true,
-      "pushed": true,
-      "committed": true,
-      "schemaValid": true,
-      "warnings": [
-        "Top 5 来源过度集中: {'TechCrunch': 3, 'Wired': 1, 'The Verge': 1}"
-      ],
-      "errors": [],
-      "trigger": "issues",
-      "workflowRunId": "28915625339",
-      "isDryRun": false,
-      "sendkeyPresent": true,
-      "pushAttempted": true,
-      "pushAttemptedAt": "2026-07-08T03:37:49Z",
-      "pushSkippedReason": "",
-      "pushHttpStatus": 200,
-      "pushResponseCode": 0,
-      "pushResponseMessage": "",
-      "pushResponseBodyPreview": "{\"code\":0,\"message\":\"\",\"data\":{\"pushid\":\"44685535\",\"readkey\":\"SCTp82rFaa0KPsL\",\"error\":\"SUCCESS\",\"errno\":0}}",
-      "serverchanEndpointType": "sct",
-      "pushId": "44685535",
-      "digestHash": "4a036f26b7c5f59ed6d4b750fc3074f0d58ca0a8"
-    },
-    {
       "date": "2026-07-09",
       "status": "success",
       "startedAt": "2026-07-09T01:15:29Z",
@@ -905,6 +873,31 @@
       "serverchanEndpointType": "sct",
       "pushId": "47161849",
       "digestHash": "5b979aee8d17ec23d795c7f25f7876f13e6028ae"
+    },
+    {
+      "date": "2026-07-24",
+      "status": "skipped",
+      "startedAt": "2026-07-24T00:15:22Z",
+      "finishedAt": "2026-07-24T00:15:22Z",
+      "candidateCount": 0,
+      "selectedCount": 0,
+      "aiCandidateCount": 0,
+      "aiSelectedCount": 0,
+      "geopoliticsCandidateCount": 0,
+      "geopoliticsSelectedCount": 0,
+      "sourcesAvailable": 0,
+      "llmModel": "",
+      "generated": false,
+      "pushed": true,
+      "committed": true,
+      "schemaValid": true,
+      "warnings": [],
+      "errors": [],
+      "trigger": "external_scheduler",
+      "scheduleSlot": "fallback",
+      "workflowRunId": "30055651737",
+      "pushAttempted": false,
+      "pushSkippedReason": "already_pushed"
     }
   ]
 }

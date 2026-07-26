@@ -1,6 +1,6 @@
 # BigBeautyNews 产品需求文档
 
-> 当前批准基线：v1.8 | 状态：Delivered | 批准日期：2026-07-13 | OPS-01 连续验收完成：2026-07-13
+> 当前批准基线：v1.9 | 状态：Implemented，待用户验收 | 批准日期：2026-07-26
 
 ## 1. 目标、用户与成功标准
 
@@ -108,6 +108,11 @@ push/PR CI 使用 Python 3.12 执行 compileall、Pytest、Ruff、Mypy；日报�
 CI 与日报统一使用批准的 `actions/checkout@v7`、`actions/setup-python@v6`，不引入 Pages actions。
 验收：静态测试拒绝旧版本；远程 CI 至少成功运行一次。
 
+### FR-017：LLM 模型兼容性恢复
+
+GitHub Actions 的 `LLM_MODEL` 使用服务商当前支持的 `deepseek-v4-pro`，保持现有接口、调用次数和流水线不变。
+验收：AI 排序和翻译不再返回模型名 `invalid_request_error`；一次非强制真实运行生成 AI/政经各 5 条，并以一次 Server酱 POST 成功推送。
+
 ## 4. 非功能需求
 
 ### NFR-001：新闻数据零费用
@@ -158,6 +163,11 @@ Secrets 只来自环境变量；仓库、raw JSON 和 Pages 公开例外明确�
 AI 5 + 政经 5、单次 POST、调度、幂等、外部 JSON 和 4 次 LLM 调用保持不变。
 验收：compileall、全量 Pytest、Ruff、Mypy、diff check 和远程 CI 通过；不修改 Pages 设置或 Touyanrili。
 
+### NFR-012：模型配置安全与范围控制
+
+仅在 GitHub Actions Secret 存储中更新 `LLM_MODEL`；不改源代码、新闻筛选、workflow、cron-job.org 或其他 Secret。
+验收：仓库 diff 不含上述实现或配置改动；日志和验收记录不包含 LLM API Key、Server酱 SendKey 或模型 Secret 的值。
+
 ## 5. 依赖、风险与例外
 
 - 依赖：公开 RSS、GitHub Actions、cron-job.org、现有 LLM API、Server酱、公开 GitHub raw URL。
@@ -171,6 +181,7 @@ AI 5 + 政经 5、单次 POST、调度、幂等、外部 JSON 和 4 次 LLM 调�
 - [完整 v1.0–v1.8 清理前历史](docs/archive/PRD-v1.0-v1.8-full.md)
 - [v1.7 实施计划](docs/archive/IMPLEMENTATION_PLAN-v1.7.md)与[验收记录](docs/archive/TRACEABILITY-v1.7.md)
 - [v1.8 实施计划](IMPLEMENTATION_PLAN-v1.8.md)与[验收记录](TRACEABILITY-v1.8.md)
+- [v1.9 修复 PRD](PRD-v1.9.md)、[实施计划](IMPLEMENTATION_PLAN-v1.9.md)与[验收记录](TRACEABILITY-v1.9.md)
 - [OPS-01 外部准时调度最终验收](docs/archive/TRACEABILITY-OPS-01.md)
 
 | 版本 | 日期 | 摘要 |
@@ -178,3 +189,4 @@ AI 5 + 政经 5、单次 POST、调度、幂等、外部 JSON 和 4 次 LLM 调�
 | v1.0–v1.6 | 2026-07-01～2026-07-10 | AI 日报、投研增强、状态与外部准时调度 |
 | v1.7 | 2026-07-13 | 免费 RSS 政经 Top 5、单消息双榜单、内部网页与归档兼容 |
 | v1.8 | 2026-07-13 | 词形修复、CI/生产门槛、Actions 升级、依赖锁、PRD 整理、流水线拆分 |
+| v1.9 | 2026-07-26 | LLM 服务商模型名兼容性修复，采用 `deepseek-v4-pro`，不修改新闻筛选逻辑。 |

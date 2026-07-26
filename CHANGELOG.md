@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+### v1.9 LLM 模型兼容性修复
+- 将 GitHub Actions 的 `LLM_MODEL` 迁移为服务商当前支持的 `deepseek-v4-pro`
+- 真实日报验证恢复 AI/政经双榜单和单次 Server酱推送；不修改新闻筛选、workflow 或 cron-job.org
+
 ### OPS-01 最终验收
 - 2026-07-11～2026-07-13 连续三天在北京时间 7:45±5 分钟内完成自动推送，8:15 兜底均正确幂等跳过
 - 补充计划时间、GitHub createdAt、pushAttemptedAt、Server酱结果与 workflow URL 的最终验收记录

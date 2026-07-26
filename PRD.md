@@ -174,7 +174,7 @@ AI 5 + 政经 5、单次 POST、调度、幂等、外部 JSON 和 4 次 LLM 调�
 - 风险：免费 RSS 可用性变化；依赖锁需兼容 Python 3.12；轻量词典仍可能漏掉未批准的新词形。
 - 对策：逐源隔离错误、严格完整性门槛、CI 与生产前测试、需求驱动扩词。
 - 已知例外：GitHub Pages 当前公开且 built；用户明确选择 v1.8 不处理。它不影响投研日历 raw JSON，但构成额外公开入口。
-- 未决产品决策：无。
+- 未决产品决策：[CR-001](CHANGE_REQUEST-v1.9-001.md) 提议脱敏 Server酱响应中的 `readkey`；该既有字段的权限未在官方公开文档中说明，等待用户决定是否纳入下一轮范围。
 
 ## 6. 文档与版本记录
 
@@ -182,6 +182,7 @@ AI 5 + 政经 5、单次 POST、调度、幂等、外部 JSON 和 4 次 LLM 调�
 - [v1.7 实施计划](docs/archive/IMPLEMENTATION_PLAN-v1.7.md)与[验收记录](docs/archive/TRACEABILITY-v1.7.md)
 - [v1.8 实施计划](IMPLEMENTATION_PLAN-v1.8.md)与[验收记录](TRACEABILITY-v1.8.md)
 - [v1.9 修复 PRD](PRD-v1.9.md)、[实施计划](IMPLEMENTATION_PLAN-v1.9.md)与[验收记录](TRACEABILITY-v1.9.md)
+- [v1.9 CR-001：Server酱响应 readkey 脱敏](CHANGE_REQUEST-v1.9-001.md)
 - [OPS-01 外部准时调度最终验收](docs/archive/TRACEABILITY-OPS-01.md)
 
 | 版本 | 日期 | 摘要 |

@@ -2,38 +2,6 @@
   "runs": [
     {
       "date": "2026-07-10",
-      "status": "success",
-      "startedAt": "2026-07-10T01:15:55Z",
-      "finishedAt": "2026-07-10T01:16:16Z",
-      "candidateCount": 77,
-      "selectedCount": 5,
-      "sourcesAvailable": 7,
-      "llmModel": "deepseek-chat",
-      "generated": true,
-      "pushed": true,
-      "committed": true,
-      "schemaValid": true,
-      "warnings": [
-        "Top 5 来源过度集中: {'The Verge': 1, 'TechCrunch': 3, 'MIT Technology Review': 1}"
-      ],
-      "errors": [],
-      "trigger": "schedule",
-      "workflowRunId": "29061966622",
-      "isDryRun": false,
-      "sendkeyPresent": true,
-      "pushAttempted": true,
-      "pushAttemptedAt": "2026-07-10T01:16:14Z",
-      "pushSkippedReason": "",
-      "pushHttpStatus": 200,
-      "pushResponseCode": 0,
-      "pushResponseMessage": "",
-      "pushResponseBodyPreview": "{\"code\":0,\"message\":\"\",\"data\":{\"pushid\":\"44985688\",\"readkey\":\"SCTyd8nZLqDYc16\",\"error\":\"SUCCESS\",\"errno\":0}}",
-      "serverchanEndpointType": "sct",
-      "pushId": "44985688",
-      "digestHash": "f0a10af4bbe24b1c1803f38258949ee250c246b9"
-    },
-    {
-      "date": "2026-07-10",
       "status": "skipped",
       "startedAt": "2026-07-10T02:34:15Z",
       "finishedAt": "2026-07-10T02:34:15Z",
@@ -901,6 +869,43 @@
       "serverchanEndpointType": "sct",
       "pushId": "47504339",
       "digestHash": "8f4d00f2150e06661695f19ca4108e911645da24"
+    },
+    {
+      "date": "2026-07-27",
+      "status": "success",
+      "startedAt": "2026-07-26T23:45:30Z",
+      "finishedAt": "2026-07-26T23:50:09Z",
+      "candidateCount": 13,
+      "selectedCount": 5,
+      "aiCandidateCount": 13,
+      "aiSelectedCount": 5,
+      "geopoliticsCandidateCount": 17,
+      "geopoliticsSelectedCount": 5,
+      "sourcesAvailable": 15,
+      "llmModel": "deepseek-v4-pro",
+      "generated": true,
+      "pushed": true,
+      "committed": true,
+      "schemaValid": true,
+      "warnings": [
+        "Top 5 社区源过多: 2"
+      ],
+      "errors": [],
+      "trigger": "external_scheduler",
+      "scheduleSlot": "primary",
+      "workflowRunId": "30225909296",
+      "isDryRun": false,
+      "sendkeyPresent": true,
+      "pushAttempted": true,
+      "pushAttemptedAt": "2026-07-26T23:50:07Z",
+      "pushSkippedReason": "",
+      "pushHttpStatus": 200,
+      "pushResponseCode": 0,
+      "pushResponseMessage": "",
+      "pushResponseBodyPreview": "{\"code\":0,\"message\":\"\",\"data\":{\"pushid\":\"47595847\",\"readkey\":\"SCThznyHLwngrv7\",\"error\":\"SUCCESS\",\"errno\":0}}",
+      "serverchanEndpointType": "sct",
+      "pushId": "47595847",
+      "digestHash": "ef97c91f9cd94e1e42157ae9b0fdcc6cc06e02c6"
     }
   ]
 }

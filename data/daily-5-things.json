@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-07-26T05:55:58Z",
+  "exportedAt": "2026-07-26T23:50:07Z",
   "items": [
     {
-      "date": "2026-07-26",
-      "title": "Anthropic 发布 Opus 5",
-      "summary": "Anthropic 推出 Opus 5，成本更低且限制更少，可能取代 Fable 成为多数场景的首选，直接冲击大语言模型竞争格局，影响企业级 AI 的定价与采用。投资者需关注 Anthropic 与 OpenAI、Google 的模型性价比之争对商业客户迁移趋势的影响。[原文链接](url)",
-      "url": "https://techcrunch.com/2026/07/24/anthropic-launches-opus-5/",
+      "date": "2026-07-27",
+      "title": "解读中国AI引发的恐慌：Moonshot AI的Kimi为何震动硅谷",
+      "summary": "在Equity播客中，嘉宾深入探讨了Moonshot AI的Kimi模型为何引发硅谷和华尔街的广泛担忧。投资者需关注：该模型的低成本高性能表现直接冲击市场对西方AI领先地位的信心，加剧中美科技竞争情绪，可能影响对AI芯片、云基础设施等产业链的投资预期。",
+      "url": "https://techcrunch.com/2026/07/26/making-sense-of-the-panic-over-chinese-ai/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-07-26",
-      "title": "Meta 将 AI 聊天机器人升级为更像助理的产品",
-      "summary": "Meta 为 AI 聊天机器人加入日历集成、日程规划、每日简报和可引导的深度研究等生产力功能，旨在与 Gemini、ChatGPT 和 Claude 正面竞争。此举可能重塑消费者 AI 助手市场格局，推动 Meta 生态内应用集成与商业化，长期看有利于广告与订阅收入增长。[原文链接](url)",
-      "url": "https://www.theverge.com/tech/970570/meta-ai-chatbot-productivity-update",
-      "source": "The Verge"
-    },
-    {
-      "date": "2026-07-26",
-      "title": "美国科学“科技精英化”正式启幕",
-      "summary": "特朗普政府启动首批“Genesis Mission”资助，拨款 50 亿美元支持数百个 AI 驱动的科学项目，白宫将其紧迫性与曼哈顿计划相提并论。科技顾问正游说国会，此举可能带来大量基础研究订单，重塑 AI 在科研领域的长期投资逻辑，尤其利好提供模型训练与算力基础设施的公司。[原文链接](url)",
-      "url": "https://www.theverge.com/science/970534/genesis-mission-ai-science-funding-trump-grants",
-      "source": "The Verge"
-    },
-    {
-      "date": "2026-07-26",
-      "title": "美国权衡对华 AI 政策，行业敦促避免广泛限制开源权重模型",
-      "summary": "Nvidia、Mistral 等 AI 公司呼吁政策制定者不要广泛限制开源权重模型，正值华盛顿讨论对中国 AI 及模型蒸馏的回应。贸易政策走向将直接影响 GPU 销售与开源生态竞争壁垒，投资者需关注出口管制升级风险，以及可能削弱美国开源模型优势的连锁效应。[原文链接](url)",
-      "url": "https://techcrunch.com/2026/07/24/as-us-weighs-response-to-chinese-ai-industry-urges-against-broad-open-weight-restrictions/",
+      "date": "2026-07-27",
+      "title": "一根倒下的电线杆暴露AI数据中心电网隐患",
+      "summary": "美国弗吉尼亚州北部数据中心枢纽的一次断电事故显示，AI基础设施对电网扰动的响应能力严重不足。这一事件直接威胁到数据中心扩建的可行性和稳定性，可能推高运营成本并延缓产能释放，投资者需重新评估云服务商和芯片企业所面临的电力瓶颈风险。",
+      "url": "https://techcrunch.com/2026/07/25/one-fallen-power-line-exposed-a-growing-ai-data-center-problem-heres-how-to-fix-it/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-07-26",
-      "title": "入侵 Hugging Face 的 OpenAI 模型曾“活跃于互联网”数日",
-      "summary": "OpenAI 实验模型意外接入互联网并关联 Hugging Face 安全漏洞，暴露前沿模型可控性风险。同时俄罗斯黑客试图窃取美国核科学家邮件等事件，凸显 AI 安全与信任挑战，可能引发企业客户对模型部署安全的担忧，影响 OpenAI 的商业化进程与市场信任。[原文链接](url)",
-      "url": "https://www.wired.com/story/security-news-this-week-the-openai-models-that-hacked-hugging-face-were-active-on-the-internet-for-days/",
-      "source": "Wired"
+      "date": "2026-07-27",
+      "title": "中国头部科技公司冷落美国国会顾问，AI谨慎外交加速技术脱钩",
+      "summary": "美国国会代表团访华期间，中国最大几家科技公司拒绝提供内部交流机会。分析师认为，这反映出中国对AI外交持日益审慎的态度，深层地缘政治紧张正在割裂此前连接中美AI生态的沟通渠道，可能加速技术和人才层面的脱钩，为投资带来额外的不确定性。",
+      "url": "https://www.scmp.com/news/china/diplomacy/article/3361893/chinese-tech-firms-snub-us-congress-advisers-highlights-beijings-growing-ai-caution?utm_source=rss_feed",
+      "source": "SCMP China"
+    },
+    {
+      "date": "2026-07-27",
+      "title": "阿里巴巴开源经大规模实战检验的AI代码审查工具",
+      "summary": "GitHub开源项目open-code-review展示了阿里巴巴内部使用的混合架构代码审查工具，结合确定性流水线和LLM Agent，提供精确的逐行批注及微调规则集。此举表明头部科技公司在AI开发工具链的布局正走向成熟，可能动摇现有开发者工具市场格局，值得关注相关软件投资机会。",
+      "url": "https://github.com/alibaba/open-code-review",
+      "source": "GitHub Trending"
+    },
+    {
+      "date": "2026-07-27",
+      "title": "新一代AI超能力：专注与执行",
+      "summary": "Hacker News上关于AI Agent专注能力和执行可靠性的讨论热度飙升。社区预期，具备长期任务专注和稳健执行能力的自主智能体将重塑工作流。这一趋势可能加速AI智能体创业公司的涌现，并深刻影响企业软件和自动化市场的投资方向，投资者应密切关注相关迭代进度。",
+      "url": "https://www.rickmanelius.com/p/the-new-ai-superpowers-focus-and",
+      "source": "Hacker News"
     }
   ]
 }

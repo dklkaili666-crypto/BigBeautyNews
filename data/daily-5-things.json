@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-07-28T23:48:24Z",
+  "exportedAt": "2026-07-31T00:19:30Z",
   "items": [
     {
-      "date": "2026-07-29",
-      "title": "AI开支骤增令华尔街陷入焦虑",
-      "summary": "财报季，谷歌意外上调资本支出指引，最高至2050亿美元，较上季度190亿美元预期大幅增加，下限也升至1950亿美元，远超市场预期。此举引发投资者对AI投入回报率的深切担忧，科技股估值承受重压，市场开始重新审视AI基础设施投资的可持续性与回报周期。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/972119/ai-stock-fall-google-capex",
+      "date": "2026-07-31",
+      "title": "GPT‑5.6 发布，推进价格性能新边界",
+      "summary": "OpenAI发布GPT-5.6，通过架构和训练优化大幅提升性价比，标志着大语言模型进入更高效的竞争阶段。该模型可能压低推理成本，使下游应用更经济，同时也给竞争对手如Anthropic、谷歌带来压力，投资者需关注模型降价趋势对相关公司毛利率和市场份额的影响。",
+      "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/",
+      "source": "Hacker News"
+    },
+    {
+      "date": "2026-07-31",
+      "title": "微软公开与OpenAI、Anthropic展开空前竞争",
+      "summary": "在财报会上，微软大力推介其自研AI模型Mythos等，直接对标OpenAI和Anthropic的产品，表明公司正从依赖外部合作转向内生竞争。这一战略升级将影响Azure AI服务、Copilot生态及整个AI价值链的投资叙事，投资者需评估微软自研模型能否抢占市场份额，以及这可能对与OpenAI的合作关系产生的长期影响。",
+      "url": "https://techcrunch.com/2026/07/29/microsoft-is-openly-competing-with-openai-anthropic-more-than-ever/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-07-31",
+      "title": "微软从Anthropic投资中获利32亿美元，OpenAI回报喜忧参半",
+      "summary": "微软2026财年Q4财报披露，其投资Anthropic已产生32亿美元收益，验证了头部AI实验室的财务回报潜力，同时指出对OpenAI的投资表现好坏参半。这凸显了在AI竞赛中多元化布局的重要性，投资者可关注其他云厂商或风投在AI初创公司的估值与退出机会。",
+      "url": "https://techcrunch.com/2026/07/29/microsoft-logs-3-2b-from-anthropic-investment-but-openai-was-a-mixed-bag/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-07-31",
+      "title": "库克暗示将推出面向AI重度用户的iCloud+付费层级",
+      "summary": "苹果CEO库克在财报电话会上表示，用户对Apple Intelligence和新Siri AI使用需求旺盛，公司正考虑在iCloud+中提供升级选项，以放开AI使用限制。此举标志着苹果将AI能力直接变现的探索，可能开创消费者AI订阅新模式，对苹果服务收入构成增量，并让投资者重新评估用户付费意愿与ARPU提升空间。",
+      "url": "https://www.theverge.com/tech/973552/apple-ceo-tim-cook-icloud-plus-ai",
       "source": "The Verge"
     },
     {
-      "date": "2026-07-29",
-      "title": "谷歌AI搜索结果覆盖四成搜索",
-      "summary": "数据显示，谷歌AI Overviews已出现在43%的搜索查询中，AI生成答案正快速成为用户获取信息的默认界面。这一转变加速搜索货币化转型，传统广告链接模式面临重构风险。投资者需密切关注广告主行为迁移与商业化进展，以评估其对谷歌核心搜索业务的长期影响。",
-      "url": "https://techcrunch.com/2026/07/27/googles-ai-search-is-rapidly-becoming-the-default-new-data-shows/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-07-29",
-      "title": "美国最大电网或强制数据中心限电",
-      "summary": "为防范大停电，美国最大电网运营商PJM警告可能对数据中心实施临时断电。数据中心的高速建设使电网难堪重负，暴露出算力基础设施的电力瓶颈。这直接威胁大模型训练与推理部署的连续性，可能推高运营成本并延迟项目进度，投资者需评估电力保障对AI投资确定性的冲击。",
-      "url": "https://techcrunch.com/2026/07/28/data-centers-may-face-temporary-power-cuts-to-prevent-blackouts-on-largest-us-grid/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-07-29",
-      "title": "三星半导体人才涌向SK海力士",
-      "summary": "三星半导体工程师正大量流向竞争对手SK海力士，寻求更好待遇与研发环境。人才流失加剧了AI关键存储芯片HBM领域的竞争，可能削弱三星市场地位，重塑供应链格局。SK海力士在HBM领域已具优势，人才流入将巩固其领先地位，影响对英伟达等AI芯片厂商的供货格局。",
-      "url": "https://www.technologyreview.com/2026/07/28/1140853/samsung-chip-workers-exodus-sk-hynix/",
-      "source": "MIT Technology Review"
-    },
-    {
-      "date": "2026-07-29",
-      "title": "纽约时报诉AI巨头版权案成本超两千万",
-      "summary": "纽约时报指控OpenAI和微软侵犯版权，迄今已投入超2000万美元诉讼费，发行人表示将继续抗争。该案判决将界定大语言模型训练数据的版权边界，直接决定内容成本。若原告胜诉，可能引发连锁诉讼，推高AI企业数据授权支出，改变开源模型的数据使用模式，对产业估值影响深远。",
-      "url": "https://www.wired.com/story/the-big-interview-podcast-a-g-sulzberger-new-york-times/",
-      "source": "Wired"
+      "date": "2026-07-31",
+      "title": "谷歌DeepMind新AI模型可控制机器人全身运动",
+      "summary": "谷歌DeepMind推出Gemini Robotics 2，将AI控制从上半身扩展到全身动作，包括脚和指尖，显著提升人形机器人的灵巧性与任务执行能力。这一进展加速了具身智能的商业化落地，对机器人制造商、物流自动化等行业产生直接推动，投资者可关注相关硬件和软件公司的投资热情与竞争动态。",
+      "url": "https://www.theverge.com/tech/973276/google-deepmind-gemini-robotics-2-whole-body",
+      "source": "The Verge"
     }
   ]
 }

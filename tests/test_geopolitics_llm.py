@@ -211,6 +211,8 @@ def test_geopolitics_translation_retries_length_violation_with_safe_metadata(
     assert '"min_length":50' in retry_prompt
     assert '"max_length":500' in retry_prompt
     assert "完整 5 条" in retry_prompt
+    assert "Unicode 字符" in retry_prompt
+    assert "45 个字符以内" in retry_prompt
     assert private_summary not in retry_prompt
     assert private_summary not in caplog.text
     assert result[1]["summary_cn"] == "修正政经摘要" * 20

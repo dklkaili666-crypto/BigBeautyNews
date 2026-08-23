@@ -327,6 +327,8 @@ def test_translation_retries_length_violation_with_safe_metadata(monkeypatch, ca
     assert '"min_length":1' in retry_prompt
     assert '"max_length":50' in retry_prompt
     assert "完整 5 条" in retry_prompt
+    assert "Unicode 字符" in retry_prompt
+    assert "45 个字符以内" in retry_prompt
     assert private_title not in retry_prompt
     assert private_title not in caplog.text
     assert result[0]["title_cn"] == "修正标题0"

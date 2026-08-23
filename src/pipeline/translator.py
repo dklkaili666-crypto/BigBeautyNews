@@ -98,7 +98,9 @@ def _build_length_retry_instruction(violations: list[dict[str, Any]]) -> str:
         "\n\n上一次结果存在长度违规。请只使用以下长度元数据纠正："
         f"{metadata}。"
         "请重新生成完整 5 条 items JSON，不要只返回违规条目。"
-        "title_cn 必须为 1–50 字；summary_cn 必须为 50–500 字，目标为 100–200 字。"
+        "title_cn 必须为 1–50 个 Unicode 字符，中文、英文字母、数字、空格和标点"
+        "每个都计 1 个字符；为留出计数余量，请将标题控制在 45 个字符以内。"
+        "summary_cn 必须为 50–500 字，目标为 100–200 字。"
     )
 
 

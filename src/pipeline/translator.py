@@ -94,14 +94,24 @@ def _build_length_retry_instruction(violations: list[dict[str, Any]]) -> str:
         ensure_ascii=False,
         separators=(",", ":"),
     )
-    return (
+    instruction = (
         "\n\n上一次结果存在长度违规。请只使用以下长度元数据纠正："
         f"{metadata}。"
         "请重新生成完整 5 条 items JSON，不要只返回违规条目。"
         "title_cn 必须为 1–50 个 Unicode 字符，中文、英文字母、数字、空格和标点"
-        "每个都计 1 个字符；为留出计数余量，请将标题控制在 45 个字符以内。"
+        "每个都计 1 个字符。"
         "summary_cn 必须为 50–500 字，目标为 100–200 字。"
     )
+    if any(item.get("field") == "title_cn" for item in violations):
+        instruction += (
+            "对元数据中 field=title_cn 的 rank，必须重新概括为更短标题，"
+            "不要保留所有修饰细节，并控制在 35 个 Unicode 字符以内。"
+        )
+    if any(item.get("field") == "summary_cn" for item in violations):
+        instruction += (
+            "对元数据中 field=summary_cn 的 rank，必须重新撰写为 100–200 字摘要。"
+        )
+    return instruction
 
 
 def _format_length_error(label: str, violations: list[dict[str, Any]]) -> str:

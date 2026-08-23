@@ -1,7 +1,7 @@
 # BigBeautyNews v2.0 实施计划
 
 - 基于 PRD：v2.0（2026-08-23 Approved）
-- 状态：Approved
+- 状态：Completed via v2.1
 - 批准人：项目所有者
 - 批准证据：2026-08-23 明确回复“批准实施计划 v2.0”
 - 目标：切换 `deepseek-v4-flash`，修复非思考结构化输出兼容性，并以真实微信推送完成验收
@@ -20,8 +20,8 @@
 | T20-002 空响应与非法 JSON 诊断 | FR-020；NFR-013 | 在上述三个 pipeline 文件中加入最小的响应校验：空/空白 `content` 使用明确异常；非法 JSON 保留独立错误类别；日志仅记录模型、尝试次数及可用的 `finish_reason`、内容/思考长度和 token 用量，不记录原文或思考文本。扩展对应单元测试覆盖空内容、非法 JSON、两次尝试及日志脱敏。 | T20-001 | `python -m pytest -q tests/test_llm_pipeline.py tests/test_geopolitics_llm.py`：13 passed；空内容、非法 JSON、两次尝试及日志脱敏断言通过。 | Completed |
 | T20-003 流水线失败与兜底语义回归 | FR-020；FR-021；NFR-014 | 在 `tests/test_main.py` 增加排序失败集成测试，证明失败发生在持久化和 Server酱之前，状态为失败且 `pushed=false`；复用 `tests/test_external_scheduler.py` 与 `tests/test_push_state.py` 验证当天未写成功日期时兜底仍运行、成功后同日运行跳过。现有 `src/main.py` 预期无需修改。 | T20-002 | `python -m pytest -q tests/test_main.py tests/test_external_scheduler.py tests/test_push_state.py`：11 passed；失败不持久化、不推送、不写成功日期。 | Completed |
 | T20-004 全量回归、范围审查与发布实现 | FR-019；FR-020；FR-021；NFR-013；NFR-014；NFR-015 | 运行完整测试和静态检查，检查差异只包含获批范围；将代码、测试、已批准 PRD 和已批准计划提交并推送到现有 `master`，使生产工作流加载新实现。 | T20-001～T20-003 | 71 tests、Ruff、Mypy、`compileall`、`git diff --check` 全部通过；提交 `38fef4e` 已推送到远端 `master`；无范围外实现改动。 | Completed |
-| T20-005 生产模型切换与真实验收 | FR-018；FR-022；NFR-013；NFR-015 | 只将 GitHub Actions Secret `LLM_MODEL` 更新为 `deepseek-v4-flash`，不改 Base/Key；随后以 `trigger_source=manual`、`force_push=false` 触发一次真实工作流并等待完成。若 API 不支持批准的参数，停止并提交变更请求。 | T20-004；当天尚未成功推送，或等待下一业务日 | Secret 已切换；[run 32639343904](https://github.com/dklkaili666-crypto/BigBeautyNews/actions/runs/32639343904) 证明 Flash 非思考 JSON 排序成功，但 AI 翻译两次违反长度规则，未推送；后续由已批准 PRD v2.1 的 T21-003 续验。 | Superseded by v2.1 |
-| T20-006 逐项验收与交付记录 | FR-018～FR-022；NFR-013～NFR-015 | 新增 `TRACEABILITY-v2.0.md`，更新 `CHANGELOG.md` 和必要的 PRD/计划状态；记录测试命令、提交、workflow URL 和安全的运行证据，不记录凭证或模型原文。完成孤儿任务/改动检查后提交并推送验收文档。 | T20-005 | 验收与交付记录并入已批准 PRD v2.1 的 T21-004，统一覆盖 v2.0 与 v2.1。 | Superseded by v2.1 |
+| T20-005 生产模型切换与真实验收 | FR-018；FR-022；NFR-013；NFR-015 | 只将 GitHub Actions Secret `LLM_MODEL` 更新为 `deepseek-v4-flash`，不改 Base/Key；随后以 `trigger_source=manual`、`force_push=false` 触发一次真实工作流并等待完成。若 API 不支持批准的参数，停止并提交变更请求。 | T20-004；当天尚未成功推送，或等待下一业务日 | Secret 已切换；首次运行 32639343904 暴露翻译长度问题并形成 CR-v2.0-001；最终由 v2.1 的 [run 32640356597](https://github.com/dklkaili666-crypto/BigBeautyNews/actions/runs/32640356597) 完成 5+5、单次推送和数据提交。 | Completed via v2.1 |
+| T20-006 逐项验收与交付记录 | FR-018～FR-022；NFR-013～NFR-015 | 新增 `TRACEABILITY-v2.0.md`，更新 `CHANGELOG.md` 和必要的 PRD/计划状态；记录测试命令、提交、workflow URL 和安全的运行证据，不记录凭证或模型原文。完成孤儿任务/改动检查后提交并推送验收文档。 | T20-005 | `TRACEABILITY-v2.1.md` 统一覆盖 v2.0 与 v2.1 全部需求、测试、提交和真实运行。 | Completed via v2.1 |
 
 ## 验证命令
 

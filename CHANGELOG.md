@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+### v2.1 Flash 翻译长度纠偏
+- AI 与政经翻译首次违反标题/摘要长度时，第二次请求仅追加 rank、字段、实际长度和允许范围，并要求重新生成完整 5 条 JSON
+- 第二次纠偏不包含第一轮模型标题、摘要、原始响应或思考内容；两次上限和既有代码验收阈值保持不变
+- 根据真实 Flash 行为补充 Unicode 字符计数和字段定向短标题/摘要要求；不截断或由代码改写模型内容
+- 真实 workflow 32640356597 成功生成 AI 5 条与政经 5 条，单次 Server酱推送并提交 2026-08-23 数据
+
+### v2.0 DeepSeek Flash 迁移
+- 生产 `LLM_MODEL` 从 `deepseek-v4-pro` 切换为 `deepseek-v4-flash`，API Base/Key 保持不变
+- AI/政经排序与翻译四处调用显式关闭思考模式并请求 JSON 对象
+- 空响应、非法 JSON和长度违规日志只记录安全元数据；连续两次失败仍在持久化和推送前终止
+
 ### v1.9 LLM 模型兼容性修复
 - 将 GitHub Actions 的 `LLM_MODEL` 迁移为服务商当前支持的 `deepseek-v4-pro`
 - 真实日报验证恢复 AI/政经双榜单和单次 Server酱推送；不修改新闻筛选、workflow 或 cron-job.org

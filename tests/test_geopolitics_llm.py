@@ -160,3 +160,58 @@ def test_geopolitics_translation_uses_existing_client_and_preserves_metadata(mon
     assert result[0]["url"] == "https://trusted/0"
     assert result[0]["regions"] == ["global"]
     assert result[0]["originalTitle"] == "English 0"
+
+
+def test_geopolitics_translation_retries_length_violation_with_safe_metadata(
+    monkeypatch,
+    caplog,
+):
+    private_summary = "PRIVATE_GEO_FIRST_SUMMARY"
+    first = {
+        "items": [
+            {
+                "rank": i + 1,
+                "title_cn": f"政经标题{i}",
+                "summary_cn": private_summary if i == 1 else "政经摘要" * 30,
+            }
+            for i in range(5)
+        ]
+    }
+    corrected = {
+        "items": [
+            {"rank": i + 1, "title_cn": f"修正政经标题{i}", "summary_cn": "修正政经摘要" * 20}
+            for i in range(5)
+        ]
+    }
+    client, completions = fake_client([
+        json.dumps(first, ensure_ascii=False),
+        json.dumps(corrected, ensure_ascii=False),
+    ])
+    monkeypatch.setattr(translator, "OpenAI", lambda **kwargs: client)
+    top5 = [
+        {
+            "rank": i + 1,
+            "title": f"English {i}",
+            "url": f"https://trusted/{i}",
+            "source": "BBC World",
+            "regions": ["global"],
+        }
+        for i in range(5)
+    ]
+
+    result = translator.translate_geopolitics_top5(
+        top5, "key", "https://api", "model"
+    )
+
+    assert len(completions.calls) == 2
+    retry_prompt = completions.calls[1]["messages"][1]["content"]
+    assert '"rank":2' in retry_prompt
+    assert '"field":"summary_cn"' in retry_prompt
+    assert f'"actual_length":{len(private_summary)}' in retry_prompt
+    assert '"min_length":50' in retry_prompt
+    assert '"max_length":500' in retry_prompt
+    assert "完整 5 条" in retry_prompt
+    assert private_summary not in retry_prompt
+    assert private_summary not in caplog.text
+    assert result[1]["summary_cn"] == "修正政经摘要" * 20
+    assert result[1]["regions"] == ["global"]

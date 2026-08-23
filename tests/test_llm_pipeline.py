@@ -281,3 +281,93 @@ def test_translation_retries_invalid_json_without_logging_response(monkeypatch, 
     assert "AI 翻译: LLM 返回非法 JSON" in caplog.text
     assert raw_response not in caplog.text
     assert "PRIVATE_REASONING_OUTPUT" not in caplog.text
+
+
+def test_translation_retries_length_violation_with_safe_metadata(monkeypatch, caplog):
+    private_title = "PRIVATE_AI_FIRST_TITLE_" + "长" * 40
+    first = {
+        "items": [
+            {
+                "rank": i + 1,
+                "title_cn": private_title if i == 0 else f"标题{i}",
+                "summary_cn": "摘要" * 60,
+            }
+            for i in range(5)
+        ]
+    }
+    corrected = {
+        "items": [
+            {"rank": i + 1, "title_cn": f"修正标题{i}", "summary_cn": "修正摘要" * 30}
+            for i in range(5)
+        ]
+    }
+    client, completions = fake_client([
+        json.dumps(first, ensure_ascii=False),
+        json.dumps(corrected, ensure_ascii=False),
+    ])
+    monkeypatch.setattr(translator, "OpenAI", lambda **kwargs: client)
+    top5 = [
+        {
+            "rank": i + 1,
+            "title": f"English {i}",
+            "url": f"https://trusted/{i}",
+            "source": "Trusted",
+            "tags": ["AI"],
+        }
+        for i in range(5)
+    ]
+
+    result = translator.translate_top5(top5, "key", "https://api", "model")
+
+    assert completions.calls == 2
+    retry_prompt = completions.requests[1]["messages"][1]["content"]
+    assert '"rank":1' in retry_prompt
+    assert '"field":"title_cn"' in retry_prompt
+    assert '"actual_length":' in retry_prompt
+    assert '"min_length":1' in retry_prompt
+    assert '"max_length":50' in retry_prompt
+    assert "完整 5 条" in retry_prompt
+    assert private_title not in retry_prompt
+    assert private_title not in caplog.text
+    assert result[0]["title_cn"] == "修正标题0"
+    assert result[0]["url"] == "https://trusted/0"
+    assert result[0]["tags"] == ["AI"]
+
+
+def test_translation_fails_after_two_length_violations_without_logging_output(
+    monkeypatch,
+    caplog,
+):
+    private_title = "PRIVATE_AI_INVALID_TITLE_" + "长" * 40
+    invalid = {
+        "items": [
+            {
+                "rank": i + 1,
+                "title_cn": private_title if i == 0 else f"标题{i}",
+                "summary_cn": "摘要" * 60,
+            }
+            for i in range(5)
+        ]
+    }
+    client, completions = fake_client([
+        json.dumps(invalid, ensure_ascii=False),
+        json.dumps(invalid, ensure_ascii=False),
+    ])
+    monkeypatch.setattr(translator, "OpenAI", lambda **kwargs: client)
+    top5 = [
+        {
+            "rank": i + 1,
+            "title": f"English {i}",
+            "url": f"https://trusted/{i}",
+            "source": "Trusted",
+        }
+        for i in range(5)
+    ]
+
+    with pytest.raises(RuntimeError, match="LLM 翻译调用失败"):
+        translator.translate_top5(top5, "key", "https://api", "model")
+
+    assert completions.calls == 2
+    assert "AI 翻译长度违规" in caplog.text
+    assert private_title not in caplog.text
+    assert "PRIVATE_REASONING_OUTPUT" not in caplog.text

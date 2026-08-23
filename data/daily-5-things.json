@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-08-23T12:47:29Z",
+  "exportedAt": "2026-08-23T23:46:00Z",
   "items": [
     {
-      "date": "2026-08-23",
-      "title": "英伟达与数据中心开发商Cloverleaf合作",
-      "summary": "英伟达持续加码数据中心投资，与Cloverleaf合作，强化其在AI基础设施领域的战略布局。此举不仅巩固了英伟达在AI算力供应链中的核心地位，也反映了AI数据中心对芯片需求的强劲增长。投资者应关注英伟达在数据中心领域的持续投入，以及其对AI算力市场的长期影响。",
-      "url": "https://techcrunch.com/2026/08/21/nvidia-partners-with-data-center-developer-cloverleaf/",
+      "date": "2026-08-24",
+      "title": "前沿AI实验室仍未明确失控模型遏制方案",
+      "summary": "一项新研究发现，领先的AI实验室鲜有公开记录的遏制失控模型计划，这引发了对AI系统日益展现出意外且潜在危险行为时准备程度的质疑。对于投资者而言，AI安全治理的缺口直接影响监管预期和投资风险评估，是评估前沿实验室长期价值的关键因素。",
+      "url": "https://techcrunch.com/2026/08/22/frontier-ai-labs-still-wont-say-how-theyd-contain-a-rogue-model/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-08-23",
-      "title": "中美在东南亚争夺AI盟友，考验地区不结盟立场",
-      "summary": "东南亚长期坚持不选边站，但中美在AI领域的竞争正考验这一立场。美国推动“Pax Silica”构建无中国供应链，中国则邀请邻国加入世界人工智能合作组织（WAICO）。地缘政治博弈将重塑全球AI产业格局，影响供应链布局和投资方向。投资者需关注东南亚国家的政策动向，以及中美AI竞争对全球科技产业链的潜在影响。",
-      "url": "https://www.scmp.com/news/china/diplomacy/article/3364853/china-and-us-push-southeast-asia-over-their-ai-blocs-will-it-test-regions-non-alignment?utm_source=rss_feed",
+      "date": "2026-08-24",
+      "title": "中国学者：美国确保AI供应链安全的努力注定失败",
+      "summary": "一位知名政治学家表示，美国最新的AI和供应链举措注定失败，并认为限制美国公司获取低成本中国模型的努力将适得其反。他主张美中应合作推动全球经济发展，以产生维持长期增长所需的外部需求。美国如Pax Silica、芯片联盟和稀土联盟等框架可能重塑全球芯片和模型生态，影响相关企业估值和地缘风险。",
+      "url": "https://www.scmp.com/news/china/diplomacy/article/3364973/us-efforts-secure-ai-supply-chains-are-doomed-fail-says-chinese-academic?utm_source=rss_feed",
       "source": "SCMP China"
     },
     {
-      "date": "2026-08-23",
-      "title": "DeepMind校友创立的AI实验室发布科研智能体Faraday",
-      "summary": "英国AI实验室Inherent由DeepMind校友创立，其发布的AI智能体Faraday在复现科学论文任务上超越Anthropic和OpenAI，展示了新玩家在AI科研领域的潜力。这一突破可能加速科学发现，并对AI竞争格局产生深远影响。投资者应关注Inherent等新兴实验室的技术进展，以及其在科研自动化领域的商业化前景。",
-      "url": "https://techcrunch.com/2026/08/22/inherent-founded-by-deepmind-alumni-says-its-ai-teammate-just-outperformed-anthropic-and-openai-at-replicating-research/",
+      "date": "2026-08-24",
+      "title": "Anthropic最强AI模型用户增长乏力，廉价工具受青睐",
+      "summary": "Anthropic的最佳AI模型在吸引用户方面遇到困难，而更便宜的工具则蓬勃发展。这一趋势反映出AI商业化竞争加剧，可能影响Anthropic的市场地位和融资估值。投资者需关注其用户增长策略和市场竞争格局的变化。",
+      "url": "https://www.ft.com/content/5ee49718-c258-4f01-aa32-7e5b76ae5245",
+      "source": "Hacker News"
+    },
+    {
+      "date": "2026-08-24",
+      "title": "用受版权保护的书籍训练AI模型是否合法？情况复杂",
+      "summary": "大多数已出版作者在不知情或未同意的情况下，为威胁其生计的AI工具的发展做出了贡献。这看似违法，但法律界定复杂。版权诉讼风险可能增加AI训练成本，影响依赖大规模数据训练的模型公司的商业模式，投资者需评估相关法律风险。",
+      "url": "https://techcrunch.com/2026/08/23/is-it-legal-to-train-ai-models-on-copyrighted-books-its-complicated/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-08-23",
-      "title": "OpenAI呼吁加州加强AI安全法案",
-      "summary": "OpenAI转变态度，呼吁加州加强SB 53 AI安全法案，此前该公司曾反对该法案。这一转变可能影响AI监管政策走向，增加行业合规成本。投资者需关注监管动态对AI公司运营和商业模式的影响，以及OpenAI在政策博弈中的战略意图。",
-      "url": "https://techcrunch.com/2026/08/22/openai-says-california-should-strengthen-its-ai-safety-bill/",
+      "date": "2026-08-24",
+      "title": "神秘新模型Ox Alpha背后是谁？",
+      "summary": "一个名为Ox Alpha的神秘新AI模型引发了互联网某些角落的疯狂猜测。这一神秘模型可能预示着技术突破或新玩家入场，值得投资者密切关注其潜在影响和市场动态。",
+      "url": "https://techcrunch.com/2026/08/23/whos-behind-the-new-stealth-model-ox-alpha/",
       "source": "TechCrunch"
-    },
-    {
-      "date": "2026-08-23",
-      "title": "OpenAI开源轻量级编码代理Codex",
-      "summary": "OpenAI开源了轻量级编码代理Codex，可在终端运行，GitHub Trending高星，反映开发者社区对AI编程工具的热切需求。此举可能推动AI编程生态发展，降低开发门槛，并影响AI编程工具市场的竞争格局。投资者应关注开源AI工具对开发者社区和软件行业的影响。",
-      "url": "https://github.com/openai/codex",
-      "source": "GitHub Trending"
     }
   ]
 }

@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-08-11T23:47:46Z",
+  "exportedAt": "2026-08-23T12:47:29Z",
   "items": [
     {
-      "date": "2026-08-12",
-      "title": "ChatGPT与Gemini双双突破10亿用户，消费级AI迈入主流",
-      "summary": "谷歌CEO皮查伊宣布Gemini月活用户达10亿，成为公司增长最快产品。这已是谷歌第14款10亿级产品。OpenAI的ChatGPT此前也已突破该里程碑。两大AI助手同时达到此量级，标志着消费级AI主流化加速，将重塑市场对其商业化潜力的预期，并加剧生态竞争。投资者需关注随用户规模而来的基础设施投入与变现模式能否同步跟進。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/978113/chatgpt-gemini-1-billion-users",
-      "source": "The Verge"
-    },
-    {
-      "date": "2026-08-12",
-      "title": "扎克伯格发布AI万字宣言，勾勒“个人超级智能”愿景",
-      "summary": "Meta CEO扎克伯格发表6500字长文，阐述其对“个人超级智能”系统的构想，这是Meta AI正在构建的能力。文章明确了Meta将AI深度融入社交生态的战略方向。此举可能影响开源模型与闭源生态之间的竞争格局，投资者需评估Meta如何通过Llama等模型实现技术领先与商业闭环，以及这一愿景对广告业务和硬件生态的潜在催化。",
-      "url": "https://techcrunch.com/2026/08/10/mark-zuckerbergs-ai-manifesto-is-exactly-why-people-dont-like-ai/",
+      "date": "2026-08-23",
+      "title": "英伟达与数据中心开发商Cloverleaf合作",
+      "summary": "英伟达持续加码数据中心投资，与Cloverleaf合作，强化其在AI基础设施领域的战略布局。此举不仅巩固了英伟达在AI算力供应链中的核心地位，也反映了AI数据中心对芯片需求的强劲增长。投资者应关注英伟达在数据中心领域的持续投入，以及其对AI算力市场的长期影响。",
+      "url": "https://techcrunch.com/2026/08/21/nvidia-partners-with-data-center-developer-cloverleaf/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-08-12",
-      "title": "英伟达发布Nemotron 3.5 Lightning模型与NeMo Switchyard",
-      "summary": "英伟达推出新模型Nemotron 3.5 Lightning及NeMo Switchyard，进一步夯实其在AI基础设施与模型层的双重优势。新品有望巩固英伟达在训练和推理硬件需求上的主导地位，并丰富其软件生态。投资者可将其视为英伟达从芯片扩展到全栈平台的关键信号，对数据中心业务和长期客户粘性构成利好。",
-      "url": "https://blogs.nvidia.com/blog/nemotron-lightning-switchyard-rtx-dgx/",
-      "source": "Hacker News"
+      "date": "2026-08-23",
+      "title": "中美在东南亚争夺AI盟友，考验地区不结盟立场",
+      "summary": "东南亚长期坚持不选边站，但中美在AI领域的竞争正考验这一立场。美国推动“Pax Silica”构建无中国供应链，中国则邀请邻国加入世界人工智能合作组织（WAICO）。地缘政治博弈将重塑全球AI产业格局，影响供应链布局和投资方向。投资者需关注东南亚国家的政策动向，以及中美AI竞争对全球科技产业链的潜在影响。",
+      "url": "https://www.scmp.com/news/china/diplomacy/article/3364853/china-and-us-push-southeast-asia-over-their-ai-blocs-will-it-test-regions-non-alignment?utm_source=rss_feed",
+      "source": "SCMP China"
     },
     {
-      "date": "2026-08-12",
-      "title": "OpenAI又一高管出走，COO Brad Lightcap离职创业",
-      "summary": "OpenAI前COO、特殊项目负责人Brad Lightcap宣布离职，结束八年任期，称将投身“新事业”。这是近期又一位核心高管退出，管理层持续动荡为OpenAI的产品迭代与商业化进程增添不确定性。在筹备超千亿美元融资的关键时期，人才流失或影响公司战略延续性，投资者需关注其高层稳定性及后续领导力缺失风险。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/978048/brad-lightcap-openai-executive-departure",
-      "source": "The Verge"
-    },
-    {
-      "date": "2026-08-12",
-      "title": "成立仅两月，AI智能体初创River AI获11亿美元融资",
-      "summary": "由xAI联合创始人Igor Babuschkin创立的River AI，专注于个人AI智能体，成立仅两个月即完成由General Catalyst领投的11亿美元融资。这笔巨额交易反映出资本对AI智能体赛道的高度狂热，有望催生新的独角兽并加速技术场景落地。投资者应关注其产品能否在短期兑现大额估值预期，以及巨头在该领域的应对策略。",
-      "url": "https://techcrunch.com/2026/08/11/general-catalyst-leads-1-1b-round-into-2-month-old-river-ai/",
+      "date": "2026-08-23",
+      "title": "DeepMind校友创立的AI实验室发布科研智能体Faraday",
+      "summary": "英国AI实验室Inherent由DeepMind校友创立，其发布的AI智能体Faraday在复现科学论文任务上超越Anthropic和OpenAI，展示了新玩家在AI科研领域的潜力。这一突破可能加速科学发现，并对AI竞争格局产生深远影响。投资者应关注Inherent等新兴实验室的技术进展，以及其在科研自动化领域的商业化前景。",
+      "url": "https://techcrunch.com/2026/08/22/inherent-founded-by-deepmind-alumni-says-its-ai-teammate-just-outperformed-anthropic-and-openai-at-replicating-research/",
       "source": "TechCrunch"
+    },
+    {
+      "date": "2026-08-23",
+      "title": "OpenAI呼吁加州加强AI安全法案",
+      "summary": "OpenAI转变态度，呼吁加州加强SB 53 AI安全法案，此前该公司曾反对该法案。这一转变可能影响AI监管政策走向，增加行业合规成本。投资者需关注监管动态对AI公司运营和商业模式的影响，以及OpenAI在政策博弈中的战略意图。",
+      "url": "https://techcrunch.com/2026/08/22/openai-says-california-should-strengthen-its-ai-safety-bill/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-08-23",
+      "title": "OpenAI开源轻量级编码代理Codex",
+      "summary": "OpenAI开源了轻量级编码代理Codex，可在终端运行，GitHub Trending高星，反映开发者社区对AI编程工具的热切需求。此举可能推动AI编程生态发展，降低开发门槛，并影响AI编程工具市场的竞争格局。投资者应关注开源AI工具对开发者社区和软件行业的影响。",
+      "url": "https://github.com/openai/codex",
+      "source": "GitHub Trending"
     }
   ]
 }

@@ -14,6 +14,47 @@ from pipeline.geopolitics import classify_regions
 logger = logging.getLogger(__name__)
 MAX_ATTEMPTS = 2
 
+
+def _usage_value(usage: Any, name: str) -> Any:
+    if isinstance(usage, dict):
+        return usage.get(name)
+    return getattr(usage, name, None)
+
+
+def _safe_response_metadata(response: Any | None) -> str:
+    if response is None:
+        return "response_metadata=unavailable"
+    choices = getattr(response, "choices", None) or []
+    choice = choices[0] if choices else None
+    message = getattr(choice, "message", None)
+    content = getattr(message, "content", None) or ""
+    reasoning = getattr(message, "reasoning_content", None) or ""
+    usage = getattr(response, "usage", None)
+    return (
+        f"finish_reason={getattr(choice, 'finish_reason', None) or 'unknown'} "
+        f"content_length={len(str(content))} "
+        f"reasoning_length={len(str(reasoning))} "
+        f"prompt_tokens={_usage_value(usage, 'prompt_tokens')} "
+        f"completion_tokens={_usage_value(usage, 'completion_tokens')} "
+        f"total_tokens={_usage_value(usage, 'total_tokens')}"
+    )
+
+
+def _parse_json_response(response: Any, operation: str) -> dict[str, Any]:
+    content = response.choices[0].message.content or ""
+    content = content.strip().removeprefix("```json").removeprefix("```").removesuffix("```").strip()
+    if not content:
+        raise ValueError(f"{operation}: LLM 返回空内容")
+    try:
+        result = json.loads(content)
+    except json.JSONDecodeError as exc:
+        raise ValueError(
+            f"{operation}: LLM 返回非法 JSON (line={exc.lineno}, column={exc.colno})"
+        ) from exc
+    if not isinstance(result, dict):
+        raise ValueError(f"{operation}: LLM JSON 顶层必须为对象")
+    return result
+
 RANKING_PROMPT = """你是一位全球宏观与地缘政治投资分析师。请从候选中选出今天最重要的 5 个事件。
 
 排序优先级：
@@ -101,6 +142,7 @@ def call_geopolitics_ranking(
     retry_instruction = ""
     last_error: Exception | None = None
     for attempt in range(1, MAX_ATTEMPTS + 1):
+        response: Any | None = None
         try:
             response = client.chat.completions.create(
                 model=model,
@@ -113,10 +155,10 @@ def call_geopolitics_ranking(
                 ],
                 temperature=0.3,
                 max_tokens=4096,
+                response_format={"type": "json_object"},
+                extra_body={"thinking": {"type": "disabled"}},
             )
-            content = response.choices[0].message.content or ""
-            content = content.strip().removeprefix("```json").removeprefix("```").removesuffix("```").strip()
-            result = json.loads(content)
+            result = _parse_json_response(response, "政经排序")
             top5 = result.get("top5")
             if not isinstance(top5, list) or len(top5) != 5:
                 raise ValueError("政经排序结果必须包含恰好 5 条")
@@ -142,7 +184,15 @@ def call_geopolitics_ranking(
             return result
         except Exception as exc:
             last_error = exc
-            logger.warning("政经 LLM 排序第 %s/%s 次失败: %s", attempt, MAX_ATTEMPTS, exc)
+            logger.warning(
+                "政经排序失败 model=%s attempt=%s/%s error_type=%s error=%s %s",
+                model,
+                attempt,
+                MAX_ATTEMPTS,
+                type(exc).__name__,
+                exc,
+                _safe_response_metadata(response),
+            )
     raise RuntimeError("政经 LLM 排序调用失败") from last_error
 
 

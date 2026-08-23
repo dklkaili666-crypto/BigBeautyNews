@@ -1,6 +1,8 @@
 import json
 from types import SimpleNamespace
 
+import pytest
+
 from pipeline import ranker, translator
 
 
@@ -8,11 +10,24 @@ class FakeCompletions:
     def __init__(self, contents):
         self.contents = iter(contents)
         self.calls = 0
+        self.requests = []
 
     def create(self, **kwargs):
         self.calls += 1
+        self.requests.append(kwargs)
         return SimpleNamespace(
-            choices=[SimpleNamespace(message=SimpleNamespace(content=next(self.contents)))]
+            choices=[SimpleNamespace(
+                message=SimpleNamespace(
+                    content=next(self.contents),
+                    reasoning_content="PRIVATE_REASONING_OUTPUT",
+                ),
+                finish_reason="length",
+            )],
+            usage=SimpleNamespace(
+                prompt_tokens=100,
+                completion_tokens=200,
+                total_tokens=300,
+            ),
         )
 
 
@@ -38,8 +53,50 @@ def test_ranking_retries_invalid_json_and_selects_unique_articles(monkeypatch):
     selected = ranker.select_top5(articles, ranking)
 
     assert completions.calls == 2
+    assert completions.requests[0]["response_format"] == {"type": "json_object"}
+    assert completions.requests[0]["extra_body"] == {
+        "thinking": {"type": "disabled"}
+    }
     assert [item["rank"] for item in selected] == [1, 2, 3, 4, 5]
     assert selected[0]["tags"] == ["AI"]
+
+
+def test_ranking_retries_empty_content_with_safe_metadata(monkeypatch, caplog):
+    client, completions = fake_client([None, "   "])
+    monkeypatch.setattr(ranker, "OpenAI", lambda **kwargs: client)
+    articles = [
+        {"title": f"Article {i}", "url": f"https://{i}", "source": "X"}
+        for i in range(6)
+    ]
+
+    with pytest.raises(RuntimeError, match="LLM 排序调用失败"):
+        ranker.call_llm_ranking(articles, "key", "https://api", "model")
+
+    assert completions.calls == 2
+    assert "AI 排序: LLM 返回空内容" in caplog.text
+    assert "model=model attempt=2/2 error_type=ValueError" in caplog.text
+    assert "finish_reason=length" in caplog.text
+    assert "content_length=3" in caplog.text
+    assert "reasoning_length=" in caplog.text
+    assert "total_tokens=300" in caplog.text
+    assert "PRIVATE_REASONING_OUTPUT" not in caplog.text
+
+
+def test_ranking_retries_invalid_json_without_logging_response(monkeypatch, caplog):
+    raw_response = "PRIVATE_INVALID_MODEL_OUTPUT"
+    client, completions = fake_client([raw_response, raw_response])
+    monkeypatch.setattr(ranker, "OpenAI", lambda **kwargs: client)
+    articles = [
+        {"title": f"Article {i}", "url": f"https://{i}", "source": "X"}
+        for i in range(6)
+    ]
+
+    with pytest.raises(RuntimeError, match="LLM 排序调用失败"):
+        ranker.call_llm_ranking(articles, "key", "https://api", "model")
+
+    assert completions.calls == 2
+    assert "AI 排序: LLM 返回非法 JSON" in caplog.text
+    assert raw_response not in caplog.text
 
 
 def test_ranking_retries_when_top_five_are_dominated_by_one_source(monkeypatch):
@@ -178,7 +235,7 @@ def test_translation_accepts_near_target_summary_and_preserves_metadata(monkeypa
             for i in range(5)
         ]
     }
-    client, _ = fake_client([json.dumps(translated, ensure_ascii=False)])
+    client, completions = fake_client([json.dumps(translated, ensure_ascii=False)])
     monkeypatch.setattr(translator, "OpenAI", lambda **kwargs: client)
     top5 = [
         {
@@ -193,7 +250,34 @@ def test_translation_accepts_near_target_summary_and_preserves_metadata(monkeypa
 
     result = translator.translate_top5(top5, "key", "https://api", "model")
 
+    assert completions.requests[0]["response_format"] == {"type": "json_object"}
+    assert completions.requests[0]["extra_body"] == {
+        "thinking": {"type": "disabled"}
+    }
     assert result[0]["url"] == "https://trusted/0"
     assert result[0]["source"] == "Trusted"
     assert result[0]["originalTitle"] == "English 0"
     assert "建议范围" in caplog.text
+
+
+def test_translation_retries_invalid_json_without_logging_response(monkeypatch, caplog):
+    raw_response = "PRIVATE_TRANSLATION_OUTPUT"
+    client, completions = fake_client([raw_response, raw_response])
+    monkeypatch.setattr(translator, "OpenAI", lambda **kwargs: client)
+    top5 = [
+        {
+            "rank": i + 1,
+            "title": f"English {i}",
+            "url": f"https://trusted/{i}",
+            "source": "Trusted",
+        }
+        for i in range(5)
+    ]
+
+    with pytest.raises(RuntimeError, match="LLM 翻译调用失败"):
+        translator.translate_top5(top5, "key", "https://api", "model")
+
+    assert completions.calls == 2
+    assert "AI 翻译: LLM 返回非法 JSON" in caplog.text
+    assert raw_response not in caplog.text
+    assert "PRIVATE_REASONING_OUTPUT" not in caplog.text

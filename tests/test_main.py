@@ -108,6 +108,73 @@ def test_rank_and_translate_stages_keep_four_llm_calls(monkeypatch):
     ]
 
 
+def test_pipeline_ranking_failure_does_not_persist_or_push(monkeypatch, tmp_path):
+    ai_articles = [
+        {
+            "title": f"AI article {index}",
+            "url": f"https://ai.example.com/{index}",
+            "source": "TechCrunch",
+        }
+        for index in range(6)
+    ]
+    geopolitics_articles = [
+        {
+            "title": f"Policy article {index}",
+            "url": f"https://policy.example.com/{index}",
+            "source": "BBC World",
+        }
+        for index in range(6)
+    ]
+    downstream_calls = []
+
+    def fail_ranking(*args, **kwargs):
+        raise RuntimeError("AI排序失败: LLM 排序调用失败")
+
+    monkeypatch.setattr(
+        main,
+        "fetch_source_pools",
+        lambda: (ai_articles, geopolitics_articles, []),
+    )
+    monkeypatch.setattr(main, "enrich_articles", lambda values: values)
+    monkeypatch.setattr(
+        main,
+        "prepare_candidate_pools",
+        lambda *args, **kwargs: (ai_articles, ai_articles, geopolitics_articles),
+    )
+    monkeypatch.setattr(main, "rank_candidate_pools", fail_ranking)
+    monkeypatch.setattr(
+        main,
+        "persist_digest_outputs",
+        lambda *args, **kwargs: downstream_calls.append("persist"),
+    )
+    monkeypatch.setattr(
+        main,
+        "deliver_wechat_push",
+        lambda *args, **kwargs: downstream_calls.append("push"),
+    )
+    monkeypatch.setattr(main, "LLM_API_KEY", "test-key")
+    monkeypatch.setattr(main, "DATA_DIR", str(tmp_path / "data"))
+    monkeypatch.setattr(
+        main,
+        "PUSH_HISTORY_PATH",
+        str(tmp_path / "data" / "push-history.json"),
+    )
+
+    result = main.run_pipeline()
+
+    assert result == {
+        "status": "error",
+        "reason": "AI排序失败: LLM 排序调用失败",
+    }
+    assert downstream_calls == []
+    assert not (tmp_path / "data" / "push-history.json").exists()
+    status = json.loads((tmp_path / "data" / "run-status.json").read_text("utf-8"))
+    assert status["status"] == "failed"
+    assert status["generated"] is False
+    assert status["pushed"] is False
+    assert status["schemaValid"] is False
+
+
 def test_pipeline_retries_failed_push_then_skips_duplicate_success(
     monkeypatch, tmp_path
 ):

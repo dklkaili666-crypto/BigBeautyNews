@@ -1,6 +1,8 @@
 import json
 from types import SimpleNamespace
 
+import pytest
+
 from pipeline import geopolitics_ranker, translator
 
 
@@ -12,7 +14,18 @@ class FakeCompletions:
     def create(self, **kwargs):
         self.calls.append(kwargs)
         return SimpleNamespace(
-            choices=[SimpleNamespace(message=SimpleNamespace(content=next(self.contents)))]
+            choices=[SimpleNamespace(
+                message=SimpleNamespace(
+                    content=next(self.contents),
+                    reasoning_content="PRIVATE_GEOPOLITICS_REASONING",
+                ),
+                finish_reason="length",
+            )],
+            usage=SimpleNamespace(
+                prompt_tokens=110,
+                completion_tokens=210,
+                total_tokens=320,
+            ),
         )
 
 
@@ -70,6 +83,10 @@ def test_geopolitics_ranking_retries_missing_us_and_selects_five(monkeypatch):
         "https://example.com/5",
     ]
     assert completions.calls[0]["model"] == "model"
+    assert completions.calls[0]["response_format"] == {"type": "json_object"}
+    assert completions.calls[0]["extra_body"] == {
+        "thinking": {"type": "disabled"}
+    }
 
 
 def test_geopolitics_ranking_rejects_duplicate_indices(monkeypatch):
@@ -86,6 +103,22 @@ def test_geopolitics_ranking_rejects_duplicate_indices(monkeypatch):
         assert "排序调用失败" in str(exc)
     else:
         raise AssertionError("duplicate indices should fail")
+
+
+def test_geopolitics_ranking_retries_empty_content_safely(monkeypatch, caplog):
+    articles = [article(i, "BBC World", ["global"]) for i in range(6)]
+    client, completions = fake_client([None, ""])
+    monkeypatch.setattr(geopolitics_ranker, "OpenAI", lambda **kwargs: client)
+
+    with pytest.raises(RuntimeError, match="政经 LLM 排序调用失败"):
+        geopolitics_ranker.call_geopolitics_ranking(
+            articles, "key", "https://api", "model"
+        )
+
+    assert len(completions.calls) == 2
+    assert "政经排序: LLM 返回空内容" in caplog.text
+    assert "total_tokens=320" in caplog.text
+    assert "PRIVATE_GEOPOLITICS_REASONING" not in caplog.text
 
 
 def test_geopolitics_translation_uses_existing_client_and_preserves_metadata(monkeypatch):
@@ -120,6 +153,10 @@ def test_geopolitics_translation_uses_existing_client_and_preserves_metadata(mon
 
     assert captured == {"api_key": "key", "base_url": "https://api"}
     assert completions.calls[0]["model"] == "model"
+    assert completions.calls[0]["response_format"] == {"type": "json_object"}
+    assert completions.calls[0]["extra_body"] == {
+        "thinking": {"type": "disabled"}
+    }
     assert result[0]["url"] == "https://trusted/0"
     assert result[0]["regions"] == ["global"]
     assert result[0]["originalTitle"] == "English 0"

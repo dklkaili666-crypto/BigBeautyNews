@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-08-23T23:46:00Z",
+  "exportedAt": "2026-08-24T23:46:07Z",
   "items": [
     {
-      "date": "2026-08-24",
-      "title": "前沿AI实验室仍未明确失控模型遏制方案",
-      "summary": "一项新研究发现，领先的AI实验室鲜有公开记录的遏制失控模型计划，这引发了对AI系统日益展现出意外且潜在危险行为时准备程度的质疑。对于投资者而言，AI安全治理的缺口直接影响监管预期和投资风险评估，是评估前沿实验室长期价值的关键因素。",
-      "url": "https://techcrunch.com/2026/08/22/frontier-ai-labs-still-wont-say-how-theyd-contain-a-rogue-model/",
+      "date": "2026-08-25",
+      "title": "Hugging Face据悉洽谈130亿美元收购",
+      "summary": "据TechCrunch报道，Hugging Face已收到约130亿美元估值的收购要约。然而，创始人对社区的责任感使得出售能否成行存疑。若收购达成，将重塑AI开源生态与竞争格局，对投资者具有重大战略意义。投资者需关注收购进展及其对开源AI领域的影响。",
+      "url": "https://techcrunch.com/2026/08/24/hugging-face-reportedly-in-talks-to-be-acquired-for-13b/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-08-24",
-      "title": "中国学者：美国确保AI供应链安全的努力注定失败",
-      "summary": "一位知名政治学家表示，美国最新的AI和供应链举措注定失败，并认为限制美国公司获取低成本中国模型的努力将适得其反。他主张美中应合作推动全球经济发展，以产生维持长期增长所需的外部需求。美国如Pax Silica、芯片联盟和稀土联盟等框架可能重塑全球芯片和模型生态，影响相关企业估值和地缘风险。",
-      "url": "https://www.scmp.com/news/china/diplomacy/article/3364973/us-efforts-secure-ai-supply-chains-are-doomed-fail-says-chinese-academic?utm_source=rss_feed",
-      "source": "SCMP China"
+      "date": "2026-08-25",
+      "title": "General Intuition获60亿美元估值融资",
+      "summary": "General Intuition正在开发基础模型，训练通用AI智能体在空间和时间中移动。该公司正与Valor Ventures、Point72 Ventures和Seven Seven Six等新投资者洽谈，以60亿美元投前估值融资。高估值融资显示资本对具身智能和基础模型的持续看好，是AI投资的重要风向标。投资者应关注该公司的技术进展和商业化路径。",
+      "url": "https://techcrunch.com/2026/08/24/valor-point72-back-general-intuition-at-6b-valuation-as-ai-startup-pushes-into-robotics/",
+      "source": "TechCrunch"
     },
     {
-      "date": "2026-08-24",
-      "title": "Anthropic最强AI模型用户增长乏力，廉价工具受青睐",
-      "summary": "Anthropic的最佳AI模型在吸引用户方面遇到困难，而更便宜的工具则蓬勃发展。这一趋势反映出AI商业化竞争加剧，可能影响Anthropic的市场地位和融资估值。投资者需关注其用户增长策略和市场竞争格局的变化。",
-      "url": "https://www.ft.com/content/5ee49718-c258-4f01-aa32-7e5b76ae5245",
+      "date": "2026-08-25",
+      "title": "OpenAI构建全场景AI智能体，能否普及？",
+      "summary": "OpenAI正推动AI智能体从软件工程师扩展到大众市场。这一举措可能定义下一代人机交互范式，影响整个AI应用生态。投资者需关注OpenAI智能体的功能、易用性和商业化潜力，以及其对现有AI应用和竞争格局的潜在影响。",
+      "url": "https://techcrunch.com/2026/08/24/openai-is-building-an-ai-agent-for-everything-will-everyone-use-them/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-08-25",
+      "title": "OpenAI下调GPT-5.6价格，至少持续至11月21日",
+      "summary": "OpenAI宣布下调GPT-5.6的价格，该优惠至少持续至11月21日。此举直接降低AI应用成本，可能刺激需求并影响竞争对手的定价策略。投资者应关注价格调整对OpenAI收入的影响，以及是否引发行业价格战，进而影响AI产业链的利润分配。",
+      "url": "https://developers.openai.com/api/docs/pricing",
       "source": "Hacker News"
     },
     {
-      "date": "2026-08-24",
-      "title": "用受版权保护的书籍训练AI模型是否合法？情况复杂",
-      "summary": "大多数已出版作者在不知情或未同意的情况下，为威胁其生计的AI工具的发展做出了贡献。这看似违法，但法律界定复杂。版权诉讼风险可能增加AI训练成本，影响依赖大规模数据训练的模型公司的商业模式，投资者需评估相关法律风险。",
-      "url": "https://techcrunch.com/2026/08/23/is-it-legal-to-train-ai-models-on-copyrighted-books-its-complicated/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-08-24",
-      "title": "神秘新模型Ox Alpha背后是谁？",
-      "summary": "一个名为Ox Alpha的神秘新AI模型引发了互联网某些角落的疯狂猜测。这一神秘模型可能预示着技术突破或新玩家入场，值得投资者密切关注其潜在影响和市场动态。",
-      "url": "https://techcrunch.com/2026/08/23/whos-behind-the-new-stealth-model-ox-alpha/",
-      "source": "TechCrunch"
+      "date": "2026-08-25",
+      "title": "中国煤制油技术突破，煤炭增值700%",
+      "summary": "据南华早报报道，全球最大的煤制油工厂将煤炭转化为可驱动火箭和用作机器润滑油的油品，价值提升七倍。该生产线由中国能源集团宁夏煤业公司建设，上月全面投产，2025年处理煤炭2400万吨，占该地区年产量的四分之一。此技术突破可能影响能源和材料领域，但AI关联度较低，作为次要新闻。",
+      "url": "https://www.scmp.com/news/china/science/article/3365027/china-boosts-coals-economic-value-700-after-turning-it-liquids-report?utm_source=rss_feed",
+      "source": "SCMP China"
     }
   ]
 }

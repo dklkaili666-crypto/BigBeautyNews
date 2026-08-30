@@ -1,40 +1,40 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-08-29T23:46:13Z",
+  "exportedAt": "2026-08-30T23:45:59Z",
   "items": [
     {
-      "date": "2026-08-30",
-      "title": "英伟达AI优势超越GPU，数据中心系统创新成关键",
-      "summary": "新一代数据中心系统通过智能流量控制提升效率，而非单纯增加处理器周期。英伟达在系统层面的创新将巩固其AI基础设施主导地位，对AI芯片竞争格局产生重大影响。投资者需关注英伟达在系统级优化上的持续投入，以及竞争对手在类似技术上的跟进情况。",
-      "url": "https://techcrunch.com/2026/08/29/nvidias-ai-advantage-is-moving-beyond-the-gpu/",
+      "date": "2026-08-31",
+      "title": "索尼音乐与华纳查普尔起诉Anthropic侵权",
+      "summary": "索尼音乐出版公司和华纳查普尔音乐公司已在美国加州北区联邦地区法院对Anthropic提起诉讼，要求对数万件受版权保护的作品进行赔偿。每件作品最高索赔15万美元，对于每次去除可识别版权数据的行为，额外索赔最高2.5万美元。此案可能重塑生成式AI的合规成本与商业模式，直接影响AI公司的法律风险与估值。投资者需关注诉讼结果对AI内容生成领域的潜在影响。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/986438/sony-music-warner-chappell-anthropic-lawsuit-copyright",
+      "source": "The Verge"
+    },
+    {
+      "date": "2026-08-31",
+      "title": "马斯克加速燃气轮机生产引发污染争议",
+      "summary": "埃隆·马斯克表示，秘密的SpaceX铸造厂将使他能够铸造自己的涡轮叶片，并比其他人提前18个月实现燃气发电，但这是对一种燃料的押注，而这种燃料已在马斯克及其他人的涡轮机所在地区引发诉讼和健康研究。尽管并非纯AI，但此举反映了马斯克的能源战略与AI算力扩张的关联，可能影响AI基础设施投资。投资者需评估其能源项目对AI数据中心供电的潜在影响。",
+      "url": "https://techcrunch.com/2026/08/30/musks-faster-path-to-more-gas-turbines-comes-with-pollution-problem/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-08-30",
-      "title": "索尼音乐与华纳起诉Anthropic，指控大规模盗版",
-      "summary": "最新诉讼范围广泛，聚焦非法盗版指控。大型唱片公司起诉AI公司Anthropic，涉及AI版权侵权，可能引发行业性法律风险，影响AI模型训练和商业化。投资者需评估版权诉讼对AI公司运营成本及合规策略的潜在影响，以及可能推动的行业监管变化。",
-      "url": "https://techcrunch.com/2026/08/29/sony-music-warner-sue-anthropic-alleging-a-brazen-campaign-of-intellectual-property-theft/",
+      "date": "2026-08-31",
+      "title": "卡特彼勒将采矿自动化经验应用于AI部署",
+      "summary": "卡特彼勒数十年来一直在偏远矿区部署自主机器，现在正将这一经验应用于AI部署。这显示传统工业巨头正将自动化经验迁移至AI领域，表明AI在工业场景的落地趋势。对于工业AI投资具有参考价值，投资者可关注卡特彼勒在AI领域的战略布局及其对工业自动化市场的潜在影响。",
+      "url": "https://techcrunch.com/2026/08/30/caterpillar-is-bringing-to-ai-deployment-what-it-learned-from-automating-mining/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-08-30",
-      "title": "Anthropic首次胜诉，法院裁定五角大楼标签非法",
-      "summary": "联邦法官裁定特朗普政府将Anthropic标记为供应链风险属非法行为，为AI公司应对政府监管提供先例。随着第二起诉讼在华盛顿继续，此裁决可能影响AI行业政策环境。投资者应关注政府监管动态对AI公司估值和运营的潜在影响。",
-      "url": "https://techcrunch.com/2026/08/28/anthropic-gets-its-first-court-win-over-the-pentagons-supply-chain-risk-label/",
-      "source": "TechCrunch"
+      "date": "2026-08-31",
+      "title": "得州州长冻结Flock监控摄像头资金",
+      "summary": "随着对Flock AI监控摄像头的反对声浪高涨，得克萨斯州州长格雷格·阿博特冻结了州政府对其的支出。此举恰逢《得州论坛报》调查报道发布，该报道显示该州在Flock摄像头上花费超过3000万美元，这些资金主要来自保险单附加的1美元费用。政府叫停AI监控摄像头资金，反映AI伦理与监管风险，可能影响公共安全AI公司的市场前景。投资者需关注监管动态对相关公司的影响。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/986541/texas-governor-abbott-flock-cameras",
+      "source": "The Verge"
     },
     {
-      "date": "2026-08-30",
-      "title": "开放权重AI公司成硅谷并购热点",
-      "summary": "大量资本涌入免费提供模型的企业，开放权重AI公司成为并购热门目标。这一趋势反映AI竞争格局变化，对投资策略有指导意义。投资者需关注并购活动对行业整合、技术扩散及商业模式的影响。",
-      "url": "https://techcrunch.com/2026/08/28/open-weight-ai-companies-are-the-valleys-hottest-acquisition-targets/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-08-30",
-      "title": "科学Agent技能库：将AI智能体变为科学家",
-      "summary": "K-Dense-AI/scientific-agent-skills是用于科学的Agent技能库，拥有165个即用技能和100多个科学数据库，覆盖生物、化学、医学和药物发现，已被全球19万科学家使用。兼容Cursor、Claude Code等工具，显示AI在科研领域应用加速，可能催生新的投资机会。",
-      "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "date": "2026-08-31",
+      "title": "免费LLM API聚合项目freellmapi登GitHub热榜",
+      "summary": "GitHub Trending上的freellmapi项目提供每月74亿token的免费LLM API聚合，整合34个免费LLM提供商和635个免费模型端点，统一通过一个/v1端点访问，并支持自定义OpenAI兼容端点，具备智能路由、自动故障转移和加密密钥功能，但仅限个人实验使用。该项目热度高，反映开发者对低成本模型访问的需求，可能影响模型分发与商业化策略。投资者可关注其对AI模型API市场的潜在影响。",
+      "url": "https://github.com/tashfeenahmed/freellmapi",
       "source": "GitHub Trending"
     }
   ]

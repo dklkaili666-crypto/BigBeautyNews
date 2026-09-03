@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-09-02T23:46:13Z",
+  "exportedAt": "2026-09-03T23:46:11Z",
   "items": [
     {
-      "date": "2026-09-03",
-      "title": "特朗普政府支持OpenAI，纽约时报版权诉讼或迎转机",
-      "summary": "美国政府致信法院，支持OpenAI关于AI训练使用他人知识产权属于合理使用的论点。这一政策背书为AI训练数据的合法性提供了关键支持，直接影响行业法律风险与商业模式。投资者需关注此案进展，因其可能为AI公司降低版权合规成本，但也可能引发内容创作者更多诉讼。",
-      "url": "https://www.wired.com/story/trump-administration-sides-with-ai-giants-new-york-times-lawsuit/",
-      "source": "Wired"
-    },
-    {
-      "date": "2026-09-03",
-      "title": "OpenAI新推理技术引发AI安全专家担忧",
-      "summary": "OpenAI的Astra模型将采用“递归深度”技术，使其能够跳出大多数推理模型的顺序思维模式。这一创新可能带来安全风险，专家担忧其不可预测性。该技术若广泛应用，可能影响AI安全监管框架，投资者需评估相关风险与监管动态。",
-      "url": "https://techcrunch.com/2026/09/02/openais-new-reasoning-technique-alarms-ai-safety-experts/",
+      "date": "2026-09-04",
+      "title": "英伟达确认将以129亿美元收购Hugging Face",
+      "summary": "英伟达已同意以129.3亿美元收购Hugging Face，将这一最受欢迎的开源AI模型、数据集和工具托管平台纳入全球最大AI芯片制造商麾下。Hugging Face成立于2016年，为AI开发者提供分享项目和数据的在线平台。此次收购标志着英伟达向AI软件生态和开源社区深度渗透，有望重塑AI产业链竞争格局。投资者需关注英伟达在AI软件领域的战略布局及其对芯片销售的反哺效应。",
+      "url": "https://techcrunch.com/2026/09/03/nvidia-confirms-it-will-buy-hugging-face-for-12-9-billion/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-09-03",
-      "title": "Palo Alto Networks以5亿美元收购Console，AI IT服务自动化整合加速",
-      "summary": "据消息人士称，Palo Alto Networks以5亿美元收购了Thrive支持的Console。此次收购使红杉资本支持的Serval成为AI IT服务自动化领域的实际领导者。行业观察家认为，这标志着该领域整合加速，竞争格局正在重塑。投资者应关注网络安全与AI自动化交叉领域的并购机会。",
-      "url": "https://techcrunch.com/2026/09/02/palo-alto-networks-paid-500m-for-thrive-backed-console-sources-say/",
+      "date": "2026-09-04",
+      "title": "OpenAI发布Astra模型，宣称进入AGI时代",
+      "summary": "OpenAI发布其强大且具争议性的新模型Astra，声称其代表了“计算机和浏览器使用的新前沿”，并以无与伦比的“速度、准确性和安全性”处理任务。Astra的推出可能引发AI安全与监管的重大讨论，影响行业标准。投资者需评估Astra的技术突破对AI应用场景的扩展潜力，以及可能带来的监管风险。",
+      "url": "https://techcrunch.com/2026/09/03/openai-launches-astra-its-powerful-and-controversial-new-model/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-09-03",
-      "title": "谷歌推出AI设计工具Google Pics，正面挑战Canva和Adobe",
-      "summary": "谷歌推出AI优先的设计工具Google Pics，用户通过提示词而非手动设计来创作。此举显示谷歌在创意软件市场深入布局，直接与Canva和Adobe竞争。大厂以AI战略切入创意工具市场，可能改变行业格局，投资者需关注其对现有玩家的潜在冲击。",
-      "url": "https://techcrunch.com/2026/09/01/googles-answer-to-canva-is-an-ai-tool-where-you-prompt-instead-of-design/",
+      "date": "2026-09-04",
+      "title": "谷歌推出Gmail、Docs和Keep的AI语音交互功能",
+      "summary": "谷歌正在为Gmail、Docs和Keep推出AI驱动的语音助手模式，允许用户通过语音与这些应用交互。实时对话功能分别称为Gmail Live、Docs Live和Keep Live，旨在让记录和操作更加便捷。此举将AI语音交互深度整合进核心办公应用，提升用户粘性，巩固其生产力工具生态。投资者可关注谷歌在AI办公领域的竞争力及其对企业级市场的渗透。",
+      "url": "https://www.theverge.com/tech/989508/google-gmail-docs-keep-live-voice-modes-gemini",
+      "source": "The Verge"
+    },
+    {
+      "date": "2026-09-04",
+      "title": "美国政府支持OpenAI在版权材料训练LLM问题上的立场",
+      "summary": "美国政府在一份简报中表示：“美国在继续发展强大且具有竞争力的人工智能产业方面有强烈利益，该产业将为全球AI使用的实践和程序设定标准。”这一表态支持了OpenAI在版权材料训练大语言模型上的立场，为AI训练数据的合法性提供了政策背书，降低了法律风险。投资者需关注这一政策导向对AI公司内容获取成本及合规性的影响。",
+      "url": "https://techcrunch.com/2026/09/02/u-s-government-sides-with-openai-on-issue-of-training-llms-on-copyrighted-material/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-09-03",
-      "title": "HiddenLayer融资1亿美元，企业AI安全需求激增",
-      "summary": "HiddenLayer获得1亿美元融资，反映企业为保障AI部署安全而竞相投入。安全公司正争相开发产品，不仅监控AI智能体，还监控其使用的工具和插件。AI安全赛道成为投资热点，投资者应关注该领域的技术领先者和市场增长潜力。",
-      "url": "https://techcrunch.com/2026/09/02/hiddenlayer-nabs-100m-as-enterprises-rush-to-secure-their-ai-deployments/",
-      "source": "TechCrunch"
+      "date": "2026-09-04",
+      "title": "英伟达推出免费工具，将闲置电脑组建成个人AI数据中心",
+      "summary": "英伟达宣布推出Personal AI Router（PAIR），这是一款免费工具，可将家庭电脑同步起来，用于处理本地AI推理任务，支持Ollama和LM Studio等工具。尽管名称可能让人误解，但PAIR并非硬件路由器，而是开源软件。该工具将推动边缘AI计算普及，可能改变AI推理成本结构，利好分布式算力应用。投资者需关注其对英伟达GPU需求的潜在影响及边缘AI生态的发展。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/989435/nvidia-pair-personal-ai-router-home-local-llm-compute-tool-rtx-macbook",
+      "source": "The Verge"
     }
   ]
 }

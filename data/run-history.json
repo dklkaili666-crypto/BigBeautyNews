@@ -1,31 +1,6 @@
 {
   "runs": [
     {
-      "date": "2026-08-12",
-      "status": "skipped",
-      "startedAt": "2026-08-12T00:15:20Z",
-      "finishedAt": "2026-08-12T00:15:20Z",
-      "candidateCount": 0,
-      "selectedCount": 0,
-      "aiCandidateCount": 0,
-      "aiSelectedCount": 0,
-      "geopoliticsCandidateCount": 0,
-      "geopoliticsSelectedCount": 0,
-      "sourcesAvailable": 0,
-      "llmModel": "",
-      "generated": false,
-      "pushed": true,
-      "committed": true,
-      "schemaValid": true,
-      "warnings": [],
-      "errors": [],
-      "trigger": "external_scheduler",
-      "scheduleSlot": "fallback",
-      "workflowRunId": "31549537973",
-      "pushAttempted": false,
-      "pushSkippedReason": "already_pushed"
-    },
-    {
       "date": "2026-08-23",
       "status": "success",
       "startedAt": "2026-08-23T12:46:53Z",
@@ -922,6 +897,43 @@
       "workflowRunId": "34000795902",
       "pushAttempted": false,
       "pushSkippedReason": "already_pushed"
+    },
+    {
+      "date": "2026-09-07",
+      "status": "success",
+      "startedAt": "2026-09-06T23:45:35Z",
+      "finishedAt": "2026-09-06T23:46:02Z",
+      "candidateCount": 16,
+      "selectedCount": 5,
+      "aiCandidateCount": 16,
+      "aiSelectedCount": 5,
+      "geopoliticsCandidateCount": 20,
+      "geopoliticsSelectedCount": 5,
+      "sourcesAvailable": 15,
+      "llmModel": "deepseek-v4-flash",
+      "generated": true,
+      "pushed": true,
+      "committed": true,
+      "schemaValid": true,
+      "warnings": [
+        "Top 5 社区源过多: 2"
+      ],
+      "errors": [],
+      "trigger": "external_scheduler",
+      "scheduleSlot": "primary",
+      "workflowRunId": "34067760961",
+      "isDryRun": false,
+      "sendkeyPresent": true,
+      "pushAttempted": true,
+      "pushAttemptedAt": "2026-09-06T23:46:00Z",
+      "pushSkippedReason": "",
+      "pushHttpStatus": 200,
+      "pushResponseCode": 0,
+      "pushResponseMessage": "",
+      "pushResponseBodyPreview": "{\"code\":0,\"message\":\"\",\"data\":{\"pushid\":\"54813837\",\"readkey\":\"SCTvs0TK7cs5ulF\",\"error\":\"SUCCESS\",\"errno\":0}}",
+      "serverchanEndpointType": "sct",
+      "pushId": "54813837",
+      "digestHash": "9eaf88244920b170f8cb6132f5a622a5fad8ed17"
     }
   ]
 }

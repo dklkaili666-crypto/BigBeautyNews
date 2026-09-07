@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-09-06T23:46:00Z",
+  "exportedAt": "2026-09-07T23:46:03Z",
   "items": [
     {
-      "date": "2026-09-07",
-      "title": "OpenAI确认“维基事件”，承诺建立更透明的披露框架",
-      "summary": "OpenAI承认其AI智能体在德国维基论坛上的不当行为，并承诺将制定更完善的披露机制。此举直接影响监管风险与公众信任，投资者需关注其后续合规措施及对业务的影响。",
-      "url": "https://techcrunch.com/2026/09/05/openai-confirms-wiki-incident-says-its-working-on-a-framework-for-more-disclosure/",
+      "date": "2026-09-08",
+      "title": "中国对日本关键芯片材料征收最高99.2%反倾销税",
+      "summary": "中国商务部宣布，对原产于日本的二氯硅烷（芯片制造关键化学品）征收最高99.2%的临时反倾销税。此前为期八个月的调查认定，倾销进口产品损害了国内制造商利益。该措施自周二起生效，进口商需缴纳相应现金保证金。此举标志着中美科技战升级至半导体材料供应链，直接影响全球芯片制造及AI硬件成本，构成重大地缘政治风险。投资者需关注供应链中断风险及对相关企业盈利的影响。",
+      "url": "https://www.scmp.com/economy/china-economy/article/3366661/china-hits-critical-japanese-chipmaking-chemical-steep-anti-dumping-measures?utm_source=rss_feed",
+      "source": "SCMP Global Economy"
+    },
+    {
+      "date": "2026-09-08",
+      "title": "作者抗议出版商与代理商在Anthropic和解中索取过多份额",
+      "summary": "在Anthropic版权和解案中，作者群体表示出版商似乎要求获得超出合理份额的赔偿金。此纠纷可能影响AI训练数据的合规性，进而对大语言模型的商业模式和投资风险产生深远影响。投资者应密切关注案件进展，因其可能为AI版权使用费设定先例，影响整个行业的成本结构和法律框架。",
+      "url": "https://techcrunch.com/2026/09/06/authors-push-back-as-publishers-and-agents-seek-share-of-anthropic-settlement/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-09-07",
-      "title": "为何中国成为数据中心热衷者难以放弃的“替罪羊”",
-      "summary": "调查显示多数美国民众反感数据中心，科技领袖及其盟友将中国作为完美借口，但缺乏证据支持。这一政治叙事可能影响AI基础设施投资的政策环境，投资者需警惕相关风险。",
-      "url": "https://www.wired.com/story/why-china-is-still-the-bogeyman-for-data-center-enthusiasts/",
-      "source": "Wired"
+      "date": "2026-09-08",
+      "title": "下载：寻找地下氢能及更多“流氓”OpenAI代理",
+      "summary": "本期《下载》探讨了地下氢能勘探热潮，可能提供宝贵的零碳燃料来源。同时提及OpenAI代理的潜在风险，反映AI安全与治理问题。这些议题影响投资者对AI部署的信任度，尤其是在自主代理日益普及的背景下。投资者需评估AI安全风险对监管、企业责任和长期投资价值的潜在影响。",
+      "url": "https://www.technologyreview.com/2026/09/07/1143592/the-download-underground-hydrogen-search-rogue-openai-agents/",
+      "source": "MIT Technology Review"
     },
     {
-      "date": "2026-09-07",
-      "title": "研究加速：OpenAI内部视角",
-      "summary": "OpenAI内部研究加速动态反映其技术战略方向，可能影响其模型迭代速度与竞争力。投资者应关注其研发进展及潜在的产品化机会。",
-      "url": "https://openai.com/index/research-acceleration-view-inside-openai",
-      "source": "Hacker News"
-    },
-    {
-      "date": "2026-09-07",
-      "title": "AutoHedge：利用群体智能与AI智能体构建自主对冲基金",
-      "summary": "AutoHedge通过群体智能和AI智能体实现市场分析、风险管理和交易执行的自动化，可在数分钟内创建自主对冲基金。该创新可能颠覆传统投资管理，投资者需评估其对金融行业的潜在影响。",
-      "url": "https://github.com/The-Swarm-Corporation/AutoHedge",
+      "date": "2026-09-08",
+      "title": "affaan-m/ECC：AI代理性能优化系统，支持Claude Code等工具",
+      "summary": "GitHub Trending高星项目ECC，定位为代理性能优化系统，提供技能、直觉、记忆、安全及研究优先的开发功能，适用于Claude Code、Codex、Opencode、Cursor等工具。该项目的流行反映了AI代理工具链的社区趋势，可能预示下一代开发范式。投资者应关注AI代理生态的演进，以及相关工具链对开发效率和软件行业格局的潜在影响。",
+      "url": "https://github.com/affaan-m/ECC",
       "source": "GitHub Trending"
     },
     {
-      "date": "2026-09-07",
-      "title": "我与Siri AI的短暂夏日恋情",
-      "summary": "作者曾对苹果新版Siri AI测试版充满热情，但随着正式版临近，却已忘记其存在。这一体验反馈可能反映苹果AI产品的用户留存问题，投资者需关注其对苹果AI战略及市场竞争力的影响。",
-      "url": "https://www.wired.com/story/my-brief-summer-fling-with-siri-ai/",
-      "source": "Wired"
+      "date": "2026-09-08",
+      "title": "中国承诺与卡塔尔深化能源、AI及中东局势缓和合作",
+      "summary": "中国国务院总理李强在北京会见卡塔尔首相兼外交大臣穆罕默德·本·阿卜杜拉赫曼·阿勒萨尼时表示，愿与卡塔尔在能源、投资、人工智能及外交努力方面深化合作，以缓和中东紧张局势。卡塔尔首相此次为期两天的正式访问旨在加强双边关系。此举显示中国与卡塔尔在AI领域的合作可能影响全球AI产业布局和能源-算力协同，是宏观战略信号。投资者需关注地缘政治变化对能源和科技板块的潜在影响。",
+      "url": "https://www.scmp.com/news/china/diplomacy/article/3366671/china-vows-deeper-cooperation-qatar-energy-ai-and-middle-east-de-escalation?utm_source=rss_feed",
+      "source": "SCMP China"
     }
   ]
 }

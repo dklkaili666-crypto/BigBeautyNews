@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-09-07T23:46:03Z",
+  "exportedAt": "2026-09-08T23:46:01Z",
   "items": [
     {
-      "date": "2026-09-08",
-      "title": "中国对日本关键芯片材料征收最高99.2%反倾销税",
-      "summary": "中国商务部宣布，对原产于日本的二氯硅烷（芯片制造关键化学品）征收最高99.2%的临时反倾销税。此前为期八个月的调查认定，倾销进口产品损害了国内制造商利益。该措施自周二起生效，进口商需缴纳相应现金保证金。此举标志着中美科技战升级至半导体材料供应链，直接影响全球芯片制造及AI硬件成本，构成重大地缘政治风险。投资者需关注供应链中断风险及对相关企业盈利的影响。",
-      "url": "https://www.scmp.com/economy/china-economy/article/3366661/china-hits-critical-japanese-chipmaking-chemical-steep-anti-dumping-measures?utm_source=rss_feed",
-      "source": "SCMP Global Economy"
+      "date": "2026-09-09",
+      "title": "Meta押注AI智能体Muse，力图在AI竞赛中追赶",
+      "summary": "Meta推出个人AI智能体Muse，旨在让AI触手可及。这是其数十亿美元战略调整的最新一步，旨在重振其在AI竞赛中的不利地位。对投资者而言，Muse的推出是评估Meta AI战略价值的关键，可能影响其长期竞争力。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/991216/meta-bets-on-ai-agent-muse-to-catch-up-in-ai-race",
+      "source": "The Verge"
     },
     {
-      "date": "2026-09-08",
-      "title": "作者抗议出版商与代理商在Anthropic和解中索取过多份额",
-      "summary": "在Anthropic版权和解案中，作者群体表示出版商似乎要求获得超出合理份额的赔偿金。此纠纷可能影响AI训练数据的合规性，进而对大语言模型的商业模式和投资风险产生深远影响。投资者应密切关注案件进展，因其可能为AI版权使用费设定先例，影响整个行业的成本结构和法律框架。",
-      "url": "https://techcrunch.com/2026/09/06/authors-push-back-as-publishers-and-agents-seek-share-of-anthropic-settlement/",
+      "date": "2026-09-09",
+      "title": "OpenAI宣称数学重大突破，学术界质疑其公正性",
+      "summary": "前沿AI实验室OpenAI宣布解决Navier-Stokes难题，但随即陷入学术不端指控。这一争议可能影响其技术可信度和声誉，对AI领域的投资信心构成潜在威胁。投资者需关注事件进展及其对OpenAI商业前景的影响。",
+      "url": "https://www.wired.com/story/openai-navier-stokes-math-discovery-academics/",
+      "source": "Wired"
+    },
+    {
+      "date": "2026-09-09",
+      "title": "Mistral融资30亿欧元，主权AI成为大生意",
+      "summary": "法国AI实验室Mistral完成D轮融资，筹集30亿欧元，估值达210亿欧元，由三星、Scaleup Europe和PSG Equity领投。这凸显了欧洲主权AI的投资热潮，标志着AI竞争格局的重要变化，对全球AI投资布局具有参考意义。",
+      "url": "https://techcrunch.com/2026/09/08/mistral-raises-e3b-as-sovereign-ai-becomes-big-business/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-09-08",
-      "title": "下载：寻找地下氢能及更多“流氓”OpenAI代理",
-      "summary": "本期《下载》探讨了地下氢能勘探热潮，可能提供宝贵的零碳燃料来源。同时提及OpenAI代理的潜在风险，反映AI安全与治理问题。这些议题影响投资者对AI部署的信任度，尤其是在自主代理日益普及的背景下。投资者需评估AI安全风险对监管、企业责任和长期投资价值的潜在影响。",
-      "url": "https://www.technologyreview.com/2026/09/07/1143592/the-download-underground-hydrogen-search-rogue-openai-agents/",
-      "source": "MIT Technology Review"
+      "date": "2026-09-09",
+      "title": "谷歌人类基因组图谱或为疾病治疗开辟新路径",
+      "summary": "Google DeepMind发布AI工具AlphaGenome Atlas，科学家称其能帮助解开人类基因组之谜，变革生物学理解，加速科学研究，最终为疾病治疗铺平道路。该平台包含预测性DNA变化图谱，对医疗AI投资具有重大意义。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/991180/google-launches-alpha-genome-atlas",
+      "source": "The Verge"
     },
     {
-      "date": "2026-09-08",
-      "title": "affaan-m/ECC：AI代理性能优化系统，支持Claude Code等工具",
-      "summary": "GitHub Trending高星项目ECC，定位为代理性能优化系统，提供技能、直觉、记忆、安全及研究优先的开发功能，适用于Claude Code、Codex、Opencode、Cursor等工具。该项目的流行反映了AI代理工具链的社区趋势，可能预示下一代开发范式。投资者应关注AI代理生态的演进，以及相关工具链对开发效率和软件行业格局的潜在影响。",
-      "url": "https://github.com/affaan-m/ECC",
-      "source": "GitHub Trending"
-    },
-    {
-      "date": "2026-09-08",
-      "title": "中国承诺与卡塔尔深化能源、AI及中东局势缓和合作",
-      "summary": "中国国务院总理李强在北京会见卡塔尔首相兼外交大臣穆罕默德·本·阿卜杜拉赫曼·阿勒萨尼时表示，愿与卡塔尔在能源、投资、人工智能及外交努力方面深化合作，以缓和中东紧张局势。卡塔尔首相此次为期两天的正式访问旨在加强双边关系。此举显示中国与卡塔尔在AI领域的合作可能影响全球AI产业布局和能源-算力协同，是宏观战略信号。投资者需关注地缘政治变化对能源和科技板块的潜在影响。",
-      "url": "https://www.scmp.com/news/china/diplomacy/article/3366671/china-vows-deeper-cooperation-qatar-energy-ai-and-middle-east-de-escalation?utm_source=rss_feed",
-      "source": "SCMP China"
+      "date": "2026-09-09",
+      "title": "Cognition估值达480亿美元，AI编程市场并非赢家通吃",
+      "summary": "Cognition的估值倍数高于Cursor出售给SpaceX前的水平，表明投资者认为AI编程领域仍有竞争空间。这一信号对评估AI工具市场格局具有参考价值，提示投资者关注差异化机会。",
+      "url": "https://techcrunch.com/2026/09/08/cognition-hits-48b-valuation-signaling-investors-believe-ai-coding-is-far-from-a-winner-take-all-market/",
+      "source": "TechCrunch"
     }
   ]
 }

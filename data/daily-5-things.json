@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-09-08T23:46:01Z",
+  "exportedAt": "2026-09-09T23:45:53Z",
   "items": [
     {
-      "date": "2026-09-09",
-      "title": "Meta押注AI智能体Muse，力图在AI竞赛中追赶",
-      "summary": "Meta推出个人AI智能体Muse，旨在让AI触手可及。这是其数十亿美元战略调整的最新一步，旨在重振其在AI竞赛中的不利地位。对投资者而言，Muse的推出是评估Meta AI战略价值的关键，可能影响其长期竞争力。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/991216/meta-bets-on-ai-agent-muse-to-catch-up-in-ai-race",
+      "date": "2026-09-10",
+      "title": "OpenAI最新争议揭示数学未来走向",
+      "summary": "OpenAI宣称其AI智能体解决了千禧年大奖难题之一，本应是重大突破，却因抄袭指控蒙上阴影。此事件凸显AI在科学发现领域的潜力，但也引发对AI研究诚信和可重复性的担忧。投资者需关注AI在基础科学中的应用价值，以及随之而来的伦理和法律风险。",
+      "url": "https://www.technologyreview.com/2026/09/08/1143747/what-openais-latest-controversy-tells-us-about-the-future-of-math/",
+      "source": "MIT Technology Review"
+    },
+    {
+      "date": "2026-09-10",
+      "title": "OpenAI董事会迎来AI安全专家Paul Christiano",
+      "summary": "专注于AI对齐研究的知名学者Paul Christiano加入OpenAI基金会董事会，此举反映AI安全治理已成为行业焦点。随着监管压力增加，OpenAI加强安全布局，可能影响其战略方向和合规预期。投资者应关注AI安全领域的政策动向及对头部公司的影响。",
+      "url": "https://techcrunch.com/2026/09/09/openai-adds-a-prominent-ai-doomer-to-its-board-of-directors/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-09-10",
+      "title": "微软为学校制定AI隐私新规",
+      "summary": "在两大校区禁止学生使用AI后，微软与美国教师联合会达成协议，承诺在校园AI应用中遵循安全和隐私原则。此举显示科技巨头在教育市场合规布局，旨在缓解家长和教师的担忧。投资者可关注AI教育领域的政策风险及大厂的市场策略。",
+      "url": "https://www.theverge.com/policy/992359/microsoft-aft-schools-ai-privacy",
       "source": "The Verge"
     },
     {
-      "date": "2026-09-09",
-      "title": "OpenAI宣称数学重大突破，学术界质疑其公正性",
-      "summary": "前沿AI实验室OpenAI宣布解决Navier-Stokes难题，但随即陷入学术不端指控。这一争议可能影响其技术可信度和声誉，对AI领域的投资信心构成潜在威胁。投资者需关注事件进展及其对OpenAI商业前景的影响。",
-      "url": "https://www.wired.com/story/openai-navier-stokes-math-discovery-academics/",
+      "date": "2026-09-10",
+      "title": "Suno推出授权音乐训练新模型以应对版权诉讼",
+      "summary": "面对多起诉讼，Suno发布新模型Suno v6，声称不再使用旧版训练数据。此举旨在规避版权风险，但可能影响模型性能。AI内容生成领域的版权问题日益突出，投资者需评估相关公司的法律风险和商业模式可持续性。",
+      "url": "https://techcrunch.com/2026/09/09/suno-replaces-its-ai-models-with-a-new-one-trained-on-licensed-music-as-copyright-suits-pile-up/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-09-10",
+      "title": "Meta推出个人AI代理Muse，需用户信任",
+      "summary": "Meta发布AI代理Muse，与OpenClaw和Instinct竞争，可执行卖车、订机票等任务。这标志着科技巨头在AI代理市场的战略布局，但用户信任是关键。投资者应关注AI代理生态的竞争格局及商业化前景。",
+      "url": "https://www.wired.com/story/meta-releases-muse-a-personal-ai-agent-with-privacy-built-into-it/",
       "source": "Wired"
-    },
-    {
-      "date": "2026-09-09",
-      "title": "Mistral融资30亿欧元，主权AI成为大生意",
-      "summary": "法国AI实验室Mistral完成D轮融资，筹集30亿欧元，估值达210亿欧元，由三星、Scaleup Europe和PSG Equity领投。这凸显了欧洲主权AI的投资热潮，标志着AI竞争格局的重要变化，对全球AI投资布局具有参考意义。",
-      "url": "https://techcrunch.com/2026/09/08/mistral-raises-e3b-as-sovereign-ai-becomes-big-business/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-09-09",
-      "title": "谷歌人类基因组图谱或为疾病治疗开辟新路径",
-      "summary": "Google DeepMind发布AI工具AlphaGenome Atlas，科学家称其能帮助解开人类基因组之谜，变革生物学理解，加速科学研究，最终为疾病治疗铺平道路。该平台包含预测性DNA变化图谱，对医疗AI投资具有重大意义。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/991180/google-launches-alpha-genome-atlas",
-      "source": "The Verge"
-    },
-    {
-      "date": "2026-09-09",
-      "title": "Cognition估值达480亿美元，AI编程市场并非赢家通吃",
-      "summary": "Cognition的估值倍数高于Cursor出售给SpaceX前的水平，表明投资者认为AI编程领域仍有竞争空间。这一信号对评估AI工具市场格局具有参考价值，提示投资者关注差异化机会。",
-      "url": "https://techcrunch.com/2026/09/08/cognition-hits-48b-valuation-signaling-investors-believe-ai-coding-is-far-from-a-winner-take-all-market/",
-      "source": "TechCrunch"
     }
   ]
 }

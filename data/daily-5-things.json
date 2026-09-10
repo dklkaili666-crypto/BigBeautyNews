@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-09-09T23:45:53Z",
+  "exportedAt": "2026-09-10T23:46:00Z",
   "items": [
     {
-      "date": "2026-09-10",
-      "title": "OpenAI最新争议揭示数学未来走向",
-      "summary": "OpenAI宣称其AI智能体解决了千禧年大奖难题之一，本应是重大突破，却因抄袭指控蒙上阴影。此事件凸显AI在科学发现领域的潜力，但也引发对AI研究诚信和可重复性的担忧。投资者需关注AI在基础科学中的应用价值，以及随之而来的伦理和法律风险。",
-      "url": "https://www.technologyreview.com/2026/09/08/1143747/what-openais-latest-controversy-tells-us-about-the-future-of-math/",
-      "source": "MIT Technology Review"
-    },
-    {
-      "date": "2026-09-10",
-      "title": "OpenAI董事会迎来AI安全专家Paul Christiano",
-      "summary": "专注于AI对齐研究的知名学者Paul Christiano加入OpenAI基金会董事会，此举反映AI安全治理已成为行业焦点。随着监管压力增加，OpenAI加强安全布局，可能影响其战略方向和合规预期。投资者应关注AI安全领域的政策动向及对头部公司的影响。",
-      "url": "https://techcrunch.com/2026/09/09/openai-adds-a-prominent-ai-doomer-to-its-board-of-directors/",
+      "date": "2026-09-11",
+      "title": "OpenAI因Astra需求激增暂停Pro订阅",
+      "summary": "OpenAI宣布暂停Pro订阅新用户注册，因Astra模型需求激增导致系统承压，公司正扩充容量。此举反映其算力瓶颈与产品供不应求，可能影响短期收入预期，并凸显基础设施投资节奏对AI公司增长的关键作用。",
+      "url": "https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-09-10",
-      "title": "微软为学校制定AI隐私新规",
-      "summary": "在两大校区禁止学生使用AI后，微软与美国教师联合会达成协议，承诺在校园AI应用中遵循安全和隐私原则。此举显示科技巨头在教育市场合规布局，旨在缓解家长和教师的担忧。投资者可关注AI教育领域的政策风险及大厂的市场策略。",
-      "url": "https://www.theverge.com/policy/992359/microsoft-aft-schools-ai-privacy",
+      "date": "2026-09-11",
+      "title": "黄仁勋解释英伟达明年为何将增长70%",
+      "summary": "英伟达CEO黄仁勋给出明年营收增长70%的指引，强调其业务遍布各领域且交易并非循环。这一乐观预期强化了AI芯片需求持续爆发的叙事，对半导体及AI算力产业链投资具有重大指向意义，投资者需关注其可持续性。",
+      "url": "https://techcrunch.com/2026/09/10/jensen-huang-explains-why-nvidia-will-grow-an-astounding-70-next-year/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-09-11",
+      "title": "Anthropic披露阿里、月之暗面及DeepSeek蒸馏攻击",
+      "summary": "Anthropic报告指控中国AI公司持续进行模型蒸馏攻击，近几个月竞争加剧后攻击升级。此事可能加剧地缘技术摩擦，影响开源模型合规与竞争格局，投资者需关注AI模型知识产权风险及监管动向。",
+      "url": "https://techcrunch.com/2026/09/10/anthropic-details-distillation-campaigns-from-alibaba-moonshot-ai-and-deepseek/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-09-11",
+      "title": "Meta的AI智能体Muse成为美国第二大应用",
+      "summary": "Meta最新AI应用Muse迅速攀升至美国应用榜第二，尽管起步慢于Meta AI或Threads。这显示大厂AI产品化落地能力，对AI应用生态和广告业务有潜在提振，投资者可关注其用户增长与变现前景。",
+      "url": "https://techcrunch.com/2026/09/10/metas-ai-agent-muse-is-now-the-no-2-app-in-the-us/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-09-11",
+      "title": "OpenAI数学突破引发学术界争议",
+      "summary": "OpenAI宣称解决千禧年数学难题，若属实将展示AI在高级推理上的突破，但正式宣布前已因不寻常情况复杂化。学术争议提示数据伦理风险，影响AI科研投资叙事，投资者需权衡技术突破与潜在声誉风险。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/992953/openai-math-millennium-prize-navier-stokes",
       "source": "The Verge"
-    },
-    {
-      "date": "2026-09-10",
-      "title": "Suno推出授权音乐训练新模型以应对版权诉讼",
-      "summary": "面对多起诉讼，Suno发布新模型Suno v6，声称不再使用旧版训练数据。此举旨在规避版权风险，但可能影响模型性能。AI内容生成领域的版权问题日益突出，投资者需评估相关公司的法律风险和商业模式可持续性。",
-      "url": "https://techcrunch.com/2026/09/09/suno-replaces-its-ai-models-with-a-new-one-trained-on-licensed-music-as-copyright-suits-pile-up/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-09-10",
-      "title": "Meta推出个人AI代理Muse，需用户信任",
-      "summary": "Meta发布AI代理Muse，与OpenClaw和Instinct竞争，可执行卖车、订机票等任务。这标志着科技巨头在AI代理市场的战略布局，但用户信任是关键。投资者应关注AI代理生态的竞争格局及商业化前景。",
-      "url": "https://www.wired.com/story/meta-releases-muse-a-personal-ai-agent-with-privacy-built-into-it/",
-      "source": "Wired"
     }
   ]
 }

@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-09-10T23:46:00Z",
+  "exportedAt": "2026-09-11T23:46:01Z",
   "items": [
     {
-      "date": "2026-09-11",
-      "title": "OpenAI因Astra需求激增暂停Pro订阅",
-      "summary": "OpenAI宣布暂停Pro订阅新用户注册，因Astra模型需求激增导致系统承压，公司正扩充容量。此举反映其算力瓶颈与产品供不应求，可能影响短期收入预期，并凸显基础设施投资节奏对AI公司增长的关键作用。",
-      "url": "https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/",
+      "date": "2026-09-12",
+      "title": "AI算力扩张遭遇电网架构瓶颈",
+      "summary": "2026年7月22日，弗吉尼亚州阿什本——全球最大数据中心集群所在地——一条输电线路故障在数秒内令电网损失超3吉瓦负荷。两年前，单个浪涌保护器失效曾同时导致约60处弗吉尼亚设施、1500兆瓦负荷脱网。对投资者而言，AI算力扩张正从芯片供应瓶颈转向电力基础设施瓶颈，数据中心供电可靠性已成为制约AI投资回报的关键风险，电网架构升级的资本开支与时间成本需纳入估值模型。",
+      "url": "https://www.technologyreview.com/2026/09/10/1141649/powering-ai-is-an-architecture-problem/",
+      "source": "MIT Technology Review"
+    },
+    {
+      "date": "2026-09-12",
+      "title": "OpenAI与数学界版权争端持续升级",
+      "summary": "25位知名数学家联名发表公开信，指控AI实验室威胁其知识产权成果。对投资者而言，OpenAI与学术界的训练数据版权争议正从个案演变为行业性法律风险，可能招致对AI训练数据合规性的更严格审查，进而推高大语言模型公司的数据获取成本与诉讼拨备，数据来源合规性将日益成为大模型公司估值中的隐性负债。",
+      "url": "https://techcrunch.com/2026/09/11/openais-feud-with-mathematicians-is-only-escalating/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-09-11",
-      "title": "黄仁勋解释英伟达明年为何将增长70%",
-      "summary": "英伟达CEO黄仁勋给出明年营收增长70%的指引，强调其业务遍布各领域且交易并非循环。这一乐观预期强化了AI芯片需求持续爆发的叙事，对半导体及AI算力产业链投资具有重大指向意义，投资者需关注其可持续性。",
-      "url": "https://techcrunch.com/2026/09/10/jensen-huang-explains-why-nvidia-will-grow-an-astounding-70-next-year/",
+      "date": "2026-09-12",
+      "title": "Anthropic研究员在IPO筹备期发出超级智能警告",
+      "summary": "Anthropic一名研究员本周辞职，在X平台发文警告公司正“直奔自我改进的超级智能，拿我们的生命赌博”，公司自身对齐负责人甚至联署该信息而非澄清。此类末日警告在AI行业并非首次，但时机敏感——据报道Anthropic正筹备IPO。对投资者而言，AI安全治理争议在上市窗口期发酵，可能影响市场对公司估值、管理层稳定性及监管风险的判断。",
+      "url": "https://techcrunch.com/podcast/an-anthropic-researchers-doomsday-warning-comes-at-a-very-interesting-time/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-09-11",
-      "title": "Anthropic披露阿里、月之暗面及DeepSeek蒸馏攻击",
-      "summary": "Anthropic报告指控中国AI公司持续进行模型蒸馏攻击，近几个月竞争加剧后攻击升级。此事可能加剧地缘技术摩擦，影响开源模型合规与竞争格局，投资者需关注AI模型知识产权风险及监管动向。",
-      "url": "https://techcrunch.com/2026/09/10/anthropic-details-distillation-campaigns-from-alibaba-moonshot-ai-and-deepseek/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-09-11",
-      "title": "Meta的AI智能体Muse成为美国第二大应用",
-      "summary": "Meta最新AI应用Muse迅速攀升至美国应用榜第二，尽管起步慢于Meta AI或Threads。这显示大厂AI产品化落地能力，对AI应用生态和广告业务有潜在提振，投资者可关注其用户增长与变现前景。",
-      "url": "https://techcrunch.com/2026/09/10/metas-ai-agent-muse-is-now-the-no-2-app-in-the-us/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-09-11",
-      "title": "OpenAI数学突破引发学术界争议",
-      "summary": "OpenAI宣称解决千禧年数学难题，若属实将展示AI在高级推理上的突破，但正式宣布前已因不寻常情况复杂化。学术争议提示数据伦理风险，影响AI科研投资叙事，投资者需权衡技术突破与潜在声誉风险。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/992953/openai-math-millennium-prize-navier-stokes",
+      "date": "2026-09-12",
+      "title": "Meta推出Muse AI助手，切入生产力工具赛道",
+      "summary": "Meta发布全新Muse助手，这是其首次真正进军AI驱动的生产力工具。公司称该AI智能体可协助在线购物、邮件处理、行程规划等，帮用户“卸下琐事”。记者实测后评价其可用但令人不安。对投资者而言，Meta此举标志大厂在AI智能体产品化上的重要落子，办公自动化竞争格局或将被重塑，需关注其对微软、谷歌等生产力套件厂商的潜在冲击。",
+      "url": "https://www.theverge.com/tech/993391/meta-muse-ai-hands-on",
       "source": "The Verge"
+    },
+    {
+      "date": "2026-09-12",
+      "title": "Mecka AI获红杉领投，估值近5亿美元",
+      "summary": "成立仅两年的Mecka AI正以近5亿美元估值完成新一轮融资，由红杉资本领投，距其宣布A轮融资仅数月。对投资者而言，机器人训练数据赛道正成为资本追逐热点，反映具身智能上游数据服务环节的价值凸显。随着人形机器人与具身智能加速落地，高质量训练数据供给可能成为继算力之后的又一稀缺资源，相关数据服务商的估值溢价值得关注。",
+      "url": "https://techcrunch.com/2026/09/11/mecka-ai-nears-500m-valuation-in-sequoia-led-deal-amid-rush-for-robot-training-data/",
+      "source": "TechCrunch"
     }
   ]
 }

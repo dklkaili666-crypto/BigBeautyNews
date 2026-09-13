@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-09-12T23:45:47Z",
+  "exportedAt": "2026-09-13T23:46:02Z",
   "items": [
     {
-      "date": "2026-09-13",
-      "title": "Sam Altman：OpenAI 2026年上市“不明智”",
-      "summary": "OpenAI CEO Sam Altman 在接受《财富》采访时明确表示，2026年不会进行 IPO。在45分钟访谈中，他谈及 Hugging Face 遭黑客攻击事件、递归自我改进，以及构建超越人类控制 AI 的可能性。对投资者而言，这一表态直接影响市场对 OpenAI 估值路径及 AI 独角兽退出节奏的预期，短期内或令相关一级市场投资流动性预期降温。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/994384/sam-altman-no-openai-ipo-ill-advised",
-      "source": "The Verge"
-    },
-    {
-      "date": "2026-09-13",
-      "title": "Anthropic CEO 称是时候给 AI 踩刹车",
-      "summary": "Anthropic CEO Dario Amodei 表示应放缓 AI 开发，并将向 METR 等第三方评估机构开放模型，以确保“遵守安全实践与承诺”。他在一篇长文中提出“调节前沿”三步计划，实质是减慢前沿模型推进速度。此举可能改变头部实验室的竞争节奏，并强化监管预期，投资者需关注其对模型发布周期和商业化进度的潜在影响。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/994337/anthropic-ceo-slow-down-ai-development",
-      "source": "The Verge"
-    },
-    {
-      "date": "2026-09-13",
-      "title": "Meta 因 AI 训练数据和人脸识别系统遭起诉",
-      "summary": "一项拟议集体诉讼指控 Meta 非法收集用户在 Facebook 和 Instagram 上的照片，用于训练其 AI 图像生成模型，并构建未发布的“NameTag”人脸识别功能。该案凸显大型科技公司在 AI 数据合规方面的风险与潜在财务敞口，投资者需关注诉讼进展及可能的罚款、整改成本对 Meta 的财务影响。",
-      "url": "https://www.wired.com/story/meta-sued-over-training-data-for-its-ai-and-face-recognition-systems/",
-      "source": "Wired"
-    },
-    {
-      "date": "2026-09-13",
-      "title": "Kimi 开发商月之暗面瞄准 20 亿美元年收入",
-      "summary": "尽管 K3 近几个月使用量略有下降，但 OpenRouter 数据显示，K3 模型目前每天在系统上生成多达 3000 亿 token。月之暗面将年度收入目标定为 20 亿美元，这一数字是中国大语言模型商业化的重要估值信号，投资者可借此评估国内 AI 应用层的变现潜力和竞争格局。",
-      "url": "https://techcrunch.com/2026/09/11/kimi-maker-moonshot-ai-targets-2-billion-in-annual-revenue/",
+      "date": "2026-09-14",
+      "title": "OpenAI CEO 阿尔特曼称 2026 年上市“不明智”",
+      "summary": "OpenAI 已秘密提交 IPO 申请，但 CEO 山姆·阿尔特曼明确表示今年不会上市。对投资者而言，这意味着全球最受关注的 AI 一级市场标的退出时点再度推迟，AI 私募估值锚点短期内仍缺乏公开市场定价参照，资本退出预期需相应调整。",
+      "url": "https://techcrunch.com/2026/09/12/openais-sam-altman-says-it-would-be-ill-advised-to-go-public-in-2026/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-09-13",
-      "title": "英伟达是 AI 时代的央行",
-      "summary": "Hacker News 热帖将 $NVDA 英伟达类比为 AI 时代的中央银行，反映市场对其算力定价权和产业链核心地位的共识。在 AI 基础设施投资中，英伟达的 GPU 供应和定价能力类似央行对货币流动性的调控，投资者需关注其产能、出口管制及客户集中度对整体 AI 板块估值的影响。",
-      "url": "https://www.economist.com/interactive/briefing/2026/09/03/nvidia-is-the-central-bank-of-ai",
-      "source": "Hacker News"
+      "date": "2026-09-14",
+      "title": "特朗普淡化 AI 监管，称不愿在对华竞争中让出优势",
+      "summary": "特朗普周日淡化对 AI 发展进行审查的必要性，称担心在全球竞争中失去对中国的优势，并认为胜出有助于应对该技术带来的风险。他承认需要一定监管，但未给出具体规则，并将有关技术发展过快、缺乏监督的警告归为“负面”言论。对投资者而言，美国 AI 监管取向将直接影响算力、模型与芯片供应链的政策风险溢价，对 $NVDA 英伟达等大厂的投资逻辑影响重大。",
+      "url": "https://www.scmp.com/news/world/united-states-canada/article/3367374/trump-downplays-need-check-ai-development-says-he-unwilling-cede-edge-china?utm_source=rss_feed",
+      "source": "SCMP China"
+    },
+    {
+      "date": "2026-09-14",
+      "title": "Anthropic CEO 提出放缓 AI 开发计划",
+      "summary": "Anthropic 的 Dario Amodei 与 OpenAI 的 Sam Altman 似乎都认同是时候“放慢前沿步伐”。这对投资者意味着头部模型公司可能联合调整竞争节奏，进而改变算力资本开支预期，是评估 AI 竞争格局与基础设施投资的关键变量。",
+      "url": "https://techcrunch.com/2026/09/12/anthropic-ceo-outlines-plan-to-pace-the-frontier/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-09-14",
+      "title": "AI 智能体“渴求”电力",
+      "summary": "硅谷正从聊天机器人查询转向资源密集型的 AI 智能体未来，这正在推动数据中心建设。对投资者而言，AI 智能体推动数据中心电力需求结构性上升，直接利好电力、散热和基础设施投资主题。",
+      "url": "https://www.wired.com/story/ai-agents-are-thirsty-for-power/",
+      "source": "Wired"
+    },
+    {
+      "date": "2026-09-14",
+      "title": "阿里开源企业级 AI 代码审查工具 open-code-review",
+      "summary": "阿里巴巴开源了经其规模验证的快速高效代码审查工具，采用混合架构：确定性流水线 + 大语言模型 AI 智能体，支持精确行级评论，内置多语言规则集（NPE、线程安全、XSS、SQL 注入），兼容 OpenAI 与 Anthropic。对投资者而言，这显示大厂在 AI 开发者工具层的生态卡位，可能影响编程 AI 智能体赛道竞争。",
+      "url": "https://github.com/alibaba/open-code-review",
+      "source": "GitHub Trending"
     }
   ]
 }

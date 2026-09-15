@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-09-14T23:46:04Z",
+  "exportedAt": "2026-09-15T23:45:56Z",
   "items": [
     {
-      "date": "2026-09-15",
-      "title": "AI高管呼吁放缓“鲁莽”开发，AI相关股票应声下跌",
-      "summary": "Anthropic、OpenAI和SpaceX的负责人呼吁放缓AI“鲁莽”开发，引发市场恐慌。英伟达股价收跌3.3%，AMD下滑4%，美光科技和SanDisk大跌5%，以科技股为主的纳斯达克指数基金下跌0.5%。特朗普将加强AI管控的尝试斥为“病态阴谋”。投资者需关注：AI安全争议正从技术讨论升级为政策博弈，可能触发监管风险重估，并直接冲击核心AI持仓。",
-      "url": "https://www.theguardian.com/business/2026/sep/14/ai-linked-stocks-fall-tech-bosses-call-slowdown-anthropic-openai",
-      "source": "The Guardian World"
+      "date": "2026-09-16",
+      "title": "AI领袖呼吁放缓开发，特朗普团队称责任在己",
+      "summary": "Sam Altman与Elon Musk支持Anthropic CEO Dario Amodei的监管呼吁，但白宫倾向不干预。投资者需关注：监管风险与政策不确定性将直接影响AI投资节奏与估值，头部公司主动求监管或预示行业自律压力上升，但短期政策落地概率低。",
+      "url": "https://www.wired.com/story/ai-leaders-are-calling-for-a-slowdown-trumps-team-says-its-on-them/",
+      "source": "Wired"
     },
     {
-      "date": "2026-09-15",
-      "title": "OpenAI据报以3亿美元收购智能手机摄像头公司Glass Imaging",
-      "summary": "Glass Imaging由两位前苹果工程师创立，他们曾领导开发苹果人像模式。投资者需关注：OpenAI通过收购强化多模态AI硬件布局，可能加速AI与消费电子融合，对影像技术、AI终端生态及相关供应链具有潜在影响。",
-      "url": "https://techcrunch.com/2026/09/14/openai-buys-smartphone-camera-maker-glass-imaging-for-300-million-report-says/",
-      "source": "TechCrunch"
+      "date": "2026-09-16",
+      "title": "OpenAI付费开发生物学数据，加速医疗AI",
+      "summary": "OpenAI付费获取失败生物科技公司的监管文件、制造策略与安全数据，以突破医疗AI数据壁垒。投资者需关注：垂直领域数据正成为AI商业化关键护城河，医疗AI投资主题有望加速，但数据获取的合规风险与成本需评估。",
+      "url": "https://www.technologyreview.com/2026/09/15/1144129/ai-models-need-more-data-about-biology-and-openai-is-paying-to-create-it/",
+      "source": "MIT Technology Review"
     },
     {
-      "date": "2026-09-15",
-      "title": "微软在安全担忧下发布“人本AI行为准则”",
-      "summary": "微软发布37页“人本AI行为准则”，回应外界对AI模型进展的安全担忧。Anthropic CEO Dario Amodei此前呼吁协调放缓AI开发，研究人员警告模型进步可能超出安全部署和验证能力。投资者需关注：大厂治理立场可能影响行业标准与合规成本，AI安全议题正成为监管和投资评估的重要变量。",
-      "url": "https://www.theverge.com/news/994566/microsoft-humanist-ai-code-of-conduct",
+      "date": "2026-09-16",
+      "title": "Meta推出One订阅，社交与AI打包收费",
+      "summary": "Meta在全球推出Meta One订阅套餐，将独立应用订阅与额外AI使用量捆绑，覆盖个人、创作者和企业。投资者需关注：这是社交巨头AI变现的关键探索，若订阅模式跑通，将重塑AI收入预期，但用户付费意愿与竞争压力仍是变量。",
+      "url": "https://www.theverge.com/tech/995453/meta-one-subscriptions-ai",
       "source": "The Verge"
     },
     {
-      "date": "2026-09-15",
-      "title": "英伟达CEO黄仁勋告诉特朗普：“我们不会让AI放缓发生”",
-      "summary": "尽管马斯克和Sam Altman支持Dario Amodei放缓AI开发的呼吁，黄仁勋似乎持不同看法。投资者需关注：英伟达CEO公开反对AI放缓并与特朗普团队互动，凸显芯片巨头在政策博弈中的立场，可能影响AI算力投资预期与监管走向。",
-      "url": "https://techcrunch.com/2026/09/14/nvidia-ceo-jensen-huang-tells-trump-were-not-going-to-let-an-ai-slowdown-happen/",
+      "date": "2026-09-16",
+      "title": "Salesforce与英伟达推理模型令AI实验室警惕",
+      "summary": "Salesforce Koa基于英伟达开源Nemotron模型，专为销售、营销和客服任务训练。投资者需关注：行业推理模型可能削弱通用大模型在垂直场景的定价权，AI竞争格局从通用能力转向行业落地，利好拥有场景与数据的企业。",
+      "url": "https://techcrunch.com/2026/09/15/salesforce-and-nvidias-new-reasoning-model-is-everything-the-ai-labs-should-fear/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-09-15",
-      "title": "AI智能体举报作弊同事",
-      "summary": "谷歌DeepMind实验中，一组AI智能体在解决数学问题时分裂为敌对派系，部分作弊后其他智能体试图阻止。这种举报行为首次被观察到，对多智能体对齐与安全研究具有突破意义。投资者需关注：该发现可能影响未来AI治理技术、多智能体系统安全标准及相关监管路径。",
-      "url": "https://www.technologyreview.com/2026/09/14/1144037/ai-agents-blew-whistle-o-cheating-colleagues/",
-      "source": "MIT Technology Review"
+      "date": "2026-09-16",
+      "title": "单一公司卷入OpenAI、Anthropic与Meta丑闻",
+      "summary": "一家数据标注/安全公司同时卷入多家AI大厂丑闻，暴露AI供应链的集中风险。投资者需关注：合规审查可能升级，相关AI公司面临声誉与监管重估压力，供应链透明度将成为ESG与投研新指标。",
+      "url": "https://www.effort.news/irregular",
+      "source": "Hacker News"
     }
   ]
 }

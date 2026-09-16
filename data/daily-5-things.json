@@ -1,40 +1,40 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-09-15T23:45:56Z",
+  "exportedAt": "2026-09-16T23:45:53Z",
   "items": [
     {
-      "date": "2026-09-16",
-      "title": "AI领袖呼吁放缓开发，特朗普团队称责任在己",
-      "summary": "Sam Altman与Elon Musk支持Anthropic CEO Dario Amodei的监管呼吁，但白宫倾向不干预。投资者需关注：监管风险与政策不确定性将直接影响AI投资节奏与估值，头部公司主动求监管或预示行业自律压力上升，但短期政策落地概率低。",
-      "url": "https://www.wired.com/story/ai-leaders-are-calling-for-a-slowdown-trumps-team-says-its-on-them/",
-      "source": "Wired"
-    },
-    {
-      "date": "2026-09-16",
-      "title": "OpenAI付费开发生物学数据，加速医疗AI",
-      "summary": "OpenAI付费获取失败生物科技公司的监管文件、制造策略与安全数据，以突破医疗AI数据壁垒。投资者需关注：垂直领域数据正成为AI商业化关键护城河，医疗AI投资主题有望加速，但数据获取的合规风险与成本需评估。",
-      "url": "https://www.technologyreview.com/2026/09/15/1144129/ai-models-need-more-data-about-biology-and-openai-is-paying-to-create-it/",
-      "source": "MIT Technology Review"
-    },
-    {
-      "date": "2026-09-16",
-      "title": "Meta推出One订阅，社交与AI打包收费",
-      "summary": "Meta在全球推出Meta One订阅套餐，将独立应用订阅与额外AI使用量捆绑，覆盖个人、创作者和企业。投资者需关注：这是社交巨头AI变现的关键探索，若订阅模式跑通，将重塑AI收入预期，但用户付费意愿与竞争压力仍是变量。",
-      "url": "https://www.theverge.com/tech/995453/meta-one-subscriptions-ai",
+      "date": "2026-09-17",
+      "title": "苹果或重返服务器市场，联手英伟达抢占AI算力",
+      "summary": "据The Information报道，苹果计划重返服务器领域，并可能与英伟达合作。苹果曾于2011年停产Xserve，此后基本退出企业级服务器市场。随着AI行业对算力需求持续攀升，苹果此举意味着其AI基础设施战略从依赖外部转向自研加合作。投资者需关注：若苹果大规模采购或定制英伟达GPU，将利好$NVDA英伟达，但可能对戴尔、超微等服务器厂商形成竞争压力，并重塑AI服务器供应链格局。",
+      "url": "https://www.theverge.com/tech/996321/apple-servers-ai-nvidia",
       "source": "The Verge"
     },
     {
-      "date": "2026-09-16",
-      "title": "Salesforce与英伟达推理模型令AI实验室警惕",
-      "summary": "Salesforce Koa基于英伟达开源Nemotron模型，专为销售、营销和客服任务训练。投资者需关注：行业推理模型可能削弱通用大模型在垂直场景的定价权，AI竞争格局从通用能力转向行业落地，利好拥有场景与数据的企业。",
-      "url": "https://techcrunch.com/2026/09/15/salesforce-and-nvidias-new-reasoning-model-is-everything-the-ai-labs-should-fear/",
+      "date": "2026-09-17",
+      "title": "Anthropic与OpenAI引入安全评估员，独立性存疑",
+      "summary": "Anthropic和OpenAI计划在各自AI实验室内部嵌入独立安全评估员。研究人员对这一前所未有的访问权限表示欢迎，但警告称，有意义的监督需要透明度、独立性，并最终需要监管介入。投资者需关注：这是AI治理与合规的关键一步，可能影响未来监管框架的走向，以及市场对AI风险溢价的评估。若评估流于形式，监管压力可能反而加大。",
+      "url": "https://techcrunch.com/2026/09/16/anthropic-and-openai-want-to-embed-safety-evaluators-will-they-really-be-independent/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-09-16",
-      "title": "单一公司卷入OpenAI、Anthropic与Meta丑闻",
-      "summary": "一家数据标注/安全公司同时卷入多家AI大厂丑闻，暴露AI供应链的集中风险。投资者需关注：合规审查可能升级，相关AI公司面临声誉与监管重估压力，供应链透明度将成为ESG与投研新指标。",
-      "url": "https://www.effort.news/irregular",
+      "date": "2026-09-17",
+      "title": "黄仁勋：无需AI监管，安全应由行业自行解决",
+      "summary": "英伟达CEO黄仁勋表示，AI并非某种新型“外星心智”，而只是硬件和软件，因此安全可由每个AI产品制造商通过工程手段解决，无需政府监管。投资者需关注：此番表态反映芯片巨头与政策制定者之间的博弈，将影响AI监管走向及$NVDA英伟达面临的政策风险敞口。若行业自律未能赢得信任，后续监管可能更严厉。",
+      "url": "https://techcrunch.com/2026/09/15/we-dont-need-ai-regulation-leave-safety-to-us-nvidias-jensen-huang-says/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-09-17",
+      "title": "谷歌开放智能家居，允许任意AI智能体控制设备",
+      "summary": "谷歌宣布开放其智能家居生态，允许Claude、Open Claw等第三方AI智能体通过标准化的模型上下文协议（MCP）访问和控制联网设备，并分析家庭数据。Google Home MCP是一项新集成，使第三方AI智能体能够控制、监控智能家居并执行操作。投资者需关注：这是AI智能体生态的重要里程碑，可能加速AI在消费物联网的落地，利好谷歌生态及MCP相关标准，并影响智能家居入口竞争格局。",
+      "url": "https://www.theverge.com/tech/996310/google-home-mcp-integration-agentic-ai-smart-home-price-release-date",
+      "source": "The Verge"
+    },
+    {
+      "date": "2026-09-17",
+      "title": "Mistral携手Mozilla推出隐私优先多语言AI浏览",
+      "summary": "Mistral与Mozilla合作推出隐私优先的多语言AI浏览体验。投资者需关注：这是欧洲AI联盟对抗美国科技巨头的重要举措，可能影响浏览器AI入口的竞争格局。Hacker News热度极高（518分），显示开发者社区关注度强烈。若该合作能借助Mozilla的浏览器份额推广Mistral模型，或对谷歌Chrome和微软Edge的AI集成构成差异化竞争。",
+      "url": "https://mistral.ai/news/mistral-x-mozilla/",
       "source": "Hacker News"
     }
   ]

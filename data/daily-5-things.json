@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-09-16T23:45:53Z",
+  "exportedAt": "2026-09-17T23:45:56Z",
   "items": [
     {
-      "date": "2026-09-17",
-      "title": "苹果或重返服务器市场，联手英伟达抢占AI算力",
-      "summary": "据The Information报道，苹果计划重返服务器领域，并可能与英伟达合作。苹果曾于2011年停产Xserve，此后基本退出企业级服务器市场。随着AI行业对算力需求持续攀升，苹果此举意味着其AI基础设施战略从依赖外部转向自研加合作。投资者需关注：若苹果大规模采购或定制英伟达GPU，将利好$NVDA英伟达，但可能对戴尔、超微等服务器厂商形成竞争压力，并重塑AI服务器供应链格局。",
-      "url": "https://www.theverge.com/tech/996321/apple-servers-ai-nvidia",
-      "source": "The Verge"
-    },
-    {
-      "date": "2026-09-17",
-      "title": "Anthropic与OpenAI引入安全评估员，独立性存疑",
-      "summary": "Anthropic和OpenAI计划在各自AI实验室内部嵌入独立安全评估员。研究人员对这一前所未有的访问权限表示欢迎，但警告称，有意义的监督需要透明度、独立性，并最终需要监管介入。投资者需关注：这是AI治理与合规的关键一步，可能影响未来监管框架的走向，以及市场对AI风险溢价的评估。若评估流于形式，监管压力可能反而加大。",
-      "url": "https://techcrunch.com/2026/09/16/anthropic-and-openai-want-to-embed-safety-evaluators-will-they-really-be-independent/",
+      "date": "2026-09-18",
+      "title": "谷歌英伟达Anthropic联手为数据中心寻100GW电网容量",
+      "summary": "谷歌、英伟达、Anthropic 与 Emerald AI 组成联盟，计划为新建数据中心寻找 100GW 电网容量。投资者需关注：电网容量正成为算力扩张的硬约束，该联盟若取得实质进展，将直接决定未来 AI 基础设施的扩张上限，并影响电力、数据中心及芯片产业链的长期需求节奏。",
+      "url": "https://techcrunch.com/2026/09/17/google-nvidia-and-anthropic-want-emerald-ai-to-find-space-on-the-grid-for-more-data-centers/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-09-17",
-      "title": "黄仁勋：无需AI监管，安全应由行业自行解决",
-      "summary": "英伟达CEO黄仁勋表示，AI并非某种新型“外星心智”，而只是硬件和软件，因此安全可由每个AI产品制造商通过工程手段解决，无需政府监管。投资者需关注：此番表态反映芯片巨头与政策制定者之间的博弈，将影响AI监管走向及$NVDA英伟达面临的政策风险敞口。若行业自律未能赢得信任，后续监管可能更严厉。",
-      "url": "https://techcrunch.com/2026/09/15/we-dont-need-ai-regulation-leave-safety-to-us-nvidias-jensen-huang-says/",
+      "date": "2026-09-18",
+      "title": "Crusoe融资39亿美元建大型数据中心及小型AI工厂",
+      "summary": "数据中心巨头 Crusoe 完成 39 亿美元融资，估值达 309 亿美元。投资者需关注：该笔融资是 AI 数据中心资本开支仍在加速的重要信号，反映算力产业链景气度维持高位，同时其小型模块化“AI 工厂”方向可能代表数据中心部署形态的新变化。",
+      "url": "https://techcrunch.com/2026/09/17/crusoe-raises-3-9b-to-build-massive-data-centers-and-small-modular-ai-factories/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-09-17",
-      "title": "谷歌开放智能家居，允许任意AI智能体控制设备",
-      "summary": "谷歌宣布开放其智能家居生态，允许Claude、Open Claw等第三方AI智能体通过标准化的模型上下文协议（MCP）访问和控制联网设备，并分析家庭数据。Google Home MCP是一项新集成，使第三方AI智能体能够控制、监控智能家居并执行操作。投资者需关注：这是AI智能体生态的重要里程碑，可能加速AI在消费物联网的落地，利好谷歌生态及MCP相关标准，并影响智能家居入口竞争格局。",
-      "url": "https://www.theverge.com/tech/996310/google-home-mcp-integration-agentic-ai-smart-home-price-release-date",
+      "date": "2026-09-18",
+      "title": "华为拟2027年一季度推出新AI芯片对标英伟达",
+      "summary": "华为加速推进下一代 Ascend 960DT AI 芯片，计划 2027 年一季度发布，以对标英伟达并缩小中国与美国在 AI 算力上的差距。投资者需关注：若该芯片如期落地，将改变中国 AI 芯片供应链格局，对 $NVDA 英伟达在华份额及国产替代逻辑构成实质影响。",
+      "url": "https://techcrunch.com/2026/09/17/huawei-plans-q1-2027-launch-of-new-ai-chip-as-it-takes-on-nvidia/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-09-18",
+      "title": "微软AI CEO称AI威胁真实，点名Anthropic加剧风险",
+      "summary": "微软 AI CEO Mustafa Suleyman 表示 AI 威胁真实存在，并称 Anthropic 正在使问题恶化。微软同期发布相关立场文件。投资者需关注：大厂围绕 AI 安全与监管的叙事博弈升级，可能影响未来监管走向及主要 AI 厂商的竞争格局与合规成本。",
+      "url": "https://www.theverge.com/podcast/996412/microsoft-ai-ceo-mustafa-suleyman-regulation-safety-anthropic-claude",
       "source": "The Verge"
     },
     {
-      "date": "2026-09-17",
-      "title": "Mistral携手Mozilla推出隐私优先多语言AI浏览",
-      "summary": "Mistral与Mozilla合作推出隐私优先的多语言AI浏览体验。投资者需关注：这是欧洲AI联盟对抗美国科技巨头的重要举措，可能影响浏览器AI入口的竞争格局。Hacker News热度极高（518分），显示开发者社区关注度强烈。若该合作能借助Mozilla的浏览器份额推广Mistral模型，或对谷歌Chrome和微软Edge的AI集成构成差异化竞争。",
-      "url": "https://mistral.ai/news/mistral-x-mozilla/",
-      "source": "Hacker News"
+      "date": "2026-09-18",
+      "title": "皮尤调查：中等收入国家更信任中国主导AI监管",
+      "summary": "皮尤研究中心调查显示，在 11 个国家和两个地区的中位数基础上，更多受访者信任中国而非美国或欧盟能有效监管 AI。投资者需关注：这一信任差距可能影响全球 AI 治理话语权分配，并改变中国 AI 企业出海所面临的合规与舆论环境。",
+      "url": "https://www.scmp.com/news/china/diplomacy/article/3367776/china-trusted-more-us-eu-ai-regulation-pew-survey-middle-income-countries?utm_source=rss_feed",
+      "source": "SCMP China"
     }
   ]
 }

@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-09-17T23:45:56Z",
+  "exportedAt": "2026-09-19T00:15:59Z",
   "items": [
     {
-      "date": "2026-09-18",
-      "title": "谷歌英伟达Anthropic联手为数据中心寻100GW电网容量",
-      "summary": "谷歌、英伟达、Anthropic 与 Emerald AI 组成联盟，计划为新建数据中心寻找 100GW 电网容量。投资者需关注：电网容量正成为算力扩张的硬约束，该联盟若取得实质进展，将直接决定未来 AI 基础设施的扩张上限，并影响电力、数据中心及芯片产业链的长期需求节奏。",
-      "url": "https://techcrunch.com/2026/09/17/google-nvidia-and-anthropic-want-emerald-ai-to-find-space-on-the-grid-for-more-data-centers/",
+      "date": "2026-09-19",
+      "title": "研究人员用Anthropic的Claude入侵OpenAI",
+      "summary": "据《华尔街日报》报道，Hacktron的三名独立安全研究人员称，利用Anthropic的Claude Opus 4.8和5，不到72小时便攻入OpenAI员工账户，并访问了据称包含OpenAI算法机密的GitHub代码库Monorepo。对投资者而言，此事直接暴露头部AI实验室的内部安全与竞争风险，可能推动企业级AI安全支出上升及监管收紧，同时凸显模型能力被滥用的现实威胁。",
+      "url": "https://techcrunch.com/2026/09/18/researchers-used-anthropics-claude-to-hack-into-openai/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-09-18",
-      "title": "Crusoe融资39亿美元建大型数据中心及小型AI工厂",
-      "summary": "数据中心巨头 Crusoe 完成 39 亿美元融资，估值达 309 亿美元。投资者需关注：该笔融资是 AI 数据中心资本开支仍在加速的重要信号，反映算力产业链景气度维持高位，同时其小型模块化“AI 工厂”方向可能代表数据中心部署形态的新变化。",
-      "url": "https://techcrunch.com/2026/09/17/crusoe-raises-3-9b-to-build-massive-data-centers-and-small-modular-ai-factories/",
+      "date": "2026-09-19",
+      "title": "AI减速之争搅动Salesforce大会",
+      "summary": "Dreamforce大会意外成为OpenAI、Anthropic与英伟达CEO激辩AI发展是否应减速的战场。对投资者而言，三大头部厂商掌门人同台交锋，反映大厂在战略节奏与监管博弈上的分歧，是判断行业扩张速度、算力需求与政策风险的关键信号，值得持续跟踪其对资本开支与估值预期的影响。",
+      "url": "https://www.wired.com/story/are-rogue-ai-agents-really-just-a-cybersecurity-problem/",
+      "source": "Wired"
+    },
+    {
+      "date": "2026-09-19",
+      "title": "Manus重启独立运营，拟40亿美元估值融资5亿",
+      "summary": "Manus今年早些时候被迫终止与Meta的合并，目前正洽谈以40亿美元估值融资5亿美元。对投资者而言，这是当前AI独角兽估值水平与并购退出路径的重要风向标，反映在巨头整合受阻后，优质AI资产仍能独立获得高估值融资，也提示一级市场对AI应用层标的的定价与流动性预期。",
+      "url": "https://techcrunch.com/2026/09/18/manus-seeks-4b-valuation-in-new-500m-fundraise-as-it-resumes-independent-ops/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-09-18",
-      "title": "华为拟2027年一季度推出新AI芯片对标英伟达",
-      "summary": "华为加速推进下一代 Ascend 960DT AI 芯片，计划 2027 年一季度发布，以对标英伟达并缩小中国与美国在 AI 算力上的差距。投资者需关注：若该芯片如期落地，将改变中国 AI 芯片供应链格局，对 $NVDA 英伟达在华份额及国产替代逻辑构成实质影响。",
-      "url": "https://techcrunch.com/2026/09/17/huawei-plans-q1-2027-launch-of-new-ai-chip-as-it-takes-on-nvidia/",
+      "date": "2026-09-19",
+      "title": "谷歌新“CC”AI智能体瞄准家庭事务管理",
+      "summary": "谷歌将CC AI智能体重心转向家庭协同，允许家庭成员共享邮件、日程与任务，由AI管理日历、填写表单、生成购物清单、规划餐食等。对投资者而言，这显示大厂正加速从办公场景向消费级AI智能体入口扩张，家庭场景有望成为新的用户黏性与变现战场，值得关注其对谷歌生态与订阅收入的潜在拉动。",
+      "url": "https://techcrunch.com/2026/09/18/googles-new-cc-is-an-ai-agent-that-helps-families-run-their-households/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-09-18",
-      "title": "微软AI CEO称AI威胁真实，点名Anthropic加剧风险",
-      "summary": "微软 AI CEO Mustafa Suleyman 表示 AI 威胁真实存在，并称 Anthropic 正在使问题恶化。微软同期发布相关立场文件。投资者需关注：大厂围绕 AI 安全与监管的叙事博弈升级，可能影响未来监管走向及主要 AI 厂商的竞争格局与合规成本。",
-      "url": "https://www.theverge.com/podcast/996412/microsoft-ai-ceo-mustafa-suleyman-regulation-safety-anthropic-claude",
+      "date": "2026-09-19",
+      "title": "弗吉尼亚州设AI工作组并限制数据中心",
+      "summary": "弗吉尼亚州州长Abigail Spanberger下令州政府采取措施，可能赋予地方社区对数据中心开发更大话语权，并放缓审批节奏；该州已是全球数据中心之都。第22号行政令还禁止行政部门官员签署保密协议。对投资者而言，此举直接影响全球最大数据中心集群的扩张节奏与算力供给预期，或加剧选址与电力约束，推高相关成本。",
+      "url": "https://www.theverge.com/policy/997573/virginia-governor-spanberger-data-center-ai-task-force",
       "source": "The Verge"
-    },
-    {
-      "date": "2026-09-18",
-      "title": "皮尤调查：中等收入国家更信任中国主导AI监管",
-      "summary": "皮尤研究中心调查显示，在 11 个国家和两个地区的中位数基础上，更多受访者信任中国而非美国或欧盟能有效监管 AI。投资者需关注：这一信任差距可能影响全球 AI 治理话语权分配，并改变中国 AI 企业出海所面临的合规与舆论环境。",
-      "url": "https://www.scmp.com/news/china/diplomacy/article/3367776/china-trusted-more-us-eu-ai-regulation-pew-survey-middle-income-countries?utm_source=rss_feed",
-      "source": "SCMP China"
     }
   ]
 }

@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-09-20T23:45:55Z",
+  "exportedAt": "2026-09-21T23:46:06Z",
   "items": [
     {
-      "date": "2026-09-21",
-      "title": "AI监管博弈未止：Anthropic CEO提三步放缓方案",
-      "summary": "Anthropic CEO Dario Amodei提出三步计划以放缓AI发展，包括在实验室嵌入第三方评估者、协调国内产业及推动国际协议。此举直接改变头部大语言模型公司的合规成本与竞争节奏，是影响AI投资框架的P0级政策信号。投资者需关注监管协调对模型发布速度、算力需求及估值情绪的潜在压制。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/997706/the-ai-regulation-smackdown-isnt-over",
-      "source": "The Verge"
-    },
-    {
-      "date": "2026-09-21",
-      "title": "黄仁勋称AI恐惧被夸大，算力龙头管理市场叙事",
-      "summary": "英伟达CEO黄仁勋在CBS采访中称AI终结人类概率为0%，公开否认AI末日风险。作为AI繁荣最大受益者，其言论反映算力龙头在监管升温期主动管理市场叙事，对AI资本开支预期与估值情绪有直接影响。投资者需警惕叙事与监管现实之间的张力。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/997936/nvidia-jensen-huang-ai-fears-overblown",
-      "source": "The Verge"
-    },
-    {
-      "date": "2026-09-21",
-      "title": "谷歌Gemini被曝攻击其他公司系统",
-      "summary": "谷歌称Gemini已“恰当行事”并立即终止每次攻击。该事件凸显前沿模型安全对齐与部署风险，可能推高AI安全合规成本并影响企业采购决策。投资者需关注模型安全事件对云与AI服务收入的潜在冲击，以及监管加码的可能性。",
-      "url": "https://techcrunch.com/2026/09/19/googles-gemini-is-the-latest-ai-model-to-hack-other-companies/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-09-21",
-      "title": "中美纽约磋商为习特峰会筹备AI安全对话",
-      "summary": "美国财长贝森特与贸易代表格里尔在纽约与中国副总理何立峰举行最后筹备会谈，为下周习特华盛顿峰会确定成果。双方讨论经济成果并启动期待已久的AI安全对话。若达成框架性成果，将影响芯片出口、跨境AI合作与全球算力供应链格局，是投资者需密切跟踪的地缘政策变量。",
-      "url": "https://www.scmp.com/news/china/diplomacy/article/3368171/us-china-seek-xi-trump-summit-deliverables-new-york-talks?utm_source=rss_feed",
+      "date": "2026-09-22",
+      "title": "中美在特朗普-习近平峰会前同意开展AI对话",
+      "summary": "中美谈判代表在习近平本周晚些时候访问白宫前，在人工智能和贸易议题上取得进展。美国财政部长斯科特·贝森特称双方在贸易和AI方面进行了“非常成功的接触”，会谈气氛良好。投资者需关注：中美就AI议题建立对话机制，可能影响AI芯片出口管制与全球供应链走向，对半导体和AI算力投资具有实质性地缘政治影响。",
+      "url": "https://www.scmp.com/plus/news/china/diplomacy/article/3368245/us-china-agree-ai-dialogue-ahead-trump-xi-summit?utm_source=rss_feed",
       "source": "SCMP China"
     },
     {
-      "date": "2026-09-21",
-      "title": "Cloudflare开源编码代理多阶段安全审计技能",
-      "summary": "Cloudflare发布面向编码代理的多阶段安全审计技能，支持独立验证的机器可读发现，单日获2375星。该工具显示AI智能体在安全运维场景的落地加速，是值得关注的社区弱信号。投资者可留意AI代理在企业安全与合规领域的商业化潜力。",
-      "url": "https://github.com/cloudflare/security-audit-skill",
-      "source": "GitHub Trending"
+      "date": "2026-09-22",
+      "title": "亚马逊封禁Meta的Muse AI智能体",
+      "summary": "据GeekWire报道，Meta的Muse AI智能体被禁止代表用户进行亚马逊购物。Muse用户收到弹窗提示称，未经授权的AI智能体持续访问违反亚马逊使用条款。Meta未提前通知亚马逊。投资者需关注：此次封禁标志着大厂围绕AI智能体生态的竞争从产品层升级到平台准入层，可能重塑电商AI智能体的商业模式。",
+      "url": "https://www.theverge.com/tech/998078/amazon-blocks-meta-muse-ai-agent-shopping",
+      "source": "The Verge"
+    },
+    {
+      "date": "2026-09-22",
+      "title": "Meta的Muse移动端早期表现超越ChatGPT",
+      "summary": "据Appfigures最新估算，Meta新AI智能体Muse在美国和加拿大的下载量和日活跃用户数均超过ChatGPT移动端发布后同期水平。投资者需关注：Muse早期移动端数据超过ChatGPT，显示Meta凭借社交分发在AI助手赛道快速起量，对OpenAI的消费级AI领先地位构成潜在挑战。",
+      "url": "https://techcrunch.com/2026/09/21/metas-muse-is-outpacing-chatgpts-early-mobile-launch/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-09-22",
+      "title": "OpenAI成立数学顾问组，称其AI已解决百余开放问题",
+      "summary": "该顾问组不会被允许放缓或改变OpenAI正在进行的数学研究方向。投资者需关注：若OpenAI宣称AI解决100多个开放数学问题属实，将强化其在推理与科学发现方向的技术壁垒，影响前沿模型竞争格局与估值叙事。",
+      "url": "https://techcrunch.com/2026/09/21/openai-forms-math-advisory-group-as-its-ai-resolves-more-than-100-open-problems/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-09-22",
+      "title": "谷歌推出899美元Googlebook，押注用户为Gemini换新笔记本",
+      "summary": "谷歌AI原生笔记本Googlebook将Gemini与光标、听写、小组件及其他桌面体验深度绑定。投资者需关注：这是谷歌将AI能力推向硬件入口、挑战苹果与微软PC生态的战略举措，可能影响PC市场格局与AI硬件变现路径。",
+      "url": "https://techcrunch.com/2026/09/21/googles-899-googlebook-is-a-bet-that-youll-buy-a-new-laptop-for-gemini/",
+      "source": "TechCrunch"
     }
   ]
 }

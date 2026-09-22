@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-09-21T23:46:06Z",
+  "exportedAt": "2026-09-22T23:45:58Z",
   "items": [
     {
-      "date": "2026-09-22",
-      "title": "中美在特朗普-习近平峰会前同意开展AI对话",
-      "summary": "中美谈判代表在习近平本周晚些时候访问白宫前，在人工智能和贸易议题上取得进展。美国财政部长斯科特·贝森特称双方在贸易和AI方面进行了“非常成功的接触”，会谈气氛良好。投资者需关注：中美就AI议题建立对话机制，可能影响AI芯片出口管制与全球供应链走向，对半导体和AI算力投资具有实质性地缘政治影响。",
-      "url": "https://www.scmp.com/plus/news/china/diplomacy/article/3368245/us-china-agree-ai-dialogue-ahead-trump-xi-summit?utm_source=rss_feed",
-      "source": "SCMP China"
+      "date": "2026-09-23",
+      "title": "OpenAI发布GPT-6双模型Sol与Luna，主打降本增效",
+      "summary": "OpenAI推出两款新模型Sol与Luna，称其与Astra同源。对投资者而言，核心信号是推理成本曲线继续下移、错误率下降，头部大语言模型竞争进一步转向性价比与规模化落地，可能压缩依赖高价API的厂商利润空间，同时利好下游应用与算力需求。",
+      "url": "https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/",
+      "source": "TechCrunch"
     },
     {
-      "date": "2026-09-22",
-      "title": "亚马逊封禁Meta的Muse AI智能体",
-      "summary": "据GeekWire报道，Meta的Muse AI智能体被禁止代表用户进行亚马逊购物。Muse用户收到弹窗提示称，未经授权的AI智能体持续访问违反亚马逊使用条款。Meta未提前通知亚马逊。投资者需关注：此次封禁标志着大厂围绕AI智能体生态的竞争从产品层升级到平台准入层，可能重塑电商AI智能体的商业模式。",
-      "url": "https://www.theverge.com/tech/998078/amazon-blocks-meta-muse-ai-agent-shopping",
+      "date": "2026-09-23",
+      "title": "Anthropic发布Opus 5.5：价格更低，性能对标前沿",
+      "summary": "Anthropic称Opus 5.5是“迄今测试过的最强模型”，并以更低价格推出。与OpenAI同日发布形成正面对垒，显示头部基础模型厂商正以降价换份额，投资者需关注模型价格战对API收入、毛利率及企业客户锁定效应的影响。",
+      "url": "https://techcrunch.com/2026/09/22/anthropic-releases-opus-5-5-with-lower-prices-and-fable-level-performance/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-09-23",
+      "title": "Nscale启动IPO，再测华尔街对集中式AI押注的胃口",
+      "summary": "英国AI数据中心开发商Nscale启动IPO，其大部分收入依赖微软与Anthropic。该交易将成为检验资本市场是否愿意继续为高度集中的AI基础设施押注买单的关键风向标，投资者需重点评估客户集中度风险与数据中心资本开支回报。",
+      "url": "https://techcrunch.com/2026/09/22/nscales-ipo-will-test-wall-streets-appetite-for-concentrated-ai-bets-once-again/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-09-23",
+      "title": "Snorkel AI估值翻三倍至35亿美元，AI训练数据需求爆发",
+      "summary": "成立七年的Snorkel AI完成3.5亿美元E轮融资，估值升至35亿美元，推进数据即服务模式。对投资者而言，这验证了AI数据层需求正在爆发，训练数据与数据标注服务可能成为基础模型之外的重要投资赛道。",
+      "url": "https://techcrunch.com/2026/09/22/snorkel-ai-triples-valuation-to-3-5b-as-demand-for-ai-training-data-booms/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-09-23",
+      "title": "加州收紧AI数据中心能耗与水耗监管",
+      "summary": "加州州长Gavin Newsom签署七项法案，防止AI数据中心将公用事业成本转嫁给居民。新法要求加州公共事业委员会为数据中心设立新费率分类，并强制其承担升级费用。投资者需关注数据中心经济性、选址策略及运营成本上升风险。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/998453/california-ai-data-center-bills",
       "source": "The Verge"
-    },
-    {
-      "date": "2026-09-22",
-      "title": "Meta的Muse移动端早期表现超越ChatGPT",
-      "summary": "据Appfigures最新估算，Meta新AI智能体Muse在美国和加拿大的下载量和日活跃用户数均超过ChatGPT移动端发布后同期水平。投资者需关注：Muse早期移动端数据超过ChatGPT，显示Meta凭借社交分发在AI助手赛道快速起量，对OpenAI的消费级AI领先地位构成潜在挑战。",
-      "url": "https://techcrunch.com/2026/09/21/metas-muse-is-outpacing-chatgpts-early-mobile-launch/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-09-22",
-      "title": "OpenAI成立数学顾问组，称其AI已解决百余开放问题",
-      "summary": "该顾问组不会被允许放缓或改变OpenAI正在进行的数学研究方向。投资者需关注：若OpenAI宣称AI解决100多个开放数学问题属实，将强化其在推理与科学发现方向的技术壁垒，影响前沿模型竞争格局与估值叙事。",
-      "url": "https://techcrunch.com/2026/09/21/openai-forms-math-advisory-group-as-its-ai-resolves-more-than-100-open-problems/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-09-22",
-      "title": "谷歌推出899美元Googlebook，押注用户为Gemini换新笔记本",
-      "summary": "谷歌AI原生笔记本Googlebook将Gemini与光标、听写、小组件及其他桌面体验深度绑定。投资者需关注：这是谷歌将AI能力推向硬件入口、挑战苹果与微软PC生态的战略举措，可能影响PC市场格局与AI硬件变现路径。",
-      "url": "https://techcrunch.com/2026/09/21/googles-899-googlebook-is-a-bet-that-youll-buy-a-new-laptop-for-gemini/",
-      "source": "TechCrunch"
     }
   ]
 }

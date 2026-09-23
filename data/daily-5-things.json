@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-09-22T23:45:58Z",
+  "exportedAt": "2026-09-23T23:45:58Z",
   "items": [
     {
-      "date": "2026-09-23",
-      "title": "OpenAI发布GPT-6双模型Sol与Luna，主打降本增效",
-      "summary": "OpenAI推出两款新模型Sol与Luna，称其与Astra同源。对投资者而言，核心信号是推理成本曲线继续下移、错误率下降，头部大语言模型竞争进一步转向性价比与规模化落地，可能压缩依赖高价API的厂商利润空间，同时利好下游应用与算力需求。",
-      "url": "https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-09-23",
-      "title": "Anthropic发布Opus 5.5：价格更低，性能对标前沿",
-      "summary": "Anthropic称Opus 5.5是“迄今测试过的最强模型”，并以更低价格推出。与OpenAI同日发布形成正面对垒，显示头部基础模型厂商正以降价换份额，投资者需关注模型价格战对API收入、毛利率及企业客户锁定效应的影响。",
-      "url": "https://techcrunch.com/2026/09/22/anthropic-releases-opus-5-5-with-lower-prices-and-fable-level-performance/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-09-23",
-      "title": "Nscale启动IPO，再测华尔街对集中式AI押注的胃口",
-      "summary": "英国AI数据中心开发商Nscale启动IPO，其大部分收入依赖微软与Anthropic。该交易将成为检验资本市场是否愿意继续为高度集中的AI基础设施押注买单的关键风向标，投资者需重点评估客户集中度风险与数据中心资本开支回报。",
-      "url": "https://techcrunch.com/2026/09/22/nscales-ipo-will-test-wall-streets-appetite-for-concentrated-ai-bets-once-again/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-09-23",
-      "title": "Snorkel AI估值翻三倍至35亿美元，AI训练数据需求爆发",
-      "summary": "成立七年的Snorkel AI完成3.5亿美元E轮融资，估值升至35亿美元，推进数据即服务模式。对投资者而言，这验证了AI数据层需求正在爆发，训练数据与数据标注服务可能成为基础模型之外的重要投资赛道。",
-      "url": "https://techcrunch.com/2026/09/22/snorkel-ai-triples-valuation-to-3-5b-as-demand-for-ai-training-data-booms/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-09-23",
-      "title": "加州收紧AI数据中心能耗与水耗监管",
-      "summary": "加州州长Gavin Newsom签署七项法案，防止AI数据中心将公用事业成本转嫁给居民。新法要求加州公共事业委员会为数据中心设立新费率分类，并强制其承担升级费用。投资者需关注数据中心经济性、选址策略及运营成本上升风险。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/998453/california-ai-data-center-bills",
+      "date": "2026-09-24",
+      "title": "桑德斯提案禁止超级智能，违者最高判20年",
+      "summary": "美国参议员伯尼·桑德斯与众议员格雷格·卡萨尔联合提出《禁止人工超级智能法案》，拟全面禁止开发可“毁灭或剥夺人类权能”的超级智能技术，违者最高面临20年监禁。这是美国首次在立法层面将前沿AI研发与刑事责任直接挂钩。投资者需关注：若法案推进，前沿大语言模型研发的合规成本将显著上升，并可能改变头部AI公司的竞争节奏与监管风险溢价。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/999443/bernie-sanders-ai-superintelligence-ban-act",
       "source": "The Verge"
+    },
+    {
+      "date": "2026-09-24",
+      "title": "Anthropic湿实验室发现类CRISPR酶系统",
+      "summary": "Anthropic称其AI模型Claude“自主发现”了一种与CRISPR基因编辑机制类似的新型酶系统，这是其新设湿实验室的首个成果，也是Claude科学实用性的早期验证。公司正筹备IPO，该进展若可复现，将强化AI驱动生物医药发现的估值叙事。投资者需关注：AI在生命科学领域的自主发现能力正从概念走向实验验证，对一级和二级市场AI+生物科技定价影响显著。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/999470/anthropic-biolab-claude-crispr",
+      "source": "The Verge"
+    },
+    {
+      "date": "2026-09-24",
+      "title": "Meta升级Muse智能体，新增视频通话与独立邮箱",
+      "summary": "Meta快速迭代其Muse AI智能体，宣布多项更新：Muse智能体将拥有独立邮箱地址以执行任务，用户还可与其进行视频通话。此举显示Meta将AI智能体定位为下一代入口级产品的战略投入。投资者需关注：消费级AI生态竞争正从聊天机器人转向具备任务执行与多模态交互能力的智能体，Meta的快速迭代可能重塑该赛道格局。",
+      "url": "https://www.theverge.com/tech/999454/meta-muse-ai-agent-video-chat-connect-2026",
+      "source": "The Verge"
+    },
+    {
+      "date": "2026-09-24",
+      "title": "Enveda融资3.11亿美元，加速AI天然药物临床试验",
+      "summary": "AI生物技术公司Enveda完成3.11亿美元融资，估值达20亿美元。公司正在测试治疗皮肤病及在停用GLP-1后维持减重效果的药物。这是AI制药赛道近期最大单笔融资之一，验证了AI驱动药物发现的资本热度与临床转化前景。投资者需关注：AI制药正从平台叙事进入临床验证阶段，头部公司的融资能力和管线进展将成为估值分化的关键。",
+      "url": "https://techcrunch.com/2026/09/23/enveda-secures-311m-to-bring-more-nature-derived-ai-drugs-into-clinical-trials/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-09-24",
+      "title": "GPT-6 Sol与Luna引发Hacker News热议",
+      "summary": "Hacker News热榜出现关于GPT-6的讨论，提及“Sol”与“Luna”两个名称，热度极高。若相关信息属实，将是OpenAI下一代旗舰模型的重要信号，可能重塑大语言模型竞争格局。投资者需关注：尽管目前仅为社区讨论，但作为唯一入选的社区来源，其潜在影响远超一般技术讨论，建议密切跟踪OpenAI官方后续披露。",
+      "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
+      "source": "Hacker News"
     }
   ]
 }

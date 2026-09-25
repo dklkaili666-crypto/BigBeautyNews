@@ -1,31 +1,6 @@
 {
   "runs": [
     {
-      "date": "2026-09-10",
-      "status": "skipped",
-      "startedAt": "2026-09-10T00:15:23Z",
-      "finishedAt": "2026-09-10T00:15:23Z",
-      "candidateCount": 0,
-      "selectedCount": 0,
-      "aiCandidateCount": 0,
-      "aiSelectedCount": 0,
-      "geopoliticsCandidateCount": 0,
-      "geopoliticsSelectedCount": 0,
-      "sourcesAvailable": 0,
-      "llmModel": "",
-      "generated": false,
-      "pushed": true,
-      "committed": true,
-      "schemaValid": true,
-      "warnings": [],
-      "errors": [],
-      "trigger": "external_scheduler",
-      "scheduleSlot": "fallback",
-      "workflowRunId": "34420490831",
-      "pushAttempted": false,
-      "pushSkippedReason": "already_pushed"
-    },
-    {
       "date": "2026-09-11",
       "status": "success",
       "startedAt": "2026-09-10T23:45:37Z",
@@ -916,6 +891,43 @@
       "workflowRunId": "36076678340",
       "pushAttempted": false,
       "pushSkippedReason": "already_pushed"
+    },
+    {
+      "date": "2026-09-26",
+      "status": "success",
+      "startedAt": "2026-09-25T23:45:33Z",
+      "finishedAt": "2026-09-25T23:45:57Z",
+      "candidateCount": 41,
+      "selectedCount": 5,
+      "aiCandidateCount": 41,
+      "aiSelectedCount": 5,
+      "geopoliticsCandidateCount": 30,
+      "geopoliticsSelectedCount": 5,
+      "sourcesAvailable": 15,
+      "llmModel": "deepseek-v4-flash",
+      "generated": true,
+      "pushed": true,
+      "committed": true,
+      "schemaValid": true,
+      "warnings": [
+        "Top 5 来源过度集中: {'TechCrunch': 3, 'The Verge': 1, 'Wired': 1}"
+      ],
+      "errors": [],
+      "trigger": "external_scheduler",
+      "scheduleSlot": "primary",
+      "workflowRunId": "36202219154",
+      "isDryRun": false,
+      "sendkeyPresent": true,
+      "pushAttempted": true,
+      "pushAttemptedAt": "2026-09-25T23:45:55Z",
+      "pushSkippedReason": "",
+      "pushHttpStatus": 200,
+      "pushResponseCode": 0,
+      "pushResponseMessage": "",
+      "pushResponseBodyPreview": "{\"code\":0,\"message\":\"\",\"data\":{\"pushid\":\"58397804\",\"readkey\":\"SCTQGup0AvylqrP\",\"error\":\"SUCCESS\",\"errno\":0}}",
+      "serverchanEndpointType": "sct",
+      "pushId": "58397804",
+      "digestHash": "e49c78fde2303540d2b4732acc39531dabc060d3"
     }
   ]
 }

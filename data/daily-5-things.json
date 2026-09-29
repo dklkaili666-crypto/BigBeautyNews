@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-09-28T23:45:53Z",
+  "exportedAt": "2026-09-29T23:46:03Z",
   "items": [
     {
-      "date": "2026-09-29",
-      "title": "英伟达推出新平台，管控越界AI智能体",
-      "summary": "针对近期频发的AI智能体越界攻击事件，英伟达CEO黄仁勋发布了一套软硬件工具包，为AI智能体添加独立安全层。此举直击企业级AI智能体部署的核心安全痛点，有望成为行业标配基础设施，进一步强化英伟达在AI算力生态中的护城河。投资者需关注该平台能否转化为企业客户的付费采用，以及其对英伟达软件服务收入的潜在贡献。",
-      "url": "https://techcrunch.com/2026/09/28/nvidia-launches-new-platform-for-reining-in-rogue-ai-agents/",
+      "date": "2026-09-30",
+      "title": "Anthropic IPO文件警示AI灾难性风险，估值瞄准2万亿美元",
+      "summary": "Anthropic在备受期待的IPO文件中披露了持续扩大的亏损、管理层保留权力的治理提案，并警告其AI开发计划可能“进一步增加模型造成伤害的风险”。公司估值目标高达2万亿美元，超过多数已上市科技巨头。投资者需关注：巨额亏损与治理集中化可能影响上市定价与长期股东回报，而AI安全风险披露或引发监管审查，成为估值折价因素。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1001838/anthropic-ipo-prospectus-ai-safety-threat",
+      "source": "The Verge"
+    },
+    {
+      "date": "2026-09-30",
+      "title": "AMD以超80亿美元全股票收购李飞飞创办的World Labs",
+      "summary": "AMD宣布以约82亿美元全股票交易收购AI研究实验室World Labs，后者由知名研究者李飞飞联合创办，2024年成立后数月内估值即达10亿美元。这是AMD直接挑战英伟达在AI芯片与模型生态统治地位的关键举措。投资者需关注：全股票交易稀释AMD股东权益，但若整合成功，将强化AMD在AI训练与推理市场的竞争力，芯片供应链竞争格局生变。",
+      "url": "https://www.theverge.com/tech/1001749/amd-world-labs-ai-acquisition-deal",
+      "source": "The Verge"
+    },
+    {
+      "date": "2026-09-30",
+      "title": "OpenAI推出Dots，正面迎战Meta Muse",
+      "summary": "OpenAI在DevDay主题演讲中发布常驻AI助手Dots，可跨连接应用在后台“几乎做任何事”，并随时间学习用户偏好，由GPT-6 Astra模型驱动。此举直接回应Meta的Muse AI。投资者需关注：大厂在AI智能体入口的竞争进入白热化，OpenAI能否凭借模型能力与生态整合守住用户入口，将影响其商业化变现与估值叙事。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1002033/openai-dots-launch-muse-competitor",
+      "source": "The Verge"
+    },
+    {
+      "date": "2026-09-30",
+      "title": "OpenAI据悉拟以1.4万亿美元估值融资300亿美元",
+      "summary": "OpenAI据报正洽谈新一轮融资，规模达300亿美元，估值1.4万亿美元，预计将是其推迟至2027年的IPO前最后一轮。投资者需关注：该轮融资将锚定AI一级市场估值，影响资本流向与后续AI独角兽定价；若成功，将进一步巩固OpenAI在基础模型领域的资本优势，但也推高市场对AI回报的预期。",
+      "url": "https://techcrunch.com/2026/09/29/openai-repotedly-in-talks-to-raise-30b-round-at-1-4t-valuation/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-09-29",
-      "title": "Meta推出企业AI平台，挖角MongoDB CEO掌舵",
-      "summary": "Meta宣布将Muse、Meta Business Agent、Muse API、Muse Code等全栈AI能力打包，面向企业和开发者推出企业AI平台，并聘请MongoDB CEO领导这一新业务。这标志着Meta的AI商业化从消费端向高价值B端市场扩张，直接挑战微软和谷歌在企业AI领域的份额。投资者需关注其企业客户获取速度及对现有AI企业服务定价体系的冲击。",
-      "url": "https://techcrunch.com/2026/09/28/meta-launches-enterprise-ai-platform-hires-mongodb-ceo-to-lead-new-initiative/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-09-29",
-      "title": "Anthropic发布Sonnet 5.5，主打更便宜更快的工作伙伴",
-      "summary": "Anthropic发布其中端模型最新版本Sonnet 5.5，宣称响应速度更快、token消耗更低。该模型以性价比为核心卖点，预计将加剧中端大语言模型的价格竞争，压低企业推理成本曲线，并影响API市场份额分配。投资者需关注其对企业AI预算分配和Anthropic营收增长的影响。",
-      "url": "https://techcrunch.com/2026/09/28/anthropic-releases-sonnet-5-5-which-it-calls-a-significantly-cheaper-faster-work-partner/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-09-29",
-      "title": "推理服务商Modal Labs拟以157.5亿美元估值融资7.5亿",
-      "summary": "据消息人士透露，AI推理基础设施初创公司Modal Labs即将完成约7.5亿美元融资，估值达157.5亿美元，较四个月前翻了三倍多。这一估值跃升反映资本对AI推理层（而非仅训练层）的强烈押注，是AI基础设施投资风向标事件。投资者需关注推理层竞争格局及估值快速膨胀后的回调风险。",
-      "url": "https://techcrunch.com/2026/09/28/source-inference-provider-modal-labs-closing-in-on-750m-round-at-15-75b-valuation/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-09-29",
-      "title": "中美AI竞赛中，真正的较量是保持人类控制权",
-      "summary": "中美AI竞争面临两难：两国都将AI视为经济、科学和战略实力来源，缺乏放缓动力；但AI越强大自主，人类控制问题越关键。特朗普与习近平近期峰会公开暴露了这一紧张关系，特朗普希望维持AI现状而非新增护栏。地缘政治风险将直接影响芯片出口、模型跨境部署与AI企业合规成本，是投资者需持续跟踪的宏观变量。",
-      "url": "https://www.scmp.com/opinion/china-opinion/article/3368932/us-china-ai-race-real-fight-keeping-humans-control?utm_source=rss_feed",
-      "source": "SCMP China"
+      "date": "2026-09-30",
+      "title": "英伟达推出开源AI安全系统，应对失控AI智能体",
+      "summary": "在一系列高调AI安全事件后，英伟达推出新软件工具，帮助防止AI智能体脱离控制，并联合行业建立安全标准。投资者需关注：AI安全正从合规议题升级为基础设施级竞争，英伟达此举可强化其AI生态护城河，并可能开辟企业级安全软件的新收入来源，同时降低监管风险对AI部署的潜在冲击。",
+      "url": "https://www.wired.com/story/nvidias-answer-to-rogue-agents-is-an-open-source-ai-security-system/",
+      "source": "Wired"
     }
   ]
 }

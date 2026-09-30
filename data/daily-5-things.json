@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-09-29T23:46:03Z",
+  "exportedAt": "2026-09-30T23:45:57Z",
   "items": [
     {
-      "date": "2026-09-30",
-      "title": "Anthropic IPO文件警示AI灾难性风险，估值瞄准2万亿美元",
-      "summary": "Anthropic在备受期待的IPO文件中披露了持续扩大的亏损、管理层保留权力的治理提案，并警告其AI开发计划可能“进一步增加模型造成伤害的风险”。公司估值目标高达2万亿美元，超过多数已上市科技巨头。投资者需关注：巨额亏损与治理集中化可能影响上市定价与长期股东回报，而AI安全风险披露或引发监管审查，成为估值折价因素。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1001838/anthropic-ipo-prospectus-ai-safety-threat",
-      "source": "The Verge"
-    },
-    {
-      "date": "2026-09-30",
-      "title": "AMD以超80亿美元全股票收购李飞飞创办的World Labs",
-      "summary": "AMD宣布以约82亿美元全股票交易收购AI研究实验室World Labs，后者由知名研究者李飞飞联合创办，2024年成立后数月内估值即达10亿美元。这是AMD直接挑战英伟达在AI芯片与模型生态统治地位的关键举措。投资者需关注：全股票交易稀释AMD股东权益，但若整合成功，将强化AMD在AI训练与推理市场的竞争力，芯片供应链竞争格局生变。",
-      "url": "https://www.theverge.com/tech/1001749/amd-world-labs-ai-acquisition-deal",
-      "source": "The Verge"
-    },
-    {
-      "date": "2026-09-30",
-      "title": "OpenAI推出Dots，正面迎战Meta Muse",
-      "summary": "OpenAI在DevDay主题演讲中发布常驻AI助手Dots，可跨连接应用在后台“几乎做任何事”，并随时间学习用户偏好，由GPT-6 Astra模型驱动。此举直接回应Meta的Muse AI。投资者需关注：大厂在AI智能体入口的竞争进入白热化，OpenAI能否凭借模型能力与生态整合守住用户入口，将影响其商业化变现与估值叙事。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1002033/openai-dots-launch-muse-competitor",
-      "source": "The Verge"
-    },
-    {
-      "date": "2026-09-30",
-      "title": "OpenAI据悉拟以1.4万亿美元估值融资300亿美元",
-      "summary": "OpenAI据报正洽谈新一轮融资，规模达300亿美元，估值1.4万亿美元，预计将是其推迟至2027年的IPO前最后一轮。投资者需关注：该轮融资将锚定AI一级市场估值，影响资本流向与后续AI独角兽定价；若成功，将进一步巩固OpenAI在基础模型领域的资本优势，但也推高市场对AI回报的预期。",
-      "url": "https://techcrunch.com/2026/09/29/openai-repotedly-in-talks-to-raise-30b-round-at-1-4t-valuation/",
+      "date": "2026-10-01",
+      "title": "谷歌发布迄今最强模型 Gemini 4 Argon",
+      "summary": "谷歌推出最新 Gemini 模型 Gemini 4 Argon，定位为编程与网络安全领域的主力模型，并限制访问以强调安全。投资者需关注：该发布直接冲击大语言模型竞争格局，可能加快云 AI 商业化节奏，并对 $GOOGL 云业务与 AI 定价能力形成支撑。",
+      "url": "https://techcrunch.com/2026/09/30/google-releases-gemini-4-argon-called-its-most-powerful-model-yet/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-09-30",
-      "title": "英伟达推出开源AI安全系统，应对失控AI智能体",
-      "summary": "在一系列高调AI安全事件后，英伟达推出新软件工具，帮助防止AI智能体脱离控制，并联合行业建立安全标准。投资者需关注：AI安全正从合规议题升级为基础设施级竞争，英伟达此举可强化其AI生态护城河，并可能开辟企业级安全软件的新收入来源，同时降低监管风险对AI部署的潜在冲击。",
-      "url": "https://www.wired.com/story/nvidias-answer-to-rogue-agents-is-an-open-source-ai-security-system/",
-      "source": "Wired"
+      "date": "2026-10-01",
+      "title": "AI 语音初创 ElevenLabs 估值翻倍至 220 亿美元",
+      "summary": "ElevenLabs 完成 3 亿美元员工股权要约收购，由 Wellington 与 T. Rowe Price 联合领投，估值翻倍至 220 亿美元。投资者需关注：这是 AI 语音赛道最大规模估值事件之一，对 AI 应用层投资定价具有强信号意义，可能推高相关初创与音频 AI 资产估值预期。",
+      "url": "https://techcrunch.com/2026/09/30/ai-voice-startup-elevenlabs-doubles-valuation-to-22b/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-10-01",
+      "title": "OpenAI 新功能直指应用商店模式",
+      "summary": "OpenAI 正在构建传统应用商店模式的替代方案，将 ChatGPT 打造成软件可被人类与 AI 智能体发现和使用的平台。投资者需关注：这可能重塑移动应用分发与 AI 智能体生态，影响苹果、谷歌平台经济及开发者分成模式，并加剧 AI 入口竞争。",
+      "url": "https://techcrunch.com/2026/09/29/openais-latest-features-take-direct-aim-at-the-app-store-model/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-10-01",
+      "title": "特朗普拒绝与中国合作 AI 安全，推六家美企自愿协议",
+      "summary": "特朗普表示不愿与中国在人工智能风险上合作，认为合作可能削弱美国领先地位，并宣布六家美国大型科技公司领导人签署自愿协议。投资者需关注：地缘政治与监管分化将影响 AI 供应链、跨境合作与投资风险溢价，超级智能竞争叙事或强化美国科技股政策溢价。",
+      "url": "https://www.scmp.com/news/china/diplomacy/article/3369254/trump-rejects-calls-work-china-ai-safety-despite-xi-summit-progress?utm_source=rss_feed",
+      "source": "SCMP China"
+    },
+    {
+      "date": "2026-10-01",
+      "title": "英伟达开源 OpenShell：自主 AI 智能体安全运行时",
+      "summary": "英伟达在 GitHub 开源 OpenShell，定位为安全、私密的自主 AI 智能体运行时。投资者需关注：该项目可能成为 AI 智能体时代的关键底层基础设施标准，强化 $NVDA 在 AI 软件与代理生态的布局，社区热度高，或带动相关开发者生态与算力需求。",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "source": "GitHub Trending"
     }
   ]
 }

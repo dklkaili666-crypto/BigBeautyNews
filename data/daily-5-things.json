@@ -1,40 +1,40 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-10-02T23:46:01Z",
+  "exportedAt": "2026-10-03T23:45:56Z",
   "items": [
     {
-      "date": "2026-10-03",
-      "title": "OpenAI推出企业级AI智能体平台Dots",
-      "summary": "OpenAI发布名为Dots的AI智能体平台，定位企业工作流自动化，可执行订餐等日常任务，但核心强调办公场景。此举直接切入企业软件市场，对SaaS和RPA赛道构成重大竞争威胁。投资者需关注OpenAI从模型层向应用层延伸的战略意图，及其对现有企业软件格局的潜在冲击。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1004096/openai-chatgpt-dots-hands-on-agent",
-      "source": "The Verge"
-    },
-    {
-      "date": "2026-10-03",
-      "title": "苹果因AI智能体风险收紧macOS全盘访问权限",
-      "summary": "苹果宣布将新增macOS全盘访问权限控制，警告能力日益增强的AI智能体使广泛访问用户文件、消息、邮件和浏览历史的风险上升。这反映终端安全架构正被AI智能体倒逼重构，对安全软件和AI智能体生态有深远影响。投资者应关注苹果生态对第三方AI智能体的限制可能带来的合规与竞争变化。",
-      "url": "https://techcrunch.com/2026/10/02/apple-says-its-tightening-macos-full-disk-access-controls-due-to-new-risks-from-ai-agents/",
+      "date": "2026-10-04",
+      "title": "亚马逊回应数据中心抵制，称已不再使用保密协议",
+      "summary": "亚马逊云服务CEO公开回应社区对数据中心的广泛抵制，并宣布不再使用保密协议。此举直接关系到AI基础设施的扩张速度与监管风险，对算力供应链投资有实质影响。投资者需关注数据中心选址与社区关系对云厂商资本开支节奏的潜在制约。",
+      "url": "https://techcrunch.com/2026/10/03/amazon-responds-to-data-center-backlash-says-it-no-longer-uses-ndas/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-10-03",
-      "title": "亚马逊发博客警告社区勿阻挠数据中心建设",
-      "summary": "亚马逊AWS CEO Matt Garman发布超3000字博客，呼吁公众支持AI数据中心项目，警告阻挠将对美国经济和国家安全造成不可逆损害。此举凸显AI算力基础设施与地方政策矛盾加剧，可能影响未来数据中心扩张和算力供给。投资者需关注数据中心建设受阻对云计算和AI算力供应链的潜在风险。",
-      "url": "https://www.theverge.com/tech/1003929/amazon-ai-data-center-blog-warning",
+      "date": "2026-10-04",
+      "title": "OpenAI安全员工离职，称公司“文化已崩坏”",
+      "summary": "OpenAI安全员工David Robinson离职并公开警告公司文化问题。叠加多源报道，此事可能引发监管审查和人才流失，影响OpenAI估值与行业安全治理预期。投资者需关注AI安全治理风险对头部大语言模型公司融资与商业化的潜在冲击。",
+      "url": "https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-10-04",
+      "title": "Meta开源代码，允许用户自制Muse AI硬件设备",
+      "summary": "Meta开源Muse AI智能体硬件代码，允许用户自制设备，如彩色电子墨水屏提醒器或HDMI棒投屏。此举推动AI智能体向消费设备渗透，是继大语言模型后争夺AI入口的重要战略动作。投资者需关注AI智能体硬件生态对Meta平台战略及供应链的潜在影响。",
+      "url": "https://www.theverge.com/tech/1004330/meta-muse-ai-gadgets-home-link",
       "source": "The Verge"
     },
     {
-      "date": "2026-10-03",
-      "title": "法院驳回针对谷歌AI Overviews的反垄断诉讼",
-      "summary": "美国联邦法官Amit Mehta驳回Chegg和Penske Media Corporation针对谷歌AI Overviews的两起反垄断诉讼，原告指控谷歌AI搜索功能导致网站流量流失。法院支持谷歌立场，暂时消除其AI搜索面临的法律风险，利好广告和AI搜索商业化推进。投资者需关注后续类似诉讼及监管动向。",
-      "url": "https://www.theverge.com/tech/1003589/google-ai-overviews-chegg-penske-lawsuits-dismissed",
+      "date": "2026-10-04",
+      "title": "苹果将限制Mac磁盘访问，因AI智能体“大幅”增加风险",
+      "summary": "苹果将在Mac上新增“完全磁盘访问”限制，以应对AI智能体带来的风险。此举反映终端安全策略调整，可能影响AI智能体在苹果生态的部署与用户信任。投资者需关注苹果生态安全政策对AI智能体应用落地及第三方开发者的影响。",
+      "url": "https://www.theverge.com/tech/1004295/apple-limit-mac-disk-access-ai-agents",
       "source": "The Verge"
     },
     {
-      "date": "2026-10-03",
-      "title": "OpenAI解雇三名安全研究员",
-      "summary": "据WSJ报道，OpenAI在内部调查发现三名安全研究员不当处理敏感公司信息后，已与其解除关系。此事反映OpenAI内部安全与商业化路线矛盾激化，可能影响其安全声誉和监管关系。投资者应关注OpenAI治理结构及安全团队稳定性对长期发展的影响。",
-      "url": "https://techcrunch.com/2026/10/01/openai-cuts-ties-with-three-safety-researchers-wsj-reports/",
+      "date": "2026-10-04",
+      "title": "Sean Parker重组Stability AI，聚焦音乐生成",
+      "summary": "Sean Parker在获得唱片公司支持与资金后，正围绕音乐重建Stability AI。此举可能改变AI生成内容赛道竞争格局，带来新的融资与并购机会。投资者需关注音乐生成AI领域的商业化进展及版权合作模式对行业格局的影响。",
+      "url": "https://techcrunch.com/2026/10/02/sean-parker-is-rebuilding-stability-ai-around-music/",
       "source": "TechCrunch"
     }
   ]

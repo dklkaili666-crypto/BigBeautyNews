@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-10-03T23:45:56Z",
+  "exportedAt": "2026-10-04T23:45:52Z",
   "items": [
     {
-      "date": "2026-10-04",
-      "title": "亚马逊回应数据中心抵制，称已不再使用保密协议",
-      "summary": "亚马逊云服务CEO公开回应社区对数据中心的广泛抵制，并宣布不再使用保密协议。此举直接关系到AI基础设施的扩张速度与监管风险，对算力供应链投资有实质影响。投资者需关注数据中心选址与社区关系对云厂商资本开支节奏的潜在制约。",
-      "url": "https://techcrunch.com/2026/10/03/amazon-responds-to-data-center-backlash-says-it-no-longer-uses-ndas/",
-      "source": "TechCrunch"
+      "date": "2026-10-05",
+      "title": "美国联邦政府为农村数据中心提供巨额税收减免",
+      "summary": "根据《One Big Beautiful Bill Act》，自明年起农村地区的数据中心项目将有资格获得重大税收优惠。此举将显著降低超大规模厂商在农村部署数据中心的运营成本，可能影响其资本开支决策和AI基础设施布局。但部分超大规模厂商似乎并不急于享受这一免费现金流，投资者需关注税收政策对数据中心选址和AI算力扩张节奏的实际影响。",
+      "url": "https://www.wired.com/story/rural-data-centers-are-in-for-a-big-federal-tax-break/",
+      "source": "Wired"
     },
     {
-      "date": "2026-10-04",
-      "title": "OpenAI安全员工离职，称公司“文化已崩坏”",
-      "summary": "OpenAI安全员工David Robinson离职并公开警告公司文化问题。叠加多源报道，此事可能引发监管审查和人才流失，影响OpenAI估值与行业安全治理预期。投资者需关注AI安全治理风险对头部大语言模型公司融资与商业化的潜在冲击。",
-      "url": "https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken/",
-      "source": "TechCrunch"
+      "date": "2026-10-05",
+      "title": "Nvidia Shield TV 已上市七年，却因AI涨价100美元",
+      "summary": "受AI需求推动，内存价格正在飙升，连老旧的流媒体设备也未能幸免。Nvidia Shield TV 这款七年前的产品近日涨价100美元，反映出AI对内存芯片的强劲需求已传导至消费电子终端。投资者需关注芯片供应链紧张和成本压力对消费电子厂商利润率的潜在影响，以及AI算力扩张对传统硬件市场的溢出效应。",
+      "url": "https://www.wired.com/story/7-year-old-tv-now-100-dollars-more-expensive-thank-ai/",
+      "source": "Wired"
     },
     {
-      "date": "2026-10-04",
-      "title": "Meta开源代码，允许用户自制Muse AI硬件设备",
-      "summary": "Meta开源Muse AI智能体硬件代码，允许用户自制设备，如彩色电子墨水屏提醒器或HDMI棒投屏。此举推动AI智能体向消费设备渗透，是继大语言模型后争夺AI入口的重要战略动作。投资者需关注AI智能体硬件生态对Meta平台战略及供应链的潜在影响。",
-      "url": "https://www.theverge.com/tech/1004330/meta-muse-ai-gadgets-home-link",
+      "date": "2026-10-05",
+      "title": "OpenAI安全员工离职并发出警告",
+      "summary": "David Robinson曾负责撰写OpenAI每次重大模型发布的安全报告，本周他宣布辞职并在《大西洋月刊》发表评论文章公开警告。核心安全团队成员的离职和公开表态可能引发监管机构对AI安全实践的审查，并促使投资者重新评估AI安全风险。市场需关注此事是否会影响OpenAI的模型发布节奏、监管关系及行业安全标准走向。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm",
       "source": "The Verge"
     },
     {
-      "date": "2026-10-04",
-      "title": "苹果将限制Mac磁盘访问，因AI智能体“大幅”增加风险",
-      "summary": "苹果将在Mac上新增“完全磁盘访问”限制，以应对AI智能体带来的风险。此举反映终端安全策略调整，可能影响AI智能体在苹果生态的部署与用户信任。投资者需关注苹果生态安全政策对AI智能体应用落地及第三方开发者的影响。",
-      "url": "https://www.theverge.com/tech/1004295/apple-limit-mac-disk-access-ai-agents",
-      "source": "The Verge"
+      "date": "2026-10-05",
+      "title": "谷歌因AI提交量激增暂停开源漏洞赏金计划",
+      "summary": "AI生成的低质量漏洞报告大量涌入，迫使谷歌暂停其开源漏洞赏金计划。这一事件凸显AI滥用对开源生态和安全研究的负面影响，可能增加开源项目维护成本并降低安全研究效率。投资者需关注AI生成内容对平台治理和网络安全行业的长期挑战，以及科技公司如何调整安全策略以应对AI带来的新风险。",
+      "url": "https://techcrunch.com/2026/10/04/google-froze-its-open-source-bug-bounty-program-due-to-a-significant-rise-in-ai-submissions/",
+      "source": "TechCrunch"
     },
     {
-      "date": "2026-10-04",
-      "title": "Sean Parker重组Stability AI，聚焦音乐生成",
-      "summary": "Sean Parker在获得唱片公司支持与资金后，正围绕音乐重建Stability AI。此举可能改变AI生成内容赛道竞争格局，带来新的融资与并购机会。投资者需关注音乐生成AI领域的商业化进展及版权合作模式对行业格局的影响。",
-      "url": "https://techcrunch.com/2026/10/02/sean-parker-is-rebuilding-stability-ai-around-music/",
-      "source": "TechCrunch"
+      "date": "2026-10-05",
+      "title": "Meta AI代理Muse为用户亲友创建详细画像",
+      "summary": "Meta的AI代理Muse已被数百万用户下载，但使用它需要付出高昂的隐私代价——Muse会为用户的所有亲友创建详细个人画像。这一隐私成本可能引发数据隐私监管风险，影响Meta的AI产品战略和用户信任。投资者需关注Meta在AI代理领域的商业化路径与隐私合规之间的平衡，以及潜在监管行动对股价的影响。",
+      "url": "https://www.wired.com/story/muse-creates-detailed-profiles-of-all-your-friends-and-family/",
+      "source": "Wired"
     }
   ]
 }

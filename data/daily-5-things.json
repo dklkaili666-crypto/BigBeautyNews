@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-10-07T23:46:01Z",
+  "exportedAt": "2026-10-08T23:46:04Z",
   "items": [
     {
-      "date": "2026-10-08",
-      "title": "ChatGPT 推出智能 UI，回复嵌入图表与按钮",
-      "summary": "OpenAI 随 GPT-6 向全量用户推出 Intelligent UI，ChatGPT 可在文本回复中嵌入图表、表单、可点击按钮等交互视觉元素。这是 ChatGPT 交互范式的重大升级，意味着 AI 助手从纯文本问答转向可操作界面，可能重塑 AI 助手产品竞争格局。投资者需关注其对用户留存、企业场景渗透及 API 生态的影响，以及对微软 $MSFT 与 OpenAI 合作价值的强化。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1007276/openai-chatgpt-intelligent-ui-gpt-6",
-      "source": "The Verge"
-    },
-    {
-      "date": "2026-10-08",
-      "title": "微软发布英伟达芯片 AI PC，升级 Windows 11",
-      "summary": "微软公布 Surface Laptop Ultra 的规格与价格，该 AI PC 搭载英伟达芯片，专为运行 AI 模型与 AI 智能体设计，并配合改版 Windows 11。此举标志 PC 端 AI 算力入口争夺战升级，对 $NVDA 英伟达、$MSFT 微软及 PC 供应链有实质影响。投资者需关注端侧推理需求能否成为英伟达新增长曲线，以及 AI PC 换机周期对 PC 厂商出货量的拉动。",
-      "url": "https://techcrunch.com/2026/10/07/microsoft-releases-new-nvidia-chip-ai-pcs-with-revamped-windows-11/",
+      "date": "2026-10-09",
+      "title": "OpenAI 年化收入据报较预期低 200 亿美元",
+      "summary": "此前有报道称 OpenAI 年化收入约 700 亿美元，但最新报道显示实际数字远低于此，差距约 200 亿美元。对投资者而言，这一偏差直接动摇 AI 龙头的估值锚，可能影响一级市场融资定价，并令数据中心与 GPU 资本开支预期面临下修风险。若头部公司收入兑现不及预期，整个 AI 产业链的投入回报逻辑将受到重新审视。",
+      "url": "https://techcrunch.com/2026/10/08/openais-revenue-is-reportedly-20-billion-less-than-previously-projected/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-10-08",
-      "title": "Meta 与微软限制员工使用 Claude AI",
-      "summary": "Meta 和微软采取措施减少员工对 Claude AI 的使用，反映大厂在 AI 工具链上推进自研替代与竞品防御。此举可能影响 Anthropic 的企业渗透与竞争格局，也凸显头部科技公司对内部数据与工作流控制权的重视。投资者需关注 Anthropic 企业收入增速是否受挫，以及自研模型对闭源 API 市场的分流效应。",
-      "url": "https://www.rswebsols.com/news/meta-and-microsoft-take-steps-to-reduce-employee-usage-of-claude-ai/",
-      "source": "Hacker News"
+      "date": "2026-10-09",
+      "title": "谷歌推出通用 Gemini 工作 AI 智能体",
+      "summary": "谷歌发布“通用”Gemini AI 智能体，可在后台跨应用、跨设备执行任务，并集成于 Gemini Enterprise 应用中，用户可在单一界面内对话并分配任务。这是大厂 AI 智能体商业化落地的关键一步，直接对标微软 Copilot 与 OpenAI 企业版。投资者需关注其能否提升企业订阅转化，并推动谷歌云与 Workspace 的交叉销售。",
+      "url": "https://www.theverge.com/tech/1007904/google-gemini-ai-agent-enterprise",
+      "source": "The Verge"
     },
     {
-      "date": "2026-10-08",
-      "title": "Nous Research 估值 15 亿美元，推企业 AI 智能体",
-      "summary": "Hermes Agent 开发商 Nous Research 完成 9000 万美元 B 轮融资，确认估值达 15 亿美元，并面向企业用户推出 AI 智能体。这是开源模型商业化的重要融资信号，表明开源路线在资本端仍具吸引力。投资者需关注其企业级 AI 智能体能否形成可持续收入，以及开源模型厂商对闭源 API 定价体系的潜在冲击。",
-      "url": "https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/",
+      "date": "2026-10-09",
+      "title": "Anthropic 为开源项目推出免费 AI 安全扫描",
+      "summary": "Anthropic 推出 OSS Scanner 服务，为选择加入的开源项目提供“由最强模型进行的全面、定期且免费的安全扫描”，可更早发现潜在漏洞。此举既抢占开发者生态与 AI 安全标准话语权，也可能重塑安全工具市场竞争格局。投资者需关注其对企业安全预算的分流效应，以及对 Anthropic 生态黏性的提升。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1008521/anthropic-open-source-oss-scanner",
+      "source": "The Verge"
+    },
+    {
+      "date": "2026-10-09",
+      "title": "Manus 与 Meta 分拆后首轮融资超 5 亿美元",
+      "summary": "中国 AI 智能体公司 Manus 在与 Meta 分拆后完成首轮融资，金额超 5 亿美元，由博裕资本和 IDG 资本领投，现有股东腾讯、HSG（原红杉中国）、真格基金等参投。该轮融资显示中国 AI 智能体赛道在一级市场仍具强吸金力，是重要的估值信号。投资者可关注其后续商业化进展及对国内 AI 应用层竞争格局的影响。",
+      "url": "https://techcrunch.com/2026/10/08/chinas-manus-raises-over-500m-in-first-funding-round-since-split-with-meta/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-10-08",
-      "title": "谷歌投资数千万美元，支持扎克伯格虚拟细胞计划",
-      "summary": "谷歌 DeepMind、Meta 与 AI 制药初创 Isomorphic Labs 联合向 Biohub 主导的虚拟细胞项目投资 3 亿美元，该项目由马克·扎克伯格与妻子普莉希拉·陈创立的非营利生物医学研究组织牵头。这是 AI 制药领域罕见的大厂联盟，可能加速药物发现范式变革。投资者需关注 AI 基础模型在生命科学中的商业化路径，以及对 $GOOGL 谷歌、$META Meta 长期估值叙事的支撑。",
-      "url": "https://www.theverge.com/tech/1006766/google-meta-biohub-investment-virtual-cell",
-      "source": "The Verge"
+      "date": "2026-10-09",
+      "title": "新版 ChatGPT 更重展示而非讲述",
+      "summary": "OpenAI 面向所有用户更新 ChatGPT，推出更视觉化的“智能 UI”，可在聊天输出中生成交互式元素。这是 ChatGPT 产品形态的重大升级，可能提升用户粘性与商业化空间，并带动多模态交互竞争。投资者需关注其是否推动付费转化与广告/电商等新变现路径，以及对多模态 API 调用量的拉动。",
+      "url": "https://www.wired.com/story/openai-chatgpt-intelligent-ui-is-more-show-than-tell/",
+      "source": "Wired"
     }
   ]
 }

@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-10-08T23:46:04Z",
+  "exportedAt": "2026-10-09T23:46:00Z",
   "items": [
     {
-      "date": "2026-10-09",
-      "title": "OpenAI 年化收入据报较预期低 200 亿美元",
-      "summary": "此前有报道称 OpenAI 年化收入约 700 亿美元，但最新报道显示实际数字远低于此，差距约 200 亿美元。对投资者而言，这一偏差直接动摇 AI 龙头的估值锚，可能影响一级市场融资定价，并令数据中心与 GPU 资本开支预期面临下修风险。若头部公司收入兑现不及预期，整个 AI 产业链的投入回报逻辑将受到重新审视。",
-      "url": "https://techcrunch.com/2026/10/08/openais-revenue-is-reportedly-20-billion-less-than-previously-projected/",
+      "date": "2026-10-10",
+      "title": "谷歌将Gemini升级为AI智能体，率先面向企业",
+      "summary": "谷歌正将Gemini打造为可规划、执行任务并跨业务应用与系统协作的AI智能体。该智能体可将工作委派给子智能体、调用多个AI模型，甚至拥有独立的工作身份和电子邮箱。此举直接冲击企业级AI智能体市场，是本周大厂战略级产品发布，投资者需关注谷歌在企业AI代理赛道的卡位及其对微软、Salesforce等竞品的压力。",
+      "url": "https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-10-09",
-      "title": "谷歌推出通用 Gemini 工作 AI 智能体",
-      "summary": "谷歌发布“通用”Gemini AI 智能体，可在后台跨应用、跨设备执行任务，并集成于 Gemini Enterprise 应用中，用户可在单一界面内对话并分配任务。这是大厂 AI 智能体商业化落地的关键一步，直接对标微软 Copilot 与 OpenAI 企业版。投资者需关注其能否提升企业订阅转化，并推动谷歌云与 Workspace 的交叉销售。",
-      "url": "https://www.theverge.com/tech/1007904/google-gemini-ai-agent-enterprise",
-      "source": "The Verge"
-    },
-    {
-      "date": "2026-10-09",
-      "title": "Anthropic 为开源项目推出免费 AI 安全扫描",
-      "summary": "Anthropic 推出 OSS Scanner 服务，为选择加入的开源项目提供“由最强模型进行的全面、定期且免费的安全扫描”，可更早发现潜在漏洞。此举既抢占开发者生态与 AI 安全标准话语权，也可能重塑安全工具市场竞争格局。投资者需关注其对企业安全预算的分流效应，以及对 Anthropic 生态黏性的提升。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1008521/anthropic-open-source-oss-scanner",
-      "source": "The Verge"
-    },
-    {
-      "date": "2026-10-09",
-      "title": "Manus 与 Meta 分拆后首轮融资超 5 亿美元",
-      "summary": "中国 AI 智能体公司 Manus 在与 Meta 分拆后完成首轮融资，金额超 5 亿美元，由博裕资本和 IDG 资本领投，现有股东腾讯、HSG（原红杉中国）、真格基金等参投。该轮融资显示中国 AI 智能体赛道在一级市场仍具强吸金力，是重要的估值信号。投资者可关注其后续商业化进展及对国内 AI 应用层竞争格局的影响。",
-      "url": "https://techcrunch.com/2026/10/08/chinas-manus-raises-over-500m-in-first-funding-round-since-split-with-meta/",
+      "date": "2026-10-10",
+      "title": "亚马逊等不再对数据中心交易保密，能否重建信任？",
+      "summary": "亚马逊表示在与地方政府谈判数据中心交易时将停止使用保密协议，此前微软今年早些时候已采取类似举措。保密做法加剧了社区对AI基础设施的反弹，从纽约到旧金山已有数百项暂停令被提出或颁布。与此同时，一批初创公司押注消费者将授权AI智能体访问数据。投资者需关注社区阻力对数据中心审批与建设节奏的影响，及其对算力供应链的实质冲击。",
+      "url": "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-10-09",
-      "title": "新版 ChatGPT 更重展示而非讲述",
-      "summary": "OpenAI 面向所有用户更新 ChatGPT，推出更视觉化的“智能 UI”，可在聊天输出中生成交互式元素。这是 ChatGPT 产品形态的重大升级，可能提升用户粘性与商业化空间，并带动多模态交互竞争。投资者需关注其是否推动付费转化与广告/电商等新变现路径，以及对多模态 API 调用量的拉动。",
-      "url": "https://www.wired.com/story/openai-chatgpt-intelligent-ui-is-more-show-than-tell/",
-      "source": "Wired"
+      "date": "2026-10-10",
+      "title": "非文本AI模型Jev发布数周估值达75亿美元",
+      "summary": "TypeSafe推出的非文本AI模型Jev引发用户和大型企业关注，公司声称其运行速度显著快于大语言模型且消耗的token远少。该模型发布仅数周即获75亿美元估值，可能开辟大语言模型之外的新技术路线。投资者需关注其技术验证进展、商业化落地能力，以及对现有大语言模型厂商的潜在替代威胁。",
+      "url": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-10-10",
+      "title": "OpenAI坚持解雇三名AI安全研究员",
+      "summary": "OpenAI坚持解雇三名安全研究员的决定，此前调查认定他们存在\"严重违反信任\"的行为。公司称Jasmine Wang、Tomek Korbak和Mikita Balesni因违反\"处理敏感信息的明确政策\"被解雇。此事引发公开争议，可能加剧AI安全人才流失与监管审查，对OpenAI治理结构和长期估值构成潜在风险，投资者需关注后续人才流动与合规压力。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1008604/openai-defends-decision-fire-safety-researchers",
+      "source": "The Verge"
+    },
+    {
+      "date": "2026-10-10",
+      "title": "AI排行榜Arena估值10个月翻倍至31亿美元",
+      "summary": "热门LMArena排行榜背后的公司完成2亿美元融资，由Lightspeed和Khosla领投，估值在10个月内近乎翻倍至31亿美元。该公司目前还在评估AI模型在说谎等对齐问题上的表现。这反映AI模型评估与对齐赛道正成为资本新热点，对AI投资生态具有指标意义，投资者可关注模型评测标准对行业竞争格局的塑造作用。",
+      "url": "https://techcrunch.com/2026/10/08/popular-ai-leaderboard-arena-nearly-doubles-valuation-to-3-1b-valuation-in-10-months/",
+      "source": "TechCrunch"
     }
   ]
 }

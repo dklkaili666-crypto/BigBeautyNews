@@ -1,31 +1,6 @@
 {
   "runs": [
     {
-      "date": "2026-09-26",
-      "status": "skipped",
-      "startedAt": "2026-09-26T00:15:22Z",
-      "finishedAt": "2026-09-26T00:15:22Z",
-      "candidateCount": 0,
-      "selectedCount": 0,
-      "aiCandidateCount": 0,
-      "aiSelectedCount": 0,
-      "geopoliticsCandidateCount": 0,
-      "geopoliticsSelectedCount": 0,
-      "sourcesAvailable": 0,
-      "llmModel": "",
-      "generated": false,
-      "pushed": true,
-      "committed": true,
-      "schemaValid": true,
-      "warnings": [],
-      "errors": [],
-      "trigger": "external_scheduler",
-      "scheduleSlot": "fallback",
-      "workflowRunId": "36204141636",
-      "pushAttempted": false,
-      "pushSkippedReason": "already_pushed"
-    },
-    {
       "date": "2026-09-27",
       "status": "success",
       "startedAt": "2026-09-26T23:45:40Z",
@@ -930,6 +905,31 @@
       "serverchanEndpointType": "sct",
       "pushId": "60906716",
       "digestHash": "2be8dc31f329322d2808d1c4353cd5ee4ca1b33c"
+    },
+    {
+      "date": "2026-10-11",
+      "status": "skipped",
+      "startedAt": "2026-10-11T00:15:20Z",
+      "finishedAt": "2026-10-11T00:15:20Z",
+      "candidateCount": 0,
+      "selectedCount": 0,
+      "aiCandidateCount": 0,
+      "aiSelectedCount": 0,
+      "geopoliticsCandidateCount": 0,
+      "geopoliticsSelectedCount": 0,
+      "sourcesAvailable": 0,
+      "llmModel": "",
+      "generated": false,
+      "pushed": true,
+      "committed": true,
+      "schemaValid": true,
+      "warnings": [],
+      "errors": [],
+      "trigger": "external_scheduler",
+      "scheduleSlot": "fallback",
+      "workflowRunId": "38097793060",
+      "pushAttempted": false,
+      "pushSkippedReason": "already_pushed"
     }
   ]
 }

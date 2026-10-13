@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-10-12T23:45:56Z",
+  "exportedAt": "2026-10-13T23:45:53Z",
   "items": [
     {
-      "date": "2026-10-13",
-      "title": "微软发布第三代自研AI芯片Maia 300，减少对英伟达GPU依赖",
-      "summary": "微软今日发布第三代自研AI芯片Maia 300，定位为微软产品与服务的“主要AI推理系统”。该芯片不仅提升云端AI工作负载的成本与效率，还增强对最新推理模型和AI智能体任务的支持。此举旨在降低对$NVDA 英伟达GPU的依赖，可能改变AI芯片供应链格局，对英伟达构成长期竞争压力，投资者需关注微软自研芯片的部署进度及对英伟达数据中心收入的潜在影响。",
-      "url": "https://www.theverge.com/news/1009465/microsoft-maia-300-chip-improvements-rollout",
+      "date": "2026-10-14",
+      "title": "谷歌发布Gemini 4 Argon，重返前沿AI竞赛",
+      "summary": "谷歌正式推出旗舰模型Gemini 4 Argon，声称具备前沿推理能力，可优化复杂工作流，并减少冗余与套话。此举标志着谷歌在观望数月后重新加入前沿大语言模型竞争。投资者需关注：该模型能否撼动OpenAI与Anthropic的市场份额，以及其对谷歌云API生态和定价权的潜在影响。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1009862/google-releases-gemini-4-argon",
       "source": "The Verge"
     },
     {
-      "date": "2026-10-13",
-      "title": "Meta推出Muse Wonder与Muse Wonder Full新AI模型，号称匹敌业界最佳",
-      "summary": "Meta在AI竞赛中加速追赶，继推出重组后Superintelligence Labs的首个模型Muse Spark及热门AI智能体Muse后，再发布两款新模型Muse Wonder和Muse Wonder Full，声称能与业界最佳模型匹敌。这标志着Meta重返AI前沿，可能加剧大语言模型竞争，投资者需关注Meta在AI领域的资本支出和商业化进展，以及对现有大模型格局的冲击。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1009479/meta-muse-wonder-full-ai-model",
+      "date": "2026-10-14",
+      "title": "Meta发布首个前沿模型Muse Wonder",
+      "summary": "Meta推出首个前沿模型Muse Wonder，相比轻量级Muse Spark，该模型规模更大、能力更强，在基准测试和编码等复杂任务上表现更优。投资者需关注：Meta重返AI第一梯队，可能加剧开源与闭源模型竞争，并影响其广告与元宇宙业务的AI基础设施成本。",
+      "url": "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-10-14",
+      "title": "互动聊天平台Character.AI成立五年即破产",
+      "summary": "明星AI初创公司Character.AI申请破产，并将部分资产以2000万美元出售给迪士尼。投资者需关注：AI应用层估值泡沫破裂的警示信号，以及高流量但缺乏可持续商业模式的AI消费级产品面临的变现困境。",
+      "url": "https://techcrunch.com/2026/10/13/just-5-years-in-interactive-chatbot-platform-character-ai-files-for-bankruptcy/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-10-14",
+      "title": "OpenAI与Anthropic呼吁英国立法监管AI",
+      "summary": "OpenAI和Anthropic高管在英国议会听证会上主动呼吁监管，与此同时英国情报负责人警告AI可能被用于制造新型生物武器。投资者需关注：全球AI监管趋严将增加合规成本，但可能利好头部企业护城河，并影响AI安全与生物安全相关投资主题。",
+      "url": "https://www.wired.com/story/openai-and-anthropic-tell-british-lawmakers-regulate-us/",
+      "source": "Wired"
+    },
+    {
+      "date": "2026-10-14",
+      "title": "Shopify向更多AI智能体开放商品目录",
+      "summary": "Shopify宣布允许消费者配置AI智能体代其购买商品，更多AI智能体将能浏览并购买其平台上超过10亿件商品。投资者需关注：代理电商加速落地，可能改变电商流量入口和广告商业模式，Shopify在AI商务生态中的卡位价值提升。",
+      "url": "https://www.theverge.com/news/1010365/shopify-opens-its-catalog-up-to-more-ai-agents",
       "source": "The Verge"
-    },
-    {
-      "date": "2026-10-13",
-      "title": "微软总裁呼吁英国主导AI监管，称AI公司受到的监管比牛奶和洗衣机还少",
-      "summary": "微软总裁Brad Smith呼吁紧急AI监管，指出牛奶和洗衣机受到的监管都比AI公司多。他强调英国在推动AI监管方面处于最佳位置。此言论可能影响全球AI政策走向，对行业合规成本与市场准入有实质影响，投资者需关注AI监管框架的演变及其对科技巨头运营的潜在约束。",
-      "url": "https://techcrunch.com/2026/10/12/microsoft-president-says-uk-is-best-placed-to-drive-ai-regulation/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-10-13",
-      "title": "前Plaud高管为背景聆听AI应用融资2600万美元",
-      "summary": "前Plaud高管为一款能在后台聆听用户的AI应用融资2600万美元。该应用基于AI的核心承诺：越了解用户，越能提供有效协助和建议，这需要应用和设备持续监听、观察或记录用户活动以收集上下文。此融资显示投资者对个人AI助手赛道的持续兴趣，可能催生新的AI硬件与软件结合模式，投资者可关注该领域初创公司的成长潜力。",
-      "url": "https://techcrunch.com/2026/10/12/former-plaud-exec-raises-26m-for-ai-app-that-listens-to-you-in-the-background/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-10-13",
-      "title": "AirLLM实现单张4GB GPU推理2.8T大语言模型",
-      "summary": "GitHub趋势项目AirLLM实现仅用单张4GB GPU进行2.8T参数大语言模型推理，大幅降低大模型部署门槛。这一技术突破可能推动边缘AI和低成本推理应用爆发，对AI基础设施和芯片需求格局产生深远影响，投资者需关注高效推理技术对GPU市场及AI应用普及的潜在变革。",
-      "url": "https://github.com/lyogavin/airllm",
-      "source": "GitHub Trending"
     }
   ]
 }

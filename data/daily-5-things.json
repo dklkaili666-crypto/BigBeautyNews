@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-10-13T23:45:53Z",
+  "exportedAt": "2026-10-14T23:46:10Z",
   "items": [
     {
-      "date": "2026-10-14",
-      "title": "谷歌发布Gemini 4 Argon，重返前沿AI竞赛",
-      "summary": "谷歌正式推出旗舰模型Gemini 4 Argon，声称具备前沿推理能力，可优化复杂工作流，并减少冗余与套话。此举标志着谷歌在观望数月后重新加入前沿大语言模型竞争。投资者需关注：该模型能否撼动OpenAI与Anthropic的市场份额，以及其对谷歌云API生态和定价权的潜在影响。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1009862/google-releases-gemini-4-argon",
+      "date": "2026-10-15",
+      "title": "AI竞赛重启：Anthropic与OpenAI领先优势收窄",
+      "summary": "The Verge综述指出，Anthropic与OpenAI此前凭借日益强大的模型看似独占AI竞赛鳌头，但Google与Meta正重新入局，前者一度显得遥不可及，后者虽投入数十亿美元却尚未确立竞争力。投资者需关注：大语言模型竞争格局生变，可能重塑算力需求与资本开支预期，头部厂商的估值溢价面临重新定价。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1011311/the-ai-race-is-back-on",
       "source": "The Verge"
     },
     {
-      "date": "2026-10-14",
-      "title": "Meta发布首个前沿模型Muse Wonder",
-      "summary": "Meta推出首个前沿模型Muse Wonder，相比轻量级Muse Spark，该模型规模更大、能力更强，在基准测试和编码等复杂任务上表现更优。投资者需关注：Meta重返AI第一梯队，可能加剧开源与闭源模型竞争，并影响其广告与元宇宙业务的AI基础设施成本。",
-      "url": "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-10-14",
-      "title": "互动聊天平台Character.AI成立五年即破产",
-      "summary": "明星AI初创公司Character.AI申请破产，并将部分资产以2000万美元出售给迪士尼。投资者需关注：AI应用层估值泡沫破裂的警示信号，以及高流量但缺乏可持续商业模式的AI消费级产品面临的变现困境。",
-      "url": "https://techcrunch.com/2026/10/13/just-5-years-in-interactive-chatbot-platform-character-ai-files-for-bankruptcy/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-10-14",
-      "title": "OpenAI与Anthropic呼吁英国立法监管AI",
-      "summary": "OpenAI和Anthropic高管在英国议会听证会上主动呼吁监管，与此同时英国情报负责人警告AI可能被用于制造新型生物武器。投资者需关注：全球AI监管趋严将增加合规成本，但可能利好头部企业护城河，并影响AI安全与生物安全相关投资主题。",
-      "url": "https://www.wired.com/story/openai-and-anthropic-tell-british-lawmakers-regulate-us/",
-      "source": "Wired"
-    },
-    {
-      "date": "2026-10-14",
-      "title": "Shopify向更多AI智能体开放商品目录",
-      "summary": "Shopify宣布允许消费者配置AI智能体代其购买商品，更多AI智能体将能浏览并购买其平台上超过10亿件商品。投资者需关注：代理电商加速落地，可能改变电商流量入口和广告商业模式，Shopify在AI商务生态中的卡位价值提升。",
-      "url": "https://www.theverge.com/news/1010365/shopify-opens-its-catalog-up-to-more-ai-agents",
+      "date": "2026-10-15",
+      "title": "八州起诉OpenAI：ChatGPT被指对儿童不安全",
+      "summary": "据路透社报道，美国八州分别对OpenAI提起诉讼，指控其危害儿童并就在ChatGPT安全性上误导消费者。起诉州包括爱荷华、堪萨斯、内布拉斯加、西弗吉尼亚、阿肯色、亚利桑那、爱达荷和蒙大拿。诉讼称OpenAI将利润置于安全之上。投资者需关注：儿童安全与合规风险被推至监管前台，可能影响OpenAI估值、企业采购决策及行业监管路径。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety",
       "source": "The Verge"
+    },
+    {
+      "date": "2026-10-15",
+      "title": "法官命令OpenAI在苹果商业秘密案中提交招聘记录",
+      "summary": "联邦法官裁定，苹果可获取OpenAI涉及前苹果员工的面试材料，以及案件关键人物的私人信息和证词。投资者需关注：苹果与OpenAI的商业秘密诉讼升级，法院强制披露招聘记录，反映大厂间AI人才与知识产权争夺对竞争格局的实质影响，可能波及双方合作关系与行业人才流动。",
+      "url": "https://techcrunch.com/2026/10/13/judge-orders-openai-to-turn-over-hiring-records-in-apple-trade-secrets-case/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-10-15",
+      "title": "银行试图转售刚承销的AI数据中心债务",
+      "summary": "银行正试图转售其刚刚承销的AI数据中心相关债务。投资者需关注：这是AI基础设施融资链条出现压力的早期信号，若债务难以转手，可能抑制数据中心建设节奏，对算力投资的可持续性判断具有实质参考价值，并可能传导至芯片与云厂商的资本开支预期。",
+      "url": "https://startupfortune.com/banks-are-now-trying-to-offload-the-ai-data-center-debt-they-just-underwrote/",
+      "source": "Hacker News"
+    },
+    {
+      "date": "2026-10-15",
+      "title": "开源模型确有收益，但能否抵消风险？",
+      "summary": "MIT Technology Review报道，Anthropic上月发布报告称模型GLM-5.3构成重大网络攻击风险，核心担忧在于开源模型可能被滥用。投资者需关注：围绕开源模型网络安全风险的争论升温，涉及开源模型监管与地缘竞争，可能影响开源生态的投资逻辑与合规成本。",
+      "url": "https://www.technologyreview.com/2026/10/13/1146366/open-models-have-real-benefits-do-they-outweigh-the-risks/",
+      "source": "MIT Technology Review"
     }
   ]
 }

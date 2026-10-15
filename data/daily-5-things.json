@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-10-14T23:46:10Z",
+  "exportedAt": "2026-10-15T23:46:03Z",
   "items": [
     {
-      "date": "2026-10-15",
-      "title": "AI竞赛重启：Anthropic与OpenAI领先优势收窄",
-      "summary": "The Verge综述指出，Anthropic与OpenAI此前凭借日益强大的模型看似独占AI竞赛鳌头，但Google与Meta正重新入局，前者一度显得遥不可及，后者虽投入数十亿美元却尚未确立竞争力。投资者需关注：大语言模型竞争格局生变，可能重塑算力需求与资本开支预期，头部厂商的估值溢价面临重新定价。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1011311/the-ai-race-is-back-on",
+      "date": "2026-10-16",
+      "title": "Meta携手苹果，Muse AI模型可在Mac本地运行",
+      "summary": "Meta发布开源权重模型Muse Spark Open，称其为迄今美国最强开源权重模型，并首次可借助最新MLX框架在两台搭载Apple M5 Ultra的Mac Studio上本地运行。对投资者而言，这标志着端侧AI推理能力进一步成熟，或削弱部分云端推理需求，同时强化Apple Silicon在AI PC与开发者生态中的地位，对芯片、PC及云推理产业链的竞争格局构成实质影响。",
+      "url": "https://www.theverge.com/news/1012293/meta-apple-muse-spark-open-ai-model-mlx",
       "source": "The Verge"
     },
     {
-      "date": "2026-10-15",
-      "title": "八州起诉OpenAI：ChatGPT被指对儿童不安全",
-      "summary": "据路透社报道，美国八州分别对OpenAI提起诉讼，指控其危害儿童并就在ChatGPT安全性上误导消费者。起诉州包括爱荷华、堪萨斯、内布拉斯加、西弗吉尼亚、阿肯色、亚利桑那、爱达荷和蒙大拿。诉讼称OpenAI将利润置于安全之上。投资者需关注：儿童安全与合规风险被推至监管前台，可能影响OpenAI估值、企业采购决策及行业监管路径。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety",
-      "source": "The Verge"
-    },
-    {
-      "date": "2026-10-15",
-      "title": "法官命令OpenAI在苹果商业秘密案中提交招聘记录",
-      "summary": "联邦法官裁定，苹果可获取OpenAI涉及前苹果员工的面试材料，以及案件关键人物的私人信息和证词。投资者需关注：苹果与OpenAI的商业秘密诉讼升级，法院强制披露招聘记录，反映大厂间AI人才与知识产权争夺对竞争格局的实质影响，可能波及双方合作关系与行业人才流动。",
-      "url": "https://techcrunch.com/2026/10/13/judge-orders-openai-to-turn-over-hiring-records-in-apple-trade-secrets-case/",
+      "date": "2026-10-16",
+      "title": "Anthropic向METR开放员工级访问权限",
+      "summary": "Anthropic允许METR研究人员以员工级权限深入审查其风险、事故与实践，并放弃阻止METR发布独立评估的权利。此举为前沿AI安全治理与外部监管信任机制树立重要先例，投资者需关注其对企业合规成本、监管风险溢价及AI公司估值叙事的中长期影响。",
+      "url": "https://techcrunch.com/2026/10/15/anthropic-is-letting-metr-researchers-look-under-the-hood-with-employee-level-access/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-10-15",
-      "title": "银行试图转售刚承销的AI数据中心债务",
-      "summary": "银行正试图转售其刚刚承销的AI数据中心相关债务。投资者需关注：这是AI基础设施融资链条出现压力的早期信号，若债务难以转手，可能抑制数据中心建设节奏，对算力投资的可持续性判断具有实质参考价值，并可能传导至芯片与云厂商的资本开支预期。",
-      "url": "https://startupfortune.com/banks-are-now-trying-to-offload-the-ai-data-center-debt-they-just-underwrote/",
-      "source": "Hacker News"
+      "date": "2026-10-16",
+      "title": "Windows如何为英伟达RTX Spark笔记本优化",
+      "summary": "微软与英伟达在旧金山为首批RTX Spark笔记本举办发布活动，新一代AI PC成为焦点。此举标志AI算力从云端向PC端加速渗透，利好英伟达终端芯片出货与Windows生态变现，投资者需关注AI PC换机周期对半导体及PC产业链的拉动。",
+      "url": "https://www.theverge.com/tech/1011996/microsoft-windows-rtx-spark-platform-changes-notepad",
+      "source": "The Verge"
     },
     {
-      "date": "2026-10-15",
-      "title": "开源模型确有收益，但能否抵消风险？",
-      "summary": "MIT Technology Review报道，Anthropic上月发布报告称模型GLM-5.3构成重大网络攻击风险，核心担忧在于开源模型可能被滥用。投资者需关注：围绕开源模型网络安全风险的争论升温，涉及开源模型监管与地缘竞争，可能影响开源生态的投资逻辑与合规成本。",
-      "url": "https://www.technologyreview.com/2026/10/13/1146366/open-models-have-real-benefits-do-they-outweigh-the-risks/",
-      "source": "MIT Technology Review"
+      "date": "2026-10-16",
+      "title": "中美磋商AI议题，芯片股大跌冲击亚洲市场",
+      "summary": "中美正就人工智能议题定期磋商，寻求在总统峰会前敲定AI事件“热线”与正式对话框架，目标是在APEC深圳领导人会议期间习近平与特朗普会晤前达成基本框架。叠加芯片股大跌，投资者需关注半导体供应链预期与地缘风险溢价的变化。",
+      "url": "https://www.scmp.com/plus/tech/tech-war/article/3371013/china-us-discuss-ai-chip-stock-rout-hits-asian-markets?utm_source=rss_feed",
+      "source": "SCMP China"
+    },
+    {
+      "date": "2026-10-16",
+      "title": "ChatGPT现可读取你的Chrome标签页",
+      "summary": "OpenAI的ChatGPT Atlas浏览器已下线，但ChatGPT的Chrome扩展迎来升级，可读取用户已打开的浏览器标签页。安装扩展后，用户在ChatGPT网页或桌面应用中@Chrome即可让其查看标签页内容。这是AI助手深度嵌入用户工作流的关键产品升级，强化其入口级竞争壁垒，投资者需关注其对搜索与浏览器生态的潜在冲击。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1012510/openai-chatgpt-google-chrome-tabs",
+      "source": "The Verge"
     }
   ]
 }

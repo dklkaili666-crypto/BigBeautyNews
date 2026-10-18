@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-10-17T23:45:58Z",
+  "exportedAt": "2026-10-18T23:45:51Z",
   "items": [
     {
-      "date": "2026-10-18",
-      "title": "Replit 将 OpenAI 设为默认模型，取代 Anthropic",
-      "summary": "头部 AI 编程平台 Replit 将默认模型供应商从 Anthropic 切换为 OpenAI，Claude 仍对平台客户开放。对投资者而言，这是模型供应商竞争格局变化的直接信号：默认分发位易主将影响两家公司的商业化预期与开发者触达，需关注后续用户留存及收入分成条款。",
-      "url": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
+      "date": "2026-10-19",
+      "title": "Anthropic 承诺将 5% 股权注入公益基金",
+      "summary": "Anthropic 宣布将把 5% 的股份投入一只公益基金。对投资者而言，这不仅是企业社会责任安排，更是头部大语言模型公司股权结构与治理机制的重大设计，可能影响其估值叙事、长期利益分配以及一级市场对 AI 公司治理溢价的判断，值得持续跟踪具体基金架构与稀释影响。",
+      "url": "https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-10-18",
-      "title": "网站开始对 AI 智能体关闭大门",
-      "summary": "OpenAI、Meta、Google 等力推可代用户浏览网页、完成订餐、清收件箱等任务的自主 AI 智能体，但越来越多网站开始封锁其访问。对投资者而言，这是评估 AI 智能体赛道可行性的关键风险信号：数据获取受阻将直接冲击代理类产品的功能边界与商业模式，并可能推高合规与授权成本。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
-      "source": "The Verge"
-    },
-    {
-      "date": "2026-10-18",
-      "title": "Meta 删除可能允许其抓取新闻网站内容的条款",
-      "summary": "在舆论压力下，Meta 再次修改商业条款，删除暗示其可抓取网站（含新闻网站）内容用于训练 AI 的表述。对投资者而言，这反映大厂 AI 训练数据的合规与版权风险升温，可能推高数据获取成本、增加法律敞口，并影响依赖公开网页数据的模型训练节奏。",
-      "url": "https://www.theverge.com/tech/1013409/meta-removes-language-that-may-have-allowed-it-to-scrape-news-sites",
-      "source": "The Verge"
-    },
-    {
-      "date": "2026-10-18",
-      "title": "Elorian 首款 AI 模型主打图像推理而非仅描述图像",
-      "summary": "Elorian 称其模型 Glimpse 在科学图表推理和短视频描述任务上优于 GPT-6 Astra，其他视觉推理任务表现亦具竞争力。对投资者而言，若第三方验证属实，多模态竞争格局可能生变，新玩家有望切入视觉推理细分赛道，值得跟踪基准测试复现与商业化进展。",
-      "url": "https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/",
+      "date": "2026-10-19",
+      "title": "迪士尼拟整体吸纳 Character.AI 大部分员工",
+      "summary": "文件显示，Character.AI 获得迪士尼录用邀请的员工中“绝大多数”已接受。不过该交易属于“马桩竞标”（stalking horse bid），其他公司仍可能提出更高报价。对投资者而言，这反映传统媒体巨头正以并购式交易整合 AI 人才与资产，是竞争格局与人才流向的重要信号，也意味着 Character.AI 的独立发展路径存在不确定性。",
+      "url": "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-10-18",
-      "title": "英伟达前高管转做 VC：机器人尚未迎来 ChatGPT 时刻",
-      "summary": "在英伟达机器人平台负责产品营销七年的 Amulya Vishwanath 认为，机器人仍处“乐高阶段”，执行器、机械手、软件与安全标准等基础模块仍在重建。对投资者而言，这一判断与“基础模型驱动机器人即将爆发”的乐观预期相左，为具身智能赛道的投资节奏与估值预期提供重要校准。",
-      "url": "https://techcrunch.com/video/a-nvidia-insider-turned-vc-on-why-robotics-hasnt-hit-its-chatgpt-moment-yet/",
+      "date": "2026-10-19",
+      "title": "Meta 删除引发数据抓取与 AI 训练担忧的条款表述",
+      "summary": "Meta 修改了服务条款中涉及网络抓取与 AI 训练的措辞，但发言人坚称这并不代表其网页抓取方式发生变化。对投资者而言，条款表述的调整直接关系到训练数据合规与版权风险定价，是观察大厂 AI 数据战略与监管压力的关键信号，可能影响相关法律成本与数据获取模式的预期。",
+      "url": "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/",
       "source": "TechCrunch"
+    },
+    {
+      "date": "2026-10-19",
+      "title": "混合推理智能体：在潜空间思考、以文本行动的 LLM 智能体",
+      "summary": "Hacker News 热议的混合推理 AI 智能体架构，主张在潜空间完成思考、通过文本执行行动，代表 AI 智能体技术路线的新探索。虽属社区信号而非产品发布，但可能影响下一代 AI 智能体的产品形态与推理成本结构，值得关注其对推理效率与可控性的潜在改进。",
+      "url": "https://arxiv.org/abs/2610.18861",
+      "source": "Hacker News"
+    },
+    {
+      "date": "2026-10-19",
+      "title": "OnlyFans 创作者不满 Meta 允许 Muse 进行露骨对话",
+      "summary": "成人内容创作者质疑，为何 Meta 允许其 AI 智能体进行露骨性对话，却限制他们的社交媒体账号。对投资者而言，这一争议凸显消费级 AI 产品在内容边界上的合规与品牌风险，可能推高平台型 AI 产品的监管成本并影响用户信任，是评估 AI 产品政策风险的一个具体案例。",
+      "url": "https://www.wired.com/story/onlyfans-creators-are-pissed-that-meta-lets-muse-talk-dirty/",
+      "source": "Wired"
     }
   ]
 }

@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-10-18T23:45:51Z",
+  "exportedAt": "2026-10-19T23:45:59Z",
   "items": [
     {
-      "date": "2026-10-19",
-      "title": "Anthropic 承诺将 5% 股权注入公益基金",
-      "summary": "Anthropic 宣布将把 5% 的股份投入一只公益基金。对投资者而言，这不仅是企业社会责任安排，更是头部大语言模型公司股权结构与治理机制的重大设计，可能影响其估值叙事、长期利益分配以及一级市场对 AI 公司治理溢价的判断，值得持续跟踪具体基金架构与稀释影响。",
-      "url": "https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/",
+      "date": "2026-10-20",
+      "title": "亚马逊推出TorchNeuron开发工具，迄今对英伟达最大挑战",
+      "summary": "亚马逊发布新开发工具TorchNeuron，旨在削弱英伟达对PyTorch生态的控制。PyTorch是构建多数AI应用的主流免费工具包，若开发者能更便捷地将应用迁移至亚马逊自研芯片等替代硬件，将重塑AI算力供应链格局，并直接冲击英伟达的定价权与生态护城河。投资者需关注开发者迁移进度及亚马逊芯片的实际采用率。",
+      "url": "https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-10-19",
-      "title": "迪士尼拟整体吸纳 Character.AI 大部分员工",
-      "summary": "文件显示，Character.AI 获得迪士尼录用邀请的员工中“绝大多数”已接受。不过该交易属于“马桩竞标”（stalking horse bid），其他公司仍可能提出更高报价。对投资者而言，这反映传统媒体巨头正以并购式交易整合 AI 人才与资产，是竞争格局与人才流向的重要信号，也意味着 Character.AI 的独立发展路径存在不确定性。",
-      "url": "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/",
+      "date": "2026-10-20",
+      "title": "英伟达发布新开源模型，瞄准企业级与PC端AI智能体",
+      "summary": "英伟达推出新开源模型，顺应企业希望在自有数据中心运行开源模型的趋势，同时推动端侧私有AI智能体落地。此举标志英伟达从单纯销售芯片向提供AI软件栈延伸，旨在锁定企业私有化部署与PC端推理场景。投资者应关注其软件生态收入潜力及对长期估值叙事的支撑作用。",
+      "url": "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-10-19",
-      "title": "Meta 删除引发数据抓取与 AI 训练担忧的条款表述",
-      "summary": "Meta 修改了服务条款中涉及网络抓取与 AI 训练的措辞，但发言人坚称这并不代表其网页抓取方式发生变化。对投资者而言，条款表述的调整直接关系到训练数据合规与版权风险定价，是观察大厂 AI 数据战略与监管压力的关键信号，可能影响相关法律成本与数据获取模式的预期。",
-      "url": "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/",
+      "date": "2026-10-20",
+      "title": "Tenstorrent以62亿美元估值融资15亿美元，扩张开源权重AI芯片",
+      "summary": "英伟达挑战者Tenstorrent在年初传出被收购意向后，完成15亿美元融资并保持独立，估值达62亿美元。该公司主打开源权重AI芯片，此轮融资反映一级市场对AI芯片替代方案的持续押注。投资者需关注其资金用途、客户拓展进展，以及其对英伟达主导地位的实际威胁程度。",
+      "url": "https://techcrunch.com/2026/10/19/tenstorrent-hits-6-2b-valuation-to-scale-open-weight-ai-chips/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-10-19",
-      "title": "混合推理智能体：在潜空间思考、以文本行动的 LLM 智能体",
-      "summary": "Hacker News 热议的混合推理 AI 智能体架构，主张在潜空间完成思考、通过文本执行行动，代表 AI 智能体技术路线的新探索。虽属社区信号而非产品发布，但可能影响下一代 AI 智能体的产品形态与推理成本结构，值得关注其对推理效率与可控性的潜在改进。",
-      "url": "https://arxiv.org/abs/2610.18861",
-      "source": "Hacker News"
+      "date": "2026-10-20",
+      "title": "CoreWeave债务陷入困境，或成AI行业系统性风险",
+      "summary": "CoreWeave债券收益率较国债高出1000个基点，按常见标准已跌入困境区间。知名投资人Chamath Palihapitiya公开关注该 distressed 债务，并质疑AI基建是否正形成私人信贷泡沫。此事直接指向AI资本开支周期对债务融资的高度依赖，是判断AI基建可持续性的关键警示信号，投资者应警惕私人信贷风险向整个AI产业链传导。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1014045/coreweave-stock-debt-sector-ai",
+      "source": "The Verge"
     },
     {
-      "date": "2026-10-19",
-      "title": "OnlyFans 创作者不满 Meta 允许 Muse 进行露骨对话",
-      "summary": "成人内容创作者质疑，为何 Meta 允许其 AI 智能体进行露骨性对话，却限制他们的社交媒体账号。对投资者而言，这一争议凸显消费级 AI 产品在内容边界上的合规与品牌风险，可能推高平台型 AI 产品的监管成本并影响用户信任，是评估 AI 产品政策风险的一个具体案例。",
-      "url": "https://www.wired.com/story/onlyfans-creators-are-pissed-that-meta-lets-muse-talk-dirty/",
-      "source": "Wired"
+      "date": "2026-10-20",
+      "title": "微软称AI智能体如内部威胁，前沿模型不可信任",
+      "summary": "微软警告企业需密切监控员工使用的、由OpenAI和Anthropic等AI实验室之外系统控制的AI智能体，并将其类比为内部威胁。这一定性预示企业AI智能体安全与治理将成为新的采购刚需和支出方向。投资者应关注AI安全治理赛道的商业化机会，以及企业对第三方Agent管控工具的需求增长。",
+      "url": "https://techcrunch.com/2026/10/19/microsoft-says-ai-agents-are-like-insider-threats-as-frontier-models-cant-be-trusted/",
+      "source": "TechCrunch"
     }
   ]
 }

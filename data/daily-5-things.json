@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-10-20T23:45:54Z",
+  "exportedAt": "2026-10-21T23:45:56Z",
   "items": [
     {
-      "date": "2026-10-21",
-      "title": "谷歌联手亚马逊推开发者工具，挑战英伟达GPU生态",
-      "summary": "谷歌发布开发者工具，帮助PyTorch用户将应用从英伟达GPU迁移，与亚马逊联手削弱CUDA生态锁定。此举直接冲击英伟达AI算力护城河，是芯片供应链与竞争格局的关键变量，投资者需关注其对英伟达数据中心GPU份额的潜在侵蚀。",
-      "url": "https://techcrunch.com/2026/10/20/google-has-joined-amazon-in-attacking-nvidias-stronghold-with-ai-app-developers/",
-      "source": "TechCrunch"
+      "date": "2026-10-22",
+      "title": "黄仁勋欧洲愿景：插拔式数据中心",
+      "summary": "在柏林GTC上，英伟达CEO黄仁勋发布DSX Pod插拔式数据中心，旨在解决欧洲AI基础设施滞后问题，并推进自主人形机器人。对投资者而言，这指向英伟达在数据中心硬件之外的新增长点，以及欧洲AI基建缺口带来的潜在需求。",
+      "url": "https://www.wired.com/story/jensen-huangs-vision-for-europe-runs-on-plug-in-data-centers/",
+      "source": "Wired"
     },
     {
-      "date": "2026-10-21",
-      "title": "Nscale与Anthropic据传洽谈450亿美元算力大单",
-      "summary": "若交易落地，将是Anthropic一年内又一笔450亿美元级算力协议，反映头部大语言模型厂商资本开支与算力军备竞赛持续升级。投资者需关注云厂商与AI基础设施的长期需求逻辑，以及算力集中度对产业链议价能力的影响。",
-      "url": "https://techcrunch.com/2026/10/19/nscale-and-anthropic-are-reportedly-in-talks-for-yet-another-45-billion-compute-deal/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-10-21",
-      "title": "OpenAI收购Orchestra Bio，加码生物科技AI布局",
-      "summary": "OpenAI将Orchestra团队与技术并入其生命科学AI模型Rosalind及Rosalind Workbench工具，助力研究人员规划实验与分析结果。这是大厂向垂直行业扩张的实质性战略动作，打开AI制药商业化想象空间，投资者可关注AI在生命科学领域的落地进展。",
-      "url": "https://techcrunch.com/2026/10/20/openai-acquires-startup-orchestra-bio%e2%81%a0-to-beef-up-its-biotech-business/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-10-21",
-      "title": "谷歌个性化Gemini AI登陆车载场景",
-      "summary": "谷歌将Personal Intelligence引入车载Gemini，Android Auto及内置Google的汽车可跨Gmail、日历、地图、照片、YouTube和搜索调用用户信息。这是谷歌AI分发渠道与生态变现的重要产品落地，投资者需关注其提升用户粘性与数据闭环的潜力。",
-      "url": "https://www.theverge.com/tech/1014999/google-gemini-ai-cars-android-auto",
+      "date": "2026-10-22",
+      "title": "Anthropic推出Claude Duet AI智能体",
+      "summary": "Anthropic发布AI智能体Claude Duet，直接竞争Meta的Muse和OpenAI的Dots。该产品面向专业人士和小企业主，以“研究预览”形式推出，提供iOS和Android独立应用及网页版。投资者需关注AI智能体入口争夺升级对竞争格局和商业化预期的影响。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1015843/anthropic-claude-duet-ai-agent",
       "source": "The Verge"
     },
     {
-      "date": "2026-10-21",
-      "title": "Anthropic推动AI安全法案：50人以上死亡风险可阻断模型发布",
-      "summary": "Anthropic提议的AI安全政策看似防范AI失控，实则规定联邦机构须经法官许可才能阻止模型发布。若成法将改变前沿大语言模型的合规成本与发布节奏，是监管风险定价的重要信号，投资者需评估其对模型迭代速度与商业化的影响。",
-      "url": "https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/",
+      "date": "2026-10-22",
+      "title": "Meta发行新类别股份为AI融资",
+      "summary": "Meta宣布发行无投票权新类别股份，为AI计划、潜在并购和员工薪酬融资，交易将于2027年开始。此举反映大型科技公司为AI资本开支开辟新融资渠道，投资者需关注其对估值和资本结构的影响。",
+      "url": "https://www.theverge.com/tech/1015799/meta-shares-class-ai-q3-2026-earnings",
+      "source": "The Verge"
+    },
+    {
+      "date": "2026-10-22",
+      "title": "Anthropic云合作遇阻，IPO前算力承压",
+      "summary": "据报道，Anthropic在计划11月IPO前难以从云厂商获得足够算力，因云厂商日益将其视为竞争对手，同时基础设施支出激增。这暴露了头部模型公司的供应链与成本风险，对AI基础设施投资逻辑有实质影响。",
+      "url": "https://techcrunch.com/2026/10/20/anthropics-cloud-partnerships-are-getting-messy/",
       "source": "TechCrunch"
+    },
+    {
+      "date": "2026-10-22",
+      "title": "OpenAI模型将登陆Google Cloud",
+      "summary": "OpenAI模型即将登陆Google Cloud，意味着模型与云厂商竞合关系重构，扩大分发渠道并改变云AI服务竞争格局。投资者需关注这一跨大厂战略信号对云服务市场的影响。",
+      "url": "https://openai.com/index/openai-models-google-cloud/",
+      "source": "Hacker News"
     }
   ]
 }

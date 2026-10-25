@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-10-24T23:45:51Z",
+  "exportedAt": "2026-10-25T23:46:00Z",
   "items": [
     {
-      "date": "2026-10-25",
-      "title": "OpenAI 以“重大风险”为由停止用实时互联网训练模型",
-      "summary": "OpenAI 宣布将前沿模型与实时互联网训练数据切断，此举距其工程师称该方案不可行仅数周。对投资者而言，这标志着头部大模型厂商在数据获取成本、合规风险与模型迭代节奏上的重大策略转向，可能推高数据采购与合规支出，并影响模型更新频率与竞争格局。",
-      "url": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-10-25",
-      "title": "Meta 因出版商反对推迟 AI 抓取新商业条款",
-      "summary": "Meta 将新商业条款生效日推迟至 11 月 20 日，此前出版商担忧该条款允许其抓取新闻网站用于 AI 训练。这反映训练数据版权博弈升级，可能推高内容授权成本，并促使其他大厂调整爬取策略。投资者需关注数据合规成本对 AI 产品经济性的影响。",
-      "url": "https://www.theverge.com/tech/1017450/meta-business-terms-delayed-ai-scraping",
-      "source": "The Verge"
-    },
-    {
-      "date": "2026-10-25",
-      "title": "inDrive 联合 Pony.ai 与英伟达拟 2027 年中亚测试 robotaxi",
-      "summary": "Uber 竞争对手 inDrive 计划于 2027 年上半年在哈萨克斯坦首都测试 Pony.ai 的 robotaxi，并联合英伟达。此举显示自动驾驶供应链与新兴市场商业化路径正在成型，对芯片需求与出行平台投资具有信号意义，投资者可关注相关供应链与区域落地进展。",
-      "url": "https://techcrunch.com/2026/10/22/uber-rival-indrive-eyes-2027-robotaxi-tests-in-central-asia-with-pony-ai-and-nvidia/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-10-25",
-      "title": "Block 推出纯对话训练 AI 模型 Dessa，风格像“ awkward 新朋友”",
-      "summary": "Jack Dorsey 旗下 Block 发布 AI 模型 Dessa，称其“完全从零基于人类对话训练”，并展示与人类的聊天记录，风格偶尔略显尴尬。这是支付巨头自研基础模型的少见案例，可能改变金融科技公司自建 AI 能力的估值叙事，投资者需关注其商业化路径与差异化。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech",
-      "source": "The Verge"
-    },
-    {
-      "date": "2026-10-25",
-      "title": "科技行业外未见 AI 回报迹象",
-      "summary": "Hacker News 高热讨论指出，AI 在科技行业外尚无回报迹象。作为弱信号，这提示 AI 资本开支与变现预期之间存在落差风险，投资者应警惕 AI 投资回报周期长于预期对估值与资本配置的潜在影响。",
-      "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
+      "date": "2026-10-26",
+      "title": "OpenAI与Anthropic数月内大语言模型降价最高80%，原因何在？",
+      "summary": "头部大语言模型厂商在数月内大幅降价，直接压缩AI应用层成本与推理毛利。投资者需关注：价格战可能削弱模型厂商定价权与盈利能力，但利好应用层成本下降；同时反映竞争加剧与推理效率提升，或加速行业整合。",
+      "url": "https://minimaxir.com/2026/10/cheap-llms/",
       "source": "Hacker News"
+    },
+    {
+      "date": "2026-10-26",
+      "title": "Apollo经济学家：AI对多数企业“零财务回报”",
+      "summary": "权威经济学家指出，尽管AI投资巨大且炒作广泛，但科技业外美国企业尚未获得可量化的财务回报。若该观点被广泛采信，可能压制企业AI资本开支预期，对AI基础设施投资逻辑构成负面验证，投资者需警惕AI变现叙事降温风险。",
+      "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-10-26",
+      "title": "谷歌AI搜索变革冲击在线出版业",
+      "summary": "谷歌AI搜索重构流量分发机制，冲击内容出版与SEO生态。投资者需关注：依赖搜索流量的互联网资产估值与广告商业模式可能承压，内容出版商议价能力下降，AI搜索的引用与导流规则将成为新的竞争变量。",
+      "url": "https://www.theverge.com/column/1017983/google-ai-search-online-publishing",
+      "source": "The Verge"
+    },
+    {
+      "date": "2026-10-26",
+      "title": "Cerebras部署万亿参数AI模型",
+      "summary": "Cerebras实现万亿参数模型部署，涉及AI芯片供应链与推理算力竞争格局。投资者需关注：此举对英伟达之外的算力替代叙事具有实质意义，若规模化验证成功，可能加剧AI芯片市场竞争并影响算力成本曲线。",
+      "url": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
+      "source": "Hacker News"
+    },
+    {
+      "date": "2026-10-26",
+      "title": "宾夕法尼亚州要求AI生成广告加注标签",
+      "summary": "宾州州长签署《人工智能欺骗性广告法》，要求经AI显著修改或生成的广告（图像、视频、音频、文本）加注披露标签。投资者需关注：州级AI内容监管落地是合规成本上升的先行信号，影响广告科技与生成式AI产品的合规路径与运营成本。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act",
+      "source": "The Verge"
     }
   ]
 }

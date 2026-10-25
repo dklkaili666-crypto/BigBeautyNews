@@ -1,49 +1,51 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-10-24T23:45:51Z",
-  "dailyTheme": "今日主线是头部大模型厂商在数据获取与合规上的策略收缩（OpenAI 断网训练、Meta 推迟抓取条款），同时自动驾驶与自研模型在垂直场景继续推进；市场开始质疑 AI 在科技行业外的实际回报。",
-  "geopoliticsTheme": "今日主题为中美博弈多线升温：美方在孔子学院与关税上施压，欧盟酝酿对华贸易保护，同时中东军事集结与朝鲜外交动向增添全球安全不确定性。",
+  "exportedAt": "2026-10-25T23:46:00Z",
+  "dailyTheme": "今日主线是AI商业化遇冷与价格战并行：头部模型大幅降价、企业侧回报受质疑，同时算力替代与AI搜索/监管重塑产业链价值分配。",
+  "geopoliticsTheme": "今日主题围绕中国在非洲安全架构与印太军事平衡的主动布局，以及关键通信与稀土供应链的武器化风险；美国中期选举政治博弈同步升温，全球秩序竞争向技术与资源领域延伸。",
   "items": [
     {
-      "id": "90227826-46fe-5b8a-a5c7-b9335ba2cb4f",
-      "date": "2026-10-25",
-      "title": "OpenAI 以“重大风险”为由停止用实时互联网训练模型",
-      "summary": "OpenAI 宣布将前沿模型与实时互联网训练数据切断，此举距其工程师称该方案不可行仅数周。对投资者而言，这标志着头部大模型厂商在数据获取成本、合规风险与模型迭代节奏上的重大策略转向，可能推高数据采购与合规支出，并影响模型更新频率与竞争格局。",
-      "url": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/",
-      "canonicalUrl": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks",
-      "source": "TechCrunch",
-      "sourceTier": "tier2",
+      "id": "5d04f609-05ed-565b-b290-75e77333a34d",
+      "date": "2026-10-26",
+      "title": "OpenAI与Anthropic数月内大语言模型降价最高80%，原因何在？",
+      "summary": "头部大语言模型厂商在数月内大幅降价，直接压缩AI应用层成本与推理毛利。投资者需关注：价格战可能削弱模型厂商定价权与盈利能力，但利好应用层成本下降；同时反映竞争加剧与推理效率提升，或加速行业整合。",
+      "url": "https://minimaxir.com/2026/10/cheap-llms/",
+      "canonicalUrl": "https://minimaxir.com/2026/10/cheap-llms",
+      "source": "Hacker News",
+      "sourceTier": "tier3",
       "isPrimarySource": false,
       "tags": [
-        "OpenAI",
         "大模型",
-        "数据合规"
+        "定价竞争",
+        "OpenAI",
+        "Anthropic"
       ],
       "rank": 1,
-      "eventId": "a8202baa0de8410c29b6323a5589f3750afbc68b",
+      "eventId": "cae715988328c6f560e5cc5ebaa07c0f38330f8c",
       "eventType": "unknown",
       "entities": [
-        "OpenAI"
+        "OpenAI",
+        "Anthropic"
       ],
       "tickers": [],
-      "sourceCredibilityScore": 3.0,
+      "sourceCredibilityScore": 2.0,
       "marketImpactScore": 3.0,
       "noveltyScore": 4.0,
       "timelinessScore": 5.0,
-      "entityImportanceScore": 3.0,
-      "confidenceScore": 3.0,
-      "totalScore": 3.4,
+      "entityImportanceScore": 4.0,
+      "confidenceScore": 2.0,
+      "totalScore": 3.35,
       "whyItMatters": "",
       "investmentImplication": "",
       "riskNote": "",
-      "originalTitle": "OpenAI says it will no longer train its AI models on the live internet, citing “significant risks”",
-      "published": "2026-10-23T23:05:49Z",
+      "originalTitle": "OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?",
+      "published": "2026-10-25T21:11:31Z",
       "mergedSources": [
-        "TechCrunch"
+        "Hacker News"
       ],
       "relatedUrls": [],
-      "primarySource": "TechCrunch",
-      "selectionReason": "OpenAI 切断前沿模型与实时互联网的训练连接，直接影响数据获取成本、合规风险与模型迭代节奏，是头部大模型厂商策略的重大转向。",
+      "primarySource": "Hacker News",
+      "selectionReason": "头部大模型厂商在数月内大幅降价，直接压缩AI应用层成本与推理毛利，是影响竞争格局与定价权的关键信号。",
       "promptVersion": "",
       "modelUsed": "",
       "rawPayloadHash": "",
@@ -51,28 +53,28 @@
       "regions": [],
       "geopoliticsEventTypes": [],
       "geopoliticsRuleScore": 0.0,
-      "createdAt": "2026-10-24T23:45:51Z"
+      "createdAt": "2026-10-25T23:46:00Z"
     },
     {
-      "id": "ffd51706-2613-50d8-9a86-252860ee342e",
-      "date": "2026-10-25",
-      "title": "Meta 因出版商反对推迟 AI 抓取新商业条款",
-      "summary": "Meta 将新商业条款生效日推迟至 11 月 20 日，此前出版商担忧该条款允许其抓取新闻网站用于 AI 训练。这反映训练数据版权博弈升级，可能推高内容授权成本，并促使其他大厂调整爬取策略。投资者需关注数据合规成本对 AI 产品经济性的影响。",
-      "url": "https://www.theverge.com/tech/1017450/meta-business-terms-delayed-ai-scraping",
-      "canonicalUrl": "https://www.theverge.com/tech/1017450/meta-business-terms-delayed-ai-scraping",
-      "source": "The Verge",
+      "id": "08945965-34c2-5c08-90a7-c3055c544d08",
+      "date": "2026-10-26",
+      "title": "Apollo经济学家：AI对多数企业“零财务回报”",
+      "summary": "权威经济学家指出，尽管AI投资巨大且炒作广泛，但科技业外美国企业尚未获得可量化的财务回报。若该观点被广泛采信，可能压制企业AI资本开支预期，对AI基础设施投资逻辑构成负面验证，投资者需警惕AI变现叙事降温风险。",
+      "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
+      "canonicalUrl": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist",
+      "source": "TechCrunch",
       "sourceTier": "tier2",
       "isPrimarySource": false,
       "tags": [
-        "Meta",
-        "数据版权",
-        "大厂战略"
+        "AI投资回报",
+        "宏观",
+        "企业支出"
       ],
       "rank": 2,
-      "eventId": "c459246bedae4e62b04eb0c1121e76809ab5948f",
-      "eventType": "funding",
+      "eventId": "c9875d8a4db635c2443a64f1ab25529860c5d6b3",
+      "eventType": "unknown",
       "entities": [
-        "Meta"
+        "Intel"
       ],
       "tickers": [],
       "sourceCredibilityScore": 3.0,
@@ -85,63 +87,14 @@
       "whyItMatters": "",
       "investmentImplication": "",
       "riskNote": "",
-      "originalTitle": "Meta delays new business terms after publisher pushback on AI scraping",
-      "published": "2026-10-23T14:47:41Z",
-      "mergedSources": [
-        "The Verge"
-      ],
-      "relatedUrls": [],
-      "primarySource": "The Verge",
-      "selectionReason": "Meta 因出版商反对而推迟 AI 抓取条款，反映训练数据版权博弈升级，可能推高内容授权成本并影响其他大厂的爬取策略。",
-      "promptVersion": "",
-      "modelUsed": "",
-      "rawPayloadHash": "",
-      "warnings": [],
-      "regions": [],
-      "geopoliticsEventTypes": [],
-      "geopoliticsRuleScore": 0.0,
-      "createdAt": "2026-10-24T23:45:51Z"
-    },
-    {
-      "id": "0a6708f8-a851-5185-84e0-cf97a84cc7ec",
-      "date": "2026-10-25",
-      "title": "inDrive 联合 Pony.ai 与英伟达拟 2027 年中亚测试 robotaxi",
-      "summary": "Uber 竞争对手 inDrive 计划于 2027 年上半年在哈萨克斯坦首都测试 Pony.ai 的 robotaxi，并联合英伟达。此举显示自动驾驶供应链与新兴市场商业化路径正在成型，对芯片需求与出行平台投资具有信号意义，投资者可关注相关供应链与区域落地进展。",
-      "url": "https://techcrunch.com/2026/10/22/uber-rival-indrive-eyes-2027-robotaxi-tests-in-central-asia-with-pony-ai-and-nvidia/",
-      "canonicalUrl": "https://techcrunch.com/2026/10/22/uber-rival-indrive-eyes-2027-robotaxi-tests-in-central-asia-with-pony-ai-and-nvidia",
-      "source": "TechCrunch",
-      "sourceTier": "tier2",
-      "isPrimarySource": false,
-      "tags": [
-        "Robotaxi",
-        "英伟达",
-        "自动驾驶"
-      ],
-      "rank": 3,
-      "eventId": "0f68187fa370ab26cb0ceab39750ee7c9d329281",
-      "eventType": "unknown",
-      "entities": [
-        "NVIDIA"
-      ],
-      "tickers": [],
-      "sourceCredibilityScore": 3.0,
-      "marketImpactScore": 3.0,
-      "noveltyScore": 4.0,
-      "timelinessScore": 5.0,
-      "entityImportanceScore": 3.0,
-      "confidenceScore": 3.0,
-      "totalScore": 3.4,
-      "whyItMatters": "",
-      "investmentImplication": "",
-      "riskNote": "",
-      "originalTitle": "Uber rival inDrive eyes 2027 robotaxi tests in Central Asia with Pony AI and Nvidia",
-      "published": "2026-10-23T04:00:00Z",
+      "originalTitle": "AI delivers ‘zero financial payoff’ to most companies, Apollo economist says",
+      "published": "2026-10-25T16:57:32Z",
       "mergedSources": [
         "TechCrunch"
       ],
       "relatedUrls": [],
       "primarySource": "TechCrunch",
-      "selectionReason": "inDrive 联合 Pony.ai 与英伟达在中亚落地 robotaxi 测试，显示自动驾驶供应链与新兴市场商业化路径正在成型，对芯片与出行投资有信号意义。",
+      "selectionReason": "权威经济学家指出科技业外企业AI投入回报为零，若被广泛采信将压制企业AI资本开支预期，对AI基础设施投资逻辑构成负面验证。",
       "promptVersion": "",
       "modelUsed": "",
       "rawPayloadHash": "",
@@ -149,46 +102,49 @@
       "regions": [],
       "geopoliticsEventTypes": [],
       "geopoliticsRuleScore": 0.0,
-      "createdAt": "2026-10-24T23:45:51Z"
+      "createdAt": "2026-10-25T23:46:00Z"
     },
     {
-      "id": "ac8fb7ed-008e-5e06-9906-9bb7387b5665",
-      "date": "2026-10-25",
-      "title": "Block 推出纯对话训练 AI 模型 Dessa，风格像“ awkward 新朋友”",
-      "summary": "Jack Dorsey 旗下 Block 发布 AI 模型 Dessa，称其“完全从零基于人类对话训练”，并展示与人类的聊天记录，风格偶尔略显尴尬。这是支付巨头自研基础模型的少见案例，可能改变金融科技公司自建 AI 能力的估值叙事，投资者需关注其商业化路径与差异化。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech",
-      "canonicalUrl": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech",
+      "id": "028ed79c-af6d-52a0-9075-86f1a2842897",
+      "date": "2026-10-26",
+      "title": "谷歌AI搜索变革冲击在线出版业",
+      "summary": "谷歌AI搜索重构流量分发机制，冲击内容出版与SEO生态。投资者需关注：依赖搜索流量的互联网资产估值与广告商业模式可能承压，内容出版商议价能力下降，AI搜索的引用与导流规则将成为新的竞争变量。",
+      "url": "https://www.theverge.com/column/1017983/google-ai-search-online-publishing",
+      "canonicalUrl": "https://www.theverge.com/column/1017983/google-ai-search-online-publishing",
       "source": "The Verge",
       "sourceTier": "tier2",
       "isPrimarySource": false,
       "tags": [
-        "Block",
-        "自研模型",
-        "金融科技"
+        "谷歌",
+        "AI搜索",
+        "广告",
+        "内容生态"
       ],
-      "rank": 4,
-      "eventId": "f490e9c8ed30cee36e02a3c778dbbd78a5d4d00d",
-      "eventType": "model_release",
-      "entities": [],
+      "rank": 3,
+      "eventId": "a993a55e945b9fb67f826a64986a70ebb8d09031",
+      "eventType": "unknown",
+      "entities": [
+        "Google"
+      ],
       "tickers": [],
       "sourceCredibilityScore": 3.0,
       "marketImpactScore": 2.0,
       "noveltyScore": 4.0,
       "timelinessScore": 5.0,
-      "entityImportanceScore": 2.0,
+      "entityImportanceScore": 3.0,
       "confidenceScore": 3.0,
-      "totalScore": 2.9,
+      "totalScore": 3.05,
       "whyItMatters": "",
       "investmentImplication": "",
       "riskNote": "",
-      "originalTitle": "Jack Dorsey’s Block made an AI model that talks to you like an awkward new friend",
-      "published": "2026-10-23T19:32:39Z",
+      "originalTitle": "Google’s AI search changes upended online publishing",
+      "published": "2026-10-25T12:00:00Z",
       "mergedSources": [
         "The Verge"
       ],
       "relatedUrls": [],
       "primarySource": "The Verge",
-      "selectionReason": "Block 从零训练纯对话模型 Dessa，是支付巨头自研基础模型的少见案例，可能改变金融科技公司自建 AI 能力的估值叙事。",
+      "selectionReason": "谷歌AI搜索重构流量分发，冲击内容出版与SEO生态，影响依赖搜索流量的互联网资产估值与广告商业模式。",
       "promptVersion": "",
       "modelUsed": "",
       "rawPayloadHash": "",
@@ -196,25 +152,26 @@
       "regions": [],
       "geopoliticsEventTypes": [],
       "geopoliticsRuleScore": 0.0,
-      "createdAt": "2026-10-24T23:45:51Z"
+      "createdAt": "2026-10-25T23:46:00Z"
     },
     {
-      "id": "886e38f5-548e-5d71-b9cf-4c81d569c480",
-      "date": "2026-10-25",
-      "title": "科技行业外未见 AI 回报迹象",
-      "summary": "Hacker News 高热讨论指出，AI 在科技行业外尚无回报迹象。作为弱信号，这提示 AI 资本开支与变现预期之间存在落差风险，投资者应警惕 AI 投资回报周期长于预期对估值与资本配置的潜在影响。",
-      "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
-      "canonicalUrl": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
+      "id": "fab9fa8c-eca5-5cc8-afa4-9465a5a293fa",
+      "date": "2026-10-26",
+      "title": "Cerebras部署万亿参数AI模型",
+      "summary": "Cerebras实现万亿参数模型部署，涉及AI芯片供应链与推理算力竞争格局。投资者需关注：此举对英伟达之外的算力替代叙事具有实质意义，若规模化验证成功，可能加剧AI芯片市场竞争并影响算力成本曲线。",
+      "url": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
+      "canonicalUrl": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
       "source": "Hacker News",
       "sourceTier": "tier3",
       "isPrimarySource": false,
       "tags": [
-        "AI投资",
-        "宏观",
-        "HN"
+        "芯片",
+        "算力",
+        "Cerebras",
+        "大模型"
       ],
-      "rank": 5,
-      "eventId": "074b7d5e1602db74c1fe6fb1c2ecbd9316e0e876",
+      "rank": 4,
+      "eventId": "2325af3360e067168cf6af742b1faed065229386",
       "eventType": "unknown",
       "entities": [],
       "tickers": [],
@@ -228,14 +185,14 @@
       "whyItMatters": "",
       "investmentImplication": "",
       "riskNote": "",
-      "originalTitle": "No signs of AI payoff outside the tech sector",
-      "published": "2026-10-24T19:47:19Z",
+      "originalTitle": "Cerebras Deploys Trillion-Parameter AI Models",
+      "published": "2026-10-25T01:33:49Z",
       "mergedSources": [
         "Hacker News"
       ],
       "relatedUrls": [],
       "primarySource": "Hacker News",
-      "selectionReason": "HN 高热讨论指出 AI 在科技行业外尚无回报迹象，作为弱信号提示 AI 资本开支与变现预期之间的落差风险，值得投资者警惕。",
+      "selectionReason": "Cerebras实现万亿参数模型部署，涉及AI芯片供应链与推理算力竞争格局，对英伟达之外的算力替代叙事有实质意义。",
       "promptVersion": "",
       "modelUsed": "",
       "rawPayloadHash": "",
@@ -243,27 +200,76 @@
       "regions": [],
       "geopoliticsEventTypes": [],
       "geopoliticsRuleScore": 0.0,
-      "createdAt": "2026-10-24T23:45:51Z"
+      "createdAt": "2026-10-25T23:46:00Z"
+    },
+    {
+      "id": "90954843-12a9-56a9-9ce1-044cb8742634",
+      "date": "2026-10-26",
+      "title": "宾夕法尼亚州要求AI生成广告加注标签",
+      "summary": "宾州州长签署《人工智能欺骗性广告法》，要求经AI显著修改或生成的广告（图像、视频、音频、文本）加注披露标签。投资者需关注：州级AI内容监管落地是合规成本上升的先行信号，影响广告科技与生成式AI产品的合规路径与运营成本。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act",
+      "canonicalUrl": "https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act",
+      "source": "The Verge",
+      "sourceTier": "tier2",
+      "isPrimarySource": false,
+      "tags": [
+        "监管",
+        "AI广告",
+        "合规"
+      ],
+      "rank": 5,
+      "eventId": "6ce42dcb9df0c5009d3cf406763b573e64529558",
+      "eventType": "unknown",
+      "entities": [
+        "Intel"
+      ],
+      "tickers": [],
+      "sourceCredibilityScore": 3.0,
+      "marketImpactScore": 2.0,
+      "noveltyScore": 4.0,
+      "timelinessScore": 5.0,
+      "entityImportanceScore": 3.0,
+      "confidenceScore": 3.0,
+      "totalScore": 3.05,
+      "whyItMatters": "",
+      "investmentImplication": "",
+      "riskNote": "",
+      "originalTitle": "Pennsylvania will require labels on AI-generated ads",
+      "published": "2026-10-24T18:32:21Z",
+      "mergedSources": [
+        "The Verge"
+      ],
+      "relatedUrls": [],
+      "primarySource": "The Verge",
+      "selectionReason": "州级AI广告披露立法落地，是AI内容监管合规成本上升的先行信号，影响广告科技与生成式AI产品合规路径。",
+      "promptVersion": "",
+      "modelUsed": "",
+      "rawPayloadHash": "",
+      "warnings": [],
+      "regions": [],
+      "geopoliticsEventTypes": [],
+      "geopoliticsRuleScore": 0.0,
+      "createdAt": "2026-10-25T23:46:00Z"
     }
   ],
   "geopoliticsItems": [
     {
-      "id": "9f8d9c6a-5323-5bbe-8313-daa02312edd4",
-      "date": "2026-10-25",
-      "title": "金正恩罕见访问中国边境城市丹东",
-      "summary": "朝鲜领导人金正恩周六访问中国边境城市丹东，双方强调传统友谊并呼吁加强合作。这是金正恩一年多来首次访华，行程由中共中央政治局常委、中国第四号官员王沪宁迎接并陪同。此次访问发生在下月深圳APEC峰会之前，Donald Trump等领导人预计将出席该峰会。事件涉及中朝美互动与地区安全秩序，市场或关注东北亚地缘风险及对相关资产的情绪影响。",
-      "url": "https://www.scmp.com/news/china/diplomacy/article/3372026/north-korean-leader-kim-jong-un-visits-chinese-border-city-dandong",
-      "canonicalUrl": "https://www.scmp.com/news/china/diplomacy/article/3372026/north-korean-leader-kim-jong-un-visits-chinese-border-city-dandong",
+      "id": "f9fcf5d7-737f-5ef0-b5c5-179bf71d0edf",
+      "date": "2026-10-26",
+      "title": "习近平提出解决非洲冲突四项和平原则",
+      "summary": "中国国家主席习近平本月会见来访的多哥总统Faure Gnassingbe时，提出以四项原则处理非洲冲突与热点问题，核心是将和平与发展挂钩：坚持非洲主导、反对外部干预的安全安排；维护主权与联合国宪章原则；反对使用武力和制裁，主张通过对话实现停火；兼顾眼前安全关切与长期发展。该框架涉及全球安全秩序及中美在非洲的影响力竞争，后续需关注非洲国家及西方主要国家的反应，以及对中国与非洲安全合作、相关基建与资源项目预期的潜在影响。",
+      "url": "https://www.scmp.com/news/china/diplomacy/article/3372047/will-chinas-4-peace-principles-tackling-african-conflicts-work",
+      "canonicalUrl": "https://www.scmp.com/news/china/diplomacy/article/3372047/will-chinas-4-peace-principles-tackling-african-conflicts-work",
       "source": "SCMP China",
       "sourceTier": "tier2",
       "isPrimarySource": false,
       "tags": [
-        "中美关系",
-        "朝鲜半岛",
-        "地缘政治"
+        "中国外交",
+        "全球安全秩序",
+        "非洲"
       ],
       "rank": 1,
-      "eventId": "1e8ece024de43e2e4c6537b4a75230c277c25a0c",
+      "eventId": "04a1826fcf1385b7a30108b00ab04577547e5428",
       "eventType": "unknown",
       "entities": [],
       "tickers": [],
@@ -277,45 +283,44 @@
       "whyItMatters": "",
       "investmentImplication": "",
       "riskNote": "",
-      "originalTitle": "North Korean leader Kim Jong-un pays unexpected visit to Chinese border city of Dandong",
-      "published": "2026-10-24T11:08:27Z",
+      "originalTitle": "Will China’s 4 peace principles for tackling African conflicts work?",
+      "published": "2026-10-25T04:00:22Z",
       "mergedSources": [
         "SCMP China"
       ],
       "relatedUrls": [],
       "primarySource": "SCMP China",
-      "selectionReason": "金正恩罕见访华并会晤王沪宁，发生在APEC深圳峰会前，涉及中朝美互动与地区安全秩序。",
+      "selectionReason": "中国提出解决非洲冲突的四项和平原则，直接涉及全球安全秩序与中美在非洲影响力竞争，属最高优先级地缘事件。",
       "promptVersion": "",
       "modelUsed": "",
       "rawPayloadHash": "",
       "warnings": [],
       "regions": [
-        "china",
-        "us"
+        "china"
       ],
       "geopoliticsEventTypes": [
         "geopolitics"
       ],
-      "geopoliticsRuleScore": 6.0,
-      "createdAt": "2026-10-24T23:45:51Z"
+      "geopoliticsRuleScore": 4.0,
+      "createdAt": "2026-10-25T23:46:00Z"
     },
     {
-      "id": "32f38681-47ee-5242-8711-4a00c7073142",
-      "date": "2026-10-25",
-      "title": "Hegseth升级对孔子学院的打击行动",
-      "summary": "美国国防部长Pete Hegseth加强对孔子学院的打击，称其正被“系统性拆除”。孔子学院为北京支持、在海外大学推广中文与文化的中心，批评者长期视其为北京软实力工具。此举发生在Donald Trump今年第二次访华、并与中国国家主席习近平第三次会晤前数周。事件凸显中美关系紧张，市场或关注双边关系对贸易与教育交流的潜在影响。",
-      "url": "https://www.scmp.com/news/china/diplomacy/article/3372023/systematically-dismantled-hegseths-new-offensive-against-chinas-confucius-institutes",
-      "canonicalUrl": "https://www.scmp.com/news/china/diplomacy/article/3372023/systematically-dismantled-hegseths-new-offensive-against-chinas-confucius-institutes",
+      "id": "078bce70-3672-5275-8078-482bb4315a8f",
+      "date": "2026-10-26",
+      "title": "日本重启核动力潜艇讨论，执政联盟现分歧",
+      "summary": "在中国海军活动扩展至太平洋、双边关系紧张的背景下，日本首相Sanae Takaichi表示将“以具体且现实的方式认真考虑”为海上自卫队引入核动力潜艇，并称于10月14日在国会作出上述表态。日本计划年底前修订核心安全文件，该提议在执政联盟内部引发分歧。若推进，将标志日本防务政策的重大转变，可能改变西太平洋安全格局，并影响区域军备态势与相关防务产业预期；目前仍处讨论阶段，尚未形成政策决定。",
+      "url": "https://www.scmp.com/news/china/military/article/3372066/eye-china-japan-reopens-taboo-debate-over-nuclear-powered-submarines",
+      "canonicalUrl": "https://www.scmp.com/news/china/military/article/3372066/eye-china-japan-reopens-taboo-debate-over-nuclear-powered-submarines",
       "source": "SCMP China",
       "sourceTier": "tier2",
       "isPrimarySource": false,
       "tags": [
-        "中美关系",
-        "监管",
-        "地缘政治"
+        "中日关系",
+        "军事",
+        "印太安全"
       ],
       "rank": 2,
-      "eventId": "9bc4f5ed8b859fb780637a026ad85c29ec6f1c9c",
+      "eventId": "1b3aad9a1abe2fc8248e1324b0fa9fefff65c16e",
       "eventType": "capex",
       "entities": [],
       "tickers": [],
@@ -329,45 +334,45 @@
       "whyItMatters": "",
       "investmentImplication": "",
       "riskNote": "",
-      "originalTitle": "‘Systematically dismantled’: Hegseth’s new offensive against China’s Confucius Institutes",
-      "published": "2026-10-24T09:20:03Z",
+      "originalTitle": "Eye on China: Japan reopens taboo debate over nuclear-powered submarines",
+      "published": "2026-10-25T14:00:10Z",
       "mergedSources": [
         "SCMP China"
       ],
       "relatedUrls": [],
       "primarySource": "SCMP China",
-      "selectionReason": "美国防部长赫格塞斯升级对孔子学院的打击，正值特朗普访华与习特会前，凸显中美关系紧张。",
+      "selectionReason": "日本首相考虑为自卫队引入核动力潜艇，是对中国海军扩张的重大军事回应，可能改变西太平洋安全格局。",
       "promptVersion": "",
       "modelUsed": "",
       "rawPayloadHash": "",
       "warnings": [],
       "regions": [
         "china",
-        "us"
+        "global"
       ],
       "geopoliticsEventTypes": [
-        "geopolitics"
+        "election"
       ],
-      "geopoliticsRuleScore": 6.0,
-      "createdAt": "2026-10-24T23:45:51Z"
+      "geopoliticsRuleScore": 3.0,
+      "createdAt": "2026-10-25T23:46:00Z"
     },
     {
-      "id": "95bcd2f0-fa5d-5a01-b31f-15ee71ca255e",
-      "date": "2026-10-25",
-      "title": "美军增援中东，部分人员撤离，或指向对伊朗行动",
-      "summary": "军事增援力量正前往中东，同时部分人员已撤离该地区，指向可能对伊朗发动攻击。报道同时提及数百万美国人已在中期选举中提前投票。事件涉及美国军事部署与中东安全局势，属重大地缘政治变化，市场或关注能源价格、避险资产及全球风险偏好的潜在波动。",
-      "url": "https://www.npr.org/2026/10/23/g-s1-149514/up-first-newsletter-iran-war-midterm-voting-trump-bbc",
-      "canonicalUrl": "https://www.npr.org/2026/10/23/g-s1-149514/up-first-newsletter-iran-war-midterm-voting-trump-bbc",
-      "source": "NPR Politics",
+      "id": "81b349eb-17dd-5f93-bed0-db43184a2483",
+      "date": "2026-10-26",
+      "title": "Musk称SpaceX曾限制Starlink，乌克兰称已恢复",
+      "summary": "Musk表示乌克兰违反Starlink使用条款、将其用于军事活动，SpaceX因此采取了限制措施；乌克兰总统Volodymyr Zelenskyy称正常运营速度已恢复。事件凸显商业卫星通信在冲突中的关键作用及其被武器化的供应链风险，涉及SpaceX、乌克兰政府与战场通信保障。后续需关注Starlink服务条款与军事使用的边界、乌方通信替代方案，以及对商业卫星运营商监管与合同风险的潜在影响。",
+      "url": "https://www.npr.org/2026/10/24/nx-s1-6015482/ukraine-starlink-working-after-disruptions",
+      "canonicalUrl": "https://www.npr.org/2026/10/24/nx-s1-6015482/ukraine-starlink-working-after-disruptions",
+      "source": "NPR World",
       "sourceTier": "tier2",
       "isPrimarySource": false,
       "tags": [
-        "中东安全",
-        "军事部署",
-        "全球安全"
+        "俄乌战争",
+        "供应链",
+        "科技安全"
       ],
       "rank": 3,
-      "eventId": "537af07b2733b8e1d56b8997f5a186a36a818c43",
+      "eventId": "19c0d49aeb1da36cc9f7148d2e89eb3001ede944",
       "eventType": "unknown",
       "entities": [],
       "tickers": [],
@@ -381,15 +386,15 @@
       "whyItMatters": "",
       "investmentImplication": "",
       "riskNote": "",
-      "originalTitle": "Military reinforcements move to Mideast. And, millions of Americans vote early",
-      "published": "2026-10-23T11:22:25Z",
+      "originalTitle": "Musk says SpaceX did restrict Starlink, as Ukraine says the tech has been restored",
+      "published": "2026-10-24T17:54:25Z",
       "mergedSources": [
-        "NPR Politics",
-        "NPR World"
+        "NPR World",
+        "BBC World"
       ],
       "relatedUrls": [],
-      "primarySource": "NPR Politics",
-      "selectionReason": "美军增援中东且部分人员撤离，指向可能对伊朗动武，属重大军事与全球安全秩序变化。",
+      "primarySource": "NPR World",
+      "selectionReason": "SpaceX限制乌克兰Starlink军事使用，暴露关键通信供应链的武器化风险，影响战争进程与商业卫星依赖。",
       "promptVersion": "",
       "modelUsed": "",
       "rawPayloadHash": "",
@@ -398,29 +403,78 @@
         "global"
       ],
       "geopoliticsEventTypes": [
-        "geopolitics",
-        "election"
+        "geopolitics"
       ],
-      "geopoliticsRuleScore": 4.0,
-      "createdAt": "2026-10-24T23:45:51Z"
+      "geopoliticsRuleScore": 3.0,
+      "createdAt": "2026-10-25T23:46:00Z"
     },
     {
-      "id": "29dad58a-39d3-5961-bd45-bdd3252ccce3",
-      "date": "2026-10-25",
-      "title": "欧盟考虑以新配额和关税遏制中国进口",
-      "summary": "欧盟贸易负责人Maros Sefcovic周五表示，欧盟可能在与中国进一步谈判前，对更多中国行业实施配额或关税，并点名塑料行业调查已进入后期。他表示，当欧盟需要迅速保护产业时，将考虑保障措施以紧急限制进口激增，而非进行更长期谈判。事件涉及中欧贸易摩擦与供应链，市场或关注相关行业出口与价格影响。",
-      "url": "https://www.scmp.com/news/china/diplomacy/article/3371962/france-certain-united-front-germany-pushed-china-hybrid-car-deal",
-      "canonicalUrl": "https://www.scmp.com/news/china/diplomacy/article/3371962/france-certain-united-front-germany-pushed-china-hybrid-car-deal",
+      "id": "262d56e2-0b58-5d92-880f-8b49c0212c34",
+      "date": "2026-10-26",
+      "title": "奥巴马抨击特朗普并为民主党中期选举助选",
+      "summary": "美国前总统Obama在中期选举前为民主党候选人助选时抨击Trump，称此次选举是“至少遏制本届政府部分荒唐做法的最好也是最后的机会”。事件反映美国政治极化加剧及中期选举竞争态势，涉及民主党、共和党与Trump政府。选举结果可能影响后续财政支出、监管政策及立法推进的市场预期，但相关表述属竞选言论，政策影响仍取决于选举结果。",
+      "url": "https://www.bbc.co.uk/news/articles/cmj6jwe1j1gjo?at_medium=RSS&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cmj6jwe1j1gjo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
+      "sourceTier": "tier2",
+      "isPrimarySource": false,
+      "tags": [
+        "美国政治",
+        "中期选举"
+      ],
+      "rank": 4,
+      "eventId": "cc88b6d823e982cc6ede30650d70763fea3bf75c",
+      "eventType": "unknown",
+      "entities": [],
+      "tickers": [],
+      "sourceCredibilityScore": 3.0,
+      "marketImpactScore": 2.0,
+      "noveltyScore": 4.0,
+      "timelinessScore": 5.0,
+      "entityImportanceScore": 2.0,
+      "confidenceScore": 3.0,
+      "totalScore": 2.9,
+      "whyItMatters": "",
+      "investmentImplication": "",
+      "riskNote": "",
+      "originalTitle": "Obama attacks Trump as he campaigns for Democrats ahead of midterm elections",
+      "published": "2026-10-25T02:27:15Z",
+      "mergedSources": [
+        "BBC World"
+      ],
+      "relatedUrls": [],
+      "primarySource": "BBC World",
+      "selectionReason": "奥巴马抨击特朗普并为民主党中期选举助选，反映美国政治极化与中期选举走向，影响后续财政与监管政策预期。",
+      "promptVersion": "",
+      "modelUsed": "",
+      "rawPayloadHash": "",
+      "warnings": [],
+      "regions": [
+        "us"
+      ],
+      "geopoliticsEventTypes": [
+        "election"
+      ],
+      "geopoliticsRuleScore": 3.0,
+      "createdAt": "2026-10-25T23:46:00Z"
+    },
+    {
+      "id": "1bbd2102-cd5e-5bff-b54f-fde67c028104",
+      "date": "2026-10-26",
+      "title": "中国团队深入调查土耳其最大稀土矿床",
+      "summary": "中国研究人员对土耳其Kizilcaoren矿床的地质演化进行了深入调查，为该国已知最大稀土储量提供了新认识，同时下调了对其商业潜力的预期。研究揭示了稀土元素在碳酸岩相关地层中的富集机制，但结论认为该矿床短期内不太可能成为现有生产国的主要全球替代来源。事件涉及全球关键矿产供应链格局与稀土定价权，后续需关注土耳其开发进展及中国在稀土加工领域地位的潜在影响。",
+      "url": "https://www.scmp.com/news/china/science/article/3371800/china-carries-out-depth-investigation-turkeys-largest-rare-earth-deposit",
+      "canonicalUrl": "https://www.scmp.com/news/china/science/article/3371800/china-carries-out-depth-investigation-turkeys-largest-rare-earth-deposit",
       "source": "SCMP China",
       "sourceTier": "tier2",
       "isPrimarySource": false,
       "tags": [
-        "中欧贸易",
-        "关税",
-        "供应链"
+        "关键矿产",
+        "供应链",
+        "稀土"
       ],
-      "rank": 4,
-      "eventId": "aa38aa612f55a4c5cca48bd7c91d48ea2f16a457",
+      "rank": 5,
+      "eventId": "9009e3caf6b34504c60e0446b6932a33886cfc4f",
       "eventType": "unknown",
       "entities": [],
       "tickers": [],
@@ -434,78 +488,26 @@
       "whyItMatters": "",
       "investmentImplication": "",
       "riskNote": "",
-      "originalTitle": "Europe considers new quotas and tariffs to stem Chinese imports",
-      "published": "2026-10-23T13:00:20Z",
+      "originalTitle": "China carries out in-depth investigation of Turkey’s largest rare earth deposit",
+      "published": "2026-10-24T04:00:11Z",
       "mergedSources": [
         "SCMP China"
       ],
       "relatedUrls": [],
       "primarySource": "SCMP China",
-      "selectionReason": "欧盟考虑对华加征配额与关税并点名塑料行业，涉及贸易摩擦与供应链中断。",
+      "selectionReason": "中国深入调查土耳其最大稀土矿床并下调其商业潜力预期，关乎全球关键矿产供应链格局与稀土定价权。",
       "promptVersion": "",
       "modelUsed": "",
       "rawPayloadHash": "",
       "warnings": [],
       "regions": [
-        "china",
-        "global"
+        "china"
       ],
       "geopoliticsEventTypes": [
-        "geopolitics"
+        "supply_chain"
       ],
-      "geopoliticsRuleScore": 4.0,
-      "createdAt": "2026-10-24T23:45:51Z"
-    },
-    {
-      "id": "d8c0a472-7842-5f9c-95b6-225f5c427d08",
-      "date": "2026-10-25",
-      "title": "贸易关税冲击密尔沃基港口货物流通",
-      "summary": "报道走访密尔沃基港口，观察Donald Trump总统的关税政策如何影响货物流通并冲击区域经济。事件涉及美国贸易政策对港口运营、进口成本及地方经济活动的实际影响，市场或关注关税对供应链、物流成本与区域经济表现的传导效应。",
-      "url": "https://www.npr.org/2026/10/24/nx-s1-6011193/trade-tariffs-cause-whiplash-at-port-milwaukee",
-      "canonicalUrl": "https://www.npr.org/2026/10/24/nx-s1-6011193/trade-tariffs-cause-whiplash-at-port-milwaukee",
-      "source": "NPR Business",
-      "sourceTier": "tier2",
-      "isPrimarySource": false,
-      "tags": [
-        "美国经济",
-        "关税",
-        "供应链"
-      ],
-      "rank": 5,
-      "eventId": "2f73099fcc5cc199470c0261903d4cef4944b63b",
-      "eventType": "unknown",
-      "entities": [],
-      "tickers": [],
-      "sourceCredibilityScore": 3.0,
-      "marketImpactScore": 2.0,
-      "noveltyScore": 4.0,
-      "timelinessScore": 5.0,
-      "entityImportanceScore": 2.0,
-      "confidenceScore": 3.0,
-      "totalScore": 2.9,
-      "whyItMatters": "",
-      "investmentImplication": "",
-      "riskNote": "",
-      "originalTitle": "Trade tariffs cause whiplash at Port Milwaukee",
-      "published": "2026-10-24T21:20:55Z",
-      "mergedSources": [
-        "NPR Business"
-      ],
-      "relatedUrls": [],
-      "primarySource": "NPR Business",
-      "selectionReason": "特朗普关税冲击密尔沃基港口货物流通与区域经济，体现美国贸易政策实际影响。",
-      "promptVersion": "",
-      "modelUsed": "",
-      "rawPayloadHash": "",
-      "warnings": [],
-      "regions": [
-        "us"
-      ],
-      "geopoliticsEventTypes": [
-        "geopolitics"
-      ],
-      "geopoliticsRuleScore": 4.0,
-      "createdAt": "2026-10-24T23:45:51Z"
+      "geopoliticsRuleScore": 3.0,
+      "createdAt": "2026-10-25T23:46:00Z"
     }
   ]
 }

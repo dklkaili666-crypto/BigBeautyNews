@@ -1,40 +1,40 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-10-25T23:46:00Z",
+  "exportedAt": "2026-10-26T23:46:00Z",
   "items": [
     {
-      "date": "2026-10-26",
-      "title": "OpenAI与Anthropic数月内大语言模型降价最高80%，原因何在？",
-      "summary": "头部大语言模型厂商在数月内大幅降价，直接压缩AI应用层成本与推理毛利。投资者需关注：价格战可能削弱模型厂商定价权与盈利能力，但利好应用层成本下降；同时反映竞争加剧与推理效率提升，或加速行业整合。",
-      "url": "https://minimaxir.com/2026/10/cheap-llms/",
-      "source": "Hacker News"
-    },
-    {
-      "date": "2026-10-26",
-      "title": "Apollo经济学家：AI对多数企业“零财务回报”",
-      "summary": "权威经济学家指出，尽管AI投资巨大且炒作广泛，但科技业外美国企业尚未获得可量化的财务回报。若该观点被广泛采信，可能压制企业AI资本开支预期，对AI基础设施投资逻辑构成负面验证，投资者需警惕AI变现叙事降温风险。",
-      "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
+      "date": "2026-10-27",
+      "title": "Anthropic 正式递交 IPO 申请",
+      "summary": "Anthropic 已正式提交 IPO 申请，披露营收飙升、亏损扩大、企业客户广泛采用，以及旨在保留创始人控制权和 AI 安全使命的特殊治理结构。对投资者而言，这是 AI 独角兽资本化路径的标志性事件，将重塑一级市场对基础模型公司的估值锚。",
+      "url": "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-10-26",
-      "title": "谷歌AI搜索变革冲击在线出版业",
-      "summary": "谷歌AI搜索重构流量分发机制，冲击内容出版与SEO生态。投资者需关注：依赖搜索流量的互联网资产估值与广告商业模式可能承压，内容出版商议价能力下降，AI搜索的引用与导流规则将成为新的竞争变量。",
-      "url": "https://www.theverge.com/column/1017983/google-ai-search-online-publishing",
+      "date": "2026-10-27",
+      "title": "Anthropic IPO 文件揭示企业客户留存策略",
+      "summary": "Anthropic 的 S-1 文件显示，其 10 万美元以上客户中超过半数同时使用 Claude 平台和第一方应用，这种类似亚马逊的交叉销售策略正增强企业客户粘性。对投资者而言，S-1 披露的交叉销售与粘性数据是判断 Anthropic 商业化质量与长期留存的关键投研依据。",
+      "url": "https://techcrunch.com/2026/10/26/anthropics-ipo-filing-reveals-its-strategy-for-keeping-enterprise-customers-hooked/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-10-27",
+      "title": "SpaceX 与 Apollo 达成 400 亿美元 GPU 融资协议",
+      "summary": "该融资为 SpaceX 提供了在不完全依赖传统债务市场的情况下，为其快速扩张的 AI 雄心提供资金的另一途径。对投资者而言，400 亿美元 GPU 融资结构创新，显示 AI 算力资本开支正通过私募信贷加杠杆，将影响算力供应链与融资市场。",
+      "url": "https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-10-27",
+      "title": "OpenAI 宣布三项重大科学发现及学术合作新方式",
+      "summary": "在批量发布数百份声称包含长期数学问题解决方案的手稿后不到一个月，OpenAI 又公布了数学、计算机科学和物理学领域的三项“重大”发现。不同之处在于，OpenAI 选择由外部专家作为“牧羊人”引导结果。对投资者而言，这标志着模型科研能力与学术生态合作模式的重要信号。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics",
       "source": "The Verge"
     },
     {
-      "date": "2026-10-26",
-      "title": "Cerebras部署万亿参数AI模型",
-      "summary": "Cerebras实现万亿参数模型部署，涉及AI芯片供应链与推理算力竞争格局。投资者需关注：此举对英伟达之外的算力替代叙事具有实质意义，若规模化验证成功，可能加剧AI芯片市场竞争并影响算力成本曲线。",
-      "url": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
-      "source": "Hacker News"
-    },
-    {
-      "date": "2026-10-26",
-      "title": "宾夕法尼亚州要求AI生成广告加注标签",
-      "summary": "宾州州长签署《人工智能欺骗性广告法》，要求经AI显著修改或生成的广告（图像、视频、音频、文本）加注披露标签。投资者需关注：州级AI内容监管落地是合规成本上升的先行信号，影响广告科技与生成式AI产品的合规路径与运营成本。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act",
+      "date": "2026-10-27",
+      "title": "Anthropic 烧天然气支撑 AI 热潮",
+      "summary": "在准备上市之际，Anthropic 的 S-1 文件使生成式 AI 对甲烷的依赖显而易见。文件承认数据中心日益依赖“天然气”，且电力供应和具备充足电力的数据中心选址竞争激烈。对投资者而言，这是首次明确承认能源约束与成本风险，对算力投资定价有实质影响。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1018994/anthropic-ipo-ai-data-center-energy-climate-risk",
       "source": "The Verge"
     }
   ]

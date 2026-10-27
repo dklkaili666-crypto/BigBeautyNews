@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-10-26T23:46:00Z",
+  "exportedAt": "2026-10-27T23:45:57Z",
   "items": [
     {
-      "date": "2026-10-27",
-      "title": "Anthropic 正式递交 IPO 申请",
-      "summary": "Anthropic 已正式提交 IPO 申请，披露营收飙升、亏损扩大、企业客户广泛采用，以及旨在保留创始人控制权和 AI 安全使命的特殊治理结构。对投资者而言，这是 AI 独角兽资本化路径的标志性事件，将重塑一级市场对基础模型公司的估值锚。",
-      "url": "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/",
-      "source": "TechCrunch"
+      "date": "2026-10-28",
+      "title": "Anthropic IPO招股书披露内部详情",
+      "summary": "Anthropic于周一提交重磅IPO前的文件，披露了公司财务数据、风险因素及对AI未来的看法。作为AI独角兽，其S-1文件是IPO定价与估值锚定的关键事件，将直接影响一级市场AI资产定价，投资者需关注其营收结构、亏损规模及治理架构。",
+      "url": "https://www.wired.com/story/anthropic-ipo-filings-reveal-finances-risks-strategy/",
+      "source": "Wired"
     },
     {
-      "date": "2026-10-27",
-      "title": "Anthropic IPO 文件揭示企业客户留存策略",
-      "summary": "Anthropic 的 S-1 文件显示，其 10 万美元以上客户中超过半数同时使用 Claude 平台和第一方应用，这种类似亚马逊的交叉销售策略正增强企业客户粘性。对投资者而言，S-1 披露的交叉销售与粘性数据是判断 Anthropic 商业化质量与长期留存的关键投研依据。",
-      "url": "https://techcrunch.com/2026/10/26/anthropics-ipo-filing-reveals-its-strategy-for-keeping-enterprise-customers-hooked/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-10-27",
-      "title": "SpaceX 与 Apollo 达成 400 亿美元 GPU 融资协议",
-      "summary": "该融资为 SpaceX 提供了在不完全依赖传统债务市场的情况下，为其快速扩张的 AI 雄心提供资金的另一途径。对投资者而言，400 亿美元 GPU 融资结构创新，显示 AI 算力资本开支正通过私募信贷加杠杆，将影响算力供应链与融资市场。",
-      "url": "https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-10-27",
-      "title": "OpenAI 宣布三项重大科学发现及学术合作新方式",
-      "summary": "在批量发布数百份声称包含长期数学问题解决方案的手稿后不到一个月，OpenAI 又公布了数学、计算机科学和物理学领域的三项“重大”发现。不同之处在于，OpenAI 选择由外部专家作为“牧羊人”引导结果。对投资者而言，这标志着模型科研能力与学术生态合作模式的重要信号。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics",
+      "date": "2026-10-28",
+      "title": "苹果为Pages、Keynote和Numbers添加AI聊天机器人",
+      "summary": "苹果将AI助手引入iWork生产力套件，该助手基于苹果和OpenAI的模型构建，能理解文档上下文，在Keynote中设计、动画和优化幻灯片，在Pages中起草和重构内容。这是大厂AI产品化落地的重要信号，可能重塑生产力软件竞争格局，投资者需关注苹果AI变现路径及对微软Office的潜在冲击。",
+      "url": "https://www.theverge.com/tech/1019373/apple-pages-keynote-numbers-ai-chatbot-update",
       "source": "The Verge"
     },
     {
-      "date": "2026-10-27",
-      "title": "Anthropic 烧天然气支撑 AI 热潮",
-      "summary": "在准备上市之际，Anthropic 的 S-1 文件使生成式 AI 对甲烷的依赖显而易见。文件承认数据中心日益依赖“天然气”，且电力供应和具备充足电力的数据中心选址竞争激烈。对投资者而言，这是首次明确承认能源约束与成本风险，对算力投资定价有实质影响。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1018994/anthropic-ipo-ai-data-center-energy-climate-risk",
+      "date": "2026-10-28",
+      "title": "谷歌下一代Genie AI模型生成更逼真体验",
+      "summary": "谷歌发布Genie 4世界模型，用于生成交互式体验，主要更新包括更逼真的世界、支持自然语言实时更新体验、生成音频，并底层接入Gemini 3.8 Flash。这体现大厂在世界模型和多模态方向的持续投入，关乎下一代AI应用入口，投资者应关注谷歌在生成式AI领域的竞争卡位。",
+      "url": "https://www.theverge.com/tech/1019076/google-genie-4-ai-model",
       "source": "The Verge"
+    },
+    {
+      "date": "2026-10-28",
+      "title": "英伟达投资印度初创公司，助企业用更少GPU运行AI模型",
+      "summary": "Simplismart称其年化营收运行率六个月内增长14倍，美国贡献超一半营收。英伟达投资该公司，指向推理降本与新兴市场算力优化，反映芯片巨头在推理侧生态的战略卡位，投资者需关注推理芯片需求及英伟达生态扩张。",
+      "url": "https://techcrunch.com/2026/10/27/nvidia-backs-indian-startup-helping-companies-run-ai-models-with-fewer-gpus/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-10-28",
+      "title": "亚马逊持续失败后削减AI部门",
+      "summary": "亚马逊AI部门收缩若属实，是大型云厂商AI组织与资源再配置的重要信号。投资者应跟踪其战略调整，评估对AWS AI竞争力及资本开支的影响。",
+      "url": "https://futurism.com/artificial-intelligence/amazon-ai-division-failure-nova",
+      "source": "Hacker News"
     }
   ]
 }

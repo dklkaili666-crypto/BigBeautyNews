@@ -1,49 +1,52 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-10-27T23:45:57Z",
-  "dailyTheme": "今日主线是 Anthropic IPO 文件披露带来的 AI 资产定价与治理透明度讨论，同时苹果、谷歌、英伟达、亚马逊等大厂的 AI 产品化与战略调整密集落地。",
-  "geopoliticsTheme": "今日主线是美方在军事、立法与技术三条线同步加码对华遏制：美日台海联合打击演练、万亿美元国防授权法案与军事基地禁用中国电动车。同时俄乌局部停火与委内瑞拉石油博弈显示能源与安全秩序仍在大国竞争框架下重组。",
+  "exportedAt": "2026-10-28T23:46:04Z",
+  "dailyTheme": "大厂财报与IPO披露成为今日主线：微软Azure与OpenAI收入数据、Anthropic上市进程揭示AI商业化真实体量，谷歌则以Gemini 4 Carbon强化前沿模型竞争。",
+  "geopoliticsTheme": "今日地缘政经主题聚焦于中美战略竞争的多线展开：朝鲜半岛外交互动、美国强化印太军事存在、中国能源与供应链韧性，以及中欧贸易与汇率摩擦。同时，美联储货币政策路径对全球金融条件构成关键影响。",
   "items": [
     {
-      "id": "1878e669-ad6d-5479-9c8a-cd6d65479aa8",
-      "date": "2026-10-28",
-      "title": "Anthropic IPO招股书披露内部详情",
-      "summary": "Anthropic于周一提交重磅IPO前的文件，披露了公司财务数据、风险因素及对AI未来的看法。作为AI独角兽，其S-1文件是IPO定价与估值锚定的关键事件，将直接影响一级市场AI资产定价，投资者需关注其营收结构、亏损规模及治理架构。",
-      "url": "https://www.wired.com/story/anthropic-ipo-filings-reveal-finances-risks-strategy/",
-      "canonicalUrl": "https://www.wired.com/story/anthropic-ipo-filings-reveal-finances-risks-strategy",
-      "source": "Wired",
+      "id": "b5260c24-65bb-508b-af0a-7832770876b5",
+      "date": "2026-10-29",
+      "title": "谷歌发布Gemini 4 Carbon，网络安全能力实现“重大跃升”",
+      "summary": "谷歌推出新一代前沿模型Gemini 4 Carbon，在编程、AI智能体任务与网络安全方面均有“显著提升”。公司称该模型在Artificial Analysis Intelligence Index（v5.0）基准测试中登顶，Claude Opus 5.5与GPT-6 Astra位居其后。对投资者而言，这是谷歌在大语言模型竞争格局中的一次正面进攻，有助于强化其AI叙事，但基准领先能否转化为企业采用与收入仍需观察。",
+      "url": "https://www.theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier",
+      "canonicalUrl": "https://www.theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier",
+      "source": "The Verge",
       "sourceTier": "tier2",
       "isPrimarySource": false,
       "tags": [
-        "Anthropic",
-        "IPO",
-        "估值"
+        "大模型",
+        "谷歌",
+        "竞争格局"
       ],
       "rank": 1,
-      "eventId": "4f9c2af09cc7c762ebbbc4ef608ef92e2e601497",
-      "eventType": "funding",
+      "eventId": "7731cc8a4e4c4ac8719c551fc455dd1100fbd877",
+      "eventType": "model_release",
       "entities": [
-        "Anthropic"
+        "OpenAI",
+        "Anthropic",
+        "Google",
+        "Intel"
       ],
       "tickers": [],
       "sourceCredibilityScore": 3.0,
-      "marketImpactScore": 3.0,
+      "marketImpactScore": 2.0,
       "noveltyScore": 4.0,
       "timelinessScore": 5.0,
-      "entityImportanceScore": 3.0,
+      "entityImportanceScore": 5.0,
       "confidenceScore": 3.0,
-      "totalScore": 3.4,
+      "totalScore": 3.35,
       "whyItMatters": "",
       "investmentImplication": "",
       "riskNote": "",
-      "originalTitle": "Anthropic’s IPO Prospectus Reveals What’s Under the Hood",
-      "published": "2026-10-26T14:50:47Z",
+      "originalTitle": "Google launches Gemini 4 Carbon with a ‘significant leap’ in cybersecurity",
+      "published": "2026-10-28T20:03:00Z",
       "mergedSources": [
-        "Wired"
+        "The Verge"
       ],
       "relatedUrls": [],
-      "primarySource": "Wired",
-      "selectionReason": "Anthropic 正式递交 S-1，是 AI 独角兽 IPO 定价与估值锚定的关键事件，将直接影响一级市场 AI 资产定价。",
+      "primarySource": "The Verge",
+      "selectionReason": "谷歌发布新一代前沿模型Gemini 4 Carbon并在多项基准登顶，直接冲击大模型竞争格局与谷歌AI叙事。",
       "promptVersion": "",
       "modelUsed": "",
       "rawPayloadHash": "",
@@ -51,29 +54,29 @@
       "regions": [],
       "geopoliticsEventTypes": [],
       "geopoliticsRuleScore": 0.0,
-      "createdAt": "2026-10-27T23:45:57Z"
+      "createdAt": "2026-10-28T23:46:04Z"
     },
     {
-      "id": "401aecbb-f344-519d-8321-3557ba989861",
-      "date": "2026-10-28",
-      "title": "苹果为Pages、Keynote和Numbers添加AI聊天机器人",
-      "summary": "苹果将AI助手引入iWork生产力套件，该助手基于苹果和OpenAI的模型构建，能理解文档上下文，在Keynote中设计、动画和优化幻灯片，在Pages中起草和重构内容。这是大厂AI产品化落地的重要信号，可能重塑生产力软件竞争格局，投资者需关注苹果AI变现路径及对微软Office的潜在冲击。",
-      "url": "https://www.theverge.com/tech/1019373/apple-pages-keynote-numbers-ai-chatbot-update",
-      "canonicalUrl": "https://www.theverge.com/tech/1019373/apple-pages-keynote-numbers-ai-chatbot-update",
-      "source": "The Verge",
+      "id": "a5f02779-ba87-5666-9758-96aed98d7bf1",
+      "date": "2026-10-29",
+      "title": "微软单季从OpenAI相关商业安排中获得100亿美元收入",
+      "summary": "微软披露，截至9月30日的季度中，其通过与OpenAI的商业安排（含收入分成）获得100亿美元收入。这是双方财务深度绑定的量化证据：微软既是OpenAI的最大投资方，也是其商业化的重要受益方。投资者需关注这种高度依赖关系对双方估值、收入确认以及未来合作条款重谈的潜在影响。",
+      "url": "https://techcrunch.com/2026/10/28/microsoft-recorded-10-billion-in-revenue-from-openai/",
+      "canonicalUrl": "https://techcrunch.com/2026/10/28/microsoft-recorded-10-billion-in-revenue-from-openai",
+      "source": "TechCrunch",
       "sourceTier": "tier2",
       "isPrimarySource": false,
       "tags": [
-        "苹果",
-        "大厂战略",
-        "AI助手"
+        "微软",
+        "OpenAI",
+        "财务披露"
       ],
       "rank": 2,
-      "eventId": "23e184cf9d1b4ae0bd9a19b1eda4652b77585efb",
+      "eventId": "7ddffd21663b4ae05381f84f4ecba3bdd89e9ca6",
       "eventType": "unknown",
       "entities": [
         "OpenAI",
-        "Apple"
+        "Microsoft"
       ],
       "tickers": [],
       "sourceCredibilityScore": 3.0,
@@ -86,14 +89,14 @@
       "whyItMatters": "",
       "investmentImplication": "",
       "riskNote": "",
-      "originalTitle": "Apple is adding an AI chatbot to Pages, Keynote, and Numbers",
-      "published": "2026-10-27T13:50:51Z",
+      "originalTitle": "Microsoft recorded $10 billion in revenue from OpenAI",
+      "published": "2026-10-28T21:34:30Z",
       "mergedSources": [
-        "The Verge"
+        "TechCrunch"
       ],
       "relatedUrls": [],
-      "primarySource": "The Verge",
-      "selectionReason": "苹果把 AI 助手嵌入 iWork 全家桶并接入 OpenAI 模型，是大厂 AI 产品化落地的重要信号，影响生产力软件竞争格局。",
+      "primarySource": "TechCrunch",
+      "selectionReason": "微软首次披露单季从OpenAI商业安排中获得100亿美元收入，量化了双方深度绑定的财务依赖，对估值判断关键。",
       "promptVersion": "",
       "modelUsed": "",
       "rawPayloadHash": "",
@@ -101,97 +104,49 @@
       "regions": [],
       "geopoliticsEventTypes": [],
       "geopoliticsRuleScore": 0.0,
-      "createdAt": "2026-10-27T23:45:57Z"
+      "createdAt": "2026-10-28T23:46:04Z"
     },
     {
-      "id": "a5be2b4c-b16c-5446-bff6-c3d3892561aa",
-      "date": "2026-10-28",
-      "title": "谷歌下一代Genie AI模型生成更逼真体验",
-      "summary": "谷歌发布Genie 4世界模型，用于生成交互式体验，主要更新包括更逼真的世界、支持自然语言实时更新体验、生成音频，并底层接入Gemini 3.8 Flash。这体现大厂在世界模型和多模态方向的持续投入，关乎下一代AI应用入口，投资者应关注谷歌在生成式AI领域的竞争卡位。",
-      "url": "https://www.theverge.com/tech/1019076/google-genie-4-ai-model",
-      "canonicalUrl": "https://www.theverge.com/tech/1019076/google-genie-4-ai-model",
-      "source": "The Verge",
-      "sourceTier": "tier2",
-      "isPrimarySource": false,
-      "tags": [
-        "谷歌",
-        "世界模型",
-        "Gemini"
-      ],
-      "rank": 3,
-      "eventId": "7e78d6736866c31012b0b1185f71e0b427ea4423",
-      "eventType": "model_release",
-      "entities": [
-        "Google"
-      ],
-      "tickers": [],
-      "sourceCredibilityScore": 3.0,
-      "marketImpactScore": 2.0,
-      "noveltyScore": 4.0,
-      "timelinessScore": 5.0,
-      "entityImportanceScore": 3.0,
-      "confidenceScore": 3.0,
-      "totalScore": 3.05,
-      "whyItMatters": "",
-      "investmentImplication": "",
-      "riskNote": "",
-      "originalTitle": "Google’s next Genie AI model generates more realistic experiences",
-      "published": "2026-10-27T16:00:00Z",
-      "mergedSources": [
-        "The Verge"
-      ],
-      "relatedUrls": [],
-      "primarySource": "The Verge",
-      "selectionReason": "谷歌发布 Genie 4 世界模型并接入 Gemini，体现大厂在世界模型/多模态方向的持续投入，关乎下一代 AI 应用入口。",
-      "promptVersion": "",
-      "modelUsed": "",
-      "rawPayloadHash": "",
-      "warnings": [],
-      "regions": [],
-      "geopoliticsEventTypes": [],
-      "geopoliticsRuleScore": 0.0,
-      "createdAt": "2026-10-27T23:45:57Z"
-    },
-    {
-      "id": "89517079-dec2-5020-b026-3cc026026af9",
-      "date": "2026-10-28",
-      "title": "英伟达投资印度初创公司，助企业用更少GPU运行AI模型",
-      "summary": "Simplismart称其年化营收运行率六个月内增长14倍，美国贡献超一半营收。英伟达投资该公司，指向推理降本与新兴市场算力优化，反映芯片巨头在推理侧生态的战略卡位，投资者需关注推理芯片需求及英伟达生态扩张。",
-      "url": "https://techcrunch.com/2026/10/27/nvidia-backs-indian-startup-helping-companies-run-ai-models-with-fewer-gpus/",
-      "canonicalUrl": "https://techcrunch.com/2026/10/27/nvidia-backs-indian-startup-helping-companies-run-ai-models-with-fewer-gpus",
+      "id": "67757230-8879-5c52-8d1e-321be0dc14bf",
+      "date": "2026-10-29",
+      "title": "风投将从Anthropic IPO获利数十亿，亚马逊才是最大赢家",
+      "summary": "大规模票据转换揭示了亚马逊在Anthropic的真实持股规模。若Anthropic推进IPO，风险投资机构将获得可观回报，但亚马逊的收益可能远高于此。对投资者而言，这意味着云厂商通过投资绑定大语言模型公司的路径正在形成巨大的账面价值，也将重塑AI独角兽的估值参照与云厂商投资回报的评估框架。",
+      "url": "https://techcrunch.com/2026/10/27/vcs-will-make-billions-on-anthropics-ipo-but-amazon-is-set-to-make-much-much-more/",
+      "canonicalUrl": "https://techcrunch.com/2026/10/27/vcs-will-make-billions-on-anthropics-ipo-but-amazon-is-set-to-make-much-much-more",
       "source": "TechCrunch",
       "sourceTier": "tier2",
       "isPrimarySource": false,
       "tags": [
-        "英伟达",
-        "推理",
-        "投资"
+        "Anthropic",
+        "IPO",
+        "亚马逊"
       ],
-      "rank": 4,
-      "eventId": "2dacf9dba0855df24f77922ee836135656188e0e",
-      "eventType": "unknown",
+      "rank": 3,
+      "eventId": "9ad8b68f34c7e8cd46d879101afa20fcf67c69fe",
+      "eventType": "funding",
       "entities": [
-        "NVIDIA"
+        "Anthropic",
+        "Amazon"
       ],
       "tickers": [],
       "sourceCredibilityScore": 3.0,
       "marketImpactScore": 3.0,
       "noveltyScore": 4.0,
       "timelinessScore": 5.0,
-      "entityImportanceScore": 3.0,
+      "entityImportanceScore": 4.0,
       "confidenceScore": 3.0,
-      "totalScore": 3.4,
+      "totalScore": 3.55,
       "whyItMatters": "",
       "investmentImplication": "",
       "riskNote": "",
-      "originalTitle": "Nvidia backs Indian startup helping companies run AI models with fewer GPUs",
-      "published": "2026-10-27T11:00:00Z",
+      "originalTitle": "VCs will make billions on Anthropic’s IPO, but Amazon is set to make much (much) more",
+      "published": "2026-10-28T01:15:28Z",
       "mergedSources": [
         "TechCrunch"
       ],
       "relatedUrls": [],
       "primarySource": "TechCrunch",
-      "selectionReason": "英伟达投资 Simplismart，指向推理降本与新兴市场算力优化，反映芯片巨头在推理侧生态的战略卡位。",
+      "selectionReason": "票据转换揭示亚马逊在Anthropic的真实持股规模，IPO将重塑AI独角兽估值与云厂商投资回报格局。",
       "promptVersion": "",
       "modelUsed": "",
       "rawPayloadHash": "",
@@ -199,48 +154,98 @@
       "regions": [],
       "geopoliticsEventTypes": [],
       "geopoliticsRuleScore": 0.0,
-      "createdAt": "2026-10-27T23:45:57Z"
+      "createdAt": "2026-10-28T23:46:04Z"
     },
     {
-      "id": "61e38a07-061f-5540-b1b4-f8e8a776eea4",
-      "date": "2026-10-28",
-      "title": "亚马逊持续失败后削减AI部门",
-      "summary": "亚马逊AI部门收缩若属实，是大型云厂商AI组织与资源再配置的重要信号。投资者应跟踪其战略调整，评估对AWS AI竞争力及资本开支的影响。",
-      "url": "https://futurism.com/artificial-intelligence/amazon-ai-division-failure-nova",
-      "canonicalUrl": "https://futurism.com/artificial-intelligence/amazon-ai-division-failure-nova",
+      "id": "4ff8f1dd-5a8f-566f-832a-8cc1da6c112c",
+      "date": "2026-10-29",
+      "title": "微软首次披露Azure季度收入：332亿美元",
+      "summary": "微软此前从未以美元金额披露Azure季度收入，此次首次公开显示其与市场最大竞争对手AWS的差距正在缩小。对投资者而言，这是判断AI算力需求兑现程度的关键硬数据：Azure增速与绝对规模可用来校验AI基础设施投资周期的持续性，以及微软在云市场的份额变化。",
+      "url": "https://techcrunch.com/2026/10/28/microsoft-just-shared-azures-actual-revenue-in-dollars-33-2-billion/",
+      "canonicalUrl": "https://techcrunch.com/2026/10/28/microsoft-just-shared-azures-actual-revenue-in-dollars-33-2-billion",
+      "source": "TechCrunch",
+      "sourceTier": "tier2",
+      "isPrimarySource": false,
+      "tags": [
+        "微软",
+        "Azure",
+        "云服务"
+      ],
+      "rank": 4,
+      "eventId": "fc96ba48c460b057732a60a601e3d430f5911237",
+      "eventType": "unknown",
+      "entities": [
+        "Microsoft",
+        "Amazon"
+      ],
+      "tickers": [],
+      "sourceCredibilityScore": 3.0,
+      "marketImpactScore": 3.0,
+      "noveltyScore": 4.0,
+      "timelinessScore": 5.0,
+      "entityImportanceScore": 4.0,
+      "confidenceScore": 3.0,
+      "totalScore": 3.55,
+      "whyItMatters": "",
+      "investmentImplication": "",
+      "riskNote": "",
+      "originalTitle": "Microsoft just shared Azure’s actual revenue in dollars: $33.2 billion",
+      "published": "2026-10-28T21:58:32Z",
+      "mergedSources": [
+        "TechCrunch"
+      ],
+      "relatedUrls": [],
+      "primarySource": "TechCrunch",
+      "selectionReason": "Azure季度收入首次以美元披露，为判断AI算力需求兑现程度及与AWS的竞争差距提供硬数据。",
+      "promptVersion": "",
+      "modelUsed": "",
+      "rawPayloadHash": "",
+      "warnings": [],
+      "regions": [],
+      "geopoliticsEventTypes": [],
+      "geopoliticsRuleScore": 0.0,
+      "createdAt": "2026-10-28T23:46:04Z"
+    },
+    {
+      "id": "70cab1c1-c562-5da5-b999-d1db12595a00",
+      "date": "2026-10-29",
+      "title": "英伟达发布Nemotron 3.5 Transcribe：支持40种语言的开源语音识别模型",
+      "summary": "英伟达开源支持40种语言的语音转写（ASR）模型Nemotron 3.5 Transcribe，切入语音AI供应链。对投资者而言，这延续了英伟达以开源模型扩大生态、带动GPU与推理需求的策略，同时对ElevenLabs等语音AI厂商构成潜在竞争压力；社区热度较高，值得关注其后续采用情况。",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+      "canonicalUrl": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
       "source": "Hacker News",
       "sourceTier": "tier3",
       "isPrimarySource": false,
       "tags": [
-        "亚马逊",
-        "大厂战略",
-        "组织调整"
+        "英伟达",
+        "开源模型",
+        "语音AI"
       ],
       "rank": 5,
-      "eventId": "e874308d0e46b3bdcb51b506343ff3d395ff2f2d",
+      "eventId": "ff3c770f440b505d4f1f1e35ab87c4808e13a8db",
       "eventType": "unknown",
       "entities": [
-        "Amazon"
+        "NVIDIA"
       ],
       "tickers": [],
       "sourceCredibilityScore": 2.0,
-      "marketImpactScore": 2.0,
+      "marketImpactScore": 3.0,
       "noveltyScore": 4.0,
       "timelinessScore": 5.0,
       "entityImportanceScore": 3.0,
       "confidenceScore": 2.0,
-      "totalScore": 2.85,
+      "totalScore": 3.2,
       "whyItMatters": "",
       "investmentImplication": "",
       "riskNote": "",
-      "originalTitle": "Amazon Is Gutting Its AI Division After Sustained Failure",
-      "published": "2026-10-27T16:25:30Z",
+      "originalTitle": "Nvidia Nemotron 3.5 Transcribe: open ASR for 40 languages",
+      "published": "2026-10-28T15:17:53Z",
       "mergedSources": [
         "Hacker News"
       ],
       "relatedUrls": [],
       "primarySource": "Hacker News",
-      "selectionReason": "亚马逊 AI 部门收缩若属实，是大型云厂商 AI 组织与资源再配置的重要信号，值得投资者跟踪其战略调整。",
+      "selectionReason": "英伟达开源40语种语音转写模型，切入语音AI供应链，对ElevenLabs等竞品构成潜在压力（社区高热信号）。",
       "promptVersion": "",
       "modelUsed": "",
       "rawPayloadHash": "",
@@ -248,30 +253,134 @@
       "regions": [],
       "geopoliticsEventTypes": [],
       "geopoliticsRuleScore": 0.0,
-      "createdAt": "2026-10-27T23:45:57Z"
+      "createdAt": "2026-10-28T23:46:04Z"
     }
   ],
   "geopoliticsItems": [
     {
-      "id": "ab7d704a-74d9-580a-a007-e6215cf0af1a",
-      "date": "2026-10-28",
-      "title": "美日联合演练反舰打击，针对台海制海能力",
-      "summary": "美日部队在九州及日本西南诸岛举行“利剑27”联合演习，演练协同反舰打击与机动导弹部署，测试在台海冲突情境下从多方向威胁中国军舰、同时提升自身部队生存能力的战术。演习为期11天，已进入第二周，还包括跑道抢修等科目。该演习直接针对解放军在台海周边海域的制海能力，反映美日同盟在西太平洋的军事协同正在深化，可能加剧地区安全紧张，并对相关防务与航运风险预期产生影响。",
-      "url": "https://www.scmp.com/news/china/military/article/3372314/us-japan-rehearse-coordinated-strikes-challenge-pla-control-waters-near-taiwan",
-      "canonicalUrl": "https://www.scmp.com/news/china/military/article/3372314/us-japan-rehearse-coordinated-strikes-challenge-pla-control-waters-near-taiwan",
+      "id": "b2e8e960-b65e-5d0a-8f7f-5af58c387b44",
+      "date": "2026-10-29",
+      "title": "金正恩访华边境城市，与以往峰会前模式不同",
+      "summary": "朝鲜领导人金正恩周六访问中朝边境城市丹东，此行与2018至2019年间他同美国总统特朗普举行峰会前的中朝密集协调有相似之处。当时金正恩在约15个月内与习近平五次会面，其中三次发生在美朝峰会前不久。分析人士认为，此次未事先宣布的访问表面相似，但战略重点可能有所不同。事件涉及中朝美三方互动，或为未来朝美接触预热，对东北亚安全秩序具有潜在影响，后续需关注各方是否释放重启对话信号。",
+      "url": "https://www.scmp.com/news/china/diplomacy/article/3372396/why-kim-jong-uns-border-trip-china-differs-past-pre-summit-playbooks",
+      "canonicalUrl": "https://www.scmp.com/news/china/diplomacy/article/3372396/why-kim-jong-uns-border-trip-china-differs-past-pre-summit-playbooks",
       "source": "SCMP China",
       "sourceTier": "tier2",
       "isPrimarySource": false,
       "tags": [
         "中美关系",
-        "台海",
-        "军事演习"
+        "朝鲜半岛",
+        "地缘政治"
       ],
       "rank": 1,
-      "eventId": "8e46026720ce2aafe54b82dbb870f683d95679f7",
+      "eventId": "272c9a9a8108a1c41508c766b525a876e2a14fd9",
       "eventType": "unknown",
+      "entities": [],
+      "tickers": [],
+      "sourceCredibilityScore": 3.0,
+      "marketImpactScore": 2.0,
+      "noveltyScore": 4.0,
+      "timelinessScore": 5.0,
+      "entityImportanceScore": 2.0,
+      "confidenceScore": 3.0,
+      "totalScore": 2.9,
+      "whyItMatters": "",
+      "investmentImplication": "",
+      "riskNote": "",
+      "originalTitle": "Why Kim Jong-un’s border trip to China differs from past pre-summit playbooks",
+      "published": "2026-10-28T12:30:14Z",
+      "mergedSources": [
+        "SCMP China"
+      ],
+      "relatedUrls": [],
+      "primarySource": "SCMP China",
+      "selectionReason": "金正恩访华边境城市，可能为朝美峰会预热，涉及中美朝地缘博弈，对东北亚安全秩序有重大影响。",
+      "promptVersion": "",
+      "modelUsed": "",
+      "rawPayloadHash": "",
+      "warnings": [],
+      "regions": [
+        "china",
+        "us"
+      ],
+      "geopoliticsEventTypes": [
+        "geopolitics"
+      ],
+      "geopoliticsRuleScore": 6.0,
+      "createdAt": "2026-10-28T23:46:04Z"
+    },
+    {
+      "id": "c7a33d8d-cce0-5e8c-b1c0-a66d332176af",
+      "date": "2026-10-29",
+      "title": "美联储维持利率不变，通胀仍顽固",
+      "summary": "美联储决定维持基准利率不变，但投资者普遍预期美联储将在12月下次会议上加息以应对顽固通胀。该决定涉及美国货币政策路径，直接影响全球资产定价与美元流动性环境。市场对12月加息的预期升温，可能加剧全球金融市场波动，并影响新兴市场资本流动与汇率稳定。后续需关注通胀数据及美联储官员表态对加息节奏的指引。",
+      "url": "https://www.npr.org/2026/10/28/nx-s1-6020425/federal-reserve-interest-rates-inflation",
+      "canonicalUrl": "https://www.npr.org/2026/10/28/nx-s1-6020425/federal-reserve-interest-rates-inflation",
+      "source": "NPR Business",
+      "sourceTier": "tier2",
+      "isPrimarySource": false,
+      "tags": [
+        "美联储",
+        "货币政策",
+        "通胀"
+      ],
+      "rank": 2,
+      "eventId": "acd1bf9b8a0263639ccc1203c928c940e2f3f226",
+      "eventType": "unknown",
+      "entities": [],
+      "tickers": [],
+      "sourceCredibilityScore": 3.0,
+      "marketImpactScore": 2.0,
+      "noveltyScore": 4.0,
+      "timelinessScore": 5.0,
+      "entityImportanceScore": 2.0,
+      "confidenceScore": 3.0,
+      "totalScore": 2.9,
+      "whyItMatters": "",
+      "investmentImplication": "",
+      "riskNote": "",
+      "originalTitle": "Fed holds interest rates steady even as inflation remains stubborn",
+      "published": "2026-10-28T18:04:42Z",
+      "mergedSources": [
+        "NPR Business"
+      ],
+      "relatedUrls": [],
+      "primarySource": "NPR Business",
+      "selectionReason": "美联储维持利率不变但通胀顽固，市场预期12月加息，直接影响全球资产定价与流动性。",
+      "promptVersion": "",
+      "modelUsed": "",
+      "rawPayloadHash": "",
+      "warnings": [],
+      "regions": [
+        "us"
+      ],
+      "geopoliticsEventTypes": [
+        "policy",
+        "macro"
+      ],
+      "geopoliticsRuleScore": 4.75,
+      "createdAt": "2026-10-28T23:46:04Z"
+    },
+    {
+      "id": "3543dbd6-e5eb-555b-b153-b0aaf1221e76",
+      "date": "2026-10-29",
+      "title": "美防长承诺强化美菲军事框架，但细节缺失",
+      "summary": "美国国防部长Pete Hegseth宣布向菲律宾提供额外军事合作资金，并与菲方就提升两军互操作性达成一致，华盛顿寻求强化第一岛链防御态势。五角大楼未披露资金增幅规模及协调倡议时间表，Hegseth在宿务与菲律宾国防部长Gilberto Teodoro Jnr会晤后公布上述信息。事件涉及美菲防务合作深化，针对中国的意图较为明显，可能加剧南海及第一岛链地缘紧张，后续需关注具体资金与部署安排。",
+      "url": "https://www.scmp.com/news/us/diplomacy/article/3372492/hegseth-pledges-stronger-military-framework-philippines-lacks-details",
+      "canonicalUrl": "https://www.scmp.com/news/us/diplomacy/article/3372492/hegseth-pledges-stronger-military-framework-philippines-lacks-details",
+      "source": "SCMP China",
+      "sourceTier": "tier2",
+      "isPrimarySource": false,
+      "tags": [
+        "中美关系",
+        "军事合作",
+        "印太安全"
+      ],
+      "rank": 3,
+      "eventId": "e3cf447ee25f83ee1d78ed7e8c8792c6c2c3d532",
+      "eventType": "funding",
       "entities": [
-        "Runway"
+        "Meta"
       ],
       "tickers": [],
       "sourceCredibilityScore": 3.0,
@@ -284,204 +393,44 @@
       "whyItMatters": "",
       "investmentImplication": "",
       "riskNote": "",
-      "originalTitle": "US, Japan rehearse coordinated strikes to challenge PLA control of waters near Taiwan",
-      "published": "2026-10-27T12:00:13Z",
+      "originalTitle": "Hegseth pledges stronger military framework with Philippines, but lacks details",
+      "published": "2026-10-28T21:20:22Z",
       "mergedSources": [
         "SCMP China"
       ],
       "relatedUrls": [],
       "primarySource": "SCMP China",
-      "selectionReason": "美日联合演练反舰打击与机动导弹部署，直接针对台海冲突中解放军制海能力，是当前最高优先级的军事安全变化。",
+      "selectionReason": "美国防长承诺加强美菲军事合作框架，旨在强化第一岛链防御态势，针对中国意图明显。",
       "promptVersion": "",
       "modelUsed": "",
       "rawPayloadHash": "",
       "warnings": [],
       "regions": [
-        "china",
-        "global",
         "us"
-      ],
-      "geopoliticsEventTypes": [
-        "geopolitics"
-      ],
-      "geopoliticsRuleScore": 6.0,
-      "createdAt": "2026-10-27T23:45:57Z"
-    },
-    {
-      "id": "0bf9c550-b088-5c8c-a45c-2a12835393ee",
-      "date": "2026-10-28",
-      "title": "美国2027财年国防法案逾万亿美元，聚焦对抗中国",
-      "summary": "美国2027财年国防授权法案（NDAA）拟议国防支出超过1万亿美元，文本几乎各领域均涉及对抗中国，是中期选举后国会复会时最受关注的立法之一。众议院已于7月通过其版本，参议院路径更为艰难，7月启动程序性投票。该法案若推进，将影响美国国防预算配置、对华技术与供应链限制及相关军工产业预期，但参议院审议仍存不确定性。",
-      "url": "https://www.scmp.com/news/china/diplomacy/article/3372355/5-things-watch-out-2027-us-defence-bill-aimed-countering-china",
-      "canonicalUrl": "https://www.scmp.com/news/china/diplomacy/article/3372355/5-things-watch-out-2027-us-defence-bill-aimed-countering-china",
-      "source": "SCMP China",
-      "sourceTier": "tier2",
-      "isPrimarySource": false,
-      "tags": [
-        "中美关系",
-        "国防政策",
-        "出口管制"
-      ],
-      "rank": 2,
-      "eventId": "73ed96dd6148a3549b72898437df0a95532e80f4",
-      "eventType": "unknown",
-      "entities": [],
-      "tickers": [],
-      "sourceCredibilityScore": 3.0,
-      "marketImpactScore": 2.0,
-      "noveltyScore": 4.0,
-      "timelinessScore": 5.0,
-      "entityImportanceScore": 2.0,
-      "confidenceScore": 3.0,
-      "totalScore": 2.9,
-      "whyItMatters": "",
-      "investmentImplication": "",
-      "riskNote": "",
-      "originalTitle": "5 things to watch out for in 2027 US defence bill aimed at countering China",
-      "published": "2026-10-27T20:58:44Z",
-      "mergedSources": [
-        "SCMP China"
-      ],
-      "relatedUrls": [],
-      "primarySource": "SCMP China",
-      "selectionReason": "美国2027财年国防授权法案逾万亿美元、通篇聚焦对抗中国，是中期选举后最受关注的对华政策立法。",
-      "promptVersion": "",
-      "modelUsed": "",
-      "rawPayloadHash": "",
-      "warnings": [],
-      "regions": [
-        "china",
-        "us"
-      ],
-      "geopoliticsEventTypes": [
-        "policy",
-        "election"
-      ],
-      "geopoliticsRuleScore": 6.5,
-      "createdAt": "2026-10-27T23:45:57Z"
-    },
-    {
-      "id": "50331297-847f-5f39-a867-9d917c0fb005",
-      "date": "2026-10-28",
-      "title": "美军在冲绳嘉手纳基地禁用比亚迪车辆",
-      "summary": "美军在日本冲绳嘉手纳空军基地以安全风险为由，禁止中国电动车制造商比亚迪生产的车辆进入，限制同样适用于配送司机和出租车，本周生效。美军称其构成“不可接受”的风险。此举显示美国对华技术安全审查正延伸至军事设施与供应链，市场关注类似措施是否推广至其他美军基地，以及对中国电动车企业海外业务预期的潜在影响。",
-      "url": "https://www.theguardian.com/world/2026/oct/27/us-bans-byd-electric-vehicles-kadena-military-base",
-      "canonicalUrl": "https://www.theguardian.com/world/2026/oct/27/us-bans-byd-electric-vehicles-kadena-military-base",
-      "source": "The Guardian World",
-      "sourceTier": "tier2",
-      "isPrimarySource": false,
-      "tags": [
-        "中美关系",
-        "供应链",
-        "技术安全"
-      ],
-      "rank": 3,
-      "eventId": "85b97442e79b539dc9fc4fd683526368baad9941",
-      "eventType": "unknown",
-      "entities": [],
-      "tickers": [],
-      "sourceCredibilityScore": 3.0,
-      "marketImpactScore": 2.0,
-      "noveltyScore": 4.0,
-      "timelinessScore": 5.0,
-      "entityImportanceScore": 2.0,
-      "confidenceScore": 3.0,
-      "totalScore": 2.9,
-      "whyItMatters": "",
-      "investmentImplication": "",
-      "riskNote": "",
-      "originalTitle": "US bans vehicles from China’s BYD at Japan military base, calling them ‘unacceptable’ risk",
-      "published": "2026-10-27T02:50:31Z",
-      "mergedSources": [
-        "The Guardian World"
-      ],
-      "relatedUrls": [],
-      "primarySource": "The Guardian World",
-      "selectionReason": "美军在冲绳嘉手纳基地禁用比亚迪车辆，显示对华技术安全审查向军事设施与供应链延伸。",
-      "promptVersion": "",
-      "modelUsed": "",
-      "rawPayloadHash": "",
-      "warnings": [],
-      "regions": [
-        "china",
-        "us",
-        "global"
-      ],
-      "geopoliticsEventTypes": [
-        "geopolitics"
-      ],
-      "geopoliticsRuleScore": 6.0,
-      "createdAt": "2026-10-27T23:45:57Z"
-    },
-    {
-      "id": "3f262b65-ae13-537a-8f3d-31fa3d33e7fa",
-      "date": "2026-10-28",
-      "title": "乌克兰南部在美方斡旋下启动局部停火",
-      "summary": "乌克兰与俄罗斯在乌克兰南部实施的局部停火于周二凌晨生效，为美国第一夫人梅拉尼娅·特朗普斡旋的人道主义任务做准备；与此同时基辅再度遭导弹袭击。事件涉及乌俄双方及美方斡旋角色，局部停火与人道行动并存但战事未止，外交走向仍高度不确定，市场对冲突升级与能源、粮食供应的风险定价可能保持敏感。",
-      "url": "https://www.npr.org/2026/10/27/g-s1-150037/russia-ukraine-war",
-      "canonicalUrl": "https://www.npr.org/2026/10/27/g-s1-150037/russia-ukraine-war",
-      "source": "NPR World",
-      "sourceTier": "tier2",
-      "isPrimarySource": false,
-      "tags": [
-        "俄乌战争",
-        "外交",
-        "停火"
-      ],
-      "rank": 4,
-      "eventId": "e736d8f219038b07313f4fc53068c883e68303c8",
-      "eventType": "unknown",
-      "entities": [],
-      "tickers": [],
-      "sourceCredibilityScore": 3.0,
-      "marketImpactScore": 2.0,
-      "noveltyScore": 4.0,
-      "timelinessScore": 5.0,
-      "entityImportanceScore": 2.0,
-      "confidenceScore": 3.0,
-      "totalScore": 2.9,
-      "whyItMatters": "",
-      "investmentImplication": "",
-      "riskNote": "",
-      "originalTitle": "Local ceasefire brokered by Melania Trump starts in southern Ukraine",
-      "published": "2026-10-27T05:26:58Z",
-      "mergedSources": [
-        "NPR World"
-      ],
-      "relatedUrls": [],
-      "primarySource": "NPR World",
-      "selectionReason": "乌克兰南部在美方斡旋下启动局部停火并展开人道行动，同时基辅再遭导弹袭击，战事外交走向仍高度不确定。",
-      "promptVersion": "",
-      "modelUsed": "",
-      "rawPayloadHash": "",
-      "warnings": [],
-      "regions": [
-        "us",
-        "global"
       ],
       "geopoliticsEventTypes": [
         "geopolitics"
       ],
       "geopoliticsRuleScore": 4.0,
-      "createdAt": "2026-10-27T23:45:57Z"
+      "createdAt": "2026-10-28T23:46:04Z"
     },
     {
-      "id": "ba3312ad-173c-5faa-a8cb-4049fd1ebc91",
-      "date": "2026-10-28",
-      "title": "鲁比奥以抗衡中俄为由为委内瑞拉石油协议辩护",
-      "summary": "美国国务卿鲁比奥为华盛顿与委内瑞拉的石油协议辩护，称其可替代中国和俄罗斯的参与，并回应反对派领导人马查多的批评。鲁比奥表示，与美方合作企业控制的多数油田此前由中俄企业持有或运营，该协议有助于恢复产量并保障美国获取储量。事件涉及美国能源准入与大国在拉美的供应链博弈，或影响相关能源贸易与地缘风险预期。",
-      "url": "https://www.scmp.com/news/china/diplomacy/article/3372347/rubio-invokes-china-russia-defend-disputed-venezuela-oil-deal",
-      "canonicalUrl": "https://www.scmp.com/news/china/diplomacy/article/3372347/rubio-invokes-china-russia-defend-disputed-venezuela-oil-deal",
-      "source": "SCMP China",
+      "id": "74acf613-f38c-50ee-be39-0093759094a3",
+      "date": "2026-10-29",
+      "title": "专家称中国能源供应链经受中东战争考验",
+      "summary": "国际天然气联盟（IGU）主席Andrea Stegher表示，中国能源安全依托内部韧性，已经受住中东持久战争的严峻考验。他指出中国拥有国内产量、已发展多元化政策，并具备在不同能源类型间切换的可能性。该表态涉及中国能源安全与供应链多元化，对全球能源格局具有指示意义。后续需关注中东局势演变对中国能源进口成本及供应链稳定性的持续影响。",
+      "url": "https://www.scmp.com/economy/global-economy/article/3372333/chinas-energy-supply-chain-withstanding-test-middle-east-war-expert-says",
+      "canonicalUrl": "https://www.scmp.com/economy/global-economy/article/3372333/chinas-energy-supply-chain-withstanding-test-middle-east-war-expert-says",
+      "source": "SCMP Global Economy",
       "sourceTier": "tier2",
       "isPrimarySource": false,
       "tags": [
-        "中美关系",
-        "能源",
-        "制裁"
+        "中国",
+        "能源安全",
+        "供应链"
       ],
-      "rank": 5,
-      "eventId": "40cfbd53bcd76d79272d19ecebf3477152ac721e",
+      "rank": 4,
+      "eventId": "d424211e32e3513e6d3c3d082596f9cc91005520",
       "eventType": "unknown",
       "entities": [],
       "tickers": [],
@@ -495,28 +444,80 @@
       "whyItMatters": "",
       "investmentImplication": "",
       "riskNote": "",
-      "originalTitle": "Rubio invokes China, Russia to defend disputed Venezuela oil deal",
-      "published": "2026-10-27T16:18:20Z",
+      "originalTitle": "China’s energy supply chain is withstanding test of Middle East war, expert says",
+      "published": "2026-10-27T14:00:21Z",
       "mergedSources": [
-        "SCMP China"
+        "SCMP Global Economy"
       ],
       "relatedUrls": [],
-      "primarySource": "SCMP China",
-      "selectionReason": "鲁比奥以抗衡中俄为由为委内瑞拉石油协议辩护，涉及美国能源准入与大国在拉美的供应链博弈。",
+      "primarySource": "SCMP Global Economy",
+      "selectionReason": "中国能源供应链在中东战争考验下展现韧性，涉及能源安全与供应链多元化，对全球能源格局有指示意义。",
       "promptVersion": "",
       "modelUsed": "",
       "rawPayloadHash": "",
       "warnings": [],
       "regions": [
         "china",
-        "us",
         "global"
       ],
       "geopoliticsEventTypes": [
+        "geopolitics",
         "supply_chain"
       ],
       "geopoliticsRuleScore": 5.0,
-      "createdAt": "2026-10-27T23:45:57Z"
+      "createdAt": "2026-10-28T23:46:04Z"
+    },
+    {
+      "id": "c2bf9e2a-7d4e-5e84-bddd-0a22fde140cd",
+      "date": "2026-10-29",
+      "title": "欧盟计划与中国举行高层货币对话，贸易冲击担忧升温",
+      "summary": "在说服中国接受混合动力汽车出口上限后，欧盟多位高级财政与银行官员将在未来数月访问北京，试图说服中方停止压低人民币汇率以救助欧盟陷入困境的产业。11月23日当周，由总干事Maarten Verwey率领的欧盟经济官员将在北京与中方举行“宏观经济对话”。事件反映中欧贸易紧张升级，人民币汇率政策成为焦点，后续需关注对话进展及欧盟是否采取进一步贸易措施。",
+      "url": "https://www.scmp.com/news/china/diplomacy/article/3372373/eu-plans-high-level-china-currency-talks-fears-new-trade-shock-mount",
+      "canonicalUrl": "https://www.scmp.com/news/china/diplomacy/article/3372373/eu-plans-high-level-china-currency-talks-fears-new-trade-shock-mount",
+      "source": "SCMP China",
+      "sourceTier": "tier2",
+      "isPrimarySource": false,
+      "tags": [
+        "中欧关系",
+        "汇率",
+        "贸易"
+      ],
+      "rank": 5,
+      "eventId": "89663276e43a460ca832f8a8142cc964a5f4550f",
+      "eventType": "unknown",
+      "entities": [],
+      "tickers": [],
+      "sourceCredibilityScore": 3.0,
+      "marketImpactScore": 2.0,
+      "noveltyScore": 4.0,
+      "timelinessScore": 5.0,
+      "entityImportanceScore": 2.0,
+      "confidenceScore": 3.0,
+      "totalScore": 2.9,
+      "whyItMatters": "",
+      "investmentImplication": "",
+      "riskNote": "",
+      "originalTitle": "EU plans high-level China currency talks as fears of new trade shock mount",
+      "published": "2026-10-28T05:00:07Z",
+      "mergedSources": [
+        "SCMP China"
+      ],
+      "relatedUrls": [],
+      "primarySource": "SCMP China",
+      "selectionReason": "欧盟计划与中国进行高层货币对话，试图说服人民币停止竞争性贬值，反映中欧贸易紧张升级。",
+      "promptVersion": "",
+      "modelUsed": "",
+      "rawPayloadHash": "",
+      "warnings": [],
+      "regions": [
+        "china",
+        "global"
+      ],
+      "geopoliticsEventTypes": [
+        "macro"
+      ],
+      "geopoliticsRuleScore": 3.25,
+      "createdAt": "2026-10-28T23:46:04Z"
     }
   ]
 }

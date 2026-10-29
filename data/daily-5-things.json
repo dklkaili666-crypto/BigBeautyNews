@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-10-28T23:46:04Z",
+  "exportedAt": "2026-10-29T23:45:55Z",
   "items": [
     {
-      "date": "2026-10-29",
-      "title": "谷歌发布Gemini 4 Carbon，网络安全能力实现“重大跃升”",
-      "summary": "谷歌推出新一代前沿模型Gemini 4 Carbon，在编程、AI智能体任务与网络安全方面均有“显著提升”。公司称该模型在Artificial Analysis Intelligence Index（v5.0）基准测试中登顶，Claude Opus 5.5与GPT-6 Astra位居其后。对投资者而言，这是谷歌在大语言模型竞争格局中的一次正面进攻，有助于强化其AI叙事，但基准领先能否转化为企业采用与收入仍需观察。",
-      "url": "https://www.theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier",
+      "date": "2026-10-30",
+      "title": "微软连续10个季度营收创纪录",
+      "summary": "微软公布季度营收923亿美元，同比增长19%，连续第10个季度创纪录。对投资者而言，这是评估大型科技公司AI变现节奏的关键财务信号：AI驱动的云业务与Copilot商业化正在得到验证，即便AI长期前景仍不确定，当前基本面依然强劲。",
+      "url": "https://techcrunch.com/2026/10/28/microsoft-hits-10-quarters-of-record-breaking-revenue-in-a-row/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-10-30",
+      "title": "Anthropic递交S-1，请华尔街相信AGI",
+      "summary": "Anthropic已提交S-1文件，拟在纳斯达克上市。这是AI独角兽估值与资本市场定价的里程碑事件，直接影响一级市场AI资产的重估。节目邀请SemiAnalysis分析师Joey Brookhart解读招股书数字背后的故事，投资者需关注其收入结构、亏损与AGI叙事如何被定价。",
+      "url": "https://www.theverge.com/podcast/1021322/anthropic-ipo-filing-s-1-claude-semianalysis-joey-brookhart-interview",
       "source": "The Verge"
     },
     {
-      "date": "2026-10-29",
-      "title": "微软单季从OpenAI相关商业安排中获得100亿美元收入",
-      "summary": "微软披露，截至9月30日的季度中，其通过与OpenAI的商业安排（含收入分成）获得100亿美元收入。这是双方财务深度绑定的量化证据：微软既是OpenAI的最大投资方，也是其商业化的重要受益方。投资者需关注这种高度依赖关系对双方估值、收入确认以及未来合作条款重谈的潜在影响。",
-      "url": "https://techcrunch.com/2026/10/28/microsoft-recorded-10-billion-in-revenue-from-openai/",
+      "date": "2026-10-30",
+      "title": "Mistral开源万亿参数模型，主打网络安全",
+      "summary": "Mistral发布万亿参数模型权重，称其能让组织对网络防御获得闭源模型无法提供的控制力。此举可能改变开源与闭源竞争格局，并强化欧洲AI主权叙事，投资者需关注开源大模型在企业安全场景的商业化路径及对闭源厂商的潜在冲击。",
+      "url": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-10-29",
-      "title": "风投将从Anthropic IPO获利数十亿，亚马逊才是最大赢家",
-      "summary": "大规模票据转换揭示了亚马逊在Anthropic的真实持股规模。若Anthropic推进IPO，风险投资机构将获得可观回报，但亚马逊的收益可能远高于此。对投资者而言，这意味着云厂商通过投资绑定大语言模型公司的路径正在形成巨大的账面价值，也将重塑AI独角兽的估值参照与云厂商投资回报的评估框架。",
-      "url": "https://techcrunch.com/2026/10/27/vcs-will-make-billions-on-anthropics-ipo-but-amazon-is-set-to-make-much-much-more/",
+      "date": "2026-10-30",
+      "title": "Jassy：AWS将成万亿美元业务，但先要大举投入",
+      "summary": "亚马逊CEO Jassy表示，AWS目标成为AI云计算之王并成为首个万亿美元营收业务，但前提是继续大规模资本开支。这是判断AI算力供应链需求与资本开支周期的重要指引，投资者需关注其投入节奏对利润率和自由现金流的影响。",
+      "url": "https://techcrunch.com/2026/10/29/aws-will-be-a-1t-business-jassy-says-but-first-it-will-spend-big/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-10-29",
-      "title": "微软首次披露Azure季度收入：332亿美元",
-      "summary": "微软此前从未以美元金额披露Azure季度收入，此次首次公开显示其与市场最大竞争对手AWS的差距正在缩小。对投资者而言，这是判断AI算力需求兑现程度的关键硬数据：Azure增速与绝对规模可用来校验AI基础设施投资周期的持续性，以及微软在云市场的份额变化。",
-      "url": "https://techcrunch.com/2026/10/28/microsoft-just-shared-azures-actual-revenue-in-dollars-33-2-billion/",
+      "date": "2026-10-30",
+      "title": "OpenAI支持的Thrive Holdings以153亿美元收购ADT",
+      "summary": "OpenAI支持的Thrive Holdings以153亿美元收购ADT，计划将AI引入家庭安防业务。该交易显示AI向传统安防场景渗透的并购路径，对AI应用落地估值具有参考意义，投资者可关注AI与传统行业结合带来的价值重估机会。",
+      "url": "https://techcrunch.com/2026/10/29/openai-backed-thrive-holdings-acquires-adt/",
       "source": "TechCrunch"
-    },
-    {
-      "date": "2026-10-29",
-      "title": "英伟达发布Nemotron 3.5 Transcribe：支持40种语言的开源语音识别模型",
-      "summary": "英伟达开源支持40种语言的语音转写（ASR）模型Nemotron 3.5 Transcribe，切入语音AI供应链。对投资者而言，这延续了英伟达以开源模型扩大生态、带动GPU与推理需求的策略，同时对ElevenLabs等语音AI厂商构成潜在竞争压力；社区热度较高，值得关注其后续采用情况。",
-      "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
-      "source": "Hacker News"
     }
   ]
 }

@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-10-29T23:45:55Z",
+  "exportedAt": "2026-10-30T23:45:55Z",
   "items": [
     {
-      "date": "2026-10-30",
-      "title": "微软连续10个季度营收创纪录",
-      "summary": "微软公布季度营收923亿美元，同比增长19%，连续第10个季度创纪录。对投资者而言，这是评估大型科技公司AI变现节奏的关键财务信号：AI驱动的云业务与Copilot商业化正在得到验证，即便AI长期前景仍不确定，当前基本面依然强劲。",
-      "url": "https://techcrunch.com/2026/10/28/microsoft-hits-10-quarters-of-record-breaking-revenue-in-a-row/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-10-30",
-      "title": "Anthropic递交S-1，请华尔街相信AGI",
-      "summary": "Anthropic已提交S-1文件，拟在纳斯达克上市。这是AI独角兽估值与资本市场定价的里程碑事件，直接影响一级市场AI资产的重估。节目邀请SemiAnalysis分析师Joey Brookhart解读招股书数字背后的故事，投资者需关注其收入结构、亏损与AGI叙事如何被定价。",
-      "url": "https://www.theverge.com/podcast/1021322/anthropic-ipo-filing-s-1-claude-semianalysis-joey-brookhart-interview",
+      "date": "2026-10-31",
+      "title": "AI巨头联合支持新退出标准，重塑训练数据合规格局",
+      "summary": "OpenAI、谷歌、微软和Anthropic宣布将采纳一项新标准，允许出版商通过统一的“政策令牌”信号，一次性向多家AI公司表达其内容不被用于训练的偏好，而非逐一设置。此举将改变AI训练数据的供给方式，对数据资产估值、版权合规及监管风险产生实质影响，投资者需关注数据获取成本与法律风险的变化。",
+      "url": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
       "source": "The Verge"
     },
     {
-      "date": "2026-10-30",
-      "title": "Mistral开源万亿参数模型，主打网络安全",
-      "summary": "Mistral发布万亿参数模型权重，称其能让组织对网络防御获得闭源模型无法提供的控制力。此举可能改变开源与闭源竞争格局，并强化欧洲AI主权叙事，投资者需关注开源大模型在企业安全场景的商业化路径及对闭源厂商的潜在冲击。",
-      "url": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/",
+      "date": "2026-10-31",
+      "title": "Anthropic IPO后或获高收益垃圾级评级，融资成本恐上升",
+      "summary": "据FT报道，Anthropic在IPO后预计将被信用机构授予高收益垃圾级评级。这将增加其融资难度和成本，影响其维持巨额支出的能力，是AI独角兽资本结构恶化的关键信号，投资者需警惕其现金流压力与估值风险。",
+      "url": "https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-10-30",
-      "title": "Jassy：AWS将成万亿美元业务，但先要大举投入",
-      "summary": "亚马逊CEO Jassy表示，AWS目标成为AI云计算之王并成为首个万亿美元营收业务，但前提是继续大规模资本开支。这是判断AI算力供应链需求与资本开支周期的重要指引，投资者需关注其投入节奏对利润率和自由现金流的影响。",
-      "url": "https://techcrunch.com/2026/10/29/aws-will-be-a-1t-business-jassy-says-but-first-it-will-spend-big/",
+      "date": "2026-10-31",
+      "title": "AI支出热潮现裂痕：债务攀升与现金流压力引担忧",
+      "summary": "大型科技公司正投入数十亿美元建设AI基础设施，但债务上升、负现金流及投资者质疑加剧，引发对AI支出热潮可持续性的担忧。这是判断AI资本开支周期能否持续的核心风险指标，投资者应关注相关企业的财务健康度与投资回报前景。",
+      "url": "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-10-30",
-      "title": "OpenAI支持的Thrive Holdings以153亿美元收购ADT",
-      "summary": "OpenAI支持的Thrive Holdings以153亿美元收购ADT，计划将AI引入家庭安防业务。该交易显示AI向传统安防场景渗透的并购路径，对AI应用落地估值具有参考意义，投资者可关注AI与传统行业结合带来的价值重估机会。",
-      "url": "https://techcrunch.com/2026/10/29/openai-backed-thrive-holdings-acquires-adt/",
-      "source": "TechCrunch"
+      "date": "2026-10-31",
+      "title": "Mistral称其开源模型Le Chonk在编码与安全领域超越中国",
+      "summary": "法国AI实验室Mistral发布最新开源权重模型Le Chonk，声称在编码和网络安全任务上匹配或超越DeepSeek和智谱的最佳模型。此举可能改变开源模型竞争格局，强化欧洲AI资产叙事，投资者需关注开源生态的竞争态势及对相关公司估值的影响。",
+      "url": "https://www.wired.com/story/mistral-says-le-chonk-surpasses-chinese-models-cybersecurity/",
+      "source": "Wired"
+    },
+    {
+      "date": "2026-10-31",
+      "title": "Altman称内存应优先供给数据中心而非个人电脑",
+      "summary": "OpenAI CEO Sam Altman在采访中表示，将RAM留在个人PC而非数据中心是“糟糕的”。此番表态印证了AI对存储供应链的挤压效应，利好数据中心内存需求，同时可能影响PC产业链的供应与成本，投资者需关注内存市场的结构性变化。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers",
+      "source": "The Verge"
     }
   ]
 }

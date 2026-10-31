@@ -1,40 +1,40 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-10-30T23:45:55Z",
+  "exportedAt": "2026-10-31T23:46:07Z",
   "items": [
     {
-      "date": "2026-10-31",
-      "title": "AI巨头联合支持新退出标准，重塑训练数据合规格局",
-      "summary": "OpenAI、谷歌、微软和Anthropic宣布将采纳一项新标准，允许出版商通过统一的“政策令牌”信号，一次性向多家AI公司表达其内容不被用于训练的偏好，而非逐一设置。此举将改变AI训练数据的供给方式，对数据资产估值、版权合规及监管风险产生实质影响，投资者需关注数据获取成本与法律风险的变化。",
-      "url": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
-      "source": "The Verge"
-    },
-    {
-      "date": "2026-10-31",
-      "title": "Anthropic IPO后或获高收益垃圾级评级，融资成本恐上升",
-      "summary": "据FT报道，Anthropic在IPO后预计将被信用机构授予高收益垃圾级评级。这将增加其融资难度和成本，影响其维持巨额支出的能力，是AI独角兽资本结构恶化的关键信号，投资者需警惕其现金流压力与估值风险。",
-      "url": "https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says/",
+      "date": "2026-11-01",
+      "title": "英伟达或为西弗吉尼亚州Nscale AI数据中心贷款背书",
+      "summary": "英伟达正考虑为Nscale在西弗吉尼亚州的AI数据中心贷款提供联合签署担保。此举实质是在需求端加杠杆托底，直接影响AI资本开支与芯片供应链的信用风险定价。投资者需关注英伟达从芯片供应商向AI基础设施信用增信方延伸的趋势，及其对自身资产负债表和行业融资环境的潜在影响。",
+      "url": "https://techcrunch.com/2026/10/30/nvidia-weighs-playing-the-cosigner-for-nscales-ai-data-center-in-west-virginia/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-10-31",
-      "title": "AI支出热潮现裂痕：债务攀升与现金流压力引担忧",
-      "summary": "大型科技公司正投入数十亿美元建设AI基础设施，但债务上升、负现金流及投资者质疑加剧，引发对AI支出热潮可持续性的担忧。这是判断AI资本开支周期能否持续的核心风险指标，投资者应关注相关企业的财务健康度与投资回报前景。",
-      "url": "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/",
+      "date": "2026-11-01",
+      "title": "OpenAI据报下调新一轮融资目标",
+      "summary": "OpenAI最新一轮融资目标据报低于此前预期。这是AI一级市场估值与融资热度边际转弱的关键信号，可能影响整个独角兽融资链条及AI初创企业的估值锚定。投资者需关注头部AI公司融资节奏变化对二级市场AI板块情绪和资本开支预期的传导效应。",
+      "url": "https://techcrunch.com/2026/10/31/openai-reportedly-lowers-funding-target-for-new-round/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-10-31",
-      "title": "Mistral称其开源模型Le Chonk在编码与安全领域超越中国",
-      "summary": "法国AI实验室Mistral发布最新开源权重模型Le Chonk，声称在编码和网络安全任务上匹配或超越DeepSeek和智谱的最佳模型。此举可能改变开源模型竞争格局，强化欧洲AI资产叙事，投资者需关注开源生态的竞争态势及对相关公司估值的影响。",
-      "url": "https://www.wired.com/story/mistral-says-le-chonk-surpasses-chinese-models-cybersecurity/",
+      "date": "2026-11-01",
+      "title": "承包商Claude AI智能体进入五角大楼，Anthropic IPO动向受关注",
+      "summary": "一名承包商的Claude AI智能体进入五角大楼使用场景，同时Anthropic的IPO文件动向引发讨论。这意味着政府端AI采购放量与Anthropic资本化进程提速，投资者需关注政府AI订单对Anthropic收入结构的贡献及其IPO估值对AI板块的参照意义。",
+      "url": "https://www.wired.com/story/uncanny-valley-podcast-how-a-contractors-claude-agent-got-into-the-pentagon/",
       "source": "Wired"
     },
     {
-      "date": "2026-10-31",
-      "title": "Altman称内存应优先供给数据中心而非个人电脑",
-      "summary": "OpenAI CEO Sam Altman在采访中表示，将RAM留在个人PC而非数据中心是“糟糕的”。此番表态印证了AI对存储供应链的挤压效应，利好数据中心内存需求，同时可能影响PC产业链的供应与成本，投资者需关注内存市场的结构性变化。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers",
+      "date": "2026-11-01",
+      "title": "苹果CEO称不会“为AI而AI”",
+      "summary": "苹果CEO为公司在AI领域的当前定位辩护，强调不会为AI而AI。这一保守定调影响市场对其AI变现节奏与端侧AI供应链的预期。投资者需关注苹果在AI功能落地上的审慎策略是否会导致其在与谷歌、微软等竞争对手的AI竞赛中处于劣势，以及端侧AI芯片和供应链的受益节奏。",
+      "url": "https://techcrunch.com/2026/10/31/apple-ceo-says-the-company-doesnt-want-to-ship-ai-for-ais-sake/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-11-01",
+      "title": "谷歌卫星AI服务器首次向地球传回响应",
+      "summary": "谷歌配备AI芯片的卫星成功启动Tensor Processing Units（TPU），使星载Gemma 4模型完成生成太空俳句的提示。这是算力基础设施向太空延伸的首次验证，对谷歌云与算力布局具长期战略含义。投资者需关注谷歌在太空算力领域的先发优势及其对云计算竞争格局的潜在影响。",
+      "url": "https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission",
       "source": "The Verge"
     }
   ]

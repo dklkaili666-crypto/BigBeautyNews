@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-10-31T23:46:07Z",
+  "exportedAt": "2026-11-01T23:45:53Z",
   "items": [
     {
-      "date": "2026-11-01",
-      "title": "英伟达或为西弗吉尼亚州Nscale AI数据中心贷款背书",
-      "summary": "英伟达正考虑为Nscale在西弗吉尼亚州的AI数据中心贷款提供联合签署担保。此举实质是在需求端加杠杆托底，直接影响AI资本开支与芯片供应链的信用风险定价。投资者需关注英伟达从芯片供应商向AI基础设施信用增信方延伸的趋势，及其对自身资产负债表和行业融资环境的潜在影响。",
-      "url": "https://techcrunch.com/2026/10/30/nvidia-weighs-playing-the-cosigner-for-nscales-ai-data-center-in-west-virginia/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-11-01",
-      "title": "OpenAI据报下调新一轮融资目标",
-      "summary": "OpenAI最新一轮融资目标据报低于此前预期。这是AI一级市场估值与融资热度边际转弱的关键信号，可能影响整个独角兽融资链条及AI初创企业的估值锚定。投资者需关注头部AI公司融资节奏变化对二级市场AI板块情绪和资本开支预期的传导效应。",
-      "url": "https://techcrunch.com/2026/10/31/openai-reportedly-lowers-funding-target-for-new-round/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-11-01",
-      "title": "承包商Claude AI智能体进入五角大楼，Anthropic IPO动向受关注",
-      "summary": "一名承包商的Claude AI智能体进入五角大楼使用场景，同时Anthropic的IPO文件动向引发讨论。这意味着政府端AI采购放量与Anthropic资本化进程提速，投资者需关注政府AI订单对Anthropic收入结构的贡献及其IPO估值对AI板块的参照意义。",
-      "url": "https://www.wired.com/story/uncanny-valley-podcast-how-a-contractors-claude-agent-got-into-the-pentagon/",
+      "date": "2026-11-02",
+      "title": "Meta的Muse或颠覆多行业，但目前尚未成真",
+      "summary": "过去数周，企业纷纷向投资者表态：Muse等AI智能体带来的更多是机会而非威胁。投资者需关注的是，Meta的AI智能体战略正被企业视为潜在颠覆力量，这反映大厂智能体布局对行业竞争格局的实质影响；若Muse加速落地，可能重塑软件与服务业商业模式，但当前仍处评估阶段，短期不宜过度定价。",
+      "url": "https://www.wired.com/story/metas-muse-could-upend-all-kinds-of-businesses-it-hasnt-yet/",
       "source": "Wired"
     },
     {
-      "date": "2026-11-01",
-      "title": "苹果CEO称不会“为AI而AI”",
-      "summary": "苹果CEO为公司在AI领域的当前定位辩护，强调不会为AI而AI。这一保守定调影响市场对其AI变现节奏与端侧AI供应链的预期。投资者需关注苹果在AI功能落地上的审慎策略是否会导致其在与谷歌、微软等竞争对手的AI竞赛中处于劣势，以及端侧AI芯片和供应链的受益节奏。",
-      "url": "https://techcrunch.com/2026/10/31/apple-ceo-says-the-company-doesnt-want-to-ship-ai-for-ais-sake/",
+      "date": "2026-11-02",
+      "title": "法官允许NAACP就xAI数据中心污染诉讼继续推进",
+      "summary": "NAACP指控这家由SpaceX拥有的AI公司违反《清洁空气法》，诉讼获准继续推进。对投资者而言，这是AI基础设施投资的风险信号：xAI数据中心的算力扩张节奏可能受合规与诉讼成本拖累，环境合规风险或成为AI数据中心选址与运营的普遍约束，需关注后续罚款、整改及项目延期风险。",
+      "url": "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-11-01",
-      "title": "谷歌卫星AI服务器首次向地球传回响应",
-      "summary": "谷歌配备AI芯片的卫星成功启动Tensor Processing Units（TPU），使星载Gemma 4模型完成生成太空俳句的提示。这是算力基础设施向太空延伸的首次验证，对谷歌云与算力布局具长期战略含义。投资者需关注谷歌在太空算力领域的先发优势及其对云计算竞争格局的潜在影响。",
-      "url": "https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission",
-      "source": "The Verge"
+      "date": "2026-11-02",
+      "title": "AI智能体向活体小鼠大脑注射药物",
+      "summary": "一家生物科技初创公司让AI智能体自主选择基因疗法并成功完成注射，展示了研究实验室自动化的未来图景。投资者需要知道：AI智能体在生物医药研发中的自主决策与执行能力取得突破性进展，有望压缩药物发现周期、降低研发成本，打开“AI+生物医药自动化”新投资主题，但监管与安全性验证仍是商业化前提。",
+      "url": "https://www.wired.com/story/an-ai-agent-did-brain-surgery-on-live-mouse/",
+      "source": "Wired"
+    },
+    {
+      "date": "2026-11-02",
+      "title": "OpenAI或将其数据中心改称“AI算力园区”",
+      "summary": "数据中心在公众中极不受欢迎，但换个名字会怎样？OpenAI试图通过品牌重塑改善数据中心公众形象，反映AI算力基建扩张正面临日益明显的社会阻力。投资者应关注：选址审批、社区关系与舆情风险可能影响算力扩张进度与成本，品牌策略调整是应对阻力的信号而非解决方案。",
+      "url": "https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-11-02",
+      "title": "开源项目claude-mem：为每个AI智能体提供跨会话持久上下文",
+      "summary": "该项目捕获智能体会话中的全部行为，用AI压缩后在未来会话中注入相关上下文，兼容Claude Code、OpenClaw、Codex、Gemini、Hermes、Copilot、OpenCode等主流编码智能体。单日获1527星，显示智能体生态社区活跃度强劲；持久上下文是智能体实用化的关键痛点，此类开源工具或加速企业级智能体落地。",
+      "url": "https://github.com/thedotmack/claude-mem",
+      "source": "GitHub Trending"
     }
   ]
 }

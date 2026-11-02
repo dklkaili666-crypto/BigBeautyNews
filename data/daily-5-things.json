@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-11-01T23:45:53Z",
+  "exportedAt": "2026-11-02T23:46:02Z",
   "items": [
     {
-      "date": "2026-11-02",
-      "title": "Meta的Muse或颠覆多行业，但目前尚未成真",
-      "summary": "过去数周，企业纷纷向投资者表态：Muse等AI智能体带来的更多是机会而非威胁。投资者需关注的是，Meta的AI智能体战略正被企业视为潜在颠覆力量，这反映大厂智能体布局对行业竞争格局的实质影响；若Muse加速落地，可能重塑软件与服务业商业模式，但当前仍处评估阶段，短期不宜过度定价。",
-      "url": "https://www.wired.com/story/metas-muse-could-upend-all-kinds-of-businesses-it-hasnt-yet/",
-      "source": "Wired"
+      "date": "2026-11-03",
+      "title": "OpenAI 拟为数据中心配套电厂，以缓解周边社区阻力",
+      "summary": "OpenAI 宣布将在佐治亚州 Effingham County 新建数据中心试点“Grid Protectors Program”，承诺在极端天气或紧急情况下释放最多 1000 兆瓦电力，可供约 70 万户家庭空调使用。投资者需关注：此举意在化解数据中心供电瓶颈与社区反对，若模式可复制，将降低算力扩张的并网与审批不确定性，但也意味着资本开支与运营复杂度上升，影响 AI 基础设施成本曲线与扩张节奏。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program",
+      "source": "The Verge"
     },
     {
-      "date": "2026-11-02",
-      "title": "法官允许NAACP就xAI数据中心污染诉讼继续推进",
-      "summary": "NAACP指控这家由SpaceX拥有的AI公司违反《清洁空气法》，诉讼获准继续推进。对投资者而言，这是AI基础设施投资的风险信号：xAI数据中心的算力扩张节奏可能受合规与诉讼成本拖累，环境合规风险或成为AI数据中心选址与运营的普遍约束，需关注后续罚款、整改及项目延期风险。",
-      "url": "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/",
+      "date": "2026-11-03",
+      "title": "甲骨文拟增发 200 亿美元股票与债券，为 AI 基建融资",
+      "summary": "甲骨文（$ORCL）提交文件，计划通过增发股票和发行债券筹集 200 亿美元，用于 AI 基础设施建设。投资者需关注：这是 AI 资本开支从经营现金流转向股权与债务融资的重要信号，反映算力投入规模已超出内生现金能力；后续需跟踪其杠杆水平、融资成本及对云与算力供应链估值的影响。",
+      "url": "https://www.cnbc.com/2026/11/02/oracle-files-to-sell-20-billion-in-new-stock-bonds-to-finance-ai-buildout.html",
+      "source": "Hacker News"
+    },
+    {
+      "date": "2026-11-03",
+      "title": "Anthropic 警告已非常接近 RSI，即“自我构建的 AI”",
+      "summary": "Anthropic 表示其能力已非常接近递归自我改进（RSI），即 AI 在训练自身方面强到足以引发能力加速跃升。投资者需关注：若 RSI 成立，模型能力曲线与竞争壁垒将被重塑，头部实验室的先发优势可能急剧放大，同时监管与安全对齐风险上升，对 AI 竞争格局与相关资产定价构成高影响变量。",
+      "url": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-11-02",
-      "title": "AI智能体向活体小鼠大脑注射药物",
-      "summary": "一家生物科技初创公司让AI智能体自主选择基因疗法并成功完成注射，展示了研究实验室自动化的未来图景。投资者需要知道：AI智能体在生物医药研发中的自主决策与执行能力取得突破性进展，有望压缩药物发现周期、降低研发成本，打开“AI+生物医药自动化”新投资主题，但监管与安全性验证仍是商业化前提。",
-      "url": "https://www.wired.com/story/an-ai-agent-did-brain-surgery-on-live-mouse/",
-      "source": "Wired"
-    },
-    {
-      "date": "2026-11-02",
-      "title": "OpenAI或将其数据中心改称“AI算力园区”",
-      "summary": "数据中心在公众中极不受欢迎，但换个名字会怎样？OpenAI试图通过品牌重塑改善数据中心公众形象，反映AI算力基建扩张正面临日益明显的社会阻力。投资者应关注：选址审批、社区关系与舆情风险可能影响算力扩张进度与成本，品牌策略调整是应对阻力的信号而非解决方案。",
-      "url": "https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses/",
+      "date": "2026-11-03",
+      "title": "纽约时报等媒体起诉浏览器 Brave，指控其抓取内容",
+      "summary": "《纽约时报》等多家媒体起诉主打隐私的浏览器公司 Brave，指控其抓取受版权保护的内容并非法分发给 Anthropic、Perplexity 等客户。投资者需关注：版权诉讼升级将推高 AI 数据获取成本与合规风险定价，依赖第三方抓取数据的模型厂商面临授权重构压力，数据授权与内容合规或成为新的竞争壁垒。",
+      "url": "https://techcrunch.com/2026/11/02/new-york-times-and-other-outlets-sue-web-browser-brave-over-alleged-content-scraping/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-11-02",
-      "title": "开源项目claude-mem：为每个AI智能体提供跨会话持久上下文",
-      "summary": "该项目捕获智能体会话中的全部行为，用AI压缩后在未来会话中注入相关上下文，兼容Claude Code、OpenClaw、Codex、Gemini、Hermes、Copilot、OpenCode等主流编码智能体。单日获1527星，显示智能体生态社区活跃度强劲；持久上下文是智能体实用化的关键痛点，此类开源工具或加速企业级智能体落地。",
-      "url": "https://github.com/thedotmack/claude-mem",
-      "source": "GitHub Trending"
+      "date": "2026-11-03",
+      "title": "42AI 结束隐身模式，融资 6250 万美元并推出可预测人类行为的世界模型",
+      "summary": "42AI 结束隐身模式，完成 6250 万美元融资，主打可“预测人类行为”的世界模型，声称即便在全新情境下也能预判人的行动。投资者需关注：这是世界模型与行为预测方向的早期押注标的，若技术可落地，将在智能体、仿真与决策场景形成差异化壁垒；但商业化路径与数据合规仍需验证。",
+      "url": "https://techcrunch.com/2026/11/02/42ai-comes-out-of-stealth-with-62-5m-and-a-world-model-that-can-predict-human-behavior/",
+      "source": "TechCrunch"
     }
   ]
 }

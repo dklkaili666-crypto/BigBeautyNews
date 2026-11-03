@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-11-02T23:46:02Z",
+  "exportedAt": "2026-11-03T23:46:09Z",
   "items": [
     {
-      "date": "2026-11-03",
-      "title": "OpenAI 拟为数据中心配套电厂，以缓解周边社区阻力",
-      "summary": "OpenAI 宣布将在佐治亚州 Effingham County 新建数据中心试点“Grid Protectors Program”，承诺在极端天气或紧急情况下释放最多 1000 兆瓦电力，可供约 70 万户家庭空调使用。投资者需关注：此举意在化解数据中心供电瓶颈与社区反对，若模式可复制，将降低算力扩张的并网与审批不确定性，但也意味着资本开支与运营复杂度上升，影响 AI 基础设施成本曲线与扩张节奏。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program",
-      "source": "The Verge"
+      "date": "2026-11-04",
+      "title": "AI推理初创公司Fal估值翻倍至160亿美元，需求激增",
+      "summary": "成立五年的AI推理初创公司Fal完成13亿美元融资，由Bessemer领投，估值翻倍至160亿美元。对投资者而言，这是AI算力投资重心从训练向推理迁移的关键估值信号：推理侧需求正在爆发，推理基础设施正成为独立的高价值赛道，值得关注相关算力与云服务标的的受益节奏。",
+      "url": "https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/",
+      "source": "TechCrunch"
     },
     {
-      "date": "2026-11-03",
-      "title": "甲骨文拟增发 200 亿美元股票与债券，为 AI 基建融资",
-      "summary": "甲骨文（$ORCL）提交文件，计划通过增发股票和发行债券筹集 200 亿美元，用于 AI 基础设施建设。投资者需关注：这是 AI 资本开支从经营现金流转向股权与债务融资的重要信号，反映算力投入规模已超出内生现金能力；后续需跟踪其杠杆水平、融资成本及对云与算力供应链估值的影响。",
-      "url": "https://www.cnbc.com/2026/11/02/oracle-files-to-sell-20-billion-in-new-stock-bonds-to-finance-ai-buildout.html",
+      "date": "2026-11-04",
+      "title": "美国科技巨头隐性AI债务半年激增90%至3.2万亿美元",
+      "summary": "美国科技巨头的隐性AI相关债务在六个月内增长90%，规模达3.2万亿美元。投资者需要关注：AI资本开支的融资结构正从自由现金流转向债务与表外安排，这将改变超大规模厂商的风险定价与信用敞口，一旦AI回报兑现慢于预期，杠杆压力可能放大估值波动。",
+      "url": "https://asia.nikkei.com/business/technology/artificial-intelligence/us-tech-giants-hidden-ai-debt-swells-90-to-3.2tn-in-6-months",
       "source": "Hacker News"
     },
     {
-      "date": "2026-11-03",
-      "title": "Anthropic 警告已非常接近 RSI，即“自我构建的 AI”",
-      "summary": "Anthropic 表示其能力已非常接近递归自我改进（RSI），即 AI 在训练自身方面强到足以引发能力加速跃升。投资者需关注：若 RSI 成立，模型能力曲线与竞争壁垒将被重塑，头部实验室的先发优势可能急剧放大，同时监管与安全对齐风险上升，对 AI 竞争格局与相关资产定价构成高影响变量。",
-      "url": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/",
+      "date": "2026-11-04",
+      "title": "Anthropic仍在艰难应对算力经济性",
+      "summary": "在算力毛利本应改善的时点，Anthropic的算力毛利却在恶化。这揭示头部大语言模型厂商的单位经济模型仍承压，对判断AI应用层盈利路径具有参考意义：模型能力提升伴随推理成本上升，投资者应审慎评估AI厂商毛利率改善的时间表与规模化盈利的可信度。",
+      "url": "https://techcrunch.com/2026/11/03/anthropic-is-still-grappling-with-the-economics-of-compute/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-11-03",
-      "title": "纽约时报等媒体起诉浏览器 Brave，指控其抓取内容",
-      "summary": "《纽约时报》等多家媒体起诉主打隐私的浏览器公司 Brave，指控其抓取受版权保护的内容并非法分发给 Anthropic、Perplexity 等客户。投资者需关注：版权诉讼升级将推高 AI 数据获取成本与合规风险定价，依赖第三方抓取数据的模型厂商面临授权重构压力，数据授权与内容合规或成为新的竞争壁垒。",
-      "url": "https://techcrunch.com/2026/11/02/new-york-times-and-other-outlets-sue-web-browser-brave-over-alleged-content-scraping/",
-      "source": "TechCrunch"
+      "date": "2026-11-04",
+      "title": "苹果开放Siri AI接入第三方应用",
+      "summary": "随iOS 27.3更新，苹果允许开发者在“所有应用”中集成Siri AI新功能，语音助手可调用用户个人上下文、处理自然语言指令并具备屏幕感知能力。这是iOS生态AI入口战略的关键一步，将重塑移动端AI分发与开发者变现格局，投资者应关注苹果服务收入与AI应用生态的联动。",
+      "url": "https://www.theverge.com/tech/1025694/apple-siri-ai-third-party-apps",
+      "source": "The Verge"
     },
     {
-      "date": "2026-11-03",
-      "title": "42AI 结束隐身模式，融资 6250 万美元并推出可预测人类行为的世界模型",
-      "summary": "42AI 结束隐身模式，完成 6250 万美元融资，主打可“预测人类行为”的世界模型，声称即便在全新情境下也能预判人的行动。投资者需关注：这是世界模型与行为预测方向的早期押注标的，若技术可落地，将在智能体、仿真与决策场景形成差异化壁垒；但商业化路径与数据合规仍需验证。",
-      "url": "https://techcrunch.com/2026/11/02/42ai-comes-out-of-stealth-with-62-5m-and-a-world-model-that-can-predict-human-behavior/",
-      "source": "TechCrunch"
+      "date": "2026-11-04",
+      "title": "智库报告：中美AI投资差距小于表面数字",
+      "summary": "中国智库报告指出，中美AI投资竞赛的实际差距小于 headline 数字所显示的水平，尽管AI对美国经济增长的贡献预计更大。在AI成为中美技术竞争焦点的背景下，该判断为跨境AI资产配置与地缘竞争评估提供重要参照，投资者不宜仅凭投资总额差异判断两国AI产业实力对比。",
+      "url": "https://www.scmp.com/economy/china-economy/article/3373128/china-us-ai-investment-gap-narrower-figures-suggest-report",
+      "source": "SCMP Global Economy"
     }
   ]
 }

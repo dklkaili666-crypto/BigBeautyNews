@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-11-03T23:46:09Z",
+  "exportedAt": "2026-11-04T23:46:09Z",
   "items": [
     {
-      "date": "2026-11-04",
-      "title": "AI推理初创公司Fal估值翻倍至160亿美元，需求激增",
-      "summary": "成立五年的AI推理初创公司Fal完成13亿美元融资，由Bessemer领投，估值翻倍至160亿美元。对投资者而言，这是AI算力投资重心从训练向推理迁移的关键估值信号：推理侧需求正在爆发，推理基础设施正成为独立的高价值赛道，值得关注相关算力与云服务标的的受益节奏。",
-      "url": "https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/",
+      "date": "2026-11-05",
+      "title": "Meta 收购 AI 编程初创公司 Conductor",
+      "summary": "Meta 收购 AI 编程智能体初创公司 Conductor，后者允许软件工程师部署多智能体团队并行处理项目不同环节。此举反映大厂通过并购补强 AI 编码能力，将直接改变 AI 编程工具竞争格局，投资者需关注 Meta 在开发者工具生态的整合进展及对现有编程助手厂商的挤压效应。",
+      "url": "https://techcrunch.com/2026/11/04/meta-acquires-ai-coding-startup-conductor/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-11-04",
-      "title": "美国科技巨头隐性AI债务半年激增90%至3.2万亿美元",
-      "summary": "美国科技巨头的隐性AI相关债务在六个月内增长90%，规模达3.2万亿美元。投资者需要关注：AI资本开支的融资结构正从自由现金流转向债务与表外安排，这将改变超大规模厂商的风险定价与信用敞口，一旦AI回报兑现慢于预期，杠杆压力可能放大估值波动。",
-      "url": "https://asia.nikkei.com/business/technology/artificial-intelligence/us-tech-giants-hidden-ai-debt-swells-90-to-3.2tn-in-6-months",
-      "source": "Hacker News"
-    },
-    {
-      "date": "2026-11-04",
-      "title": "Anthropic仍在艰难应对算力经济性",
-      "summary": "在算力毛利本应改善的时点，Anthropic的算力毛利却在恶化。这揭示头部大语言模型厂商的单位经济模型仍承压，对判断AI应用层盈利路径具有参考意义：模型能力提升伴随推理成本上升，投资者应审慎评估AI厂商毛利率改善的时间表与规模化盈利的可信度。",
-      "url": "https://techcrunch.com/2026/11/03/anthropic-is-still-grappling-with-the-economics-of-compute/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-11-04",
-      "title": "苹果开放Siri AI接入第三方应用",
-      "summary": "随iOS 27.3更新，苹果允许开发者在“所有应用”中集成Siri AI新功能，语音助手可调用用户个人上下文、处理自然语言指令并具备屏幕感知能力。这是iOS生态AI入口战略的关键一步，将重塑移动端AI分发与开发者变现格局，投资者应关注苹果服务收入与AI应用生态的联动。",
-      "url": "https://www.theverge.com/tech/1025694/apple-siri-ai-third-party-apps",
+      "date": "2026-11-05",
+      "title": "高通押注数据中心，智能手机业务下滑",
+      "summary": "高通智能手机销量较 2025 年下滑约 20%，在 2026 年 Q4 财报电话会上公布进军 AI 数据中心业务计划，并宣布与 Amazon、Meta 等公司合作。这意味着 AI 芯片供应链新增重要玩家，投资者需评估其对算力供给格局、竞争态势及高通收入结构转型的影响。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1026867/qualcomm-earnings-data-centers",
       "source": "The Verge"
     },
     {
-      "date": "2026-11-04",
-      "title": "智库报告：中美AI投资差距小于表面数字",
-      "summary": "中国智库报告指出，中美AI投资竞赛的实际差距小于 headline 数字所显示的水平，尽管AI对美国经济增长的贡献预计更大。在AI成为中美技术竞争焦点的背景下，该判断为跨境AI资产配置与地缘竞争评估提供重要参照，投资者不宜仅凭投资总额差异判断两国AI产业实力对比。",
-      "url": "https://www.scmp.com/economy/china-economy/article/3373128/china-us-ai-investment-gap-narrower-figures-suggest-report",
-      "source": "SCMP Global Economy"
+      "date": "2026-11-05",
+      "title": "数据中心在中期选举中受挫",
+      "summary": "美国中期选举后，多地选民选出支持暂停令和公投限制的候选人，数据中心开发商将面临更严格的建设环境，对 AI 产业核心基础设施构成打击。NBC 新闻民调显示 76% 选民持相关立场。投资者需重新评估 AI 基础设施建设的政策风险与资本开支预期。",
+      "url": "https://www.theverge.com/policy/1026365/data-centers-midterms-results",
+      "source": "The Verge"
+    },
+    {
+      "date": "2026-11-05",
+      "title": "OpenAI 将收购 Pierre Computer Company",
+      "summary": "OpenAI 宣布收购 Pierre Computer Company，具体交易细节尚未披露。该收购反映 OpenAI 通过外延并购扩张能力边界，对 AI 巨头生态整合与估值叙事有实质影响。投资者需关注收购标的业务协同性及对 OpenAI 产品矩阵的补强作用。",
+      "url": "https://openai.com/index/openai-to-acquire-pierre/",
+      "source": "Hacker News"
+    },
+    {
+      "date": "2026-11-05",
+      "title": "Anthropic 研发 AI 模型身份验证系统 FlashProve",
+      "summary": "Anthropic 正在开发名为 FlashProve 的系统，可让任何人验证 AI 回复确实来自其所声称的模型。该技术涉及 AI 内容溯源与合规基础设施，可能成为企业级 AI 治理新标准。投资者需关注其在 AI 安全与监管合规领域的商业化潜力及对行业信任机制的影响。",
+      "url": "https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity/",
+      "source": "TechCrunch"
     }
   ]
 }

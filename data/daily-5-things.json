@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-11-04T23:46:09Z",
+  "exportedAt": "2026-11-05T23:46:10Z",
   "items": [
     {
-      "date": "2026-11-05",
-      "title": "Meta 收购 AI 编程初创公司 Conductor",
-      "summary": "Meta 收购 AI 编程智能体初创公司 Conductor，后者允许软件工程师部署多智能体团队并行处理项目不同环节。此举反映大厂通过并购补强 AI 编码能力，将直接改变 AI 编程工具竞争格局，投资者需关注 Meta 在开发者工具生态的整合进展及对现有编程助手厂商的挤压效应。",
-      "url": "https://techcrunch.com/2026/11/04/meta-acquires-ai-coding-startup-conductor/",
+      "date": "2026-11-06",
+      "title": "OpenAI总裁称公司或于2027年具备IPO条件",
+      "summary": "OpenAI总裁Greg Brockman在《华尔街日报》科技会议上首次给出明确IPO时间表，称公司有望在2027年做好上市准备，并强调其企业市场份额正在提升，而竞争对手Anthropic已在该领域取得进展。对投资者而言，这一表态为AI龙头的估值锚定与一级市场退出预期提供了关键参照，也意味着企业级AI商业化竞争将更直接影响其上市叙事。",
+      "url": "https://techcrunch.com/2026/11/05/openai-president-greg-brockman-says-company-could-be-ipo-ready-in-2027/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-11-05",
-      "title": "高通押注数据中心，智能手机业务下滑",
-      "summary": "高通智能手机销量较 2025 年下滑约 20%，在 2026 年 Q4 财报电话会上公布进军 AI 数据中心业务计划，并宣布与 Amazon、Meta 等公司合作。这意味着 AI 芯片供应链新增重要玩家，投资者需评估其对算力供给格局、竞争态势及高通收入结构转型的影响。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1026867/qualcomm-earnings-data-centers",
+      "date": "2026-11-06",
+      "title": "Perplexity推出工作场景AI智能体",
+      "summary": "Perplexity发布面向工作场景的常驻式AI智能体“Teammates”，可在工作空间内承担多种角色，并调用用户已有Perplexity工具中的项目、技能与记忆，同时与可在设备上部署智能体的Perplexity Computer集成。此举直接挑战OpenAI与Anthropic的企业智能体赛道，是竞争格局变化的重要信号，投资者需关注企业AI代理市场的份额争夺与产品差异化。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1028302/perplexity-teammates-ai-agents-work",
       "source": "The Verge"
     },
     {
-      "date": "2026-11-05",
-      "title": "数据中心在中期选举中受挫",
-      "summary": "美国中期选举后，多地选民选出支持暂停令和公投限制的候选人，数据中心开发商将面临更严格的建设环境，对 AI 产业核心基础设施构成打击。NBC 新闻民调显示 76% 选民持相关立场。投资者需重新评估 AI 基础设施建设的政策风险与资本开支预期。",
-      "url": "https://www.theverge.com/policy/1026365/data-centers-midterms-results",
-      "source": "The Verge"
+      "date": "2026-11-06",
+      "title": "Meta警告选举反弹或阻碍数据中心扩张",
+      "summary": "Meta警告称，围绕数据中心的政治反对声浪上升可能威胁未来AI投资，社区正对大型基础设施项目提出抵制。中期选举后数据中心面临的政治阻力加大，可能抬高算力基建成本与审批风险，是影响大型科技公司AI资本开支节奏的关键变量，投资者需评估算力供给扩张放缓对AI产业链的潜在影响。",
+      "url": "https://techcrunch.com/2026/11/05/metas-warns-that-election-backlash-against-data-centers-could-make-ai-expansion-harder/",
+      "source": "TechCrunch"
     },
     {
-      "date": "2026-11-05",
-      "title": "OpenAI 将收购 Pierre Computer Company",
-      "summary": "OpenAI 宣布收购 Pierre Computer Company，具体交易细节尚未披露。该收购反映 OpenAI 通过外延并购扩张能力边界，对 AI 巨头生态整合与估值叙事有实质影响。投资者需关注收购标的业务协同性及对 OpenAI 产品矩阵的补强作用。",
-      "url": "https://openai.com/index/openai-to-acquire-pierre/",
+      "date": "2026-11-06",
+      "title": "苹果据报削减内部AI使用预算",
+      "summary": "苹果据报正在削减其内部AI使用预算。此前企业争相消耗AI token的热潮并未持续太久，随着账单到期，公司认为对token用量进行配给可能是更符合财务理性的做法。这反映大型企业正从“堆用量”转向成本管控，对推理算力需求与AI商业化叙事有实质影响，投资者应关注AI应用侧支出纪律收紧对算力供应链的传导。",
+      "url": "https://techcrunch.com/2026/11/04/apple-is-reportedly-cutting-budgets-for-its-internal-ai-usage/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-11-06",
+      "title": "腾讯发布领先开源AI模型Hy4",
+      "summary": "腾讯发布开源AI模型Hy4，被社区视为领先的开源模型之一。此举强化了中国开源模型的追赶势头，可能改变开源模型竞争格局与中美AI力量对比。该消息在Hacker News引发高热讨论，属重大事件信号，投资者需关注开源模型能力提升对闭源商业模式、推理成本及国产算力生态的影响。",
+      "url": "https://www.tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/",
       "source": "Hacker News"
-    },
-    {
-      "date": "2026-11-05",
-      "title": "Anthropic 研发 AI 模型身份验证系统 FlashProve",
-      "summary": "Anthropic 正在开发名为 FlashProve 的系统，可让任何人验证 AI 回复确实来自其所声称的模型。该技术涉及 AI 内容溯源与合规基础设施，可能成为企业级 AI 治理新标准。投资者需关注其在 AI 安全与监管合规领域的商业化潜力及对行业信任机制的影响。",
-      "url": "https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity/",
-      "source": "TechCrunch"
     }
   ]
 }

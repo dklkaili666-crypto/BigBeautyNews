@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-11-07T00:16:02Z",
+  "exportedAt": "2026-11-07T23:46:02Z",
   "items": [
     {
-      "date": "2026-11-07",
-      "title": "OpenAI 再融 110 亿美元，估值达 1.25 万亿美元",
-      "summary": "OpenAI 据报在尚未关闭的融资轮中额外筹集 110 亿美元，预计数周内完成。该估值直接抬升一级市场 AI 资产定价锚，对全行业估值与后续 IPO 预期影响显著，投资者需关注头部 AI 公司融资节奏与估值传导效应。",
-      "url": "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-11-07",
-      "title": "Anthropic IPO 买方估值低至 1.1 万亿美元",
-      "summary": "Anthropic IPO 买方给出低至 1.1 万亿美元的估值，成为头部大语言模型公司上市定价的关键信号。该定价将重塑 AI 独角兽估值体系，投资者应关注其与 OpenAI 等一级市场估值的相对关系及对二级市场 AI 板块的潜在影响。",
-      "url": "https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout",
-      "source": "Hacker News"
-    },
-    {
-      "date": "2026-11-07",
-      "title": "Ramp 数据：Anthropic 临近 IPO 之际 AI 支出停滞",
-      "summary": "AI 使用量持续攀升，但企业支出已停滞。最大支出方通过降价与更精细的成本管控，可能挑战投资者对 AI 超高速增长的假设。这是投研模型需警惕的基本面拐点，需关注价格战对 AI 公司营收增速与盈利预期的冲击。",
-      "url": "https://techcrunch.com/2026/11/06/ramp-data-shows-ai-spending-stalling-just-as-anthropic-nears-its-ipo/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-11-07",
-      "title": "抗议者闯入微软阿姆斯特丹数据中心工地",
-      "summary": "抗议者今晨闯入微软阿姆斯特丹新数据中心施工现场，约 100 人进入，反对建设三座 85 米高数据中心塔。此事叠加中期选举后数据中心扩张受阻，显示 AI 算力基建面临监管与社会阻力，正成为估值风险变量，投资者需关注基建延迟对算力供给的影响。",
-      "url": "https://www.theverge.com/news/1028549/protesters-microsoft-data-center-site-amsterdam",
+      "date": "2026-11-08",
+      "title": "OpenAI 估值达 1.25 万亿美元，竞争对手 Anthropic 临近 IPO",
+      "summary": "OpenAI 在新一轮融资中再募 110 亿美元，估值升至 1.25 万亿美元，成为全球最具价值公司之一；此前 3 月刚以 8520 亿美元估值融资 1220 亿美元。与此同时，竞争对手 Anthropic 临近 IPO。投资者需关注：AI 一级市场估值锚被进一步抬高，头部大语言模型公司的资本集聚效应强化，Anthropic 上市或重塑二级市场对 AI 资产的定价参照与竞争格局。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1029380/openai-1-25-trillion-investment-valuation",
       "source": "The Verge"
     },
     {
-      "date": "2026-11-07",
-      "title": "免费中国 AI 模型网络攻击能力逼近 OpenAI",
-      "summary": "实验显示，DeepSeek 与 GLM 等免费中国模型在模拟网络入侵中的黑客技能已接近 OpenAI 未公开的最先进网络安全模型。这意味着开源模型能力扩散将改变 AI 安全与竞争格局，投资者需关注开源生态对闭源商业模式的潜在冲击及安全监管风险。",
-      "url": "https://www.wired.com/story/free-chinese-ai-models-are-getting-scary-good-at-hacking/",
-      "source": "Wired"
+      "date": "2026-11-08",
+      "title": "Crusoe 将受阻的怀俄明数据中心项目出售给谷歌",
+      "summary": "谷歌接手 Crusoe 在怀俄明州受阻的大型 AI 数据中心项目，交易凸显超大规模 AI 数据中心开发的执行难度。投资者需关注：算力基建的资本开支、审批与建设风险正在显性化，项目延期或转手可能影响 AI 基础设施投资节奏与相关供应链的订单兑现预期。",
+      "url": "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-11-08",
+      "title": "美国允许英伟达向中国一间空壳办公室出售芯片",
+      "summary": "据《纽约时报》，获批处理英伟达 H200 AI 芯片的中国公司 New Matrix 办公室空置，引发对美国商务部与英伟达尽职调查不足的质疑。投资者需关注：对华出口合规漏洞可能招致更严出口管制，直接影响 $NVDA 英伟达中国收入预期，并加大芯片供应链的政策风险定价。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government",
+      "source": "The Verge"
+    },
+    {
+      "date": "2026-11-08",
+      "title": "Palo Alto Networks 拟以 5 亿美元收购 AI 智能体安全初创 Clutch",
+      "summary": "Palo Alto Networks 正洽谈以 5 亿美元收购 AI 智能体安全初创公司 Clutch，后者获 Lightspeed 与 SignalFire 投资，上轮估值仅 8500 万美元。投资者需关注：大型安全厂商对 AI 智能体安全赛道的并购溢价显著，反映 AI 安全整合加速，或推动该细分领域估值重估与更多并购交易。",
+      "url": "https://techcrunch.com/2026/11/05/palo-alto-networks-in-talks-to-buy-ai-agent-security-startup-clutch-for-500m/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-11-08",
+      "title": "美国中期选举为何引发 AI 股票抛售",
+      "summary": "对 AI 监管加强的担忧似乎引发投资者恐慌，导致 AI 板块抛售，但市场对行业的疑虑已积累一段时间。投资者需关注：政策风险正成为 AI 股票估值的重要传导变量，选举结果可能改变监管预期，需评估监管收紧对 AI 公司盈利与估值倍数的潜在影响。",
+      "url": "https://www.bbc.co.uk/news/articles/crlykkzwwpydo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC Business"
     }
   ]
 }

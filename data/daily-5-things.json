@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-11-05T23:46:10Z",
+  "exportedAt": "2026-11-07T00:16:02Z",
   "items": [
     {
-      "date": "2026-11-06",
-      "title": "OpenAI总裁称公司或于2027年具备IPO条件",
-      "summary": "OpenAI总裁Greg Brockman在《华尔街日报》科技会议上首次给出明确IPO时间表，称公司有望在2027年做好上市准备，并强调其企业市场份额正在提升，而竞争对手Anthropic已在该领域取得进展。对投资者而言，这一表态为AI龙头的估值锚定与一级市场退出预期提供了关键参照，也意味着企业级AI商业化竞争将更直接影响其上市叙事。",
-      "url": "https://techcrunch.com/2026/11/05/openai-president-greg-brockman-says-company-could-be-ipo-ready-in-2027/",
+      "date": "2026-11-07",
+      "title": "OpenAI 再融 110 亿美元，估值达 1.25 万亿美元",
+      "summary": "OpenAI 据报在尚未关闭的融资轮中额外筹集 110 亿美元，预计数周内完成。该估值直接抬升一级市场 AI 资产定价锚，对全行业估值与后续 IPO 预期影响显著，投资者需关注头部 AI 公司融资节奏与估值传导效应。",
+      "url": "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-11-06",
-      "title": "Perplexity推出工作场景AI智能体",
-      "summary": "Perplexity发布面向工作场景的常驻式AI智能体“Teammates”，可在工作空间内承担多种角色，并调用用户已有Perplexity工具中的项目、技能与记忆，同时与可在设备上部署智能体的Perplexity Computer集成。此举直接挑战OpenAI与Anthropic的企业智能体赛道，是竞争格局变化的重要信号，投资者需关注企业AI代理市场的份额争夺与产品差异化。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1028302/perplexity-teammates-ai-agents-work",
+      "date": "2026-11-07",
+      "title": "Anthropic IPO 买方估值低至 1.1 万亿美元",
+      "summary": "Anthropic IPO 买方给出低至 1.1 万亿美元的估值，成为头部大语言模型公司上市定价的关键信号。该定价将重塑 AI 独角兽估值体系，投资者应关注其与 OpenAI 等一级市场估值的相对关系及对二级市场 AI 板块的潜在影响。",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout",
+      "source": "Hacker News"
+    },
+    {
+      "date": "2026-11-07",
+      "title": "Ramp 数据：Anthropic 临近 IPO 之际 AI 支出停滞",
+      "summary": "AI 使用量持续攀升，但企业支出已停滞。最大支出方通过降价与更精细的成本管控，可能挑战投资者对 AI 超高速增长的假设。这是投研模型需警惕的基本面拐点，需关注价格战对 AI 公司营收增速与盈利预期的冲击。",
+      "url": "https://techcrunch.com/2026/11/06/ramp-data-shows-ai-spending-stalling-just-as-anthropic-nears-its-ipo/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-11-07",
+      "title": "抗议者闯入微软阿姆斯特丹数据中心工地",
+      "summary": "抗议者今晨闯入微软阿姆斯特丹新数据中心施工现场，约 100 人进入，反对建设三座 85 米高数据中心塔。此事叠加中期选举后数据中心扩张受阻，显示 AI 算力基建面临监管与社会阻力，正成为估值风险变量，投资者需关注基建延迟对算力供给的影响。",
+      "url": "https://www.theverge.com/news/1028549/protesters-microsoft-data-center-site-amsterdam",
       "source": "The Verge"
     },
     {
-      "date": "2026-11-06",
-      "title": "Meta警告选举反弹或阻碍数据中心扩张",
-      "summary": "Meta警告称，围绕数据中心的政治反对声浪上升可能威胁未来AI投资，社区正对大型基础设施项目提出抵制。中期选举后数据中心面临的政治阻力加大，可能抬高算力基建成本与审批风险，是影响大型科技公司AI资本开支节奏的关键变量，投资者需评估算力供给扩张放缓对AI产业链的潜在影响。",
-      "url": "https://techcrunch.com/2026/11/05/metas-warns-that-election-backlash-against-data-centers-could-make-ai-expansion-harder/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-11-06",
-      "title": "苹果据报削减内部AI使用预算",
-      "summary": "苹果据报正在削减其内部AI使用预算。此前企业争相消耗AI token的热潮并未持续太久，随着账单到期，公司认为对token用量进行配给可能是更符合财务理性的做法。这反映大型企业正从“堆用量”转向成本管控，对推理算力需求与AI商业化叙事有实质影响，投资者应关注AI应用侧支出纪律收紧对算力供应链的传导。",
-      "url": "https://techcrunch.com/2026/11/04/apple-is-reportedly-cutting-budgets-for-its-internal-ai-usage/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-11-06",
-      "title": "腾讯发布领先开源AI模型Hy4",
-      "summary": "腾讯发布开源AI模型Hy4，被社区视为领先的开源模型之一。此举强化了中国开源模型的追赶势头，可能改变开源模型竞争格局与中美AI力量对比。该消息在Hacker News引发高热讨论，属重大事件信号，投资者需关注开源模型能力提升对闭源商业模式、推理成本及国产算力生态的影响。",
-      "url": "https://www.tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/",
-      "source": "Hacker News"
+      "date": "2026-11-07",
+      "title": "免费中国 AI 模型网络攻击能力逼近 OpenAI",
+      "summary": "实验显示，DeepSeek 与 GLM 等免费中国模型在模拟网络入侵中的黑客技能已接近 OpenAI 未公开的最先进网络安全模型。这意味着开源模型能力扩散将改变 AI 安全与竞争格局，投资者需关注开源生态对闭源商业模式的潜在冲击及安全监管风险。",
+      "url": "https://www.wired.com/story/free-chinese-ai-models-are-getting-scary-good-at-hacking/",
+      "source": "Wired"
     }
   ]
 }

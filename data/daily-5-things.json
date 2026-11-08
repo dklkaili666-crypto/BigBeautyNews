@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-11-07T23:46:02Z",
+  "exportedAt": "2026-11-08T23:46:01Z",
   "items": [
     {
-      "date": "2026-11-08",
-      "title": "OpenAI 估值达 1.25 万亿美元，竞争对手 Anthropic 临近 IPO",
-      "summary": "OpenAI 在新一轮融资中再募 110 亿美元，估值升至 1.25 万亿美元，成为全球最具价值公司之一；此前 3 月刚以 8520 亿美元估值融资 1220 亿美元。与此同时，竞争对手 Anthropic 临近 IPO。投资者需关注：AI 一级市场估值锚被进一步抬高，头部大语言模型公司的资本集聚效应强化，Anthropic 上市或重塑二级市场对 AI 资产的定价参照与竞争格局。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1029380/openai-1-25-trillion-investment-valuation",
-      "source": "The Verge"
-    },
-    {
-      "date": "2026-11-08",
-      "title": "Crusoe 将受阻的怀俄明数据中心项目出售给谷歌",
-      "summary": "谷歌接手 Crusoe 在怀俄明州受阻的大型 AI 数据中心项目，交易凸显超大规模 AI 数据中心开发的执行难度。投资者需关注：算力基建的资本开支、审批与建设风险正在显性化，项目延期或转手可能影响 AI 基础设施投资节奏与相关供应链的订单兑现预期。",
-      "url": "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/",
+      "date": "2026-11-09",
+      "title": "英伟达董事会启动独立调查，审查CEO黄仁勋涉中国情报人员关系",
+      "summary": "英伟达董事会宣布对CEO黄仁勋与Megaspeed高管Alice Huang的关系展开独立调查。据报道，Alice Huang被中国国家安全部招募，用于刺探英伟达情报。此事属于大型科技公司治理与地缘政治风险的重大事件，投资者需关注调查进展对英伟达估值及供应链预期的潜在影响。",
+      "url": "https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-11-08",
-      "title": "美国允许英伟达向中国一间空壳办公室出售芯片",
-      "summary": "据《纽约时报》，获批处理英伟达 H200 AI 芯片的中国公司 New Matrix 办公室空置，引发对美国商务部与英伟达尽职调查不足的质疑。投资者需关注：对华出口合规漏洞可能招致更严出口管制，直接影响 $NVDA 英伟达中国收入预期，并加大芯片供应链的政策风险定价。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government",
+      "date": "2026-11-09",
+      "title": "苹果加速推进Siri智能体化，以对标OpenAI与Meta",
+      "summary": "据彭博社Mark Gurman报道，苹果CEO John Ternus正施压AI负责人Craig Federighi加速Siri路线图，要求交付能对标OpenAI Dots或Meta Muse的强大AI智能体。Federighi已在极短时间内部署了可用的Siri AI版本，但公司对当前能力仍有清醒认识。投资者需关注苹果AI战略的落地节奏及大厂AI助手竞争升级的影响。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1029552/apple-siri-ai-agentic",
       "source": "The Verge"
     },
     {
-      "date": "2026-11-08",
-      "title": "Palo Alto Networks 拟以 5 亿美元收购 AI 智能体安全初创 Clutch",
-      "summary": "Palo Alto Networks 正洽谈以 5 亿美元收购 AI 智能体安全初创公司 Clutch，后者获 Lightspeed 与 SignalFire 投资，上轮估值仅 8500 万美元。投资者需关注：大型安全厂商对 AI 智能体安全赛道的并购溢价显著，反映 AI 安全整合加速，或推动该细分领域估值重估与更多并购交易。",
-      "url": "https://techcrunch.com/2026/11/05/palo-alto-networks-in-talks-to-buy-ai-agent-security-startup-clutch-for-500m/",
-      "source": "TechCrunch"
+      "date": "2026-11-09",
+      "title": "METR报告：Anthropic用AI加速自身研发，迭代速度翻倍引安全担忧",
+      "summary": "AI安全研究机构METR发布为期11周的调查报告，称Anthropic正利用AI构建更强大的AI，其模型改进速度约为一年前的两倍，且未见放缓迹象。该报告引发研究人员对AI自我改进技术突破及安全监管风险的警觉。投资者需关注AI研发自动化对模型迭代节奏、竞争格局及监管环境的潜在影响。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1029126/anthropic-metr-report-accelerating-ai-development",
+      "source": "The Verge"
     },
     {
-      "date": "2026-11-08",
-      "title": "美国中期选举为何引发 AI 股票抛售",
-      "summary": "对 AI 监管加强的担忧似乎引发投资者恐慌，导致 AI 板块抛售，但市场对行业的疑虑已积累一段时间。投资者需关注：政策风险正成为 AI 股票估值的重要传导变量，选举结果可能改变监管预期，需评估监管收紧对 AI 公司盈利与估值倍数的潜在影响。",
-      "url": "https://www.bbc.co.uk/news/articles/crlykkzwwpydo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC Business"
+      "date": "2026-11-09",
+      "title": "高盛撤下Claude Code，企业级AI编程工具遇合规阻力",
+      "summary": "高盛已从其银行家和交易员处撤下Claude Code。此举反映企业级AI编程工具在合规与安全方面的落地阻力，对AI应用商业化预期构成负面信号。投资者需关注大型金融机构对AI工具的采用节奏及监管审查对AI企业营收增长的影响。",
+      "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
+      "source": "Hacker News"
+    },
+    {
+      "date": "2026-11-09",
+      "title": "猫王与Eminem版权方起诉Suno，AI音乐版权诉讼升级",
+      "summary": "Elvis Presley音乐版权方及Eminem部分热门唱片出版商起诉AI音乐公司Suno，指控其非法生成模仿这些艺术家的音乐和歌词。Presley案律师称Suno违反了田纳西州相关法律。AI音乐版权诉讼持续升级，直接影响生成式AI内容公司的法律成本与估值逻辑，投资者需关注相关法律风险。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1029533/elvis-eminem-suno-ai-music-clone-lawsuit",
+      "source": "The Verge"
     }
   ]
 }

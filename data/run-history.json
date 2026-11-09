@@ -1,31 +1,6 @@
 {
   "runs": [
     {
-      "date": "2026-10-25",
-      "status": "skipped",
-      "startedAt": "2026-10-25T00:15:24Z",
-      "finishedAt": "2026-10-25T00:15:24Z",
-      "candidateCount": 0,
-      "selectedCount": 0,
-      "aiCandidateCount": 0,
-      "aiSelectedCount": 0,
-      "geopoliticsCandidateCount": 0,
-      "geopoliticsSelectedCount": 0,
-      "sourcesAvailable": 0,
-      "llmModel": "",
-      "generated": false,
-      "pushed": true,
-      "committed": true,
-      "schemaValid": true,
-      "warnings": [],
-      "errors": [],
-      "trigger": "external_scheduler",
-      "scheduleSlot": "fallback",
-      "workflowRunId": "40145968321",
-      "pushAttempted": false,
-      "pushSkippedReason": "already_pushed"
-    },
-    {
       "date": "2026-10-26",
       "status": "success",
       "startedAt": "2026-10-25T23:45:32Z",
@@ -928,6 +903,44 @@
       "workflowRunId": "42539173542",
       "pushAttempted": false,
       "pushSkippedReason": "already_pushed"
+    },
+    {
+      "date": "2026-11-10",
+      "status": "success",
+      "startedAt": "2026-11-09T23:45:34Z",
+      "finishedAt": "2026-11-09T23:46:03Z",
+      "candidateCount": 37,
+      "selectedCount": 5,
+      "aiCandidateCount": 37,
+      "aiSelectedCount": 5,
+      "geopoliticsCandidateCount": 12,
+      "geopoliticsSelectedCount": 5,
+      "sourcesAvailable": 15,
+      "llmModel": "deepseek-v4-flash",
+      "generated": true,
+      "pushed": true,
+      "committed": true,
+      "schemaValid": true,
+      "warnings": [
+        "Top 5 来源过度集中: {'The Verge': 3, 'TechCrunch': 2}",
+        "政经: Top 5 来源过度集中: {'SCMP China': 4, 'NPR Business': 1}"
+      ],
+      "errors": [],
+      "trigger": "external_scheduler",
+      "scheduleSlot": "primary",
+      "workflowRunId": "42722978795",
+      "isDryRun": false,
+      "sendkeyPresent": true,
+      "pushAttempted": true,
+      "pushAttemptedAt": "2026-11-09T23:46:01Z",
+      "pushSkippedReason": "",
+      "pushHttpStatus": 200,
+      "pushResponseCode": 0,
+      "pushResponseMessage": "",
+      "pushResponseBodyPreview": "{\"code\":0,\"message\":\"\",\"data\":{\"pushid\":\"67277587\",\"readkey\":\"SCT9RNJ5sQ1tVnY\",\"error\":\"SUCCESS\",\"errno\":0}}",
+      "serverchanEndpointType": "sct",
+      "pushId": "67277587",
+      "digestHash": "52e962b9aadfed11757d9ec8f3c9d772f58f9aa3"
     }
   ]
 }

@@ -1,40 +1,40 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-11-08T23:46:01Z",
+  "exportedAt": "2026-11-09T23:46:01Z",
   "items": [
     {
-      "date": "2026-11-09",
-      "title": "英伟达董事会启动独立调查，审查CEO黄仁勋涉中国情报人员关系",
-      "summary": "英伟达董事会宣布对CEO黄仁勋与Megaspeed高管Alice Huang的关系展开独立调查。据报道，Alice Huang被中国国家安全部招募，用于刺探英伟达情报。此事属于大型科技公司治理与地缘政治风险的重大事件，投资者需关注调查进展对英伟达估值及供应链预期的潜在影响。",
-      "url": "https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/",
+      "date": "2026-11-10",
+      "title": "英伟达CEO黄仁勋卷入间谍丑闻，公司启动调查",
+      "summary": "英伟达CEO黄仁勋承认与Megaspeed高管Alice Huang存在婚外情，公司已启动调查。美国情报报告此前指认Alice Huang为一家AI算力公司高管，该公司出租算力访问权限。此事直接冲击公司治理、对华出口管制游说能力及AI芯片供应链预期，$NVDA英伟达股价单日跌超4%，为当日最具系统性影响的P0事件。投资者需关注调查进展及潜在合规风险。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1030422/nvidia-jensen-huang-ai-china-alice-huang",
+      "source": "The Verge"
+    },
+    {
+      "date": "2026-11-10",
+      "title": "Anthropic发布Claude Fable与Mythos 5.2新模型",
+      "summary": "Anthropic推出Claude Fable 5.2和Claude Mythos 5.2，称在编码、推理和视觉方面均有提升，输出速度快于5.1版本，旨在应对“艰巨”技术挑战。叠加Artificial Analysis最高评分，此举直接改变前沿模型竞争格局与API定价预期。投资者应关注其对Anthropic市场份额及企业API支出结构的影响。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1030005/anthropic-claude-fable-mythos-5-2",
+      "source": "The Verge"
+    },
+    {
+      "date": "2026-11-10",
+      "title": "Meta发布轻量模型Muse Ember，瞄准AI智能体执行",
+      "summary": "Meta推出轻量模型Muse Ember，每百万输入token仅10美分，显著低于Haiku、Luna等前沿竞品，切入AI智能体执行场景。此举可能引发轻量模型价格战，并重塑AI智能体推理成本曲线。投资者需关注其对推理算力需求及模型层定价策略的连锁影响。",
+      "url": "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-11-09",
-      "title": "苹果加速推进Siri智能体化，以对标OpenAI与Meta",
-      "summary": "据彭博社Mark Gurman报道，苹果CEO John Ternus正施压AI负责人Craig Federighi加速Siri路线图，要求交付能对标OpenAI Dots或Meta Muse的强大AI智能体。Federighi已在极短时间内部署了可用的Siri AI版本，但公司对当前能力仍有清醒认识。投资者需关注苹果AI战略的落地节奏及大厂AI助手竞争升级的影响。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1029552/apple-siri-ai-agentic",
-      "source": "The Verge"
+      "date": "2026-11-10",
+      "title": "Anthropic斥资34亿美元采购天然气涡轮机",
+      "summary": "Anthropic以数十亿美元采购天然气涡轮机，交易规模达34亿美元，反映前沿AI实验室正将资本开支前移至电力基础设施。这是AI算力-能源瓶颈投资主题的重要信号，投资者应关注电力供应对模型训练与推理扩张的制约，以及能源成本对AI企业毛利率的潜在压力。",
+      "url": "https://techcrunch.com/2026/11/09/anthropic-joins-ais-natural-gas-frenzy-buys-3-4b-worth-of-turbines/",
+      "source": "TechCrunch"
     },
     {
-      "date": "2026-11-09",
-      "title": "METR报告：Anthropic用AI加速自身研发，迭代速度翻倍引安全担忧",
-      "summary": "AI安全研究机构METR发布为期11周的调查报告，称Anthropic正利用AI构建更强大的AI，其模型改进速度约为一年前的两倍，且未见放缓迹象。该报告引发研究人员对AI自我改进技术突破及安全监管风险的警觉。投资者需关注AI研发自动化对模型迭代节奏、竞争格局及监管环境的潜在影响。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1029126/anthropic-metr-report-accelerating-ai-development",
-      "source": "The Verge"
-    },
-    {
-      "date": "2026-11-09",
-      "title": "高盛撤下Claude Code，企业级AI编程工具遇合规阻力",
-      "summary": "高盛已从其银行家和交易员处撤下Claude Code。此举反映企业级AI编程工具在合规与安全方面的落地阻力，对AI应用商业化预期构成负面信号。投资者需关注大型金融机构对AI工具的采用节奏及监管审查对AI企业营收增长的影响。",
-      "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
-      "source": "Hacker News"
-    },
-    {
-      "date": "2026-11-09",
-      "title": "猫王与Eminem版权方起诉Suno，AI音乐版权诉讼升级",
-      "summary": "Elvis Presley音乐版权方及Eminem部分热门唱片出版商起诉AI音乐公司Suno，指控其非法生成模仿这些艺术家的音乐和歌词。Presley案律师称Suno违反了田纳西州相关法律。AI音乐版权诉讼持续升级，直接影响生成式AI内容公司的法律成本与估值逻辑，投资者需关注相关法律风险。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1029533/elvis-eminem-suno-ai-music-clone-lawsuit",
+      "date": "2026-11-10",
+      "title": "苹果推出49.99美元AI用量包，部分功能转向分层变现",
+      "summary": "苹果在Logic Pro中新增“购买更多用量”选项，一次性收费49.99美元，扩展部分Apple Intelligence功能的使用权限。这是苹果首次对AI功能推出付费用量包，标志大厂AI功能从免费捆绑转向分层变现，对AI应用商业化路径具有示范意义。投资者需关注其用户付费转化及对服务收入的增量贡献。",
+      "url": "https://www.theverge.com/tech/1030084/apple-intelligence-usage-packs-ai-features-creator-studio-logic-pro",
       "source": "The Verge"
     }
   ]

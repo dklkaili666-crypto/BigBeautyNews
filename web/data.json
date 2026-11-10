@@ -1,50 +1,51 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-11-09T23:46:01Z",
-  "dailyTheme": "英伟达CEO涉间谍调查引发治理与出口管制风险重估，同时前沿模型竞争转向轻量低价与能源基建军备竞赛，大厂AI变现开始分层收费。",
-  "geopoliticsTheme": "今日主线为中美围绕伊朗战争斡旋与台海军事博弈的大国互动，辅以立陶宛对台政策转向及美国中期选举后的内政与物价压力。",
+  "exportedAt": "2026-11-10T23:45:57Z",
+  "dailyTheme": "前沿模型竞赛（Gemini 4 Carbon）与Anthropic万亿级IPO定价成为今日主线，同时谷歌TPU扩线与英伟达地缘风险共同扰动AI算力供应链预期。",
+  "geopoliticsTheme": "今日焦点集中在中美互动：习特会晤临近、半导体出口管制与稀土供应链博弈交织，同时美国通胀超预期与俄乌美斡旋谈判构成宏观与安全双重变量。",
   "items": [
     {
-      "id": "a298024e-377c-5b91-b8b1-d5e2787cbf5e",
-      "date": "2026-11-10",
-      "title": "英伟达CEO黄仁勋卷入间谍丑闻，公司启动调查",
-      "summary": "英伟达CEO黄仁勋承认与Megaspeed高管Alice Huang存在婚外情，公司已启动调查。美国情报报告此前指认Alice Huang为一家AI算力公司高管，该公司出租算力访问权限。此事直接冲击公司治理、对华出口管制游说能力及AI芯片供应链预期，$NVDA英伟达股价单日跌超4%，为当日最具系统性影响的P0事件。投资者需关注调查进展及潜在合规风险。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1030422/nvidia-jensen-huang-ai-china-alice-huang",
-      "canonicalUrl": "https://www.theverge.com/ai-artificial-intelligence/1030422/nvidia-jensen-huang-ai-china-alice-huang",
+      "id": "2b49ab59-cb9a-5ff3-942d-5fedae12b4b7",
+      "date": "2026-11-11",
+      "title": "谷歌发布Gemini 4 Carbon，引入AI智能体“蜂群”功能",
+      "summary": "谷歌正式向公众发布其最新AI模型Gemini 4 Carbon，此前两周仅向部分“网络安全防御者”开放。谷歌称Carbon是其“最强模型”，可与Anthropic和OpenAI的顶尖系统竞争。该模型引入AI智能体“蜂群”功能，可能加剧前沿模型竞争格局。投资者需关注谷歌能否借此缩小与OpenAI的差距，并影响AI模型市场份额。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1030787/google-gemini-4-carbon-public-rollout",
+      "canonicalUrl": "https://www.theverge.com/ai-artificial-intelligence/1030787/google-gemini-4-carbon-public-rollout",
       "source": "The Verge",
       "sourceTier": "tier2",
       "isPrimarySource": false,
       "tags": [
-        "英伟达",
-        "公司治理",
-        "出口管制"
+        "大模型",
+        "谷歌",
+        "Agent"
       ],
       "rank": 1,
-      "eventId": "db660d36a56981626fc577f5c3529e6505f0175c",
-      "eventType": "unknown",
+      "eventId": "d6dfc2d85ccedf2a38129ebe946d666046d0f8fb",
+      "eventType": "model_release",
       "entities": [
-        "NVIDIA",
-        "Intel"
+        "OpenAI",
+        "Anthropic",
+        "Google"
       ],
       "tickers": [],
       "sourceCredibilityScore": 3.0,
       "marketImpactScore": 3.0,
       "noveltyScore": 4.0,
       "timelinessScore": 5.0,
-      "entityImportanceScore": 4.0,
+      "entityImportanceScore": 5.0,
       "confidenceScore": 3.0,
-      "totalScore": 3.55,
+      "totalScore": 3.7,
       "whyItMatters": "",
       "investmentImplication": "",
       "riskNote": "",
-      "originalTitle": "Everything we know so far about the Nvidia spy scandal targeting CEO Jensen Huang",
-      "published": "2026-11-09T23:07:59Z",
+      "originalTitle": "Google releases Gemini 4 Carbon with agent ‘swarm’ feature",
+      "published": "2026-11-10T16:00:00Z",
       "mergedSources": [
         "The Verge"
       ],
       "relatedUrls": [],
       "primarySource": "The Verge",
-      "selectionReason": "英伟达董事会就CEO与疑似中国间谍的关系展开调查，股价单日跌超4%，直接冲击公司治理、中国出口管制游说能力与AI芯片供应链预期，是当日最具系统性影响的P0事件。",
+      "selectionReason": "谷歌发布号称最强模型Gemini 4 Carbon并引入agent swarm，直接冲击OpenAI与Anthropic的模型竞争格局，是本周最重要的前沿模型发布。",
       "promptVersion": "",
       "modelUsed": "",
       "rawPayloadHash": "",
@@ -52,26 +53,26 @@
       "regions": [],
       "geopoliticsEventTypes": [],
       "geopoliticsRuleScore": 0.0,
-      "createdAt": "2026-11-09T23:46:01Z"
+      "createdAt": "2026-11-10T23:45:57Z"
     },
     {
-      "id": "ed30a8cf-c7dd-572f-b432-77d8401a5a1d",
-      "date": "2026-11-10",
-      "title": "Anthropic发布Claude Fable与Mythos 5.2新模型",
-      "summary": "Anthropic推出Claude Fable 5.2和Claude Mythos 5.2，称在编码、推理和视觉方面均有提升，输出速度快于5.1版本，旨在应对“艰巨”技术挑战。叠加Artificial Analysis最高评分，此举直接改变前沿模型竞争格局与API定价预期。投资者应关注其对Anthropic市场份额及企业API支出结构的影响。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1030005/anthropic-claude-fable-mythos-5-2",
-      "canonicalUrl": "https://www.theverge.com/ai-artificial-intelligence/1030005/anthropic-claude-fable-mythos-5-2",
-      "source": "The Verge",
+      "id": "66e875e6-9337-584e-80b8-bedbfe7538db",
+      "date": "2026-11-11",
+      "title": "Anthropic设定IPO发行价70-78美元，隐含估值达1.404万亿美元",
+      "summary": "Anthropic启动IPO，发行价区间为每股70至78美元，若按区间上限计算，完全稀释后估值高达1.404万亿美元。这一估值将重塑AI一级市场定价锚与独角兽估值体系，对AI投资影响极大。投资者需关注其上市后表现及对同类AI公司估值的传导效应。",
+      "url": "https://techcrunch.com/2026/11/10/anthropic-sets-ipo-price-range-of-70-to-78-per-share-to-reach-an-implied-valuation-of-1-404-trillion/",
+      "canonicalUrl": "https://techcrunch.com/2026/11/10/anthropic-sets-ipo-price-range-of-70-to-78-per-share-to-reach-an-implied-valuation-of-1-404-trillion",
+      "source": "TechCrunch",
       "sourceTier": "tier2",
       "isPrimarySource": false,
       "tags": [
-        "大模型",
-        "Anthropic",
-        "竞争格局"
+        "融资",
+        "IPO",
+        "Anthropic"
       ],
       "rank": 2,
-      "eventId": "617e35fc581041e32cd9b2094a3a38b1b24341a3",
-      "eventType": "model_release",
+      "eventId": "f68172c8a2d83d02bd8435f8d7bbcf6709d4b4dd",
+      "eventType": "funding",
       "entities": [
         "Anthropic"
       ],
@@ -86,14 +87,14 @@
       "whyItMatters": "",
       "investmentImplication": "",
       "riskNote": "",
-      "originalTitle": "Anthropic launches new Claude Fable and Mythos 5.2 models",
-      "published": "2026-11-09T19:00:00Z",
+      "originalTitle": "Anthropic sets IPO price range of $70 to $78 per share to reach an implied valuation of $1.404 trillion",
+      "published": "2026-11-10T14:01:39Z",
       "mergedSources": [
-        "The Verge"
+        "TechCrunch"
       ],
       "relatedUrls": [],
-      "primarySource": "The Verge",
-      "selectionReason": "Anthropic双模型升级并在编码、推理、视觉上提速，叠加Artificial Analysis最高分，直接改变前沿模型竞争格局与API定价预期。",
+      "primarySource": "TechCrunch",
+      "selectionReason": "Anthropic以最高1.4万亿美元估值启动IPO，将重塑AI一级市场定价锚与独角兽估值体系，对AI投资影响极大。",
       "promptVersion": "",
       "modelUsed": "",
       "rawPayloadHash": "",
@@ -101,28 +102,28 @@
       "regions": [],
       "geopoliticsEventTypes": [],
       "geopoliticsRuleScore": 0.0,
-      "createdAt": "2026-11-09T23:46:01Z"
+      "createdAt": "2026-11-10T23:45:57Z"
     },
     {
-      "id": "a60b0087-0144-5161-8530-3db9a7990ecb",
-      "date": "2026-11-10",
-      "title": "Meta发布轻量模型Muse Ember，瞄准AI智能体执行",
-      "summary": "Meta推出轻量模型Muse Ember，每百万输入token仅10美分，显著低于Haiku、Luna等前沿竞品，切入AI智能体执行场景。此举可能引发轻量模型价格战，并重塑AI智能体推理成本曲线。投资者需关注其对推理算力需求及模型层定价策略的连锁影响。",
-      "url": "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/",
-      "canonicalUrl": "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution",
+      "id": "eaedd3a2-2b8c-5786-8ffb-1800eb6dce47",
+      "date": "2026-11-11",
+      "title": "谷歌扩展AI硬件组合，推出两款专用芯片",
+      "summary": "谷歌推出两款新的张量处理单元（TPU），扩展其芯片组合至更多用例：机密模型训练和更大内存容量。此举直接加剧与英伟达在AI芯片供应链的竞争，可能影响算力成本与采购格局。投资者需关注谷歌TPU对英伟达GPU市场份额的潜在侵蚀。",
+      "url": "https://techcrunch.com/2026/11/10/google-broadens-its-ai-hardware-portfolio-with-two-new-specialized-chips/",
+      "canonicalUrl": "https://techcrunch.com/2026/11/10/google-broadens-its-ai-hardware-portfolio-with-two-new-specialized-chips",
       "source": "TechCrunch",
       "sourceTier": "tier2",
       "isPrimarySource": false,
       "tags": [
-        "Meta",
-        "大模型",
-        "价格战"
+        "芯片",
+        "TPU",
+        "谷歌"
       ],
       "rank": 3,
-      "eventId": "78329994ebeeb177160f0980efc5f05ca7dd5d79",
+      "eventId": "eafc451499e17e9787d2847b02162e4904809e45",
       "eventType": "model_release",
       "entities": [
-        "Meta"
+        "Google"
       ],
       "tickers": [],
       "sourceCredibilityScore": 3.0,
@@ -135,14 +136,14 @@
       "whyItMatters": "",
       "investmentImplication": "",
       "riskNote": "",
-      "originalTitle": "Meta releases Muse Ember, a new lightweight model for agent execution",
-      "published": "2026-11-09T18:00:00Z",
+      "originalTitle": "Google broadens its AI hardware portfolio with two new specialized chips",
+      "published": "2026-11-10T15:54:08Z",
       "mergedSources": [
         "TechCrunch"
       ],
       "relatedUrls": [],
       "primarySource": "TechCrunch",
-      "selectionReason": "Meta以每百万输入token仅10美分的价格切入agent执行场景，显著低于Haiku/Luna等竞品，可能引发轻量模型价格战并重塑agent推理成本曲线。",
+      "selectionReason": "谷歌扩展TPU产品线至机密训练与大内存场景，直接加剧与英伟达的AI芯片供应链竞争，影响算力成本与采购格局。",
       "promptVersion": "",
       "modelUsed": "",
       "rawPayloadHash": "",
@@ -150,28 +151,28 @@
       "regions": [],
       "geopoliticsEventTypes": [],
       "geopoliticsRuleScore": 0.0,
-      "createdAt": "2026-11-09T23:46:01Z"
+      "createdAt": "2026-11-10T23:45:57Z"
     },
     {
-      "id": "6aea8ed2-27a3-5b05-9fa1-4fc302aabf72",
-      "date": "2026-11-10",
-      "title": "Anthropic斥资34亿美元采购天然气涡轮机",
-      "summary": "Anthropic以数十亿美元采购天然气涡轮机，交易规模达34亿美元，反映前沿AI实验室正将资本开支前移至电力基础设施。这是AI算力-能源瓶颈投资主题的重要信号，投资者应关注电力供应对模型训练与推理扩张的制约，以及能源成本对AI企业毛利率的潜在压力。",
-      "url": "https://techcrunch.com/2026/11/09/anthropic-joins-ais-natural-gas-frenzy-buys-3-4b-worth-of-turbines/",
-      "canonicalUrl": "https://techcrunch.com/2026/11/09/anthropic-joins-ais-natural-gas-frenzy-buys-3-4b-worth-of-turbines",
+      "id": "98cb0b75-2457-5ed9-8fd7-5f24f31b34e9",
+      "date": "2026-11-11",
+      "title": "OpenAI收购Sonder创始人创办的旅游初创公司Odessia",
+      "summary": "OpenAI收购了由Sonder创始人Francis Davidson创办的旅游初创公司Odessia，但未透露未来在旅游领域的计划。Davidson是旅游业知名人物。此举显示OpenAI从模型层向应用/交易场景延伸的并购策略，投资者需关注其生态扩张路径及对垂直行业的影响。",
+      "url": "https://techcrunch.com/2026/11/10/openai-acquires-odessia-travel-startup-created-by-sonder-founder/",
+      "canonicalUrl": "https://techcrunch.com/2026/11/10/openai-acquires-odessia-travel-startup-created-by-sonder-founder",
       "source": "TechCrunch",
       "sourceTier": "tier2",
       "isPrimarySource": false,
       "tags": [
-        "Anthropic",
-        "算力基建",
-        "能源"
+        "并购",
+        "OpenAI",
+        "应用"
       ],
       "rank": 4,
-      "eventId": "263662bd999604300014dbde434ae1eb324133f3",
+      "eventId": "087b3a35a3dfb2fce0972ae3439379741ffa4d52",
       "eventType": "unknown",
       "entities": [
-        "Anthropic"
+        "OpenAI"
       ],
       "tickers": [],
       "sourceCredibilityScore": 3.0,
@@ -184,14 +185,14 @@
       "whyItMatters": "",
       "investmentImplication": "",
       "riskNote": "",
-      "originalTitle": "Anthropic joins AI’s natural gas frenzy, buys $3.4B worth of turbines",
-      "published": "2026-11-09T16:56:54Z",
+      "originalTitle": "OpenAI acquires Odessia, travel startup created by Sonder founder",
+      "published": "2026-11-10T21:08:52Z",
       "mergedSources": [
         "TechCrunch"
       ],
       "relatedUrls": [],
       "primarySource": "TechCrunch",
-      "selectionReason": "Anthropic斥资34亿美元采购天然气涡轮机，反映前沿实验室正将资本开支前移至电力基础设施，是AI算力-能源瓶颈投资主题的重要信号。",
+      "selectionReason": "OpenAI收购垂直行业初创，显示其从模型层向应用/交易场景延伸的并购策略，值得关注其生态扩张路径。",
       "promptVersion": "",
       "modelUsed": "",
       "rawPayloadHash": "",
@@ -199,49 +200,48 @@
       "regions": [],
       "geopoliticsEventTypes": [],
       "geopoliticsRuleScore": 0.0,
-      "createdAt": "2026-11-09T23:46:01Z"
+      "createdAt": "2026-11-10T23:45:57Z"
     },
     {
-      "id": "c66ce1b5-dc81-5bde-9134-212a2c003783",
-      "date": "2026-11-10",
-      "title": "苹果推出49.99美元AI用量包，部分功能转向分层变现",
-      "summary": "苹果在Logic Pro中新增“购买更多用量”选项，一次性收费49.99美元，扩展部分Apple Intelligence功能的使用权限。这是苹果首次对AI功能推出付费用量包，标志大厂AI功能从免费捆绑转向分层变现，对AI应用商业化路径具有示范意义。投资者需关注其用户付费转化及对服务收入的增量贡献。",
-      "url": "https://www.theverge.com/tech/1030084/apple-intelligence-usage-packs-ai-features-creator-studio-logic-pro",
-      "canonicalUrl": "https://www.theverge.com/tech/1030084/apple-intelligence-usage-packs-ai-features-creator-studio-logic-pro",
+      "id": "8177ecfc-0a64-53e6-aa8b-ffae4064fbac",
+      "date": "2026-11-11",
+      "title": "美国正赢得AI竞赛，但黄仁勋可能搞砸了",
+      "summary": "英伟达CEO黄仁勋作为全球最有价值公司之一的掌舵人，控制着AI热潮所需的关键技术，与政商界关系密切。但间谍风波叠加出口管制风险，可能影响公司治理、对华业务与AI算力供应链稳定性。投资者需关注该事件对英伟达股价及AI芯片供应链的潜在冲击。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1031063/jensen-huang-ai-race-us-china-spy",
+      "canonicalUrl": "https://www.theverge.com/ai-artificial-intelligence/1031063/jensen-huang-ai-race-us-china-spy",
       "source": "The Verge",
       "sourceTier": "tier2",
       "isPrimarySource": false,
       "tags": [
-        "苹果",
-        "AI商业化",
-        "产品发布"
+        "英伟达",
+        "地缘风险",
+        "供应链"
       ],
       "rank": 5,
-      "eventId": "df6554b3b9163bf90080756309b6c2acd5aa5df4",
+      "eventId": "67193fb8fc2ba3e71153bd867cd94deda5444d03",
       "eventType": "unknown",
       "entities": [
-        "Apple",
-        "Intel"
+        "NVIDIA"
       ],
       "tickers": [],
       "sourceCredibilityScore": 3.0,
-      "marketImpactScore": 2.0,
+      "marketImpactScore": 3.0,
       "noveltyScore": 4.0,
       "timelinessScore": 5.0,
-      "entityImportanceScore": 4.0,
+      "entityImportanceScore": 3.0,
       "confidenceScore": 3.0,
-      "totalScore": 3.2,
+      "totalScore": 3.4,
       "whyItMatters": "",
       "investmentImplication": "",
       "riskNote": "",
-      "originalTitle": "Apple’s $50 Intelligence Usage Packs extend access to some AI features",
-      "published": "2026-11-09T19:09:58Z",
+      "originalTitle": "The US is winning the AI race. Jensen Huang could have blown it",
+      "published": "2026-11-10T19:04:05Z",
       "mergedSources": [
         "The Verge"
       ],
       "relatedUrls": [],
       "primarySource": "The Verge",
-      "selectionReason": "苹果首次对Apple Intelligence部分功能推出49.99美元一次性用量包，标志大厂AI功能从免费捆绑转向分层变现，对AI应用商业化路径有示范意义。",
+      "selectionReason": "英伟达CEO涉间谍风波叠加出口管制风险，可能影响公司治理、对华业务与AI算力供应链稳定性，是本周最大不确定性事件。",
       "promptVersion": "",
       "modelUsed": "",
       "rawPayloadHash": "",
@@ -249,82 +249,82 @@
       "regions": [],
       "geopoliticsEventTypes": [],
       "geopoliticsRuleScore": 0.0,
-      "createdAt": "2026-11-09T23:46:01Z"
+      "createdAt": "2026-11-10T23:45:57Z"
     }
   ],
   "geopoliticsItems": [
     {
-      "id": "d4af3a68-c842-553d-83ea-50f77b470707",
-      "date": "2026-11-10",
-      "title": "特朗普提议中美俄三方峰会斡旋伊朗战争",
-      "summary": "美国总统特朗普提出举行中美俄三方峰会，以推动结束伊朗战争；分析人士称，美国中期选举后其政府面临拿出突破性成果的压力。中方观察人士认为，北京可能扮演中立调解者并提供外交平台，而非施压德黑兰达成协议。特朗普周日对记者表示将与中俄领导人会面。该事件涉及中美俄大国协调与全球安全秩序，若峰会推进，可能影响能源价格、避险情绪及大国关系预期，但目前仍属提议阶段。",
-      "url": "https://www.scmp.com/news/china/diplomacy/article/3373831/can-xi-jinping-and-vladimir-putin-give-donald-trump-iran-exit-he-needs",
-      "canonicalUrl": "https://www.scmp.com/news/china/diplomacy/article/3373831/can-xi-jinping-and-vladimir-putin-give-donald-trump-iran-exit-he-needs",
+      "id": "f450960f-0fc1-5faf-87f1-b661b7fd4180",
+      "date": "2026-11-11",
+      "title": "英伟达丑闻或考验中美脆弱休战",
+      "summary": "英伟达相关丑闻的后续影响可能考验中美之间脆弱的休战状态。分析人士指出，随着华盛顿内部要求收紧半导体出口管制的呼声上升，此事或对中美关系与科技供应链造成更大冲击。报道提到，美国总统Donald Trump预计将在中国深圳与中国领导人Xi Jinping会面，战略与国际研究中心高级研究员Ilaria Mazzocco认为该丑闻可能在后续会晤中产生更大影响。市场关注半导体出口管制是否进一步收紧及其对相关供应链的潜在扰动。",
+      "url": "https://www.scmp.com/news/china/diplomacy/article/3373859/nvidia-scandal-may-test-fragile-us-china-truce-experts-say",
+      "canonicalUrl": "https://www.scmp.com/news/china/diplomacy/article/3373859/nvidia-scandal-may-test-fragile-us-china-truce-experts-say",
       "source": "SCMP China",
       "sourceTier": "tier2",
       "isPrimarySource": false,
       "tags": [
         "中美关系",
-        "全球安全",
-        "伊朗战争"
+        "出口管制",
+        "半导体"
       ],
       "rank": 1,
-      "eventId": "6d57686edcac8747d68fe22a59b5c5098410e43d",
+      "eventId": "876631a59b4fd9bb448b2222ed8e94107502e0f1",
       "eventType": "unknown",
-      "entities": [],
+      "entities": [
+        "NVIDIA"
+      ],
       "tickers": [],
       "sourceCredibilityScore": 3.0,
-      "marketImpactScore": 2.0,
+      "marketImpactScore": 3.0,
       "noveltyScore": 4.0,
       "timelinessScore": 5.0,
-      "entityImportanceScore": 2.0,
+      "entityImportanceScore": 3.0,
       "confidenceScore": 3.0,
-      "totalScore": 2.9,
+      "totalScore": 3.4,
       "whyItMatters": "",
       "investmentImplication": "",
       "riskNote": "",
-      "originalTitle": "Can Xi Jinping and Vladimir Putin give Donald Trump the Iran exit he needs?",
-      "published": "2026-11-09T14:00:06Z",
+      "originalTitle": "Nvidia scandal may test fragile US-China truce, experts say",
+      "published": "2026-11-10T00:32:25Z",
       "mergedSources": [
         "SCMP China"
       ],
       "relatedUrls": [],
       "primarySource": "SCMP China",
-      "selectionReason": "特朗普提议中美俄三方峰会斡旋伊朗战争，涉及中美关系与全球安全秩序，为最高优先级地缘事件。",
+      "selectionReason": "英伟达丑闻或冲击中美脆弱休战，华盛顿收紧半导体出口管制呼声升温，直接涉及中美关系与科技供应链。",
       "promptVersion": "",
       "modelUsed": "",
       "rawPayloadHash": "",
       "warnings": [],
       "regions": [
         "china",
-        "us",
-        "global"
+        "us"
       ],
       "geopoliticsEventTypes": [
         "geopolitics",
-        "election"
+        "supply_chain"
       ],
       "geopoliticsRuleScore": 7.0,
-      "createdAt": "2026-11-09T23:46:01Z"
+      "createdAt": "2026-11-10T23:45:57Z"
     },
     {
-      "id": "834330da-f399-5180-919f-6040550fca5a",
-      "date": "2026-11-10",
-      "title": "解放军西太南海部署被指演练阻美军介入台海",
-      "summary": "近期中国军队在西太平洋和南海的海军部署引发分析人士讨论，认为北京可能在演练阻止美国及盟国介入台海冲突的行动。北京未宣布与近期解放军海军活动相关的大规模演习。美国智库战争研究所（ISW）11月6日评估称，解放军可能正在进行大规模演练。该动向直接关系中美军事博弈与台海风险，若紧张升级，可能影响区域安全溢价、供应链预期及市场风险偏好，但相关演练性质尚无官方确认。",
-      "url": "https://www.scmp.com/news/china/military/article/3373741/pla-rehearsing-operations-keep-us-forces-out-taiwan-conflict",
-      "canonicalUrl": "https://www.scmp.com/news/china/military/article/3373741/pla-rehearsing-operations-keep-us-forces-out-taiwan-conflict",
+      "id": "ec2259ff-3f7d-5ea3-8a38-ad4848866980",
+      "date": "2026-11-11",
+      "title": "习特将在APEC会晤，实质成果或待G20",
+      "summary": "美国与中国领导人预计在下周APEC峰会期间再次会面，但观察人士预期双边实质性成果有限。报道称，Donald Trump与Xi Jinping的面对面会晤将是两人今年第三次会面，此前双方于5月和9月进行了互访。两人还预计在12月于美国举行的G20峰会期间会面。全球市场将密切关注相关会晤，以判断中美关系走向及潜在经贸信号，但短期内出现重大可交付成果的可能性被认为不高。",
+      "url": "https://www.scmp.com/news/china/diplomacy/article/3373969/xi-and-trump-set-apec-talks-major-deliverables-expected-wait-g20",
+      "canonicalUrl": "https://www.scmp.com/news/china/diplomacy/article/3373969/xi-and-trump-set-apec-talks-major-deliverables-expected-wait-g20",
       "source": "SCMP China",
       "sourceTier": "tier2",
       "isPrimarySource": false,
       "tags": [
         "中美关系",
-        "台海",
-        "军事"
+        "外交"
       ],
       "rank": 2,
-      "eventId": "dc148e0869a2b49bbb992b570ab30316c4edd0a0",
-      "eventType": "funding",
+      "eventId": "1078aac87f293cfbd5c0776d7e993e031d942737",
+      "eventType": "unknown",
       "entities": [],
       "tickers": [],
       "sourceCredibilityScore": 3.0,
@@ -337,14 +337,14 @@
       "whyItMatters": "",
       "investmentImplication": "",
       "riskNote": "",
-      "originalTitle": "Is the PLA rehearsing operations to keep US forces out of a Taiwan conflict?",
-      "published": "2026-11-09T03:59:01Z",
+      "originalTitle": "Xi and Trump set for Apec talks, but major deliverables expected to wait for G20",
+      "published": "2026-11-10T14:00:10Z",
       "mergedSources": [
         "SCMP China"
       ],
       "relatedUrls": [],
       "primarySource": "SCMP China",
-      "selectionReason": "解放军西太与南海部署被指演练阻止美军介入台海，直接关系中美军事博弈与台海风险。",
+      "selectionReason": "习特将在APEC会晤，为年内第三次面对面，全球市场高度关注中美关系走向与潜在经贸信号。",
       "promptVersion": "",
       "modelUsed": "",
       "rawPayloadHash": "",
@@ -357,26 +357,26 @@
         "geopolitics"
       ],
       "geopoliticsRuleScore": 6.0,
-      "createdAt": "2026-11-09T23:46:01Z"
+      "createdAt": "2026-11-10T23:45:57Z"
     },
     {
-      "id": "6661288c-43cd-5f7c-a407-e954f1da8395",
-      "date": "2026-11-10",
-      "title": "中美俄战略运输机罕见同现中国境内",
-      "summary": "过去数日，全球三种核心战略重型运输机罕见地同时在中国境内活动。多架美军大型运输机周末被发现在深圳降落，普遍被视为美国总统特朗普预计下周赴深圳出席亚太经合组织（APEC）论坛的准备。周一，一架俄制、中方所有的伊尔-76运输机也出现。事件关联特朗普APEC访华与中美俄军事外交互动，或为高层接触与区域峰会营造氛围，但具体安排仍待官方确认，对市场影响偏预期层面。",
-      "url": "https://www.scmp.com/news/china/diplomacy/article/3373821/c-17-il-76-y-20-aviation-moment-skies-over-china",
-      "canonicalUrl": "https://www.scmp.com/news/china/diplomacy/article/3373821/c-17-il-76-y-20-aviation-moment-skies-over-china",
-      "source": "SCMP China",
+      "id": "b544aae1-188b-53f2-9f27-912f8281a1a7",
+      "date": "2026-11-11",
+      "title": "中国延长稀土管制暂停，欧盟供应推进受制于定价与融资",
+      "summary": "在北京宣布将稀土出口管制暂停期延长两个月之际，欧洲业内人士对欧盟减少对稀土及其他原材料进口依赖的努力出现心态转变表示欢迎，但提醒融资与监管等问题仍然存在，分析人士警告欧盟时间正在耗尽。报道称，中国商务部周一延长了对多种稀土相关出口管制的暂停。该动向关系到欧盟关键矿产供应链“去依赖”进程及全球稀土贸易格局，后续需关注欧盟在融资、定价和监管方面的推进力度。",
+      "url": "https://www.scmp.com/economy/china-economy/article/3373924/china-extends-rare-earth-controls-pause-pricing-and-financing-hold-back-eu-supply-push",
+      "canonicalUrl": "https://www.scmp.com/economy/china-economy/article/3373924/china-extends-rare-earth-controls-pause-pricing-and-financing-hold-back-eu-supply-push",
+      "source": "SCMP Global Economy",
       "sourceTier": "tier2",
       "isPrimarySource": false,
       "tags": [
-        "中美关系",
-        "外交",
-        "军事"
+        "关键矿产",
+        "出口管制",
+        "供应链"
       ],
       "rank": 3,
-      "eventId": "44d7d671199084d0e9c4593a54c848927ff69b39",
-      "eventType": "unknown",
+      "eventId": "35ef5c81a8c80dce9d7abfde9a90de903bb4e173",
+      "eventType": "regulation",
       "entities": [],
       "tickers": [],
       "sourceCredibilityScore": 3.0,
@@ -389,97 +389,47 @@
       "whyItMatters": "",
       "investmentImplication": "",
       "riskNote": "",
-      "originalTitle": "C-17, Il-76 and Y-20 equals: an aviation moment in the skies over China",
-      "published": "2026-11-09T12:00:24Z",
+      "originalTitle": "As China extends pause on rare earth controls, pricing and financing hold back EU supply push",
+      "published": "2026-11-10T08:30:12Z",
       "mergedSources": [
-        "SCMP China"
+        "SCMP Global Economy"
       ],
       "relatedUrls": [],
-      "primarySource": "SCMP China",
-      "selectionReason": "中美俄战略运输机罕见同现中国，关联特朗普APEC访华与大国军事外交互动。",
+      "primarySource": "SCMP Global Economy",
+      "selectionReason": "中国延长稀土出口管制暂停两月，牵动欧盟关键矿产供应链去依赖进程，属关键矿产与出口管制核心议题。",
       "promptVersion": "",
       "modelUsed": "",
       "rawPayloadHash": "",
       "warnings": [],
       "regions": [
         "china",
-        "us",
         "global"
       ],
       "geopoliticsEventTypes": [
-        "geopolitics"
+        "geopolitics",
+        "policy",
+        "supply_chain"
       ],
-      "geopoliticsRuleScore": 6.0,
-      "createdAt": "2026-11-09T23:46:01Z"
+      "geopoliticsRuleScore": 6.5,
+      "createdAt": "2026-11-10T23:45:57Z"
     },
     {
-      "id": "651e762b-aa77-5017-9595-03c2d7b58cb4",
-      "date": "2026-11-10",
-      "title": "立陶宛总统证实就台湾代表处改名进行磋商",
-      "summary": "立陶宛正与台湾方面磋商更改维尔纽斯争议代表处名称，总统瑙塞达称政府“没有义务”遵循前任政策。瑙塞达周一晚对国有广播LRT证实，立陶宛外交部已致函台湾代表处，要求重新校准关系，并表示新执政多数正在协调。此举涉及中国核心外交议题，被视为欧洲对华政策可能出现转向的信号，或影响中立双边关系及中欧外交氛围，但磋商结果尚未确定。",
-      "url": "https://www.scmp.com/news/china/diplomacy/article/3373838/lithuania-asked-taipei-change-name-office-beijings-national-day-reports",
-      "canonicalUrl": "https://www.scmp.com/news/china/diplomacy/article/3373838/lithuania-asked-taipei-change-name-office-beijings-national-day-reports",
-      "source": "SCMP China",
-      "sourceTier": "tier2",
-      "isPrimarySource": false,
-      "tags": [
-        "中国",
-        "台湾",
-        "外交"
-      ],
-      "rank": 4,
-      "eventId": "5af23b6e559cc9ec1ea72b3bf6b6d6220068519b",
-      "eventType": "unknown",
-      "entities": [],
-      "tickers": [],
-      "sourceCredibilityScore": 3.0,
-      "marketImpactScore": 2.0,
-      "noveltyScore": 4.0,
-      "timelinessScore": 5.0,
-      "entityImportanceScore": 2.0,
-      "confidenceScore": 3.0,
-      "totalScore": 2.9,
-      "whyItMatters": "",
-      "investmentImplication": "",
-      "riskNote": "",
-      "originalTitle": "Lithuanian president confirms talks on renaming Taiwan office in diplomatic U-turn",
-      "published": "2026-11-09T14:16:09Z",
-      "mergedSources": [
-        "SCMP China"
-      ],
-      "relatedUrls": [],
-      "primarySource": "SCMP China",
-      "selectionReason": "立陶宛就台湾代表处改名与台方磋商，涉及中国核心外交议题与欧洲对华政策转向。",
-      "promptVersion": "",
-      "modelUsed": "",
-      "rawPayloadHash": "",
-      "warnings": [],
-      "regions": [
-        "china"
-      ],
-      "geopoliticsEventTypes": [
-        "geopolitics"
-      ],
-      "geopoliticsRuleScore": 4.0,
-      "createdAt": "2026-11-09T23:46:01Z"
-    },
-    {
-      "id": "65e4a6fb-655a-5851-90cd-555a72d0283c",
-      "date": "2026-11-10",
-      "title": "中期选举后民主党面临降低食品价格压力",
-      "summary": "美国中期选举前，选民最关注负担能力问题，关税与伊朗战争推高包括食品在内的物价。NPR Business报道称，如今美国人期待华盛顿带来缓解。该议题关乎美国通胀走势与贸易政策方向，若新政治格局推动关税调整或价格纾困措施，可能影响通胀预期、消费板块及贸易相关资产，但具体政策路径尚不明确，报道未给出量化影响。",
-      "url": "https://www.npr.org/2026/11/09/nx-s1-6030830/democrats-grocery-bill-affordability",
-      "canonicalUrl": "https://www.npr.org/2026/11/09/nx-s1-6030830/democrats-grocery-bill-affordability",
-      "source": "NPR Business",
+      "id": "8d73509a-8b13-50a5-b4be-32ea088a9090",
+      "date": "2026-11-11",
+      "title": "美国10月通胀高于预期",
+      "summary": "美国10月通胀高于预期，价格环比上涨0.4%，主要受住房、食品和能源成本上升推动。该数据直接影响市场对Fed货币政策路径的定价，并可能影响全球金融风险偏好与资产价格。后续需关注通胀分项走势及其对利率预期的影响，但输入未提供更多政策表态或市场反应细节。",
+      "url": "https://www.bbc.co.uk/news/articles/cwy8lx3pg4k2o?at_medium=RSS&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cwy8lx3pg4k2o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC Business",
       "sourceTier": "tier2",
       "isPrimarySource": false,
       "tags": [
         "美国",
         "通胀",
-        "关税"
+        "货币政策"
       ],
-      "rank": 5,
-      "eventId": "ffa16ca1b813a1a899c2a6695ad73d85ee7ee43a",
+      "rank": 4,
+      "eventId": "928277f3a9d06586498aee8f7fd2869a165f12bc",
       "eventType": "unknown",
       "entities": [],
       "tickers": [],
@@ -493,15 +443,65 @@
       "whyItMatters": "",
       "investmentImplication": "",
       "riskNote": "",
-      "originalTitle": "Democrats won big. Can they lower your grocery bill?",
-      "published": "2026-11-09T10:00:00Z",
+      "originalTitle": "US inflation higher than expected in October - here's what is happening with prices",
+      "published": "2026-11-10T14:45:46Z",
       "mergedSources": [
-        "NPR Business",
-        "NPR Politics"
+        "BBC Business"
       ],
       "relatedUrls": [],
-      "primarySource": "NPR Business",
-      "selectionReason": "中期选举后美国选民聚焦关税与伊朗战争推升的物价，关乎美国通胀与贸易政策走向。",
+      "primarySource": "BBC Business",
+      "selectionReason": "美国10月通胀超预期，住房、食品与能源推动价格上涨，直接影响美联储政策与全球金融风险定价。",
+      "promptVersion": "",
+      "modelUsed": "",
+      "rawPayloadHash": "",
+      "warnings": [],
+      "regions": [
+        "us"
+      ],
+      "geopoliticsEventTypes": [
+        "macro"
+      ],
+      "geopoliticsRuleScore": 3.25,
+      "createdAt": "2026-11-10T23:45:57Z"
+    },
+    {
+      "id": "c563d79a-effa-531c-a7c5-7812fc2e755e",
+      "date": "2026-11-11",
+      "title": "俄乌在阿布扎比举行近四小时美国斡旋会谈",
+      "summary": "俄罗斯与乌克兰在阿布扎比举行了近四小时的美国斡旋会谈。报道指出，结束这场欧洲自二战以来最大冲突的希望，因今年早些时候前三轮会谈均未取得重大突破而受到制约。该会谈事关欧洲安全秩序与全球地缘风险走向，后续需关注是否出现实质性进展及其对能源、避险资产和地区局势的潜在影响。",
+      "url": "https://www.npr.org/2026/11/10/g-s1-152773/russia-ukraine-war-talks",
+      "canonicalUrl": "https://www.npr.org/2026/11/10/g-s1-152773/russia-ukraine-war-talks",
+      "source": "NPR World",
+      "sourceTier": "tier2",
+      "isPrimarySource": false,
+      "tags": [
+        "俄乌",
+        "地缘政治",
+        "美国斡旋"
+      ],
+      "rank": 5,
+      "eventId": "30a5c026a2951871dbe6c79765bb46c31ca3a75b",
+      "eventType": "unknown",
+      "entities": [],
+      "tickers": [],
+      "sourceCredibilityScore": 3.0,
+      "marketImpactScore": 2.0,
+      "noveltyScore": 4.0,
+      "timelinessScore": 5.0,
+      "entityImportanceScore": 2.0,
+      "confidenceScore": 3.0,
+      "totalScore": 2.9,
+      "whyItMatters": "",
+      "investmentImplication": "",
+      "riskNote": "",
+      "originalTitle": "Russia and Ukraine hold nearly 4 hours of U.S.-mediated talks in Abu Dhabi",
+      "published": "2026-11-10T10:58:18Z",
+      "mergedSources": [
+        "NPR World"
+      ],
+      "relatedUrls": [],
+      "primarySource": "NPR World",
+      "selectionReason": "俄乌在阿布扎比举行近四小时美国斡旋会谈，事关欧洲最大冲突走向与全球安全秩序。",
       "promptVersion": "",
       "modelUsed": "",
       "rawPayloadHash": "",
@@ -511,11 +511,10 @@
         "global"
       ],
       "geopoliticsEventTypes": [
-        "geopolitics",
-        "policy"
+        "geopolitics"
       ],
-      "geopoliticsRuleScore": 5.5,
-      "createdAt": "2026-11-09T23:46:01Z"
+      "geopoliticsRuleScore": 4.0,
+      "createdAt": "2026-11-10T23:45:57Z"
     }
   ]
 }

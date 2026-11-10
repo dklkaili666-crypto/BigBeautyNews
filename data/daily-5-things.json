@@ -1,40 +1,40 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-11-09T23:46:01Z",
+  "exportedAt": "2026-11-10T23:45:57Z",
   "items": [
     {
-      "date": "2026-11-10",
-      "title": "英伟达CEO黄仁勋卷入间谍丑闻，公司启动调查",
-      "summary": "英伟达CEO黄仁勋承认与Megaspeed高管Alice Huang存在婚外情，公司已启动调查。美国情报报告此前指认Alice Huang为一家AI算力公司高管，该公司出租算力访问权限。此事直接冲击公司治理、对华出口管制游说能力及AI芯片供应链预期，$NVDA英伟达股价单日跌超4%，为当日最具系统性影响的P0事件。投资者需关注调查进展及潜在合规风险。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1030422/nvidia-jensen-huang-ai-china-alice-huang",
+      "date": "2026-11-11",
+      "title": "谷歌发布Gemini 4 Carbon，引入AI智能体“蜂群”功能",
+      "summary": "谷歌正式向公众发布其最新AI模型Gemini 4 Carbon，此前两周仅向部分“网络安全防御者”开放。谷歌称Carbon是其“最强模型”，可与Anthropic和OpenAI的顶尖系统竞争。该模型引入AI智能体“蜂群”功能，可能加剧前沿模型竞争格局。投资者需关注谷歌能否借此缩小与OpenAI的差距，并影响AI模型市场份额。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1030787/google-gemini-4-carbon-public-rollout",
       "source": "The Verge"
     },
     {
-      "date": "2026-11-10",
-      "title": "Anthropic发布Claude Fable与Mythos 5.2新模型",
-      "summary": "Anthropic推出Claude Fable 5.2和Claude Mythos 5.2，称在编码、推理和视觉方面均有提升，输出速度快于5.1版本，旨在应对“艰巨”技术挑战。叠加Artificial Analysis最高评分，此举直接改变前沿模型竞争格局与API定价预期。投资者应关注其对Anthropic市场份额及企业API支出结构的影响。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1030005/anthropic-claude-fable-mythos-5-2",
-      "source": "The Verge"
-    },
-    {
-      "date": "2026-11-10",
-      "title": "Meta发布轻量模型Muse Ember，瞄准AI智能体执行",
-      "summary": "Meta推出轻量模型Muse Ember，每百万输入token仅10美分，显著低于Haiku、Luna等前沿竞品，切入AI智能体执行场景。此举可能引发轻量模型价格战，并重塑AI智能体推理成本曲线。投资者需关注其对推理算力需求及模型层定价策略的连锁影响。",
-      "url": "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/",
+      "date": "2026-11-11",
+      "title": "Anthropic设定IPO发行价70-78美元，隐含估值达1.404万亿美元",
+      "summary": "Anthropic启动IPO，发行价区间为每股70至78美元，若按区间上限计算，完全稀释后估值高达1.404万亿美元。这一估值将重塑AI一级市场定价锚与独角兽估值体系，对AI投资影响极大。投资者需关注其上市后表现及对同类AI公司估值的传导效应。",
+      "url": "https://techcrunch.com/2026/11/10/anthropic-sets-ipo-price-range-of-70-to-78-per-share-to-reach-an-implied-valuation-of-1-404-trillion/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-11-10",
-      "title": "Anthropic斥资34亿美元采购天然气涡轮机",
-      "summary": "Anthropic以数十亿美元采购天然气涡轮机，交易规模达34亿美元，反映前沿AI实验室正将资本开支前移至电力基础设施。这是AI算力-能源瓶颈投资主题的重要信号，投资者应关注电力供应对模型训练与推理扩张的制约，以及能源成本对AI企业毛利率的潜在压力。",
-      "url": "https://techcrunch.com/2026/11/09/anthropic-joins-ais-natural-gas-frenzy-buys-3-4b-worth-of-turbines/",
+      "date": "2026-11-11",
+      "title": "谷歌扩展AI硬件组合，推出两款专用芯片",
+      "summary": "谷歌推出两款新的张量处理单元（TPU），扩展其芯片组合至更多用例：机密模型训练和更大内存容量。此举直接加剧与英伟达在AI芯片供应链的竞争，可能影响算力成本与采购格局。投资者需关注谷歌TPU对英伟达GPU市场份额的潜在侵蚀。",
+      "url": "https://techcrunch.com/2026/11/10/google-broadens-its-ai-hardware-portfolio-with-two-new-specialized-chips/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-11-10",
-      "title": "苹果推出49.99美元AI用量包，部分功能转向分层变现",
-      "summary": "苹果在Logic Pro中新增“购买更多用量”选项，一次性收费49.99美元，扩展部分Apple Intelligence功能的使用权限。这是苹果首次对AI功能推出付费用量包，标志大厂AI功能从免费捆绑转向分层变现，对AI应用商业化路径具有示范意义。投资者需关注其用户付费转化及对服务收入的增量贡献。",
-      "url": "https://www.theverge.com/tech/1030084/apple-intelligence-usage-packs-ai-features-creator-studio-logic-pro",
+      "date": "2026-11-11",
+      "title": "OpenAI收购Sonder创始人创办的旅游初创公司Odessia",
+      "summary": "OpenAI收购了由Sonder创始人Francis Davidson创办的旅游初创公司Odessia，但未透露未来在旅游领域的计划。Davidson是旅游业知名人物。此举显示OpenAI从模型层向应用/交易场景延伸的并购策略，投资者需关注其生态扩张路径及对垂直行业的影响。",
+      "url": "https://techcrunch.com/2026/11/10/openai-acquires-odessia-travel-startup-created-by-sonder-founder/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-11-11",
+      "title": "美国正赢得AI竞赛，但黄仁勋可能搞砸了",
+      "summary": "英伟达CEO黄仁勋作为全球最有价值公司之一的掌舵人，控制着AI热潮所需的关键技术，与政商界关系密切。但间谍风波叠加出口管制风险，可能影响公司治理、对华业务与AI算力供应链稳定性。投资者需关注该事件对英伟达股价及AI芯片供应链的潜在冲击。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1031063/jensen-huang-ai-race-us-china-spy",
       "source": "The Verge"
     }
   ]

@@ -1,40 +1,40 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-11-10T23:45:57Z",
+  "exportedAt": "2026-11-11T23:46:03Z",
   "items": [
     {
-      "date": "2026-11-11",
-      "title": "谷歌发布Gemini 4 Carbon，引入AI智能体“蜂群”功能",
-      "summary": "谷歌正式向公众发布其最新AI模型Gemini 4 Carbon，此前两周仅向部分“网络安全防御者”开放。谷歌称Carbon是其“最强模型”，可与Anthropic和OpenAI的顶尖系统竞争。该模型引入AI智能体“蜂群”功能，可能加剧前沿模型竞争格局。投资者需关注谷歌能否借此缩小与OpenAI的差距，并影响AI模型市场份额。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1030787/google-gemini-4-carbon-public-rollout",
+      "date": "2026-11-12",
+      "title": "英伟达据报准备解雇CEO黄仁勋",
+      "summary": "据《华尔街日报》报道，英伟达董事会正准备解雇CEO黄仁勋，此前《纽约时报》报道了第二起涉嫌婚外情事件，而就在几天前，黄仁勋承认了另一起与据称是中国间谍的女性的婚外情。第二起涉嫌婚外情涉及一名高管。对于投资者而言，全球最重要AI算力公司的治理与战略连续性面临直接冲击，属于高优先级的大厂风险事件，需关注后续董事会决策、管理层变动及对公司战略执行和股价的潜在影响。",
+      "url": "https://www.theverge.com/tech/1031652/jensen-huang-rumor",
       "source": "The Verge"
     },
     {
-      "date": "2026-11-11",
-      "title": "Anthropic设定IPO发行价70-78美元，隐含估值达1.404万亿美元",
-      "summary": "Anthropic启动IPO，发行价区间为每股70至78美元，若按区间上限计算，完全稀释后估值高达1.404万亿美元。这一估值将重塑AI一级市场定价锚与独角兽估值体系，对AI投资影响极大。投资者需关注其上市后表现及对同类AI公司估值的传导效应。",
-      "url": "https://techcrunch.com/2026/11/10/anthropic-sets-ipo-price-range-of-70-to-78-per-share-to-reach-an-implied-valuation-of-1-404-trillion/",
+      "date": "2026-11-12",
+      "title": "OpenAI季度营收据报首次突破100亿美元",
+      "summary": "OpenAI季度销售额达100亿美元，较第二季度67亿美元营收增长近50%。这是AI商业化变现能力的关键验证，直接影响一级市场对前沿大语言模型公司估值与IPO预期的定价。投资者需关注其收入增长的可持续性、成本结构及对AI行业整体商业化前景的指示意义。",
+      "url": "https://techcrunch.com/2026/11/11/openais-quarterly-revenue-reportedly-crosses-10b-for-the-first-time/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-11-11",
-      "title": "谷歌扩展AI硬件组合，推出两款专用芯片",
-      "summary": "谷歌推出两款新的张量处理单元（TPU），扩展其芯片组合至更多用例：机密模型训练和更大内存容量。此举直接加剧与英伟达在AI芯片供应链的竞争，可能影响算力成本与采购格局。投资者需关注谷歌TPU对英伟达GPU市场份额的潜在侵蚀。",
-      "url": "https://techcrunch.com/2026/11/10/google-broadens-its-ai-hardware-portfolio-with-two-new-specialized-chips/",
+      "date": "2026-11-12",
+      "title": "Anthropic七位联合创始人在IPO中各套现约2.5亿美元",
+      "summary": "Anthropic七位联合创始人计划在IPO中出售完全相同数量的股份，按发行价区间中值计算，每人将获得约2.5亿美元现金，同时该群体仍保持对公司的控制权。这标志着头部AI独角兽进入公开市场退出阶段，是AI融资与IPO周期的重要风向标，投资者需关注其估值定价、控制权结构及对后续AI公司上市节奏的影响。",
+      "url": "https://techcrunch.com/2026/11/10/all-7-anthropic-founders-will-each-cash-out-about-250m-in-ipo/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-11-11",
-      "title": "OpenAI收购Sonder创始人创办的旅游初创公司Odessia",
-      "summary": "OpenAI收购了由Sonder创始人Francis Davidson创办的旅游初创公司Odessia，但未透露未来在旅游领域的计划。Davidson是旅游业知名人物。此举显示OpenAI从模型层向应用/交易场景延伸的并购策略，投资者需关注其生态扩张路径及对垂直行业的影响。",
-      "url": "https://techcrunch.com/2026/11/10/openai-acquires-odessia-travel-startup-created-by-sonder-founder/",
+      "date": "2026-11-12",
+      "title": "英国Fractile获7.2亿美元融资，在AI芯片竞赛中占据优势",
+      "summary": "Fractile已成为专用AI芯片竞赛中融资额最高的参与者之一。此轮7.2亿美元融资反映资本正加注英伟达之外的算力供应链替代者，对芯片竞争格局有实质影响。投资者需关注专用AI芯片领域的技术路线、资本流向及对现有GPU主导地位的潜在挑战。",
+      "url": "https://techcrunch.com/2026/11/11/with-720m-round-britains-fractile-gets-a-leg-up-in-the-race-for-ai-chips/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-11-11",
-      "title": "美国正赢得AI竞赛，但黄仁勋可能搞砸了",
-      "summary": "英伟达CEO黄仁勋作为全球最有价值公司之一的掌舵人，控制着AI热潮所需的关键技术，与政商界关系密切。但间谍风波叠加出口管制风险，可能影响公司治理、对华业务与AI算力供应链稳定性。投资者需关注该事件对英伟达股价及AI芯片供应链的潜在冲击。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1031063/jensen-huang-ai-race-us-china-spy",
+      "date": "2026-11-12",
+      "title": "谷歌AlphaGenome 2聚焦疾病细胞根源",
+      "summary": "谷歌DeepMind研究人员发布新AI模型AlphaGenome 2，旨在揭示DNA变化如何影响不同细胞，为科学家提供对这一难题更详细的视角，可能为疾病成因提供重要线索并指向新疗法。这是谷歌在AI for Science上的重大技术突破，具备长期平台化与商业化想象空间，投资者需关注其科研转化潜力及对生物医药AI赛道的影响。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model",
       "source": "The Verge"
     }
   ]

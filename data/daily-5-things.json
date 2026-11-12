@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-11-11T23:46:03Z",
+  "exportedAt": "2026-11-12T23:46:03Z",
   "items": [
     {
-      "date": "2026-11-12",
-      "title": "英伟达据报准备解雇CEO黄仁勋",
-      "summary": "据《华尔街日报》报道，英伟达董事会正准备解雇CEO黄仁勋，此前《纽约时报》报道了第二起涉嫌婚外情事件，而就在几天前，黄仁勋承认了另一起与据称是中国间谍的女性的婚外情。第二起涉嫌婚外情涉及一名高管。对于投资者而言，全球最重要AI算力公司的治理与战略连续性面临直接冲击，属于高优先级的大厂风险事件，需关注后续董事会决策、管理层变动及对公司战略执行和股价的潜在影响。",
-      "url": "https://www.theverge.com/tech/1031652/jensen-huang-rumor",
-      "source": "The Verge"
+      "date": "2026-11-13",
+      "title": "黄仁勋辞任英伟达CEO，公司启动调查",
+      "summary": "英伟达联合创始人兼CEO黄仁勋于周四辞职，此前公司就其与一名疑似中国情报人员的婚外情展开调查。作为全球AI算力龙头的核心人物，黄仁勋的突然离职直接冲击公司治理结构与战略连续性，投资者需关注管理层交接安排、关键客户与供应链关系是否受影响，以及事件对 $NVDA 英伟达估值溢价的潜在压制。",
+      "url": "https://www.wired.com/story/nvidia-ceo-jensen-huang-steps-down/",
+      "source": "Wired"
     },
     {
-      "date": "2026-11-12",
-      "title": "OpenAI季度营收据报首次突破100亿美元",
-      "summary": "OpenAI季度销售额达100亿美元，较第二季度67亿美元营收增长近50%。这是AI商业化变现能力的关键验证，直接影响一级市场对前沿大语言模型公司估值与IPO预期的定价。投资者需关注其收入增长的可持续性、成本结构及对AI行业整体商业化前景的指示意义。",
-      "url": "https://techcrunch.com/2026/11/11/openais-quarterly-revenue-reportedly-crosses-10b-for-the-first-time/",
+      "date": "2026-11-13",
+      "title": "谷歌搜索升级：Gemini 4 Hydrogen 解答复杂问题",
+      "summary": "谷歌宣布新一代Gemini 4 Hydrogen模型可对复杂问题给出更有帮助的答案，能拆解多部分问题、容错拼写错误并处理高度具体请求，即日起接入搜索、Gemini应用及谷歌全系产品层级。此举属大厂核心产品重大升级，投资者需评估其对搜索广告商业化、AI应用竞争格局及谷歌云AI变现节奏的影响。",
+      "url": "https://techcrunch.com/2026/11/12/googles-latest-search-upgrade-promises-better-answers-to-your-most-complicated-questions/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-11-12",
-      "title": "Anthropic七位联合创始人在IPO中各套现约2.5亿美元",
-      "summary": "Anthropic七位联合创始人计划在IPO中出售完全相同数量的股份，按发行价区间中值计算，每人将获得约2.5亿美元现金，同时该群体仍保持对公司的控制权。这标志着头部AI独角兽进入公开市场退出阶段，是AI融资与IPO周期的重要风向标，投资者需关注其估值定价、控制权结构及对后续AI公司上市节奏的影响。",
-      "url": "https://techcrunch.com/2026/11/10/all-7-anthropic-founders-will-each-cash-out-about-250m-in-ipo/",
+      "date": "2026-11-13",
+      "title": "黄仁勋离职令英伟达开源AI承诺存疑",
+      "summary": "黄仁勋辞职引发市场对英伟达开源AI承诺的质疑，涉及Hugging Face收购、开放权重模型及反对限制的立场，公司正经历领导层过渡。投资者需关注129亿美元Hugging Face收购的交易确定性、开源生态战略是否转向，以及领导层变动对英伟达在开源社区影响力的潜在削弱。",
+      "url": "https://techcrunch.com/2026/11/12/jensen-huangs-exit-puts-nvidias-support-for-open-source-in-question/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-11-12",
-      "title": "英国Fractile获7.2亿美元融资，在AI芯片竞赛中占据优势",
-      "summary": "Fractile已成为专用AI芯片竞赛中融资额最高的参与者之一。此轮7.2亿美元融资反映资本正加注英伟达之外的算力供应链替代者，对芯片竞争格局有实质影响。投资者需关注专用AI芯片领域的技术路线、资本流向及对现有GPU主导地位的潜在挑战。",
-      "url": "https://techcrunch.com/2026/11/11/with-720m-round-britains-fractile-gets-a-leg-up-in-the-race-for-ai-chips/",
+      "date": "2026-11-13",
+      "title": "Nebius 400亿美元扩张，测试 neocloud 融资模式",
+      "summary": "Nebius计划通过客户预付款和贷款为400亿美元AI基础设施扩张融资，但微软数据中心项目延期引发对其融资模式的质疑。投资者需关注neocloud厂商资本开支强度、客户预付款依赖度及贷款融资风险，该案例是评估AI基础设施投资回报与财务可持续性的关键样本。",
+      "url": "https://techcrunch.com/2026/11/12/nebius-tests-the-neocloud-playbook-with-40-billion-in-planned-spending/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-11-12",
-      "title": "谷歌AlphaGenome 2聚焦疾病细胞根源",
-      "summary": "谷歌DeepMind研究人员发布新AI模型AlphaGenome 2，旨在揭示DNA变化如何影响不同细胞，为科学家提供对这一难题更详细的视角，可能为疾病成因提供重要线索并指向新疗法。这是谷歌在AI for Science上的重大技术突破，具备长期平台化与商业化想象空间，投资者需关注其科研转化潜力及对生物医药AI赛道的影响。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model",
-      "source": "The Verge"
+      "date": "2026-11-13",
+      "title": "Anthropic IPO 传闻引发市场关注",
+      "summary": "Hacker News高热讨论Anthropic IPO信号，若属实将成为AI独角兽上市风向标。投资者需关注其估值定价、一级市场AI资产退出路径及对同类AI公司融资环境的示范效应，同时警惕传闻未经证实的信息风险。",
+      "url": "https://ipo.anthropic.com/us/",
+      "source": "Hacker News"
     }
   ]
 }

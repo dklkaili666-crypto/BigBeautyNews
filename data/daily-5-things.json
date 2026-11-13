@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-11-12T23:46:03Z",
+  "exportedAt": "2026-11-13T23:45:55Z",
   "items": [
     {
-      "date": "2026-11-13",
-      "title": "黄仁勋辞任英伟达CEO，公司启动调查",
-      "summary": "英伟达联合创始人兼CEO黄仁勋于周四辞职，此前公司就其与一名疑似中国情报人员的婚外情展开调查。作为全球AI算力龙头的核心人物，黄仁勋的突然离职直接冲击公司治理结构与战略连续性，投资者需关注管理层交接安排、关键客户与供应链关系是否受影响，以及事件对 $NVDA 英伟达估值溢价的潜在压制。",
-      "url": "https://www.wired.com/story/nvidia-ceo-jensen-huang-steps-down/",
-      "source": "Wired"
-    },
-    {
-      "date": "2026-11-13",
-      "title": "谷歌搜索升级：Gemini 4 Hydrogen 解答复杂问题",
-      "summary": "谷歌宣布新一代Gemini 4 Hydrogen模型可对复杂问题给出更有帮助的答案，能拆解多部分问题、容错拼写错误并处理高度具体请求，即日起接入搜索、Gemini应用及谷歌全系产品层级。此举属大厂核心产品重大升级，投资者需评估其对搜索广告商业化、AI应用竞争格局及谷歌云AI变现节奏的影响。",
-      "url": "https://techcrunch.com/2026/11/12/googles-latest-search-upgrade-promises-better-answers-to-your-most-complicated-questions/",
+      "date": "2026-11-14",
+      "title": "黄仁勋离职重创AI初创融资，风投与创始人预警估值缩水",
+      "summary": "英伟达在黄仁勋领导下曾向AI初创企业投入数百亿美元。随着黄仁勋离任，创始人与风投预计融资规模将缩小、估值将下调。对投资者而言，这意味着一级市场AI赛道的资金供给和定价逻辑可能发生系统性变化，需关注英伟达投资策略的连续性与AI初创企业的现金流风险。",
+      "url": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-11-13",
-      "title": "黄仁勋离职令英伟达开源AI承诺存疑",
-      "summary": "黄仁勋辞职引发市场对英伟达开源AI承诺的质疑，涉及Hugging Face收购、开放权重模型及反对限制的立场，公司正经历领导层过渡。投资者需关注129亿美元Hugging Face收购的交易确定性、开源生态战略是否转向，以及领导层变动对英伟达在开源社区影响力的潜在削弱。",
-      "url": "https://techcrunch.com/2026/11/12/jensen-huangs-exit-puts-nvidias-support-for-open-source-in-question/",
+      "date": "2026-11-14",
+      "title": "英伟达私下承认芯片追踪技术可行，出口管制执行风险上升",
+      "summary": "英伟达代表向伊利诺伊州众议员Bill Foster表示，从技术上讲，实施《芯片安全法案》所要求的反走私措施是可能的，尽管行业团体称其“可能不可行”。对投资者而言，这意味着对华AI芯片出口管制可能从立法走向落地执行，英伟达等公司的合规成本与供应链管理复杂度将上升，需评估相关收入敞口。",
+      "url": "https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking/",
+      "source": "MIT Technology Review"
+    },
+    {
+      "date": "2026-11-14",
+      "title": "AI智能体平台LangChain估值达30亿美元",
+      "summary": "LangChain的模型与平台无关的智能体管理工具LangSmith已拥有7000家客户，公司以30亿美元估值完成融资。对投资者而言，这验证了AI智能体中间层平台的商业化价值，是观察AI应用层估值和企业采用节奏的重要风向标，需关注其收入质量与竞争壁垒。",
+      "url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-11-13",
-      "title": "Nebius 400亿美元扩张，测试 neocloud 融资模式",
-      "summary": "Nebius计划通过客户预付款和贷款为400亿美元AI基础设施扩张融资，但微软数据中心项目延期引发对其融资模式的质疑。投资者需关注neocloud厂商资本开支强度、客户预付款依赖度及贷款融资风险，该案例是评估AI基础设施投资回报与财务可持续性的关键样本。",
-      "url": "https://techcrunch.com/2026/11/12/nebius-tests-the-neocloud-playbook-with-40-billion-in-planned-spending/",
+      "date": "2026-11-14",
+      "title": "ChatGPT推出Wallet，AI智能体可代用户购物结账",
+      "summary": "ChatGPT Wallet允许AI智能体代表用户购物并完成结账，首批面向美国Pro订阅用户限量推出。对投资者而言，这标志着AI智能体从对话交互迈向交易闭环，打开了支付与电商场景的商业化空间，需关注用户采纳率、商户覆盖及监管对代理交易的责任界定。",
+      "url": "https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-11-13",
-      "title": "Anthropic IPO 传闻引发市场关注",
-      "summary": "Hacker News高热讨论Anthropic IPO信号，若属实将成为AI独角兽上市风向标。投资者需关注其估值定价、一级市场AI资产退出路径及对同类AI公司融资环境的示范效应，同时警惕传闻未经证实的信息风险。",
-      "url": "https://ipo.anthropic.com/us/",
-      "source": "Hacker News"
+      "date": "2026-11-14",
+      "title": "黄仁勋离职或预示美国收紧对华AI芯片出口管制",
+      "summary": "英伟达CEO黄仁勋突然离职引发对中美科技关系前景的新疑问，观察人士正在评估华盛顿对华先进AI芯片出口政策的潜在影响。时机敏感，美国国会议员正就年度国防授权法案展开辩论，收紧对华AI芯片获取限制的呼声渐高。对投资者而言，英伟达中国收入及国产替代格局可能面临实质性影响。",
+      "url": "https://www.scmp.com/news/china/diplomacy/article/3374270/jensen-huangs-departure-may-signal-tighter-us-controls-ai-chip-exports-china",
+      "source": "SCMP China"
     }
   ]
 }

@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-11-13T23:45:55Z",
+  "exportedAt": "2026-11-14T23:45:57Z",
   "items": [
     {
-      "date": "2026-11-14",
-      "title": "黄仁勋离职重创AI初创融资，风投与创始人预警估值缩水",
-      "summary": "英伟达在黄仁勋领导下曾向AI初创企业投入数百亿美元。随着黄仁勋离任，创始人与风投预计融资规模将缩小、估值将下调。对投资者而言，这意味着一级市场AI赛道的资金供给和定价逻辑可能发生系统性变化，需关注英伟达投资策略的连续性与AI初创企业的现金流风险。",
-      "url": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/",
+      "date": "2026-11-15",
+      "title": "黄仁勋丑闻时间线：英伟达CEO因婚外情辞职",
+      "summary": "英伟达CEO黄仁勋因婚外情辞职，事件可能对国家安全产生影响，正值美中竞相开发最先进AI基础设施之际。投资者需关注全球AI算力核心供应商的治理与战略连续性风险，以及后续管理层变动对英伟达战略方向和行业地位的影响。",
+      "url": "https://techcrunch.com/2026/11/13/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-11-14",
-      "title": "英伟达私下承认芯片追踪技术可行，出口管制执行风险上升",
-      "summary": "英伟达代表向伊利诺伊州众议员Bill Foster表示，从技术上讲，实施《芯片安全法案》所要求的反走私措施是可能的，尽管行业团体称其“可能不可行”。对投资者而言，这意味着对华AI芯片出口管制可能从立法走向落地执行，英伟达等公司的合规成本与供应链管理复杂度将上升，需评估相关收入敞口。",
-      "url": "https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking/",
-      "source": "MIT Technology Review"
-    },
-    {
-      "date": "2026-11-14",
-      "title": "AI智能体平台LangChain估值达30亿美元",
-      "summary": "LangChain的模型与平台无关的智能体管理工具LangSmith已拥有7000家客户，公司以30亿美元估值完成融资。对投资者而言，这验证了AI智能体中间层平台的商业化价值，是观察AI应用层估值和企业采用节奏的重要风向标，需关注其收入质量与竞争壁垒。",
-      "url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/",
+      "date": "2026-11-15",
+      "title": "研究：中国最强AI模型依赖被禁英伟达芯片训练",
+      "summary": "新研究显示，中国最先进的AI模型是在被禁运的英伟达芯片上训练的。这可能引发更严格的出口管制和供应链重估，直接影响芯片与算力投资逻辑。投资者需关注美国可能进一步收紧对华芯片出口，以及英伟达等芯片厂商的合规风险和市场影响。",
+      "url": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-11-14",
-      "title": "ChatGPT推出Wallet，AI智能体可代用户购物结账",
-      "summary": "ChatGPT Wallet允许AI智能体代表用户购物并完成结账，首批面向美国Pro订阅用户限量推出。对投资者而言，这标志着AI智能体从对话交互迈向交易闭环，打开了支付与电商场景的商业化空间，需关注用户采纳率、商户覆盖及监管对代理交易的责任界定。",
-      "url": "https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-11-14",
-      "title": "黄仁勋离职或预示美国收紧对华AI芯片出口管制",
-      "summary": "英伟达CEO黄仁勋突然离职引发对中美科技关系前景的新疑问，观察人士正在评估华盛顿对华先进AI芯片出口政策的潜在影响。时机敏感，美国国会议员正就年度国防授权法案展开辩论，收紧对华AI芯片获取限制的呼声渐高。对投资者而言，英伟达中国收入及国产替代格局可能面临实质性影响。",
-      "url": "https://www.scmp.com/news/china/diplomacy/article/3374270/jensen-huangs-departure-may-signal-tighter-us-controls-ai-chip-exports-china",
+      "date": "2026-11-15",
+      "title": "特朗普将在东盟峰会施压东南亚加入Pax Silica",
+      "summary": "美国总统特朗普下周出席马尼拉东盟峰会时，将施压东南亚经济体加入其“Pax Silica”计划，旨在构建去中国化的AI和芯片供应链。AI和关键矿产将成为议程重点。这是地缘政治重塑AI供应链的关键政策信号，投资者需关注东南亚国家在美中科技竞争中的站队选择及对全球芯片供应链的潜在影响。",
+      "url": "https://www.scmp.com/news/china/diplomacy/article/3374393/trump-press-southeast-asia-nations-join-pax-silica-asean-summit-manila",
       "source": "SCMP China"
+    },
+    {
+      "date": "2026-11-15",
+      "title": "解雇Sam Altman的OpenAI董事会成员：仍不信任AI CEO",
+      "summary": "曾参与解雇Sam Altman的OpenAI董事会成员Helen Toner在访谈中表示，仍无法信任AI公司的CEO们。作为AI安全与政策领域的知名人物，她的发声凸显了AI公司治理与安全监管风险，对OpenAI等AI公司的估值与IPO预期有实质影响。投资者需关注AI治理争议对行业龙头公司稳定性和融资前景的潜在冲击。",
+      "url": "https://www.theverge.com/podcast/1032907/helen-toner-openai-cset-ai-safety-policy-interview",
+      "source": "The Verge"
+    },
+    {
+      "date": "2026-11-15",
+      "title": "阿里开源企业级LLM代码审查工具，兼容OpenAI与Anthropic",
+      "summary": "阿里巴巴开源了一款安全、快速、高效的企业级代码审查工具，采用混合架构（确定性流水线+LLM智能体），支持精确行级评论、内置多语言规则集（NPE、线程安全、XSS、SQL注入），并兼容OpenAI与Anthropic。这反映大厂AI智能体落地与生态竞争加速，投资者可关注阿里在AI开发者工具领域的布局及其对云业务竞争力的潜在提升。",
+      "url": "https://github.com/alibaba/open-code-review",
+      "source": "GitHub Trending"
     }
   ]
 }

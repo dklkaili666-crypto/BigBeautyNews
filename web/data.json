@@ -1,26 +1,26 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-11-14T23:45:57Z",
-  "dailyTheme": "英伟达CEO辞职引发算力龙头治理与供应链连锁反应，叠加美国推动去中国化芯片联盟，AI投资主线转向地缘政治与供应链安全。",
-  "geopoliticsTheme": "今日核心是APEC深圳峰会前夕的中美俄三边互动与中美科技出口管制博弈，同时中国资本加速布局中东、欧洲反思对美防务依赖，全球秩序重组与供应链分化并行。",
+  "exportedAt": "2026-11-15T23:45:50Z",
+  "dailyTheme": "今日主线是英伟达领导层动荡与安全丑闻引发的治理风险，叠加美国国会收紧AI芯片出口管制；同时中美在APEC前释放AI合作信号，芯片供应链与地缘监管成为AI投资的核心变量。",
+  "geopoliticsTheme": "本周全球政经焦点集中于深圳APEC系列峰会，中美俄高层互动与军事危机沟通成为主线；同时中东美伊对峙升级，霍尔木兹海峡风险与能源航运安全仍是市场关键变量。",
   "items": [
     {
-      "id": "062dfc84-d2ed-5f26-bb58-46852369d2ff",
-      "date": "2026-11-15",
-      "title": "黄仁勋丑闻时间线：英伟达CEO因婚外情辞职",
-      "summary": "英伟达CEO黄仁勋因婚外情辞职，事件可能对国家安全产生影响，正值美中竞相开发最先进AI基础设施之际。投资者需关注全球AI算力核心供应商的治理与战略连续性风险，以及后续管理层变动对英伟达战略方向和行业地位的影响。",
-      "url": "https://techcrunch.com/2026/11/13/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
-      "canonicalUrl": "https://techcrunch.com/2026/11/13/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline",
-      "source": "TechCrunch",
+      "id": "5eb95730-89d9-56f0-91c1-be9b8b5d1217",
+      "date": "2026-11-16",
+      "title": "英伟达间谍丑闻后，美国国会拟收紧AI芯片出口规则",
+      "summary": "在英伟达前CEO黄仁勋卷入疑似中国间谍丑闻后，美国国会两党正推动多项收紧AI芯片出口的法案，并要求黄仁勋等英伟达高管赴国会作证。此举将直接改变英伟达等芯片厂商的可寻址市场与供应链风险溢价，是影响AI算力板块估值的核心监管变量，投资者需关注立法进展对芯片出口管制的实质性影响。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china",
+      "canonicalUrl": "https://www.theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china",
+      "source": "The Verge",
       "sourceTier": "tier2",
       "isPrimarySource": false,
       "tags": [
         "英伟达",
-        "大厂战略",
-        "人事变动"
+        "芯片出口管制",
+        "地缘政治"
       ],
       "rank": 1,
-      "eventId": "0d45df9d7fdbcc3996fc29395356508832680d0c",
+      "eventId": "ae66e7bdaf7452b4d364cbe72f603c5024995d43",
       "eventType": "unknown",
       "entities": [
         "NVIDIA"
@@ -36,14 +36,14 @@
       "whyItMatters": "",
       "investmentImplication": "",
       "riskNote": "",
-      "originalTitle": "The unfolding Jensen Huang scandal: a timeline",
-      "published": "2026-11-13T15:58:00Z",
+      "originalTitle": "Congress wants to tighten export rules on AI chips after Nvidia spy scandal",
+      "published": "2026-11-15T19:15:43Z",
       "mergedSources": [
-        "TechCrunch"
+        "The Verge"
       ],
       "relatedUrls": [],
-      "primarySource": "TechCrunch",
-      "selectionReason": "英伟达CEO黄仁勋因丑闻辞职，直接冲击全球AI算力核心供应商的治理与战略连续性，是今日对AI投资影响最大的单一事件。",
+      "primarySource": "The Verge",
+      "selectionReason": "美国国会拟收紧AI芯片出口管制，直接改变英伟达等芯片厂商的可寻址市场与供应链风险溢价，是影响AI算力板块估值的核心监管变量。",
       "promptVersion": "",
       "modelUsed": "",
       "rawPayloadHash": "",
@@ -51,25 +51,25 @@
       "regions": [],
       "geopoliticsEventTypes": [],
       "geopoliticsRuleScore": 0.0,
-      "createdAt": "2026-11-14T23:45:57Z"
+      "createdAt": "2026-11-15T23:45:50Z"
     },
     {
-      "id": "7076829d-8703-511b-90d5-d664ac44801e",
-      "date": "2026-11-15",
-      "title": "研究：中国最强AI模型依赖被禁英伟达芯片训练",
-      "summary": "新研究显示，中国最先进的AI模型是在被禁运的英伟达芯片上训练的。这可能引发更严格的出口管制和供应链重估，直接影响芯片与算力投资逻辑。投资者需关注美国可能进一步收紧对华芯片出口，以及英伟达等芯片厂商的合规风险和市场影响。",
-      "url": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
-      "canonicalUrl": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen",
-      "source": "TechCrunch",
+      "id": "9d8f9727-b253-586a-ab14-b8f22d8d3756",
+      "date": "2026-11-16",
+      "title": "黄仁勋或谋划回归，英伟达风波持续发酵",
+      "summary": "英伟达联合创始人、前CEO黄仁勋相关风波快速演变，最新传闻称其可能寻求重返CEO职位。领导层更迭与回归传闻叠加安全丑闻，构成公司治理与领导层的不确定性，是当前AI龙头估值最大的单点风险，投资者需密切关注事态发展对英伟达战略连续性和市场信心的影响。",
+      "url": "https://www.theverge.com/tech/1033999/jensen-huang-return-nvidia-megaspeed",
+      "canonicalUrl": "https://www.theverge.com/tech/1033999/jensen-huang-return-nvidia-megaspeed",
+      "source": "The Verge",
       "sourceTier": "tier2",
       "isPrimarySource": false,
       "tags": [
-        "芯片供应链",
-        "出口管制",
-        "中国AI"
+        "英伟达",
+        "公司治理",
+        "大厂动态"
       ],
       "rank": 2,
-      "eventId": "ef681547026235f0c32164e39b62b3cc1c1e7823",
+      "eventId": "6b50118a8bdc36e948c000f7141db72a1a84b3ff",
       "eventType": "unknown",
       "entities": [
         "NVIDIA"
@@ -85,14 +85,14 @@
       "whyItMatters": "",
       "investmentImplication": "",
       "riskNote": "",
-      "originalTitle": "Export-banned Nvidia chips are behind China’s most powerful AI models — uh-oh, Jensen!",
-      "published": "2026-11-13T18:40:30Z",
+      "originalTitle": "Jensen Huang might be plotting a return and more of the latest Nvidia drama",
+      "published": "2026-11-15T20:43:49Z",
       "mergedSources": [
-        "TechCrunch"
+        "The Verge"
       ],
       "relatedUrls": [],
-      "primarySource": "TechCrunch",
-      "selectionReason": "研究显示中国最强模型依赖被禁英伟达芯片训练，可能引发更严出口管制与供应链重估，直接影响芯片与算力投资逻辑。",
+      "primarySource": "The Verge",
+      "selectionReason": "英伟达CEO更迭与可能的回归传闻叠加安全丑闻，构成公司治理与领导层不确定性，是当前AI龙头估值最大的单点风险。",
       "promptVersion": "",
       "modelUsed": "",
       "rawPayloadHash": "",
@@ -100,48 +100,196 @@
       "regions": [],
       "geopoliticsEventTypes": [],
       "geopoliticsRuleScore": 0.0,
-      "createdAt": "2026-11-14T23:45:57Z"
+      "createdAt": "2026-11-15T23:45:50Z"
     },
     {
-      "id": "d5931109-b1c3-5265-ae4b-81f224a1dd31",
-      "date": "2026-11-15",
-      "title": "特朗普将在东盟峰会施压东南亚加入Pax Silica",
-      "summary": "美国总统特朗普下周出席马尼拉东盟峰会时，将施压东南亚经济体加入其“Pax Silica”计划，旨在构建去中国化的AI和芯片供应链。AI和关键矿产将成为议程重点。这是地缘政治重塑AI供应链的关键政策信号，投资者需关注东南亚国家在美中科技竞争中的站队选择及对全球芯片供应链的潜在影响。",
-      "url": "https://www.scmp.com/news/china/diplomacy/article/3374393/trump-press-southeast-asia-nations-join-pax-silica-asean-summit-manila",
-      "canonicalUrl": "https://www.scmp.com/news/china/diplomacy/article/3374393/trump-press-southeast-asia-nations-join-pax-silica-asean-summit-manila",
+      "id": "1428751e-904e-52a9-945c-78b6aa730990",
+      "date": "2026-11-16",
+      "title": "深圳APEC峰会前，中国呼吁中美AI合作",
+      "summary": "中国驻美大使谢锋在深圳APEC峰会前表示期待大国合作，并推动中国主导的AI联盟以促进区域繁荣。中美在APEC前释放AI合作与“中国主导AI联盟”信号，可能影响跨境AI投资、芯片供应链与区域市场准入预期，投资者需关注峰会成果对AI领域地缘格局的潜在影响。",
+      "url": "https://www.scmp.com/news/china/diplomacy/article/3374484/china-calls-ai-cooperation-us-ahead-shenzhen-apec-summit",
+      "canonicalUrl": "https://www.scmp.com/news/china/diplomacy/article/3374484/china-calls-ai-cooperation-us-ahead-shenzhen-apec-summit",
       "source": "SCMP China",
       "sourceTier": "tier2",
       "isPrimarySource": false,
       "tags": [
-        "地缘政治",
-        "供应链",
-        "政策"
+        "中美关系",
+        "APEC",
+        "AI联盟"
       ],
       "rank": 3,
-      "eventId": "80b41bff421ea1936cb9910636bd79a9b790c055",
-      "eventType": "unknown",
-      "entities": [
-        "Intel"
-      ],
+      "eventId": "67efdef01a316234e2eab1fe67b430785fc13f23",
+      "eventType": "capex",
+      "entities": [],
       "tickers": [],
       "sourceCredibilityScore": 3.0,
-      "marketImpactScore": 2.0,
+      "marketImpactScore": 4.0,
       "noveltyScore": 4.0,
       "timelinessScore": 5.0,
-      "entityImportanceScore": 3.0,
+      "entityImportanceScore": 2.0,
       "confidenceScore": 3.0,
-      "totalScore": 3.05,
+      "totalScore": 3.6,
       "whyItMatters": "",
       "investmentImplication": "",
       "riskNote": "",
-      "originalTitle": "Trump to press Southeast Asia nations to join Pax Silica at Asean summit in Manila",
-      "published": "2026-11-13T15:00:07Z",
+      "originalTitle": "China calls for AI cooperation with the US ahead of Shenzhen Apec summit",
+      "published": "2026-11-15T09:00:10Z",
       "mergedSources": [
         "SCMP China"
       ],
       "relatedUrls": [],
       "primarySource": "SCMP China",
-      "selectionReason": "美国推动东南亚加入“Pax Silica”以构建去中国化的AI与芯片供应链，是地缘政治重塑AI供应链的关键政策信号。",
+      "selectionReason": "中美在APEC前释放AI合作与“中国主导AI联盟”信号，可能影响跨境AI投资、芯片供应链与区域市场准入预期。",
+      "promptVersion": "",
+      "modelUsed": "",
+      "rawPayloadHash": "",
+      "warnings": [],
+      "regions": [
+        "china",
+        "us"
+      ],
+      "geopoliticsEventTypes": [
+        "geopolitics"
+      ],
+      "geopoliticsRuleScore": 6.0,
+      "createdAt": "2026-11-15T23:45:50Z"
+    },
+    {
+      "id": "ccf8909f-6c28-580f-8566-7dece9efe423",
+      "date": "2026-11-16",
+      "title": "印度芯片初创Bharat Semi获2400万美元种子轮，瞄准全球AI传感器市场",
+      "summary": "印度芯片初创公司Bharat Semi宣布获得2400万美元种子轮融资，其AI传感器技术已赢得包括General Atomics在内的多家公司设计订单。这显示AI芯片供应链多元化趋势与新兴市场融资活跃度，投资者可关注印度在AI芯片领域的崛起对全球供应链格局的潜在影响。",
+      "url": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/",
+      "canonicalUrl": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market",
+      "source": "TechCrunch",
+      "sourceTier": "tier2",
+      "isPrimarySource": false,
+      "tags": [
+        "融资",
+        "AI芯片",
+        "印度"
+      ],
+      "rank": 4,
+      "eventId": "fc91828979fbf24c464412bb305af75974558950",
+      "eventType": "unknown",
+      "entities": [],
+      "tickers": [],
+      "sourceCredibilityScore": 3.0,
+      "marketImpactScore": 2.0,
+      "noveltyScore": 4.0,
+      "timelinessScore": 5.0,
+      "entityImportanceScore": 2.0,
+      "confidenceScore": 3.0,
+      "totalScore": 2.9,
+      "whyItMatters": "",
+      "investmentImplication": "",
+      "riskNote": "",
+      "originalTitle": "Indian chip startup Bharat Semi lands $24M seed round as it eyes global AI sensor market",
+      "published": "2026-11-15T23:30:00Z",
+      "mergedSources": [
+        "TechCrunch"
+      ],
+      "relatedUrls": [],
+      "primarySource": "TechCrunch",
+      "selectionReason": "印度AI传感器芯片初创获2400万美元种子轮并拿下General Atomics等设计订单，显示AI芯片供应链多元化与新兴市场融资活跃度。",
+      "promptVersion": "",
+      "modelUsed": "",
+      "rawPayloadHash": "",
+      "warnings": [],
+      "regions": [],
+      "geopoliticsEventTypes": [],
+      "geopoliticsRuleScore": 0.0,
+      "createdAt": "2026-11-15T23:45:50Z"
+    },
+    {
+      "id": "7b249535-1082-5abc-afd0-6c15de57b148",
+      "date": "2026-11-16",
+      "title": "英伟达开源SkillEvaluator：多层级AI智能体技能评估框架",
+      "summary": "英伟达在GitHub发布开源框架SkillEvaluator，用于评估AI智能体技能，包含质量门控、语义重叠检测、合成评估数据集生成及实时智能体评估等功能。该框架指向AI智能体标准化与可度量化的基础设施卡位，是观察英伟达软件生态战略的弱信号但具方向性，投资者可关注其对企业级AI智能体部署的潜在影响。",
+      "url": "https://github.com/NVIDIA/SkillEvaluator",
+      "canonicalUrl": "https://github.com/NVIDIA/SkillEvaluator",
+      "source": "GitHub Trending",
+      "sourceTier": "tier3",
+      "isPrimarySource": false,
+      "tags": [
+        "英伟达",
+        "AI Agent",
+        "开源"
+      ],
+      "rank": 5,
+      "eventId": "a97e71e712391f5a950bc662fcf332d8889192c7",
+      "eventType": "unknown",
+      "entities": [
+        "NVIDIA"
+      ],
+      "tickers": [],
+      "sourceCredibilityScore": 2.0,
+      "marketImpactScore": 3.0,
+      "noveltyScore": 4.0,
+      "timelinessScore": 3.0,
+      "entityImportanceScore": 3.0,
+      "confidenceScore": 2.0,
+      "totalScore": 3.0,
+      "whyItMatters": "",
+      "investmentImplication": "",
+      "riskNote": "",
+      "originalTitle": "NVIDIA/SkillEvaluator: Multi-tier framework for evaluating AI agent skills with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior.",
+      "published": "",
+      "mergedSources": [
+        "GitHub Trending"
+      ],
+      "relatedUrls": [],
+      "primarySource": "GitHub Trending",
+      "selectionReason": "英伟达开源Agent技能评测框架，指向AI Agent标准化与可度量化的基础设施卡位，是观察其软件生态战略的弱信号但具方向性。",
+      "promptVersion": "",
+      "modelUsed": "",
+      "rawPayloadHash": "",
+      "warnings": [],
+      "regions": [],
+      "geopoliticsEventTypes": [],
+      "geopoliticsRuleScore": 0.0,
+      "createdAt": "2026-11-15T23:45:50Z"
+    }
+  ],
+  "geopoliticsItems": [
+    {
+      "id": "0b65a57f-aca7-52a1-a5dc-0e89cebd1163",
+      "date": "2026-11-16",
+      "title": "全球领导人齐聚亚洲，APEC等连续峰会登场",
+      "summary": "本周，全球领导人将前往中国、菲律宾和柬埔寨参加连续举行的高级别峰会，背景是中美两个超级大国争夺影响力，贸易、科技与地区安全成为核心议题。北京将在深圳主办APEC领导人会议并接待Donald Trump，占据主场优势；此次会议距美国领导人中期选举失利约两周。峰会密集举行可能影响市场对中美关系走向、区域安全风险及供应链政策的预期，但具体成果仍待观察。",
+      "url": "https://www.theguardian.com/world/2026/nov/15/asia-diplomatic-summits-trump-xi-putin-apec-asean",
+      "canonicalUrl": "https://www.theguardian.com/world/2026/nov/15/asia-diplomatic-summits-trump-xi-putin-apec-asean",
+      "source": "The Guardian World",
+      "sourceTier": "tier2",
+      "isPrimarySource": false,
+      "tags": [
+        "中美关系",
+        "全球安全秩序",
+        "APEC"
+      ],
+      "rank": 1,
+      "eventId": "e6ff120e40a3dd9f2b3d37c546587dae55b50e04",
+      "eventType": "unknown",
+      "entities": [],
+      "tickers": [],
+      "sourceCredibilityScore": 3.0,
+      "marketImpactScore": 2.0,
+      "noveltyScore": 4.0,
+      "timelinessScore": 5.0,
+      "entityImportanceScore": 2.0,
+      "confidenceScore": 3.0,
+      "totalScore": 2.9,
+      "whyItMatters": "",
+      "investmentImplication": "",
+      "riskNote": "",
+      "originalTitle": "World leaders head to Asia for back-to-back diplomatic summits",
+      "published": "2026-11-15T04:00:02Z",
+      "mergedSources": [
+        "The Guardian World"
+      ],
+      "relatedUrls": [],
+      "primarySource": "The Guardian World",
+      "selectionReason": "全球领导人齐聚亚洲举行APEC等连续峰会，中美在贸易、科技与地区安全上的影响力争夺成为本周核心地缘主线。",
       "promptVersion": "",
       "modelUsed": "",
       "rawPayloadHash": "",
@@ -152,130 +300,28 @@
       ],
       "geopoliticsEventTypes": [
         "geopolitics",
-        "supply_chain"
+        "election"
       ],
       "geopoliticsRuleScore": 7.0,
-      "createdAt": "2026-11-14T23:45:57Z"
+      "createdAt": "2026-11-15T23:45:50Z"
     },
     {
-      "id": "cb6ca289-366b-5dfc-aac4-85f1648225b2",
-      "date": "2026-11-15",
-      "title": "解雇Sam Altman的OpenAI董事会成员：仍不信任AI CEO",
-      "summary": "曾参与解雇Sam Altman的OpenAI董事会成员Helen Toner在访谈中表示，仍无法信任AI公司的CEO们。作为AI安全与政策领域的知名人物，她的发声凸显了AI公司治理与安全监管风险，对OpenAI等AI公司的估值与IPO预期有实质影响。投资者需关注AI治理争议对行业龙头公司稳定性和融资前景的潜在冲击。",
-      "url": "https://www.theverge.com/podcast/1032907/helen-toner-openai-cset-ai-safety-policy-interview",
-      "canonicalUrl": "https://www.theverge.com/podcast/1032907/helen-toner-openai-cset-ai-safety-policy-interview",
-      "source": "The Verge",
-      "sourceTier": "tier2",
-      "isPrimarySource": false,
-      "tags": [
-        "OpenAI",
-        "公司治理",
-        "AI安全"
-      ],
-      "rank": 4,
-      "eventId": "475356d83033fc4366aab8d24c7da54811425bc9",
-      "eventType": "regulation",
-      "entities": [
-        "OpenAI"
-      ],
-      "tickers": [],
-      "sourceCredibilityScore": 3.0,
-      "marketImpactScore": 5.0,
-      "noveltyScore": 4.0,
-      "timelinessScore": 5.0,
-      "entityImportanceScore": 3.0,
-      "confidenceScore": 3.0,
-      "totalScore": 4.1,
-      "whyItMatters": "",
-      "investmentImplication": "",
-      "riskNote": "",
-      "originalTitle": "The OpenAI board member who fired Sam Altman says we still can’t trust AI CEOs",
-      "published": "2026-11-14T15:00:00Z",
-      "mergedSources": [
-        "The Verge"
-      ],
-      "relatedUrls": [],
-      "primarySource": "The Verge",
-      "selectionReason": "OpenAI治理争议核心人物发声，凸显AI公司治理与安全监管风险，对估值与IPO预期有实质影响。",
-      "promptVersion": "",
-      "modelUsed": "",
-      "rawPayloadHash": "",
-      "warnings": [],
-      "regions": [],
-      "geopoliticsEventTypes": [],
-      "geopoliticsRuleScore": 0.0,
-      "createdAt": "2026-11-14T23:45:57Z"
-    },
-    {
-      "id": "93fbfdb0-0e7d-51dd-a8cb-9aeff1702073",
-      "date": "2026-11-15",
-      "title": "阿里开源企业级LLM代码审查工具，兼容OpenAI与Anthropic",
-      "summary": "阿里巴巴开源了一款安全、快速、高效的企业级代码审查工具，采用混合架构（确定性流水线+LLM智能体），支持精确行级评论、内置多语言规则集（NPE、线程安全、XSS、SQL注入），并兼容OpenAI与Anthropic。这反映大厂AI智能体落地与生态竞争加速，投资者可关注阿里在AI开发者工具领域的布局及其对云业务竞争力的潜在提升。",
-      "url": "https://github.com/alibaba/open-code-review",
-      "canonicalUrl": "https://github.com/alibaba/open-code-review",
-      "source": "GitHub Trending",
-      "sourceTier": "tier3",
-      "isPrimarySource": false,
-      "tags": [
-        "阿里巴巴",
-        "开源",
-        "AI Agent"
-      ],
-      "rank": 5,
-      "eventId": "a78ebdeed40d93cf345035cf54aa412193ae0894",
-      "eventType": "unknown",
-      "entities": [
-        "OpenAI",
-        "Anthropic",
-        "Alibaba"
-      ],
-      "tickers": [],
-      "sourceCredibilityScore": 2.0,
-      "marketImpactScore": 3.0,
-      "noveltyScore": 4.0,
-      "timelinessScore": 3.0,
-      "entityImportanceScore": 5.0,
-      "confidenceScore": 2.0,
-      "totalScore": 3.3,
-      "whyItMatters": "",
-      "investmentImplication": "",
-      "riskNote": "",
-      "originalTitle": "alibaba/open-code-review: Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
-      "published": "",
-      "mergedSources": [
-        "GitHub Trending"
-      ],
-      "relatedUrls": [],
-      "primarySource": "GitHub Trending",
-      "selectionReason": "阿里开源企业级LLM代码审查工具并兼容OpenAI/Anthropic，反映大厂AI Agent落地与生态竞争加速，作为社区弱信号中唯一具战略含义的一条入选。",
-      "promptVersion": "",
-      "modelUsed": "",
-      "rawPayloadHash": "",
-      "warnings": [],
-      "regions": [],
-      "geopoliticsEventTypes": [],
-      "geopoliticsRuleScore": 0.0,
-      "createdAt": "2026-11-14T23:45:57Z"
-    }
-  ],
-  "geopoliticsItems": [
-    {
-      "id": "c090a813-96e1-5274-974f-8194ea8e6279",
-      "date": "2026-11-15",
-      "title": "白宫确认中美俄将在APEC深圳峰会期间举行三边会晤",
-      "summary": "白宫确认，美国总统特朗普、中国国家主席与俄罗斯总统将在下周深圳APEC峰会期间举行史无前例的三边领导人会晤，特朗普以此结束访华行程。该会晤为冷战后罕见的大国高层互动，涉及中美俄三边安全与外交关系。潜在市场影响在于地缘风险溢价与大国关系预期可能变化，但会晤成果与具体议题尚未披露，不宜提前定价。",
-      "url": "https://www.scmp.com/news/china/diplomacy/article/3374415/white-house-confirms-us-china-russia-trilateral-apec-sidelines",
-      "canonicalUrl": "https://www.scmp.com/news/china/diplomacy/article/3374415/white-house-confirms-us-china-russia-trilateral-apec-sidelines",
+      "id": "4c843dcb-c3a2-5f79-8e1c-19d86aaf6a81",
+      "date": "2026-11-16",
+      "title": "中美在深圳峰会前磋商军事危机预防备忘录",
+      "summary": "据消息人士称，美国与中国正努力在深圳峰会前敲定一项军事事故预防协议，但进展缓慢，原因是美国政府内部存在不同看法。双方仍在就军事相关危机沟通与预防的谅解备忘录（MOU）寻求共识。该备忘录属重大军事危机管控议题，若达成可能降低双边误判与安全风险溢价；但谈判尚未完成，市场不宜将其视为既定成果。",
+      "url": "https://www.scmp.com/news/china/military/article/3374503/us-china-seek-common-ground-military-crisis-pact-washington-weighs-terms-sources",
+      "canonicalUrl": "https://www.scmp.com/news/china/military/article/3374503/us-china-seek-common-ground-military-crisis-pact-washington-weighs-terms-sources",
       "source": "SCMP China",
       "sourceTier": "tier2",
       "isPrimarySource": false,
       "tags": [
         "中美关系",
-        "全球安全秩序",
-        "APEC"
+        "军事安全",
+        "危机管控"
       ],
-      "rank": 1,
-      "eventId": "c64667d5cce3970b45efd1d2ce06fa174cbc033b",
+      "rank": 2,
+      "eventId": "720a5029dca59032b0d518ffeb1d15f4def72ef1",
       "eventType": "unknown",
       "entities": [],
       "tickers": [],
@@ -289,14 +335,66 @@
       "whyItMatters": "",
       "investmentImplication": "",
       "riskNote": "",
-      "originalTitle": "White House confirms US-China-Russia trilateral talks on Apec sidelines",
-      "published": "2026-11-14T00:30:57Z",
+      "originalTitle": "US, China seek common ground on military crisis pact as Washington weighs terms: sources",
+      "published": "2026-11-15T14:00:13Z",
       "mergedSources": [
         "SCMP China"
       ],
       "relatedUrls": [],
       "primarySource": "SCMP China",
-      "selectionReason": "白宫确认中美俄将在APEC深圳峰会期间举行史无前例的三边领导人会晤，是冷战后最重要的大国安全秩序变化之一。",
+      "selectionReason": "中美正赶在深圳峰会前磋商军事事故预防备忘录，属重大军事危机管控进展，直接影响双边安全风险定价。",
+      "promptVersion": "",
+      "modelUsed": "",
+      "rawPayloadHash": "",
+      "warnings": [],
+      "regions": [
+        "china",
+        "us"
+      ],
+      "geopoliticsEventTypes": [
+        "geopolitics"
+      ],
+      "geopoliticsRuleScore": 6.0,
+      "createdAt": "2026-11-15T23:45:50Z"
+    },
+    {
+      "id": "eb9eb6fb-a62b-56ce-95dd-993004a91eb6",
+      "date": "2026-11-16",
+      "title": "特朗普与习近平深圳会晤前瞻",
+      "summary": "NPR预览本周在深圳举行的APEC峰会期间，美国总统Trump与中国领导人习近平的会晤，并提及俄罗斯总统Vladimir Putin可能同场。这是本周最高级别外交事件，牵动全球风险偏好、贸易与地缘安全预期。会晤议题与成果尚不明确，投资者需关注会后联合表态及是否伴随具体协议，而非提前定价单一结果。",
+      "url": "https://www.npr.org/2026/11/15/nx-s1-6038814/what-to-expect-from-trump-and-xis-upcoming-meeting-in-china",
+      "canonicalUrl": "https://www.npr.org/2026/11/15/nx-s1-6038814/what-to-expect-from-trump-and-xis-upcoming-meeting-in-china",
+      "source": "NPR World",
+      "sourceTier": "tier2",
+      "isPrimarySource": false,
+      "tags": [
+        "中美关系",
+        "外交",
+        "全球安全"
+      ],
+      "rank": 3,
+      "eventId": "25181e53595284c0afb2c9f4519221424443905a",
+      "eventType": "unknown",
+      "entities": [],
+      "tickers": [],
+      "sourceCredibilityScore": 3.0,
+      "marketImpactScore": 2.0,
+      "noveltyScore": 4.0,
+      "timelinessScore": 5.0,
+      "entityImportanceScore": 2.0,
+      "confidenceScore": 3.0,
+      "totalScore": 2.9,
+      "whyItMatters": "",
+      "investmentImplication": "",
+      "riskNote": "",
+      "originalTitle": "What to expect from Trump and Xi's upcoming meeting in China",
+      "published": "2026-11-15T22:11:26Z",
+      "mergedSources": [
+        "NPR World"
+      ],
+      "relatedUrls": [],
+      "primarySource": "NPR World",
+      "selectionReason": "特朗普与习近平将在深圳APEC会晤，并可能与普京同场，是本周最高级别外交事件，牵动全球风险偏好。",
       "promptVersion": "",
       "modelUsed": "",
       "rawPayloadHash": "",
@@ -310,80 +408,25 @@
         "geopolitics"
       ],
       "geopoliticsRuleScore": 6.0,
-      "createdAt": "2026-11-14T23:45:57Z"
+      "createdAt": "2026-11-15T23:45:50Z"
     },
     {
-      "id": "a01df901-5166-5852-b45a-7abe2af442e7",
-      "date": "2026-11-15",
-      "title": "美商务部因推迟英伟达芯片出口管制承压",
-      "summary": "美国商务部因允许中国公司经手英伟达芯片而受到审查，尽管内阁官员与美国情报机构提出国家安全关切。事件涉及出口管制执行与AI芯片供应链，反映美方内部在科技管制尺度上的分歧。潜在影响包括对英伟达相关业务预期、中美科技博弈走向及半导体供应链合规风险的扰动，后续政策调整方向尚待观察。",
-      "url": "https://www.npr.org/2026/11/14/nx-s1-6040379/commerce-department-under-pressure-for-delaying-export-controls-on-nvidia-chips",
-      "canonicalUrl": "https://www.npr.org/2026/11/14/nx-s1-6040379/commerce-department-under-pressure-for-delaying-export-controls-on-nvidia-chips",
-      "source": "NPR Business",
+      "id": "faca2ae6-04a9-5272-b60c-8b5e9098cd5e",
+      "date": "2026-11-16",
+      "title": "伊朗无人机袭击美国驻巴林军事基地",
+      "summary": "伊朗以无人机袭击美国在巴林的军事基地，这是三天内对该国的第二次袭击，发生之际美伊仍围绕霍尔木兹海峡处于对峙状态。事件直接威胁中东能源与航运供应链，可能推升原油与航运风险溢价，并加剧地区安全不确定性。后续需关注美方回应方式及海峡通行是否受影响。",
+      "url": "https://www.bbc.co.uk/news/articles/cqn4e2py48kwo?at_medium=RSS&at_campaign=rss",
+      "canonicalUrl": "https://www.bbc.co.uk/news/articles/cqn4e2py48kwo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC World",
       "sourceTier": "tier2",
       "isPrimarySource": false,
       "tags": [
-        "出口管制",
-        "中美关系",
-        "半导体供应链"
-      ],
-      "rank": 2,
-      "eventId": "b08ee40e00d168edd93ff912c6808b3710faf7fd",
-      "eventType": "unknown",
-      "entities": [
-        "NVIDIA",
-        "Intel"
-      ],
-      "tickers": [],
-      "sourceCredibilityScore": 3.0,
-      "marketImpactScore": 3.0,
-      "noveltyScore": 4.0,
-      "timelinessScore": 5.0,
-      "entityImportanceScore": 4.0,
-      "confidenceScore": 3.0,
-      "totalScore": 3.55,
-      "whyItMatters": "",
-      "investmentImplication": "",
-      "riskNote": "",
-      "originalTitle": "Commerce Department under pressure for delaying export controls on Nvidia chips",
-      "published": "2026-11-14T22:21:07Z",
-      "mergedSources": [
-        "NPR Business"
-      ],
-      "relatedUrls": [],
-      "primarySource": "NPR Business",
-      "selectionReason": "美国商务部因放行中国公司经手英伟达芯片而受压，涉及出口管制与国家安全，直接影响AI供应链与中美科技博弈。",
-      "promptVersion": "",
-      "modelUsed": "",
-      "rawPayloadHash": "",
-      "warnings": [],
-      "regions": [
-        "china",
-        "us"
-      ],
-      "geopoliticsEventTypes": [
-        "geopolitics"
-      ],
-      "geopoliticsRuleScore": 6.0,
-      "createdAt": "2026-11-14T23:45:57Z"
-    },
-    {
-      "id": "75f32801-09eb-579d-bc7c-4087b69b378e",
-      "date": "2026-11-15",
-      "title": "APEC深圳峰会聚焦开放合作与亚太经贸秩序",
-      "summary": "第33届APEC峰会将于11月18日至19日在深圳举行，主题为“共建亚太共同体，促进共同繁荣”，强调开放、创新与合作。深圳作为中国改革开放与电子制造中心，成为展示供应链能力的窗口。在中美领导人互动背景下，峰会是观察亚太经贸秩序与供应链重构的关键节点，但具体成果仍取决于各方议程推进。",
-      "url": "https://www.scmp.com/opinion/china-opinion/article/3374048/amid-xi-trump-clamour-can-apec-revive-business-cooperation",
-      "canonicalUrl": "https://www.scmp.com/opinion/china-opinion/article/3374048/amid-xi-trump-clamour-can-apec-revive-business-cooperation",
-      "source": "SCMP China",
-      "sourceTier": "tier2",
-      "isPrimarySource": false,
-      "tags": [
-        "中美关系",
-        "APEC",
+        "中东冲突",
+        "能源",
         "供应链"
       ],
-      "rank": 3,
-      "eventId": "133ba4e08738c31b98545f244ffbd0331b64676f",
+      "rank": 4,
+      "eventId": "c7e011fee4e7d91b10504c9809e6e707d076f4d1",
       "eventType": "unknown",
       "entities": [],
       "tickers": [],
@@ -397,45 +440,46 @@
       "whyItMatters": "",
       "investmentImplication": "",
       "riskNote": "",
-      "originalTitle": "Amid the Xi-Trump clamour, can Apec revive the business of cooperation?",
-      "published": "2026-11-14T21:30:08Z",
+      "originalTitle": "Iran targets US military base in Bahrain with drone attack",
+      "published": "2026-11-15T13:42:58Z",
       "mergedSources": [
-        "SCMP China"
+        "BBC World"
       ],
       "relatedUrls": [],
-      "primarySource": "SCMP China",
-      "selectionReason": "APEC深圳峰会以开放创新合作为主题，在中美领导人互动背景下成为观察亚太经贸秩序与供应链重构的关键窗口。",
+      "primarySource": "BBC World",
+      "selectionReason": "伊朗无人机袭击美国驻巴林军事基地，美伊围绕霍尔木兹海峡对峙升级，直接威胁中东能源与航运供应链。",
       "promptVersion": "",
       "modelUsed": "",
       "rawPayloadHash": "",
       "warnings": [],
       "regions": [
-        "china",
+        "global",
         "us"
       ],
       "geopoliticsEventTypes": [
-        "geopolitics"
+        "geopolitics",
+        "supply_chain"
       ],
-      "geopoliticsRuleScore": 6.0,
-      "createdAt": "2026-11-14T23:45:57Z"
+      "geopoliticsRuleScore": 5.0,
+      "createdAt": "2026-11-15T23:45:50Z"
     },
     {
-      "id": "e854172f-44ee-537b-a412-26be2d5def92",
-      "date": "2026-11-15",
-      "title": "中国机构与阿曼主权基金签署数十亿美元投资协议",
-      "summary": "中国机构与阿曼主权财富基金阿曼投资局签署数十亿美元投资协议，覆盖可再生能源、物流、采矿、航天与技术领域，签约恰逢阿曼苏丹海赛姆访华期间。此举标志中阿经济关系升级，中企将阿曼视为进入中东的安全门户。潜在影响涉及中国资本中东配置、能源矿产与物流供应链布局，项目落地节奏仍需跟踪。",
-      "url": "https://www.scmp.com/economy/china-economy/article/3374433/chinese-entities-sign-multibillion-dollar-deals-oman-middle-east-investment-pivot",
-      "canonicalUrl": "https://www.scmp.com/economy/china-economy/article/3374433/chinese-entities-sign-multibillion-dollar-deals-oman-middle-east-investment-pivot",
+      "id": "02ae4125-04ba-54fd-a79a-e2f377ab82ae",
+      "date": "2026-11-16",
+      "title": "逾百家财富世界500强企业赴深圳参加APEC CEO峰会",
+      "summary": "深圳预计迎来100多家全球主要企业和十多位国家领导人参加APEC CEO峰会，这是该市历史上最高级别的多边聚会。中国国际贸易促进委员会（CCPIT）副主席李庆霜在周日发布会上表示，将有115家《财富》世界500强企业代表参与，其中美国企业占一定比例。该活动凸显中国主场外交与跨国企业供应链布局信号，但企业参会不等于投资承诺，实际影响需结合后续政策与订单观察。",
+      "url": "https://www.scmp.com/economy/global-economy/article/3374487/over-100-fortune-global-500-firms-head-shenzhen-apec-spotlight-turns-ceo-summit",
+      "canonicalUrl": "https://www.scmp.com/economy/global-economy/article/3374487/over-100-fortune-global-500-firms-head-shenzhen-apec-spotlight-turns-ceo-summit",
       "source": "SCMP Global Economy",
       "sourceTier": "tier2",
       "isPrimarySource": false,
       "tags": [
-        "中国对外投资",
-        "中东",
-        "关键矿产"
+        "中国",
+        "APEC",
+        "跨国投资"
       ],
-      "rank": 4,
-      "eventId": "c5967583078a12cca66912727350e223233d88d8",
+      "rank": 5,
+      "eventId": "bc3a19e5b519103ffb04989cc94f952a42ed9f7d",
       "eventType": "unknown",
       "entities": [],
       "tickers": [],
@@ -449,80 +493,27 @@
       "whyItMatters": "",
       "investmentImplication": "",
       "riskNote": "",
-      "originalTitle": "Chinese entities sign multibillion-dollar deals with Oman in Middle East investment pivot",
-      "published": "2026-11-14T07:48:12Z",
+      "originalTitle": "Over 100 Fortune Global 500 firms head to Shenzhen as Apec spotlight turns to CEO Summit",
+      "published": "2026-11-15T08:51:02Z",
       "mergedSources": [
         "SCMP Global Economy"
       ],
       "relatedUrls": [],
       "primarySource": "SCMP Global Economy",
-      "selectionReason": "中国机构与阿曼主权基金签署数十亿美元投资协议，标志中国资本向中东战略转向，涉及能源、矿产与物流供应链。",
+      "selectionReason": "逾百家《财富》世界500强企业赴深圳参加APEC CEO峰会，凸显中国主场外交与跨国企业供应链布局信号。",
       "promptVersion": "",
       "modelUsed": "",
       "rawPayloadHash": "",
       "warnings": [],
       "regions": [
         "china",
-        "global",
         "us"
       ],
       "geopoliticsEventTypes": [
         "geopolitics"
       ],
       "geopoliticsRuleScore": 6.0,
-      "createdAt": "2026-11-14T23:45:57Z"
-    },
-    {
-      "id": "2217c2f2-c241-59a4-9f87-b7c3cded1a65",
-      "date": "2026-11-15",
-      "title": "欧洲对美国防务技术依赖面临产能积压压力",
-      "summary": "欧洲长期大举依赖美国防务技术，如今因生产延误与美国自身军需而面临多年订单积压，付出相应代价。事件涉及跨大西洋安全关系与全球军工供应链，反映美国产能与优先顺序对欧洲防务交付的约束。潜在影响包括欧洲防务采购多元化压力与军工供应链重排，但替代方案与时间表尚未明确。",
-      "url": "https://www.npr.org/sections/planet-money/2026/11/13/nx-s1-6039196/does-europe-regret-its-bet-on-u-s-defense",
-      "canonicalUrl": "https://www.npr.org/sections/planet-money/2026/11/13/nx-s1-6039196/does-europe-regret-its-bet-on-u-s-defense",
-      "source": "NPR Business",
-      "sourceTier": "tier2",
-      "isPrimarySource": false,
-      "tags": [
-        "全球安全秩序",
-        "美欧关系",
-        "国防供应链"
-      ],
-      "rank": 5,
-      "eventId": "7d27a1bab190a50d6dcb549f5fb678c258dd408e",
-      "eventType": "unknown",
-      "entities": [],
-      "tickers": [],
-      "sourceCredibilityScore": 3.0,
-      "marketImpactScore": 2.0,
-      "noveltyScore": 4.0,
-      "timelinessScore": 5.0,
-      "entityImportanceScore": 2.0,
-      "confidenceScore": 3.0,
-      "totalScore": 2.9,
-      "whyItMatters": "",
-      "investmentImplication": "",
-      "riskNote": "",
-      "originalTitle": "Does Europe regret its bet on U.S. defense?",
-      "published": "2026-11-13T16:17:43Z",
-      "mergedSources": [
-        "NPR Business"
-      ],
-      "relatedUrls": [],
-      "primarySource": "NPR Business",
-      "selectionReason": "欧洲对美国防务技术的依赖因产能积压与美军自身需求而承压，关系跨大西洋安全秩序与全球军工供应链。",
-      "promptVersion": "",
-      "modelUsed": "",
-      "rawPayloadHash": "",
-      "warnings": [],
-      "regions": [
-        "us",
-        "global"
-      ],
-      "geopoliticsEventTypes": [
-        "geopolitics"
-      ],
-      "geopoliticsRuleScore": 4.0,
-      "createdAt": "2026-11-14T23:45:57Z"
+      "createdAt": "2026-11-15T23:45:50Z"
     }
   ]
 }

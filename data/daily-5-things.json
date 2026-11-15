@@ -1,40 +1,40 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-11-14T23:45:57Z",
+  "exportedAt": "2026-11-15T23:45:50Z",
   "items": [
     {
-      "date": "2026-11-15",
-      "title": "黄仁勋丑闻时间线：英伟达CEO因婚外情辞职",
-      "summary": "英伟达CEO黄仁勋因婚外情辞职，事件可能对国家安全产生影响，正值美中竞相开发最先进AI基础设施之际。投资者需关注全球AI算力核心供应商的治理与战略连续性风险，以及后续管理层变动对英伟达战略方向和行业地位的影响。",
-      "url": "https://techcrunch.com/2026/11/13/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-11-15",
-      "title": "研究：中国最强AI模型依赖被禁英伟达芯片训练",
-      "summary": "新研究显示，中国最先进的AI模型是在被禁运的英伟达芯片上训练的。这可能引发更严格的出口管制和供应链重估，直接影响芯片与算力投资逻辑。投资者需关注美国可能进一步收紧对华芯片出口，以及英伟达等芯片厂商的合规风险和市场影响。",
-      "url": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-11-15",
-      "title": "特朗普将在东盟峰会施压东南亚加入Pax Silica",
-      "summary": "美国总统特朗普下周出席马尼拉东盟峰会时，将施压东南亚经济体加入其“Pax Silica”计划，旨在构建去中国化的AI和芯片供应链。AI和关键矿产将成为议程重点。这是地缘政治重塑AI供应链的关键政策信号，投资者需关注东南亚国家在美中科技竞争中的站队选择及对全球芯片供应链的潜在影响。",
-      "url": "https://www.scmp.com/news/china/diplomacy/article/3374393/trump-press-southeast-asia-nations-join-pax-silica-asean-summit-manila",
-      "source": "SCMP China"
-    },
-    {
-      "date": "2026-11-15",
-      "title": "解雇Sam Altman的OpenAI董事会成员：仍不信任AI CEO",
-      "summary": "曾参与解雇Sam Altman的OpenAI董事会成员Helen Toner在访谈中表示，仍无法信任AI公司的CEO们。作为AI安全与政策领域的知名人物，她的发声凸显了AI公司治理与安全监管风险，对OpenAI等AI公司的估值与IPO预期有实质影响。投资者需关注AI治理争议对行业龙头公司稳定性和融资前景的潜在冲击。",
-      "url": "https://www.theverge.com/podcast/1032907/helen-toner-openai-cset-ai-safety-policy-interview",
+      "date": "2026-11-16",
+      "title": "英伟达间谍丑闻后，美国国会拟收紧AI芯片出口规则",
+      "summary": "在英伟达前CEO黄仁勋卷入疑似中国间谍丑闻后，美国国会两党正推动多项收紧AI芯片出口的法案，并要求黄仁勋等英伟达高管赴国会作证。此举将直接改变英伟达等芯片厂商的可寻址市场与供应链风险溢价，是影响AI算力板块估值的核心监管变量，投资者需关注立法进展对芯片出口管制的实质性影响。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china",
       "source": "The Verge"
     },
     {
-      "date": "2026-11-15",
-      "title": "阿里开源企业级LLM代码审查工具，兼容OpenAI与Anthropic",
-      "summary": "阿里巴巴开源了一款安全、快速、高效的企业级代码审查工具，采用混合架构（确定性流水线+LLM智能体），支持精确行级评论、内置多语言规则集（NPE、线程安全、XSS、SQL注入），并兼容OpenAI与Anthropic。这反映大厂AI智能体落地与生态竞争加速，投资者可关注阿里在AI开发者工具领域的布局及其对云业务竞争力的潜在提升。",
-      "url": "https://github.com/alibaba/open-code-review",
+      "date": "2026-11-16",
+      "title": "黄仁勋或谋划回归，英伟达风波持续发酵",
+      "summary": "英伟达联合创始人、前CEO黄仁勋相关风波快速演变，最新传闻称其可能寻求重返CEO职位。领导层更迭与回归传闻叠加安全丑闻，构成公司治理与领导层的不确定性，是当前AI龙头估值最大的单点风险，投资者需密切关注事态发展对英伟达战略连续性和市场信心的影响。",
+      "url": "https://www.theverge.com/tech/1033999/jensen-huang-return-nvidia-megaspeed",
+      "source": "The Verge"
+    },
+    {
+      "date": "2026-11-16",
+      "title": "深圳APEC峰会前，中国呼吁中美AI合作",
+      "summary": "中国驻美大使谢锋在深圳APEC峰会前表示期待大国合作，并推动中国主导的AI联盟以促进区域繁荣。中美在APEC前释放AI合作与“中国主导AI联盟”信号，可能影响跨境AI投资、芯片供应链与区域市场准入预期，投资者需关注峰会成果对AI领域地缘格局的潜在影响。",
+      "url": "https://www.scmp.com/news/china/diplomacy/article/3374484/china-calls-ai-cooperation-us-ahead-shenzhen-apec-summit",
+      "source": "SCMP China"
+    },
+    {
+      "date": "2026-11-16",
+      "title": "印度芯片初创Bharat Semi获2400万美元种子轮，瞄准全球AI传感器市场",
+      "summary": "印度芯片初创公司Bharat Semi宣布获得2400万美元种子轮融资，其AI传感器技术已赢得包括General Atomics在内的多家公司设计订单。这显示AI芯片供应链多元化趋势与新兴市场融资活跃度，投资者可关注印度在AI芯片领域的崛起对全球供应链格局的潜在影响。",
+      "url": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-11-16",
+      "title": "英伟达开源SkillEvaluator：多层级AI智能体技能评估框架",
+      "summary": "英伟达在GitHub发布开源框架SkillEvaluator，用于评估AI智能体技能，包含质量门控、语义重叠检测、合成评估数据集生成及实时智能体评估等功能。该框架指向AI智能体标准化与可度量化的基础设施卡位，是观察英伟达软件生态战略的弱信号但具方向性，投资者可关注其对企业级AI智能体部署的潜在影响。",
+      "url": "https://github.com/NVIDIA/SkillEvaluator",
       "source": "GitHub Trending"
     }
   ]

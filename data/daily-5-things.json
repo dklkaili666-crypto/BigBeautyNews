@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-11-17T23:46:05Z",
+  "exportedAt": "2026-11-18T23:46:11Z",
   "items": [
     {
-      "date": "2026-11-18",
-      "title": "Anthropic IPO后亚马逊与谷歌合计持股近30%",
-      "summary": "Anthropic IPO后，亚马逊持股略低于15%且可进一步增持，谷歌以近14%紧随其后。投资者需关注：两大云厂商合计近30%的持股将深度绑定基础模型与云生态，重塑大语言模型竞争格局，并对AI一级/二级市场估值产生核心影响。",
-      "url": "https://techcrunch.com/2026/11/17/amazon-and-google-will-together-own-nearly-30-of-anthropic-after-its-ipo/",
+      "date": "2026-11-19",
+      "title": "Anthropic据报IPO定价每股83美元，高于预期区间",
+      "summary": "Anthropic的IPO定价 reportedly 为每股83美元，高于此前公布的区间，完全稀释估值达1.5万亿美元。作为AI一级市场最重要的估值锚点之一，此次IPO定价高于区间表明公开市场对头部大语言模型公司的估值仍具韧性，也为其他等待退出的AI资产提供了定价参照。投资者需关注其上市后表现对AI板块整体估值中枢的牵引作用。",
+      "url": "https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-11-18",
-      "title": "英伟达退出中国市场，营收缺口引关注",
-      "summary": "英伟达临时CEO表示公司已停止向中国销售芯片。投资者需关注：此举意味着数百亿美元营收缺口，并推动全球AI芯片供应链再分配，对算力供给格局与国产替代进程有实质影响。",
-      "url": "https://techcrunch.com/2026/11/17/nvidia-is-abandoning-china-after-jensen-huangs-ouster/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-11-18",
-      "title": "Isomorphic Labs完成50亿美元C轮融资，推进AI制药临床试验",
-      "summary": "由谷歌DeepMind于2021年分拆的AI药物发现平台Isomorphic Labs完成50亿美元C轮融资。投资者需关注：该融资是AI+生物医药赛道估值与商业化进度的关键风向标，反映基础模型在药物研发领域的落地前景。",
-      "url": "https://techcrunch.com/2026/11/17/isomorphic-labs-raises-5b-as-it-looks-to-take-drug-candidates-to-clinical-trials/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-11-18",
-      "title": "英伟达Q3业绩达标，管理层动荡仍未平息",
-      "summary": "英伟达临时CEO Colette Kress公布Q3业绩，未提及前CEO黄仁勋离职细节及可能的回归尝试；董事会主席Harvey Jones称董事会不打算让黄仁勋复职。投资者需关注：业绩达标但治理风险未解，是判断AI算力需求真实性与公司治理风险的核心财报信号。",
-      "url": "https://www.theverge.com/tech/1036032/nvidia-q3-2027-jensen-huang",
+      "date": "2026-11-19",
+      "title": "英伟达停止向中国销售先进AI芯片",
+      "summary": "英伟达临时CEO Colette Kress在财报电话会上宣布，尽管去年12月已获白宫批准，公司仍停止向中国出货先进AI芯片。此举标志着英伟达对华策略的重大转变，直接影响其营收结构与中国算力供给格局。投资者需评估两方面影响：一是英伟达中国区收入缺口的持续性，二是国产算力替代的加速节奏及其对相关半导体产业链的拉动。",
+      "url": "https://www.theverge.com/tech/1036445/nvidia-h200-ai-chips-china-stop-selling",
       "source": "The Verge"
     },
     {
-      "date": "2026-11-18",
-      "title": "GPT-6.2 Astra与Sol引发社区热议",
-      "summary": "Hacker News高热讨论GPT-6.2新模型Astra与Sol。投资者需关注：若消息属实，将刷新前沿模型竞争格局；当前作为社区弱信号占位，用于捕捉大语言模型迭代节奏。",
-      "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
-      "source": "Hacker News"
+      "date": "2026-11-19",
+      "title": "英伟达称黄仁勋离职后开源AI战略不变",
+      "summary": "英伟达临时CEO重申开源AI战略保持不变，并计划收购Hugging Face。在黄仁勋突然离职的权力交接期，这一表态是观察英伟达竞争格局走向的关键信号。若收购落地，英伟达将同时掌握算力硬件与开源模型分发入口，对开源生态格局和AI开发者流量入口归属产生实质影响，投资者需关注交易进展及监管阻力。",
+      "url": "https://techcrunch.com/2026/11/17/nvidia-says-its-open-source-ai-strategy-remains-intact-after-jensen-huangs-exit/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-11-19",
+      "title": "纳德拉预测AI智能体将重塑互联网经济",
+      "summary": "微软CEO萨提亚·纳德拉表示，AI智能体可能颠覆广告驱动的商业模式，迫使亚马逊等公司重新思考获客与竞争方式。这一判断指向流量入口与变现逻辑的长期重构：若智能体成为用户与互联网服务之间的新中介，传统搜索广告与电商广告的估值框架将面临重估。投资者需关注平台型公司对智能体入口的布局与防御策略。",
+      "url": "https://techcrunch.com/2026/11/18/satya-nadella-predicts-ai-agents-will-reshuffle-the-economics-of-the-web/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-11-19",
+      "title": "全美最大学区考虑弃用谷歌搜索",
+      "summary": "纽约、洛杉矶和芝加哥的学区正考虑谷歌替代方案。此前谷歌表示，选择退出其AI功能的学校将无法单独禁用Gemini驱动的功能而不连带禁用搜索。这是AI功能强制捆绑引发规模化客户流失的首个案例，直接触及谷歌核心搜索护城河。投资者需评估教育等公共部门客户对强制AI功能的反感是否扩散至更广泛的企业与机构市场。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1037151/school-districts-ditching-google",
+      "source": "The Verge"
     }
   ]
 }

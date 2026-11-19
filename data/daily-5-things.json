@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-11-18T23:46:11Z",
+  "exportedAt": "2026-11-19T23:45:59Z",
   "items": [
     {
-      "date": "2026-11-19",
-      "title": "Anthropic据报IPO定价每股83美元，高于预期区间",
-      "summary": "Anthropic的IPO定价 reportedly 为每股83美元，高于此前公布的区间，完全稀释估值达1.5万亿美元。作为AI一级市场最重要的估值锚点之一，此次IPO定价高于区间表明公开市场对头部大语言模型公司的估值仍具韧性，也为其他等待退出的AI资产提供了定价参照。投资者需关注其上市后表现对AI板块整体估值中枢的牵引作用。",
-      "url": "https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range/",
+      "date": "2026-11-20",
+      "title": "Anthropic IPO 检验 AI 循环融资热潮",
+      "summary": "Anthropic 启动 IPO，面临巨额算力承诺。投资者需关注：其基础设施伙伴亚马逊、谷歌即便在 Anthropic 失去领先地位时仍可能从 AI 中获利，这种利益绑定使本次 IPO 成为判断 AI 资本泡沫与产业链价值分配的关键事件。",
+      "url": "https://techcrunch.com/2026/11/19/anthropics-ipo-puts-ais-circular-financing-boom-to-the-test/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-11-19",
-      "title": "英伟达停止向中国销售先进AI芯片",
-      "summary": "英伟达临时CEO Colette Kress在财报电话会上宣布，尽管去年12月已获白宫批准，公司仍停止向中国出货先进AI芯片。此举标志着英伟达对华策略的重大转变，直接影响其营收结构与中国算力供给格局。投资者需评估两方面影响：一是英伟达中国区收入缺口的持续性，二是国产算力替代的加速节奏及其对相关半导体产业链的拉动。",
-      "url": "https://www.theverge.com/tech/1036445/nvidia-h200-ai-chips-china-stop-selling",
+      "date": "2026-11-20",
+      "title": "英伟达未按时提交 10-Q 季报引市场关注",
+      "summary": "英伟达意外宣布推迟数周提交正式季度业绩文件 10-Q，叠加 CEO 更替，直接冲击全球 AI 算力核心资产的治理与估值信心。投资者需警惕这一芯片供应链最重要的风险信号。",
+      "url": "https://techcrunch.com/2026/11/18/nvidia-created-a-weird-bit-of-intrigue-by-not-filing-a-routine-sec-report/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-11-20",
+      "title": "苹果招聘工程师自研 AI 智能体",
+      "summary": "苹果正招聘工程师主导开发可浏览网页、跨应用操作、编写代码及调用服务的 AI 智能体。这意味着苹果从依赖外部模型转向端侧智能体战略，可能重塑消费级 AI 入口格局，并影响其与 OpenAI、谷歌的合作关系。",
+      "url": "https://www.theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing",
       "source": "The Verge"
     },
     {
-      "date": "2026-11-19",
-      "title": "英伟达称黄仁勋离职后开源AI战略不变",
-      "summary": "英伟达临时CEO重申开源AI战略保持不变，并计划收购Hugging Face。在黄仁勋突然离职的权力交接期，这一表态是观察英伟达竞争格局走向的关键信号。若收购落地，英伟达将同时掌握算力硬件与开源模型分发入口，对开源生态格局和AI开发者流量入口归属产生实质影响，投资者需关注交易进展及监管阻力。",
-      "url": "https://techcrunch.com/2026/11/17/nvidia-says-its-open-source-ai-strategy-remains-intact-after-jensen-huangs-exit/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-11-19",
-      "title": "纳德拉预测AI智能体将重塑互联网经济",
-      "summary": "微软CEO萨提亚·纳德拉表示，AI智能体可能颠覆广告驱动的商业模式，迫使亚马逊等公司重新思考获客与竞争方式。这一判断指向流量入口与变现逻辑的长期重构：若智能体成为用户与互联网服务之间的新中介，传统搜索广告与电商广告的估值框架将面临重估。投资者需关注平台型公司对智能体入口的布局与防御策略。",
-      "url": "https://techcrunch.com/2026/11/18/satya-nadella-predicts-ai-agents-will-reshuffle-the-economics-of-the-web/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-11-19",
-      "title": "全美最大学区考虑弃用谷歌搜索",
-      "summary": "纽约、洛杉矶和芝加哥的学区正考虑谷歌替代方案。此前谷歌表示，选择退出其AI功能的学校将无法单独禁用Gemini驱动的功能而不连带禁用搜索。这是AI功能强制捆绑引发规模化客户流失的首个案例，直接触及谷歌核心搜索护城河。投资者需评估教育等公共部门客户对强制AI功能的反感是否扩散至更广泛的企业与机构市场。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1037151/school-districts-ditching-google",
+      "date": "2026-11-20",
+      "title": "谷歌将 AI 对话嵌入搜索首页",
+      "summary": "谷歌更新首页，新增可折叠侧边栏以查看和继续 AI 对话。此举是对其核心广告变现模式的主动颠覆，将直接影响广告收入预期与搜索竞争壁垒，投资者需关注其商业化节奏与用户接受度。",
+      "url": "https://www.theverge.com/tech/1038059/google-search-homepage-ai-chats",
       "source": "The Verge"
+    },
+    {
+      "date": "2026-11-20",
+      "title": "Meta AI 智能体 Muse 被曝对话串扰与隐私泄露",
+      "summary": "Meta 的 AI 智能体 Muse 出现对话串扰，向员工显示其从未发起的育儿请求、未咨询的职业建议、未下的订单及他人银行账户余额。这是消费级 AI 智能体规模化落地的首个重大安全事件，可能引发监管审查并影响产品商业化节奏。",
+      "url": "https://techcrunch.com/2026/11/19/metas-ai-agent-muse-is-mixing-up-conversations-and-exposing-private-data-report-says/",
+      "source": "TechCrunch"
     }
   ]
 }

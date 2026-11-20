@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-11-19T23:45:59Z",
+  "exportedAt": "2026-11-20T23:45:56Z",
   "items": [
     {
-      "date": "2026-11-20",
-      "title": "Anthropic IPO 检验 AI 循环融资热潮",
-      "summary": "Anthropic 启动 IPO，面临巨额算力承诺。投资者需关注：其基础设施伙伴亚马逊、谷歌即便在 Anthropic 失去领先地位时仍可能从 AI 中获利，这种利益绑定使本次 IPO 成为判断 AI 资本泡沫与产业链价值分配的关键事件。",
-      "url": "https://techcrunch.com/2026/11/19/anthropics-ipo-puts-ais-circular-financing-boom-to-the-test/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-11-20",
-      "title": "英伟达未按时提交 10-Q 季报引市场关注",
-      "summary": "英伟达意外宣布推迟数周提交正式季度业绩文件 10-Q，叠加 CEO 更替，直接冲击全球 AI 算力核心资产的治理与估值信心。投资者需警惕这一芯片供应链最重要的风险信号。",
-      "url": "https://techcrunch.com/2026/11/18/nvidia-created-a-weird-bit-of-intrigue-by-not-filing-a-routine-sec-report/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-11-20",
-      "title": "苹果招聘工程师自研 AI 智能体",
-      "summary": "苹果正招聘工程师主导开发可浏览网页、跨应用操作、编写代码及调用服务的 AI 智能体。这意味着苹果从依赖外部模型转向端侧智能体战略，可能重塑消费级 AI 入口格局，并影响其与 OpenAI、谷歌的合作关系。",
-      "url": "https://www.theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing",
+      "date": "2026-11-21",
+      "title": "Anthropic登陆纳斯达克，开盘大涨33%",
+      "summary": "Anthropic正式在纳斯达克挂牌，代码\"ANT\"，开盘价111.50美元，较83美元发行价上涨约33%，对应估值约1.5万亿美元。此次IPO距其公开上市计划披露仅约一个月，S-1文件披露了其业务与财务细节。对投资者而言，这是大语言模型赛道一级市场定价与退出通道的关键锚点，其估值水平将直接成为整个基础模型行业估值体系的重估参照。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1035384/anthropic-ipo-trading-nasdaq",
       "source": "The Verge"
     },
     {
-      "date": "2026-11-20",
-      "title": "谷歌将 AI 对话嵌入搜索首页",
-      "summary": "谷歌更新首页，新增可折叠侧边栏以查看和继续 AI 对话。此举是对其核心广告变现模式的主动颠覆，将直接影响广告收入预期与搜索竞争壁垒，投资者需关注其商业化节奏与用户接受度。",
-      "url": "https://www.theverge.com/tech/1038059/google-search-homepage-ai-chats",
-      "source": "The Verge"
+      "date": "2026-11-21",
+      "title": "消息称SEC调查英伟达会计问题",
+      "summary": "据消息人士透露，SEC正就$NVDA 英伟达的会计处理展开调查；与此同时，加州司法部长就芯片出口中国相关事宜发出传票。两项监管动作叠加，直接冲击这家AI算力龙头的治理与合规风险溢价。对持仓投资者而言，这是本周最需重新评估的风险点，需关注调查范围、潜在处罚及对芯片出口政策预期的连带影响。",
+      "url": "https://finance.yahoo.com/markets/article/nvidia-stock-extends-25-trillion-rout-as-sec-probe-reportedly-investigates-its-accounting-194945274.html",
+      "source": "Hacker News"
     },
     {
-      "date": "2026-11-20",
-      "title": "Meta AI 智能体 Muse 被曝对话串扰与隐私泄露",
-      "summary": "Meta 的 AI 智能体 Muse 出现对话串扰，向员工显示其从未发起的育儿请求、未咨询的职业建议、未下的订单及他人银行账户余额。这是消费级 AI 智能体规模化落地的首个重大安全事件，可能引发监管审查并影响产品商业化节奏。",
-      "url": "https://techcrunch.com/2026/11/19/metas-ai-agent-muse-is-mixing-up-conversations-and-exposing-private-data-report-says/",
+      "date": "2026-11-21",
+      "title": "谷歌Gemini获准代用户操作Mac",
+      "summary": "谷歌对Gemini的最新更新为其引入可在Mac上执行任务的AI智能体，能够整理文件、填写表单并完成多步骤工作流。这标志着大厂AI智能体从对话交互迈向系统级执行，是AI应用层竞争格局与用户入口争夺的重要信号。投资者应关注其对企业软件、生产力工具及操作系统生态竞争格局的潜在影响。",
+      "url": "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/",
       "source": "TechCrunch"
+    },
+    {
+      "date": "2026-11-21",
+      "title": "苹果或自研可操控Mac的AI智能体",
+      "summary": "据报道，苹果似乎正在构建可操控Mac的AI智能体，与Meta Muse、Instinct、Claude及OpenAI Dots等产品竞争。这意味着苹果的AI策略可能从接入外部模型转向系统级AI智能体自研。对投资者而言，这实质影响对端侧AI能力与生态护城河的判断，需关注其自研进度及对第三方模型依赖度的变化。",
+      "url": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-11-21",
+      "title": "特朗普威胁对境外AI数据中心征重税",
+      "summary": "特朗普总统承诺对在美国境外建设数据中心的公司征收\"巨额税\"，并表示不会允许本国公司在境外建设数据中心；与此同时，美国各州和城市正限制新建数据中心的申请。另有参议院加速数据中心审批的能源法案同步推进。对投资者而言，这直接影响算力基建的选址成本与资本开支节奏，需重估数据中心相关投资的监管与成本风险。",
+      "url": "https://www.theverge.com/policy/1038892/trump-foreign-data-centers-tax",
+      "source": "The Verge"
     }
   ]
 }

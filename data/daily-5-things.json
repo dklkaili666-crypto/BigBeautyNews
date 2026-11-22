@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-11-21T23:45:57Z",
+  "exportedAt": "2026-11-22T23:46:07Z",
   "items": [
     {
-      "date": "2026-11-22",
-      "title": "英伟达CEO黄仁勋离职风波持续，财报发布并停止对华销售H200芯片",
-      "summary": "英伟达本周发布财报，增长健康并承诺好时光将继续，但同时宣布停止在中国销售H200芯片，并驳回相关呼吁。投资者需关注：CEO离职风波叠加对华芯片销售禁令，直接影响AI芯片供应链与营收预期，是本周最重大的大厂战略与地缘风险事件。",
-      "url": "https://techcrunch.com/podcast/the-fallout-from-nvidias-jensen-huang-scandal-continues/",
+      "date": "2026-11-23",
+      "title": "两个英伟达：财报与业界呼声的分歧",
+      "summary": "英伟达最新财报与科技高管公开呼吁黄仁勋回归形成鲜明对比，折射出市场对AI算力龙头战略方向与增长预期的分歧。投资者需关注这一信号对AI基础设施投资周期判断的影响，以及管理层变动传闻可能带来的估值波动。",
+      "url": "https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-11-22",
-      "title": "加州调查英伟达芯片出口是否流入中国",
-      "summary": "加州总检察长Rob Bonta对英伟达发出调查传票，核查其先进半导体芯片出口是否违规流入中国、是否误导投资者。投资者需关注：监管风险可能带来罚款与合规成本，影响对英伟达的估值判断。",
-      "url": "https://www.theguardian.com/technology/2026/nov/20/california-investigates-nvidia-over-whether-chip-exports-ended-up-in-china",
-      "source": "The Guardian World"
-    },
-    {
-      "date": "2026-11-22",
-      "title": "Anthropic七位创始人IPO套现近20亿美元，创纪录",
-      "summary": "Anthropic以每股83美元的IPO价格完成创纪录上市，估值约1050亿美元，七位创始人各套现2.8亿美元，合计近20亿美元。投资者需关注：这是AI独角兽资本化的标志性事件，重塑一级市场估值锚。",
-      "url": "https://techcrunch.com/2026/11/19/anthropics-7-founders-cashed-out-nearly-2b-in-record-breaking-ipo/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-11-22",
-      "title": "Anthropic数学家称借助Claude证明黎曼猜想",
-      "summary": "Anthropic数学家Levent Alpöge声称借助Claude证明了黎曼猜想，若获验证将是AI在数学领域的里程碑。投资者需关注：该事件强化“AI能力跃迁”叙事，对模型竞争格局与算力需求预期有实质影响。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem",
+      "date": "2026-11-23",
+      "title": "Anthropic能否承受安全优先的代价？",
+      "summary": "Anthropic登陆纳斯达克后，其“安全优先”定位与商业化之间的张力成为焦点。投资者需评估这一矛盾对AI独角兽估值逻辑及IPO定价范式的潜在影响，安全投入可能压缩短期利润，但长期或构成差异化壁垒。",
+      "url": "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure",
       "source": "The Verge"
     },
     {
-      "date": "2026-11-22",
-      "title": "AI最被误解的图表获重大更新：能力仍指数提升但判断任务落后",
-      "summary": "AI评估非营利组织METR更新其广泛引用的“时间跨度”图表，显示部分AI能力仍沿指数轨迹提升，但模型在需要判断力的任务上不如编程任务表现好。投资者需关注：该报告为评估模型商业化落地节奏与投资时点提供关键量化参考。",
-      "url": "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/",
-      "source": "MIT Technology Review"
+      "date": "2026-11-23",
+      "title": "OpenAI首席科学家提出AI开发限速度量框架",
+      "summary": "OpenAI首席科学家提出为AI开发设定“限速”需先统一速度度量标准。若该框架被监管采纳，可能改变前沿大语言模型的训练节奏与合规成本，进而影响大型科技公司的研发投入预期和竞争格局。",
+      "url": "https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-11-23",
+      "title": "2028年Anthropic电力87%来自天然气、11%来自煤炭",
+      "summary": "Hacker News热议数据显示，Anthropic算力扩张的能源结构以天然气和煤炭为主，凸显AI数据中心电力约束正成为影响算力供给与成本的新变量。投资者应关注能源价格波动及碳排监管对AI基础设施运营成本的潜在冲击。",
+      "url": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/",
+      "source": "Hacker News"
+    },
+    {
+      "date": "2026-11-23",
+      "title": "美国银行封禁第三方AI智能体登录账户",
+      "summary": "美国主要金融机构禁止第三方AI智能体登录用户账户，并警告因机器人失误造成的损失由用户自行承担。此举标志AI智能体在金融场景遭遇合规与责任边界阻力，可能延缓该类产品的商业化落地进程。",
+      "url": "https://www.wired.com/story/banks-are-cracking-down-on-ai-agents/",
+      "source": "Wired"
     }
   ]
 }

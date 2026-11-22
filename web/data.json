@@ -1,26 +1,26 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-11-21T23:45:57Z",
-  "dailyTheme": "今日AI投研主线是英伟达的双重冲击——CEO离职风波叠加对华芯片出口监管调查，同时Anthropic以创纪录IPO和“Claude证明黎曼猜想”抢占资本与技术叙事，AI能力评估曲线更新则提示落地节奏仍不均衡。",
-  "geopoliticsTheme": "今日核心是深圳中美元俄三边峰会的外溢效应：从军事AI人类控制共识、成品油供应承诺到海上安全磋商与挑战国际司法权威，同时中国借COP31推进低碳电气化外交。",
+  "exportedAt": "2026-11-22T23:46:07Z",
+  "dailyTheme": "今日AI投研主线是“算力与资本的再定价”：英伟达财报分歧、Anthropic上市后的安全与商业化张力，以及AI Agent在金融合规与能源约束下遭遇的现实摩擦。",
+  "geopoliticsTheme": "今日焦点是特朗普访华后的中美俄三边互动与安全秩序重塑，同时俄乌战争外溢北约、联合国机构席位争夺凸显大国博弈加剧。",
   "items": [
     {
-      "id": "ea6ffe24-7a82-5605-a688-b4d3d2943232",
-      "date": "2026-11-22",
-      "title": "英伟达CEO黄仁勋离职风波持续，财报发布并停止对华销售H200芯片",
-      "summary": "英伟达本周发布财报，增长健康并承诺好时光将继续，但同时宣布停止在中国销售H200芯片，并驳回相关呼吁。投资者需关注：CEO离职风波叠加对华芯片销售禁令，直接影响AI芯片供应链与营收预期，是本周最重大的大厂战略与地缘风险事件。",
-      "url": "https://techcrunch.com/podcast/the-fallout-from-nvidias-jensen-huang-scandal-continues/",
-      "canonicalUrl": "https://techcrunch.com/podcast/the-fallout-from-nvidias-jensen-huang-scandal-continues",
+      "id": "fd75ad16-3d19-59df-9f28-8fdc00bfdb9a",
+      "date": "2026-11-23",
+      "title": "两个英伟达：财报与业界呼声的分歧",
+      "summary": "英伟达最新财报与科技高管公开呼吁黄仁勋回归形成鲜明对比，折射出市场对AI算力龙头战略方向与增长预期的分歧。投资者需关注这一信号对AI基础设施投资周期判断的影响，以及管理层变动传闻可能带来的估值波动。",
+      "url": "https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias/",
+      "canonicalUrl": "https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias",
       "source": "TechCrunch",
       "sourceTier": "tier2",
       "isPrimarySource": false,
       "tags": [
         "英伟达",
-        "芯片供应链",
-        "中国出口"
+        "算力",
+        "财报"
       ],
       "rank": 1,
-      "eventId": "14d0ddb521bb6fe47eb444f22a562f007a7913f9",
+      "eventId": "265aab11f8ff4e8c10487ae7dd4f03912a365b36",
       "eventType": "unknown",
       "entities": [
         "NVIDIA"
@@ -36,14 +36,14 @@
       "whyItMatters": "",
       "investmentImplication": "",
       "riskNote": "",
-      "originalTitle": "The fallout from Nvidia’s Jensen Huang scandal continues",
-      "published": "2026-11-20T14:55:44Z",
+      "originalTitle": "A tale of two Nvidias",
+      "published": "2026-11-21T21:07:42Z",
       "mergedSources": [
         "TechCrunch"
       ],
       "relatedUrls": [],
       "primarySource": "TechCrunch",
-      "selectionReason": "英伟达在CEO黄仁勋离职风波中发布财报，并宣布停止在中国销售H200芯片，直接影响AI芯片供应链与营收预期，是本周最重大的大厂战略与地缘风险事件。",
+      "selectionReason": "英伟达财报与业界对黄仁勋回归的呼声形成鲜明反差，直接反映AI算力龙头的战略与市场预期分歧，是判断AI基础设施投资周期的核心信号。",
       "promptVersion": "",
       "modelUsed": "",
       "rawPayloadHash": "",
@@ -51,70 +51,16 @@
       "regions": [],
       "geopoliticsEventTypes": [],
       "geopoliticsRuleScore": 0.0,
-      "createdAt": "2026-11-21T23:45:57Z"
+      "createdAt": "2026-11-22T23:46:07Z"
     },
     {
-      "id": "9eaba932-b2c9-5f64-87de-e43cae7a022f",
-      "date": "2026-11-22",
-      "title": "加州调查英伟达芯片出口是否流入中国",
-      "summary": "加州总检察长Rob Bonta对英伟达发出调查传票，核查其先进半导体芯片出口是否违规流入中国、是否误导投资者。投资者需关注：监管风险可能带来罚款与合规成本，影响对英伟达的估值判断。",
-      "url": "https://www.theguardian.com/technology/2026/nov/20/california-investigates-nvidia-over-whether-chip-exports-ended-up-in-china",
-      "canonicalUrl": "https://www.theguardian.com/technology/2026/nov/20/california-investigates-nvidia-over-whether-chip-exports-ended-up-in-china",
-      "source": "The Guardian World",
-      "sourceTier": "tier2",
-      "isPrimarySource": false,
-      "tags": [
-        "英伟达",
-        "监管调查",
-        "出口管制"
-      ],
-      "rank": 2,
-      "eventId": "b8f197497c8ec7b71835073d7b5b196c61ca6df9",
-      "eventType": "funding",
-      "entities": [
-        "NVIDIA"
-      ],
-      "tickers": [],
-      "sourceCredibilityScore": 3.0,
-      "marketImpactScore": 3.0,
-      "noveltyScore": 4.0,
-      "timelinessScore": 5.0,
-      "entityImportanceScore": 3.0,
-      "confidenceScore": 3.0,
-      "totalScore": 3.4,
-      "whyItMatters": "",
-      "investmentImplication": "",
-      "riskNote": "",
-      "originalTitle": "California investigates Nvidia over whether chip exports ended up in China",
-      "published": "2026-11-20T09:18:30Z",
-      "mergedSources": [
-        "The Guardian World"
-      ],
-      "relatedUrls": [],
-      "primarySource": "The Guardian World",
-      "selectionReason": "加州总检察长对英伟达发出调查传票，核查先进芯片是否违规流入中国，监管风险可能带来罚款与合规成本，影响投资者对英伟达的估值判断。",
-      "promptVersion": "",
-      "modelUsed": "",
-      "rawPayloadHash": "",
-      "warnings": [],
-      "regions": [
-        "china",
-        "us"
-      ],
-      "geopoliticsEventTypes": [
-        "supply_chain"
-      ],
-      "geopoliticsRuleScore": 5.0,
-      "createdAt": "2026-11-21T23:45:57Z"
-    },
-    {
-      "id": "1123cc85-0a87-5834-82de-f2fbd8ebcad3",
-      "date": "2026-11-22",
-      "title": "Anthropic七位创始人IPO套现近20亿美元，创纪录",
-      "summary": "Anthropic以每股83美元的IPO价格完成创纪录上市，估值约1050亿美元，七位创始人各套现2.8亿美元，合计近20亿美元。投资者需关注：这是AI独角兽资本化的标志性事件，重塑一级市场估值锚。",
-      "url": "https://techcrunch.com/2026/11/19/anthropics-7-founders-cashed-out-nearly-2b-in-record-breaking-ipo/",
-      "canonicalUrl": "https://techcrunch.com/2026/11/19/anthropics-7-founders-cashed-out-nearly-2b-in-record-breaking-ipo",
-      "source": "TechCrunch",
+      "id": "ff9f8274-49d9-5255-b48d-3ccf229d297a",
+      "date": "2026-11-23",
+      "title": "Anthropic能否承受安全优先的代价？",
+      "summary": "Anthropic登陆纳斯达克后，其“安全优先”定位与商业化之间的张力成为焦点。投资者需评估这一矛盾对AI独角兽估值逻辑及IPO定价范式的潜在影响，安全投入可能压缩短期利润，但长期或构成差异化壁垒。",
+      "url": "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure",
+      "canonicalUrl": "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure",
+      "source": "The Verge",
       "sourceTier": "tier2",
       "isPrimarySource": false,
       "tags": [
@@ -122,57 +68,8 @@
         "IPO",
         "估值"
       ],
-      "rank": 3,
-      "eventId": "a8ecf72c8d04e48e0dc960c9c3f0589e4cb4f711",
-      "eventType": "funding",
-      "entities": [
-        "Anthropic"
-      ],
-      "tickers": [],
-      "sourceCredibilityScore": 3.0,
-      "marketImpactScore": 3.0,
-      "noveltyScore": 4.0,
-      "timelinessScore": 5.0,
-      "entityImportanceScore": 3.0,
-      "confidenceScore": 3.0,
-      "totalScore": 3.4,
-      "whyItMatters": "",
-      "investmentImplication": "",
-      "riskNote": "",
-      "originalTitle": "Anthropic’s 7 founders cashed out nearly $2B in record-breaking IPO",
-      "published": "2026-11-20T00:43:50Z",
-      "mergedSources": [
-        "TechCrunch"
-      ],
-      "relatedUrls": [],
-      "primarySource": "TechCrunch",
-      "selectionReason": "Anthropic以83美元/股完成创纪录IPO、估值约1050亿美元，创始人合计套现近20亿美元，是AI独角兽资本化的标志性事件，重塑一级市场估值锚。",
-      "promptVersion": "",
-      "modelUsed": "",
-      "rawPayloadHash": "",
-      "warnings": [],
-      "regions": [],
-      "geopoliticsEventTypes": [],
-      "geopoliticsRuleScore": 0.0,
-      "createdAt": "2026-11-21T23:45:57Z"
-    },
-    {
-      "id": "80413526-e827-5bf7-aed8-f7e6e482f8b6",
-      "date": "2026-11-22",
-      "title": "Anthropic数学家称借助Claude证明黎曼猜想",
-      "summary": "Anthropic数学家Levent Alpöge声称借助Claude证明了黎曼猜想，若获验证将是AI在数学领域的里程碑。投资者需关注：该事件强化“AI能力跃迁”叙事，对模型竞争格局与算力需求预期有实质影响。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem",
-      "canonicalUrl": "https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem",
-      "source": "The Verge",
-      "sourceTier": "tier2",
-      "isPrimarySource": false,
-      "tags": [
-        "Anthropic",
-        "Claude",
-        "技术突破"
-      ],
-      "rank": 4,
-      "eventId": "7c5d45f394907556b484c2591ea7e81b2245d218",
+      "rank": 2,
+      "eventId": "753a318f8efc7b1c2802a48f93471b4a4eedf628",
       "eventType": "model_release",
       "entities": [
         "Anthropic"
@@ -188,14 +85,14 @@
       "whyItMatters": "",
       "investmentImplication": "",
       "riskNote": "",
-      "originalTitle": "Anthropic mathematician claims to have solved prestigious Millennium Prize problem with Claude",
-      "published": "2026-11-20T16:34:13Z",
+      "originalTitle": "Can Anthropic afford to put safety first?",
+      "published": "2026-11-21T15:00:00Z",
       "mergedSources": [
         "The Verge"
       ],
       "relatedUrls": [],
       "primarySource": "The Verge",
-      "selectionReason": "Anthropic研究员称借助Claude证明黎曼猜想，若获验证将是AI在数学领域的里程碑，强化“AI能力跃迁”叙事，对模型竞争格局与算力需求预期有实质影响。",
+      "selectionReason": "Anthropic登陆纳斯达克后，其“安全优先”定位与商业化之间的张力将影响AI独角兽估值逻辑与IPO定价范式。",
       "promptVersion": "",
       "modelUsed": "",
       "rawPayloadHash": "",
@@ -203,25 +100,123 @@
       "regions": [],
       "geopoliticsEventTypes": [],
       "geopoliticsRuleScore": 0.0,
-      "createdAt": "2026-11-21T23:45:57Z"
+      "createdAt": "2026-11-22T23:46:07Z"
     },
     {
-      "id": "5906bd28-965f-5ab2-83f9-7328db56bd52",
-      "date": "2026-11-22",
-      "title": "AI最被误解的图表获重大更新：能力仍指数提升但判断任务落后",
-      "summary": "AI评估非营利组织METR更新其广泛引用的“时间跨度”图表，显示部分AI能力仍沿指数轨迹提升，但模型在需要判断力的任务上不如编程任务表现好。投资者需关注：该报告为评估模型商业化落地节奏与投资时点提供关键量化参考。",
-      "url": "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/",
-      "canonicalUrl": "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update",
-      "source": "MIT Technology Review",
+      "id": "b207d6b6-18ba-5181-9053-667a6f47bbd3",
+      "date": "2026-11-23",
+      "title": "OpenAI首席科学家提出AI开发限速度量框架",
+      "summary": "OpenAI首席科学家提出为AI开发设定“限速”需先统一速度度量标准。若该框架被监管采纳，可能改变前沿大语言模型的训练节奏与合规成本，进而影响大型科技公司的研发投入预期和竞争格局。",
+      "url": "https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development/",
+      "canonicalUrl": "https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development",
+      "source": "TechCrunch",
       "sourceTier": "tier2",
       "isPrimarySource": false,
       "tags": [
-        "AI评估",
-        "METR",
-        "技术趋势"
+        "OpenAI",
+        "监管",
+        "前沿模型"
+      ],
+      "rank": 3,
+      "eventId": "15cd8159a106ed3ea711d2a73382e9debf3a9f7e",
+      "eventType": "unknown",
+      "entities": [
+        "OpenAI"
+      ],
+      "tickers": [],
+      "sourceCredibilityScore": 3.0,
+      "marketImpactScore": 3.0,
+      "noveltyScore": 4.0,
+      "timelinessScore": 5.0,
+      "entityImportanceScore": 3.0,
+      "confidenceScore": 3.0,
+      "totalScore": 3.4,
+      "whyItMatters": "",
+      "investmentImplication": "",
+      "riskNote": "",
+      "originalTitle": "OpenAI’s chief scientist has thoughts on how to limit AI development",
+      "published": "2026-11-22T21:14:07Z",
+      "mergedSources": [
+        "TechCrunch"
+      ],
+      "relatedUrls": [],
+      "primarySource": "TechCrunch",
+      "selectionReason": "OpenAI首席科学家提出AI开发“限速”度量框架，可能预示前沿模型训练节奏与监管合规成本的变化，影响大厂研发投入预期。",
+      "promptVersion": "",
+      "modelUsed": "",
+      "rawPayloadHash": "",
+      "warnings": [],
+      "regions": [],
+      "geopoliticsEventTypes": [],
+      "geopoliticsRuleScore": 0.0,
+      "createdAt": "2026-11-22T23:46:07Z"
+    },
+    {
+      "id": "495bb3aa-2431-561d-bb06-b7b3bf02a3b2",
+      "date": "2026-11-23",
+      "title": "2028年Anthropic电力87%来自天然气、11%来自煤炭",
+      "summary": "Hacker News热议数据显示，Anthropic算力扩张的能源结构以天然气和煤炭为主，凸显AI数据中心电力约束正成为影响算力供给与成本的新变量。投资者应关注能源价格波动及碳排监管对AI基础设施运营成本的潜在冲击。",
+      "url": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/",
+      "canonicalUrl": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power",
+      "source": "Hacker News",
+      "sourceTier": "tier3",
+      "isPrimarySource": false,
+      "tags": [
+        "Anthropic",
+        "数据中心",
+        "能源"
+      ],
+      "rank": 4,
+      "eventId": "f38978220bf71d29040e4f293c0ac20f51f257ee",
+      "eventType": "capex",
+      "entities": [
+        "Anthropic"
+      ],
+      "tickers": [],
+      "sourceCredibilityScore": 2.0,
+      "marketImpactScore": 5.0,
+      "noveltyScore": 4.0,
+      "timelinessScore": 5.0,
+      "entityImportanceScore": 3.0,
+      "confidenceScore": 2.0,
+      "totalScore": 3.9,
+      "whyItMatters": "",
+      "investmentImplication": "",
+      "riskNote": "",
+      "originalTitle": "87% of the Anthropic power will come from gas and 11% from coal in 2028",
+      "published": "2026-11-22T08:57:34Z",
+      "mergedSources": [
+        "Hacker News"
+      ],
+      "relatedUrls": [],
+      "primarySource": "Hacker News",
+      "selectionReason": "HN高热讨论揭示Anthropic算力扩张的能源结构风险，AI数据中心的电力约束正成为影响算力供给与成本的新变量，值得作为弱信号占位。",
+      "promptVersion": "",
+      "modelUsed": "",
+      "rawPayloadHash": "",
+      "warnings": [],
+      "regions": [],
+      "geopoliticsEventTypes": [],
+      "geopoliticsRuleScore": 0.0,
+      "createdAt": "2026-11-22T23:46:07Z"
+    },
+    {
+      "id": "d7d28a5e-d845-5b19-9166-70f6ffa4bec7",
+      "date": "2026-11-23",
+      "title": "美国银行封禁第三方AI智能体登录账户",
+      "summary": "美国主要金融机构禁止第三方AI智能体登录用户账户，并警告因机器人失误造成的损失由用户自行承担。此举标志AI智能体在金融场景遭遇合规与责任边界阻力，可能延缓该类产品的商业化落地进程。",
+      "url": "https://www.wired.com/story/banks-are-cracking-down-on-ai-agents/",
+      "canonicalUrl": "https://www.wired.com/story/banks-are-cracking-down-on-ai-agents",
+      "source": "Wired",
+      "sourceTier": "tier2",
+      "isPrimarySource": false,
+      "tags": [
+        "AI Agent",
+        "金融",
+        "合规"
       ],
       "rank": 5,
-      "eventId": "2fdd7a0916ab501f20694f1310c1fad9ca5c82af",
+      "eventId": "5077f698fa6ffaf441da10d3726bd6ba9a85585d",
       "eventType": "unknown",
       "entities": [],
       "tickers": [],
@@ -235,14 +230,14 @@
       "whyItMatters": "",
       "investmentImplication": "",
       "riskNote": "",
-      "originalTitle": "The most misunderstood graph in AI just got a major update",
-      "published": "2026-11-20T18:15:15Z",
+      "originalTitle": "Banks Have Had It Up to Here With Your AI Agent",
+      "published": "2026-11-22T11:00:00Z",
       "mergedSources": [
-        "MIT Technology Review"
+        "Wired"
       ],
       "relatedUrls": [],
-      "primarySource": "MIT Technology Review",
-      "selectionReason": "METR更新AI能力时间跨度曲线，显示能力仍沿指数轨迹提升但判断类任务落后于编程，为评估模型商业化落地节奏与投资时点提供关键量化参考。",
+      "primarySource": "Wired",
+      "selectionReason": "美国主要银行封禁第三方AI代理登录账户，标志AI Agent在金融场景遭遇合规与责任边界阻力，影响Agent类产品商业化路径。",
       "promptVersion": "",
       "modelUsed": "",
       "rawPayloadHash": "",
@@ -250,27 +245,26 @@
       "regions": [],
       "geopoliticsEventTypes": [],
       "geopoliticsRuleScore": 0.0,
-      "createdAt": "2026-11-21T23:45:57Z"
+      "createdAt": "2026-11-22T23:46:07Z"
     }
   ],
   "geopoliticsItems": [
     {
-      "id": "4ca63379-4dd8-5869-8134-d4d55d5ba379",
-      "date": "2026-11-22",
-      "title": "中美元首同意军事AI决策须由人类参与",
-      "summary": "据美国财政部长 Scott Bessent 向 CNBC 介绍，中国国家主席习近平与美国总统 Donald Trump 在亚太经合组织峰会会谈中达成共识，认为涉及 AI 的军事决策“应始终有人类参与”。Bessent 称这是中美元首会晤的突破。该共识涉及军事 AI 使用边界与人类控制原则，潜在影响全球 AI 军控讨论与中美安全对话预期，但具体约束机制与执行细节尚未披露。",
-      "url": "https://www.scmp.com/news/china/diplomacy/article/3375321/xi-trump-agree-military-ai-decisions-must-involve-humans-bessent-says",
-      "canonicalUrl": "https://www.scmp.com/news/china/diplomacy/article/3375321/xi-trump-agree-military-ai-decisions-must-involve-humans-bessent-says",
-      "source": "SCMP China",
+      "id": "ff315e7a-901a-53a9-b7fc-d9f664192d3d",
+      "date": "2026-11-23",
+      "title": "特朗普访华深圳峰会：习近平的收获与中美关系走向",
+      "summary": "NPR 就特朗普本周访华及深圳峰会采访马里兰大学公共政策学院美中关系项目主任 Robert Daly，讨论习近平在此次会晤中的所得。事件核心为中美领导人面对面互动，参与方包括特朗普与习近平及双方团队。潜在市场影响在于中美关系基调可能影响贸易、关税与科技管制预期，进而波及风险资产与相关行业；但访谈内容属分析观点，具体成果与政策细节尚待官方信息确认。",
+      "url": "https://www.npr.org/2026/11/21/nx-s1-6048741/what-did-xi-jinping-get-from-the-bear-hug-with-trump-at-the-shenzhen-summit",
+      "canonicalUrl": "https://www.npr.org/2026/11/21/nx-s1-6048741/what-did-xi-jinping-get-from-the-bear-hug-with-trump-at-the-shenzhen-summit",
+      "source": "NPR World",
       "sourceTier": "tier2",
       "isPrimarySource": false,
       "tags": [
         "中美关系",
-        "军事AI",
-        "全球安全"
+        "外交"
       ],
       "rank": 1,
-      "eventId": "0b73d3ee2ffd621cc68a4cb5462ddd69701db4ab",
+      "eventId": "2fd34a5eec662c0b5e681a183c9c3b5acee9aaf3",
       "eventType": "unknown",
       "entities": [],
       "tickers": [],
@@ -284,14 +278,14 @@
       "whyItMatters": "",
       "investmentImplication": "",
       "riskNote": "",
-      "originalTitle": "Xi, Trump agree military AI decisions must involve humans, Bessent says",
-      "published": "2026-11-21T07:17:15Z",
+      "originalTitle": "What did Xi Jinping get from the bear hug with Trump at the Shenzhen summit?",
+      "published": "2026-11-21T22:01:42Z",
       "mergedSources": [
-        "SCMP China"
+        "NPR World"
       ],
       "relatedUrls": [],
-      "primarySource": "SCMP China",
-      "selectionReason": "中美元首就军事AI决策须由人类参与达成共识，属全球安全秩序与AI军控的重大突破。",
+      "primarySource": "NPR World",
+      "selectionReason": "特朗普访华与深圳峰会直接牵动中美关系走向，是今日最高优先级的地缘事件。",
       "promptVersion": "",
       "modelUsed": "",
       "rawPayloadHash": "",
@@ -304,130 +298,78 @@
         "geopolitics"
       ],
       "geopoliticsRuleScore": 6.0,
-      "createdAt": "2026-11-21T23:45:57Z"
+      "createdAt": "2026-11-22T23:46:07Z"
     },
     {
-      "id": "f5d39d12-2e8e-59fe-b887-1537ac57714b",
-      "date": "2026-11-22",
-      "title": "中美元俄承诺增加成品油供应但制裁或限制效果",
-      "summary": "中国、美国、俄罗斯领导人首次举行三边会晤，并在深圳发表“和平宣言”，承诺增加成品油生产与对全球供应，市场因此预期能源供应更稳定、价格可能下行。但分析人士提示，西方对莫斯科的制裁可能限制该承诺的实际效果。事件涉及三国政策协调与全球成品油贸易流向，潜在影响能源价格、炼油利润与供应链预期，实际影响取决于制裁执行与产量落实。",
-      "url": "https://www.scmp.com/economy/global-economy/article/3375272/sanctions-cloud-china-us-russia-pledge-boost-global-fuel-supplies-analysts",
-      "canonicalUrl": "https://www.scmp.com/economy/global-economy/article/3375272/sanctions-cloud-china-us-russia-pledge-boost-global-fuel-supplies-analysts",
-      "source": "SCMP Global Economy",
+      "id": "11cec1bb-072f-50a7-99c6-243fcebbcbd5",
+      "date": "2026-11-23",
+      "title": "中美元俄峰会后中国情报机构强调“共同国际安全”",
+      "summary": "中国国家安全部（MSS）在周四首次中美元俄三边峰会次日于官方社交账号发文，称任何国家都不能以牺牲他国为代价追求“绝对安全”，并将中国安全理念表述为马克思主义理论演进及对地缘政治不稳定的紧迫回应。事件涉及中国情报机构与中美俄三边外交。潜在影响在于北京安全话语或强化其多边安全叙事，影响市场对大国协调与地缘风险的判断；该文属官方立场表述，非政策承诺。",
+      "url": "https://www.scmp.com/news/china/politics/article/3375207/chinas-top-intelligence-agency-touts-common-international-security-after-summit",
+      "canonicalUrl": "https://www.scmp.com/news/china/politics/article/3375207/chinas-top-intelligence-agency-touts-common-international-security-after-summit",
+      "source": "SCMP China",
       "sourceTier": "tier2",
       "isPrimarySource": false,
       "tags": [
         "中美关系",
-        "能源",
-        "制裁"
+        "全球安全秩序"
       ],
       "rank": 2,
-      "eventId": "25dab95c5cf54ad5e822c6fb756b28fe5294979e",
-      "eventType": "funding",
-      "entities": [],
-      "tickers": [],
-      "sourceCredibilityScore": 3.0,
-      "marketImpactScore": 2.0,
-      "noveltyScore": 4.0,
-      "timelinessScore": 5.0,
-      "entityImportanceScore": 2.0,
-      "confidenceScore": 3.0,
-      "totalScore": 2.9,
-      "whyItMatters": "",
-      "investmentImplication": "",
-      "riskNote": "",
-      "originalTitle": "Sanctions cloud China-US-Russia pledge to boost global fuel supplies: analysts",
-      "published": "2026-11-20T13:00:06Z",
-      "mergedSources": [
-        "SCMP Global Economy"
-      ],
-      "relatedUrls": [],
-      "primarySource": "SCMP Global Economy",
-      "selectionReason": "中美元俄首次三边峰会承诺增加成品油供应，但西方对俄制裁或限制效果，直接影响能源与供应链。",
-      "promptVersion": "",
-      "modelUsed": "",
-      "rawPayloadHash": "",
-      "warnings": [],
-      "regions": [
-        "china",
-        "us",
-        "global"
-      ],
-      "geopoliticsEventTypes": [
-        "geopolitics"
-      ],
-      "geopoliticsRuleScore": 6.0,
-      "createdAt": "2026-11-21T23:45:57Z"
-    },
-    {
-      "id": "4742caea-e06c-5da4-a436-423aa641cca9",
-      "date": "2026-11-22",
-      "title": "中美在元首会晤同期举行海上安全磋商",
-      "summary": "中美本周在上海举行海上安全会谈，与习近平和 Trump 的峰会同期进行。中国人民解放军海军代表接待了美国太平洋司令部、太平洋舰队和空军、海岸警卫队及五角大楼代表。会谈于周三至周五举行，包含一线操作人员之间旨在降低不安全和不专业海空相遇风险的讨论。该磋商涉及军事风险管控机制，潜在影响海空摩擦事件频率与危机沟通预期，但未披露具体成果。",
-      "url": "https://www.scmp.com/news/china/military/article/3375274/us-and-china-hold-maritime-security-talks-parallel-trump-xi-meetings",
-      "canonicalUrl": "https://www.scmp.com/news/china/military/article/3375274/us-and-china-hold-maritime-security-talks-parallel-trump-xi-meetings",
-      "source": "SCMP China",
-      "sourceTier": "tier2",
-      "isPrimarySource": false,
-      "tags": [
-        "中美关系",
-        "军事",
-        "海上安全"
-      ],
-      "rank": 3,
-      "eventId": "469d09a800dc1a4e53171e6340003c4ec12c4963",
+      "eventId": "3c97d5ebb17d58289eb2622841df9ac34313a784",
       "eventType": "unknown",
-      "entities": [],
+      "entities": [
+        "Intel"
+      ],
       "tickers": [],
       "sourceCredibilityScore": 3.0,
       "marketImpactScore": 2.0,
       "noveltyScore": 4.0,
       "timelinessScore": 5.0,
-      "entityImportanceScore": 2.0,
+      "entityImportanceScore": 3.0,
       "confidenceScore": 3.0,
-      "totalScore": 2.9,
+      "totalScore": 3.05,
       "whyItMatters": "",
       "investmentImplication": "",
       "riskNote": "",
-      "originalTitle": "US and China hold maritime security talks in parallel with Xi-Trump meetings",
-      "published": "2026-11-20T13:05:33Z",
+      "originalTitle": "China’s top intelligence agency touts ‘common international security’ after summit",
+      "published": "2026-11-21T02:00:08Z",
       "mergedSources": [
         "SCMP China"
       ],
       "relatedUrls": [],
       "primarySource": "SCMP China",
-      "selectionReason": "中美在元首会晤同期举行海上安全磋商，聚焦降低不安全海空相遇风险，关乎军事风险管控。",
+      "selectionReason": "中美元俄三边峰会次日中国情报机构定调安全观，释放重大战略信号。",
       "promptVersion": "",
       "modelUsed": "",
       "rawPayloadHash": "",
       "warnings": [],
       "regions": [
         "china",
+        "global",
         "us"
       ],
       "geopoliticsEventTypes": [
         "geopolitics"
       ],
       "geopoliticsRuleScore": 6.0,
-      "createdAt": "2026-11-21T23:45:57Z"
+      "createdAt": "2026-11-22T23:46:07Z"
     },
     {
-      "id": "1464d7b7-e5e9-5891-acc0-231859b335b3",
-      "date": "2026-11-22",
-      "title": "中俄美联合警告ICC或强化北京南海立场",
-      "summary": "分析人士称，中国、俄罗斯和美国就挑战国际司法机构权威达成罕见共识，这对北京拒绝2016年南海仲裁裁决具有意义。中俄美领导人首次三边峰会后发表的联合声明称，三国领导人“认识到国家同意原则和尊重……”。事件涉及国际司法权威与国家同意原则之争，潜在影响南海相关法律叙事与地区外交博弈，但声明对具体仲裁裁决的约束力仍有限。",
-      "url": "https://www.scmp.com/news/china/diplomacy/article/3375277/how-beijings-south-china-sea-stance-benefits-rare-joint-warning-icc",
-      "canonicalUrl": "https://www.scmp.com/news/china/diplomacy/article/3375277/how-beijings-south-china-sea-stance-benefits-rare-joint-warning-icc",
-      "source": "SCMP China",
+      "id": "d21baf5d-d540-52cd-8fbb-850f2865a423",
+      "date": "2026-11-23",
+      "title": "军事分析师评乌克兰与欧洲被排除在特朗普会谈之外",
+      "summary": "在特朗普与俄罗斯、中国领导人会谈之际，乌克兰及其欧洲盟友未被纳入谈判。NPR 采访圣安德鲁斯大学的军事分析师 Phillips O'Brien 讨论此事。事件涉及特朗普、俄中领导人及被排除的乌克兰与欧洲方面。潜在市场影响在于谈判架构若绕开欧洲，可能加剧北约内部分歧与安全不确定性，影响欧洲资产与防务板块情绪；嘉宾观点属分析判断，不代表已形成的政策结果。",
+      "url": "https://www.npr.org/2026/11/21/nx-s1-6047379/military-analyst-phillips-obrien-on-ukraine-and-europe-being-left-out-of-trumps-talks",
+      "canonicalUrl": "https://www.npr.org/2026/11/21/nx-s1-6047379/military-analyst-phillips-obrien-on-ukraine-and-europe-being-left-out-of-trumps-talks",
+      "source": "NPR World",
       "sourceTier": "tier2",
       "isPrimarySource": false,
       "tags": [
-        "中美关系",
-        "南海",
-        "国际法"
+        "全球安全秩序",
+        "俄乌战争"
       ],
-      "rank": 4,
-      "eventId": "1cbf493a1088f1c043ce3e31e1a67b85a1ecba65",
+      "rank": 3,
+      "eventId": "b746812d1ffebfb40d1732963ee275e88e8a034c",
       "eventType": "unknown",
       "entities": [],
       "tickers": [],
@@ -441,14 +383,14 @@
       "whyItMatters": "",
       "investmentImplication": "",
       "riskNote": "",
-      "originalTitle": "How Beijing’s South China Sea stance benefits from a rare joint warning to the ICC",
-      "published": "2026-11-20T14:00:05Z",
+      "originalTitle": "Military analyst Phillips O'Brien on Ukraine and Europe being left out of Trump's talks",
+      "published": "2026-11-21T12:40:18Z",
       "mergedSources": [
-        "SCMP China"
+        "NPR World"
       ],
       "relatedUrls": [],
-      "primarySource": "SCMP China",
-      "selectionReason": "中俄美联合声明挑战国际司法机构权威，强化北京对南海仲裁裁决的拒绝立场，具地缘法律影响。",
+      "primarySource": "NPR World",
+      "selectionReason": "特朗普与俄中会谈将乌克兰与欧洲排除在外，冲击北约与全球安全秩序。",
       "promptVersion": "",
       "modelUsed": "",
       "rawPayloadHash": "",
@@ -462,25 +404,74 @@
         "geopolitics"
       ],
       "geopoliticsRuleScore": 6.0,
-      "createdAt": "2026-11-21T23:45:57Z"
+      "createdAt": "2026-11-22T23:46:07Z"
     },
     {
-      "id": "691b9fb5-7e67-5def-93b4-e2329d4e8fee",
-      "date": "2026-11-22",
-      "title": "中国在COP31推动低碳电气化并承诺助他国",
-      "summary": "在COP31联合国气候峰会上，中国代表团高级成员、中国科学院能源与环境政策教授、中国政府高级顾问 Wang Yi 表示，中国正推动以低碳能源加快经济电气化，并将帮助其他国家采取同样做法。他称终端用电电气化方向明确，同时要使电力来源清洁。会议正敦促各国承诺到2035年35%的能源来自电力。事件涉及能源转型与气候外交，潜在影响电力需求、清洁能源投资与相关产业政策预期。",
-      "url": "https://www.theguardian.com/environment/2026/nov/21/china-commits-low-carbon-electrification-help-others-improve",
-      "canonicalUrl": "https://www.theguardian.com/environment/2026/nov/21/china-commits-low-carbon-electrification-help-others-improve",
-      "source": "The Guardian World",
+      "id": "db74beac-d4e9-56b9-9458-1c78e4415643",
+      "date": "2026-11-23",
+      "title": "俄乌战争外溢至北约领土",
+      "summary": "俄乌战争再度波及欧洲领土，包括对船只的袭击、波兰境内出现导弹，以及关于俄罗斯在丹麦境内活动的新指控。事件涉及俄罗斯、乌克兰及北约成员国波兰、丹麦。潜在市场影响在于冲突外溢可能推升北约东翼军事升级风险，扰动欧洲能源、防务与风险资产定价；相关指控与事件细节仍待进一步核实，不宜视为既成事实。",
+      "url": "https://www.npr.org/2026/11/22/nx-s1-6050236/ukraine-war-spilling-into-nato-territory",
+      "canonicalUrl": "https://www.npr.org/2026/11/22/nx-s1-6050236/ukraine-war-spilling-into-nato-territory",
+      "source": "NPR World",
+      "sourceTier": "tier2",
+      "isPrimarySource": false,
+      "tags": [
+        "战争",
+        "北约"
+      ],
+      "rank": 4,
+      "eventId": "4e7af9af598a2a32d81be9ee99b0a6982cf34a99",
+      "eventType": "unknown",
+      "entities": [],
+      "tickers": [],
+      "sourceCredibilityScore": 3.0,
+      "marketImpactScore": 2.0,
+      "noveltyScore": 4.0,
+      "timelinessScore": 5.0,
+      "entityImportanceScore": 2.0,
+      "confidenceScore": 3.0,
+      "totalScore": 2.9,
+      "whyItMatters": "",
+      "investmentImplication": "",
+      "riskNote": "",
+      "originalTitle": "Ukraine war spilling into NATO territory",
+      "published": "2026-11-22T22:40:22Z",
+      "mergedSources": [
+        "NPR World"
+      ],
+      "relatedUrls": [],
+      "primarySource": "NPR World",
+      "selectionReason": "俄乌战争外溢至北约领土，涉及波兰导弹与丹麦渗透，军事升级风险上升。",
+      "promptVersion": "",
+      "modelUsed": "",
+      "rawPayloadHash": "",
+      "warnings": [],
+      "regions": [
+        "global"
+      ],
+      "geopoliticsEventTypes": [
+        "geopolitics"
+      ],
+      "geopoliticsRuleScore": 3.0,
+      "createdAt": "2026-11-22T23:46:07Z"
+    },
+    {
+      "id": "1ec47841-1dc4-55f5-9f93-0db5024a2b7b",
+      "date": "2026-11-23",
+      "title": "联合国公海条约秘书处之争考验中国全球领导力",
+      "summary": "比利时与智利在 11 月 6 日意外宣布联合申办联合国公海条约（BBNJ 协定）秘书处，可能在 2027 年投票前给中国争取首个重要联合国机构总部的努力增添变数。该协定已于 1 月生效，是首个具法律约束力的公海保护框架。事件涉及中国、比利时、智利及联合国多边进程。潜在影响在于总部选址博弈或成为衡量中国多边外交影响力的指标；观察人士观点属分析，投票结果尚未确定。",
+      "url": "https://www.scmp.com/news/china/diplomacy/article/3375214/how-battle-host-un-high-seas-treaty-tests-chinas-push-global-leadership",
+      "canonicalUrl": "https://www.scmp.com/news/china/diplomacy/article/3375214/how-battle-host-un-high-seas-treaty-tests-chinas-push-global-leadership",
+      "source": "SCMP China",
       "sourceTier": "tier2",
       "isPrimarySource": false,
       "tags": [
         "中国",
-        "气候",
-        "能源"
+        "多边外交"
       ],
       "rank": 5,
-      "eventId": "398adce4c4a50a022d0ac9eacdc97f3e11bf9781",
+      "eventId": "2d6ed82c67ec9fafb6d2bbf4d1c8904480c6ddda",
       "eventType": "unknown",
       "entities": [],
       "tickers": [],
@@ -494,14 +485,14 @@
       "whyItMatters": "",
       "investmentImplication": "",
       "riskNote": "",
-      "originalTitle": "China commits to low-carbon electrification and help for others to improve",
-      "published": "2026-11-21T09:47:57Z",
+      "originalTitle": "How the battle to host UN high seas treaty tests China’s push for global leadership",
+      "published": "2026-11-22T01:00:09Z",
       "mergedSources": [
-        "The Guardian World"
+        "SCMP China"
       ],
       "relatedUrls": [],
-      "primarySource": "The Guardian World",
-      "selectionReason": "中国在COP31推动低碳电气化并承诺助他国，涉及能源转型与气候外交，具政策与产业影响。",
+      "primarySource": "SCMP China",
+      "selectionReason": "联合国公海条约秘书处竞逐考验中国全球领导力，属重要多边外交博弈。",
       "promptVersion": "",
       "modelUsed": "",
       "rawPayloadHash": "",
@@ -510,10 +501,11 @@
         "china"
       ],
       "geopoliticsEventTypes": [
-        "geopolitics"
+        "geopolitics",
+        "election"
       ],
-      "geopoliticsRuleScore": 4.0,
-      "createdAt": "2026-11-21T23:45:57Z"
+      "geopoliticsRuleScore": 5.0,
+      "createdAt": "2026-11-22T23:46:07Z"
     }
   ]
 }

@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-11-22T23:46:07Z",
+  "exportedAt": "2026-11-23T23:46:00Z",
   "items": [
     {
-      "date": "2026-11-23",
-      "title": "两个英伟达：财报与业界呼声的分歧",
-      "summary": "英伟达最新财报与科技高管公开呼吁黄仁勋回归形成鲜明对比，折射出市场对AI算力龙头战略方向与增长预期的分歧。投资者需关注这一信号对AI基础设施投资周期判断的影响，以及管理层变动传闻可能带来的估值波动。",
-      "url": "https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias/",
+      "date": "2026-11-24",
+      "title": "亚马逊75亿美元收购Decart AI优化技术，为Trainium芯片外销铺路",
+      "summary": "亚马逊以据报道75亿美元收购Decart的AI优化技术及研究团队。投资者需关注两点：一是亚马逊借此强化自研Trainium芯片的软件与优化能力，为对外销售芯片做准备，直接挑战$NVDA 英伟达主导的AI芯片供应链；二是云厂商自研芯片竞争加剧，可能影响AI算力成本结构与GPU长期需求预期。",
+      "url": "https://techcrunch.com/2026/11/23/amazon-snaps-up-decarts-ai-optimization-tech-for-7-5b-as-it-prepares-to-sell-trainium-chips/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-11-23",
-      "title": "Anthropic能否承受安全优先的代价？",
-      "summary": "Anthropic登陆纳斯达克后，其“安全优先”定位与商业化之间的张力成为焦点。投资者需评估这一矛盾对AI独角兽估值逻辑及IPO定价范式的潜在影响，安全投入可能压缩短期利润，但长期或构成差异化壁垒。",
-      "url": "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure",
-      "source": "The Verge"
-    },
-    {
-      "date": "2026-11-23",
-      "title": "OpenAI首席科学家提出AI开发限速度量框架",
-      "summary": "OpenAI首席科学家提出为AI开发设定“限速”需先统一速度度量标准。若该框架被监管采纳，可能改变前沿大语言模型的训练节奏与合规成本，进而影响大型科技公司的研发投入预期和竞争格局。",
-      "url": "https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development/",
+      "date": "2026-11-24",
+      "title": "英伟达剧情反转：黄仁勋复职CEO，获美国政府高层支持",
+      "summary": "英伟达CEO黄仁勋在被撤职后迅速复职，报道称此举获美国政府高层官员支持。这是影响$NVDA 英伟达估值与AI算力供给预期的核心事件：公司治理与政策风险骤变，管理层稳定性存疑，投资者需重新评估其战略连续性与监管环境的不确定性。",
+      "url": "https://techcrunch.com/2026/11/23/nvidia-reverses-course-and-brings-jensen-huang-back-as-ceo/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-11-23",
-      "title": "2028年Anthropic电力87%来自天然气、11%来自煤炭",
-      "summary": "Hacker News热议数据显示，Anthropic算力扩张的能源结构以天然气和煤炭为主，凸显AI数据中心电力约束正成为影响算力供给与成本的新变量。投资者应关注能源价格波动及碳排监管对AI基础设施运营成本的潜在冲击。",
-      "url": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/",
-      "source": "Hacker News"
+      "date": "2026-11-24",
+      "title": "Sierra估值半年翻倍至300亿美元，完成17.5亿美元F轮融资",
+      "summary": "由前Salesforce联席CEO Bret Taylor联合创办的企业客户体验公司Sierra完成17.5亿美元F轮融资，估值半年内翻倍至300亿美元。这显示企业级AI客服需求爆发，是AI应用层估值的重要风向标，投资者可据此判断企业AI软件商业化节奏与赛道热度。",
+      "url": "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/",
+      "source": "TechCrunch"
     },
     {
-      "date": "2026-11-23",
-      "title": "美国银行封禁第三方AI智能体登录账户",
-      "summary": "美国主要金融机构禁止第三方AI智能体登录用户账户，并警告因机器人失误造成的损失由用户自行承担。此举标志AI智能体在金融场景遭遇合规与责任边界阻力，可能延缓该类产品的商业化落地进程。",
-      "url": "https://www.wired.com/story/banks-are-cracking-down-on-ai-agents/",
-      "source": "Wired"
+      "date": "2026-11-24",
+      "title": "Anthropic推出Claude Ship，AI智能体可审查、修复并批准代码变更",
+      "summary": "随着AI生成代码激增，Anthropic推出新开发者工具Claude Ship，让AI智能体处理例行审批，自主审查、修复并批准代码变更。这标志AI编程智能体从辅助工具走向闭环交付，对开发者工具与软件工程市场影响深远，投资者需关注其对编程效率与企业软件采购格局的重塑。",
+      "url": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-11-24",
+      "title": "谷歌搜索AI模式接入Drive与Wallet，提供更个性化回答",
+      "summary": "谷歌将AI模式中的Personal Intelligence扩展至Drive、Wallet和Gemini应用，利用生态内海量用户数据强化个性化搜索。这是谷歌AI商业化与数据护城河的关键一步，投资者需关注其如何将数据优势转化为AI产品差异化与广告及订阅收入。",
+      "url": "https://techcrunch.com/2026/11/23/google-searchs-ai-mode-can-now-tap-into-drive-and-wallet-for-more-personalized-responses/",
+      "source": "TechCrunch"
     }
   ]
 }

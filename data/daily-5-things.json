@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-11-24T23:46:00Z",
+  "exportedAt": "2026-11-25T23:45:59Z",
   "items": [
     {
-      "date": "2026-11-25",
-      "title": "亚马逊收购Decart：以软件缩小与英伟达芯片差距",
-      "summary": "亚马逊以约75亿美元收购Decart，旨在提升自研Trainium芯片的效率。此举直接挑战英伟达在AI算力领域的垄断地位，是云厂商自研芯片战略的重要信号。投资者需关注亚马逊能否通过软件优化弥补硬件差距，以及其对英伟达GPU需求的潜在影响。",
-      "url": "https://techcrunch.com/2026/11/24/amazons-decart-acquisition-is-a-bet-on-using-software-to-narrow-the-gap-with-nvidia-in-the-ai-chip-race/",
+      "date": "2026-11-26",
+      "title": "AI数据中心建设难度加大，neoclouds承压",
+      "summary": "英伟达明确表示，在AI数据中心接近就绪前不会提供兜底支持，与此同时neoclouds报告建设延迟和债务成本上升。对投资者而言，这直接影响了AI算力供给节奏和相关资产定价，土地、电力及建成设施比商业计划书更重要。",
+      "url": "https://techcrunch.com/podcast/ai-data-centers-are-becoming-harder-to-build-and-neoclouds-are-feeling-it/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-11-25",
-      "title": "Anthropic股价跌破IPO发行价，AI初创企业估值承压",
-      "summary": "Anthropic上市后股价跌破发行价，可能对AI初创企业估值形成压力。作为AI领域的重要参与者，其表现被视为一级市场AI独角兽估值预期的风向标，若持续低迷可能引发融资环境收紧，影响整个AI资产定价。",
-      "url": "https://techcrunch.com/2026/11/24/anthropic-shares-fall-below-ipo-price-a-worrying-sign-for-ai-startups/",
+      "date": "2026-11-26",
+      "title": "标普考虑因治理与关键人风险下调英伟达信用评级",
+      "summary": "标普可能将英伟达信用评级下调至AA-（第四高评级），理由涉及治理和关键人风险。这是罕见的对AI龙头信用基本面的负面信号，可能影响债券与股票的风险溢价，投资者需关注后续评级行动。",
+      "url": "https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-11-25",
-      "title": "黄仁勋回归凸显英伟达“大到不能管”",
-      "summary": "英伟达CEO黄仁勋与疑似中国情报人员的关系引发国家安全担忧，但其回归表明英伟达在美国经济中的系统重要性已压过这些顾虑。此事涉及公司治理与政策风险，直接影响投资者对英伟达核心持仓的估值判断。",
-      "url": "https://www.wired.com/story/jensen-huang-nvidia-us-national-security-risks/",
-      "source": "Wired"
-    },
-    {
-      "date": "2026-11-25",
-      "title": "Claude AI可自主审查PR并提交修复",
-      "summary": "Anthropic推出Claude Ship产品，使Claude能够自动审查、修复并批准代码拉取请求。这标志着AI编程智能体从辅助工具走向自主交付，是AI应用商业化落地的重要进展，投资者应关注其对软件开发效率及AI编程市场的潜在影响。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests",
+      "date": "2026-11-26",
+      "title": "FCC批准SpaceX部署百万级AI芯片卫星数据中心",
+      "summary": "FCC首次授权SpaceX部署多达100万颗配备AI芯片的卫星，作为“Starmind”计划的一部分。谷歌、蓝色起源等也在探索太空AI数据中心，此举标志算力基础设施向太空延伸，可能重塑算力供应链。",
+      "url": "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers",
       "source": "The Verge"
     },
     {
-      "date": "2026-11-25",
-      "title": "数据中心自建天然气发电厂以绕开电网瓶颈",
-      "summary": "由于接入电网的审批可能长达十年，部分数据中心开发商选择自建离网或表后天然气发电厂来满足AI算力需求。xAI等公司的这一趋势反映AI扩张正重塑电力基础设施投资，对能源与数据中心产业链有实质影响。",
-      "url": "https://www.technologyreview.com/2026/11/24/1149622/data-centers-natural-gas/",
-      "source": "MIT Technology Review"
+      "date": "2026-11-26",
+      "title": "亚马逊据悉洽谈解除对Meta Muse AI购物代理的封锁",
+      "summary": "亚马逊与Meta就允许Muse AI智能体在其电商平台购物进行谈判，讨论焦点包括推荐商品类型及对广告收入的影响。若达成协议，将改变平台竞争格局，涉及电商广告收入与AI智能体入口之争。",
+      "url": "https://www.theverge.com/tech/1042071/meta-amazon-muse-ai-shopping-discussions",
+      "source": "The Verge"
+    },
+    {
+      "date": "2026-11-26",
+      "title": "OpenAI合并Chat与Work，重度用户或更早触及用量上限",
+      "summary": "OpenAI将ChatGPT的Chat和Work体验合并，并引入统一用量计量。这反映其商业化与算力成本压力，可能影响ChatGPT付费转化及企业端ARPU预期，投资者需关注用户增长与变现平衡。",
+      "url": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/",
+      "source": "TechCrunch"
     }
   ]
 }

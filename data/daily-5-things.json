@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-11-25T23:45:59Z",
+  "exportedAt": "2026-11-26T23:45:56Z",
   "items": [
     {
-      "date": "2026-11-26",
-      "title": "AI数据中心建设难度加大，neoclouds承压",
-      "summary": "英伟达明确表示，在AI数据中心接近就绪前不会提供兜底支持，与此同时neoclouds报告建设延迟和债务成本上升。对投资者而言，这直接影响了AI算力供给节奏和相关资产定价，土地、电力及建成设施比商业计划书更重要。",
-      "url": "https://techcrunch.com/podcast/ai-data-centers-are-becoming-harder-to-build-and-neoclouds-are-feeling-it/",
+      "date": "2026-11-27",
+      "title": "英伟达暂停对东南亚芯片出货",
+      "summary": "英伟达已要求制造合作伙伴暂停向马来西亚、新加坡、泰国和印度尼西亚交付服务器，以配合美国收紧对华AI芯片出口管制。此举反映地缘政治风险正直接冲击AI芯片供应链，投资者需关注区域需求预期下修及对$NVDA英伟达营收的潜在影响。",
+      "url": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-11-26",
-      "title": "标普考虑因治理与关键人风险下调英伟达信用评级",
-      "summary": "标普可能将英伟达信用评级下调至AA-（第四高评级），理由涉及治理和关键人风险。这是罕见的对AI龙头信用基本面的负面信号，可能影响债券与股票的风险溢价，投资者需关注后续评级行动。",
-      "url": "https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks/",
+      "date": "2026-11-27",
+      "title": "亚马逊与Meta谈判解除AI智能体Muse封锁",
+      "summary": "亚马逊与Meta正就一项潜在协议进行谈判，以结束对AI智能体Muse长达两个月的封锁。若达成，将重塑大厂AI智能体生态的竞合格局，对平台型AI商业化路径产生实质影响，投资者应关注谈判进展及对双方AI战略的边际变化。",
+      "url": "https://techcrunch.com/2026/11/25/amazon-and-meta-reportedly-in-talks-to-lift-blockade-on-ai-agent-muse/",
       "source": "TechCrunch"
     },
     {
-      "date": "2026-11-26",
-      "title": "FCC批准SpaceX部署百万级AI芯片卫星数据中心",
-      "summary": "FCC首次授权SpaceX部署多达100万颗配备AI芯片的卫星，作为“Starmind”计划的一部分。谷歌、蓝色起源等也在探索太空AI数据中心，此举标志算力基础设施向太空延伸，可能重塑算力供应链。",
-      "url": "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers",
-      "source": "The Verge"
+      "date": "2026-11-27",
+      "title": "英国FCA抱怨Meta拒绝共享Muse测试",
+      "summary": "英国金融行为监管局（FCA）警告AI智能体可能带来“另一股攻击力量”，此前Meta拒绝在周二于英国推出个人智能体前进行联合测试的请求。这凸显大厂AI智能体落地面临的监管摩擦，可能影响Meta在欧洲的发布节奏与合规成本。",
+      "url": "https://www.wired.com/story/meta-refused-to-share-muse-for-testing-uk-financial-watchdog-complains/",
+      "source": "Wired"
     },
     {
-      "date": "2026-11-26",
-      "title": "亚马逊据悉洽谈解除对Meta Muse AI购物代理的封锁",
-      "summary": "亚马逊与Meta就允许Muse AI智能体在其电商平台购物进行谈判，讨论焦点包括推荐商品类型及对广告收入的影响。若达成协议，将改变平台竞争格局，涉及电商广告收入与AI智能体入口之争。",
-      "url": "https://www.theverge.com/tech/1042071/meta-amazon-muse-ai-shopping-discussions",
-      "source": "The Verge"
+      "date": "2026-11-27",
+      "title": "谷歌将让AI智能体使用其MCP服务器，但Gmail无法发邮件",
+      "summary": "谷歌推动AI智能体接入自家MCP服务器，是智能体生态标准化的关键动作，但Gmail权限受限显示能力边界。投资者需关注此举对开发者生态与智能体商业化预期的影响，以及谷歌在AI智能体标准竞争中的站位。",
+      "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
+      "source": "Hacker News"
     },
     {
-      "date": "2026-11-26",
-      "title": "OpenAI合并Chat与Work，重度用户或更早触及用量上限",
-      "summary": "OpenAI将ChatGPT的Chat和Work体验合并，并引入统一用量计量。这反映其商业化与算力成本压力，可能影响ChatGPT付费转化及企业端ARPU预期，投资者需关注用户增长与变现平衡。",
-      "url": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/",
-      "source": "TechCrunch"
+      "date": "2026-11-27",
+      "title": "OpenAI或进入成本控制模式",
+      "summary": "Hacker News热议OpenAI转向成本控制，若属实意味着头部大语言模型公司从扩张转向盈利导向。投资者需关注其对AI资本开支预期与估值叙事的边际影响，以及行业整体从烧钱增长向效率优先的潜在转折。",
+      "url": "https://micjm.com/blog/openai-is-in-cost-control-mode/",
+      "source": "Hacker News"
     }
   ]
 }

@@ -1,41 +1,41 @@
 {
   "project": "daily-ai-5",
-  "exportedAt": "2026-11-26T23:45:56Z",
+  "exportedAt": "2026-11-27T23:45:52Z",
   "items": [
     {
-      "date": "2026-11-27",
-      "title": "英伟达暂停对东南亚芯片出货",
-      "summary": "英伟达已要求制造合作伙伴暂停向马来西亚、新加坡、泰国和印度尼西亚交付服务器，以配合美国收紧对华AI芯片出口管制。此举反映地缘政治风险正直接冲击AI芯片供应链，投资者需关注区域需求预期下修及对$NVDA英伟达营收的潜在影响。",
-      "url": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-11-27",
-      "title": "亚马逊与Meta谈判解除AI智能体Muse封锁",
-      "summary": "亚马逊与Meta正就一项潜在协议进行谈判，以结束对AI智能体Muse长达两个月的封锁。若达成，将重塑大厂AI智能体生态的竞合格局，对平台型AI商业化路径产生实质影响，投资者应关注谈判进展及对双方AI战略的边际变化。",
-      "url": "https://techcrunch.com/2026/11/25/amazon-and-meta-reportedly-in-talks-to-lift-blockade-on-ai-agent-muse/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-11-27",
-      "title": "英国FCA抱怨Meta拒绝共享Muse测试",
-      "summary": "英国金融行为监管局（FCA）警告AI智能体可能带来“另一股攻击力量”，此前Meta拒绝在周二于英国推出个人智能体前进行联合测试的请求。这凸显大厂AI智能体落地面临的监管摩擦，可能影响Meta在欧洲的发布节奏与合规成本。",
-      "url": "https://www.wired.com/story/meta-refused-to-share-muse-for-testing-uk-financial-watchdog-complains/",
+      "date": "2026-11-28",
+      "title": "新型光波芯片运行AI模型，能效或重塑推理格局",
+      "summary": "德国公司Q.ANT尝试用光完成最耗算力的计算，以降低AI模型运行能耗。对投资者而言，这是AI推理能效路线的重要变量：若光计算芯片在推理场景成立，可能削弱GPU在能效上的优势并影响数据中心电力成本结构，值得跟踪其商业化进度与算力生态适配情况。",
+      "url": "https://www.wired.com/story/a-new-breed-of-chip-runs-ai-models-using-waves-of-light/",
       "source": "Wired"
     },
     {
-      "date": "2026-11-27",
-      "title": "谷歌将让AI智能体使用其MCP服务器，但Gmail无法发邮件",
-      "summary": "谷歌推动AI智能体接入自家MCP服务器，是智能体生态标准化的关键动作，但Gmail权限受限显示能力边界。投资者需关注此举对开发者生态与智能体商业化预期的影响，以及谷歌在AI智能体标准竞争中的站位。",
-      "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
-      "source": "Hacker News"
+      "date": "2026-11-28",
+      "title": "42州总检察长阻止Character.AI出售用户聊天数据",
+      "summary": "42州总检察长联合介入Character.AI第11章破产程序，试图阻止其拍卖逾2100万美国账户的私密聊天记录。对投资者而言，这凸显AI消费应用的数据合规与数据资产估值风险：用户数据能否作为可交易资产、监管干预强度，将直接影响此类标的的定价与退出路径。",
+      "url": "https://www.theverge.com/policy/1042620/character-ai-sale-state-ags-block-selling-users-chats",
+      "source": "The Verge"
     },
     {
-      "date": "2026-11-27",
-      "title": "OpenAI或进入成本控制模式",
-      "summary": "Hacker News热议OpenAI转向成本控制，若属实意味着头部大语言模型公司从扩张转向盈利导向。投资者需关注其对AI资本开支预期与估值叙事的边际影响，以及行业整体从烧钱增长向效率优先的潜在转折。",
-      "url": "https://micjm.com/blog/openai-is-in-cost-control-mode/",
-      "source": "Hacker News"
+      "date": "2026-11-28",
+      "title": "《GTA VI》热销反衬AI效率叙事局限",
+      "summary": "在Anthropic进入公开市场同日，一款耗费大量人力的游戏成为史上最成功的娱乐产品发布之一。对投资者而言，文章以头部大语言模型公司资本市场动向为背景，提示“效率优先”并非唯一竞争维度，内容与体验壁垒仍具定价权，需关注AI叙事对估值溢价的边际影响。",
+      "url": "https://techcrunch.com/2026/11/26/as-anthropic-ipos-grand-theft-auto-vi-proves-why-efficiency-isnt-a-virtue/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-11-28",
+      "title": "仿生手升级与AI天然气需求潮",
+      "summary": "本期The Download关注新一代可感知仿生手，以及AI算力扩张带来的天然气发电需求。对投资者而言，后者是AI基础设施投资链条中的关键能源约束变量：数据中心电力需求上升将传导至天然气与电力相关标的，需跟踪能源供给瓶颈对算力扩张节奏的制约。",
+      "url": "https://www.technologyreview.com/2026/11/26/1149934/the-download-better-bionic-hands-ai-natural-gas-boom/",
+      "source": "MIT Technology Review"
+    },
+    {
+      "date": "2026-11-28",
+      "title": "谷歌实验室开源Stitch Agent Skills库，兼容主流编程智能体",
+      "summary": "谷歌实验室发布面向Stitch MCP服务器的Agent Skills库，每项技能遵循Agent Skills开放标准，兼容Antigravity、Gemini CLI、Claude Code、Cursor等编程智能体。对投资者而言，这反映大厂在AI智能体协议层的生态卡位，开放标准之争可能影响开发者工具链格局与相关平台粘性。",
+      "url": "https://github.com/google-labs-code/stitch-skills",
+      "source": "GitHub Trending"
     }
   ]
 }
